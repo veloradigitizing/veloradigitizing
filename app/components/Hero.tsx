@@ -17,7 +17,7 @@ export default function Hero({
   imageLabel?: string;
 }) {
   return (
-    <section className="relative overflow-hidden bg-[#fefefe]">
+    <section className="relative overflow-hidden bg-[#fefefe] border-y border-navy-950/5 border-0 border-b-2">
       <div className="relative mx-auto grid max-w-7xl grid-cols-1 gap-12 px-5 pt-28 lg:grid-cols-2 lg:items-center lg:px-10  lg:pt-10">
         <div className="min-w-0">
           {breadcrumbCurrent && (

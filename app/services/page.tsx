@@ -12,7 +12,10 @@ export const metadata: Metadata = {
     "Explore Vesper Digitizing's full range of embroidery digitizing services — logos, patches, 3D puff, applique, chenille and more.",
 };
 
-const WHY_ITEMS: { icon: "award" | "rocket" | "refresh" | "tag" | "headset" | "shield"; title: string }[] = [
+const WHY_ITEMS: {
+  icon: "award" | "rocket" | "refresh" | "tag" | "headset" | "shield";
+  title: string;
+}[] = [
   { icon: "award", title: "High Quality Stitching" },
   { icon: "rocket", title: "Super Fast Delivery" },
   { icon: "refresh", title: "Unlimited Revisions" },
@@ -33,7 +36,7 @@ export default function ServicesPage() {
         description="We offer high quality embroidery digitizing services with fast turnaround, perfect stitching and 100% customer satisfaction."
       />
 
-      <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10">
+      <section className="mx-auto max-w-7xl px-5 py-10 lg:px-10">
         <Breadcrumb current="Services" />
         <div className="mt-8">
           <SectionTag

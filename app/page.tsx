@@ -45,7 +45,10 @@ const BRANDS: { name: string; render: () => ReactNode }[] = [
   { name: "New Era", render: () => <NewEraLogo /> },
 ];
 
-const WHY_CHOOSE_ITEMS: { icon: Parameters<typeof WhyChooseUs>[0]["items"][number]["icon"]; title: string }[] = [
+const WHY_CHOOSE_ITEMS: {
+  icon: Parameters<typeof WhyChooseUs>[0]["items"][number]["icon"];
+  title: string;
+}[] = [
   { icon: "headset", title: "24/7 Support" },
   { icon: "rocket", title: "Fast Delivery" },
   { icon: "refresh", title: "Unlimited Revisions" },
@@ -66,7 +69,7 @@ export default function Home() {
         description="We convert your artwork into flawless embroidery files with highest stitch quality, fast turnaround and 100% satisfaction."
       />
 
-      <section className="border-y border-navy-950/5 bg-white py-12">
+      <section className="border-y border-navy-950/5 bg-white py-12 border-t-0">
         <div className="mx-auto max-w-7xl px-5 lg:px-10">
           <p className="text-center text-xs font-bold uppercase tracking-[0.2em] text-brand-600">
             Trusted By Global Brands
