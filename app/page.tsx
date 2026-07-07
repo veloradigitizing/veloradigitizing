@@ -1,65 +1,92 @@
-import Image from "next/image";
+import Link from "next/link";
+import Hero from "./components/Hero";
+import PlaceholderBox from "./components/PlaceholderBox";
+import { SectionTag } from "./components/Section";
+import ServiceCard, { SERVICES } from "./components/ServiceCard";
+import WhyChooseUs from "./components/WhyChooseUs";
+import PortfolioCard, { PORTFOLIO_ITEMS } from "./components/PortfolioCard";
+import ProcessSteps from "./components/ProcessSteps";
+import Testimonials from "./components/Testimonials";
+import CTABanner from "./components/CTABanner";
+
+const BRANDS = ["Nike", "Adidas", "Puma", "Under Armour", "New Era"];
+
+const WHY_CHOOSE_ITEMS: { icon: Parameters<typeof WhyChooseUs>[0]["items"][number]["icon"]; title: string }[] = [
+  { icon: "headset", title: "24/7 Support" },
+  { icon: "rocket", title: "Fast Delivery" },
+  { icon: "refresh", title: "Unlimited Revisions" },
+  { icon: "award", title: "High Stitch Quality" },
+  { icon: "tag", title: "Affordable Pricing" },
+  { icon: "shield", title: "100% Satisfaction Guaranteed" },
+];
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <>
+      <Hero
+        eyebrow="Precision. Quality. Perfection."
+        titleLines={[
+          { text: "Premium Embroidery" },
+          { text: "Digitizing Services", accent: true },
+        ]}
+        description="We convert your artwork into flawless embroidery files with highest stitch quality, fast turnaround and 100% satisfaction."
+      />
+
+      <section className="border-y border-navy-950/5 bg-white py-10">
+        <div className="mx-auto max-w-7xl px-5 lg:px-10">
+          <p className="text-center text-xs font-bold uppercase tracking-[0.2em] text-brand-600">
+            Trusted By Global Brands
           </p>
+          <div className="mt-7 flex flex-wrap items-center justify-center gap-x-10 gap-y-6 divide-x divide-navy-950/10">
+            {BRANDS.map((brand) => (
+              <div key={brand} className="px-6 first:pl-0">
+                <PlaceholderBox
+                  label={brand}
+                  className="h-12 w-32"
+                  rounded="rounded-md"
+                  iconSize={18}
+                />
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10">
+        <SectionTag eyebrow="Our Services" title="What We Offer" />
+        <div className="mt-14 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3">
+          {SERVICES.slice(0, 3).map((s) => (
+            <ServiceCard key={s.slug} service={s} />
+          ))}
         </div>
-      </main>
-    </div>
+      </section>
+
+      <WhyChooseUs
+        eyebrow="Why Choose Velora?"
+        title="We Make The Difference"
+        items={WHY_CHOOSE_ITEMS}
+      />
+
+      <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10">
+        <SectionTag eyebrow="Our Recent Work" title="Portfolio" />
+        <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {PORTFOLIO_ITEMS.slice(0, 6).map((item) => (
+            <PortfolioCard key={item.title} item={item} />
+          ))}
+        </div>
+        <div className="mt-10 flex justify-center">
+          <Link
+            href="/portfolio"
+            className="flex items-center gap-2 rounded-md bg-brand-600 px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-brand-700"
+          >
+            VIEW FULL PORTFOLIO <span aria-hidden>&rarr;</span>
+          </Link>
+        </div>
+      </section>
+
+      <ProcessSteps />
+      <Testimonials />
+      <CTABanner />
+    </>
   );
 }
