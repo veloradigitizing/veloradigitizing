@@ -39,10 +39,14 @@ export default function Hero({
             {titleLines.map((line, i) => (
               <span
                 key={i}
-                className={`block vr-hero-up ${line.accent ? "vr-text-gradient" : "text-navy-950"}`}
+                className="block vr-hero-up text-navy-950"
                 style={{ animationDelay: `${0.18 + i * 0.12}s` }}
               >
-                {line.text}
+                {line.accent ? (
+                  <span className="vr-text-gradient">{line.text}</span>
+                ) : (
+                  line.text
+                )}
               </span>
             ))}
           </h1>
