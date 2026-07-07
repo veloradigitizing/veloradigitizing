@@ -48,21 +48,21 @@ export function SectionTag({
 }
 
 const HERO_FEATURES: { icon: IconName; title: string; sub: string }[] = [
-  { icon: "clock", title: "Fast Turnaround", sub: "As Fast As 1-2 Hours" },
-  { icon: "stitch", title: "High Quality", sub: "Perfect Stitching" },
-  { icon: "headset", title: "24/7 Support", sub: "Always Available" },
-  { icon: "shield", title: "100% Satisfaction", sub: "Guaranteed Result" },
+  { icon: "clock", title: "Fast Turnaround", sub: "Under 1-2 business days" },
+  { icon: "award", title: "High Quality", sub: "Premium materials & craftsmanship" },
+  { icon: "headset", title: "24/7 Support", sub: "Round-the-clock customer assistance" },
+  { icon: "shield", title: "100% Satisfaction", sub: "Guaranteed or your money back" },
 ];
 
 export function HeroFeatures() {
   return (
-    <div className="mt-8 grid grid-cols-2 gap-x-4 gap-y-5 sm:grid-cols-4">
+    <div className="mt-10 grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-4">
       {HERO_FEATURES.map((f) => (
-        <div key={f.title} className="flex flex-col items-start gap-2">
-          <Icon name={f.icon} className="h-7 w-7 shrink-0 text-brand-600" strokeWidth={1.8} />
+        <div key={f.title} className="flex flex-col items-center gap-3 text-center">
+          <Icon name={f.icon} className="h-8 w-8 shrink-0 text-navy-950" strokeWidth={1.8} />
           <div className="leading-tight">
-            <p className="whitespace-nowrap text-[11px] font-semibold text-navy-950">{f.title}</p>
-            <p className="whitespace-nowrap text-[10px] text-navy-950/50">{f.sub}</p>
+            <p className="text-sm font-bold text-navy-950">{f.title}</p>
+            <p className="mt-1 text-xs text-navy-950/55">{f.sub}</p>
           </div>
         </div>
       ))}
