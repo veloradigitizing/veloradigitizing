@@ -1,7 +1,13 @@
 import Link from "next/link";
-import { SiNike, SiAdidas, SiPuma, SiUnderarmour } from "react-icons/si";
+import {
+  SiNike,
+  SiAdidas,
+  SiPuma,
+  SiUnderarmour,
+  SiNewbalance,
+  SiReebok,
+} from "react-icons/si";
 import Hero from "./components/Hero";
-import PlaceholderBox from "./components/PlaceholderBox";
 import { SectionTag } from "./components/Section";
 import ServiceCard, { SERVICES } from "./components/ServiceCard";
 import WhyChooseUs from "./components/WhyChooseUs";
@@ -15,6 +21,8 @@ const BRANDS = [
   { name: "Adidas", Icon: SiAdidas },
   { name: "Puma", Icon: SiPuma },
   { name: "Under Armour", Icon: SiUnderarmour },
+  { name: "New Balance", Icon: SiNewbalance },
+  { name: "Reebok", Icon: SiReebok },
 ];
 
 const WHY_CHOOSE_ITEMS: { icon: Parameters<typeof WhyChooseUs>[0]["items"][number]["icon"]; title: string }[] = [
@@ -38,36 +46,20 @@ export default function Home() {
         description="We convert your artwork into flawless embroidery files with highest stitch quality, fast turnaround and 100% satisfaction."
       />
 
-      <section className="border-y border-navy-950/5 bg-white py-10">
+      <section className="border-y border-navy-950/5 bg-white py-12">
         <div className="mx-auto max-w-7xl px-5 lg:px-10">
           <p className="text-center text-xs font-bold uppercase tracking-[0.2em] text-brand-600">
             Trusted By Global Brands
           </p>
-          <div className="mt-7 flex flex-wrap items-center justify-center gap-x-10 gap-y-6 divide-x divide-navy-950/10">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-x-12 gap-y-6">
             {BRANDS.map((brand) => (
               <div
                 key={brand.name}
-                className="flex h-12 w-32 items-center justify-center px-6 text-navy-950/60 first:pl-0"
+                className="flex h-14 w-36 items-center justify-center text-navy-950/50 transition-colors hover:text-navy-950"
               >
-                <brand.Icon size={30} aria-label={brand.name} />
+                <brand.Icon size={44} aria-label={brand.name} />
               </div>
             ))}
-            <div className="px-6">
-              <PlaceholderBox
-                label="New Era"
-                className="h-12 w-32"
-                rounded="rounded-md"
-                iconSize={18}
-              />
-            </div>
-            <div className="px-6">
-              <PlaceholderBox
-                label="Champion"
-                className="h-12 w-32"
-                rounded="rounded-md"
-                iconSize={18}
-              />
-            </div>
           </div>
         </div>
       </section>

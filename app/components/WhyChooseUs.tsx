@@ -19,8 +19,10 @@ export default function WhyChooseUs({
   columns?: number;
 }) {
   return (
-    <section className="bg-navy-950 py-16">
-      <div className="mx-auto max-w-7xl px-5 lg:px-10">
+    <section className="relative overflow-hidden bg-navy-800 py-16">
+      <div className="pointer-events-none absolute -right-24 -top-32 h-96 w-96 rounded-full bg-brand-500/20 blur-3xl" />
+      <div className="pointer-events-none absolute -bottom-32 -left-24 h-96 w-96 rounded-full bg-brand-400/10 blur-3xl" />
+      <div className="relative mx-auto max-w-7xl px-5 lg:px-10">
         <SectionTag eyebrow={eyebrow} title={title} dark />
         <div
           className={`mt-12 grid grid-cols-2 gap-4 ${COLS[columns] ?? COLS[6]}`}
@@ -28,7 +30,7 @@ export default function WhyChooseUs({
           {items.map((item) => (
             <div
               key={item.title}
-              className="flex flex-col items-center gap-3 rounded-xl border border-white/10 px-4 py-8 text-center"
+              className="flex flex-col items-center gap-3 rounded-xl border border-white/15 px-4 py-8 text-center"
             >
               <IconCircle icon={item.icon} dark size={item.description ? "lg" : "md"} />
               <p className="text-sm font-semibold text-white">{item.title}</p>
