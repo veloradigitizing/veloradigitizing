@@ -90,7 +90,7 @@ export default function PortfolioPage() {
               <StarRating />
             </div>
             <p className="mt-4 max-w-md text-[15px] leading-relaxed text-navy-950/60">
-              &ldquo;Velora Digitizing delivered excellent quality and super
+              &ldquo;Vesper Digitizing delivered excellent quality and super
               fast turnaround. Highly recommended!&rdquo;
             </p>
             <div className="mt-6 flex items-center gap-4">

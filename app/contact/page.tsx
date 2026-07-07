@@ -8,7 +8,7 @@ const CONTACT_INFO: { icon: IconName; title: string; lines: string[] }[] = [
   {
     icon: "mail",
     title: "Email Us",
-    lines: ["info@veloradigitizing.com", "We reply within minutes"],
+    lines: ["info@vesperdigitizing.com", "We reply within minutes"],
   },
   {
     icon: "phone",
@@ -18,7 +18,7 @@ const CONTACT_INFO: { icon: IconName; title: string; lines: string[] }[] = [
   {
     icon: "globe",
     title: "Website",
-    lines: ["www.veloradigitizing.com", "Visit our website"],
+    lines: ["www.vesperdigitizing.com", "Visit our website"],
   },
   {
     icon: "pin",

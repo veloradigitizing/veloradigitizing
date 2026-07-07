@@ -171,7 +171,7 @@ export default function StorePage() {
 
       <section className="mx-auto max-w-7xl px-5 pb-20 lg:px-10">
         <SectionTag
-          eyebrow="Why Shop With Velora?"
+          eyebrow="Why Shop With Vesper?"
           title="Built for Quality. Designed for You."
         />
         <div className="mt-14 grid grid-cols-2 gap-7 sm:grid-cols-3 lg:grid-cols-6">

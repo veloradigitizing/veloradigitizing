@@ -1,6 +1,7 @@
 import Link from "next/link";
-import PlaceholderBox from "./PlaceholderBox";
-import { Breadcrumb, HeroFeatures } from "./Section";
+import Image from "next/image";
+import heroImage from "../images/vesperHeroHd.png";
+import { Breadcrumb } from "./Section";
 
 export default function Hero({
   eyebrow,
@@ -16,12 +17,15 @@ export default function Hero({
   imageLabel?: string;
 }) {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-brand-50 via-white to-brand-50">
-      <div className="pointer-events-none absolute -right-40 -top-40 h-[500px] w-[500px] rounded-full bg-brand-500/10 blur-3xl" />
-      <div className="pointer-events-none absolute -right-16 bottom-0 h-[350px] w-[350px] rounded-full bg-brand-700/10 blur-3xl" />
-
-      <div className="relative mx-auto grid max-w-7xl gap-12 px-5 py-14 lg:grid-cols-2 lg:items-center lg:px-10 lg:py-20">
-        <div>
+    <section
+      className="relative overflow-hidden bg-white"
+      style={{
+        backgroundImage:
+          "radial-gradient(1400px 1100px at 78% 45%, #dbe6ff 0%, #e3ecff 28%, #eef3ff 55%, #f5f8ff 78%, #ffffff 100%)",
+      }}
+    >
+      <div className="relative mx-auto grid max-w-7xl grid-cols-1 gap-12 px-5 py-14 lg:grid-cols-2 lg:items-center lg:px-10 lg:py-20">
+        <div className="min-w-0">
           {breadcrumbCurrent && (
             <div className="mb-4">
               <Breadcrumb current={breadcrumbCurrent} />
@@ -57,15 +61,15 @@ export default function Hero({
               VIEW PORTFOLIO <span aria-hidden>&rarr;</span>
             </Link>
           </div>
-          <HeroFeatures />
         </div>
 
-        <div className="relative flex justify-center lg:justify-end">
-          <PlaceholderBox
-            label={imageLabel}
-            className="aspect-[6/5] w-full max-w-md"
-            rounded="rounded-[2rem]"
-            iconSize={40}
+        <div className="relative -mx-5 flex justify-center sm:mx-0 lg:justify-end lg:-mr-[calc(50vw-37.5rem)]">
+          <div className="pointer-events-none absolute -bottom-8 -right-4 h-40 w-40 rounded-full bg-[#a8b7f8]/60 blur-3xl sm:h-56 sm:w-56" />
+          <Image
+            src={heroImage}
+            alt={imageLabel}
+            priority
+            className="relative h-auto w-auto max-w-full mix-blend-multiply"
           />
         </div>
       </div>

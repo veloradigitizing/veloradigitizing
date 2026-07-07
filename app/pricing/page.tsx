@@ -7,7 +7,7 @@ import ProcessSteps from "../components/ProcessSteps";
 import CTABanner from "../components/CTABanner";
 
 export const metadata: Metadata = {
-  title: "Pricing | Velora Digitizing",
+  title: "Pricing | Vesper Digitizing",
   description:
     "Simple, transparent pricing for embroidery digitizing, vector conversion and rush orders.",
 };

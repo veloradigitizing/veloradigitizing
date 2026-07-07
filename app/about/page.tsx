@@ -6,9 +6,9 @@ import Icon, { IconName } from "../components/Icon";
 import CTABanner from "../components/CTABanner";
 
 export const metadata: Metadata = {
-  title: "About Us | Velora Digitizing",
+  title: "About Us | Vesper Digitizing",
   description:
-    "Velora Digitizing was founded to provide world-class embroidery digitizing services with unmatched quality and reliability.",
+    "Vesper Digitizing was founded to provide world-class embroidery digitizing services with unmatched quality and reliability.",
 };
 
 const WHY_ITEMS: { icon: IconName; title: string; description: string }[] = [
@@ -78,13 +78,13 @@ export default function AboutPage() {
           { text: "Crafting Perfection," },
           { text: "Stitch by Stitch", accent: true },
         ]}
-        description="At Velora Digitizing, we turn your ideas into flawless embroidery designs. With precision, experience, and passion, we deliver digitizing services that elevate your brand."
+        description="At Vesper Digitizing, we turn your ideas into flawless embroidery designs. With precision, experience, and passion, we deliver digitizing services that elevate your brand."
       />
 
       <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
           <PlaceholderBox
-            label="Embroidery Machine Stitching the Velora Logo"
+            label="Embroidery Machine Stitching the Vesper Logo"
             className="aspect-[4/3] w-full"
             rounded="rounded-2xl"
             iconSize={36}
@@ -99,7 +99,7 @@ export default function AboutPage() {
             <div className="mt-4 h-[3px] w-16 rounded-full bg-brand-600" />
             <div className="mt-6 flex flex-col gap-4 text-[15px] leading-relaxed text-navy-950/60">
               <p>
-                Velora Digitizing was founded with a simple mission — to
+                Vesper Digitizing was founded with a simple mission — to
                 provide world-class embroidery digitizing services with
                 unmatched quality and reliability.
               </p>
@@ -115,9 +115,9 @@ export default function AboutPage() {
               </p>
             </div>
             <p className="mt-6 font-script text-2xl text-brand-600">
-              Velora Digitizing
+              Vesper Digitizing
             </p>
-            <p className="text-xs text-navy-950/50">Founder, Velora Digitizing</p>
+            <p className="text-xs text-navy-950/50">Founder, Vesper Digitizing</p>
           </div>
         </div>
       </section>
@@ -125,7 +125,7 @@ export default function AboutPage() {
       <section className="mx-auto max-w-7xl px-5 pb-20 lg:px-10">
         <SectionTag
           eyebrow="Why Choose Us"
-          title="Why Thousands Choose Velora Digitizing"
+          title="Why Thousands Choose Vesper Digitizing"
         />
         <div className="mt-14 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3">
           {WHY_ITEMS.map((item) => (
@@ -202,7 +202,7 @@ export default function AboutPage() {
               look better, stitch better, and grow better.
             </p>
             <p className="mt-5 font-script text-xl text-white/80">
-              Velora Digitizing
+              Vesper Digitizing
             </p>
           </div>
         </div>

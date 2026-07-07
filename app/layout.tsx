@@ -21,9 +21,9 @@ const script = Dancing_Script({
 });
 
 export const metadata: Metadata = {
-  title: "Velora Digitizing | Premium Embroidery Digitizing Services",
+  title: "Vesper Digitizing | Premium Embroidery Digitizing Services",
   description:
-    "Velora Digitizing converts your artwork into flawless embroidery files with the highest stitch quality, fast turnaround, and 100% satisfaction.",
+    "Vesper Digitizing converts your artwork into flawless embroidery files with the highest stitch quality, fast turnaround, and 100% satisfaction.",
 };
 
 export default function RootLayout({

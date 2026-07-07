@@ -7,9 +7,9 @@ import ProcessSteps from "../components/ProcessSteps";
 import CTABanner from "../components/CTABanner";
 
 export const metadata: Metadata = {
-  title: "Services | Velora Digitizing",
+  title: "Services | Vesper Digitizing",
   description:
-    "Explore Velora Digitizing's full range of embroidery digitizing services — logos, patches, 3D puff, applique, chenille and more.",
+    "Explore Vesper Digitizing's full range of embroidery digitizing services — logos, patches, 3D puff, applique, chenille and more.",
 };
 
 const WHY_ITEMS: { icon: "award" | "rocket" | "refresh" | "tag" | "headset" | "shield"; title: string }[] = [
@@ -50,7 +50,7 @@ export default function ServicesPage() {
       </section>
 
       <WhyChooseUs
-        eyebrow="Why Choose Velora?"
+        eyebrow="Why Choose Vesper?"
         title="We Deliver More Than Just Stitches"
         items={WHY_ITEMS}
       />

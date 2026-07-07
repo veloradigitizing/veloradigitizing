@@ -1,16 +1,16 @@
 "use client";
-
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { Menu, X } from "lucide-react";
 import Logo from "./Logo";
+import Icon from "./Icon";
 
 const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
   { href: "/portfolio", label: "Portfolio" },
   { href: "/pricing", label: "Pricing" },
-  { href: "/store", label: "Store" },
   { href: "/about", label: "About Us" },
   { href: "/contact", label: "Contact" },
 ];
@@ -20,7 +20,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-navy-900/10 bg-white/95 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-navy-950/10 bg-white/95 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-4 lg:px-10">
         <Logo />
 
@@ -50,21 +50,10 @@ export default function Header() {
           {pathname.startsWith("/store") && (
             <Link
               href="/store"
-              className="relative flex h-9 w-9 items-center justify-center rounded-full border border-navy-900/15 text-navy-950/70"
+              className="relative flex h-9 w-9 items-center justify-center rounded-full border border-navy-950/15 text-navy-950/70"
               aria-label="Cart"
             >
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={1.8}
-              >
-                <circle cx="9" cy="21" r="1" />
-                <circle cx="20" cy="21" r="1" />
-                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
-              </svg>
+              <Icon name="cart" className="h-[18px] w-[18px]" />
               <span className="absolute -right-1 -top-1 flex h-4 w-4 items-center justify-center rounded-full bg-brand-600 text-[9px] font-bold text-white">
                 1
               </span>
@@ -80,29 +69,16 @@ export default function Header() {
         </div>
 
         <button
-          className="flex h-10 w-10 items-center justify-center rounded-md border border-navy-900/15 lg:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-md border border-navy-950/15 lg:hidden"
           onClick={() => setOpen((v) => !v)}
           aria-label="Toggle menu"
         >
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth={2}
-          >
-            {open ? (
-              <path d="M18 6L6 18M6 6l12 12" />
-            ) : (
-              <path d="M3 6h18M3 12h18M3 18h18" />
-            )}
-          </svg>
+          {open ? <X size={20} /> : <Menu size={20} />}
         </button>
       </div>
 
       {open && (
-        <div className="border-t border-navy-900/10 bg-white px-5 py-4 lg:hidden">
+        <div className="border-t border-navy-950/10 bg-white px-5 py-4 lg:hidden">
           <nav className="flex flex-col gap-4">
             {NAV_LINKS.map((link) => {
               const active =

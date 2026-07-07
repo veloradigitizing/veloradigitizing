@@ -18,7 +18,7 @@ export default function Logo({ dark = false }: { dark?: boolean }) {
             dark ? "text-white" : "text-navy-950"
           }`}
         >
-          VELORA
+          VESPER
         </span>
         <span
           className={`text-[9px] font-medium tracking-[0.3em] ${

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SiNike, SiAdidas, SiPuma, SiUnderarmour } from "react-icons/si";
 import Hero from "./components/Hero";
 import PlaceholderBox from "./components/PlaceholderBox";
 import { SectionTag } from "./components/Section";
@@ -9,7 +10,12 @@ import ProcessSteps from "./components/ProcessSteps";
 import Testimonials from "./components/Testimonials";
 import CTABanner from "./components/CTABanner";
 
-const BRANDS = ["Nike", "Adidas", "Puma", "Under Armour", "New Era"];
+const BRANDS = [
+  { name: "Nike", Icon: SiNike },
+  { name: "Adidas", Icon: SiAdidas },
+  { name: "Puma", Icon: SiPuma },
+  { name: "Under Armour", Icon: SiUnderarmour },
+];
 
 const WHY_CHOOSE_ITEMS: { icon: Parameters<typeof WhyChooseUs>[0]["items"][number]["icon"]; title: string }[] = [
   { icon: "headset", title: "24/7 Support" },
@@ -39,15 +45,29 @@ export default function Home() {
           </p>
           <div className="mt-7 flex flex-wrap items-center justify-center gap-x-10 gap-y-6 divide-x divide-navy-950/10">
             {BRANDS.map((brand) => (
-              <div key={brand} className="px-6 first:pl-0">
-                <PlaceholderBox
-                  label={brand}
-                  className="h-12 w-32"
-                  rounded="rounded-md"
-                  iconSize={18}
-                />
+              <div
+                key={brand.name}
+                className="flex h-12 w-32 items-center justify-center px-6 text-navy-950/60 first:pl-0"
+              >
+                <brand.Icon size={30} aria-label={brand.name} />
               </div>
             ))}
+            <div className="px-6">
+              <PlaceholderBox
+                label="New Era"
+                className="h-12 w-32"
+                rounded="rounded-md"
+                iconSize={18}
+              />
+            </div>
+            <div className="px-6">
+              <PlaceholderBox
+                label="Champion"
+                className="h-12 w-32"
+                rounded="rounded-md"
+                iconSize={18}
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -62,7 +82,7 @@ export default function Home() {
       </section>
 
       <WhyChooseUs
-        eyebrow="Why Choose Velora?"
+        eyebrow="Why Choose Vesper?"
         title="We Make The Difference"
         items={WHY_CHOOSE_ITEMS}
       />
