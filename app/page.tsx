@@ -1,12 +1,6 @@
 import Link from "next/link";
-import {
-  SiNike,
-  SiAdidas,
-  SiPuma,
-  SiUnderarmour,
-  SiNewbalance,
-  SiReebok,
-} from "react-icons/si";
+import type { ReactNode } from "react";
+import { SiNike, SiAdidas, SiPuma, SiUnderarmour } from "react-icons/si";
 import Hero from "./components/Hero";
 import { SectionTag } from "./components/Section";
 import ServiceCard, { SERVICES } from "./components/ServiceCard";
@@ -16,13 +10,39 @@ import ProcessSteps from "./components/ProcessSteps";
 import Testimonials from "./components/Testimonials";
 import CTABanner from "./components/CTABanner";
 
-const BRANDS = [
-  { name: "Nike", Icon: SiNike },
-  { name: "Adidas", Icon: SiAdidas },
-  { name: "Puma", Icon: SiPuma },
-  { name: "Under Armour", Icon: SiUnderarmour },
-  { name: "New Balance", Icon: SiNewbalance },
-  { name: "Reebok", Icon: SiReebok },
+function NikeLogo() {
+  return (
+    <span className="flex items-center gap-1.5">
+      <SiNike size={22} />
+      <span className="text-xl font-black italic tracking-tighter">NIKE</span>
+    </span>
+  );
+}
+
+function NewEraLogo() {
+  return (
+    <span className="flex items-center gap-2">
+      <span className="flex h-8 w-8 items-center justify-center rounded-[3px] bg-navy-950 text-[10px] font-black italic text-white">
+        NE
+      </span>
+      <span className="text-[11px] font-extrabold uppercase leading-[1.05] tracking-wide">
+        New
+        <br />
+        Era
+      </span>
+    </span>
+  );
+}
+
+const BRANDS: { name: string; render: () => ReactNode }[] = [
+  { name: "Nike", render: () => <NikeLogo /> },
+  { name: "Adidas", render: () => <SiAdidas size={40} aria-label="Adidas" /> },
+  { name: "Puma", render: () => <SiPuma size={40} aria-label="Puma" /> },
+  {
+    name: "Under Armour",
+    render: () => <SiUnderarmour size={38} aria-label="Under Armour" />,
+  },
+  { name: "New Era", render: () => <NewEraLogo /> },
 ];
 
 const WHY_CHOOSE_ITEMS: { icon: Parameters<typeof WhyChooseUs>[0]["items"][number]["icon"]; title: string }[] = [
@@ -51,13 +71,13 @@ export default function Home() {
           <p className="text-center text-xs font-bold uppercase tracking-[0.2em] text-brand-600">
             Trusted By Global Brands
           </p>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-x-12 gap-y-6">
+          <div className="mt-8 flex flex-wrap items-center justify-between divide-x divide-navy-950/10">
             {BRANDS.map((brand) => (
               <div
                 key={brand.name}
-                className="flex h-14 w-36 items-center justify-center text-navy-950/50 transition-colors hover:text-navy-950"
+                className="flex h-14 flex-1 items-center justify-center px-4 text-navy-950"
               >
-                <brand.Icon size={44} aria-label={brand.name} />
+                {brand.render()}
               </div>
             ))}
           </div>

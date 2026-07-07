@@ -1,5 +1,5 @@
-import { IconName } from "./Icon";
-import { IconCircle, SectionTag } from "./Section";
+import Icon, { IconName } from "./Icon";
+import { SectionTag } from "./Section";
 
 const COLS: Record<number, string> = {
   3: "sm:grid-cols-3",
@@ -30,9 +30,9 @@ export default function WhyChooseUs({
           {items.map((item) => (
             <div
               key={item.title}
-              className="flex flex-col items-center gap-3 rounded-xl border border-white/15 px-4 py-8 text-center"
+              className="flex flex-col items-center gap-3 rounded-xl border border-white/15 bg-white/[0.03] px-4 py-8 text-center"
             >
-              <IconCircle icon={item.icon} dark size={item.description ? "lg" : "md"} />
+              <Icon name={item.icon} className="h-8 w-8 text-white" strokeWidth={1.75} />
               <p className="text-sm font-semibold text-white">{item.title}</p>
               {item.description && (
                 <p className="text-xs text-white/50">{item.description}</p>

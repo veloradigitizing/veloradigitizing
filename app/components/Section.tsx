@@ -59,9 +59,7 @@ export function HeroFeatures() {
     <div className="mt-8 grid grid-cols-2 gap-x-4 gap-y-5 sm:grid-cols-4">
       {HERO_FEATURES.map((f) => (
         <div key={f.title} className="flex flex-col items-start gap-2">
-          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-brand-600/25 bg-brand-50 text-brand-600">
-            <Icon name={f.icon} className="h-3.5 w-3.5" />
-          </span>
+          <Icon name={f.icon} className="h-7 w-7 shrink-0 text-brand-600" strokeWidth={1.8} />
           <div className="leading-tight">
             <p className="whitespace-nowrap text-[11px] font-semibold text-navy-950">{f.title}</p>
             <p className="whitespace-nowrap text-[10px] text-navy-950/50">{f.sub}</p>
