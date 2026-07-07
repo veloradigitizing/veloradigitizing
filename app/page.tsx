@@ -9,7 +9,8 @@ import PortfolioCard, { PORTFOLIO_ITEMS } from "./components/PortfolioCard";
 import ProcessSteps from "./components/ProcessSteps";
 import Testimonials from "./components/Testimonials";
 import CTABanner from "./components/CTABanner";
-
+import { Reveal } from "./components/Reveal";
+import { stagger } from "./components/stagger";
 function NikeLogo() {
   return (
     <span className="flex items-center gap-1.5">
@@ -58,6 +59,9 @@ const WHY_CHOOSE_ITEMS: {
 ];
 
 export default function Home() {
+  // Duplicate the brand list once to create a seamless marquee loop
+  const marqueeBrands = [...BRANDS, ...BRANDS];
+
   return (
     <>
       <Hero
@@ -69,29 +73,67 @@ export default function Home() {
         description="We convert your artwork into flawless embroidery files with highest stitch quality, fast turnaround and 100% satisfaction."
       />
 
+      {/* Brand strip — animated marquee on small screens, static grid on lg */}
       <section className="border-y border-navy-950/5 bg-white py-12 border-t-0">
         <div className="mx-auto max-w-7xl px-5 lg:px-10">
-          <p className="text-center text-xs font-bold uppercase tracking-[0.2em] text-brand-600">
-            Trusted By Global Brands
-          </p>
-          <div className="mt-8 flex flex-wrap items-center justify-between divide-x divide-navy-950/10">
-            {BRANDS.map((brand) => (
-              <div
+          <Reveal direction="up">
+            <p className="text-center text-xs font-bold uppercase tracking-[0.2em] text-brand-600">
+              Trusted By Global Brands
+            </p>
+          </Reveal>
+
+          {/* Static row on large screens */}
+          <div className="mt-8 hidden flex-wrap items-center justify-between divide-x divide-navy-950/10 lg:flex">
+            {BRANDS.map((brand, i) => (
+              <Reveal
                 key={brand.name}
-                className="flex h-14 flex-1 items-center justify-center px-4 text-navy-950"
+                direction="up"
+                delay={stagger(i, 90)}
+                className="flex h-14 flex-1 items-center justify-center px-4 text-navy-950 grayscale transition-all duration-300 hover:grayscale-0 hover:text-brand-600"
               >
                 {brand.render()}
-              </div>
+              </Reveal>
             ))}
+          </div>
+
+          {/* Marquee on mobile / tablet */}
+          <div className="vr-marquee mt-8 flex overflow-hidden lg:hidden">
+            <div className="vr-marquee-track flex shrink-0 items-center gap-12 pr-12">
+              {marqueeBrands.map((brand, i) => (
+                <div
+                  key={`${brand.name}-${i}`}
+                  className="flex h-14 items-center justify-center text-navy-950"
+                >
+                  {brand.render()}
+                </div>
+              ))}
+            </div>
+            <div
+              className="vr-marquee-track flex shrink-0 items-center gap-12 pr-12"
+              aria-hidden
+            >
+              {marqueeBrands.map((brand, i) => (
+                <div
+                  key={`${brand.name}-dup-${i}`}
+                  className="flex h-14 items-center justify-center text-navy-950"
+                >
+                  {brand.render()}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10">
-        <SectionTag eyebrow="Our Services" title="What We Offer" />
+        <Reveal direction="up">
+          <SectionTag eyebrow="Our Services" title="What We Offer" />
+        </Reveal>
         <div className="mt-14 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3">
-          {SERVICES.slice(0, 3).map((s) => (
-            <ServiceCard key={s.slug} service={s} />
+          {SERVICES.slice(0, 3).map((s, i) => (
+            <Reveal key={s.slug} direction="up" delay={stagger(i, 120)}>
+              <ServiceCard service={s} />
+            </Reveal>
           ))}
         </div>
       </section>
@@ -103,20 +145,24 @@ export default function Home() {
       />
 
       <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10">
-        <SectionTag eyebrow="Our Recent Work" title="Portfolio" />
+        <Reveal direction="up">
+          <SectionTag eyebrow="Our Recent Work" title="Portfolio" />
+        </Reveal>
         <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {PORTFOLIO_ITEMS.slice(0, 6).map((item) => (
-            <PortfolioCard key={item.title} item={item} />
+          {PORTFOLIO_ITEMS.slice(0, 6).map((item, i) => (
+            <Reveal key={item.title} direction="up" delay={stagger(i, 90)}>
+              <PortfolioCard item={item} />
+            </Reveal>
           ))}
         </div>
-        <div className="mt-10 flex justify-center">
+        <Reveal direction="up" className="mt-10 flex justify-center">
           <Link
             href="/portfolio"
-            className="flex items-center gap-2 rounded-md bg-brand-600 px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-brand-700"
+            className="vr-btn vr-btn-primary flex items-center gap-2 rounded-md bg-brand-600 px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-brand-700"
           >
-            VIEW FULL PORTFOLIO <span aria-hidden>&rarr;</span>
+            VIEW FULL PORTFOLIO <span aria-hidden className="vr-arrow">&rarr;</span>
           </Link>
-        </div>
+        </Reveal>
       </section>
 
       <ProcessSteps />

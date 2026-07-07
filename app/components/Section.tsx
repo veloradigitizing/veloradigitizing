@@ -1,5 +1,6 @@
 import Icon, { IconName } from "./Icon";
-
+import { Reveal } from "./Reveal";
+import { stagger } from "./stagger";
 export function SectionTag({
   eyebrow,
   title,
@@ -58,8 +59,17 @@ export function HeroFeatures() {
   return (
     <div className="mt-10 grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-4">
       {HERO_FEATURES.map((f) => (
-        <div key={f.title} className="flex flex-col items-center gap-3 text-center">
-          <Icon name={f.icon} className="h-8 w-8 shrink-0 text-navy-950" strokeWidth={1.8} />
+        <div
+          key={f.title}
+          className="group flex flex-col items-center gap-3 text-center transition-transform duration-300 hover:-translate-y-1"
+        >
+          <span className="flex h-12 w-12 items-center justify-center rounded-full border border-navy-950/10 bg-white shadow-sm transition-colors duration-300 group-hover:border-brand-600/30 group-hover:bg-brand-50">
+            <Icon
+              name={f.icon}
+              className="h-6 w-6 shrink-0 text-navy-950 transition-colors duration-300 group-hover:text-brand-600"
+              strokeWidth={1.8}
+            />
+          </span>
           <div className="leading-tight">
             <p className="text-sm font-bold text-navy-950">{f.title}</p>
             <p className="mt-1 text-xs text-navy-950/55">{f.sub}</p>
@@ -88,8 +98,13 @@ export function StatsBar({
   return (
     <div className="bg-navy-950">
       <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 px-5 py-10 sm:grid-cols-4 lg:px-10">
-        {stats.map((s) => (
-          <div key={s.label} className="flex items-center justify-center gap-3">
+        {stats.map((s, i) => (
+          <Reveal
+            key={s.label}
+            direction="up"
+            delay={stagger(i, 100)}
+            className="flex items-center justify-center gap-3"
+          >
             <Icon name={s.icon} className="h-8 w-8 shrink-0 text-brand-50/80" />
             <div>
               <p className="font-serif text-2xl font-bold text-white">
@@ -97,7 +112,7 @@ export function StatsBar({
               </p>
               <p className="text-xs text-white/50">{s.label}</p>
             </div>
-          </div>
+          </Reveal>
         ))}
       </div>
     </div>
@@ -117,7 +132,7 @@ export function IconCircle({
   const iconDims = { sm: "h-4 w-4", md: "h-6 w-6", lg: "h-7 w-7" }[size];
   return (
     <span
-      className={`flex ${dims} shrink-0 items-center justify-center rounded-full ${
+      className={`flex ${dims} shrink-0 items-center justify-center rounded-full transition-transform duration-300 ${
         dark
           ? "bg-white/10 text-white"
           : "bg-brand-600 text-white"

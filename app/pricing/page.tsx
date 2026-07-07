@@ -5,7 +5,8 @@ import { Breadcrumb, SectionTag } from "../components/Section";
 import Icon from "../components/Icon";
 import ProcessSteps from "../components/ProcessSteps";
 import CTABanner from "../components/CTABanner";
-
+import { Reveal } from "../components/Reveal";
+import { stagger } from "../components/stagger";
 export const metadata: Metadata = {
   title: "Pricing | Vesper Digitizing",
   description:
@@ -72,64 +73,88 @@ export default function PricingPage() {
       />
 
       <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10">
-        <Breadcrumb current="Pricing" />
+        <Reveal direction="up">
+          <Breadcrumb current="Pricing" />
+        </Reveal>
         <div className="mt-8">
-          <SectionTag
-            eyebrow="Our Plans"
-            title="Choose Your Digitizing Plan"
-            subtitle="All plans include high quality stitching, free file re-sends, and a 100% satisfaction guarantee."
-          />
+          <Reveal direction="up" delay={80}>
+            <SectionTag
+              eyebrow="Our Plans"
+              title="Choose Your Digitizing Plan"
+              subtitle="All plans include high quality stitching, free file re-sends, and a 100% satisfaction guarantee."
+            />
+          </Reveal>
         </div>
 
         <div className="mt-14 grid grid-cols-1 gap-7 lg:grid-cols-3">
-          {PLANS.map((plan) => (
-            <div
+          {PLANS.map((plan, i) => (
+            <Reveal
               key={plan.name}
-              className={`flex flex-col rounded-2xl p-8 ${
+              direction="up"
+              delay={stagger(i, 120)}
+              className={`vr-lift group flex flex-col rounded-2xl p-8 ${
                 plan.highlighted
-                  ? "bg-navy-950 text-white shadow-xl lg:-translate-y-3"
+                  ? "bg-navy-950 text-white shadow-xl lg:-translate-y-3 ring-2 ring-brand-500/40"
                   : "border border-navy-950/10 bg-white text-navy-950"
               }`}
             >
-              {plan.highlighted && (
-                <span className="mb-4 w-fit rounded-full bg-brand-600 px-3 py-1 text-[10px] font-bold uppercase tracking-wide text-white">
-                  Most Popular
-                </span>
-              )}
-              <h3 className="font-serif text-xl font-bold">{plan.name}</h3>
-              <p className={`mt-2 text-sm ${plan.highlighted ? "text-white/60" : "text-navy-950/55"}`}>
-                {plan.description}
-              </p>
-              <p className="mt-6 flex items-baseline gap-1">
-                <span className="font-serif text-4xl font-bold">{plan.price}</span>
-                <span className={`text-sm ${plan.highlighted ? "text-white/50" : "text-navy-950/50"}`}>
-                  {plan.unit}
-                </span>
-              </p>
-              <ul className="mt-6 flex flex-1 flex-col gap-3">
-                {plan.features.map((f) => (
-                  <li key={f} className="flex items-center gap-2 text-sm">
-                    <Icon
-                      name="badge-check"
-                      className={`h-4 w-4 shrink-0 ${plan.highlighted ? "text-brand-50" : "text-brand-600"}`}
-                    />
-                    <span className={plan.highlighted ? "text-white/80" : "text-navy-950/70"}>
-                      {f}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-              <Link
-                href="/contact"
-                className={`mt-8 flex items-center justify-center gap-2 rounded-md px-6 py-3 text-sm font-semibold transition-colors ${
-                  plan.highlighted
-                    ? "bg-white text-navy-950 hover:bg-brand-50"
-                    : "bg-brand-600 text-white hover:bg-brand-700"
-                }`}
-              >
-                GET STARTED <span aria-hidden>&rarr;</span>
-              </Link>
-            </div>
+              <div className="flex flex-1 flex-col">
+                {plan.highlighted && (
+                  <span className="mb-4 w-fit rounded-full bg-brand-600 px-3 py-1 text-[10px] font-bold uppercase tracking-wide text-white">
+                    Most Popular
+                  </span>
+                )}
+                <h3 className="font-serif text-xl font-bold">{plan.name}</h3>
+                <p
+                  className={`mt-2 text-sm ${
+                    plan.highlighted ? "text-white/60" : "text-navy-950/55"
+                  }`}
+                >
+                  {plan.description}
+                </p>
+                <p className="mt-6 flex items-baseline gap-1">
+                  <span className="font-serif text-4xl font-bold">
+                    {plan.price}
+                  </span>
+                  <span
+                    className={`text-sm ${
+                      plan.highlighted ? "text-white/50" : "text-navy-950/50"
+                    }`}
+                  >
+                    {plan.unit}
+                  </span>
+                </p>
+                <ul className="mt-6 flex flex-1 flex-col gap-3">
+                  {plan.features.map((f) => (
+                    <li key={f} className="flex items-center gap-2 text-sm">
+                      <Icon
+                        name="badge-check"
+                        className={`h-4 w-4 shrink-0 ${
+                          plan.highlighted ? "text-brand-50" : "text-brand-600"
+                        }`}
+                      />
+                      <span
+                        className={
+                          plan.highlighted ? "text-white/80" : "text-navy-950/70"
+                        }
+                      >
+                        {f}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href="/contact"
+                  className={`vr-btn mt-8 flex items-center justify-center gap-2 rounded-md px-6 py-3 text-sm font-semibold transition-colors ${
+                    plan.highlighted
+                      ? "bg-white text-navy-950 hover:bg-brand-50"
+                      : "bg-brand-600 text-white hover:bg-brand-700"
+                  }`}
+                >
+                  GET STARTED <span aria-hidden className="vr-arrow">&rarr;</span>
+                </Link>
+              </div>
+            </Reveal>
           ))}
         </div>
       </section>

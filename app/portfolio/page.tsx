@@ -3,14 +3,14 @@
 import { useState } from "react";
 import Link from "next/link";
 import Hero from "../components/Hero";
-import { Breadcrumb, SectionTag, StarRating } from "../components/Section";
+import { Breadcrumb, SectionTag, StarRating, StatsBar } from "../components/Section";
 import Icon from "../components/Icon";
 import PortfolioCard, {
   PORTFOLIO_CATEGORIES,
   PORTFOLIO_ITEMS,
 } from "../components/PortfolioCard";
-import { StatsBar } from "../components/Section";
-
+import { Reveal } from "../components/Reveal";
+import { stagger } from "../components/stagger";
 const STATS: { icon: "award" | "smile" | "clock" | "globe"; value: string; label: string }[] = [
   { icon: "award", value: "15,000+", label: "Projects Completed" },
   { icon: "smile", value: "8,000+", label: "Happy Clients" },
@@ -37,21 +37,25 @@ export default function PortfolioPage() {
       />
 
       <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10">
-        <Breadcrumb current="Portfolio" />
+        <Reveal direction="up">
+          <Breadcrumb current="Portfolio" />
+        </Reveal>
         <div className="mt-8">
-          <SectionTag
-            eyebrow="Our Work"
-            title="Latest Portfolio"
-            subtitle="We take pride in delivering top-quality digitizing for a wide range of designs."
-          />
+          <Reveal direction="up" delay={80}>
+            <SectionTag
+              eyebrow="Our Work"
+              title="Latest Portfolio"
+              subtitle="We take pride in delivering top-quality digitizing for a wide range of designs."
+            />
+          </Reveal>
         </div>
 
-        <div className="mt-10 flex flex-wrap justify-center gap-2.5">
+        <Reveal direction="up" delay={120} className="mt-10 flex flex-wrap justify-center gap-2.5">
           {PORTFOLIO_CATEGORIES.map((cat) => (
             <button
               key={cat.value}
               onClick={() => setActive(cat.value)}
-              className={`rounded-md px-4 py-2 text-xs font-semibold uppercase tracking-wide transition-colors ${
+              className={`vr-btn rounded-md px-4 py-2 text-xs font-semibold uppercase tracking-wide transition-colors ${
                 active === cat.value
                   ? "bg-brand-600 text-white"
                   : "border border-navy-950/15 text-navy-950/60 hover:border-brand-600 hover:text-brand-600"
@@ -60,26 +64,28 @@ export default function PortfolioPage() {
               {cat.label}
             </button>
           ))}
-        </div>
+        </Reveal>
 
         <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {items.map((item) => (
-            <PortfolioCard key={item.title} item={item} />
+          {items.map((item, i) => (
+            <Reveal key={`${item.title}-${active}`} direction="up" delay={stagger(i, 70)}>
+              <PortfolioCard item={item} />
+            </Reveal>
           ))}
         </div>
 
-        <div className="mt-10 flex justify-center">
-          <button className="flex items-center gap-2 rounded-md bg-brand-600 px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-brand-700">
-            VIEW MORE WORK <span aria-hidden>&rarr;</span>
+        <Reveal direction="up" className="mt-10 flex justify-center">
+          <button className="vr-btn vr-btn-primary flex items-center gap-2 rounded-md bg-brand-600 px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-brand-700">
+            VIEW MORE WORK <span aria-hidden className="vr-arrow">&rarr;</span>
           </button>
-        </div>
+        </Reveal>
       </section>
 
       <StatsBar stats={STATS} />
 
       <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-          <div>
+          <Reveal direction="left">
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-600">
               What Our Clients Say
             </p>
@@ -104,21 +110,21 @@ export default function PortfolioPage() {
               <div className="ml-auto flex gap-2">
                 <button
                   aria-label="Previous testimonial"
-                  className="flex h-9 w-9 items-center justify-center rounded-full border border-navy-950/15 text-navy-950/50 hover:border-brand-600 hover:text-brand-600"
+                  className="vr-btn flex h-9 w-9 items-center justify-center rounded-full border border-navy-950/15 text-navy-950/50 hover:border-brand-600 hover:text-brand-600"
                 >
                   <Icon name="chevron-down" className="h-4 w-4 rotate-90" />
                 </button>
                 <button
                   aria-label="Next testimonial"
-                  className="flex h-9 w-9 items-center justify-center rounded-full border border-navy-950/15 text-navy-950/50 hover:border-brand-600 hover:text-brand-600"
+                  className="vr-btn flex h-9 w-9 items-center justify-center rounded-full border border-navy-950/15 text-navy-950/50 hover:border-brand-600 hover:text-brand-600"
                 >
                   <Icon name="chevron-down" className="h-4 w-4 -rotate-90" />
                 </button>
               </div>
             </div>
-          </div>
+          </Reveal>
 
-          <div className="flex flex-col justify-center rounded-2xl bg-navy-950 p-9">
+          <Reveal direction="right" className="flex flex-col justify-center rounded-2xl bg-navy-950 p-9">
             <h3 className="font-serif text-2xl font-bold text-white">
               Ready to Digitize Your Design?
             </h3>
@@ -128,11 +134,11 @@ export default function PortfolioPage() {
             </p>
             <Link
               href="/contact"
-              className="mt-6 flex w-fit items-center gap-2 rounded-md bg-white px-6 py-3 text-sm font-semibold text-navy-950 hover:bg-brand-50"
+              className="vr-btn vr-btn-primary mt-6 flex w-fit items-center gap-2 rounded-md bg-white px-6 py-3 text-sm font-semibold text-navy-950 hover:bg-brand-50"
             >
-              START YOUR ORDER <span aria-hidden>&rarr;</span>
+              START YOUR ORDER <span aria-hidden className="vr-arrow">&rarr;</span>
             </Link>
-          </div>
+          </Reveal>
         </div>
       </section>
     </>

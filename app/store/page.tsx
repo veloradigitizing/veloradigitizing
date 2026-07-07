@@ -5,7 +5,8 @@ import Hero from "../components/Hero";
 import PlaceholderBox from "../components/PlaceholderBox";
 import Icon, { IconName } from "../components/Icon";
 import { IconCircle, SectionTag } from "../components/Section";
-
+import { Reveal } from "../components/Reveal";
+import { stagger } from "../components/stagger";
 type Product = {
   title: string;
   price: string;
@@ -66,7 +67,7 @@ export default function StorePage() {
       />
 
       <section className="mx-auto max-w-7xl px-5 py-16 lg:px-10">
-        <div className="flex flex-wrap items-center gap-3">
+        <Reveal direction="up" className="flex flex-wrap items-center gap-3">
           <span className="flex items-center gap-2 rounded-md bg-navy-950 px-4 py-2.5 text-xs font-semibold uppercase tracking-wide text-white">
             <Icon name="sliders" className="h-4 w-4" /> Browse Categories
           </span>
@@ -74,7 +75,7 @@ export default function StorePage() {
             <button
               key={cat.value}
               onClick={() => setActive(cat.value)}
-              className={`flex items-center gap-2 rounded-md px-4 py-2.5 text-xs font-semibold uppercase tracking-wide transition-colors ${
+              className={`vr-btn flex items-center gap-2 rounded-md px-4 py-2.5 text-xs font-semibold uppercase tracking-wide transition-colors ${
                 active === cat.value
                   ? "bg-brand-50 text-brand-600"
                   : "text-navy-950/60 hover:text-brand-600"
@@ -84,9 +85,9 @@ export default function StorePage() {
               {cat.label}
             </button>
           ))}
-        </div>
+        </Reveal>
 
-        <div className="mt-10 flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
+        <Reveal direction="up" delay={80} className="mt-10 flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-600">
               Shop
@@ -100,7 +101,7 @@ export default function StorePage() {
             </p>
           </div>
           <div className="flex w-full gap-3 sm:w-auto">
-            <select className="rounded-md border border-navy-950/15 px-3 py-2.5 text-sm text-navy-950/70 outline-none focus:border-brand-600">
+            <select className="rounded-md border border-navy-950/15 px-3 py-2.5 text-sm text-navy-950/70 outline-none transition-colors focus:border-brand-600 focus:ring-2 focus:ring-brand-600/15">
               <option>Sort by: Popularity</option>
               <option>Price: Low to High</option>
               <option>Price: High to Low</option>
@@ -116,27 +117,31 @@ export default function StorePage() {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Search products..."
-                className="w-full rounded-md border border-navy-950/15 py-2.5 pl-9 pr-3 text-sm outline-none focus:border-brand-600 sm:w-56"
+                className="w-full rounded-md border border-navy-950/15 py-2.5 pl-9 pr-3 text-sm outline-none transition-colors focus:border-brand-600 focus:ring-2 focus:ring-brand-600/15 sm:w-56"
               />
             </div>
           </div>
-        </div>
+        </Reveal>
 
         <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-5">
-          {products.map((p) => (
-            <div
+          {products.map((p, i) => (
+            <Reveal
               key={p.title}
-              className="flex flex-col rounded-xl border border-navy-950/10 bg-white p-4"
+              direction="up"
+              delay={stagger(i % 10, 60)}
+              className="vr-lift group flex flex-col rounded-xl border border-navy-950/10 bg-white p-4"
             >
               <div className="relative">
-                <PlaceholderBox
-                  label={p.title}
-                  className="aspect-square w-full"
-                  rounded="rounded-lg"
-                />
+                <div className="vr-zoom rounded-lg">
+                  <PlaceholderBox
+                    label={p.title}
+                    className="aspect-square w-full"
+                    rounded="rounded-lg"
+                  />
+                </div>
                 <button
                   aria-label="Add to wishlist"
-                  className="absolute right-2 top-2 flex h-8 w-8 items-center justify-center rounded-full bg-white text-navy-950/50 shadow hover:text-brand-600"
+                  className="absolute right-2 top-2 flex h-8 w-8 items-center justify-center rounded-full bg-white text-navy-950/50 shadow transition-colors hover:text-brand-600"
                 >
                   <Icon name="heart" className="h-4 w-4" />
                 </button>
@@ -150,10 +155,10 @@ export default function StorePage() {
               <p className="mt-2 font-serif text-lg font-bold text-brand-600">
                 {p.price}
               </p>
-              <button className="mt-3 flex items-center justify-center gap-2 rounded-md bg-brand-600 py-2.5 text-xs font-bold uppercase tracking-wide text-white hover:bg-brand-700">
+              <button className="vr-btn vr-btn-primary mt-3 flex items-center justify-center gap-2 rounded-md bg-brand-600 py-2.5 text-xs font-bold uppercase tracking-wide text-white hover:bg-brand-700">
                 <Icon name="cart" className="h-4 w-4" /> Add to Cart
               </button>
-            </div>
+            </Reveal>
           ))}
           {products.length === 0 && (
             <p className="col-span-full py-10 text-center text-sm text-navy-950/50">
@@ -162,33 +167,42 @@ export default function StorePage() {
           )}
         </div>
 
-        <div className="mt-10 flex justify-center">
-          <button className="flex items-center gap-2 rounded-md border border-navy-950/15 px-7 py-3.5 text-sm font-semibold text-navy-950 hover:border-brand-600 hover:text-brand-600">
-            VIEW ALL PRODUCTS <span aria-hidden>&rarr;</span>
+        <Reveal direction="up" className="mt-10 flex justify-center">
+          <button className="vr-btn flex items-center gap-2 rounded-md border border-navy-950/15 px-7 py-3.5 text-sm font-semibold text-navy-950 hover:border-brand-600 hover:text-brand-600">
+            VIEW ALL PRODUCTS <span aria-hidden className="vr-arrow">&rarr;</span>
           </button>
-        </div>
+        </Reveal>
       </section>
 
       <section className="mx-auto max-w-7xl px-5 pb-20 lg:px-10">
-        <SectionTag
-          eyebrow="Why Shop With Vesper?"
-          title="Built for Quality. Designed for You."
-        />
+        <Reveal direction="up">
+          <SectionTag
+            eyebrow="Why Shop With Vesper?"
+            title="Built for Quality. Designed for You."
+          />
+        </Reveal>
         <div className="mt-14 grid grid-cols-2 gap-7 sm:grid-cols-3 lg:grid-cols-6">
-          {WHY_SHOP.map((item) => (
-            <div key={item.title} className="flex flex-col items-center gap-3 text-center">
-              <IconCircle icon={item.icon} size="md" />
+          {WHY_SHOP.map((item, i) => (
+            <Reveal
+              key={item.title}
+              direction="up"
+              delay={stagger(i, 80)}
+              className="group flex flex-col items-center gap-3 text-center transition-transform duration-300 hover:-translate-y-1"
+            >
+              <span className="vr-icon-pop">
+                <IconCircle icon={item.icon} size="md" />
+              </span>
               <p className="text-xs font-bold text-navy-950">{item.title}</p>
               <p className="text-[11px] leading-relaxed text-navy-950/50">
                 {item.description}
               </p>
-            </div>
+            </Reveal>
           ))}
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-5 pb-20 lg:px-10">
-        <div className="flex flex-col gap-8 rounded-2xl bg-navy-950 p-9 lg:flex-row lg:items-center lg:justify-between">
+        <Reveal direction="up" className="vr-lift group flex flex-col gap-8 rounded-2xl bg-navy-950 p-9 lg:flex-row lg:items-center lg:justify-between">
           <div>
             <h3 className="font-serif text-2xl font-bold text-white">
               Need a Custom Digitizing File?
@@ -199,9 +213,9 @@ export default function StorePage() {
             </p>
             <a
               href="/contact"
-              className="mt-5 inline-flex items-center gap-2 rounded-md bg-white px-6 py-3 text-sm font-semibold text-navy-950 hover:bg-brand-50"
+              className="vr-btn vr-btn-primary mt-5 inline-flex items-center gap-2 rounded-md bg-white px-6 py-3 text-sm font-semibold text-navy-950 hover:bg-brand-50"
             >
-              GET CUSTOM QUOTE <span aria-hidden>&rarr;</span>
+              GET CUSTOM QUOTE <span aria-hidden className="vr-arrow">&rarr;</span>
             </a>
           </div>
           <div className="grid grid-cols-2 gap-6 sm:grid-cols-3">
@@ -212,14 +226,14 @@ export default function StorePage() {
               { icon: "shield" as IconName, label: "100% Satisfaction Guaranteed" },
             ].map((f) => (
               <div key={f.label} className="flex flex-col items-center gap-2 text-center">
-                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-white">
+                <span className="vr-icon-pop flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-white transition-colors group-hover:bg-white/15">
                   <Icon name={f.icon} className="h-5 w-5" />
                 </span>
                 <p className="max-w-[6.5rem] text-[11px] text-white/60">{f.label}</p>
               </div>
             ))}
           </div>
-        </div>
+        </Reveal>
       </section>
     </>
   );

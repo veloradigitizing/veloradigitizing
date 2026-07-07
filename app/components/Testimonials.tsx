@@ -1,6 +1,7 @@
 import Icon from "./Icon";
 import { SectionTag, StarRating } from "./Section";
-
+import { Reveal } from "./Reveal";
+import { stagger } from "./stagger";
 const TESTIMONIALS = [
   {
     quote:
@@ -28,15 +29,23 @@ const TESTIMONIALS = [
 export default function Testimonials() {
   return (
     <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10">
-      <SectionTag eyebrow="TESTIMONIALS" title="What Our Clients Say" />
+      <Reveal direction="up">
+        <SectionTag eyebrow="TESTIMONIALS" title="What Our Clients Say" />
+      </Reveal>
       <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {TESTIMONIALS.map((t) => (
-          <div
+        {TESTIMONIALS.map((t, i) => (
+          <Reveal
             key={t.name}
-            className="flex flex-col rounded-2xl border border-navy-950/10 bg-white p-7 shadow-sm"
+            direction="up"
+            delay={stagger(i, 110)}
+            className="vr-lift group flex flex-col rounded-2xl border border-navy-950/10 bg-white p-7 shadow-sm"
           >
             <div className="flex items-center justify-between">
-              <Icon name="quote" className="h-7 w-7 text-brand-600/70" filled />
+              <Icon
+                name="quote"
+                className="vr-icon-pop h-7 w-7 text-brand-600/70"
+                filled
+              />
               <StarRating />
             </div>
             <p className="mt-4 text-sm leading-relaxed text-navy-950/70">
@@ -51,7 +60,7 @@ export default function Testimonials() {
                 <p className="text-xs text-navy-950/50">{t.location}</p>
               </div>
             </div>
-          </div>
+          </Reveal>
         ))}
       </div>
     </section>

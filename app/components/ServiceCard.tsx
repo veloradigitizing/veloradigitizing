@@ -62,8 +62,10 @@ export const SERVICES: Service[] = [
 
 export default function ServiceCard({ service }: { service: Service }) {
   return (
-    <div className="flex flex-col rounded-2xl border border-navy-950/10 bg-white p-7 transition-shadow hover:shadow-lg">
-      <IconCircle icon={service.icon} size="lg" />
+    <div className="vr-lift group flex flex-col rounded-2xl border border-navy-950/10 bg-white p-7">
+      <span className="vr-icon-pop inline-flex">
+        <IconCircle icon={service.icon} size="lg" />
+      </span>
       <h3 className="mt-5 text-[15px] font-bold uppercase tracking-wide text-navy-950">
         {service.title}
       </h3>
@@ -77,9 +79,9 @@ export default function ServiceCard({ service }: { service: Service }) {
       </ul>
       <Link
         href="/services"
-        className="mt-6 inline-flex items-center gap-1.5 text-sm font-bold text-brand-600 hover:text-brand-700"
+        className="vr-btn mt-6 inline-flex w-fit items-center gap-1.5 text-sm font-bold text-brand-600 hover:text-brand-700"
       >
-        LEARN MORE <span aria-hidden>&rarr;</span>
+        LEARN MORE <span aria-hidden className="vr-arrow">&rarr;</span>
       </Link>
     </div>
   );

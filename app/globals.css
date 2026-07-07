@@ -34,3 +34,340 @@ body {
   color: var(--foreground);
   font-family: var(--font-inter), Arial, Helvetica, sans-serif;
 }
+
+/* ===================================================================
+   ANIMATION SYSTEM — tasteful, performant, layout-safe
+   =================================================================== */
+
+/* Respect reduced-motion users */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---------- Keyframes ---------- */
+@keyframes vesper-fade-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 24px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes vesper-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes vesper-fade-down {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -16px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes vesper-scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes vesper-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes vesper-float-soft {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes vesper-pulse-ring {
+  0% {
+    transform: scale(0.85);
+    opacity: 0.7;
+  }
+  80%,
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+@keyframes vesper-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes vesper-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes vesper-gradient-pan {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* ---------- Scroll-reveal base classes ----------
+   Elements start hidden; .is-visible is toggled by IntersectionObserver. */
+.vr-reveal {
+  opacity: 0;
+  will-change: opacity, transform;
+}
+.vr-reveal.vr-up {
+  transform: translate3d(0, 28px, 0);
+}
+.vr-reveal.vr-down {
+  transform: translate3d(0, -16px, 0);
+}
+.vr-reveal.vr-left {
+  transform: translate3d(-28px, 0, 0);
+}
+.vr-reveal.vr-right {
+  transform: translate3d(28px, 0, 0);
+}
+.vr-reveal.vr-scale {
+  transform: scale(0.94);
+}
+.vr-reveal.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ---------- Utility animation classes ---------- */
+.vr-hero-up {
+  opacity: 0;
+  animation: vesper-fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.vr-hero-down {
+  opacity: 0;
+  animation: vesper-fade-down 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.vr-hero-fade {
+  opacity: 0;
+  animation: vesper-fade-in 0.9s ease forwards;
+}
+.vr-hero-scale {
+  opacity: 0;
+  animation: vesper-scale-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.vr-float {
+  animation: vesper-float 6s ease-in-out infinite;
+}
+.vr-float-soft {
+  animation: vesper-float-soft 5s ease-in-out infinite;
+}
+.vr-pulse-ring {
+  animation: vesper-pulse-ring 2.4s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
+
+/* ---------- Decorative: animated gradient text + shimmer ---------- */
+.vr-text-gradient {
+  background: linear-gradient(
+    90deg,
+    var(--color-brand-600),
+    var(--color-brand-500),
+    var(--color-navy-700),
+    var(--color-brand-600)
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: vesper-gradient-pan 6s ease infinite;
+}
+
+.vr-shimmer-line {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(26, 63, 196, 0.55),
+    transparent
+  );
+  background-size: 200% 100%;
+  animation: vesper-shimmer 3s linear infinite;
+}
+
+/* ---------- Brand marquee ---------- */
+.vr-marquee-track {
+  animation: vesper-marquee 28s linear infinite;
+}
+.vr-marquee:hover .vr-marquee-track {
+  animation-play-state: paused;
+}
+
+/* ---------- Card hover lift (subtle, no layout break) ---------- */
+.vr-lift {
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+.vr-lift:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 18px 40px -18px rgba(6, 14, 40, 0.22),
+    0 6px 14px -8px rgba(6, 14, 40, 0.12);
+}
+
+/* ---------- Icon pop on card hover ---------- */
+.vr-icon-pop {
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.vr-lift:hover .vr-icon-pop,
+.group:hover .vr-icon-pop {
+  transform: scale(1.12) rotate(-3deg);
+}
+
+/* ---------- Underline grow (nav links) ---------- */
+.vr-underline {
+  position: relative;
+}
+.vr-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 2px;
+  width: 100%;
+  background: var(--color-brand-600);
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.vr-underline:hover::after,
+.vr-underline.is-active::after {
+  transform: scaleX(1);
+  transform-origin: left center;
+}
+
+/* ---------- Button micro-interaction ---------- */
+.vr-btn {
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+.vr-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.18) 50%,
+    transparent 70%
+  );
+  transform: translateX(-120%);
+  transition: transform 0.6s ease;
+  pointer-events: none;
+}
+.vr-btn:hover::before {
+  transform: translateX(120%);
+}
+.vr-btn:active {
+  transform: scale(0.97);
+}
+.vr-btn-primary:hover {
+  box-shadow: 0 12px 28px -10px rgba(26, 63, 196, 0.55);
+}
+
+/* ---------- Arrow nudge ---------- */
+.vr-arrow {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.vr-btn:hover .vr-arrow,
+.group:hover .vr-arrow,
+a:hover .vr-arrow,
+button:hover .vr-arrow {
+  transform: translateX(4px);
+}
+
+/* ---------- Image zoom container ---------- */
+.vr-zoom {
+  overflow: hidden;
+}
+.vr-zoom > * {
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.vr-zoom:hover > * {
+  transform: scale(1.05);
+}
+
+/* ---------- Step connector draw ---------- */
+.vr-step-line {
+  position: relative;
+}
+.vr-step-line::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(26, 63, 196, 0.35),
+    transparent
+  );
+}
+
+/* ---------- Focus ring for accessibility ---------- */
+:focus-visible {
+  outline: 2px solid var(--color-brand-600);
+  outline-offset: 2px;
+  border-radius: 4px;
+}

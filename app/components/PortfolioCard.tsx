@@ -31,9 +31,9 @@ export const PORTFOLIO_CATEGORIES = [
 
 export default function PortfolioCard({ item }: { item: PortfolioItem }) {
   return (
-    <div className="overflow-hidden rounded-xl border border-navy-950/10 bg-white transition-shadow hover:shadow-lg">
+    <div className="vr-lift group overflow-hidden rounded-xl border border-navy-950/10 bg-white">
       <div className="grid grid-cols-2">
-        <div className="relative">
+        <div className="relative vr-zoom">
           <PlaceholderBox
             label={item.title}
             className="aspect-square w-full"
@@ -43,7 +43,7 @@ export default function PortfolioCard({ item }: { item: PortfolioItem }) {
             Before
           </span>
         </div>
-        <div className="relative">
+        <div className="relative vr-zoom">
           <PlaceholderBox
             label={item.title}
             className="aspect-square w-full"

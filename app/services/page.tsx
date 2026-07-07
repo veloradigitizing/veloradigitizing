@@ -5,7 +5,8 @@ import ServiceCard, { SERVICES } from "../components/ServiceCard";
 import WhyChooseUs from "../components/WhyChooseUs";
 import ProcessSteps from "../components/ProcessSteps";
 import CTABanner from "../components/CTABanner";
-
+import { Reveal } from "../components/Reveal";
+import { stagger } from "../components/stagger";
 export const metadata: Metadata = {
   title: "Services | Vesper Digitizing",
   description:
@@ -37,17 +38,23 @@ export default function ServicesPage() {
       />
 
       <section className="mx-auto max-w-7xl px-5 py-10 lg:px-10">
-        <Breadcrumb current="Services" />
+        <Reveal direction="up">
+          <Breadcrumb current="Services" />
+        </Reveal>
         <div className="mt-8">
-          <SectionTag
-            eyebrow="What We Offer"
-            title="Our Digitizing Services"
-            subtitle="We provide a wide range of embroidery digitizing services to meet all your needs."
-          />
+          <Reveal direction="up" delay={80}>
+            <SectionTag
+              eyebrow="What We Offer"
+              title="Our Digitizing Services"
+              subtitle="We provide a wide range of embroidery digitizing services to meet all your needs."
+            />
+          </Reveal>
         </div>
         <div className="mt-14 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-4">
-          {SERVICES.map((s) => (
-            <ServiceCard key={s.slug} service={s} />
+          {SERVICES.map((s, i) => (
+            <Reveal key={s.slug} direction="up" delay={stagger(i, 80)}>
+              <ServiceCard service={s} />
+            </Reveal>
           ))}
         </div>
       </section>

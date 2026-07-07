@@ -3,7 +3,8 @@
 import { useState } from "react";
 import Hero from "../components/Hero";
 import Icon, { IconName } from "../components/Icon";
-
+import { Reveal } from "../components/Reveal";
+import { stagger } from "../components/stagger";
 const CONTACT_INFO: { icon: IconName; title: string; lines: string[] }[] = [
   {
     icon: "mail",
@@ -63,15 +64,19 @@ export default function ContactPage() {
 
       <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-[380px_1fr]">
-          <div className="rounded-2xl border border-navy-950/10 bg-white p-8">
+          <Reveal direction="left" className="rounded-2xl border border-navy-950/10 bg-white p-8">
             <h3 className="font-serif text-2xl font-bold text-navy-950">
               Get In Touch
             </h3>
             <div className="mt-3 h-[3px] w-12 rounded-full bg-brand-600" />
             <div className="mt-8 flex flex-col gap-7">
-              {CONTACT_INFO.map((info) => (
-                <div key={info.title} className="flex items-start gap-4">
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-brand-600/25 text-brand-600">
+              {CONTACT_INFO.map((info, i) => (
+                <div
+                  key={info.title}
+                  className="vr-lift group flex items-start gap-4 rounded-lg p-1"
+                  style={{ transitionDelay: `${i * 30}ms` }}
+                >
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-brand-600/25 text-brand-600 transition-colors duration-300 group-hover:bg-brand-50">
                     <Icon name={info.icon} className="h-5 w-5" />
                   </span>
                   <div>
@@ -95,16 +100,16 @@ export default function ContactPage() {
                 {(["mail", "phone", "globe"] as IconName[]).map((icon) => (
                   <span
                     key={icon}
-                    className="flex h-9 w-9 items-center justify-center rounded-full border border-navy-950/15 text-navy-950/50"
+                    className="vr-lift flex h-9 w-9 items-center justify-center rounded-full border border-navy-950/15 text-navy-950/50 hover:border-brand-600 hover:text-brand-600"
                   >
                     <Icon name={icon} className="h-4 w-4" />
                   </span>
                 ))}
               </div>
             </div>
-          </div>
+          </Reveal>
 
-          <div className="rounded-2xl border border-navy-950/10 bg-white p-8">
+          <Reveal direction="right" className="rounded-2xl border border-navy-950/10 bg-white p-8">
             <h3 className="font-serif text-2xl font-bold text-navy-950">
               Send Us a Message
             </h3>
@@ -120,7 +125,7 @@ export default function ContactPage() {
                 <input
                   type="text"
                   placeholder="Enter your name"
-                  className="rounded-md border border-navy-950/15 px-4 py-2.5 text-sm outline-none focus:border-brand-600"
+                  className="rounded-md border border-navy-950/15 px-4 py-2.5 text-sm outline-none transition-colors focus:border-brand-600 focus:ring-2 focus:ring-brand-600/15"
                 />
               </label>
               <label className="flex flex-col gap-1.5 text-sm font-medium text-navy-950">
@@ -128,7 +133,7 @@ export default function ContactPage() {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="rounded-md border border-navy-950/15 px-4 py-2.5 text-sm outline-none focus:border-brand-600"
+                  className="rounded-md border border-navy-950/15 px-4 py-2.5 text-sm outline-none transition-colors focus:border-brand-600 focus:ring-2 focus:ring-brand-600/15"
                 />
               </label>
               <label className="flex flex-col gap-1.5 text-sm font-medium text-navy-950 sm:col-span-2">
@@ -136,12 +141,12 @@ export default function ContactPage() {
                 <input
                   type="text"
                   placeholder="Enter subject"
-                  className="rounded-md border border-navy-950/15 px-4 py-2.5 text-sm outline-none focus:border-brand-600"
+                  className="rounded-md border border-navy-950/15 px-4 py-2.5 text-sm outline-none transition-colors focus:border-brand-600 focus:ring-2 focus:ring-brand-600/15"
                 />
               </label>
               <label className="flex flex-col gap-1.5 text-sm font-medium text-navy-950 sm:col-span-2">
                 Service Needed
-                <select className="rounded-md border border-navy-950/15 px-4 py-2.5 text-sm text-navy-950/70 outline-none focus:border-brand-600">
+                <select className="rounded-md border border-navy-950/15 px-4 py-2.5 text-sm text-navy-950/70 outline-none transition-colors focus:border-brand-600 focus:ring-2 focus:ring-brand-600/15">
                   <option>Select a service</option>
                   <option>Embroidery Digitizing</option>
                   <option>Vector Conversion</option>
@@ -155,7 +160,7 @@ export default function ContactPage() {
                 <textarea
                   rows={4}
                   placeholder="Tell us about your project..."
-                  className="rounded-md border border-navy-950/15 px-4 py-2.5 text-sm outline-none focus:border-brand-600"
+                  className="rounded-md border border-navy-950/15 px-4 py-2.5 text-sm outline-none transition-colors focus:border-brand-600 focus:ring-2 focus:ring-brand-600/15"
                 />
               </label>
 
@@ -163,8 +168,8 @@ export default function ContactPage() {
                 <p className="mb-2 text-sm font-medium text-navy-950">
                   Upload Design (Optional)
                 </p>
-                <div className="flex flex-col items-center gap-2 rounded-lg border border-dashed border-navy-950/20 bg-navy-950/[0.02] px-6 py-8 text-center">
-                  <Icon name="paperclip" className="h-6 w-6 text-navy-950/30" />
+                <div className="vr-lift group flex flex-col items-center gap-2 rounded-lg border border-dashed border-navy-950/20 bg-navy-950/[0.02] px-6 py-8 text-center transition-colors group-hover:border-brand-600/40 group-hover:bg-brand-50/30">
+                  <Icon name="paperclip" className="h-6 w-6 text-navy-950/30 transition-colors group-hover:text-brand-600" />
                   <p className="text-sm text-navy-950/50">
                     Drag &amp; drop your file here or{" "}
                     <span className="font-semibold text-brand-600">
@@ -180,19 +185,19 @@ export default function ContactPage() {
 
               <button
                 type="submit"
-                className="flex items-center justify-center gap-2 rounded-md bg-brand-600 px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-brand-700 sm:col-span-2"
+                className="vr-btn vr-btn-primary flex items-center justify-center gap-2 rounded-md bg-brand-600 px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-brand-700 sm:col-span-2"
               >
                 SEND MESSAGE <Icon name="send" className="h-4 w-4" />
               </button>
             </form>
-          </div>
+          </Reveal>
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-5 pb-20 lg:px-10">
-        <div className="flex flex-col items-center justify-between gap-5 rounded-2xl bg-navy-950 px-8 py-7 text-center sm:flex-row sm:text-left">
+      <Reveal as="section" direction="up" className="mx-auto max-w-7xl px-5 pb-20 lg:px-10">
+        <div className="vr-lift group flex flex-col items-center justify-between gap-5 rounded-2xl bg-navy-950 px-8 py-7 text-center sm:flex-row sm:text-left">
           <div className="flex items-center gap-4">
-            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-white/20 text-white">
+            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-white/20 text-white transition-colors group-hover:bg-white/10">
               <Icon name="headset" className="h-5 w-5" />
             </span>
             <div>
@@ -206,23 +211,27 @@ export default function ContactPage() {
             href="https://wa.me/12134567880"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 rounded-md border border-white/25 px-6 py-3 text-sm font-semibold text-white hover:bg-white/10"
+            className="vr-btn flex items-center gap-2 rounded-md border border-white/25 px-6 py-3 text-sm font-semibold text-white hover:bg-white/10"
           >
             CHAT ON WHATSAPP
           </a>
         </div>
-      </section>
+      </Reveal>
 
       <section className="mx-auto max-w-5xl px-5 pb-20 lg:px-10">
-        <h3 className="text-center font-serif text-2xl font-bold text-navy-950 sm:text-3xl">
-          Frequently Asked Questions
-        </h3>
-        <div className="mx-auto mt-4 h-[3px] w-16 rounded-full bg-brand-600" />
+        <Reveal direction="up">
+          <h3 className="text-center font-serif text-2xl font-bold text-navy-950 sm:text-3xl">
+            Frequently Asked Questions
+          </h3>
+          <div className="mx-auto mt-4 h-[3px] w-16 rounded-full bg-brand-600" />
+        </Reveal>
         <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
           {FAQS.map((faq, i) => (
-            <div
+            <Reveal
               key={faq.q}
-              className="rounded-lg border border-navy-950/10 bg-white"
+              direction="up"
+              delay={stagger(i, 90)}
+              className="overflow-hidden rounded-lg border border-navy-950/10 bg-white transition-colors hover:border-brand-600/30"
             >
               <button
                 onClick={() => setOpenFaq(openFaq === i ? null : i)}
@@ -231,17 +240,22 @@ export default function ContactPage() {
                 {faq.q}
                 <Icon
                   name="chevron-down"
-                  className={`h-4 w-4 shrink-0 text-brand-600 transition-transform ${
+                  className={`h-4 w-4 shrink-0 text-brand-600 transition-transform duration-300 ${
                     openFaq === i ? "rotate-180" : ""
                   }`}
                 />
               </button>
-              {openFaq === i && (
-                <p className="px-5 pb-4 text-sm leading-relaxed text-navy-950/60">
-                  {faq.a}
+              <div
+                className="grid transition-all duration-300 ease-out"
+                style={{
+                  gridTemplateRows: openFaq === i ? "1fr" : "0fr",
+                }}
+              >
+                <p className="overflow-hidden px-5 text-sm leading-relaxed text-navy-950/60">
+                  <span className="block pb-4">{faq.a}</span>
                 </p>
-              )}
-            </div>
+              </div>
+            </Reveal>
           ))}
         </div>
       </section>

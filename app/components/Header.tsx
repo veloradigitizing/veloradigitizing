@@ -29,9 +29,9 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled || open
-          ? "border-b border-navy-950/10 bg-white/95 backdrop-blur"
+          ? "border-b border-navy-950/10 bg-white/90 backdrop-blur-md shadow-[0_6px_24px_-12px_rgba(6,14,40,0.18)]"
           : "border-b border-transparent bg-transparent"
       }`}
     >
@@ -48,9 +48,9 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-[13px] font-semibold uppercase tracking-wide transition-colors ${
+                className={`vr-underline text-[13px] font-semibold uppercase tracking-wide transition-colors ${
                   active
-                    ? "text-brand-600"
+                    ? "text-brand-600 is-active"
                     : "text-navy-950/70 hover:text-brand-600"
                 }`}
               >
@@ -64,7 +64,7 @@ export default function Header() {
           {pathname.startsWith("/store") && (
             <Link
               href="/store"
-              className="relative flex h-9 w-9 items-center justify-center rounded-full border border-navy-950/15 text-navy-950/70"
+              className="relative flex h-9 w-9 items-center justify-center rounded-full border border-navy-950/15 text-navy-950/70 transition-colors hover:border-brand-600 hover:text-brand-600"
               aria-label="Cart"
             >
               <Icon name="cart" className="h-[18px] w-[18px]" />
@@ -75,10 +75,10 @@ export default function Header() {
           )}
           <Link
             href="/contact"
-            className="flex items-center gap-2 rounded-md bg-brand-600 px-5 py-2.5 text-[13px] font-semibold text-white transition-colors hover:bg-brand-700"
+            className="vr-btn vr-btn-primary flex items-center gap-2 rounded-md bg-brand-600 px-5 py-2.5 text-[13px] font-semibold text-white transition-colors hover:bg-brand-700"
           >
             GET FREE QUOTE
-            <span aria-hidden>&rarr;</span>
+            <span aria-hidden className="vr-arrow">&rarr;</span>
           </Link>
         </div>
 
@@ -115,10 +115,10 @@ export default function Header() {
             <Link
               href="/contact"
               onClick={() => setOpen(false)}
-              className="mt-2 flex items-center justify-center gap-2 rounded-md bg-brand-600 px-5 py-3 text-sm font-semibold text-white"
+              className="vr-btn vr-btn-primary mt-2 flex items-center justify-center gap-2 rounded-md bg-brand-600 px-5 py-3 text-sm font-semibold text-white"
             >
               GET FREE QUOTE
-              <span aria-hidden>&rarr;</span>
+              <span aria-hidden className="vr-arrow">&rarr;</span>
             </Link>
           </nav>
         </div>

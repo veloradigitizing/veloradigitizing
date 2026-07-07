@@ -4,7 +4,8 @@ import PlaceholderBox from "../components/PlaceholderBox";
 import { IconCircle, SectionTag, StatsBar } from "../components/Section";
 import Icon, { IconName } from "../components/Icon";
 import CTABanner from "../components/CTABanner";
-
+import { Reveal } from "../components/Reveal";
+import { stagger } from "../components/stagger";
 export const metadata: Metadata = {
   title: "About Us | Vesper Digitizing",
   description:
@@ -83,13 +84,15 @@ export default function AboutPage() {
 
       <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-          <PlaceholderBox
-            label="Embroidery Machine Stitching the Vesper Logo"
-            className="aspect-[4/3] w-full"
-            rounded="rounded-2xl"
-            iconSize={36}
-          />
-          <div>
+          <Reveal direction="left">
+            <PlaceholderBox
+              label="Embroidery Machine Stitching the Vesper Logo"
+              className="aspect-[4/3] w-full"
+              rounded="rounded-2xl"
+              iconSize={36}
+            />
+          </Reveal>
+          <Reveal direction="right">
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-600">
               Our Story
             </p>
@@ -118,48 +121,58 @@ export default function AboutPage() {
               Vesper Digitizing
             </p>
             <p className="text-xs text-navy-950/50">Founder, Vesper Digitizing</p>
-          </div>
+          </Reveal>
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-5 pb-20 lg:px-10">
-        <SectionTag
-          eyebrow="Why Choose Us"
-          title="Why Thousands Choose Vesper Digitizing"
-        />
+        <Reveal direction="up">
+          <SectionTag
+            eyebrow="Why Choose Us"
+            title="Why Thousands Choose Vesper Digitizing"
+          />
+        </Reveal>
         <div className="mt-14 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3">
-          {WHY_ITEMS.map((item) => (
-            <div
+          {WHY_ITEMS.map((item, i) => (
+            <Reveal
               key={item.title}
-              className="flex flex-col items-center gap-3 rounded-2xl border border-navy-950/10 bg-white p-7 text-center"
+              direction="up"
+              delay={stagger(i, 90)}
+              className="vr-lift group flex flex-col items-center gap-3 rounded-2xl border border-navy-950/10 bg-white p-7 text-center"
             >
-              <span className="flex h-14 w-14 items-center justify-center rounded-full border border-brand-600/25 bg-brand-50 text-brand-600">
-                <Icon name={item.icon} className="h-6 w-6" />
+              <span className="vr-icon-pop inline-flex">
+                <span className="flex h-14 w-14 items-center justify-center rounded-full border border-brand-600/25 bg-brand-50 text-brand-600">
+                  <Icon name={item.icon} className="h-6 w-6" />
+                </span>
               </span>
               <p className="text-sm font-bold text-navy-950">{item.title}</p>
               <p className="text-xs leading-relaxed text-navy-950/55">
                 {item.description}
               </p>
-            </div>
+            </Reveal>
           ))}
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-5 pb-20 lg:px-10">
-        <SectionTag eyebrow="Our Expertise" title="We Specialize In" />
+        <Reveal direction="up">
+          <SectionTag eyebrow="Our Expertise" title="We Specialize In" />
+        </Reveal>
         <div className="mt-14 grid grid-cols-2 gap-y-8 sm:grid-cols-4 lg:grid-cols-7">
-          {EXPERTISE.map((item) => (
-            <div
+          {EXPERTISE.map((item, i) => (
+            <Reveal
               key={item.label}
-              className="flex flex-col items-center gap-3 text-center"
+              direction="up"
+              delay={stagger(i, 70)}
+              className="group flex flex-col items-center gap-3 text-center transition-transform duration-300 hover:-translate-y-1"
             >
-              <span className="flex h-14 w-14 items-center justify-center rounded-full border border-brand-600/25 text-brand-600">
+              <span className="flex h-14 w-14 items-center justify-center rounded-full border border-brand-600/25 text-brand-600 transition-colors duration-300 group-hover:bg-brand-50">
                 <Icon name={item.icon} className="h-6 w-6" />
               </span>
               <p className="max-w-[7rem] text-xs font-medium text-navy-950/70">
                 {item.label}
               </p>
-            </div>
+            </Reveal>
           ))}
         </div>
       </section>
@@ -169,14 +182,21 @@ export default function AboutPage() {
       <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1fr_320px]">
           <div>
-            <SectionTag
-              eyebrow="Meet Our Team"
-              title="The Experts Behind Every Stitch"
-              center={false}
-            />
+            <Reveal direction="up">
+              <SectionTag
+                eyebrow="Meet Our Team"
+                title="The Experts Behind Every Stitch"
+                center={false}
+              />
+            </Reveal>
             <div className="mt-10 grid grid-cols-2 gap-6 sm:grid-cols-4">
-              {TEAM.map((member) => (
-                <div key={member.name} className="text-center">
+              {TEAM.map((member, i) => (
+                <Reveal
+                  key={member.name}
+                  direction="up"
+                  delay={stagger(i, 90)}
+                  className="vr-lift group text-center"
+                >
                   <PlaceholderBox
                     label={member.name}
                     className="aspect-square w-full"
@@ -186,13 +206,15 @@ export default function AboutPage() {
                     {member.name}
                   </p>
                   <p className="text-xs text-navy-950/50">{member.role}</p>
-                </div>
+                </Reveal>
               ))}
             </div>
           </div>
 
-          <div className="flex flex-col justify-center rounded-2xl bg-navy-950 p-8 text-center">
-            <IconCircle icon="award" size="lg" dark />
+          <Reveal direction="left" className="flex flex-col justify-center rounded-2xl bg-navy-950 p-8 text-center">
+            <span className="inline-flex justify-center">
+              <IconCircle icon="award" size="lg" dark />
+            </span>
             <h3 className="mt-5 font-serif text-xl font-bold text-white">
               Our Goal
             </h3>
@@ -204,7 +226,7 @@ export default function AboutPage() {
             <p className="mt-5 font-script text-xl text-white/80">
               Vesper Digitizing
             </p>
-          </div>
+          </Reveal>
         </div>
       </section>
 
