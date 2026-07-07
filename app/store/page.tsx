@@ -1,29 +1,31 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Hero from "../components/Hero";
-import PlaceholderBox from "../components/PlaceholderBox";
 import Icon, { IconName } from "../components/Icon";
 import { IconCircle, SectionTag } from "../components/Section";
 import { Reveal } from "../components/Reveal";
 import { stagger } from "../components/stagger";
+
 type Product = {
   title: string;
   price: string;
   category: string;
+  image: string;
 };
 
 const PRODUCTS: Product[] = [
-  { title: "Tiger Head Embroidery Digitizing File", price: "$8.99", category: "digitizing-files" },
-  { title: "LA Cap Logo Embroidery Digitizing File", price: "$6.99", category: "digitizing-files" },
-  { title: "Skull Patch Embroidery Digitizing File", price: "$9.99", category: "digitizing-files" },
-  { title: "Nike Logo Embroidery Digitizing File", price: "$6.99", category: "digitizing-files" },
-  { title: "Bear Embroidery Digitizing File", price: "$7.99", category: "digitizing-files" },
-  { title: "3D Puff Embroidery Digitizing File", price: "$12.99", category: "add-ons" },
-  { title: "Applique Letter Embroidery Digitizing File", price: "$7.99", category: "digitizing-files" },
-  { title: "NY Logo Embroidery Digitizing File", price: "$6.99", category: "digitizing-files" },
-  { title: "Bull Head Embroidery Digitizing File", price: "$8.99", category: "digitizing-files" },
-  { title: "College Logo Embroidery Digitizing File", price: "$6.99", category: "digitizing-files" },
+  { title: "Tiger Head Embroidery Digitizing File",      price: "$8.99",  category: "digitizing-files", image: "/images/store/prod-01.jpg" },
+  { title: "LA Cap Logo Embroidery Digitizing File",     price: "$6.99",  category: "digitizing-files", image: "/images/store/prod-02.jpg" },
+  { title: "Skull Patch Embroidery Digitizing File",     price: "$9.99",  category: "digitizing-files", image: "/images/store/prod-03.jpg" },
+  { title: "Nike Logo Embroidery Digitizing File",       price: "$6.99",  category: "digitizing-files", image: "/images/store/prod-04.jpg" },
+  { title: "Bear Embroidery Digitizing File",            price: "$7.99",  category: "digitizing-files", image: "/images/store/prod-05.jpg" },
+  { title: "3D Puff Embroidery Digitizing File",         price: "$12.99", category: "add-ons",          image: "/images/store/prod-06.jpg" },
+  { title: "Applique Letter Embroidery Digitizing File", price: "$7.99",  category: "digitizing-files", image: "/images/store/prod-07.jpg" },
+  { title: "NY Logo Embroidery Digitizing File",         price: "$6.99",  category: "digitizing-files", image: "/images/store/prod-08.jpg" },
+  { title: "Bull Head Embroidery Digitizing File",       price: "$8.99",  category: "digitizing-files", image: "/images/store/prod-09.jpg" },
+  { title: "College Logo Embroidery Digitizing File",    price: "$6.99",  category: "digitizing-files", image: "/images/store/prod-10.jpg" },
 ];
 
 const CATEGORIES: { label: string; value: string; icon: IconName }[] = [
@@ -132,11 +134,13 @@ export default function StorePage() {
               className="vr-lift group flex flex-col rounded-xl border border-navy-950/10 bg-white p-4"
             >
               <div className="relative">
-                <div className="vr-zoom rounded-lg">
-                  <PlaceholderBox
-                    label={p.title}
-                    className="aspect-square w-full"
-                    rounded="rounded-lg"
+                <div className="vr-zoom relative aspect-square w-full overflow-hidden rounded-lg bg-navy-950/[0.03]">
+                  <Image
+                    src={p.image}
+                    alt={p.title}
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 20vw"
+                    className="object-cover"
                   />
                 </div>
                 <button

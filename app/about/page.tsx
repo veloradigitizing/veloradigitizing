@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Hero from "../components/Hero";
-import PlaceholderBox from "../components/PlaceholderBox";
 import { IconCircle, SectionTag, StatsBar } from "../components/Section";
 import Icon, { IconName } from "../components/Icon";
 import CTABanner from "../components/CTABanner";
 import { Reveal } from "../components/Reveal";
 import { stagger } from "../components/stagger";
+
 export const metadata: Metadata = {
   title: "About Us | Vesper Digitizing",
   description:
@@ -64,10 +65,10 @@ const STATS: { icon: "award" | "smile" | "clock" | "globe" | "shield"; value: st
 ];
 
 const TEAM = [
-  { name: "Zain Ul Abideen", role: "Founder & CEO" },
-  { name: "Hassan Raza", role: "Lead Digitizer" },
-  { name: "Usman Ali", role: "Senior Digitizer" },
-  { name: "Talha Mehmood", role: "Quality Analyst" },
+  { name: "Zain Ul Abideen", role: "Founder & CEO",        image: "/images/team/team-01.jpg", initial: "ZA" },
+  { name: "Hassan Raza",     role: "Lead Digitizer",       image: "/images/team/team-02.jpg", initial: "HR" },
+  { name: "Usman Ali",       role: "Senior Digitizer",     image: "/images/team/team-03.jpg", initial: "UA" },
+  { name: "Talha Mehmood",   role: "Quality Analyst",      image: "/images/team/team-04.jpeg",initial: "TM" },
 ];
 
 export default function AboutPage() {
@@ -84,12 +85,14 @@ export default function AboutPage() {
 
       <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-          <Reveal direction="left">
-            <PlaceholderBox
-              label="Embroidery Machine Stitching the Vesper Logo"
-              className="aspect-[4/3] w-full"
-              rounded="rounded-2xl"
-              iconSize={36}
+          <Reveal direction="left" className="vr-zoom overflow-hidden rounded-2xl border border-navy-950/10">
+            <Image
+              src="/images/about/machine.jpg"
+              alt="Industrial embroidery machine stitching the Vesper logo"
+              width={1200}
+              height={900}
+              className="h-full w-full object-cover"
+              priority
             />
           </Reveal>
           <Reveal direction="right">
@@ -197,11 +200,15 @@ export default function AboutPage() {
                   delay={stagger(i, 90)}
                   className="vr-lift group text-center"
                 >
-                  <PlaceholderBox
-                    label={member.name}
-                    className="aspect-square w-full"
-                    rounded="rounded-xl"
-                  />
+                  <div className="vr-zoom relative aspect-square w-full overflow-hidden rounded-xl border border-navy-950/10 bg-navy-950/[0.03]">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      fill
+                      sizes="(max-width: 640px) 50vw, 25vw"
+                      className="object-cover"
+                    />
+                  </div>
                   <p className="mt-3 text-sm font-semibold text-navy-950">
                     {member.name}
                   </p>
