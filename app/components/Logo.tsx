@@ -5,9 +5,7 @@ export default function Logo({ dark = false }: { dark?: boolean }) {
     <Link href="/" className="flex items-center gap-2.5 shrink-0">
       <span
         className={`flex h-10 w-10 items-center justify-center rounded-full border-2 font-serif text-lg italic ${
-          dark
-            ? "border-white text-white"
-            : "border-brand-600 text-brand-600"
+          dark ? "border-white text-white" : "border-brand-600 text-brand-600"
         }`}
       >
         V
@@ -18,7 +16,7 @@ export default function Logo({ dark = false }: { dark?: boolean }) {
             dark ? "text-white" : "text-navy-950"
           }`}
         >
-          VESPER
+          VELORA
         </span>
         <span
           className={`text-[9px] font-medium tracking-[0.3em] ${

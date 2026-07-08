@@ -9,7 +9,7 @@ const CONTACT_INFO: { icon: IconName; title: string; lines: string[] }[] = [
   {
     icon: "mail",
     title: "Email Us",
-    lines: ["info@vesperdigitizing.com", "We reply within minutes"],
+    lines: ["info@veloradigitizing.com", "We reply within minutes"],
   },
   {
     icon: "phone",
@@ -19,7 +19,7 @@ const CONTACT_INFO: { icon: IconName; title: string; lines: string[] }[] = [
   {
     icon: "globe",
     title: "Website",
-    lines: ["www.vesperdigitizing.com", "Visit our website"],
+    lines: ["www.veloradigitizing.com", "Visit our website"],
   },
   {
     icon: "pin",
@@ -64,7 +64,10 @@ export default function ContactPage() {
 
       <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-[380px_1fr]">
-          <Reveal direction="left" className="rounded-2xl border border-navy-950/10 bg-white p-8">
+          <Reveal
+            direction="left"
+            className="rounded-2xl border border-navy-950/10 bg-white p-8"
+          >
             <h3 className="font-serif text-2xl font-bold text-navy-950">
               Get In Touch
             </h3>
@@ -109,7 +112,10 @@ export default function ContactPage() {
             </div>
           </Reveal>
 
-          <Reveal direction="right" className="rounded-2xl border border-navy-950/10 bg-white p-8">
+          <Reveal
+            direction="right"
+            className="rounded-2xl border border-navy-950/10 bg-white p-8"
+          >
             <h3 className="font-serif text-2xl font-bold text-navy-950">
               Send Us a Message
             </h3>
@@ -169,12 +175,13 @@ export default function ContactPage() {
                   Upload Design (Optional)
                 </p>
                 <div className="vr-lift group flex flex-col items-center gap-2 rounded-lg border border-dashed border-navy-950/20 bg-navy-950/[0.02] px-6 py-8 text-center transition-colors group-hover:border-brand-600/40 group-hover:bg-brand-50/30">
-                  <Icon name="paperclip" className="h-6 w-6 text-navy-950/30 transition-colors group-hover:text-brand-600" />
+                  <Icon
+                    name="paperclip"
+                    className="h-6 w-6 text-navy-950/30 transition-colors group-hover:text-brand-600"
+                  />
                   <p className="text-sm text-navy-950/50">
                     Drag &amp; drop your file here or{" "}
-                    <span className="font-semibold text-brand-600">
-                      browse
-                    </span>
+                    <span className="font-semibold text-brand-600">browse</span>
                   </p>
                   <p className="text-xs text-navy-950/35">
                     Supported formats: JPG, PNG, PDF, AI, EPS, CDR (Max file
@@ -194,7 +201,11 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <Reveal as="section" direction="up" className="mx-auto max-w-7xl px-5 pb-20 lg:px-10">
+      <Reveal
+        as="section"
+        direction="up"
+        className="mx-auto max-w-7xl px-5 pb-20 lg:px-10"
+      >
         <div className="vr-lift group flex flex-col items-center justify-between gap-5 rounded-2xl bg-navy-950 px-8 py-7 text-center sm:flex-row sm:text-left">
           <div className="flex items-center gap-4">
             <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-white/20 text-white transition-colors group-hover:bg-white/10">

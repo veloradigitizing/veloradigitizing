@@ -37,8 +37,8 @@ export default function Footer() {
         <div>
           <Logo dark />
           <p className="mt-4 text-sm leading-relaxed">
-            We provide premium quality embroidery digitizing services with
-            fast turnaround, high stitch quality and 100% satisfaction.
+            We provide premium quality embroidery digitizing services with fast
+            turnaround, high stitch quality and 100% satisfaction.
           </p>
           <div className="mt-5 flex gap-3">
             {SOCIALS.map((s) => (
@@ -90,8 +90,8 @@ export default function Footer() {
           </h4>
           <ul className="flex flex-col gap-3 text-sm">
             <li>+1 (213) 456-7880</li>
-            <li>info@vesperdigitizing.com</li>
-            <li>www.vesperdigitizing.com</li>
+            <li>info@veloradigitizing.com</li>
+            <li>www.veloradigitizing.com</li>
             <li>24/7 Support</li>
           </ul>
         </div>
@@ -99,7 +99,7 @@ export default function Footer() {
 
       <div className="border-t border-white/10 px-5 py-5 lg:px-10">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 text-xs text-white/50 sm:flex-row">
-          <p>&copy; 2026 Vesper Digitizing. All Rights Reserved.</p>
+          <p>&copy; 2026 velora Digitizing. All Rights Reserved.</p>
           <div className="flex gap-6">
             <Link href="/privacy-policy" className="hover:text-white">
               Privacy Policy

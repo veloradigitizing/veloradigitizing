@@ -16,16 +16,66 @@ type Product = {
 };
 
 const PRODUCTS: Product[] = [
-  { title: "Tiger Head Embroidery Digitizing File",      price: "$8.99",  category: "digitizing-files", image: "/images/store/prod-01.jpg" },
-  { title: "LA Cap Logo Embroidery Digitizing File",     price: "$6.99",  category: "digitizing-files", image: "/images/store/prod-02.jpg" },
-  { title: "Skull Patch Embroidery Digitizing File",     price: "$9.99",  category: "digitizing-files", image: "/images/store/prod-03.jpg" },
-  { title: "Nike Logo Embroidery Digitizing File",       price: "$6.99",  category: "digitizing-files", image: "/images/store/prod-04.jpg" },
-  { title: "Bear Embroidery Digitizing File",            price: "$7.99",  category: "digitizing-files", image: "/images/store/prod-05.jpg" },
-  { title: "3D Puff Embroidery Digitizing File",         price: "$12.99", category: "add-ons",          image: "/images/store/prod-06.jpg" },
-  { title: "Applique Letter Embroidery Digitizing File", price: "$7.99",  category: "digitizing-files", image: "/images/store/prod-07.jpg" },
-  { title: "NY Logo Embroidery Digitizing File",         price: "$6.99",  category: "digitizing-files", image: "/images/store/prod-08.jpg" },
-  { title: "Bull Head Embroidery Digitizing File",       price: "$8.99",  category: "digitizing-files", image: "/images/store/prod-09.jpg" },
-  { title: "College Logo Embroidery Digitizing File",    price: "$6.99",  category: "digitizing-files", image: "/images/store/prod-10.jpg" },
+  {
+    title: "Tiger Head Embroidery Digitizing File",
+    price: "$8.99",
+    category: "digitizing-files",
+    image: "/images/store/prod-01.jpg",
+  },
+  {
+    title: "LA Cap Logo Embroidery Digitizing File",
+    price: "$6.99",
+    category: "digitizing-files",
+    image: "/images/store/prod-02.jpg",
+  },
+  {
+    title: "Skull Patch Embroidery Digitizing File",
+    price: "$9.99",
+    category: "digitizing-files",
+    image: "/images/store/prod-03.jpg",
+  },
+  {
+    title: "Nike Logo Embroidery Digitizing File",
+    price: "$6.99",
+    category: "digitizing-files",
+    image: "/images/store/prod-04.jpg",
+  },
+  {
+    title: "Bear Embroidery Digitizing File",
+    price: "$7.99",
+    category: "digitizing-files",
+    image: "/images/store/prod-05.jpg",
+  },
+  {
+    title: "3D Puff Embroidery Digitizing File",
+    price: "$12.99",
+    category: "add-ons",
+    image: "/images/store/prod-06.jpg",
+  },
+  {
+    title: "Applique Letter Embroidery Digitizing File",
+    price: "$7.99",
+    category: "digitizing-files",
+    image: "/images/store/prod-07.jpg",
+  },
+  {
+    title: "NY Logo Embroidery Digitizing File",
+    price: "$6.99",
+    category: "digitizing-files",
+    image: "/images/store/prod-08.jpg",
+  },
+  {
+    title: "Bull Head Embroidery Digitizing File",
+    price: "$8.99",
+    category: "digitizing-files",
+    image: "/images/store/prod-09.jpg",
+  },
+  {
+    title: "College Logo Embroidery Digitizing File",
+    price: "$6.99",
+    category: "digitizing-files",
+    image: "/images/store/prod-10.jpg",
+  },
 ];
 
 const CATEGORIES: { label: string; value: string; icon: IconName }[] = [
@@ -38,12 +88,36 @@ const CATEGORIES: { label: string; value: string; icon: IconName }[] = [
 ];
 
 const WHY_SHOP: { icon: IconName; title: string; description: string }[] = [
-  { icon: "headset", title: "Premium Quality Files", description: "Perfect stitches & clean output" },
-  { icon: "download", title: "Instant Download", description: "Get your files immediately" },
-  { icon: "paperclip", title: "Wide Format Support", description: "DST, PES, EXP, JEF, VP3 & more" },
-  { icon: "shield", title: "Money Back Guarantee", description: "100% satisfaction or refund" },
-  { icon: "badge-check", title: "Secure Payment", description: "Safe and secure checkout" },
-  { icon: "smile", title: "24/7 Customer Support", description: "We're here to help anytime" },
+  {
+    icon: "headset",
+    title: "Premium Quality Files",
+    description: "Perfect stitches & clean output",
+  },
+  {
+    icon: "download",
+    title: "Instant Download",
+    description: "Get your files immediately",
+  },
+  {
+    icon: "paperclip",
+    title: "Wide Format Support",
+    description: "DST, PES, EXP, JEF, VP3 & more",
+  },
+  {
+    icon: "shield",
+    title: "Money Back Guarantee",
+    description: "100% satisfaction or refund",
+  },
+  {
+    icon: "badge-check",
+    title: "Secure Payment",
+    description: "Safe and secure checkout",
+  },
+  {
+    icon: "smile",
+    title: "24/7 Customer Support",
+    description: "We're here to help anytime",
+  },
 ];
 
 export default function StorePage() {
@@ -53,7 +127,7 @@ export default function StorePage() {
   const products = PRODUCTS.filter(
     (p) =>
       (active === "all" || p.category === active) &&
-      p.title.toLowerCase().includes(query.toLowerCase())
+      p.title.toLowerCase().includes(query.toLowerCase()),
   );
 
   return (
@@ -89,7 +163,11 @@ export default function StorePage() {
           ))}
         </Reveal>
 
-        <Reveal direction="up" delay={80} className="mt-10 flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
+        <Reveal
+          direction="up"
+          delay={80}
+          className="mt-10 flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end"
+        >
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-600">
               Shop
@@ -173,7 +251,10 @@ export default function StorePage() {
 
         <Reveal direction="up" className="mt-10 flex justify-center">
           <button className="vr-btn flex items-center gap-2 rounded-md border border-navy-950/15 px-7 py-3.5 text-sm font-semibold text-navy-950 hover:border-brand-600 hover:text-brand-600">
-            VIEW ALL PRODUCTS <span aria-hidden className="vr-arrow">&rarr;</span>
+            VIEW ALL PRODUCTS{" "}
+            <span aria-hidden className="vr-arrow">
+              &rarr;
+            </span>
           </button>
         </Reveal>
       </section>
@@ -181,7 +262,7 @@ export default function StorePage() {
       <section className="mx-auto max-w-7xl px-5 pb-20 lg:px-10">
         <Reveal direction="up">
           <SectionTag
-            eyebrow="Why Shop With Vesper?"
+            eyebrow="Why Shop With Velora?"
             title="Built for Quality. Designed for You."
           />
         </Reveal>
@@ -206,20 +287,26 @@ export default function StorePage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-5 pb-20 lg:px-10">
-        <Reveal direction="up" className="vr-lift group flex flex-col gap-8 rounded-2xl bg-navy-950 p-9 lg:flex-row lg:items-center lg:justify-between">
+        <Reveal
+          direction="up"
+          className="vr-lift group flex flex-col gap-8 rounded-2xl bg-navy-950 p-9 lg:flex-row lg:items-center lg:justify-between"
+        >
           <div>
             <h3 className="font-serif text-2xl font-bold text-white">
               Need a Custom Digitizing File?
             </h3>
             <p className="mt-2 max-w-md text-sm text-white/60">
-              Don&rsquo;t see what you need? We can digitize any logo or
-              design for you.
+              Don&rsquo;t see what you need? We can digitize any logo or design
+              for you.
             </p>
             <a
               href="/contact"
               className="vr-btn vr-btn-primary mt-5 inline-flex items-center gap-2 rounded-md bg-white px-6 py-3 text-sm font-semibold text-navy-950 hover:bg-brand-50"
             >
-              GET CUSTOM QUOTE <span aria-hidden className="vr-arrow">&rarr;</span>
+              GET CUSTOM QUOTE{" "}
+              <span aria-hidden className="vr-arrow">
+                &rarr;
+              </span>
             </a>
           </div>
           <div className="grid grid-cols-2 gap-6 sm:grid-cols-3">
@@ -227,13 +314,21 @@ export default function StorePage() {
               { icon: "rocket" as IconName, label: "Super Fast Turnaround" },
               { icon: "award" as IconName, label: "High Quality Stitching" },
               { icon: "refresh" as IconName, label: "Unlimited Revisions" },
-              { icon: "shield" as IconName, label: "100% Satisfaction Guaranteed" },
+              {
+                icon: "shield" as IconName,
+                label: "100% Satisfaction Guaranteed",
+              },
             ].map((f) => (
-              <div key={f.label} className="flex flex-col items-center gap-2 text-center">
+              <div
+                key={f.label}
+                className="flex flex-col items-center gap-2 text-center"
+              >
                 <span className="vr-icon-pop flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-white transition-colors group-hover:bg-white/15">
                   <Icon name={f.icon} className="h-5 w-5" />
                 </span>
-                <p className="max-w-[6.5rem] text-[11px] text-white/60">{f.label}</p>
+                <p className="max-w-[6.5rem] text-[11px] text-white/60">
+                  {f.label}
+                </p>
               </div>
             ))}
           </div>

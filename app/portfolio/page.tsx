@@ -3,7 +3,12 @@
 import { useState } from "react";
 import Link from "next/link";
 import Hero from "../components/Hero";
-import { Breadcrumb, SectionTag, StarRating, StatsBar } from "../components/Section";
+import {
+  Breadcrumb,
+  SectionTag,
+  StarRating,
+  StatsBar,
+} from "../components/Section";
 import Icon from "../components/Icon";
 import PortfolioCard, {
   PORTFOLIO_CATEGORIES,
@@ -11,7 +16,11 @@ import PortfolioCard, {
 } from "../components/PortfolioCard";
 import { Reveal } from "../components/Reveal";
 import { stagger } from "../components/stagger";
-const STATS: { icon: "award" | "smile" | "clock" | "globe"; value: string; label: string }[] = [
+const STATS: {
+  icon: "award" | "smile" | "clock" | "globe";
+  value: string;
+  label: string;
+}[] = [
   { icon: "award", value: "15,000+", label: "Projects Completed" },
   { icon: "smile", value: "8,000+", label: "Happy Clients" },
   { icon: "clock", value: "2-24 Hrs", label: "Turnaround Time" },
@@ -50,7 +59,11 @@ export default function PortfolioPage() {
           </Reveal>
         </div>
 
-        <Reveal direction="up" delay={120} className="mt-10 flex flex-wrap justify-center gap-2.5">
+        <Reveal
+          direction="up"
+          delay={120}
+          className="mt-10 flex flex-wrap justify-center gap-2.5"
+        >
           {PORTFOLIO_CATEGORIES.map((cat) => (
             <button
               key={cat.value}
@@ -68,7 +81,11 @@ export default function PortfolioPage() {
 
         <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((item, i) => (
-            <Reveal key={`${item.title}-${active}`} direction="up" delay={stagger(i, 70)}>
+            <Reveal
+              key={`${item.title}-${active}`}
+              direction="up"
+              delay={stagger(i, 70)}
+            >
               <PortfolioCard item={item} />
             </Reveal>
           ))}
@@ -76,7 +93,10 @@ export default function PortfolioPage() {
 
         <Reveal direction="up" className="mt-10 flex justify-center">
           <button className="vr-btn vr-btn-primary flex items-center gap-2 rounded-md bg-brand-600 px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-brand-700">
-            VIEW MORE WORK <span aria-hidden className="vr-arrow">&rarr;</span>
+            VIEW MORE WORK{" "}
+            <span aria-hidden className="vr-arrow">
+              &rarr;
+            </span>
           </button>
         </Reveal>
       </section>
@@ -96,7 +116,7 @@ export default function PortfolioPage() {
               <StarRating />
             </div>
             <p className="mt-4 max-w-md text-[15px] leading-relaxed text-navy-950/60">
-              &ldquo;Vesper Digitizing delivered excellent quality and super
+              &ldquo;velora Digitizing delivered excellent quality and super
               fast turnaround. Highly recommended!&rdquo;
             </p>
             <div className="mt-6 flex items-center gap-4">
@@ -104,7 +124,9 @@ export default function PortfolioPage() {
                 J
               </span>
               <div>
-                <p className="text-sm font-semibold text-navy-950">John Smith</p>
+                <p className="text-sm font-semibold text-navy-950">
+                  John Smith
+                </p>
                 <p className="text-xs text-navy-950/50">USA</p>
               </div>
               <div className="ml-auto flex gap-2">
@@ -124,19 +146,24 @@ export default function PortfolioPage() {
             </div>
           </Reveal>
 
-          <Reveal direction="right" className="flex flex-col justify-center rounded-2xl bg-navy-950 p-9">
+          <Reveal
+            direction="right"
+            className="flex flex-col justify-center rounded-2xl bg-navy-950 p-9"
+          >
             <h3 className="font-serif text-2xl font-bold text-white">
               Ready to Digitize Your Design?
             </h3>
             <p className="mt-2 text-sm text-white/60">
-              Get your FREE quote now and experience premium quality
-              digitizing.
+              Get your FREE quote now and experience premium quality digitizing.
             </p>
             <Link
               href="/contact"
               className="vr-btn vr-btn-primary mt-6 flex w-fit items-center gap-2 rounded-md bg-white px-6 py-3 text-sm font-semibold text-navy-950 hover:bg-brand-50"
             >
-              START YOUR ORDER <span aria-hidden className="vr-arrow">&rarr;</span>
+              START YOUR ORDER{" "}
+              <span aria-hidden className="vr-arrow">
+                &rarr;
+              </span>
             </Link>
           </Reveal>
         </div>

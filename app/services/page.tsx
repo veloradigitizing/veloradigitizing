@@ -8,9 +8,9 @@ import CTABanner from "../components/CTABanner";
 import { Reveal } from "../components/Reveal";
 import { stagger } from "../components/stagger";
 export const metadata: Metadata = {
-  title: "Services | Vesper Digitizing",
+  title: "Services | Velora Digitizing",
   description:
-    "Explore Vesper Digitizing's full range of embroidery digitizing services — logos, patches, 3D puff, applique, chenille and more.",
+    "Explore Velora Digitizing's full range of embroidery digitizing services — logos, patches, 3D puff, applique, chenille and more.",
 };
 
 const WHY_ITEMS: {
@@ -60,7 +60,7 @@ export default function ServicesPage() {
       </section>
 
       <WhyChooseUs
-        eyebrow="Why Choose Vesper?"
+        eyebrow="Why Choose velora?"
         title="We Deliver More Than Just Stitches"
         items={WHY_ITEMS}
       />

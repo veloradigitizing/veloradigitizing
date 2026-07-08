@@ -8,9 +8,9 @@ import { Reveal } from "../components/Reveal";
 import { stagger } from "../components/stagger";
 
 export const metadata: Metadata = {
-  title: "About Us | Vesper Digitizing",
+  title: "About Us | Velora Digitizing",
   description:
-    "Vesper Digitizing was founded to provide world-class embroidery digitizing services with unmatched quality and reliability.",
+    "Velora Digitizing was founded to provide world-class embroidery digitizing services with unmatched quality and reliability.",
 };
 
 const WHY_ITEMS: { icon: IconName; title: string; description: string }[] = [
@@ -56,7 +56,11 @@ const EXPERTISE: { icon: IconName; label: string }[] = [
   { icon: "badge-check", label: "Chenille Digitizing" },
 ];
 
-const STATS: { icon: "award" | "smile" | "clock" | "globe" | "shield"; value: string; label: string }[] = [
+const STATS: {
+  icon: "award" | "smile" | "clock" | "globe" | "shield";
+  value: string;
+  label: string;
+}[] = [
   { icon: "award", value: "15,000+", label: "Projects Completed" },
   { icon: "smile", value: "8,000+", label: "Happy Clients" },
   { icon: "clock", value: "2-24 Hrs", label: "Turnaround Time" },
@@ -65,10 +69,30 @@ const STATS: { icon: "award" | "smile" | "clock" | "globe" | "shield"; value: st
 ];
 
 const TEAM = [
-  { name: "Zain Ul Abideen", role: "Founder & CEO",        image: "/images/team/team-01.jpg", initial: "ZA" },
-  { name: "Hassan Raza",     role: "Lead Digitizer",       image: "/images/team/team-02.jpg", initial: "HR" },
-  { name: "Usman Ali",       role: "Senior Digitizer",     image: "/images/team/team-03.jpg", initial: "UA" },
-  { name: "Talha Mehmood",   role: "Quality Analyst",      image: "/images/team/team-04.jpeg",initial: "TM" },
+  {
+    name: "Zain Ul Abideen",
+    role: "Founder & CEO",
+    image: "/images/team/team-01.jpg",
+    initial: "ZA",
+  },
+  {
+    name: "Hassan Raza",
+    role: "Lead Digitizer",
+    image: "/images/team/team-02.jpg",
+    initial: "HR",
+  },
+  {
+    name: "Usman Ali",
+    role: "Senior Digitizer",
+    image: "/images/team/team-03.jpg",
+    initial: "UA",
+  },
+  {
+    name: "Talha Mehmood",
+    role: "Quality Analyst",
+    image: "/images/team/team-04.jpeg",
+    initial: "TM",
+  },
 ];
 
 export default function AboutPage() {
@@ -80,15 +104,18 @@ export default function AboutPage() {
           { text: "Crafting Perfection," },
           { text: "Stitch by Stitch", accent: true },
         ]}
-        description="At Vesper Digitizing, we turn your ideas into flawless embroidery designs. With precision, experience, and passion, we deliver digitizing services that elevate your brand."
+        description="At velora Digitizing, we turn your ideas into flawless embroidery designs. With precision, experience, and passion, we deliver digitizing services that elevate your brand."
       />
 
       <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-          <Reveal direction="left" className="vr-zoom overflow-hidden rounded-2xl border border-navy-950/10">
+          <Reveal
+            direction="left"
+            className="vr-zoom overflow-hidden rounded-2xl border border-navy-950/10"
+          >
             <Image
               src="/images/about/machine.jpg"
-              alt="Industrial embroidery machine stitching the Vesper logo"
+              alt="Industrial embroidery machine stitching the velora logo"
               width={1200}
               height={900}
               className="h-full w-full object-cover"
@@ -105,9 +132,9 @@ export default function AboutPage() {
             <div className="mt-4 h-[3px] w-16 rounded-full bg-brand-600" />
             <div className="mt-6 flex flex-col gap-4 text-[15px] leading-relaxed text-navy-950/60">
               <p>
-                Vesper Digitizing was founded with a simple mission — to
-                provide world-class embroidery digitizing services with
-                unmatched quality and reliability.
+                velora Digitizing was founded with a simple mission — to provide
+                world-class embroidery digitizing services with unmatched
+                quality and reliability.
               </p>
               <p>
                 We understand that every stitch represents your brand.
@@ -116,14 +143,16 @@ export default function AboutPage() {
                 fabric.
               </p>
               <p>
-                From small logos to complex patches, we treat every project
-                with the same level of care and dedication.
+                From small logos to complex patches, we treat every project with
+                the same level of care and dedication.
               </p>
             </div>
             <p className="mt-6 font-script text-2xl text-brand-600">
-              Vesper Digitizing
+              velora Digitizing
             </p>
-            <p className="text-xs text-navy-950/50">Founder, Vesper Digitizing</p>
+            <p className="text-xs text-navy-950/50">
+              Founder, velora Digitizing
+            </p>
           </Reveal>
         </div>
       </section>
@@ -132,7 +161,7 @@ export default function AboutPage() {
         <Reveal direction="up">
           <SectionTag
             eyebrow="Why Choose Us"
-            title="Why Thousands Choose Vesper Digitizing"
+            title="Why Thousands Choose velora Digitizing"
           />
         </Reveal>
         <div className="mt-14 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3">
@@ -218,7 +247,10 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <Reveal direction="left" className="flex flex-col justify-center rounded-2xl bg-navy-950 p-8 text-center">
+          <Reveal
+            direction="left"
+            className="flex flex-col justify-center rounded-2xl bg-navy-950 p-8 text-center"
+          >
             <span className="inline-flex justify-center">
               <IconCircle icon="award" size="lg" dark />
             </span>
@@ -227,11 +259,11 @@ export default function AboutPage() {
             </h3>
             <div className="mx-auto mt-3 h-[3px] w-12 rounded-full bg-brand-600/60" />
             <p className="mt-4 text-sm leading-relaxed text-white/60">
-              To deliver world-class digitizing services that help brands
-              look better, stitch better, and grow better.
+              To deliver world-class digitizing services that help brands look
+              better, stitch better, and grow better.
             </p>
             <p className="mt-5 font-script text-xl text-white/80">
-              Vesper Digitizing
+              velora Digitizing
             </p>
           </Reveal>
         </div>

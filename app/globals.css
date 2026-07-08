@@ -52,7 +52,7 @@ body {
 }
 
 /* ---------- Keyframes ---------- */
-@keyframes vesper-fade-up {
+@keyframes velora-fade-up {
   from {
     opacity: 0;
     transform: translate3d(0, 24px, 0);
@@ -63,7 +63,7 @@ body {
   }
 }
 
-@keyframes vesper-fade-in {
+@keyframes velora-fade-in {
   from {
     opacity: 0;
   }
@@ -72,7 +72,7 @@ body {
   }
 }
 
-@keyframes vesper-fade-down {
+@keyframes velora-fade-down {
   from {
     opacity: 0;
     transform: translate3d(0, -16px, 0);
@@ -83,7 +83,7 @@ body {
   }
 }
 
-@keyframes vesper-scale-in {
+@keyframes velora-scale-in {
   from {
     opacity: 0;
     transform: scale(0.94);
@@ -94,7 +94,7 @@ body {
   }
 }
 
-@keyframes vesper-float {
+@keyframes velora-float {
   0%,
   100% {
     transform: translateY(0);
@@ -104,7 +104,7 @@ body {
   }
 }
 
-@keyframes vesper-float-soft {
+@keyframes velora-float-soft {
   0%,
   100% {
     transform: translateY(0);
@@ -114,7 +114,7 @@ body {
   }
 }
 
-@keyframes vesper-pulse-ring {
+@keyframes velora-pulse-ring {
   0% {
     transform: scale(0.85);
     opacity: 0.7;
@@ -126,7 +126,7 @@ body {
   }
 }
 
-@keyframes vesper-shimmer {
+@keyframes velora-shimmer {
   0% {
     background-position: -200% 0;
   }
@@ -135,7 +135,7 @@ body {
   }
 }
 
-@keyframes vesper-marquee {
+@keyframes velora-marquee {
   from {
     transform: translateX(0);
   }
@@ -144,7 +144,7 @@ body {
   }
 }
 
-@keyframes vesper-gradient-pan {
+@keyframes velora-gradient-pan {
   0%,
   100% {
     background-position: 0% 50%;
@@ -186,28 +186,28 @@ body {
 /* ---------- Utility animation classes ---------- */
 .vr-hero-up {
   opacity: 0;
-  animation: vesper-fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation: velora-fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 .vr-hero-down {
   opacity: 0;
-  animation: vesper-fade-down 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation: velora-fade-down 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 .vr-hero-fade {
   opacity: 0;
-  animation: vesper-fade-in 0.9s ease forwards;
+  animation: velora-fade-in 0.9s ease forwards;
 }
 .vr-hero-scale {
   opacity: 0;
-  animation: vesper-scale-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation: velora-scale-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 .vr-float {
-  animation: vesper-float 6s ease-in-out infinite;
+  animation: velora-float 6s ease-in-out infinite;
 }
 .vr-float-soft {
-  animation: vesper-float-soft 5s ease-in-out infinite;
+  animation: velora-float-soft 5s ease-in-out infinite;
 }
 .vr-pulse-ring {
-  animation: vesper-pulse-ring 2.4s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+  animation: velora-pulse-ring 2.4s cubic-bezier(0.22, 1, 0.36, 1) infinite;
 }
 
 /* ---------- Decorative: animated gradient text + shimmer ---------- */
@@ -223,7 +223,7 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: vesper-gradient-pan 6s ease infinite;
+  animation: velora-gradient-pan 6s ease infinite;
 }
 
 .vr-shimmer-line {
@@ -234,12 +234,12 @@ body {
     transparent
   );
   background-size: 200% 100%;
-  animation: vesper-shimmer 3s linear infinite;
+  animation: velora-shimmer 3s linear infinite;
 }
 
 /* ---------- Brand marquee ---------- */
 .vr-marquee-track {
-  animation: vesper-marquee 28s linear infinite;
+  animation: velora-marquee 28s linear infinite;
 }
 .vr-marquee:hover .vr-marquee-track {
   animation-play-state: paused;

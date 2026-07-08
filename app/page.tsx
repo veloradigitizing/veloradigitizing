@@ -139,7 +139,7 @@ export default function Home() {
       </section>
 
       <WhyChooseUs
-        eyebrow="Why Choose Vesper?"
+        eyebrow="Why Choose VSelora?"
         title="We Make The Difference"
         items={WHY_CHOOSE_ITEMS}
       />
@@ -160,7 +160,10 @@ export default function Home() {
             href="/portfolio"
             className="vr-btn vr-btn-primary flex items-center gap-2 rounded-md bg-brand-600 px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-brand-700"
           >
-            VIEW FULL PORTFOLIO <span aria-hidden className="vr-arrow">&rarr;</span>
+            VIEW FULL PORTFOLIO{" "}
+            <span aria-hidden className="vr-arrow">
+              &rarr;
+            </span>
           </Link>
         </Reveal>
       </section>

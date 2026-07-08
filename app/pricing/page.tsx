@@ -8,7 +8,7 @@ import CTABanner from "../components/CTABanner";
 import { Reveal } from "../components/Reveal";
 import { stagger } from "../components/stagger";
 export const metadata: Metadata = {
-  title: "Pricing | Vesper Digitizing",
+  title: "Pricing | velora Digitizing",
   description:
     "Simple, transparent pricing for embroidery digitizing, vector conversion and rush orders.",
 };
@@ -135,7 +135,9 @@ export default function PricingPage() {
                       />
                       <span
                         className={
-                          plan.highlighted ? "text-white/80" : "text-navy-950/70"
+                          plan.highlighted
+                            ? "text-white/80"
+                            : "text-navy-950/70"
                         }
                       >
                         {f}
@@ -151,7 +153,10 @@ export default function PricingPage() {
                       : "bg-brand-600 text-white hover:bg-brand-700"
                   }`}
                 >
-                  GET STARTED <span aria-hidden className="vr-arrow">&rarr;</span>
+                  GET STARTED{" "}
+                  <span aria-hidden className="vr-arrow">
+                    &rarr;
+                  </span>
                 </Link>
               </div>
             </Reveal>
