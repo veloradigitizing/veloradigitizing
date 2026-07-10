@@ -3,6 +3,7 @@ import { Inter, Playfair_Display, Dancing_Script } from "next/font/google";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
+import { CartProvider } from "./context/CartContext";
 import "./globals.css";
 
 const inter = Inter({
@@ -37,10 +38,12 @@ export default function RootLayout({
       className={`${inter.variable} ${playfair.variable} ${script.variable} antialiased`}
     >
       <body className="min-h-full flex flex-col text-navy-950">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <WhatsAppButton />
+        <CartProvider>
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+          <WhatsAppButton />
+        </CartProvider>
       </body>
     </html>
   );

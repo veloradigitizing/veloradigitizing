@@ -2,81 +2,14 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Hero from "../components/Hero";
 import Icon, { IconName } from "../components/Icon";
 import { IconCircle, SectionTag } from "../components/Section";
 import { Reveal } from "../components/Reveal";
 import { stagger } from "../components/stagger";
-
-type Product = {
-  title: string;
-  price: string;
-  category: string;
-  image: string;
-};
-
-const PRODUCTS: Product[] = [
-  {
-    title: "Tiger Head Embroidery Digitizing File",
-    price: "$8.99",
-    category: "digitizing-files",
-    image: "/images/store/prod-01.jpg",
-  },
-  {
-    title: "LA Cap Logo Embroidery Digitizing File",
-    price: "$6.99",
-    category: "digitizing-files",
-    image: "/images/store/prod-02.jpg",
-  },
-  {
-    title: "Skull Patch Embroidery Digitizing File",
-    price: "$9.99",
-    category: "digitizing-files",
-    image: "/images/store/prod-03.jpg",
-  },
-  {
-    title: "Nike Logo Embroidery Digitizing File",
-    price: "$6.99",
-    category: "digitizing-files",
-    image: "/images/store/prod-04.jpg",
-  },
-  {
-    title: "Bear Embroidery Digitizing File",
-    price: "$7.99",
-    category: "digitizing-files",
-    image: "/images/store/prod-05.jpg",
-  },
-  {
-    title: "3D Puff Embroidery Digitizing File",
-    price: "$12.99",
-    category: "add-ons",
-    image: "/images/store/prod-06.jpg",
-  },
-  {
-    title: "Applique Letter Embroidery Digitizing File",
-    price: "$7.99",
-    category: "digitizing-files",
-    image: "/images/store/prod-07.jpg",
-  },
-  {
-    title: "NY Logo Embroidery Digitizing File",
-    price: "$6.99",
-    category: "digitizing-files",
-    image: "/images/store/prod-08.jpg",
-  },
-  {
-    title: "Bull Head Embroidery Digitizing File",
-    price: "$8.99",
-    category: "digitizing-files",
-    image: "/images/store/prod-09.jpg",
-  },
-  {
-    title: "College Logo Embroidery Digitizing File",
-    price: "$6.99",
-    category: "digitizing-files",
-    image: "/images/store/prod-10.jpg",
-  },
-];
+import { useCart } from "../context/CartContext";
+import { PRODUCTS, type Product } from "./products";
 
 const CATEGORIES: { label: string; value: string; icon: IconName }[] = [
   { label: "All Products", value: "all", icon: "grid" },
@@ -123,12 +56,28 @@ const WHY_SHOP: { icon: IconName; title: string; description: string }[] = [
 export default function StorePage() {
   const [active, setActive] = useState("all");
   const [query, setQuery] = useState("");
+  const [justAdded, setJustAdded] = useState<string | null>(null);
+  const { addItem } = useCart();
 
   const products = PRODUCTS.filter(
     (p) =>
       (active === "all" || p.category === active) &&
       p.title.toLowerCase().includes(query.toLowerCase()),
   );
+
+  const handleAddToCart = (p: Product) => {
+    addItem({
+      id: p.slug,
+      title: p.title,
+      price: p.price,
+      image: p.image,
+    });
+    setJustAdded(p.slug);
+    setTimeout(
+      () => setJustAdded((cur) => (cur === p.slug ? null : cur)),
+      1500,
+    );
+  };
 
   return (
     <>
@@ -206,12 +155,12 @@ export default function StorePage() {
         <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-5">
           {products.map((p, i) => (
             <Reveal
-              key={p.title}
+              key={p.slug}
               direction="up"
               delay={stagger(i % 10, 60)}
               className="vr-lift group flex flex-col rounded-xl border border-navy-950/10 bg-white p-4"
             >
-              <div className="relative">
+              <Link href={`/store/${p.slug}`} className="relative block">
                 <div className="vr-zoom relative aspect-square w-full overflow-hidden rounded-lg bg-navy-950/[0.03]">
                   <Image
                     src={p.image}
@@ -223,22 +172,37 @@ export default function StorePage() {
                 </div>
                 <button
                   aria-label="Add to wishlist"
+                  onClick={(e) => e.preventDefault()}
                   className="absolute right-2 top-2 flex h-8 w-8 items-center justify-center rounded-full bg-white text-navy-950/50 shadow transition-colors hover:text-brand-600"
                 >
                   <Icon name="heart" className="h-4 w-4" />
                 </button>
-              </div>
+              </Link>
               <p className="mt-3 text-[10px] font-semibold uppercase tracking-wide text-navy-950/35">
-                DST &middot; PES &middot; EXP &middot; JEF
+                {p.formats.join(" · ")}
               </p>
-              <p className="mt-1 flex-1 text-sm font-semibold text-navy-950">
+              <Link
+                href={`/store/${p.slug}`}
+                className="mt-1 flex-1 text-sm font-semibold text-navy-950 hover:text-brand-600"
+              >
                 {p.title}
-              </p>
+              </Link>
               <p className="mt-2 font-serif text-lg font-bold text-brand-600">
-                {p.price}
+                ${p.price.toFixed(2)}
               </p>
-              <button className="vr-btn vr-btn-primary mt-3 flex items-center justify-center gap-2 rounded-md bg-brand-600 py-2.5 text-xs font-bold uppercase tracking-wide text-white hover:bg-brand-700">
-                <Icon name="cart" className="h-4 w-4" /> Add to Cart
+              <button
+                onClick={() => handleAddToCart(p)}
+                className={`vr-btn mt-3 flex items-center justify-center gap-2 rounded-md py-2.5 text-xs font-bold uppercase tracking-wide transition-colors ${
+                  justAdded === p.slug
+                    ? "bg-green-600 text-white"
+                    : "vr-btn-primary bg-brand-600 text-white hover:bg-brand-700"
+                }`}
+              >
+                <Icon
+                  name={justAdded === p.slug ? "check" : "cart"}
+                  className="h-4 w-4"
+                />{" "}
+                {justAdded === p.slug ? "Added" : "Add to Cart"}
               </button>
             </Reveal>
           ))}

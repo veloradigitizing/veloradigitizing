@@ -34,6 +34,11 @@ import {
   Tag,
   Rocket,
   RefreshCw,
+  X,
+  Trash2,
+  Plus,
+  Minus,
+  Check,
   type LucideIcon,
 } from "lucide-react";
 
@@ -73,6 +78,11 @@ const ICONS = {
   tag: Tag,
   rocket: Rocket,
   refresh: RefreshCw,
+  close: X,
+  trash: Trash2,
+  plus: Plus,
+  minus: Minus,
+  check: Check,
 } satisfies Record<string, LucideIcon>;
 
 export type IconName = keyof typeof ICONS;
