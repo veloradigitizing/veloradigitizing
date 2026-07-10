@@ -18,6 +18,19 @@ export default function Hero({
 }) {
   return (
     <section className="relative overflow-hidden bg-[#fefefe] border-y border-navy-950/5 border-0 border-b-2">
+      {/* Mobile-only background hero image with readability overlay */}
+      <div className="absolute inset-0 lg:hidden">
+        <Image
+          src={heroImage}
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-white/88" />
+      </div>
+
       {/* Decorative gradient blobs (subtle, animated) */}
       <div className="pointer-events-none absolute -top-24 left-[-10%] h-72 w-72 rounded-full bg-brand-500/10 blur-3xl vr-float-soft" />
       <div
@@ -26,7 +39,7 @@ export default function Hero({
       />
 
       <div className="relative mx-auto grid max-w-7xl grid-cols-1 gap-12 px-5 pt-28 lg:grid-cols-2 lg:items-center lg:px-10  lg:pt-10">
-        <div className="min-w-0">
+        <div className="relative z-10 min-w-0">
           {breadcrumbCurrent && (
             <div
               className="mb-4 vr-hero-down"
@@ -93,7 +106,7 @@ export default function Hero({
           )}
         </div>
 
-        <div className="relative -mx-5 flex justify-center sm:mx-0 lg:justify-end lg:-mr-[calc(50vw-37.5rem)]">
+        <div className="relative -mx-5 hidden justify-center sm:mx-0 lg:-mr-[calc(50vw-37.5rem)] lg:flex lg:justify-end">
           <div className="pointer-events-none absolute right-[-5%] top-[-8%] aspect-square w-[28%] min-w-24 rounded-full bg-[#e8f0fb] blur-3xl" />
           <div className="pointer-events-none absolute bottom-[-6%] right-[-3%] aspect-square w-[28%] min-w-24 rounded-full bg-[#a8b7f8]/60 blur-3xl" />
           <div className="pointer-events-none absolute bottom-[-4%] left-[-6%] aspect-square w-1/5 min-w-16 rounded-full bg-[#e8f0fb] blur-3xl" />
