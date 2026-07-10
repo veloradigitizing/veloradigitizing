@@ -117,7 +117,7 @@ export default function ContactPage() {
             className="rounded-2xl border border-navy-950/10 bg-white p-8"
           >
             <h3 className="font-serif text-2xl font-bold text-navy-950">
-              Send Us a Messag
+              Send Us a Message
             </h3>
             <div className="mt-3 h-[3px] w-12 rounded-full bg-brand-600" />
             <p className="mt-4 text-sm text-navy-950/55">
