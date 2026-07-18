@@ -9,7 +9,8 @@ import { IconCircle, SectionTag } from "../components/Section";
 import { Reveal } from "../components/Reveal";
 import { stagger } from "../components/stagger";
 import { useCart } from "../context/CartContext";
-import { PRODUCTS, type Product } from "./products";
+import { PRODUCTS, type Product } from "./products"
+import StoreBundles from "./StoreBundles";;
 
 const CATEGORIES: { label: string; value: string; icon: IconName }[] = [
   { label: "All Products", value: "all", icon: "grid" },
@@ -312,6 +313,11 @@ export default function StorePage() {
           </div>
         )}
       </section>
+
+      
+
+      {/* Bundle Offers Section */}
+      <StoreBundles />
 
       {/* Why Shop Section */}
       <section className="mx-auto max-w-7xl px-5 pb-20 lg:px-10">
