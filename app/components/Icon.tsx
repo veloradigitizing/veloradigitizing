@@ -39,6 +39,13 @@ import {
   Plus,
   Minus,
   Check,
+  PawPrint,
+  Badge,
+  Type,
+  Trophy,
+  Compass,
+  Gamepad2,
+  Zap,
   type LucideIcon,
 } from "lucide-react";
 
@@ -83,6 +90,15 @@ const ICONS = {
   plus: Plus,
   minus: Minus,
   check: Check,
+  // Patch category icons
+  paw: PawPrint,
+  badge: Badge,
+  type: Type,
+  trophy: Trophy,
+  // New category icons
+  compass: Compass,
+  "gamepad-2": Gamepad2,
+  zap: Zap,
 } satisfies Record<string, LucideIcon>;
 
 export type IconName = keyof typeof ICONS;

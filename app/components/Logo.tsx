@@ -1,9 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Logo({ dark = false }: { dark?: boolean }) {
   return (
-    <Link href="/" className="flex items-center gap-2.5 shrink-0">
+    <div className="flex items-center gap-2.5 shrink-0 cursor-pointer">
       <Image
         src="/images/veloralogo.jpeg"
         alt="Velora Digitizing"
@@ -30,6 +29,6 @@ export default function Logo({ dark = false }: { dark?: boolean }) {
           DIGITIZING
         </span>
       </span>
-    </Link>
+    </div>
   );
 }
