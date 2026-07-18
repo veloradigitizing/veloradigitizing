@@ -6,7 +6,7 @@ import { SectionTag } from "./components/Section";
 import ServiceCard, { SERVICES } from "./components/ServiceCard";
 import WhyChooseUs from "./components/WhyChooseUs";
 import PortfolioCard, { PORTFOLIO_ITEMS } from "./components/PortfolioCard";
-import BundleCarousel from "./components/BundleCarousel";
+import BundleSection from "./store/BundleSection";
 import FeaturedCategories from "./components/FeaturedCategories";
 import ProcessSteps from "./components/ProcessSteps";
 import Testimonials from "./components/Testimonials";
@@ -29,7 +29,7 @@ function NewEraLogo() {
       <span className="flex h-8 w-8 items-center justify-center rounded-[3px] bg-navy-950 text-[10px] font-black italic text-white">
         NE
       </span>
-      <span className="text-[11px] font-extrabold uppercase leading-[1.05] tracking-wide">
+      <span className="[11px] font-extrabold uppercase leading-[1.05] tracking-wide">
         New
         <br />
         Era
@@ -162,8 +162,19 @@ export default function Home() {
         </Reveal>
       </section>
 
-      {/* Bundle Carousel Section */}
-      <BundleCarousel />
+      {/* Bundle Section - Using BundleSection directly */}
+      <BundleSection
+        title="Patch Bundles"
+        subtitle="Get more designs for less with our curated patch packs. Premium quality embroidery files at unbeatable prices — save up to 25%!"
+        eyebrow="Special Offers"
+        showArrows={true}
+        showDots={true}
+        showCTA={true}
+        ctaText="View All Bundles"
+        ctaLink="/store"
+        variant="default"
+        padding="lg"
+      />
 
       <ProcessSteps />
       <Testimonials />

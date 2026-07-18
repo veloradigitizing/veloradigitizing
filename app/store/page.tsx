@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState } from "react";
 import Image from "next/image";
@@ -10,7 +10,7 @@ import { Reveal } from "../components/Reveal";
 import { stagger } from "../components/stagger";
 import { useCart } from "../context/CartContext";
 import { PRODUCTS, type Product } from "./products";
-import StoreBundles from "./StoreBundles";
+import BundleSection from "./BundleSection";
 import { FAQ, STORE_FAQS } from "../components/FAQ";
 
 const CATEGORIES: { label: string; value: string; icon: IconName }[] = [
@@ -325,8 +325,17 @@ export default function StorePage() {
         )}
       </section>
 
-      {/* Bundle Offers Section */}
-      <StoreBundles />
+      {/* Bundle Section - Using BundleSection directly */}
+      <BundleSection
+        title="Bundle & Save Big"
+        subtitle="Get more designs for less with our curated patch packs. Premium quality embroidery files at unbeatable prices — save up to 25% on every bundle!"
+        eyebrow="Special Offers"
+        showArrows={true}
+        showDots={true}
+        showCTA={false}
+        variant="subtle"
+        padding="md"
+      />
 
       {/* Why Shop Section */}
       <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10">
@@ -348,7 +357,7 @@ export default function StorePage() {
                 <IconCircle icon={item.icon} size="md" />
               </span>
               <p className="text-xs font-bold text-navy-950">{item.title}</p>
-              <p className="text-[11px] leading-relaxed text-navy-950/50">
+              <p className="[11px] leading-relaxed text-navy-950/50">
                 {item.description}
               </p>
             </Reveal>
@@ -404,7 +413,7 @@ export default function StorePage() {
                 <span className="vr-icon-pop flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-white transition-colors group-hover:bg-white/15">
                   <Icon name={f.icon} className="h-5 w-5" />
                 </span>
-                <p className="max-w-[6.5rem] text-[11px] text-white/60">
+                <p className="max-w-[6.5rem] [11px] text-white/60">
                   {f.label}
                 </p>
               </div>
