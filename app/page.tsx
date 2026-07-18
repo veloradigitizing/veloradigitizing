@@ -6,6 +6,8 @@ import { SectionTag } from "./components/Section";
 import ServiceCard, { SERVICES } from "./components/ServiceCard";
 import WhyChooseUs from "./components/WhyChooseUs";
 import PortfolioCard, { PORTFOLIO_ITEMS } from "./components/PortfolioCard";
+import BundleCarousel from "./components/BundleCarousel";
+import FeaturedCategories from "./components/FeaturedCategories";
 import ProcessSteps from "./components/ProcessSteps";
 import Testimonials from "./components/Testimonials";
 import CTABanner from "./components/CTABanner";
@@ -59,7 +61,6 @@ const WHY_CHOOSE_ITEMS: {
 ];
 
 export default function Home() {
-  // Duplicate the brand list once to create a seamless marquee loop
   const marqueeBrands = [...BRANDS, ...BRANDS];
 
   return (
@@ -73,7 +74,7 @@ export default function Home() {
         description="We convert your artwork into flawless embroidery files with highest stitch quality, fast turnaround and 100% satisfaction."
       />
 
-      {/* Brand strip — animated marquee on small screens, static grid on lg */}
+      {/* Brand strip */}
       <section className="border-y border-navy-950/5 bg-white py-12 border-t-0">
         <div className="mx-auto max-w-7xl px-5 lg:px-10">
           <Reveal direction="up">
@@ -82,7 +83,6 @@ export default function Home() {
             </p>
           </Reveal>
 
-          {/* Static row on large screens */}
           <div className="mt-8 hidden flex-wrap items-center justify-between divide-x divide-navy-950/10 lg:flex">
             {BRANDS.map((brand, i) => (
               <Reveal
@@ -96,27 +96,17 @@ export default function Home() {
             ))}
           </div>
 
-          {/* Marquee on mobile / tablet */}
           <div className="vr-marquee mt-8 flex overflow-hidden lg:hidden">
             <div className="vr-marquee-track flex shrink-0 items-center gap-12 pr-12">
               {marqueeBrands.map((brand, i) => (
-                <div
-                  key={`${brand.name}-${i}`}
-                  className="flex h-14 items-center justify-center text-navy-950"
-                >
+                <div key={`${brand.name}-${i}`} className="flex h-14 items-center justify-center text-navy-950">
                   {brand.render()}
                 </div>
               ))}
             </div>
-            <div
-              className="vr-marquee-track flex shrink-0 items-center gap-12 pr-12"
-              aria-hidden
-            >
+            <div className="vr-marquee-track flex shrink-0 items-center gap-12 pr-12" aria-hidden>
               {marqueeBrands.map((brand, i) => (
-                <div
-                  key={`${brand.name}-dup-${i}`}
-                  className="flex h-14 items-center justify-center text-navy-950"
-                >
+                <div key={`${brand.name}-dup-${i}`} className="flex h-14 items-center justify-center text-navy-950">
                   {brand.render()}
                 </div>
               ))}
@@ -125,6 +115,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SECTION 1: Services */}
       <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10">
         <Reveal direction="up">
           <SectionTag eyebrow="Our Services" title="What We Offer" />
@@ -138,12 +129,16 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SECTION 2: Featured Categories Carousel (Vesper-style layout) */}
+      <FeaturedCategories />
+
       <WhyChooseUs
-        eyebrow="Why Choose VSelora?"
+        eyebrow="Why Choose Velora?"
         title="We Make The Difference"
         items={WHY_CHOOSE_ITEMS}
       />
 
+      {/* Portfolio Grid */}
       <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10">
         <Reveal direction="up">
           <SectionTag eyebrow="Our Recent Work" title="Portfolio" />
@@ -161,12 +156,13 @@ export default function Home() {
             className="vr-btn vr-btn-primary flex items-center gap-2 rounded-md bg-brand-600 px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-brand-700"
           >
             VIEW FULL PORTFOLIO{" "}
-            <span aria-hidden className="vr-arrow">
-              &rarr;
-            </span>
+            <span aria-hidden className="vr-arrow">&rarr;</span>
           </Link>
         </Reveal>
       </section>
+
+      {/* Bundle Carousel Section */}
+      <BundleCarousel />
 
       <ProcessSteps />
       <Testimonials />

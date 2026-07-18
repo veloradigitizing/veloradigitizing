@@ -1,0 +1,273 @@
+"use client";
+
+import { useState, useRef, useEffect, useCallback } from "react";
+import Link from "next/link";
+import { Reveal } from "../components/Reveal";
+
+const FEATURED_CATEGORIES = [
+  {
+    id: 1,
+    name: "3D PUFF",
+    subtitle: "3D Puff Digitizing",
+    image: "/images/bundles/bundle1.jpeg",
+    href: "/store?category=3d-puff",
+  },
+  {
+    id: 2,
+    name: "PATCH",
+    subtitle: "Patch Digitizing",
+    image: "/images/bundles/bundle2.jpeg",
+    href: "/store?category=chenille",
+  },
+  {
+    id: 3,
+    name: "CAP",
+    subtitle: "Cap Digitizing",
+    image: "/images/bundles/bundle3.jpeg",
+    href: "/store?category=cap-logo",
+  },
+  {
+    id: 4,
+    name: "POLO",
+    subtitle: "Left Chest Logo",
+    image: "/images/bundles/bundle4.jpeg",
+    href: "/store?category=left-chest-logo",
+  },
+  {
+    id: 5,
+    name: "JACKET BACK",
+    subtitle: "Jacket Back Design",
+    image: "/images/bundles/bundle5.jpeg",
+    href: "/store?category=jacket-back-design",
+  },
+  {
+    id: 6,
+    name: "TOWEL",
+    subtitle: "Towel Embroidery",
+    image: "/images/bundles/bundle6.jpeg",
+    href: "/store?category=towel-design",
+  },
+];
+
+export default function FeaturedCategories() {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const checkScroll = useCallback(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    setCanScrollLeft(el.scrollLeft > 10);
+    setCanScrollRight(el.scrollLeft + el.clientWidth < el.scrollWidth - 10);
+
+    const cardWidth =
+      el.querySelector("[data-feature-card]")?.offsetWidth || 180;
+    const gap = 16;
+    const newIndex = Math.round(el.scrollLeft / (cardWidth + gap));
+    setActiveIndex(Math.min(newIndex, FEATURED_CATEGORIES.length - 1));
+  }, []);
+
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    checkScroll();
+    el.addEventListener("scroll", checkScroll, { passive: true });
+    return () => el.removeEventListener("scroll", checkScroll);
+  }, [checkScroll]);
+
+  const scroll = (direction: "left" | "right") => {
+    const el = scrollRef.current;
+    if (!el) return;
+    const card = el.querySelector<HTMLElement>("[data-feature-card]");
+    const cardWidth = card?.offsetWidth || 180;
+    const gap = 16;
+    el.scrollBy({
+      left: direction === "left" ? -(cardWidth + gap) : cardWidth + gap,
+      behavior: "smooth",
+    });
+  };
+
+  return (
+    <section className="relative overflow-hidden bg-white py-16 lg:py-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col gap-2 lg:flex-row lg:items-stretch lg:gap-10">
+          {/* LEFT SIDE */}
+          <div className="flex w-full flex-col lg:w-[32%] lg:shrink-0">
+            {/* Tag */}
+            <div className="flex items-center justify-center gap-3 lg:justify-start">
+              <span className="h-px w-8 bg-navy-950/25" />
+              <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-navy-950/60">
+                Our Portfolio
+              </span>
+              <span className="h-px w-8 bg-navy-950/25" />
+            </div>
+
+            {/* Title */}
+            <h2
+              className="mt-4 text-2xl font-bold leading-tight text-navy-950 sm:text-3xl lg:text-[48px]"
+              style={{ fontFamily: "system-ui, -apple-system, sans-serif" }}
+            >
+              Featured Work
+            </h2>
+
+            {/* Description */}
+            <p className="mt-4 text-sm leading-relaxed text-navy-950/50 lg:text-base">
+              Explore some of our recent digitizing projects. Quality speaks for
+              itself.
+            </p>
+
+            <Link
+              href="/portfolio"
+              className="mt-8 inline-flex w-fit items-center gap-2.5 rounded-md bg-brand-600 px-7 py-3.5 text-xs font-bold uppercase tracking-wide text-white transition-all hover:bg-brand-700"
+            >
+              Explore Portfolio
+              <svg
+                className="h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2.5}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </Link>
+          </div>
+
+          {/* RIGHT SIDE */}
+          <div className="relative flex min-w-0 flex-1 flex-col">
+            {/* Arrows */}
+            <div className="absolute -top-12 right-0 z-20 flex items-center gap-2">
+              <button
+                onClick={() => scroll("left")}
+                disabled={!canScrollLeft}
+                className={`flex h-11 w-11  items-center justify-center rounded-full border-2 bg-white shadow-sm transition-all duration-200 ${
+                  canScrollLeft
+                    ? "cursor-pointer border-navy-950/20 text-navy-970 hover:border-brand-600 hover:text-brand-600"
+                    : "cursor-not-allowed border-navy-950/10 text-navy-950/30"
+                }`}
+                aria-label="Previous"
+              >
+                <svg
+                  className="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+
+              <button
+                onClick={() => scroll("right")}
+                disabled={!canScrollRight}
+                className={`flex h-11 w-11 items-center justify-center rounded-full border-2 bg-white shadow-sm transition-all duration-200 ${
+                  canScrollRight
+                    ? "cursor-pointer border-navy-950/20 text-navy-970 hover:border-brand-600 hover:text-brand-600"
+                    : "cursor-not-allowed border-navy-950/10 text-navy-950/30"
+                }`}
+                aria-label="Next"
+              >
+                <svg
+                  className="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            {/* Carousel */}
+            <div className="flex-1">
+              <div
+                ref={scrollRef}
+                className="flex h-full gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4"
+                style={{
+                  scrollbarWidth: "none",
+                  msOverflowStyle: "none",
+                }}
+              >
+                {FEATURED_CATEGORIES.map((cat) => (
+                  <Link
+                    key={cat.id}
+                    href={cat.href}
+                    data-feature-card
+                    className="group relative flex-shrink-0 overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-black/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg snap-start"
+                    style={{
+                      width: "calc(20% - 13px)",
+                      minWidth: "170px",
+                    }}
+                  >
+                    <div className="relative aspect-[4/5] w-full overflow-hidden bg-gray-100">
+                      <img
+                        src={cat.image}
+                        alt={cat.name}
+                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        loading="lazy"
+                      />
+                    </div>
+
+                    <div className="bg-white px-4 py-3">
+                      <span className="block text-sm font-bold uppercase tracking-wide text-navy-950">
+                        {cat.name}
+                      </span>
+                      <span className="mt-0.5 block text-[11px] font-medium uppercase tracking-wider leading-tight text-navy-950/45">
+                        {cat.subtitle}
+                      </span>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* Dots */}
+            <div className="mt-5 flex justify-center gap-1.5">
+              {FEATURED_CATEGORIES.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => {
+                    const el = scrollRef.current;
+                    if (!el) return;
+
+                    const card = el.querySelector<HTMLElement>(
+                      "[data-feature-card]",
+                    );
+                    const cardWidth = card?.offsetWidth || 180;
+                    const gap = 16;
+
+                    el.scrollTo({
+                      left: i * (cardWidth + gap),
+                      behavior: "smooth",
+                    });
+                  }}
+                  className={`h-1.5 rounded-full transition-all duration-300 ${
+                    i === activeIndex
+                      ? "w-7 bg-brand-600"
+                      : "w-1.5 bg-navy-950/15"
+                  }`}
+                  aria-label={`Go to slide ${i + 1}`}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
