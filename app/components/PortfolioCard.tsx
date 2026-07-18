@@ -8,15 +8,60 @@ export type PortfolioItem = {
 };
 
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
-  { title: "Tiger Logo",        tag: "Jacket Back",     category: "jacket-back",    image: "/images/portfolio/emb-01.jpg" },
-  { title: "NY Logo",           tag: "3D Puff",         category: "3d-puff",        image: "/images/portfolio/emb-02.jpg" },
-  { title: "Lakers Logo",       tag: "Left Chest",      category: "left-chest",     image: "/images/portfolio/emb-03.png" },
-  { title: "Bear Design",       tag: "Patches",         category: "patches",        image: "/images/portfolio/emb-04.jpg" },
-  { title: "Under Armour",      tag: "Logo Digitizing", category: "logo-digitizing",image: "/images/portfolio/emb-05.png" },
-  { title: "Skull Patch",       tag: "Patches",         category: "patches",        image: "/images/portfolio/emb-06.jpg" },
-  { title: "Nike Logo",         tag: "Left Chest",      category: "left-chest",     image: "/images/portfolio/emb-07.jpg" },
-  { title: "LA Cap Logo",       tag: "Cap / Hat",       category: "cap-hat",        image: "/images/portfolio/emb-08.jpg" },
-  { title: "Applique Design",   tag: "Applique",        category: "applique",       image: "/images/portfolio/emb-09.jpg" },
+  {
+    title: "Tiger Logo",
+    tag: "Jacket Back",
+    category: "jacket-back",
+    image: "/images/portfolio/emb-01.jpg",
+  },
+  {
+    title: "NY Logo",
+    tag: "3D Puff",
+    category: "3d-puff",
+    image: "/images/portfolio/emb-02.jpg",
+  },
+  {
+    title: "Lakers Logo",
+    tag: "Left Chest",
+    category: "left-chest",
+    image: "/images/portfolio/emb-03.png",
+  },
+  {
+    title: "Bear Design",
+    tag: "Patches",
+    category: "patches",
+    image: "/images/portfolio/emb-04.jpg",
+  },
+  {
+    title: "Under Armour",
+    tag: "Logo Digitizing",
+    category: "logo-digitizing",
+    image: "/images/portfolio/emb-05.png",
+  },
+  {
+    title: "Skull Patch",
+    tag: "Patches",
+    category: "patches",
+    image: "/images/portfolio/emb-06.jpg",
+  },
+  {
+    title: "Nike Logo",
+    tag: "Left Chest",
+    category: "left-chest",
+    image: "/images/portfolio/emb-07.jpg",
+  },
+  {
+    title: "LA Cap Logo",
+    tag: "Cap / Hat",
+    category: "cap-hat",
+    image: "/images/portfolio/emb-08.jpg",
+  },
+  {
+    title: "Applique Design",
+    tag: "Applique",
+    category: "applique",
+    image: "/images/portfolio/emb-09.jpg",
+  },
 ];
 
 export const PORTFOLIO_CATEGORIES = [
@@ -27,7 +72,7 @@ export const PORTFOLIO_CATEGORIES = [
   { label: "Cap / Hat", value: "cap-hat" },
   { label: "Patches", value: "patches" },
   { label: "Applique", value: "applique" },
-  { label: "Logo Digitizing", value: "logo-digitizing" },
+  { label: "Vector Art", value: "vector-art" },
 ];
 
 export default function PortfolioCard({ item }: { item: PortfolioItem }) {

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display, Dancing_Script } from "next/font/google";
 import Header from "./components/Header";
+import ScrollProgress from "./components/ScrollProgress";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
 import { CartProvider } from "./context/CartContext";
@@ -39,6 +40,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col text-navy-950">
         <CartProvider>
+          <ScrollProgress />
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />

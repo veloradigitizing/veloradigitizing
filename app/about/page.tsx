@@ -70,28 +70,28 @@ const STATS: {
 
 const TEAM = [
   {
-    name: "Zain Ul Abideen",
+    name: "Michael Anderson",
     role: "Founder & CEO",
     image: "/images/team/team-01.jpg",
-    initial: "ZA",
+    initial: "MA",
   },
   {
-    name: "Hassan Raza",
+    name: "David Thompson",
     role: "Lead Digitizer",
     image: "/images/team/team-02.jpg",
-    initial: "HR",
+    initial: "DT",
   },
   {
-    name: "Usman Ali",
+    name: "James Wilson",
     role: "Senior Digitizer",
     image: "/images/team/team-03.jpg",
-    initial: "UA",
+    initial: "JW",
   },
   {
-    name: "Talha Mehmood",
+    name: "Daniel Carter",
     role: "Quality Analyst",
     image: "/images/team/team-04.jpeg",
-    initial: "TM",
+    initial: "DC",
   },
 ];
 
