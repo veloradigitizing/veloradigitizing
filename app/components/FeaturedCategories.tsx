@@ -90,9 +90,9 @@ export default function FeaturedCategories() {
     setCanScrollLeft(el.scrollLeft > 10);
     setCanScrollRight(el.scrollLeft + el.clientWidth < el.scrollWidth - 10);
 
-    const cardWidth =
-      el.querySelector("[data-feature-card]")?.offsetWidth || 170;
-    const gap = 16;
+    const card = el.querySelector("[data-feature-card]");
+    const cardWidth = card?.getBoundingClientRect().width || 210;
+    const gap = 12;
     const newIndex = Math.round(el.scrollLeft / (cardWidth + gap));
     setActiveIndex(Math.min(newIndex, FEATURED_CATEGORIES.length - 1));
   }, []);
@@ -102,15 +102,19 @@ export default function FeaturedCategories() {
     if (!el) return;
     checkScroll();
     el.addEventListener("scroll", checkScroll, { passive: true });
-    return () => el.removeEventListener("scroll", checkScroll);
+    window.addEventListener("resize", checkScroll);
+    return () => {
+      el.removeEventListener("scroll", checkScroll);
+      window.removeEventListener("resize", checkScroll);
+    };
   }, [checkScroll]);
 
   const scroll = (direction: "left" | "right") => {
     const el = scrollRef.current;
     if (!el) return;
     const card = el.querySelector<HTMLElement>("[data-feature-card]");
-    const cardWidth = card?.offsetWidth || 170;
-    const gap = 16;
+    const cardWidth = card?.getBoundingClientRect().width || 210;
+    const gap = 12;
     el.scrollBy({
       left: direction === "left" ? -(cardWidth + gap) : cardWidth + gap,
       behavior: "smooth",
@@ -121,8 +125,8 @@ export default function FeaturedCategories() {
     <section className="relative bg-white py-16 lg:py-20 overflow-hidden">
       <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-10 lg:flex-row lg:gap-12 lg:items-start">
-          {/* LEFT SIDE - Header */}
-          <div className="w-full lg:w-[30%] lg:shrink-0">
+          {/* LEFT SIDE - Header with tight flow (No dynamic height gap) */}
+          <div className="w-full lg:w-[26%] lg:shrink-0 py-2">
             {/* Tag with lines - Vesper style */}
             <div className="flex items-center justify-center lg:justify-start gap-3">
               <span className="h-px w-8 bg-navy-950/25" />
@@ -132,7 +136,7 @@ export default function FeaturedCategories() {
               <span className="h-px w-8 bg-navy-950/25" />
             </div>
 
-            {/* Title - Smaller font */}
+            {/* Title */}
             <h2
               className="mt-4 text-2xl font-bold leading-tight text-navy-950 sm:text-3xl lg:text-4xl"
               style={{
@@ -149,10 +153,10 @@ export default function FeaturedCategories() {
               itself.
             </p>
 
-            {/* CTA Button */}
+            {/* CTA Button - Standard layout margin */}
             <Link
               href="/portfolio"
-              className="mt-6 inline-flex items-center gap-2 rounded-md bg-brand-600 px-7 py-3.5 text-xs font-bold uppercase tracking-wide text-white transition-all hover:bg-brand-700"
+              className="mt-8 inline-flex items-center gap-2 rounded-md bg-brand-600 px-7 py-3.5 text-xs font-bold uppercase tracking-wide text-white transition-all hover:bg-brand-700"
             >
               Explore Portfolio
               <svg
@@ -174,7 +178,7 @@ export default function FeaturedCategories() {
           {/* RIGHT SIDE - Carousel Container */}
           <div className="relative flex-1 min-w-0">
             {/* ARROWS - Top Right */}
-            <div className="absolute -top-12 right-0 z-20 flex items-center gap-2">
+            <div className="absolute -top-14 right-0 z-20 flex items-center gap-2">
               <button
                 onClick={() => scroll("left")}
                 disabled={!canScrollLeft}
@@ -225,7 +229,7 @@ export default function FeaturedCategories() {
               </button>
             </div>
 
-            {/* CAROUSEL TRACK - Responsive: 5 on xl, 4 on lg, 3 on md, 2 on sm, 1 on mobile */}
+            {/* CAROUSEL TRACK - Large Screen par perfect 5 cards ke liye width: xl:w-[calc(20%-10px)] */}
             <div
               ref={scrollRef}
               className="flex gap-3 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4"
@@ -236,28 +240,27 @@ export default function FeaturedCategories() {
                   key={cat.id}
                   href={cat.href}
                   data-feature-card
-                  className="group relative flex-shrink-0 overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-black/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-md snap-start"
-                  style={{
-                    width: "calc(20% - 12px)",
-                    minWidth: "150px",
-                  }}
+                  className="group relative flex-shrink-0 overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-md snap-start w-[260px] sm:w-[200px] md:w-[220px] lg:w-[calc(25%-9px)] xl:w-[calc(20%-10px)]"
                 >
-                  {/* Image Area - Portrait aspect */}
-                  <div className="relative aspect-[4/5] w-full overflow-hidden bg-gray-100">
+                  {/* Image Area - Aspect-[3/4] for elegant sizing */}
+                  <div className="relative aspect-[3/4] w-full overflow-hidden bg-gray-100">
                     <img
                       src={cat.image}
                       alt={cat.name}
                       className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                       loading="lazy"
                     />
+
+                    {/* Dark Gradient Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
                   </div>
 
-                  {/* Text Info - BELOW image (Vesper style) */}
-                  <div className="bg-white px-3 py-2.5">
-                    <span className="block text-xs font-bold uppercase tracking-wide text-navy-950">
+                  {/* Text Info Overlay on Bottom */}
+                  <div className="absolute bottom-0 left-0 right-0 p-4 z-10">
+                    <span className="block text-sm font-bold uppercase tracking-wide text-white">
                       {cat.name}
                     </span>
-                    <span className="block mt-0.5 text-[10px] font-medium uppercase tracking-wider text-navy-950/45 leading-tight">
+                    <span className="block mt-0.5 text-[11px] font-medium uppercase tracking-wider text-white/75 leading-tight">
                       {cat.subtitle}
                     </span>
                   </div>
@@ -276,7 +279,8 @@ export default function FeaturedCategories() {
                     const card = el.querySelector<HTMLElement>(
                       "[data-feature-card]",
                     );
-                    const cardWidth = card?.offsetWidth || 170;
+                    const cardWidth =
+                      card?.getBoundingClientRect().width || 210;
                     const gap = 12;
                     el.scrollTo({
                       left: i * (cardWidth + gap),
