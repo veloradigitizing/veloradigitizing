@@ -98,8 +98,7 @@ export default function BundleSection({
         image: bundle.image,
       });
       
-      // Open cart after adding
-      openCart();
+      // Cart updated silently - user can open cart when ready
     } catch (error) {
       console.error("Failed to add to cart:", error);
     } finally {
@@ -211,6 +210,7 @@ export default function BundleSection({
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
             {BUNDLES.map((bundle, i) => (
+              <Reveal key={bundle.slug} direction="up" delay={stagger(i, 80)}>
                 <article
                   data-card
                   className="group relative flex w-[300px] flex-shrink-0 flex-col overflow-hidden rounded-2xl bg-white shadow-lg ring-1 ring-navy-950/8 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl snap-start sm:w-[320px] md:w-[340px] h-fit"
@@ -328,6 +328,7 @@ export default function BundleSection({
                     </Link>
                   </div>
                 </article>
+              </Reveal>
             ))}
           </div>
         </div>
