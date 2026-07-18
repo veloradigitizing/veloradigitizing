@@ -100,14 +100,23 @@ export default function Home() {
           <div className="vr-marquee mt-8 flex overflow-hidden lg:hidden">
             <div className="vr-marquee-track flex shrink-0 items-center gap-12 pr-12">
               {marqueeBrands.map((brand, i) => (
-                <div key={`${brand.name}-${i}`} className="flex h-14 items-center justify-center text-navy-950">
+                <div
+                  key={`${brand.name}-${i}`}
+                  className="flex h-14 items-center justify-center text-navy-950"
+                >
                   {brand.render()}
                 </div>
               ))}
             </div>
-            <div className="vr-marquee-track flex shrink-0 items-center gap-12 pr-12" aria-hidden>
+            <div
+              className="vr-marquee-track flex shrink-0 items-center gap-12 pr-12"
+              aria-hidden
+            >
               {marqueeBrands.map((brand, i) => (
-                <div key={`${brand.name}-dup-${i}`} className="flex h-14 items-center justify-center text-navy-950">
+                <div
+                  key={`${brand.name}-dup-${i}`}
+                  className="flex h-14 items-center justify-center text-navy-950"
+                >
                   {brand.render()}
                 </div>
               ))}
@@ -122,7 +131,7 @@ export default function Home() {
           <SectionTag eyebrow="Our Services" title="What We Offer" />
         </Reveal>
         <div className="mt-14 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3">
-          {SERVICES.slice(0, 3).map((s, i) => (
+          {SERVICES?.slice(0, 3).map((s, i) => (
             <Reveal key={s.slug} direction="up" delay={stagger(i, 120)}>
               <ServiceCard service={s} />
             </Reveal>
@@ -157,7 +166,9 @@ export default function Home() {
             className="vr-btn vr-btn-primary flex items-center gap-2 rounded-md bg-brand-600 px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-brand-700"
           >
             VIEW FULL PORTFOLIO{" "}
-            <span aria-hidden className="vr-arrow">&rarr;</span>
+            <span aria-hidden className="vr-arrow">
+              &rarr;
+            </span>
           </Link>
         </Reveal>
       </section>
@@ -178,14 +189,14 @@ export default function Home() {
 
       <ProcessSteps />
       <Testimonials />
-      
+
       {/* FAQ Section */}
-      <FAQ 
+      <FAQ
         items={HOME_FAQS}
         title="Frequently Asked Questions"
         subtitle="Find answers to common questions about our embroidery digitizing services."
       />
-      
+
       <CTABanner />
     </>
   );
