@@ -261,6 +261,11 @@ export default function StorePage() {
                       </div>
                     </Link>
 
+                    {/* 25% OFF Badge on Image */}
+                    <span className="absolute left-2 top-2 z-10 rounded-lg bg-gradient-to-r from-rose-500 to-pink-600 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-white shadow-lg">
+                      25% OFF
+                    </span>
+
                     {/* Wishlist Button */}
                     <button
                       aria-label="Add to wishlist"
@@ -297,9 +302,16 @@ export default function StorePage() {
 
                     {/* Price & Add to Cart */}
                     <div className="mt-auto pt-3">
-                      <p className="font-serif text-lg font-bold text-brand-600">
-                        ${patch.price.toFixed(2)}
-                      </p>
+                      <div className="flex items-baseline gap-2">
+                        {/* Sale Price - First (Big & Bold Green) */}
+                        <span className="font-serif text-xl font-bold text-green-600">
+                          ${patch.price.toFixed(2)}
+                        </span>
+                        {/* Original Price - Strikethrough After */}
+                        <span className="text-sm font-medium text-navy-940/45 line-through">
+                          $4.00
+                        </span>
+                      </div>
                       <button
                         onClick={() => handleAddToCart(patch)}
                         className={`vr-btn mt-2 flex w-full items-center justify-center gap-2 rounded-lg py-2.5 text-xs font-bold uppercase tracking-wide transition-all ${
