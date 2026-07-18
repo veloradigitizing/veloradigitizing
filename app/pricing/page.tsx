@@ -5,6 +5,7 @@ import { Breadcrumb, SectionTag } from "../components/Section";
 import Icon from "../components/Icon";
 import ProcessSteps from "../components/ProcessSteps";
 import CTABanner from "../components/CTABanner";
+import { FAQ, PRICING_FAQS } from "../components/FAQ";
 import { Reveal } from "../components/Reveal";
 import { stagger } from "../components/stagger";
 export const metadata: Metadata = {
@@ -165,6 +166,14 @@ export default function PricingPage() {
       </section>
 
       <ProcessSteps />
+      
+      {/* FAQ Section */}
+      <FAQ 
+        items={PRICING_FAQS}
+        title="Pricing - Frequently Asked Questions"
+        subtitle="Questions about our pricing plans, billing, and payment options."
+      />
+      
       <CTABanner />
     </>
   );

@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import { IconCircle, SectionTag, StatsBar } from "../components/Section";
 import Icon, { IconName } from "../components/Icon";
 import CTABanner from "../components/CTABanner";
+import { FAQ, ABOUT_FAQS } from "../components/FAQ";
 import { Reveal } from "../components/Reveal";
 import { stagger } from "../components/stagger";
 
@@ -268,6 +269,13 @@ export default function AboutPage() {
           </Reveal>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQ 
+        items={ABOUT_FAQS}
+        title="About Velora - Frequently Asked Questions"
+        subtitle="Learn more about our company, team, and what makes us different."
+      />
 
       <CTABanner
         title="Ready to Digitize Your Design?"

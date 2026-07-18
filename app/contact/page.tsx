@@ -1,10 +1,7 @@
-"use client";
-
-import { useState } from "react";
 import Hero from "../components/Hero";
 import Icon, { IconName } from "../components/Icon";
 import { Reveal } from "../components/Reveal";
-import { stagger } from "../components/stagger";
+import { FAQ, CONTACT_FAQS } from "../components/FAQ";
 const CONTACT_INFO: { icon: IconName; title: string; lines: string[] }[] = [
   {
     icon: "mail",
@@ -28,27 +25,8 @@ const CONTACT_INFO: { icon: IconName; title: string; lines: string[] }[] = [
   },
 ];
 
-const FAQS = [
-  {
-    q: "How fast can I get my digitizing file?",
-    a: "Standard orders are delivered within 12-24 hours. Rush orders can be delivered in as fast as 2 hours.",
-  },
-  {
-    q: "Do you offer rush orders?",
-    a: "Yes, we offer 2 hour, 4 hour, same day, and weekend rush delivery options for an additional fee.",
-  },
-  {
-    q: "What file formats will I receive?",
-    a: "We deliver in all major embroidery formats including DST, PES, EXP, JEF, VP3 and more.",
-  },
-  {
-    q: "Can I request a sample before placing an order?",
-    a: "Yes, contact our team and we'll be happy to share sample work relevant to your design type.",
-  },
-];
 
 export default function ContactPage() {
-  const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   return (
     <>
@@ -125,7 +103,7 @@ export default function ContactPage() {
               possible.
             </p>
 
-            <form className="mt-7 grid grid-cols-1 gap-5 sm:grid-cols-2">
+            <form id="contact-form" className="mt-7 grid grid-cols-1 gap-5 sm:grid-cols-2">
               <label className="flex flex-col gap-1.5 text-sm font-medium text-navy-950">
                 Your Name
                 <input
@@ -229,47 +207,15 @@ export default function ContactPage() {
         </div>
       </Reveal>
 
-      <section className="mx-auto max-w-5xl px-5 pb-20 lg:px-10">
-        <Reveal direction="up">
-          <h3 className="text-center font-serif text-2xl font-bold text-navy-950 sm:text-3xl">
-            Frequently Asked Questions
-          </h3>
-          <div className="mx-auto mt-4 h-[3px] w-16 rounded-full bg-brand-600" />
-        </Reveal>
-        <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
-          {FAQS.map((faq, i) => (
-            <Reveal
-              key={faq.q}
-              direction="up"
-              delay={stagger(i, 90)}
-              className="overflow-hidden rounded-lg border border-navy-950/10 bg-white transition-colors hover:border-brand-600/30"
-            >
-              <button
-                onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                className="flex w-full items-center justify-between gap-3 px-5 py-4 text-left text-sm font-semibold text-navy-950"
-              >
-                {faq.q}
-                <Icon
-                  name="chevron-down"
-                  className={`h-4 w-4 shrink-0 text-brand-600 transition-transform duration-300 ${
-                    openFaq === i ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
-              <div
-                className="grid transition-all duration-300 ease-out"
-                style={{
-                  gridTemplateRows: openFaq === i ? "1fr" : "0fr",
-                }}
-              >
-                <p className="overflow-hidden px-5 text-sm leading-relaxed text-navy-950/60">
-                  <span className="block pb-4">{faq.a}</span>
-                </p>
-              </div>
-            </Reveal>
-          ))}
-        </div>
-      </section>
+      <FAQ
+        items={CONTACT_FAQS}
+        title="Frequently Asked Questions"
+        subtitle="Quick answers about turnaround, file formats, and how to send us your artwork. Can't find what you're looking for? Reach out anytime."
+        eyebrow="FAQ"
+        showCta
+        ctaLabel="Send Us a Message"
+        ctaHref="#contact-form"
+      />
     </>
   );
 }

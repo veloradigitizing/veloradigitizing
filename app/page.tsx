@@ -11,6 +11,7 @@ import FeaturedCategories from "./components/FeaturedCategories";
 import ProcessSteps from "./components/ProcessSteps";
 import Testimonials from "./components/Testimonials";
 import CTABanner from "./components/CTABanner";
+import { FAQ, HOME_FAQS } from "./components/FAQ";
 import { Reveal } from "./components/Reveal";
 import { stagger } from "./components/stagger";
 function NikeLogo() {
@@ -166,6 +167,14 @@ export default function Home() {
 
       <ProcessSteps />
       <Testimonials />
+      
+      {/* FAQ Section */}
+      <FAQ 
+        items={HOME_FAQS}
+        title="Frequently Asked Questions"
+        subtitle="Find answers to common questions about our embroidery digitizing services."
+      />
+      
       <CTABanner />
     </>
   );

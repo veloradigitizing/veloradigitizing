@@ -11,6 +11,7 @@ import { stagger } from "../components/stagger";
 import { useCart } from "../context/CartContext";
 import { PRODUCTS, type Product } from "./products";
 import StoreBundles from "./StoreBundles";
+import { FAQ, STORE_FAQS } from "../components/FAQ";
 
 const CATEGORIES: { label: string; value: string; icon: IconName }[] = [
   { label: "All Products", value: "all", icon: "grid" },
@@ -235,24 +236,34 @@ export default function StorePage() {
                   delay={stagger(i % 12, 50)}
                   className="vr-lift group flex flex-col rounded-xl border border-navy-950/10 bg-white p-4 transition-shadow hover:shadow-lg"
                 >
-                  <Link href={`/store/${p.slug}`} className="relative block">
-                    <div className="vr-zoom relative aspect-square w-full overflow-hidden rounded-lg bg-navy-950/[0.03]">
-                      <Image
-                        src={p.image}
-                        alt={p.title}
-                        fill
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
-                        className="object-cover"
-                      />
-                    </div>
+                  {/* Position relative container handles the child absolute button securely */}
+                  <div className="relative block">
+                    <Link href={`/store/${p.slug}`}>
+                      <div className="vr-zoom relative aspect-square w-full overflow-hidden rounded-lg bg-navy-950/[0.03]">
+                        <Image
+                          src={p.image}
+                          alt={p.title}
+                          fill
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
+                          className="object-cover"
+                        />
+                      </div>
+                    </Link>
+
+                    {/* FIXED: Moved button outside of Link component */}
                     <button
                       aria-label="Add to wishlist"
-                      onClick={(e) => e.preventDefault()}
-                      className="absolute right-2 top-2 flex h-8 w-8 items-center justify-center rounded-full bg-white/90 text-navy-950/50 shadow-md backdrop-blur transition-colors hover:bg-white hover:text-brand-600"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        // Add wishlist handler logic here
+                      }}
+                      className="absolute right-2 top-2 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-white/90 text-navy-950/50 shadow-md backdrop-blur transition-colors hover:bg-white hover:text-brand-600"
                     >
                       <Icon name="heart" className="h-4 w-4" />
                     </button>
-                  </Link>
+                  </div>
+
                   <p className="mt-3 text-[10px] font-semibold uppercase tracking-wide text-navy-950/35">
                     {p.formats.join(" · ")}
                   </p>
@@ -344,6 +355,13 @@ export default function StorePage() {
           ))}
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQ
+        items={STORE_FAQS}
+        title="Store - Frequently Asked Questions"
+        subtitle="Questions about purchasing, downloads, licensing, and support for store products."
+      />
 
       {/* CTA Section */}
       <section className="mx-auto max-w-7xl px-5 pb-20 lg:px-10">

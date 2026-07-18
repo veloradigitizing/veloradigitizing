@@ -14,6 +14,7 @@ import PortfolioCard, {
   PORTFOLIO_CATEGORIES,
   PORTFOLIO_ITEMS,
 } from "../components/PortfolioCard";
+import { FAQ, PORTFOLIO_FAQS } from "../components/FAQ";
 import { Reveal } from "../components/Reveal";
 import { stagger } from "../components/stagger";
 const STATS: {
@@ -168,6 +169,13 @@ export default function PortfolioPage() {
           </Reveal>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQ 
+        items={PORTFOLIO_FAQS}
+        title="Portfolio - Frequently Asked Questions"
+        subtitle="Questions about our portfolio, samples, and previous work."
+    />
     </>
   );
 }

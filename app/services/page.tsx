@@ -5,6 +5,7 @@ import ServiceCard, { SERVICES } from "../components/ServiceCard";
 import WhyChooseUs from "../components/WhyChooseUs";
 import ProcessSteps from "../components/ProcessSteps";
 import CTABanner from "../components/CTABanner";
+import { FAQ, SERVICES_FAQS } from "../components/FAQ";
 import { Reveal } from "../components/Reveal";
 import { stagger } from "../components/stagger";
 export const metadata: Metadata = {
@@ -66,6 +67,14 @@ export default function ServicesPage() {
       />
 
       <ProcessSteps />
+      
+      {/* FAQ Section */}
+      <FAQ 
+        items={SERVICES_FAQS}
+        title="Services - Frequently Asked Questions"
+        subtitle="Questions about our embroidery digitizing services and capabilities."
+      />
+      
       <CTABanner />
     </>
   );
