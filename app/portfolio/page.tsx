@@ -17,6 +17,7 @@ import PortfolioCard, {
 import { FAQ, PORTFOLIO_FAQS } from "../components/FAQ";
 import { Reveal } from "../components/Reveal";
 import { stagger } from "../components/stagger";
+
 const STATS: {
   icon: "award" | "smile" | "clock" | "globe";
   value: string;
@@ -28,12 +29,35 @@ const STATS: {
   { icon: "globe", value: "50+", label: "Countries Served" },
 ];
 
+// Items per page for Load More
+const ITEMS_PER_PAGE = 9;
+
 export default function PortfolioPage() {
   const [active, setActive] = useState("all");
-  const items =
+  const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
+
+  // Filter items based on active category
+  const filteredItems =
     active === "all"
       ? PORTFOLIO_ITEMS
       : PORTFOLIO_ITEMS.filter((i) => i.category === active);
+
+  // Only show items up to visibleCount
+  const visibleItems = filteredItems.slice(0, visibleCount);
+  
+  // Check if there are more items to show
+  const hasMore = visibleCount < filteredItems.length;
+
+  // Handle Load More click
+  const handleLoadMore = () => {
+    setVisibleCount((prev) => prev + ITEMS_PER_PAGE);
+  };
+
+  // Reset visible count when category changes
+  const handleCategoryChange = (category: string) => {
+    setActive(category);
+    setVisibleCount(ITEMS_PER_PAGE);
+  };
 
   return (
     <>
@@ -55,7 +79,7 @@ export default function PortfolioPage() {
             <SectionTag
               eyebrow="Our Work"
               title="Latest Portfolio"
-              subtitle="We take pride in delivering top-quality digitizing for a wide range of designs."
+              subtitle={`Showing ${visibleItems.length} of ${filteredItems.length} designs • We take pride in delivering top-quality digitizing for a wide range of designs.`}
             />
           </Reveal>
         </div>
@@ -68,7 +92,7 @@ export default function PortfolioPage() {
           {PORTFOLIO_CATEGORIES.map((cat) => (
             <button
               key={cat.value}
-              onClick={() => setActive(cat.value)}
+              onClick={() => handleCategoryChange(cat.value)}
               className={`vr-btn rounded-md px-4 py-2 text-xs font-semibold uppercase tracking-wide transition-colors ${
                 active === cat.value
                   ? "bg-brand-600 text-white"
@@ -80,26 +104,76 @@ export default function PortfolioPage() {
           ))}
         </Reveal>
 
-        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {items.map((item, i) => (
+        {/* Results count */}
+        <div className="mt-6 flex items-center justify-between">
+          <p className="text-sm text-navy-950/50">
+            Showing <span className="font-semibold text-brand-600">{visibleItems.length}</span> of{" "}
+            <span className="font-semibold">{filteredItems.length}</span> designs
+            {hasMore && (
+              <span> • <span className="text-brand-600">{filteredItems.length - visibleCount} more available</span></span>
+            )}
+          </p>
+          {(active !== "all" || visibleCount > ITEMS_PER_PAGE) && (
+            <button
+              onClick={() => { handleCategoryChange("all"); }}
+              className="text-xs font-semibold text-brand-600 hover:text-brand-700 transition-colors"
+            >
+              View All Categories →
+            </button>
+          )}
+        </div>
+
+        {/* Grid - Shows only visible items */}
+        <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {visibleItems.map((item, i) => (
             <Reveal
               key={`${item.title}-${active}`}
               direction="up"
-              delay={stagger(i, 70)}
+              delay={stagger(i % 9, 70)}
             >
               <PortfolioCard item={item} />
             </Reveal>
           ))}
         </div>
 
-        <Reveal direction="up" className="mt-10 flex justify-center">
-          <button className="vr-btn vr-btn-primary flex items-center gap-2 rounded-md bg-brand-600 px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-brand-700">
-            VIEW MORE WORK{" "}
-            <span aria-hidden className="vr-arrow">
-              &rarr;
-            </span>
-          </button>
-        </Reveal>
+        {/* Empty State */}
+        {filteredItems.length === 0 && (
+          <div className="mt-12 flex flex-col items-center justify-center py-16 text-center">
+            <Icon name="search" className="mb-4 h-12 w-12 text-navy-950/20" />
+            <p className="text-base font-semibold text-navy-950/70">No designs found</p>
+            <p className="mt-1 text-sm text-navy-950/45">Try selecting a different category.</p>
+            <button
+              onClick={() => handleCategoryChange("all")}
+              className="vr-btn mt-4 rounded-lg bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-700"
+            >
+              View All Designs
+            </button>
+          </div>
+        )}
+
+        {/* Load More Button - Only shows when there are more items */}
+        {hasMore && (
+          <Reveal direction="up" className="mt-10 flex justify-center">
+            <button
+              onClick={handleLoadMore}
+              className="vr-btn vr-btn-primary group flex items-center gap-2 rounded-md bg-brand-600 px-7 py-3.5 text-sm font-semibold text-white transition-all hover:bg-brand-700 hover:shadow-lg hover:shadow-brand-600/25"
+            >
+              LOAD MORE DESIGNS
+              <span className="rounded-full bg-white/20 px-2 py-0.5 text-xs font-bold">
+                +{Math.min(ITEMS_PER_PAGE, filteredItems.length - visibleCount)}
+              </span>
+              <Icon name="chevron-down" className="h-4 w-4 rotate-90 transition-transform group-hover:translate-x-1" />
+            </button>
+          </Reveal>
+        )}
+
+        {/* All Loaded Indicator */}
+        {!hasMore && filteredItems.length > ITEMS_PER_PAGE && (
+          <div className="mt-10 flex items-center justify-center gap-2 text-sm text-navy-950/40">
+            <Icon name="check" className="h-4 w-4 text-green-500" />
+            <span>All {filteredItems.length} designs loaded!</span>
+          </div>
+        )}
       </section>
 
       <StatsBar stats={STATS} />

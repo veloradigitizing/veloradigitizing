@@ -16,7 +16,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
   // === PATCHES FOLDER (Circular Text Patches) ===
   {
     title: "Hike More Worry Less",
-    price: 8.99,
+    price: 2.99,
     category: "adventure",
     image: "/images/patches/HikeMorePatch.jpeg",
     description: "Circular outdoor adventure patch featuring hiker silhouette against mountain backdrop. Perfect for backpacks and outdoor gear.",
@@ -25,7 +25,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
   },
   {
     title: "Wild Adventure Patch",
-    price: 7.99,
+    price: 2.99,
     category: "adventure",
     image: "/images/patches/WildPatch.jpeg",
     description: "Bold wilderness themed patch with nature-inspired design. Ideal for camping and hiking enthusiasts.",
@@ -34,7 +34,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
   },
   {
     title: "Stay Wild Patch",
-    price: 7.99,
+    price: 2.99,
     category: "adventure",
     image: "/images/patches/StayWIldPatch.jpeg",
     description: "Inspirational stay wild patch with adventurous spirit theme. Great for jackets and caps.",
@@ -43,7 +43,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
   },
   {
     title: "Explore The Path",
-    price: 8.99,
+    price: 2.99,
     category: "adventure",
     image: "/images/patches/ExplorePatch.jpeg",
     description: "Exploration themed patch encouraging adventure and discovery. Perfect for travel gear.",
@@ -52,7 +52,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
   },
   {
     title: "Find Your Path Patch",
-    price: 7.99,
+    price: 2.99,
     category: "adventure",
     image: "/images/patches/FindYourPathPatch.jpeg",
     description: "Motivational path-finding patch with compass theme. Great for adventurers.",
@@ -61,7 +61,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
   },
   {
     title: "Happy Place Patch",
-    price: 6.99,
+    price: 2.99,
     category: "lifestyle",
     image: "/images/patches/HappyPlacePatch.jpeg",
     description: "Cheerful happy place themed patch with positive vibes. Great for casual wear.",
@@ -70,7 +70,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
   },
   {
     title: "Keep It Simple Patch",
-    price: 6.99,
+    price: 2.99,
     category: "lifestyle",
     image: "/images/patches/KeepItSimplePatch.jpeg",
     description: "Minimalist text patch with clean typography. Modern design for everyday wear.",
@@ -79,7 +79,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
   },
   {
     title: "Life Is Better Patch",
-    price: 7.99,
+    price: 2.99,
     category: "lifestyle",
     image: "/images/patches/LifeIsBetterPatch.jpeg",
     description: "Inspirational life quote patch with cheerful message. Uplifting design.",
@@ -88,7 +88,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
   },
   {
     title: "Chase The Sun Patch",
-    price: 7.99,
+    price: 2.99,
     category: "lifestyle",
     image: "/images/patches/ChaseTheSunPatch.jpeg",
     description: "Sunny optimistic patch encouraging you to chase your dreams. Bright design.",
@@ -97,7 +97,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
   },
   {
     title: "Adventure Awaits Patch",
-    price: 8.99,
+    price: 2.99,
     category: "adventure",
     image: "/images/patches/AdventurePatch.jpeg",
     description: "Bold adventure awaits patch for thrill seekers and explorers.",
@@ -108,7 +108,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
   // === CUSTOM PATCHES FOLDER (Unique Designs) ===
   {
     title: "Dad By Day Gamer By Night",
-    price: 9.99,
+    price: 2.99,
     category: "gaming",
     image: "/images/custom-patches/DadByDay.jpeg",
     description: "Fun gaming dad patch with controller graphic and retro styling. Great for gamer dads.",
@@ -117,7 +117,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
   },
   {
     title: "Endeavour Patch",
-    price: 8.99,
+    price: 2.99,
     category: "motivational",
     image: "/images/custom-patches/Endeavour.jpeg",
     description: "Endeavour motivational patch with bold lettering. Inspiring design for achievers.",
@@ -126,7 +126,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
   },
   {
     title: "Gumshoe Detective Patch",
-    price: 7.99,
+    price: 2.99,
     category: "fun",
     image: "/images/custom-patches/Gumshoe.jpeg",
     description: "Playful detective-themed gumshoe patch with mystery vibe.",
@@ -135,7 +135,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
   },
   {
     title: "Home Of Hustle Patch",
-    price: 8.99,
+    price: 2.99,
     category: "motivational",
     image: "/images/custom-patches/HomeOfHustle.jpeg",
     description: "Motivational hustle culture patch with bold typography. Perfect for workwear.",
@@ -144,7 +144,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
   },
   {
     title: "Love Heart Patch",
-    price: 6.99,
+    price: 2.99,
     category: "lifestyle",
     image: "/images/custom-patches/LovePatch.jpeg",
     description: "Elegant love-themed patch with heart motif. Romantic design for couples apparel.",
@@ -153,7 +153,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
   },
   {
     title: "Mentally Strong Patch",
-    price: 9.99,
+    price: 2.99,
     category: "motivational",
     image: "/images/custom-patches/Mentally.jpeg",
     description: "Powerful mental strength patch with inspiring message. Build resilience.",
@@ -162,7 +162,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
   },
   {
     title: "Paranormal Patch",
-    price: 8.99,
+    price: 2.99,
     category: "fun",
     image: "/images/custom-patches/Paranormal.jpeg",
     description: "Spooky paranormal themed patch for supernatural fans. Mysterious design.",
@@ -171,7 +171,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
   },
   {
     title: "People Safety Patch",
-    price: 7.99,
+    price: 2.99,
     category: "community",
     image: "/images/custom-patches/PeopleSafety.jpeg",
     description: "Community safety awareness patch with protective message.",
@@ -180,7 +180,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
   },
   {
     title: "Search Rescan Patch",
-    price: 8.99,
+    price: 2.99,
     category: "gaming",
        image: "/images/custom-patches/SearchRescan.jpeg",
     description: "Gaming-inspired search rescan action patch for gamers.",
@@ -189,7 +189,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
   },
   {
     title: "Veracruz Patch",
-    price: 8.99,
+    price: 2.99,
     category: "travel",
     image: "/images/custom-patches/Veracruz.jpeg",
     description: "Veracruz Mexico travel souvenir patch with cultural design.",
@@ -198,7 +198,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
   },
   {
     title: "Wild Spirit Patch",
-    price: 9.99,
+    price: 2.99,
     category: "adventure",
     image: "/images/custom-patches/Wild.jpeg",
     description: "Fierce wild spirit patch with untamed energy. Bold nature design.",
