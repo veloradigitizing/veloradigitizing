@@ -1,180 +1,85 @@
+"use client";
+
 import Link from "next/link";
-import Image from "next/image";
-import Icon, { IconName } from "./Icon";
 import { IconCircle } from "./Section";
+import Icon from "./Icon";
+import { SERVICES } from "./services-data";
 
 export type Service = {
   slug: string;
-  icon: IconName;
+  icon: string;
   title: string;
   description: string;
-  image: string;
-  features: string[];
+  image?: string;
+  features?: string[];
   count?: number;
 };
 
-export const SERVICES: Service[] = [
-  {
-    slug: "patch-digitizing",
-    icon: "badge-check",
-    title: "Patch Digitizing",
-    description: "Custom embroidered patches for jackets, caps, bags and more.",
-    image: "/images/patches/HikeMorePatch.jpeg",
-    features: ["Embroidered Patches", "Badge Digitizing", "Merrow Border", "Heat Cut Border", "Sew On Patches"],
-    count: 21
-  },
-  {
-    slug: "custom-patches",
-    icon: "star",
-    title: "Custom Patches",
-    description: "Unique personalized patch designs for gaming, lifestyle & more.",
-    image: "/images/custom-patches/DadByDay.jpeg",
-    features: ["Gaming Patches", "Motivational", "Travel Souvenirs", "Personalized Designs", "Any Theme"],
-    count: 11
-  },
-  {
-    slug: "cap-logo-digitizing",
-    icon: "cap",
-    title: "Cap / Hat Logo",
-    description: "Professional cap embroidery logos for structured and unstructured caps.",
-    image: "/images/cap-logo/cap-design-01.jpeg",
-    features: ["Front Panel Logos", "Side Designs", "Back Logos", "Multi-color", "Small Format"],
-    count: 5
-  },
-  {
-    slug: "chenille-digitizing",
-    icon: "grid",
-    title: "Chenille Patches",
-    description: "Premium chenille lettering and patches for varsity jackets.",
-    image: "/images/chenille/chenille-02.jpeg",
-    features: ["Chenille Letters", "Chain Stitch", "Letterman Jackets", "Varsity Style", "High Density"],
-    count: 6
-  },
-  {
-    slug: "jacket-back-digitizing",
-    icon: "layers",
-    title: "Jacket Back Design",
-    description: "Large format full back embroidery for denim and leather jackets.",
-    image: "/images/jacket-back-design/jacket-back-01.jpeg",
-    features: ["Full Back Designs", "Large Format", "High Stitch Count", "Denim Jackets", "Leather Jackets"],
-    count: 2
-  },
-  {
-    slug: "left-chest-logo",
-    icon: "shirt",
-    title: "Left Chest Logo",
-    description: "Corporate and sports logos for polo shirts and workwear.",
-    image: "/images/left-chest-logo/ChristLogo.jpeg",
-    features: ["Business Logos", "Sports Teams", "Small Logos", "Corporate Wear", "Quick Turnaround"],
-    count: 3
-  },
-  {
-    slug: "3d-puff-digitizing",
-    icon: "rocket",
-    title: "3D Puff Embroidery",
-    description: "Raised dimensional puff embroidery for bold eye-catching designs.",
-    image: "/images/3d-puff/3d-puff-sample-01.jpeg",
-    features: ["3D Puff Logo", "High Density", "Cap Puff", "Jacket Puff", "Foam Ready"],
-    count: 1
-  },
-  {
-    slug: "towel-embroidery",
-    icon: "heart",
-    title: "Towel Embroidery",
-    description: "Personalized monogram and custom embroidery on towels.",
-    image: "/images/towel-design/towel-design-01.jpeg",
-    features: ["Monogram Names", "Gift Items", "Bath Towels", "Hand Towels", "Personalized"],
-    count: 4
-  },
-  {
-    slug: "applique-digitizing",
-    icon: "scissors",
-    title: "Applique Design",
-    description: "Clean applique work with multiple fabric layer techniques.",
-    image: "/images/applique-design/ADesign.jpeg",
-    features: ["Clean Applique", "Raw Edge", "Twill Applique", "Multi-layer", "Sports Mascots"],
-    count: 2
-  },
-  {
-    slug: "vector-art",
-    icon: "share",
-    title: "Vector Art Conversion",
-    description: "Convert any image to clean vector format for perfect digitizing.",
-    image: "/images/vector-art/GokuVector.jpeg",
-    features: ["AI, EPS, SVG", "Logo Redraw", "Image to Vector", "High Quality", "Print Ready"],
-    count: 5
-  },
-  {
-    slug: "shoulder-embroidery",
-    icon: "award",
-    title: "Shoulder Design",
-    description: "Flag designs and shoulder embroidery for uniforms and apparel.",
-    image: "/images/shoulder-design/pilipinas-logo-01.jpeg",
-    features: ["Flag Designs", "Shoulder Placement", "Uniforms", "National Themes", "Custom Art"],
-    count: 2
-  },
-  {
-    slug: "bundle-packages",
-    icon: "box",
-    title: "Bundle Packages",
-    description: "Save big with our curated design packs and bundle deals.",
-    image: "/images/bundles/bundle1.jpeg",
-    features: ["Value Packs", "Multi Designs", "25% Savings", "Instant Download", "Complete Kits"],
-    count: 6
-  }
-];
-
 export default function ServiceCard({ service }: { service: Service }) {
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const card = e.currentTarget;
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    
+    const rotateX = ((y - centerY) / centerY) * -8;
+    const rotateY = ((x - centerX) / centerX) * 8;
+    
+    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+  };
+
+  const handleMouseLeave = (e: React.MouseEvent<HTMLDivElement>) => {
+    e.currentTarget.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+  };
+
   return (
-    <div className="vr-lift group flex h-full flex-col overflow-hidden rounded-2xl border border-navy-950/10 bg-white shadow-sm transition-all hover:shadow-lg">
-      {/* Image Section */}
-      <div className="relative aspect-[4/3] w-full overflow-hidden bg-gradient-to-br from-gray-100 via-gray-50 to-white">
-        <Image
-          src={service.image}
-          alt={service.title}
-          fill
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
-        />
-        {service.count && (
-          <span className="absolute right-2 top-2 rounded-full bg-brand-600 px-2.5 py-1 text-[10px] font-bold text-white shadow-lg">
-            {service.count}+ Designs
-          </span>
-        )}
-      </div>
-      
-      {/* Content Section - Fixed Height */}
-      <div className="flex flex-1 flex-col p-6">
-        <div className="flex items-center gap-3">
-          <span className="vr-icon-pop inline-flex shrink-0">
-            <IconCircle icon={service.icon} size="sm" />
-          </span>
-          <h3 className="text-[15px] font-bold uppercase tracking-wide text-navy-950">
+    <Link href="/store" className="group block h-full">
+      <div
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseLeave}
+        className="flex h-full cursor-pointer flex-col rounded-2xl border border-navy-950/10 bg-white p-6 shadow-sm transition-all duration-200 ease-out hover:shadow-xl hover:shadow-brand-500/10"
+        style={{ transformStyle: 'preserve-3d', transition: 'transform 0.15s ease-out, box-shadow 0.3s ease' }}
+      >
+        {/* Icon - Fixed Size */}
+        <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-500 to-brand-600 text-white shadow-lg transition-transform duration-300 group-hover:scale-110 group-hover:shadow-brand-500/30" style={{ transform: 'translateZ(20px)' }}>
+          <IconCircle icon={service.icon as any} size="sm" className="text-white" />
+        </div>
+        
+        {/* Title - Fixed Height */}
+        <div className="mt-5 shrink-0">
+          <h3 className="text-lg font-bold leading-tight text-navy-950 transition-colors group-hover:text-brand-600 line-clamp-2" style={{ minHeight: '2.5rem' }}>
             {service.title}
           </h3>
         </div>
         
-        <p className="mt-3 line-clamp-2 text-sm leading-relaxed text-navy-950/60">
-          {service.description}
-        </p>
+        {/* Description - Fixed Height with line clamp */}
+        <div className="mt-3 grow shrink-0">
+          <p className="text-sm leading-relaxed text-navy-950/60 line-clamp-3" style={{ minHeight: '3.75rem' }}>
+            {service.description}
+          </p>
+        </div>
         
-        {/* Features - Fixed height with exactly 4 items */}
-        <ul className="mt-4 flex flex-1 flex-col gap-2">
-          {service.features.slice(0, 4).map((f) => (
-            <li key={f} className="flex items-center gap-2 text-xs text-navy-950/55">
-              <Icon name="check" className="h-3.5 w-3.5 shrink-0 text-green-500" />
-              {f}
-            </li>
-          ))}
-        </ul>
+        {/* Footer - Fixed at bottom */}
+        <div className="mt-auto flex shrink-0 items-center justify-between pt-4 border-t border-navy-950/5" style={{ transform: 'translateZ(10px)' }}>
+          {service.count && (
+            <span className="rounded-full bg-brand-50 px-3 py-1.5 text-xs font-semibold text-brand-600">
+              {service.count}+ Designs
+            </span>
+          )}
+          <span className="flex h-9 w-9 items-center justify-center rounded-full border border-navy-950/10 text-navy-950/40 transition-all group-hover:border-brand-500 group-hover:bg-brand-500 group-hover:text-white">
+            <svg className="h-4 w-4 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </span>
+        </div>
         
-        <Link
-          href="/store"
-          className="vr-btn mt-5 inline-flex w-fit items-center gap-1.5 text-sm font-bold text-brand-600 hover:text-brand-700"
-        >
-          VIEW DESIGNS <span aria-hidden className="vr-arrow">&rarr;</span>
-        </Link>
+        {/* Hover Glow Effect */}
+        <div className="pointer-events-none absolute inset-0 -z-10 rounded-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+          <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-brand-500/10 via-transparent to-brand-600/5" />
+        </div>
       </div>
-    </div>
+    </Link>
   );
 }

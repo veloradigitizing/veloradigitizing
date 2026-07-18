@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
 import Hero from "../components/Hero";
 import { Breadcrumb, SectionTag } from "../components/Section";
-import ServiceCard, { SERVICES } from "../components/ServiceCard";
+import ServiceCard, { Service } from "../components/ServiceCard";
+import { SERVICES } from "../components/services-data";
 import WhyChooseUs from "../components/WhyChooseUs";
 import ProcessSteps from "../components/ProcessSteps";
 import CTABanner from "../components/CTABanner";
 import { FAQ, SERVICES_FAQS } from "../components/FAQ";
 import { Reveal } from "../components/Reveal";
 import { stagger } from "../components/stagger";
+import PortfolioSection from "../components/PortfolioSection";
+
 export const metadata: Metadata = {
   title: "Services | Velora Digitizing",
   description:
@@ -52,13 +55,16 @@ export default function ServicesPage() {
           </Reveal>
         </div>
         <div className="mt-14 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-4">
-          {SERVICES.map((s, i) => (
-            <Reveal key={s.slug} direction="up" delay={stagger(i, 80)}>
-              <ServiceCard service={s} />
+          {SERVICES.map((s) => (
+            <Reveal key={s.slug} direction="up" delay={stagger(SERVICES.indexOf(s), 80)}>
+              <ServiceCard service={s as Service} />
             </Reveal>
           ))}
         </div>
       </section>
+
+      {/* Our Portfolio - Featured Digitizing Work */}
+      <PortfolioSection />
 
       <WhyChooseUs
         eyebrow="Why Choose velora?"
