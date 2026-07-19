@@ -55,8 +55,12 @@ export default function ServicesPage() {
           </Reveal>
         </div>
         <div className="mt-14 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-4">
-          {SERVICES.map((s) => (
-            <Reveal key={s.slug} direction="up" delay={stagger(SERVICES.indexOf(s), 80)}>
+          {SERVICES?.map((s) => (
+            <Reveal
+              key={s.slug}
+              direction="up"
+              delay={stagger(SERVICES.indexOf(s), 80)}
+            >
               <ServiceCard service={s as Service} />
             </Reveal>
           ))}
@@ -73,14 +77,14 @@ export default function ServicesPage() {
       />
 
       <ProcessSteps />
-      
+
       {/* FAQ Section */}
-      <FAQ 
+      <FAQ
         items={SERVICES_FAQS}
         title="Services - Frequently Asked Questions"
         subtitle="Questions about our embroidery digitizing services and capabilities."
       />
-      
+
       <CTABanner />
     </>
   );

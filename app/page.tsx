@@ -3,10 +3,11 @@ import type { ReactNode } from "react";
 import { SiNike, SiAdidas, SiPuma, SiUnderarmour } from "react-icons/si";
 import Hero from "./components/Hero";
 import { SectionTag } from "./components/Section";
-import ServiceCard, { SERVICES } from "./components/ServiceCard";
+import ServiceCard from "./components/ServiceCard";
+import { SERVICES } from "./components/services-data";
 import WhyChooseUs from "./components/WhyChooseUs";
 import PortfolioCard, { PORTFOLIO_ITEMS } from "./components/PortfolioCard";
-import BundleSection from "./store/BundleSection";
+import PatchesSection from "./components/PatchesSection";
 import FeaturedCategories from "./components/FeaturedCategories";
 import ProcessSteps from "./components/ProcessSteps";
 import Testimonials from "./components/Testimonials";
@@ -14,6 +15,7 @@ import CTABanner from "./components/CTABanner";
 import { FAQ, HOME_FAQS } from "./components/FAQ";
 import { Reveal } from "./components/Reveal";
 import { stagger } from "./components/stagger";
+
 function NikeLogo() {
   return (
     <span className="flex items-center gap-1.5">
@@ -125,22 +127,31 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECTION 1: Services */}
-      <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10">
-        <Reveal direction="up">
-          <SectionTag eyebrow="Our Services" title="What We Offer" />
-        </Reveal>
-        <div className="mt-14 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3">
-          {SERVICES?.slice(0, 3).map((s, i) => (
-            <Reveal key={s.slug} direction="up" delay={stagger(i, 120)}>
+      {/* SECTION: Our Digitizing Services - Same as Services Page */}
+      <section className="mx-auto max-w-7xl px-5 py-16 lg:px-10 lg:py-20">
+        <div className="mt-8">
+          <Reveal direction="up" delay={80}>
+            <SectionTag
+              eyebrow="What We Offer"
+              title="Our Digitizing Services"
+              subtitle="We provide a wide range of embroidery digitizing services to meet all your needs."
+            />
+          </Reveal>
+        </div>
+        <div className="mt-14 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-4">
+          {SERVICES.map((s, i) => (
+            <Reveal key={s.slug} direction="up" delay={stagger(i, 80)}>
               <ServiceCard service={s} />
             </Reveal>
           ))}
         </div>
       </section>
 
-      {/* SECTION 2: Featured Categories Carousel (Vesper-style layout) */}
+      {/* SECTION: Featured Categories Carousel */}
       <FeaturedCategories />
+
+      {/* Patches Section - Premium Embroidery Designs */}
+      <PatchesSection />
 
       <WhyChooseUs
         eyebrow="Why Choose Velora?"
@@ -172,20 +183,6 @@ export default function Home() {
           </Link>
         </Reveal>
       </section>
-
-      {/* Bundle Section - Using BundleSection directly */}
-      <BundleSection
-        title="Patch Bundles"
-        subtitle="Get more designs for less with our curated patch packs. Premium quality embroidery files at unbeatable prices — save up to 25%!"
-        eyebrow="Special Offers"
-        showArrows={true}
-        showDots={true}
-        showCTA={true}
-        ctaText="View All Bundles"
-        ctaLink="/store"
-        variant="default"
-        padding="lg"
-      />
 
       <ProcessSteps />
       <Testimonials />
