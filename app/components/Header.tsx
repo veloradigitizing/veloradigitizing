@@ -233,14 +233,18 @@ export default function Header() {
                       <span className={`absolute -bottom-1.5 left-1/2 h-0.5 -translate-x-1/2 rounded-full bg-brand-600 transition-all duration-300 ${active || isChildActive ? "w-5" : "w-0 group-hover:w-5"}`} />
                     </Link>
                     {/* Dropdown */}
-                    <div className="pointer-events-none absolute left-1/2 top-full -translate-x-1/2 pt-2 opacity-0 transition-all duration-300 group-hover/nav:pointer-events-auto group-hover/nav:opacity-100">
-                      <div className="w-56 rounded-xl border border-navy-950/10 bg-white/95 py-2 shadow-2xl backdrop-blur-xl ring-1 ring-navy-950/5">
+                    <div className="pointer-events-none absolute left-1/2 top-full -translate-x-1/2 pt-2 opacity-0 transition-all duration-200 ease-out group-hover/nav:pointer-events-auto group-hover/nav:opacity-100 group-hover/nav:translate-y-0 translate-y-1">
+                      <div className="w-52 rounded-xl bg-white py-1.5 shadow-[0_8px_30px_rgba(0,0,0,0.08)] ring-1 ring-black/[0.04]">
                         {link.children.map((child: { href: string; label: string }) => {
                           const childActive = pathname === child.href.split("#")[0];
                           return (
-                            <Link key={child.href} href={child.href} className={`flex items-center gap-2 px-4 py-2.5 text-sm transition-colors ${childActive ? "bg-brand-600/10 font-semibold text-brand-600" : "text-navy-950/70 hover:bg-brand-50 hover:text-brand-600"}`}>
-                              <span className="h-1 w-1 rounded-full bg-brand-400/60" />
+                            <Link
+                              key={child.href}
+                              href={child.href}
+                              className={`flex items-center justify-between px-4 py-2.5 text-[13px] tracking-wide transition-colors duration-150 ${childActive ? "text-brand-600 font-semibold bg-brand-600/[0.04]" : "text-navy-950/60 hover:text-brand-600 hover:bg-brand-600/[0.03]"}`}
+                            >
                               {child.label}
+                              <svg className={`h-3 w-3 opacity-0 transition-opacity duration-150 ${childActive ? "opacity-100 text-brand-600" : "group-hover/item:opacity-100"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
                             </Link>
                           );
                         })}

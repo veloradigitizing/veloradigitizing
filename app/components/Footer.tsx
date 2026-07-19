@@ -10,13 +10,7 @@ import {
   FaYoutube,
   FaThreads,
 } from "react-icons/fa6";
-import {
-  Mail,
-  Phone,
-  Clock,
-  MapPin,
-  ArrowRight,
-} from "lucide-react";
+import { Mail, Phone, Clock, MapPin, ArrowRight } from "lucide-react";
 import Logo from "./Logo";
 
 const SOCIALS = [
@@ -61,6 +55,7 @@ const QUICK_LINKS = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
   { label: "Portfolio", href: "/portfolio" },
+  { label: "Store", href: "/store" },
   { label: "Pricing", href: "/pricing" },
   { label: "Contact Us", href: "/contact" },
 ];
@@ -269,7 +264,10 @@ export default function Footer() {
               Privacy Policy
             </Link>
 
-            <Link href="/terms-and-conditions" className="transition-colors hover:text-white">
+            <Link
+              href="/terms-and-conditions"
+              className="transition-colors hover:text-white"
+            >
               Terms &amp; Conditions
             </Link>
           </div>
