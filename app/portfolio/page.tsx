@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Hero from "../components/Hero";
@@ -40,23 +40,27 @@ export default function PortfolioPage() {
   const [active, setActive] = useState(urlCategory);
   const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
   const portfolioSectionRef = useRef<HTMLDivElement>(null);
-  const isFirstLoad = useRef(false);
 
-  // Set active category from URL and scroll to section
+  // This flag prevents scroll when TAB is clicked (internal navigation)
+  // Footer/ServiceCard clicks will ALWAYS scroll because they don"	 set this flag
+  const isTabClick = useRef(false);
+
+  // Set active category from URL and scroll
   useEffect(() => {
     if (urlCategory && urlCategory !== "all") {
       setActive(urlCategory);
-      // Scroll to portfolio section after a short delay
 
-      if (isFirstLoad.current === false) {
+      // Only skip scroll if it was a TAB click (not footer/external link)
+      if (!isTabClick.current) {
         setTimeout(() => {
           portfolioSectionRef.current?.scrollIntoView({
             behavior: "smooth",
             block: "start",
           });
-        }, 300);
-        isFirstLoad.current = true;
+        }, 400);
       }
+      // Reset the flag after handling
+      isTabClick.current = false;
     }
   }, [urlCategory]);
 
@@ -77,8 +81,11 @@ export default function PortfolioPage() {
     setVisibleCount((prev) => prev + ITEMS_PER_PAGE);
   };
 
-  // Reset visible count when category changes
-  const handleCategoryChange = (category: string) => {
+  // Reset visible count when category changes via TAB click (NO scroll)
+  const handleCategoryChange = useCallback((category: string) => {
+    // Mark this as a TAB click so we don"	 scroll
+    isTabClick.current = true;
+
     setActive(category);
     setVisibleCount(ITEMS_PER_PAGE);
 
@@ -90,7 +97,7 @@ export default function PortfolioPage() {
       url.searchParams.set("category", category);
     }
     window.history.pushState({}, "", url.toString());
-  };
+  }, []);
 
   return (
     <>

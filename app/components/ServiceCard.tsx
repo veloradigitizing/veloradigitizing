@@ -15,19 +15,19 @@ export type Service = {
   count?: number;
 };
 
-// Map service slugs to portfolio categories
+// Map service slugs to portfolio categories - MUST MATCH PORTFOLIO_CATEGORIES values!
 const SERVICE_TO_CATEGORY: Record<string, string> = {
   "patch-digitizing": "patches",
   "custom-patches": "custom-patches",
   "cap-logo-digitizing": "cap-logo",
   "chenille-digitizing": "chenille",
   "jacket-back-digitizing": "jacket-back",
-  "left-chest-logo": "left-chest-logo",
+  "left-chest-logo": "left-chest",
   "3d-puff-digitizing": "3d-puff",
-  "towel-embroidery": "towel-design",
-  "applique-digitizing": "applique-design",
+  "towel-embroidery": "towel",
+  "applique-digitizing": "applique",
   "vector-art": "vector-art",
-  "shoulder-embroidery": "shoulder-design",
+  "shoulder-embroidery": "shoulder",
   "bundle-packages": "bundles",
 };
 

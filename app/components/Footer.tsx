@@ -56,43 +56,20 @@ const QUICK_LINKS = [
   { label: "Contact Us", href: "/contact" },
 ];
 
+// All Portfolio Categories - MUST MATCH PORTFOLIO_CATEGORIES values exactly!
 const SERVICE_LINKS = [
-  {
-    label: "Embroidery Digitizing",
-    href: "/services?category=embroidery-digitizing",
-  },
-  {
-    label: "3D Puff Design",
-    href: "/services?category=3d-puff-design",
-  },
-  {
-    label: "Left Chest Design",
-    href: "/services?category=left-chest-design",
-  },
-  {
-    label: "Applique Design",
-    href: "/services?category=applique-design",
-  },
-  {
-    label: "Shoulder Design",
-    href: "/services?category=shoulder-design",
-  },
-  {
-    label: "Cap Design",
-    href: "/services?category=cap-design",
-  },
-  {
-    label: "Jacket Back Design",
-    href: "/services?category=jacket-back-design",
-  },
-  {
-    label: "Custom Patches",
-    href: "/services?category=custom-patches",
-  },
-  {
-    label: "Vector Artwork",
-    href: "/services?category=vector-artwork",
-  },
+  { label: "Patches", href: "/portfolio?category=patches" },
+  { label: "Custom Patches", href: "/portfolio?category=custom-patches" },
+  { label: "Cap Logo", href: "/portfolio?category=cap-logo" },
+  { label: "Chenille", href: "/portfolio?category=chenille" },
+  { label: "Jacket Back", href: "/portfolio?category=jacket-back" },
+  { label: "Left Chest", href: "/portfolio?category=left-chest" },
+  { label: "3D Puff", href: "/portfolio?category=3d-puff" },
+  { label: "Towel Design", href: "/portfolio?category=towel" },
+  { label: "Applique", href: "/portfolio?category=applique" },
+  { label: "Vector Art", href: "/portfolio?category=vector-art" },
+  { label: "Shoulder", href: "/portfolio?category=shoulder" },
+  { label: "Bundles", href: "/portfolio?category=bundles" },
 ];
 export default function Footer() {
   return (
@@ -144,7 +121,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Services */}
+        {/* Services - All Portfolio Categories */}
         <div>
           <h4 className="mb-4 text-sm font-bold uppercase tracking-wide text-white">
             Services
