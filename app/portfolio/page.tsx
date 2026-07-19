@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Hero from "../components/Hero";
 import {
@@ -33,8 +34,31 @@ const STATS: {
 const ITEMS_PER_PAGE = 9;
 
 export default function PortfolioPage() {
-  const [active, setActive] = useState("all");
+  const searchParams = useSearchParams();
+  const urlCategory = searchParams.get("category") || "all";
+
+  const [active, setActive] = useState(urlCategory);
   const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
+  const portfolioSectionRef = useRef<HTMLDivElement>(null);
+  const isFirstLoad = useRef(false);
+
+  // Set active category from URL and scroll to section
+  useEffect(() => {
+    if (urlCategory && urlCategory !== "all") {
+      setActive(urlCategory);
+      // Scroll to portfolio section after a short delay
+
+      if (isFirstLoad.current === false) {
+        setTimeout(() => {
+          portfolioSectionRef.current?.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }, 300);
+        isFirstLoad.current = true;
+      }
+    }
+  }, [urlCategory]);
 
   // Filter items based on active category
   const filteredItems =
@@ -44,7 +68,7 @@ export default function PortfolioPage() {
 
   // Only show items up to visibleCount
   const visibleItems = filteredItems.slice(0, visibleCount);
-  
+
   // Check if there are more items to show
   const hasMore = visibleCount < filteredItems.length;
 
@@ -57,6 +81,15 @@ export default function PortfolioPage() {
   const handleCategoryChange = (category: string) => {
     setActive(category);
     setVisibleCount(ITEMS_PER_PAGE);
+
+    // Update URL without refresh
+    const url = new URL(window.location.href);
+    if (category === "all") {
+      url.searchParams.delete("category");
+    } else {
+      url.searchParams.set("category", category);
+    }
+    window.history.pushState({}, "", url.toString());
   };
 
   return (
@@ -70,6 +103,7 @@ export default function PortfolioPage() {
         description="Explore our latest embroidery digitizing projects. Every design is crafted with precision, quality, and perfection."
       />
 
+      {/* Portfolio Section with ref for scrolling */}
       <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10">
         <Reveal direction="up">
           <Breadcrumb current="Portfolio" />
@@ -89,13 +123,14 @@ export default function PortfolioPage() {
           delay={120}
           className="mt-10 flex flex-wrap justify-center gap-2.5"
         >
+          <div ref={portfolioSectionRef} />
           {PORTFOLIO_CATEGORIES.map((cat) => (
             <button
               key={cat.value}
               onClick={() => handleCategoryChange(cat.value)}
               className={`vr-btn rounded-md px-4 py-2 text-xs font-semibold uppercase tracking-wide transition-colors ${
                 active === cat.value
-                  ? "bg-brand-600 text-white"
+                  ? "bg-brand-600 text-white shadow-lg shadow-brand-600/25"
                   : "border border-navy-950/15 text-navy-950/60 hover:border-brand-600 hover:text-brand-600"
               }`}
             >
@@ -107,15 +142,27 @@ export default function PortfolioPage() {
         {/* Results count */}
         <div className="mt-6 flex items-center justify-between">
           <p className="text-sm text-navy-950/50">
-            Showing <span className="font-semibold text-brand-600">{visibleItems.length}</span> of{" "}
-            <span className="font-semibold">{filteredItems.length}</span> designs
+            Showing{" "}
+            <span className="font-semibold text-brand-600">
+              {visibleItems.length}
+            </span>{" "}
+            of <span className="font-semibold">{filteredItems.length}</span>{" "}
+            designs
             {hasMore && (
-              <span> • <span className="text-brand-600">{filteredItems.length - visibleCount} more available</span></span>
+              <span>
+                {" "}
+                •{" "}
+                <span className="text-brand-600">
+                  {filteredItems.length - visibleCount} more available
+                </span>
+              </span>
             )}
           </p>
           {(active !== "all" || visibleCount > ITEMS_PER_PAGE) && (
             <button
-              onClick={() => { handleCategoryChange("all"); }}
+              onClick={() => {
+                handleCategoryChange("all");
+              }}
               className="text-xs font-semibold text-brand-600 hover:text-brand-700 transition-colors"
             >
               View All Categories →
@@ -140,8 +187,12 @@ export default function PortfolioPage() {
         {filteredItems.length === 0 && (
           <div className="mt-12 flex flex-col items-center justify-center py-16 text-center">
             <Icon name="search" className="mb-4 h-12 w-12 text-navy-950/20" />
-            <p className="text-base font-semibold text-navy-950/70">No designs found</p>
-            <p className="mt-1 text-sm text-navy-950/45">Try selecting a different category.</p>
+            <p className="text-base font-semibold text-navy-950/70">
+              No designs found
+            </p>
+            <p className="mt-1 text-sm text-navy-950/45">
+              Try selecting a different category.
+            </p>
             <button
               onClick={() => handleCategoryChange("all")}
               className="vr-btn mt-4 rounded-lg bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-700"
@@ -162,7 +213,10 @@ export default function PortfolioPage() {
               <span className="rounded-full bg-white/20 px-2 py-0.5 text-xs font-bold">
                 +{Math.min(ITEMS_PER_PAGE, filteredItems.length - visibleCount)}
               </span>
-              <Icon name="chevron-down" className="h-4 w-4 rotate-90 transition-transform group-hover:translate-x-1" />
+              <Icon
+                name="chevron-down"
+                className="h-4 w-4 rotate-90 transition-transform group-hover:translate-x-1"
+              />
             </button>
           </Reveal>
         )}
@@ -245,11 +299,11 @@ export default function PortfolioPage() {
       </section>
 
       {/* FAQ Section */}
-      <FAQ 
+      <FAQ
         items={PORTFOLIO_FAQS}
         title="Portfolio - Frequently Asked Questions"
         subtitle="Questions about our portfolio, samples, and previous work."
-    />
+      />
     </>
   );
 }

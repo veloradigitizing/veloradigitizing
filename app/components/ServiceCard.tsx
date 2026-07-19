@@ -15,6 +15,22 @@ export type Service = {
   count?: number;
 };
 
+// Map service slugs to portfolio categories
+const SERVICE_TO_CATEGORY: Record<string, string> = {
+  "patch-digitizing": "patches",
+  "custom-patches": "custom-patches",
+  "cap-logo-digitizing": "cap-logo",
+  "chenille-digitizing": "chenille",
+  "jacket-back-digitizing": "jacket-back",
+  "left-chest-logo": "left-chest-logo",
+  "3d-puff-digitizing": "3d-puff",
+  "towel-embroidery": "towel-design",
+  "applique-digitizing": "applique-design",
+  "vector-art": "vector-art",
+  "shoulder-embroidery": "shoulder-design",
+  "bundle-packages": "bundles",
+};
+
 export default function ServiceCard({ service }: { service: Service }) {
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const card = e.currentTarget;
@@ -34,8 +50,12 @@ export default function ServiceCard({ service }: { service: Service }) {
     e.currentTarget.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
   };
 
+  // Get the portfolio category for this service
+  const portfolioCategory = SERVICE_TO_CATEGORY[service.slug] || "all";
+  const portfolioLink = `/portfolio?category=${portfolioCategory}`;
+
   return (
-    <Link href="/store" className="group block h-full">
+    <Link href={portfolioLink} className="group block h-full">
       <div
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}

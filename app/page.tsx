@@ -7,7 +7,7 @@ import ServiceCard from "./components/ServiceCard";
 import { SERVICES } from "./components/services-data";
 import WhyChooseUs from "./components/WhyChooseUs";
 import PortfolioCard, { PORTFOLIO_ITEMS } from "./components/PortfolioCard";
-import PatchesSection from "./components/PatchesSection";
+// import PatchesSection from "./components/PatchesSection";
 import FeaturedCategories from "./components/FeaturedCategories";
 import ProcessSteps from "./components/ProcessSteps";
 import Testimonials from "./components/Testimonials";
@@ -151,7 +151,7 @@ export default function Home() {
       <FeaturedCategories />
 
       {/* Patches Section - Premium Embroidery Designs */}
-      <PatchesSection />
+      {/* <PatchesSection /> */}
 
       <WhyChooseUs
         eyebrow="Why Choose Velora?"
