@@ -31,7 +31,6 @@ export default function Home() {
           { text: "Digitizing Services", accent: true },
         ]}
         description="We convert your artwork into flawless embroidery files with highest stitch quality, fast turnaround and 100% satisfaction."
-        backgroundImage="/images/hero-images/ChatGPT Image Jul 20, 2026, 07_01_47 PM.png"
       />
 
       <HomeStats />

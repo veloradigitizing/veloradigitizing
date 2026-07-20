@@ -9,35 +9,25 @@ export default function Hero({
   description,
   breadcrumbCurrent,
   imageLabel = "Embroidered Cap & Digitizing Software Mockup",
-  backgroundImage,
 }: {
   eyebrow: string;
   titleLines: { text: string; accent?: boolean }[];
   description: string;
   breadcrumbCurrent?: string;
   imageLabel?: string;
-  backgroundImage?: string;
 }) {
-  const bgSrc = backgroundImage || heroImage;
-
   return (
     <section className="relative overflow-hidden bg-white">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src={bgSrc as typeof heroImage | string}
+          src={heroImage}
           alt={imageLabel}
           fill
           priority
           sizes="100vw"
           className="object-cover object-center"
         />
-
-        {/* Mobile overlay - vertical gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/80 to-white/60 lg:hidden" />
-
-        {/* Desktop overlay - horizontal gradient */}
-        <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/75 to-white/30 hidden lg:block" />
       </div>
 
       {/* Decorative gradient blobs */}

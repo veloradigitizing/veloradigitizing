@@ -41,7 +41,6 @@ export default function PatchesPage() {
         eyebrow="Custom Patches"
         titleLines={[{ text: "Patches That" }, { text: "Stand Out", accent: true }]}
         description="From merrow borders to laser-cut, woven, chenille and PVC — we digitize patches in any shape, size, or backing. Wash-tested up to 50 cycles, shipped worldwide."
-        backgroundImage="/images/hero-images/ChatGPT Image Jul 20, 2026, 07_02_02 PM.png"
       />
 
       <ServiceTypeGrid items={PATCH_TYPES} eyebrow="Patch Types" title="Every Patch Style Imaginable" subtitle="Choose the construction that fits your design, garment, and budget." />

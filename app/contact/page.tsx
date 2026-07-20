@@ -39,7 +39,6 @@ export default function ContactPage() {
           { text: "to Life" },
         ]}
         description="Have a question or need a quote? Get in touch with us today. We're always ready to help you with premium digitizing services."
-        backgroundImage="/images/hero-images/ChatGPT Image Jul 20, 2026, 07_06_57 PM.png"
       />
 
       <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10">

@@ -95,7 +95,6 @@ export default function AboutPage() {
           { text: "Stitch by Stitch", accent: true },
         ]}
         description="At velora Digitizing, we turn your ideas into flawless embroidery designs. With precision, experience, and passion, we deliver digitizing services that elevate your brand."
-        backgroundImage="/images/hero-images/ChatGPT Image Jul 20, 2026, 07_02_42 PM.png"
       />
 
       <OurStorySection />

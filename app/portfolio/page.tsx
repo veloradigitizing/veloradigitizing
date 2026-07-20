@@ -218,7 +218,6 @@ export default function PortfolioPage() {
           { text: "Perfect Results", accent: true },
         ]}
         description="Explore our latest embroidery digitizing projects. Every design is crafted with precision, quality, and perfection."
-        backgroundImage="/images/hero-images/ChatGPT Image Jul 20, 2026, 07_02_21 PM.png"
       />
 
       <Suspense fallback={<section className="mx-auto max-w-7xl px-5 py-20 lg:px-10"><div className="flex items-center justify-center py-16"><p className="text-sm text-navy-950/50">Loading portfolio...</p></div></section>}>

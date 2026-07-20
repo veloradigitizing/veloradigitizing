@@ -35,7 +35,6 @@ export default function ServicesPage() {
           { text: "Digitizing Services", accent: true },
         ]}
         description="We offer high quality embroidery digitizing services with fast turnaround, perfect stitching and 100% customer satisfaction."
-        backgroundImage="/images/hero-images/ChatGPT Image Jul 20, 2026, 07_01_55 PM.png"
       />
 
       <ServicesGrid

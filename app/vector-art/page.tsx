@@ -41,7 +41,6 @@ export default function VectorArtPage() {
         eyebrow="Vector Art Services"
         titleLines={[{ text: "Pixel-Perfect" }, { text: "Vector Conversion", accent: true }]}
         description="Convert any raster image into clean, scalable vector art. Manual tracing by expert artists with unlimited revisions and 24-hour turnaround."
-        backgroundImage="/images/hero-images/ChatGPT Image Jul 20, 2026, 07_10_47 PM.png"
       />
 
       <ServiceTypeGrid items={VECTOR_TYPES} eyebrow="Our Services" title="Vector Art Solutions" subtitle="Professional vector conversion services for every application and industry." />
