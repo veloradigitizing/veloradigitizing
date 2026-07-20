@@ -29,12 +29,13 @@ export default function PatchesStoreSection() {
       <div className="relative mx-auto max-w-7xl px-5 lg:px-10">
         <div className="flex flex-col gap-12 lg:flex-row lg:items-start">
           {/* Left: Title + CTA */}
-          <Reveal direction="left" className="lg:w-72 lg:shrink-0">
+          <Reveal direction="left" className="lg:w-72 lg:shrink-0 text-left">
             <SectionTag
               eyebrow="Patches Store"
               title="Featured Patches"
               subtitle="Explore our premium embroidery patch designs. Ready to download and stitch."
               dark
+              center={false}
             />
             <Link
               href="/store#products"

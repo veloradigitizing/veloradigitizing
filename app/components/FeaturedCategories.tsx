@@ -74,11 +74,12 @@ export default function FeaturedCategories() {
       <div className="mx-auto max-w-7xl px-5 lg:px-10">
         <div className="flex flex-col gap-12 lg:flex-row lg:items-start">
           {/* Left: Title + CTA */}
-          <Reveal direction="left" className="lg:w-72 lg:shrink-0">
+          <Reveal direction="left" className="lg:w-72 lg:shrink-0 text-left">
             <SectionTag
               eyebrow="Our Portfolio"
               title="Featured Work"
               subtitle="Explore some of our recent digitizing projects. Quality speaks for itself."
+              center={false}
             />
             <Link
               href="/portfolio"
@@ -122,9 +123,9 @@ export default function FeaturedCategories() {
                   key={cat.id}
                   href={cat.href}
                   data-feature-card
-                  className="vr-lift group relative flex-shrink-0 overflow-hidden rounded-xl border border-navy-950/10 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md snap-start w-[260px] sm:w-[200px] md:w-[220px] lg:w-[calc(25%-12px)] xl:w-[calc(20%-13px)]"
+                  className="vr-lift group relative flex-shrink-0 overflow-hidden rounded-xl border border-navy-950/10 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md snap-start w-[290px] sm:w-[230px] md:w-[250px] lg:w-[calc(25%-12px)] xl:w-[calc(20%-13px)]"
                 >
-                  <div className="vr-zoom relative aspect-[3/4] w-full overflow-hidden bg-gray-100">
+                  <div className="vr-zoom relative aspect-[2/3] w-full overflow-hidden bg-gray-100">
                     <img
                       src={cat.image}
                       alt={cat.name}
