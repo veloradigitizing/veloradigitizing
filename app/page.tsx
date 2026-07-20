@@ -6,9 +6,8 @@ import { SectionTag } from "./components/Section";
 import ServiceCard from "./components/ServiceCard";
 import { SERVICES } from "./components/services-data";
 import WhyChooseUs from "./components/WhyChooseUs";
-import PortfolioCard, { PORTFOLIO_ITEMS } from "./components/PortfolioCard";
-// import PatchesSection from "./components/PatchesSection";
 import FeaturedCategories from "./components/FeaturedCategories";
+import PatchesStoreSection from "./components/PatchesStoreSection";
 import ProcessSteps from "./components/ProcessSteps";
 import Testimonials from "./components/Testimonials";
 import CTABanner from "./components/CTABanner";
@@ -150,42 +149,17 @@ export default function Home() {
       {/* SECTION: Featured Categories Carousel */}
       <FeaturedCategories />
 
-      {/* Patches Section - Premium Embroidery Designs */}
-      {/* <PatchesSection /> */}
-
       <WhyChooseUs
         eyebrow="Why Choose Velora?"
         title="We Make The Difference"
         items={WHY_CHOOSE_ITEMS}
       />
 
-      {/* Portfolio Grid */}
-      <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10">
-        <Reveal direction="up">
-          <SectionTag eyebrow="Our Recent Work" title="Portfolio" />
-        </Reveal>
-        <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {PORTFOLIO_ITEMS.slice(0, 6).map((item, i) => (
-            <Reveal key={item.title} direction="up" delay={stagger(i, 90)}>
-              <PortfolioCard item={item} />
-            </Reveal>
-          ))}
-        </div>
-        <Reveal direction="up" className="mt-10 flex justify-center">
-          <Link
-            href="/portfolio"
-            className="vr-btn vr-btn-primary flex items-center gap-2 rounded-md bg-brand-600 px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-brand-700"
-          >
-            VIEW FULL PORTFOLIO{" "}
-            <span aria-hidden className="vr-arrow">
-              &rarr;
-            </span>
-          </Link>
-        </Reveal>
-      </section>
-
       <ProcessSteps />
       <Testimonials />
+
+      {/* Patches Store Section */}
+      <PatchesStoreSection />
 
       {/* FAQ Section */}
       <FAQ

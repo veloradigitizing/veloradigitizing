@@ -122,11 +122,8 @@ export default function PortfolioCard({ item }: { item: PortfolioItem }) {
           {item.tag}
         </span>
       </div>
-      <div className="flex items-center justify-between px-4 py-3">
+      <div className="px-4 py-3">
         <p className="text-sm font-semibold text-navy-950">{item.title}</p>
-        <span className="rounded-full bg-brand-50 px-2.5 py-1 text-[10px] font-medium text-brand-600">
-          View
-        </span>
       </div>
     </div>
   );
