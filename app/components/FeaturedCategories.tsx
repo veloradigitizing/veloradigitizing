@@ -123,7 +123,7 @@ export default function FeaturedCategories() {
 
   return (
     <section className="relative bg-white py-16 lg:py-20 overflow-hidden">
-      <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-5 lg:px-10">
         <div className="flex flex-col gap-10 lg:flex-row lg:gap-12 lg:items-start">
           {/* LEFT SIDE - Header with tight flow (No dynamic height gap) */}
           <div className="w-full lg:w-[26%] lg:shrink-0 py-2">
