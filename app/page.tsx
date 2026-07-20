@@ -1,6 +1,5 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { SiNike, SiAdidas, SiPuma, SiUnderarmour } from "react-icons/si";
 import Hero from "./components/Hero";
 import { SectionTag } from "./components/Section";
 import ServiceCard from "./components/ServiceCard";
@@ -13,42 +12,14 @@ import Testimonials from "./components/Testimonials";
 import CTABanner from "./components/CTABanner";
 import { FAQ, HOME_FAQS } from "./components/FAQ";
 import { Reveal } from "./components/Reveal";
+import Icon from "./components/Icon";
 import { stagger } from "./components/stagger";
 
-function NikeLogo() {
-  return (
-    <span className="flex items-center gap-1.5">
-      <SiNike size={22} />
-      <span className="text-xl font-black italic tracking-tighter">NIKE</span>
-    </span>
-  );
-}
 
-function NewEraLogo() {
-  return (
-    <span className="flex items-center gap-2">
-      <span className="flex h-8 w-8 items-center justify-center rounded-[3px] bg-navy-950 text-[10px] font-black italic text-white">
-        NE
-      </span>
-      <span className="[11px] font-extrabold uppercase leading-[1.05] tracking-wide">
-        New
-        <br />
-        Era
-      </span>
-    </span>
-  );
-}
 
-const BRANDS: { name: string; render: () => ReactNode }[] = [
-  { name: "Nike", render: () => <NikeLogo /> },
-  { name: "Adidas", render: () => <SiAdidas size={40} aria-label="Adidas" /> },
-  { name: "Puma", render: () => <SiPuma size={40} aria-label="Puma" /> },
-  {
-    name: "Under Armour",
-    render: () => <SiUnderarmour size={38} aria-label="Under Armour" />,
-  },
-  { name: "New Era", render: () => <NewEraLogo /> },
-];
+
+
+
 
 const WHY_CHOOSE_ITEMS: {
   icon: Parameters<typeof WhyChooseUs>[0]["items"][number]["icon"];
@@ -63,8 +34,7 @@ const WHY_CHOOSE_ITEMS: {
 ];
 
 export default function Home() {
-  const marqueeBrands = [...BRANDS, ...BRANDS];
-
+  
   return (
     <>
       <Hero
@@ -76,52 +46,29 @@ export default function Home() {
         description="We convert your artwork into flawless embroidery files with highest stitch quality, fast turnaround and 100% satisfaction."
       />
 
-      {/* Brand strip */}
-      <section className="border-y border-navy-950/5 bg-white py-12 border-t-0">
+      {/* Stats Section */}
+      <section className="bg-navy-950 py-12 lg:py-14">
         <div className="mx-auto max-w-7xl px-5 lg:px-10">
-          <Reveal direction="up">
-            <p className="text-center text-xs font-bold uppercase tracking-[0.2em] text-brand-600">
-              Trusted By Global Brands
-            </p>
-          </Reveal>
-
-          <div className="mt-8 hidden flex-wrap items-center justify-between divide-x divide-navy-950/10 lg:flex">
-            {BRANDS.map((brand, i) => (
+          <div className="grid grid-cols-2 gap-8 sm:grid-cols-4">
+            {[
+              { icon: "award", value: "15,000+", label: "Projects Completed" },
+              { icon: "smile", value: "8,000+", label: "Happy Clients" },
+              { icon: "clock", value: "2-24 Hrs", label: "Turnaround Time" },
+              { icon: "globe", value: "50+", label: "Countries Served" },
+            ].map((stat, i) => (
               <Reveal
-                key={brand.name}
+                key={stat.label}
                 direction="up"
-                delay={stagger(i, 90)}
-                className="flex h-14 flex-1 items-center justify-center px-4 text-navy-950 grayscale transition-all duration-300 hover:grayscale-0 hover:text-brand-600"
+                delay={stagger(i, 100)}
+                className="flex items-center justify-center gap-3"
               >
-                {brand.render()}
+                <Icon name={stat.icon} className="h-8 w-8 shrink-0 text-brand-50/80" />
+                <div>
+                  <p className="font-serif text-2xl font-bold text-white">{stat.value}</p>
+                  <p className="text-xs text-white/50">{stat.label}</p>
+                </div>
               </Reveal>
             ))}
-          </div>
-
-          <div className="vr-marquee mt-8 flex overflow-hidden lg:hidden">
-            <div className="vr-marquee-track flex shrink-0 items-center gap-12 pr-12">
-              {marqueeBrands.map((brand, i) => (
-                <div
-                  key={`${brand.name}-${i}`}
-                  className="flex h-14 items-center justify-center text-navy-950"
-                >
-                  {brand.render()}
-                </div>
-              ))}
-            </div>
-            <div
-              className="vr-marquee-track flex shrink-0 items-center gap-12 pr-12"
-              aria-hidden
-            >
-              {marqueeBrands.map((brand, i) => (
-                <div
-                  key={`${brand.name}-dup-${i}`}
-                  className="flex h-14 items-center justify-center text-navy-950"
-                >
-                  {brand.render()}
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
