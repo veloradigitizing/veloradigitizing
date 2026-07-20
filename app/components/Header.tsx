@@ -22,7 +22,6 @@ const NAV_LINKS = [
   },
   { href: "/portfolio", label: "Portfolio" },
   { href: "/store", label: "Store" },
-  { href: "/pricing", label: "Pricing" },
   { href: "/about", label: "About Us" },
   { href: "/contact", label: "Contact" },
 ];

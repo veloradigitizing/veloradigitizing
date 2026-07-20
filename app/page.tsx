@@ -15,12 +15,6 @@ import { Reveal } from "./components/Reveal";
 import Icon from "./components/Icon";
 import { stagger } from "./components/stagger";
 
-
-
-
-
-
-
 const WHY_CHOOSE_ITEMS: {
   icon: Parameters<typeof WhyChooseUs>[0]["items"][number]["icon"];
   title: string;
@@ -34,7 +28,6 @@ const WHY_CHOOSE_ITEMS: {
 ];
 
 export default function Home() {
-  
   return (
     <>
       <Hero
@@ -62,9 +55,14 @@ export default function Home() {
                 delay={stagger(i, 100)}
                 className="flex items-center justify-center gap-3"
               >
-                <Icon name={stat.icon} className="h-8 w-8 shrink-0 text-brand-50/80" />
+                <Icon
+                  name={stat.icon}
+                  className="h-8 w-8 shrink-0 text-brand-50/80"
+                />
                 <div>
-                  <p className="font-serif text-2xl font-bold text-white">{stat.value}</p>
+                  <p className="font-serif text-2xl font-bold text-white">
+                    {stat.value}
+                  </p>
                   <p className="text-xs text-white/50">{stat.label}</p>
                 </div>
               </Reveal>
