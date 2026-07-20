@@ -17,7 +17,7 @@ export default function Hero({
   imageLabel?: string;
 }) {
   return (
-    <section className="relative overflow-hidden border-b-2 border-navy-950/5 bg-white">
+    <section className="relative overflow-hidden bg-white">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
