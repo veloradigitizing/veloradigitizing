@@ -4,6 +4,7 @@ import { Reveal } from "./Reveal";
 import { stagger } from "./stagger";
 const COLS: Record<number, string> = {
   3: "sm:grid-cols-3",
+  4: "sm:grid-cols-2 lg:grid-cols-4",
   6: "sm:grid-cols-3 lg:grid-cols-6",
   7: "sm:grid-cols-3 lg:grid-cols-7",
 };

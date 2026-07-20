@@ -12,6 +12,7 @@ import { useCart } from "../context/CartContext";
 import { PATCHES, PATCH_CATEGORIES, type Patch } from "./patches";
 import BundleSection from "./BundleSection";
 import { FAQ, STORE_FAQS } from "../components/FAQ";
+import StoreCTA from "../components/StoreCTA";
 
 const WHY_SHOP: { icon: IconName; title: string; description: string }[] = [
   {
@@ -416,53 +417,7 @@ export default function StorePage() {
         subtitle="Questions about purchasing, downloads, licensing, and support for our patch designs."
       />
 
-      {/* CTA Section */}
-      <section className="mx-auto max-w-7xl px-5 pb-20 lg:px-10">
-        <Reveal
-          direction="up"
-          className="vr-lift group flex flex-col gap-8 rounded-2xl bg-navy-950 p-9 lg:flex-row lg:items-center lg:justify-between"
-        >
-          <div>
-            <h3 className="font-serif text-2xl font-bold text-white">
-              Need a Custom Patch Design?
-            </h3>
-            <p className="mt-2 max-w-md text-sm text-white/60">
-              Cannot find what you need? We can digitize any logo or design into
-              a custom patch for you.
-            </p>
-            <a
-              href="/contact"
-              className="vr-btn vr-btn-primary mt-5 inline-flex items-center gap-2 rounded-md bg-white px-6 py-3 text-sm font-semibold text-navy-950 hover:bg-brand-50"
-            >
-              GET CUSTOM QUOTE{" "}
-              <span aria-hidden className="vr-arrow">
-                →
-              </span>
-            </a>
-          </div>
-          <div className="grid grid-cols-2 gap-6 sm:grid-cols-3">
-            {[
-              { icon: "rocket" as IconName, label: "Super Fast Turnaround" },
-              { icon: "award" as IconName, label: "High Quality Stitching" },
-              { icon: "refresh" as IconName, label: "Unlimited Revisions" },
-              {
-                icon: "shield" as IconName,
-                label: "100 Percent Satisfaction Guaranteed",
-              },
-            ].map((f) => (
-              <div
-                key={f.label}
-                className="flex flex-col items-center gap-2 text-center"
-              >
-                <span className="vr-icon-pop flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-white transition-colors group-hover:bg-white/15">
-                  <Icon name={f.icon} className="h-5 w-5" />
-                </span>
-                <p className="max-w-[6.5rem] [11px] text-white/60">{f.label}</p>
-              </div>
-            ))}
-          </div>
-        </Reveal>
-      </section>
+      <StoreCTA />
     </>
   );
 }

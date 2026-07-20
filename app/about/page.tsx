@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Hero from "../components/Hero";
-import { IconCircle, SectionTag, StatsBar } from "../components/Section";
-import Icon, { IconName } from "../components/Icon";
+import FeatureCards from "../components/FeatureCards";
+import ExpertiseStrip from "../components/ExpertiseStrip";
 import CTABanner from "../components/CTABanner";
+import HomeStats from "../components/HomeStats";
 import { FAQ, ABOUT_FAQS } from "../components/FAQ";
 import { Reveal } from "../components/Reveal";
 import { stagger } from "../components/stagger";
+import { IconCircle, SectionTag } from "../components/Section";
+import Icon, { IconName } from "../components/Icon";
 
 export const metadata: Metadata = {
   title: "About Us | Velora Digitizing",
@@ -55,18 +58,6 @@ const EXPERTISE: { icon: IconName; label: string }[] = [
   { icon: "shirt", label: "Cap / Hat Digitizing" },
   { icon: "grid", label: "Jacket Back Digitizing" },
   { icon: "badge-check", label: "Chenille Digitizing" },
-];
-
-const STATS: {
-  icon: "award" | "smile" | "clock" | "globe" | "shield";
-  value: string;
-  label: string;
-}[] = [
-  { icon: "award", value: "15,000+", label: "Projects Completed" },
-  { icon: "smile", value: "8,000+", label: "Happy Clients" },
-  { icon: "clock", value: "2-24 Hrs", label: "Turnaround Time" },
-  { icon: "globe", value: "50+", label: "Countries Served" },
-  { icon: "shield", value: "100%", label: "Satisfaction Rate" },
 ];
 
 const TEAM = [
@@ -158,59 +149,19 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-5 pb-20 lg:px-10">
-        <Reveal direction="up">
-          <SectionTag
-            eyebrow="Why Choose Us"
-            title="Why Thousands Choose velora Digitizing"
-          />
-        </Reveal>
-        <div className="mt-14 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3">
-          {WHY_ITEMS.map((item, i) => (
-            <Reveal
-              key={item.title}
-              direction="up"
-              delay={stagger(i, 90)}
-              className="vr-lift group flex flex-col items-center gap-3 rounded-2xl border border-navy-950/10 bg-white p-7 text-center"
-            >
-              <span className="vr-icon-pop inline-flex">
-                <span className="flex h-14 w-14 items-center justify-center rounded-full border border-brand-600/25 bg-brand-50 text-brand-600">
-                  <Icon name={item.icon} className="h-6 w-6" />
-                </span>
-              </span>
-              <p className="text-sm font-bold text-navy-950">{item.title}</p>
-              <p className="text-xs leading-relaxed text-navy-950/55">
-                {item.description}
-              </p>
-            </Reveal>
-          ))}
-        </div>
-      </section>
+      <FeatureCards
+        eyebrow="Why Choose Us"
+        title="Why Thousands Choose velora Digitizing"
+        items={WHY_ITEMS}
+      />
 
-      <section className="mx-auto max-w-7xl px-5 pb-20 lg:px-10">
-        <Reveal direction="up">
-          <SectionTag eyebrow="Our Expertise" title="We Specialize In" />
-        </Reveal>
-        <div className="mt-14 grid grid-cols-2 gap-y-8 sm:grid-cols-4 lg:grid-cols-7">
-          {EXPERTISE.map((item, i) => (
-            <Reveal
-              key={item.label}
-              direction="up"
-              delay={stagger(i, 70)}
-              className="group flex flex-col items-center gap-3 text-center transition-transform duration-300 hover:-translate-y-1"
-            >
-              <span className="flex h-14 w-14 items-center justify-center rounded-full border border-brand-600/25 text-brand-600 transition-colors duration-300 group-hover:bg-brand-50">
-                <Icon name={item.icon} className="h-6 w-6" />
-              </span>
-              <p className="max-w-[7rem] text-xs font-medium text-navy-950/70">
-                {item.label}
-              </p>
-            </Reveal>
-          ))}
-        </div>
-      </section>
+      <ExpertiseStrip
+        eyebrow="Our Expertise"
+        title="We Specialize In"
+        items={EXPERTISE}
+      />
 
-      <StatsBar stats={STATS} />
+      <HomeStats />
 
       <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1fr_320px]">
@@ -270,7 +221,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* FAQ Section */}
       <FAQ
         items={ABOUT_FAQS}
         title="About Velora - Frequently Asked Questions"

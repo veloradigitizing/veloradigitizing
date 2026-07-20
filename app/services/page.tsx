@@ -1,24 +1,22 @@
 import type { Metadata } from "next";
 import Hero from "../components/Hero";
-import { SectionTag } from "../components/Section";
-import ServiceCard, { Service } from "../components/ServiceCard";
-import { SERVICES } from "../components/services-data";
+import ServicesGrid from "../components/ServicesGrid";
 import WhyChooseUs from "../components/WhyChooseUs";
 import ProcessSteps from "../components/ProcessSteps";
 import CTABanner from "../components/CTABanner";
 import { FAQ, SERVICES_FAQS } from "../components/FAQ";
-import { Reveal } from "../components/Reveal";
-import { stagger } from "../components/stagger";
 import PortfolioSection from "../components/PortfolioSection";
 
 export const metadata: Metadata = {
   title: "Services | Velora Digitizing",
   description:
-    "Explore Velora Digitizing's full range of embroidery digitizing services — logos, patches, 3D puff, applique, chenille and more.", };
+    "Explore Velora Digitizing's full range of embroidery digitizing services — logos, patches, 3D puff, applique, chenille and more.",
+};
 
 const WHY_ITEMS: {
   icon: "award" | "rocket" | "refresh" | "tag" | "headset" | "shield";
-  title: string; }[] = [
+  title: string;
+}[] = [
   { icon: "award", title: "High Quality Stitching" },
   { icon: "rocket", title: "Super Fast Delivery" },
   { icon: "refresh", title: "Unlimited Revisions" },
@@ -39,30 +37,10 @@ export default function ServicesPage() {
         description="We offer high quality embroidery digitizing services with fast turnaround, perfect stitching and 100% customer satisfaction."
       />
 
-      <section className="mx-auto max-w-7xl px-5 py-10 lg:px-10">
-                <div className="mt-8">
-          <Reveal direction="up" delay={80}>
-            <SectionTag
-              eyebrow="What We Offer"
-              title="Our Digitizing Services"
-              subtitle="We provide a wide range of embroidery digitizing services to meet all your needs."
-            />
-          </Reveal>
-        </div>
-        <div className="mt-14 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-4">
-          {SERVICES?.map((s) => (
-            <Reveal
-              key={s.slug}
-              direction="up"
-              delay={stagger(SERVICES.indexOf(s), 80)}
-            >
-              <ServiceCard service={s as Service} />
-            </Reveal>
-          ))}
-        </div>
-      </section>
+      <ServicesGrid
+        className="!py-10"
+      />
 
-      {/* Our Portfolio - Featured Digitizing Work */}
       <PortfolioSection />
 
       <WhyChooseUs
@@ -73,7 +51,6 @@ export default function ServicesPage() {
 
       <ProcessSteps />
 
-      {/* FAQ Section */}
       <FAQ
         items={SERVICES_FAQS}
         title="Services - Frequently Asked Questions"
@@ -82,4 +59,5 @@ export default function ServicesPage() {
 
       <CTABanner />
     </>
-  ); }
+  );
+}
