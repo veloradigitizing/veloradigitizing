@@ -41,16 +41,12 @@ export default function PortfolioPage() {
   const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
   const portfolioSectionRef = useRef<HTMLDivElement>(null);
 
-  // This flag prevents scroll when TAB is clicked (internal navigation)
-  // Footer/ServiceCard clicks will ALWAYS scroll because they don"	 set this flag
   const isTabClick = useRef(false);
 
-  // Set active category from URL and scroll
   useEffect(() => {
     if (urlCategory && urlCategory !== "all") {
       setActive(urlCategory);
 
-      // Only skip scroll if it was a TAB click (not footer/external link)
       if (!isTabClick.current) {
         setTimeout(() => {
           portfolioSectionRef.current?.scrollIntoView({
@@ -59,37 +55,27 @@ export default function PortfolioPage() {
           });
         }, 400);
       }
-      // Reset the flag after handling
       isTabClick.current = false;
     }
   }, [urlCategory]);
 
-  // Filter items based on active category
   const filteredItems =
     active === "all"
       ? PORTFOLIO_ITEMS
       : PORTFOLIO_ITEMS.filter((i) => i.category === active);
 
-  // Only show items up to visibleCount
   const visibleItems = filteredItems.slice(0, visibleCount);
-
-  // Check if there are more items to show
   const hasMore = visibleCount < filteredItems.length;
 
-  // Handle Load More click
   const handleLoadMore = () => {
     setVisibleCount((prev) => prev + ITEMS_PER_PAGE);
   };
 
-  // Reset visible count when category changes via TAB click (NO scroll)
   const handleCategoryChange = useCallback((category: string) => {
-    // Mark this as a TAB click so we don"	 scroll
     isTabClick.current = true;
-
     setActive(category);
     setVisibleCount(ITEMS_PER_PAGE);
 
-    // Update URL without refresh
     const url = new URL(window.location.href);
     if (category === "all") {
       url.searchParams.delete("category");
@@ -101,6 +87,7 @@ export default function PortfolioPage() {
 
   return (
     <>
+      {/* 1. Hero */}
       <Hero
         eyebrow="Our Portfolio"
         titleLines={[
@@ -110,7 +97,7 @@ export default function PortfolioPage() {
         description="Explore our latest embroidery digitizing projects. Every design is crafted with precision, quality, and perfection."
       />
 
-      {/* Portfolio Section with ref for scrolling */}
+      {/* 2. Portfolio Grid Section */}
       <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10">
         <Reveal direction="up">
           <Breadcrumb current="Portfolio" />
@@ -146,7 +133,6 @@ export default function PortfolioPage() {
           ))}
         </Reveal>
 
-        {/* Results count */}
         <div className="mt-6 flex items-center justify-between">
           <p className="text-sm text-navy-950/50">
             Showing{" "}
@@ -177,7 +163,6 @@ export default function PortfolioPage() {
           )}
         </div>
 
-        {/* Grid - Shows only visible items */}
         <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {visibleItems.map((item, i) => (
             <Reveal
@@ -190,7 +175,6 @@ export default function PortfolioPage() {
           ))}
         </div>
 
-        {/* Empty State */}
         {filteredItems.length === 0 && (
           <div className="mt-12 flex flex-col items-center justify-center py-16 text-center">
             <Icon name="search" className="mb-4 h-12 w-12 text-navy-950/20" />
@@ -209,7 +193,6 @@ export default function PortfolioPage() {
           </div>
         )}
 
-        {/* Load More Button - Only shows when there are more items */}
         {hasMore && (
           <Reveal direction="up" className="mt-10 flex justify-center">
             <button
@@ -228,7 +211,6 @@ export default function PortfolioPage() {
           </Reveal>
         )}
 
-        {/* All Loaded Indicator */}
         {!hasMore && filteredItems.length > ITEMS_PER_PAGE && (
           <div className="mt-10 flex items-center justify-center gap-2 text-sm text-navy-950/40">
             <Icon name="check" className="h-4 w-4 text-green-500" />
@@ -237,8 +219,10 @@ export default function PortfolioPage() {
         )}
       </section>
 
+      {/* 3. StatsBar */}
       <StatsBar stats={STATS} />
 
+      {/* 4. Testimonial + Mini CTA */}
       <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           <Reveal direction="left">
@@ -252,7 +236,7 @@ export default function PortfolioPage() {
               <StarRating />
             </div>
             <p className="mt-4 max-w-md text-[15px] leading-relaxed text-navy-950/60">
-              &ldquo;velora Digitizing delivered excellent quality and super
+              &ldquo;Velora Digitizing delivered excellent quality and super
               fast turnaround. Highly recommended!&rdquo;
             </p>
             <div className="mt-6 flex items-center gap-4">
@@ -305,14 +289,7 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <FAQ
-        items={PORTFOLIO_FAQS}
-        title="Portfolio - Frequently Asked Questions"
-        subtitle="Questions about our portfolio, samples, and previous work."
-      />
-
-      {/* Why Choose Us - Features */}
+      {/* 5. Why Choose Us - Features */}
       <section className="relative overflow-hidden bg-navy-950 py-16 sm:py-20">
         <div className="pointer-events-none absolute -right-24 -top-32 h-96 w-96 rounded-full bg-brand-500/20 blur-3xl vr-float-soft" />
         <div className="pointer-events-none absolute -bottom-32 -left-24 h-96 w-96 rounded-full bg-brand-400/10 blur-3xl vr-float-soft" style={{ animationDelay: "1.8s" }} />
@@ -347,7 +324,14 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      {/* CTA Section - No background image */}
+      {/* 6. FAQ Section */}
+      <FAQ
+        items={PORTFOLIO_FAQS}
+        title="Portfolio - Frequently Asked Questions"
+        subtitle="Questions about our portfolio, samples, and previous work."
+      />
+
+      {/* 7. CTA Section - No background image */}
       <section className="relative overflow-hidden bg-brand-600">
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-brand-600 via-brand-500 to-brand-600" />
         <div className="pointer-events-none absolute -right-20 -top-20 h-60 w-60 rounded-full bg-white/10 blur-3xl" />
