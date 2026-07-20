@@ -14,6 +14,8 @@ export type PatchItem = {
   size: string;
   stitchCount: number;
   category: string;
+  formats?: string[];
+  description?: string;
 };
 
 type CategoryItem = { value: string; label: string; icon: string };

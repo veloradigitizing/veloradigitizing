@@ -9,19 +9,23 @@ export default function Hero({
   description,
   breadcrumbCurrent,
   imageLabel = "Embroidered Cap & Digitizing Software Mockup",
+  backgroundImage,
 }: {
   eyebrow: string;
   titleLines: { text: string; accent?: boolean }[];
   description: string;
   breadcrumbCurrent?: string;
   imageLabel?: string;
+  backgroundImage?: string;
 }) {
+  const bgSrc = backgroundImage || heroImage;
+
   return (
     <section className="relative overflow-hidden bg-white">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src={heroImage}
+          src={bgSrc as typeof heroImage | string}
           alt={imageLabel}
           fill
           priority
@@ -29,8 +33,11 @@ export default function Hero({
           className="object-cover object-center"
         />
 
-        {/* Overlay for text readability */}
-        {/* <div className="absolute inset-0 bg-white/85" /> */}
+        {/* Mobile overlay - vertical gradient */}
+        <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/80 to-white/60 lg:hidden" />
+
+        {/* Desktop overlay - horizontal gradient */}
+        <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/75 to-white/30 hidden lg:block" />
       </div>
 
       {/* Decorative gradient blobs */}
@@ -40,12 +47,6 @@ export default function Hero({
         className="pointer-events-none absolute bottom-[-10%] right-[-5%] z-10 h-80 w-80 rounded-full bg-navy-700/10 blur-3xl vr-float-soft"
         style={{ animationDelay: "1.5s" }}
       />
-
-      {/* <div className="pointer-events-none absolute right-[-5%] top-[-8%] z-10 aspect-square w-[28%] min-w-24 rounded-full bg-[#e8f0fb] blur-3xl" />
-
-      <div className="pointer-events-none absolute bottom-[-6%] right-[-3%] z-10 aspect-square w-[28%] min-w-24 rounded-full bg-[#a8b7f8]/60 blur-3xl" />
-
-      <div className="pointer-events-none absolute bottom-[-4%] left-[-6%] z-10 aspect-square w-1/5 min-w-16 rounded-full bg-[#e8f0fb] blur-3xl" /> */}
 
       {/* Hero Content */}
       <div className="relative z-20 mx-auto max-w-7xl px-5 pt-28 pb-24 lg:px-10 lg:pt-36 lg:pb-32">

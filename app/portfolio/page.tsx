@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef, useCallback, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Hero from "../components/Hero";
 import { SectionTag } from "../components/Section";
@@ -25,7 +25,7 @@ const WHY_CHOOSE_ITEMS = [
   { icon: "smile" as const, title: "Expert Digitizers", description: "Professional digitizers with 10+ years of experience in every stitch type." },
 ];
 
-export default function PortfolioPage() {
+function PortfolioContent() {
   const searchParams = useSearchParams();
   const urlCategory = searchParams.get("category") || "all";
 
@@ -70,15 +70,6 @@ export default function PortfolioPage() {
 
   return (
     <>
-      <Hero
-        eyebrow="Our Portfolio"
-        titleLines={[
-          { text: "Precision Work," },
-          { text: "Perfect Results", accent: true },
-        ]}
-        description="Explore our latest embroidery digitizing projects. Every design is crafted with precision, quality, and perfection."
-      />
-
       <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10">
         
         <div className="mt-8">
@@ -213,6 +204,26 @@ export default function PortfolioPage() {
       />
 
       <CTABanner />
+    </>
+  );
+}
+
+export default function PortfolioPage() {
+  return (
+    <>
+      <Hero
+        eyebrow="Our Portfolio"
+        titleLines={[
+          { text: "Precision Work," },
+          { text: "Perfect Results", accent: true },
+        ]}
+        description="Explore our latest embroidery digitizing projects. Every design is crafted with precision, quality, and perfection."
+        backgroundImage="/images/hero-images/ChatGPT Image Jul 20, 2026, 07_02_21 PM.png"
+      />
+
+      <Suspense fallback={<section className="mx-auto max-w-7xl px-5 py-20 lg:px-10"><div className="flex items-center justify-center py-16"><p className="text-sm text-navy-950/50">Loading portfolio...</p></div></section>}>
+        <PortfolioContent />
+      </Suspense>
     </>
   );
 }

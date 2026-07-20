@@ -7,7 +7,8 @@ export type Patch = {
   formats: string[];
   description: string;
   size: string;
-  stitchCount: string;
+  stitchCount: number;
+  originalPrice?: number;
 };
 
 const FORMATS = ["DST", "PES", "EXP", "JEF", "VP3", "XXX"];
@@ -22,7 +23,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     image: "/images/patches/HikeMorePatch.jpeg",
     description: "Circular outdoor adventure patch featuring hiker silhouette against mountain backdrop. Perfect for backpacks and outdoor gear.",
     size: "4x4 inch",
-    stitchCount: "15,000"
+    stitchCount: 15000
   },
   {
     title: "Wild Adventure Patch",
@@ -32,7 +33,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     image: "/images/patches/WildPatch.jpeg",
     description: "Bold wilderness themed patch with nature-inspired design. Ideal for camping and hiking enthusiasts.",
     size: "3.5x3.5 inch",
-    stitchCount: "12,000"
+    stitchCount: 12000
   },
   {
     title: "Stay Wild Patch",
@@ -42,7 +43,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     image: "/images/patches/StayWIldPatch.jpeg",
     description: "Inspirational stay wild patch with adventurous spirit theme. Great for jackets and caps.",
     size: "3x3 inch",
-    stitchCount: "10,000"
+    stitchCount: 10000
   },
   {
     title: "Explore The Path",
@@ -52,7 +53,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     image: "/images/patches/ExplorePatch.jpeg",
     description: "Exploration themed patch encouraging adventure and discovery. Perfect for travel gear.",
     size: "3.5x3.5 inch",
-    stitchCount: "14,000"
+    stitchCount: 14000
   },
   {
     title: "Find Your Path Patch",
@@ -62,7 +63,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     image: "/images/patches/FindYourPathPatch.jpeg",
     description: "Motivational path-finding patch with compass theme. Great for adventurers.",
     size: "3x3 inch",
-    stitchCount: "9,000"
+    stitchCount: 9000
   },
   {
     title: "Happy Place Patch",
@@ -72,7 +73,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     image: "/images/patches/HappyPlacePatch.jpeg",
     description: "Cheerful happy place themed patch with positive vibes. Great for casual wear.",
     size: "3.5x3.5 inch",
-    stitchCount: "13,000"
+    stitchCount: 13000
   },
   {
     title: "Keep It Simple Patch",
@@ -82,7 +83,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     image: "/images/patches/KeepItSimplePatch.jpeg",
     description: "Minimalist text patch with clean typography. Modern design for everyday wear.",
     size: "3x2 inch",
-    stitchCount: "6,000"
+    stitchCount: 6000
   },
   {
     title: "Life Is Better Patch",
@@ -92,7 +93,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     image: "/images/patches/LifeIsBetterPatch.jpeg",
     description: "Inspirational life quote patch with cheerful message. Uplifting design.",
     size: "4x2 inch",
-    stitchCount: "9,000"
+    stitchCount: 9000
   },
   {
     title: "Chase The Sun Patch",
@@ -102,7 +103,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     image: "/images/patches/ChaseTheSunPatch.jpeg",
     description: "Sunny optimistic patch encouraging you to chase your dreams. Bright design.",
     size: "3x3 inch",
-    stitchCount: "8,000"
+    stitchCount: 8000
   },
   {
     title: "Adventure Awaits Patch",
@@ -112,7 +113,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     image: "/images/patches/AdventurePatch.jpeg",
     description: "Bold adventure awaits patch for thrill seekers and explorers.",
     size: "4x4 inch",
-    stitchCount: "16,000"
+    stitchCount: 16000
   },
 
   // === CUSTOM PATCHES FOLDER (Unique Designs) ===
@@ -124,7 +125,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     image: "/images/custom-patches/DadByDay.jpeg",
     description: "Fun gaming dad patch with controller graphic and retro styling. Great for gamer dads.",
     size: "4x4 inch",
-    stitchCount: "18,000"
+    stitchCount: 18000
   },
   {
     title: "Endeavour Patch",
@@ -134,7 +135,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     image: "/images/custom-patches/Endeavour.jpeg",
     description: "Endeavour motivational patch with bold lettering. Inspiring design for achievers.",
     size: "3.5x2.5 inch",
-    stitchCount: "11,000"
+    stitchCount: 11000
   },
   {
     title: "Gumshoe Detective Patch",
@@ -144,7 +145,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     image: "/images/custom-patches/Gumshoe.jpeg",
     description: "Playful detective-themed gumshoe patch with mystery vibe.",
     size: "3x3 inch",
-    stitchCount: "10,000"
+    stitchCount: 10000
   },
   {
     title: "Home Of Hustle Patch",
@@ -154,7 +155,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     image: "/images/custom-patches/HomeOfHustle.jpeg",
     description: "Motivational hustle culture patch with bold typography. Perfect for workwear.",
     size: "3.5x2.5 inch",
-    stitchCount: "12,000"
+    stitchCount: 12000
   },
   {
     title: "Love Heart Patch",
@@ -164,7 +165,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     image: "/images/custom-patches/LovePatch.jpeg",
     description: "Elegant love-themed patch with heart motif. Romantic design for couples apparel.",
     size: "3x3 inch",
-    stitchCount: "8,000"
+    stitchCount: 8000
   },
   {
     title: "Mentally Strong Patch",
@@ -174,7 +175,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     image: "/images/custom-patches/Mentally.jpeg",
     description: "Powerful mental strength patch with inspiring message. Build resilience.",
     size: "4x3 inch",
-    stitchCount: "20,000"
+    stitchCount: 20000
   },
   {
     title: "Paranormal Patch",
@@ -184,7 +185,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     image: "/images/custom-patches/Paranormal.jpeg",
     description: "Spooky paranormal themed patch for supernatural fans. Mysterious design.",
     size: "3.5x3.5 inch",
-    stitchCount: "14,000"
+    stitchCount: 14000
   },
   {
     title: "People Safety Patch",
@@ -194,7 +195,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     image: "/images/custom-patches/PeopleSafety.jpeg",
     description: "Community safety awareness patch with protective message.",
     size: "3x3 inch",
-    stitchCount: "11,000"
+    stitchCount: 11000
   },
   {
     title: "Search Rescan Patch",
@@ -204,7 +205,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
        image: "/images/custom-patches/SearchRescan.jpeg",
     description: "Gaming-inspired search rescan action patch for gamers.",
     size: "3.5x2.5 inch",
-    stitchCount: "13,000"
+    stitchCount: 13000
   },
   {
     title: "Veracruz Patch",
@@ -214,7 +215,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     image: "/images/custom-patches/Veracruz.jpeg",
     description: "Veracruz Mexico travel souvenir patch with cultural design.",
     size: "4x4 inch",
-    stitchCount: "17,000"
+    stitchCount: 17000
   },
   {
     title: "Wild Spirit Patch",
@@ -224,7 +225,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     image: "/images/custom-patches/Wild.jpeg",
     description: "Fierce wild spirit patch with untamed energy. Bold nature design.",
     size: "4x4 inch",
-    stitchCount: "19,000"
+    stitchCount: 19000
   }
 ];
 

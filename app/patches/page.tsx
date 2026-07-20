@@ -4,9 +4,10 @@ import Hero from "../components/Hero";
 import WhyChooseUs from "../components/WhyChooseUs";
 import CTABanner from "../components/CTABanner";
 import ServiceTypeGrid from "../components/ServiceTypeGrid";
+import type { IconName } from "../components/Icon";
 import { FAQ } from "../components/FAQ";
 
-const PATCH_TYPES = [
+const PATCH_TYPES: { icon: IconName; title: string; desc: string }[] = [
   { icon: "badge-check", title: "Merrow Border Patches", desc: "Classic overlocked edge with a raised thread border. The traditional patch look that is durable, clean, and timeless. Best for simple shapes like circles, squares, and rectangles." },
   { icon: "layers", title: "Laser Cut Patches", desc: "Precision laser-cut edges for intricate shapes that merrow stitching cannot achieve. Perfect for detailed logos, custom outlines, and die-cut designs with tight corners." },
   { icon: "grid", title: "Woven Patches", desc: "Fine thread woven patches with photographic detail. Supports smaller text and tighter details than embroidered patches. Ideal for badges and uniform insignia." },
@@ -40,6 +41,7 @@ export default function PatchesPage() {
         eyebrow="Custom Patches"
         titleLines={[{ text: "Patches That" }, { text: "Stand Out", accent: true }]}
         description="From merrow borders to laser-cut, woven, chenille and PVC — we digitize patches in any shape, size, or backing. Wash-tested up to 50 cycles, shipped worldwide."
+        backgroundImage="/images/hero-images/ChatGPT Image Jul 20, 2026, 07_02_02 PM.png"
       />
 
       <ServiceTypeGrid items={PATCH_TYPES} eyebrow="Patch Types" title="Every Patch Style Imaginable" subtitle="Choose the construction that fits your design, garment, and budget." />

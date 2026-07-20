@@ -4,9 +4,10 @@ import Hero from "../components/Hero";
 import WhyChooseUs from "../components/WhyChooseUs";
 import CTABanner from "../components/CTABanner";
 import ServiceTypeGrid from "../components/ServiceTypeGrid";
+import type { IconName } from "../components/Icon";
 import { FAQ } from "../components/FAQ";
 
-const VECTOR_TYPES = [
+const VECTOR_TYPES: { icon: IconName; title: string; desc: string }[] = [
   { icon: "share", title: "Raster to Vector", desc: "Convert low-resolution JPEG, PNG, or BMP images into crisp, scalable vector files. Perfect for logos and artwork that need to be resized without losing quality." },
   { icon: "award", title: "Logo Vectorization", desc: "Recreate your existing logo as a clean vector file with precise paths, accurate colors, and proper layering. Ideal for print, embroidery, and large-format applications." },
   { icon: "scissors", title: "Applique Vector", desc: "Create vector files optimized for applique cutting machines. Includes proper tack-down stitches, placement lines, and material boundaries for clean production." },
@@ -40,6 +41,7 @@ export default function VectorArtPage() {
         eyebrow="Vector Art Services"
         titleLines={[{ text: "Pixel-Perfect" }, { text: "Vector Conversion", accent: true }]}
         description="Convert any raster image into clean, scalable vector art. Manual tracing by expert artists with unlimited revisions and 24-hour turnaround."
+        backgroundImage="/images/hero-images/ChatGPT Image Jul 20, 2026, 07_10_47 PM.png"
       />
 
       <ServiceTypeGrid items={VECTOR_TYPES} eyebrow="Our Services" title="Vector Art Solutions" subtitle="Professional vector conversion services for every application and industry." />

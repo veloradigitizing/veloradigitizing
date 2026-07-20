@@ -60,7 +60,7 @@ export default function BundleSection({
     setCanScrollRight(el.scrollLeft + el.clientWidth < el.scrollWidth - 10);
     
     // Calculate active index based on scroll position
-    const cardWidth = el.querySelector("[data-card]")?.offsetWidth || 320;
+    const cardWidth = (el.querySelector("[data-card]") as HTMLElement | null)?.offsetWidth || 320;
     const gap = 20;
     const newIndex = Math.round(el.scrollLeft / (cardWidth + gap));
     setActiveIndex(Math.min(newIndex, BUNDLES.length - 1));
@@ -291,7 +291,7 @@ export default function BundleSection({
                         )}
                       </div>
                       <span className="mb-0.5 ml-auto text-xs text-rose-500 font-semibold">
-                        Save ${(bundle.originalPrice && bundle.originalPrice - bundle.price).toFixed(2)}
+                        Save ${(bundle.originalPrice ? (bundle.originalPrice - bundle.price) : 0).toFixed(2)}
                       </span>
                     </div>
 

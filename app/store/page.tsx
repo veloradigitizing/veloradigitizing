@@ -66,7 +66,7 @@ export default function StorePage() {
       p.price <= maxPrice,
   );
 
-  const handleAddToCart = (p: Patch) => {
+  const handleAddToCart = (p: { slug: string; title: string; price: number; image: string }) => {
     addItem({ id: p.slug, title: p.title, price: p.price, image: p.image });
     setJustAdded(p.slug);
     setTimeout(
@@ -91,6 +91,7 @@ export default function StorePage() {
         ]}
         description="Explore our premium embroidery patch designs. Perfect for jackets, caps, bags, and more. Instant download in all major formats."
         imageLabel="High Quality Embroidery Patches"
+        backgroundImage="/images/hero-images/ChatGPT Image Jul 20, 2026, 07_02_34 PM.png"
       />
 
       {/* Mobile Filter Toggle */}
