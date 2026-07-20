@@ -115,7 +115,7 @@ export default function AboutPage() {
             className="vr-zoom overflow-hidden rounded-2xl border border-navy-950/10"
           >
             <Image
-              src="/images/about/machine.jpg"
+              src="/images/about/embroidery-machine.png"
               alt="Industrial embroidery machine stitching the velora logo"
               width={1200}
               height={900}
@@ -271,7 +271,7 @@ export default function AboutPage() {
       </section>
 
       {/* FAQ Section */}
-      <FAQ 
+      <FAQ
         items={ABOUT_FAQS}
         title="About Velora - Frequently Asked Questions"
         subtitle="Learn more about our company, team, and what makes us different."
