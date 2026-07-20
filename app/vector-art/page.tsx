@@ -1,7 +1,7 @@
 "use client";
 
 import Hero from "../components/Hero";
-import { Breadcrumb, SectionTag } from "../components/Section";
+import { SectionTag } from "../components/Section";
 import { Reveal } from "../components/Reveal";
 import { stagger } from "../components/stagger";
 import WhyChooseUs from "../components/WhyChooseUs";
@@ -54,8 +54,7 @@ export default function VectorArtPage() {
         description="Convert any raster image into clean, scalable vector art. Manual tracing by expert artists with unlimited revisions and 24-hour turnaround."
       />
       <section className="mx-auto max-w-7xl px-5 py-10 lg:px-10">
-        <Reveal direction="up"><Breadcrumb current="Vector Art" /></Reveal>
-      </section>
+              </section>
       <section className="bg-brand-50/50 py-16">
         <div className="mx-auto max-w-7xl px-5 lg:px-10">
           <Reveal direction="up"><SectionTag eyebrow="Our Services" title="Vector Art Solutions" subtitle="Professional vector conversion services for every application and industry." /></Reveal>
@@ -118,5 +117,4 @@ export default function VectorArtPage() {
       </section>
       <CTABanner />
     </>
-  );
-}
+  ); }

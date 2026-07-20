@@ -1,7 +1,7 @@
 "use client";
 
 import Hero from "../components/Hero";
-import { Breadcrumb, SectionTag } from "../components/Section";
+import { SectionTag } from "../components/Section";
 import { Reveal } from "../components/Reveal";
 import { stagger } from "../components/stagger";
 import WhyChooseUs from "../components/WhyChooseUs";
@@ -60,8 +60,7 @@ export default function PatchesPage() {
         description="From merrow borders to laser-cut, woven, chenille and PVC \u2014 we digitize patches in any shape, size, or backing. Wash-tested up to 50 cycles, shipped worldwide."
       />
       <section className="mx-auto max-w-7xl px-5 py-10 lg:px-10">
-        <Reveal direction="up"><Breadcrumb current="Patches" /></Reveal>
-      </section>
+              </section>
       <section className="bg-brand-50/50 py-16">
         <div className="mx-auto max-w-7xl px-5 lg:px-10">
           <Reveal direction="up"><SectionTag eyebrow="Patch Types" title="Every Patch Style Imaginable" subtitle="Choose the construction that fits your design, garment, and budget." /></Reveal>
@@ -141,5 +140,4 @@ export default function PatchesPage() {
       </section>
       <CTABanner />
     </>
-  );
-}
+  ); }

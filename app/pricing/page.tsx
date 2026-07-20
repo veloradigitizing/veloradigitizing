@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Hero from "../components/Hero";
-import { Breadcrumb, SectionTag } from "../components/Section";
+import { SectionTag } from "../components/Section";
 import Icon from "../components/Icon";
 import ProcessSteps from "../components/ProcessSteps";
 import CTABanner from "../components/CTABanner";
@@ -11,8 +11,7 @@ import { stagger } from "../components/stagger";
 export const metadata: Metadata = {
   title: "Pricing | velora Digitizing",
   description:
-    "Simple, transparent pricing for embroidery digitizing, vector conversion and rush orders.",
-};
+    "Simple, transparent pricing for embroidery digitizing, vector conversion and rush orders.", };
 
 const PLANS = [
   {
@@ -27,8 +26,7 @@ const PLANS = [
       "24-48 hr delivery",
       "DST, PES, EXP, JEF",
     ],
-    highlighted: false,
-  },
+    highlighted: false, },
   {
     name: "Standard",
     price: "$12.99",
@@ -42,8 +40,7 @@ const PLANS = [
       "All embroidery formats",
       "Free vector file",
     ],
-    highlighted: true,
-  },
+    highlighted: true, },
   {
     name: "Rush",
     price: "$19.99",
@@ -57,8 +54,7 @@ const PLANS = [
       "All embroidery formats",
       "Priority support",
     ],
-    highlighted: false,
-  },
+    highlighted: false, },
 ];
 
 export default function PricingPage() {
@@ -74,10 +70,7 @@ export default function PricingPage() {
       />
 
       <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10">
-        <Reveal direction="up">
-          <Breadcrumb current="Pricing" />
-        </Reveal>
-        <div className="mt-8">
+                <div className="mt-8">
           <Reveal direction="up" delay={80}>
             <SectionTag
               eyebrow="Our Plans"
@@ -96,8 +89,7 @@ export default function PricingPage() {
               className={`vr-lift group flex flex-col rounded-2xl p-8 ${
                 plan.highlighted
                   ? "bg-navy-950 text-white shadow-xl lg:-translate-y-3 ring-2 ring-brand-500/40"
-                  : "border border-navy-950/10 bg-white text-navy-950"
-              }`}
+                  : "border border-navy-950/10 bg-white text-navy-950" }`}
             >
               <div className="flex flex-1 flex-col">
                 {plan.highlighted && (
@@ -108,8 +100,7 @@ export default function PricingPage() {
                 <h3 className="font-serif text-xl font-bold">{plan.name}</h3>
                 <p
                   className={`mt-2 text-sm ${
-                    plan.highlighted ? "text-white/60" : "text-navy-950/55"
-                  }`}
+                    plan.highlighted ? "text-white/60" : "text-navy-950/55" }`}
                 >
                   {plan.description}
                 </p>
@@ -119,8 +110,7 @@ export default function PricingPage() {
                   </span>
                   <span
                     className={`text-sm ${
-                      plan.highlighted ? "text-white/50" : "text-navy-950/50"
-                    }`}
+                      plan.highlighted ? "text-white/50" : "text-navy-950/50" }`}
                   >
                     {plan.unit}
                   </span>
@@ -131,15 +121,13 @@ export default function PricingPage() {
                       <Icon
                         name="badge-check"
                         className={`h-4 w-4 shrink-0 ${
-                          plan.highlighted ? "text-brand-50" : "text-brand-600"
-                        }`}
+                          plan.highlighted ? "text-brand-50" : "text-brand-600" }`}
                       />
                       <span
                         className={
                           plan.highlighted
                             ? "text-white/80"
-                            : "text-navy-950/70"
-                        }
+                            : "text-navy-950/70" }
                       >
                         {f}
                       </span>
@@ -151,8 +139,7 @@ export default function PricingPage() {
                   className={`vr-btn mt-8 flex items-center justify-center gap-2 rounded-md px-6 py-3 text-sm font-semibold transition-colors ${
                     plan.highlighted
                       ? "bg-white text-navy-950 hover:bg-brand-50"
-                      : "bg-brand-600 text-white hover:bg-brand-700"
-                  }`}
+                      : "bg-brand-600 text-white hover:bg-brand-700" }`}
                 >
                   GET STARTED{" "}
                   <span aria-hidden className="vr-arrow">
@@ -176,5 +163,4 @@ export default function PricingPage() {
       
       <CTABanner />
     </>
-  );
-}
+  ); }

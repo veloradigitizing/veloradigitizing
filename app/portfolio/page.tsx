@@ -4,17 +4,13 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Hero from "../components/Hero";
-import {
-  Breadcrumb,
-  SectionTag,
+import { SectionTag,
   StarRating,
-  StatsBar,
-} from "../components/Section";
+  StatsBar, } from "../components/Section";
 import Icon from "../components/Icon";
 import PortfolioCard, {
   PORTFOLIO_CATEGORIES,
-  PORTFOLIO_ITEMS,
-} from "../components/PortfolioCard";
+  PORTFOLIO_ITEMS, } from "../components/PortfolioCard";
 import { FAQ, PORTFOLIO_FAQS } from "../components/FAQ";
 import { Reveal } from "../components/Reveal";
 import { stagger } from "../components/stagger";
@@ -22,8 +18,7 @@ import { stagger } from "../components/stagger";
 const STATS: {
   icon: "award" | "smile" | "clock" | "globe";
   value: string;
-  label: string;
-}[] = [
+  label: string; }[] = [
   { icon: "award", value: "15,000+", label: "Projects Completed" },
   { icon: "smile", value: "8,000+", label: "Happy Clients" },
   { icon: "clock", value: "2-24 Hrs", label: "Turnaround Time" },
@@ -51,13 +46,8 @@ export default function PortfolioPage() {
         setTimeout(() => {
           portfolioSectionRef.current?.scrollIntoView({
             behavior: "smooth",
-            block: "start",
-          });
-        }, 400);
-      }
-      isTabClick.current = false;
-    }
-  }, [urlCategory]);
+            block: "start", }); }, 400); }
+      isTabClick.current = false; } }, [urlCategory]);
 
   const filteredItems =
     active === "all"
@@ -68,8 +58,7 @@ export default function PortfolioPage() {
   const hasMore = visibleCount < filteredItems.length;
 
   const handleLoadMore = () => {
-    setVisibleCount((prev) => prev + ITEMS_PER_PAGE);
-  };
+    setVisibleCount((prev) => prev + ITEMS_PER_PAGE); };
 
   const handleCategoryChange = useCallback((category: string) => {
     isTabClick.current = true;
@@ -78,12 +67,9 @@ export default function PortfolioPage() {
 
     const url = new URL(window.location.href);
     if (category === "all") {
-      url.searchParams.delete("category");
-    } else {
-      url.searchParams.set("category", category);
-    }
-    window.history.pushState({}, "", url.toString());
-  }, []);
+      url.searchParams.delete("category"); } else {
+      url.searchParams.set("category", category); }
+    window.history.pushState({}, "", url.toString()); }, []);
 
   return (
     <>
@@ -99,9 +85,7 @@ export default function PortfolioPage() {
 
       {/* 2. Portfolio Grid Section */}
       <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10">
-        <Reveal direction="up">
-          <Breadcrumb current="Portfolio" />
-        </Reveal>
+        
         <div className="mt-8">
           <Reveal direction="up" delay={80}>
             <SectionTag
@@ -125,8 +109,7 @@ export default function PortfolioPage() {
               className={`vr-btn rounded-md px-4 py-2 text-xs font-semibold uppercase tracking-wide transition-colors ${
                 active === cat.value
                   ? "bg-brand-600 text-white shadow-lg shadow-brand-600/25"
-                  : "border border-navy-950/15 text-navy-950/60 hover:border-brand-600 hover:text-brand-600"
-              }`}
+                  : "border border-navy-950/15 text-navy-950/60 hover:border-brand-600 hover:text-brand-600" }`}
             >
               {cat.label}
             </button>
@@ -154,8 +137,7 @@ export default function PortfolioPage() {
           {(active !== "all" || visibleCount > ITEMS_PER_PAGE) && (
             <button
               onClick={() => {
-                handleCategoryChange("all");
-              }}
+                handleCategoryChange("all"); }}
               className="text-xs font-semibold text-brand-600 hover:text-brand-700 transition-colors"
             >
               View All Categories →
@@ -368,5 +350,4 @@ export default function PortfolioPage() {
         </div>
       </section>
     </>
-  );
-}
+  ); }

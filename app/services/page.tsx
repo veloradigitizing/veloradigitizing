@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Hero from "../components/Hero";
-import { Breadcrumb, SectionTag } from "../components/Section";
+import { SectionTag } from "../components/Section";
 import ServiceCard, { Service } from "../components/ServiceCard";
 import { SERVICES } from "../components/services-data";
 import WhyChooseUs from "../components/WhyChooseUs";
@@ -14,13 +14,11 @@ import PortfolioSection from "../components/PortfolioSection";
 export const metadata: Metadata = {
   title: "Services | Velora Digitizing",
   description:
-    "Explore Velora Digitizing's full range of embroidery digitizing services — logos, patches, 3D puff, applique, chenille and more.",
-};
+    "Explore Velora Digitizing's full range of embroidery digitizing services — logos, patches, 3D puff, applique, chenille and more.", };
 
 const WHY_ITEMS: {
   icon: "award" | "rocket" | "refresh" | "tag" | "headset" | "shield";
-  title: string;
-}[] = [
+  title: string; }[] = [
   { icon: "award", title: "High Quality Stitching" },
   { icon: "rocket", title: "Super Fast Delivery" },
   { icon: "refresh", title: "Unlimited Revisions" },
@@ -42,10 +40,7 @@ export default function ServicesPage() {
       />
 
       <section className="mx-auto max-w-7xl px-5 py-10 lg:px-10">
-        <Reveal direction="up">
-          <Breadcrumb current="Services" />
-        </Reveal>
-        <div className="mt-8">
+                <div className="mt-8">
           <Reveal direction="up" delay={80}>
             <SectionTag
               eyebrow="What We Offer"
@@ -87,5 +82,4 @@ export default function ServicesPage() {
 
       <CTABanner />
     </>
-  );
-}
+  ); }
