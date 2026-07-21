@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Hero from "../components/Hero";
-import aboutBg from "../images/velora-embroidery-machine-shirt-cap.png";
+import aboutBg from "../images/velora-embroidery-machine-shirt-cap.webp";
 import OurStorySection from "../components/OurStorySection";
 import FeatureCards from "../components/FeatureCards";
 import ExpertiseStrip from "../components/ExpertiseStrip";
@@ -63,25 +63,25 @@ const TEAM = [
   {
     name: "Michael Anderson",
     role: "Founder & CEO",
-    image: "/images/team/team-01.jpg",
+    image: "/images/team/team-01.webp",
     initial: "MA",
   },
   {
     name: "David Thompson",
     role: "Lead Digitizer",
-    image: "/images/team/team-02.jpg",
+    image: "/images/team/team-02.webp",
     initial: "DT",
   },
   {
     name: "James Wilson",
     role: "Senior Digitizer",
-    image: "/images/team/team-03.jpg",
+    image: "/images/team/team-03.webp",
     initial: "JW",
   },
   {
     name: "Daniel Carter",
     role: "Quality Analyst",
-    image: "/images/team/team-04.jpeg",
+    image: "/images/team/team-04.webp",
     initial: "DC",
   },
 ];

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Hero from "../components/Hero";
-import servicesBg from "../images/velora-embroidery-workstation.png";
+import servicesBg from "../images/velora-embroidery-workstation.webp";
 import ServicesGrid from "../components/ServicesGrid";
 import WhyChooseUs from "../components/WhyChooseUs";
 import ProcessSteps from "../components/ProcessSteps";

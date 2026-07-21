@@ -1,5 +1,5 @@
 import Hero from "../components/Hero";
-import contactBg from "../images/velora-contact-workspace.png";
+import contactBg from "../images/velora-contact-workspace.webp";
 import ContactInfoPanel from "../components/ContactInfoPanel";
 import ContactForm from "../components/ContactForm";
 import WhatsAppBanner from "../components/WhatsAppBanner";

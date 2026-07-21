@@ -3,7 +3,7 @@ import { Reveal } from "./Reveal";
 import { stagger } from "./stagger";
 import Link from "next/link";
 import Image, { type StaticImageData } from "next/image";
-import heroImage from "../images/veloraHero3.jpeg";
+import heroImage from "../images/veloraHero3.webp";
 
 export function SectionTag({
   eyebrow,

@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Reveal } from "./Reveal";
 
 export default function OurStorySection({
-  imageSrc = "/images/about/embroidery-machine.png",
+  imageSrc = "/images/about/embroidery-machine.webp",
   imageAlt = "Industrial embroidery machine stitching the velora logo",
   eyebrow = "Our Story",
   title = "Passion. Precision. Perfection.",

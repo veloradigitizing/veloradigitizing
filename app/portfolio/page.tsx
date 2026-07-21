@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef, useCallback, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Hero from "../components/Hero";
-import portfolioBg from "../images/velora-embroidery-showcase.png";
+import portfolioBg from "../images/velora-embroidery-showcase.webp";
 import { SectionTag } from "../components/Section";
 import Icon from "../components/Icon";
 import PortfolioCard, {

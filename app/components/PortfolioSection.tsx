@@ -21,18 +21,18 @@ const PORTFOLIO_CATEGORIES = [
 ];
 
 const PORTFOLIO_ITEMS = [
-  { id: "patches", category: "patches", title: "Embroidered Patches", image: "/images/patches/HikeMorePatch.jpeg", count: 10, slug: "/portfolio?category=patches" },
-  { id: "custom-patches", category: "custom-patches", title: "Custom Patches", image: "/images/custom-patches/DadByDay.jpeg", count: 11, slug: "/portfolio?category=custom-patches" },
-  { id: "cap-logo", category: "cap-logo", title: "Cap / Hat Logos", image: "/images/cap-logo/cap-design-01.jpeg", count: 5, slug: "/portfolio?category=cap-logo" },
-  { id: "chenille", category: "chenille", title: "Chenille Patches", image: "/images/chenille/chenille-02.jpeg", count: 6, slug: "/portfolio?category=chenille" },
-  { id: "jacket-back", category: "jacket-back", title: "Jacket Back Design", image: "/images/jacket-back-design/jacket-back-01.jpeg", count: 2, slug: "/portfolio?category=jacket-back" },
-  { id: "left-chest-logo", category: "left-chest-logo", title: "Left Chest Logos", image: "/images/left-chest-logo/ChristLogo.jpeg", count: 3, slug: "/portfolio?category=left-chest-logo" },
-  { id: "3d-puff", category: "3d-puff", title: "3D Puff Embroidery", image: "/images/3d-puff/3d-puff-sample-01.jpeg", count: 1, slug: "/portfolio?category=3d-puff" },
-  { id: "towel-design", category: "towel-design", title: "Towel Embroidery", image: "/images/towel-design/towel-design-01.jpeg", count: 4, slug: "/portfolio?category=towel-design" },
-  { id: "applique-design", category: "applique-design", title: "Applique Design", image: "/images/applique-design/ADesign.jpeg", count: 2, slug: "/portfolio?category=applique-design" },
-  { id: "vector-art", category: "vector-art", title: "Vector Artwork", image: "/images/vector-art/GokuVector.jpeg", count: 5, slug: "/portfolio?category=vector-art" },
-  { id: "shoulder-design", category: "shoulder-design", title: "Shoulder Design", image: "/images/shoulder-design/pilipinas-logo-01.jpeg", count: 2, slug: "/portfolio?category=shoulder-design" },
-  { id: "bundles", category: "bundles", title: "Bundle Packages", image: "/images/bundles/bundle1.jpeg", count: 6, slug: "/portfolio?category=bundles" },
+  { id: "patches", category: "patches", title: "Embroidered Patches", image: "/images/patches/HikeMorePatch.webp", count: 10, slug: "/portfolio?category=patches" },
+  { id: "custom-patches", category: "custom-patches", title: "Custom Patches", image: "/images/custom-patches/DadByDay.webp", count: 11, slug: "/portfolio?category=custom-patches" },
+  { id: "cap-logo", category: "cap-logo", title: "Cap / Hat Logos", image: "/images/cap-logo/cap-design-01.webp", count: 5, slug: "/portfolio?category=cap-logo" },
+  { id: "chenille", category: "chenille", title: "Chenille Patches", image: "/images/chenille/chenille-02.webp", count: 6, slug: "/portfolio?category=chenille" },
+  { id: "jacket-back", category: "jacket-back", title: "Jacket Back Design", image: "/images/jacket-back-design/jacket-back-01.webp", count: 2, slug: "/portfolio?category=jacket-back" },
+  { id: "left-chest-logo", category: "left-chest-logo", title: "Left Chest Logos", image: "/images/left-chest-logo/ChristLogo.webp", count: 3, slug: "/portfolio?category=left-chest-logo" },
+  { id: "3d-puff", category: "3d-puff", title: "3D Puff Embroidery", image: "/images/3d-puff/3d-puff-sample-01.webp", count: 1, slug: "/portfolio?category=3d-puff" },
+  { id: "towel-design", category: "towel-design", title: "Towel Embroidery", image: "/images/towel-design/towel-design-01.webp", count: 4, slug: "/portfolio?category=towel-design" },
+  { id: "applique-design", category: "applique-design", title: "Applique Design", image: "/images/applique-design/ADesign.webp", count: 2, slug: "/portfolio?category=applique-design" },
+  { id: "vector-art", category: "vector-art", title: "Vector Artwork", image: "/images/vector-art/GokuVector.webp", count: 5, slug: "/portfolio?category=vector-art" },
+  { id: "shoulder-design", category: "shoulder-design", title: "Shoulder Design", image: "/images/shoulder-design/pilipinas-logo-01.webp", count: 2, slug: "/portfolio?category=shoulder-design" },
+  { id: "bundles", category: "bundles", title: "Bundle Packages", image: "/images/bundles/bundle1.webp", count: 6, slug: "/portfolio?category=bundles" },
 ];
 
 export default function PortfolioSection() {

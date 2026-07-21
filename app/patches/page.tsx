@@ -1,7 +1,7 @@
 "use client";
 
 import Hero from "../components/Hero";
-import patchesBg from "../images/velora-embroidery-showcase-2.png";
+import patchesBg from "../images/velora-embroidery-showcase-2.webp";
 import WhyChooseUs from "../components/WhyChooseUs";
 import CTABanner from "../components/CTABanner";
 import ServiceTypeGrid from "../components/ServiceTypeGrid";

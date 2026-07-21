@@ -7,16 +7,16 @@ import { SectionTag } from "./Section";
 import { Reveal } from "./Reveal";
 
 const FEATURED_CATEGORIES = [
-  { id: 1, name: "3D PUFF", subtitle: "3D Puff Digitizing", image: "/images/3d-puff/3d-puff-sample-01.jpeg", href: "/store?category=3d-puff" },
-  { id: 2, name: "APPLIQUE", subtitle: "Applique Design", image: "/images/applique-design/ADesign.jpeg", href: "/store?category=applique-design" },
-  { id: 3, name: "CAP LOGO", subtitle: "Cap Digitizing", image: "/images/cap-logo/cap-logo-02.jpeg", href: "/store?category=cap-logo" },
-  { id: 4, name: "CHENILLE", subtitle: "Chenille Patch", image: "/images/chenille/chenille-01.jpeg", href: "/store?category=chenille" },
-  { id: 5, name: "JACKET BACK", subtitle: "Jacket Back Design", image: "/images/jacket-back-design/jacket-back-01.jpeg", href: "/store?category=jacket-back-design" },
-  { id: 6, name: "LEFT CHEST", subtitle: "Left Chest Logo", image: "/images/left-chest-logo/left-chest-shirt-01.jpeg", href: "/store?category=left-chest-logo" },
-  { id: 7, name: "TOWEL", subtitle: "Towel Embroidery", image: "/images/towel-design/towel-design-01.jpeg", href: "/store?category=towel-design" },
-  { id: 8, name: "SHOULDER", subtitle: "Shoulder Design", image: "/images/shoulder-design/pilipinas-logo-01.jpeg", href: "/store?category=shoulder-design" },
-  { id: 9, name: "PATCHES", subtitle: "Custom Patches", image: "/images/custom-patches/DadByDay.jpeg", href: "/store?category=custom-patches" },
-  { id: 10, name: "VECTOR ART", subtitle: "Vector Artwork", image: "/images/vector-art/GokuVector.jpeg", href: "/store?category=vector-art" },
+  { id: 1, name: "3D PUFF", subtitle: "3D Puff Digitizing", image: "/images/3d-puff/3d-puff-sample-01.webp", href: "/store?category=3d-puff" },
+  { id: 2, name: "APPLIQUE", subtitle: "Applique Design", image: "/images/applique-design/ADesign.webp", href: "/store?category=applique-design" },
+  { id: 3, name: "CAP LOGO", subtitle: "Cap Digitizing", image: "/images/cap-logo/cap-logo-02.webp", href: "/store?category=cap-logo" },
+  { id: 4, name: "CHENILLE", subtitle: "Chenille Patch", image: "/images/chenille/chenille-01.webp", href: "/store?category=chenille" },
+  { id: 5, name: "JACKET BACK", subtitle: "Jacket Back Design", image: "/images/jacket-back-design/jacket-back-01.webp", href: "/store?category=jacket-back-design" },
+  { id: 6, name: "LEFT CHEST", subtitle: "Left Chest Logo", image: "/images/left-chest-logo/left-chest-shirt-01.webp", href: "/store?category=left-chest-logo" },
+  { id: 7, name: "TOWEL", subtitle: "Towel Embroidery", image: "/images/towel-design/towel-design-01.webp", href: "/store?category=towel-design" },
+  { id: 8, name: "SHOULDER", subtitle: "Shoulder Design", image: "/images/shoulder-design/pilipinas-logo-01.webp", href: "/store?category=shoulder-design" },
+  { id: 9, name: "PATCHES", subtitle: "Custom Patches", image: "/images/custom-patches/DadByDay.webp", href: "/store?category=custom-patches" },
+  { id: 10, name: "VECTOR ART", subtitle: "Vector Artwork", image: "/images/vector-art/GokuVector.webp", href: "/store?category=vector-art" },
 ];
 
 export default function FeaturedCategories() {

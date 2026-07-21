@@ -9,10 +9,10 @@ import { stagger } from "./stagger";
 import { useCart } from "../context/CartContext";
 
 const PATCHES_PRODUCTS = [
-  { slug: "hike-more", title: "Hike More Worry Less", price: 2.99, image: "/images/patches/HikeMorePatch.jpeg", tag: "Adventure Patch" },
-  { slug: "wild-adventure", title: "Wild Adventure Patch", price: 2.99, image: "/images/patches/WildPatch.jpeg", tag: "Nature Patch" },
-  { slug: "stay-wild", title: "Stay Wild Patch", price: 2.99, image: "/images/patches/StayWIldPatch.jpeg", tag: "Motivational" },
-  { slug: "dad-gamer", title: "Dad By Day Gamer", price: 2.99, image: "/images/custom-patches/DadByDay.jpeg", tag: "Gaming Patch" },
+  { slug: "hike-more", title: "Hike More Worry Less", price: 2.99, image: "/images/patches/HikeMorePatch.webp", tag: "Adventure Patch" },
+  { slug: "wild-adventure", title: "Wild Adventure Patch", price: 2.99, image: "/images/patches/WildPatch.webp", tag: "Nature Patch" },
+  { slug: "stay-wild", title: "Stay Wild Patch", price: 2.99, image: "/images/patches/StayWIldPatch.webp", tag: "Motivational" },
+  { slug: "dad-gamer", title: "Dad By Day Gamer", price: 2.99, image: "/images/custom-patches/DadByDay.webp", tag: "Gaming Patch" },
 ];
 
 export default function PatchesStoreSection() {

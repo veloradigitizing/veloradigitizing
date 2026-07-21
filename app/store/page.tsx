@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Hero from "../components/Hero";
-import storeBg from "../images/velora-embroidery-collection.png";
+import storeBg from "../images/velora-embroidery-collection.webp";
 import Icon, { IconName } from "../components/Icon";
 import { IconCircle, SectionTag } from "../components/Section";
 import { Reveal } from "../components/Reveal";

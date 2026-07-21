@@ -1,5 +1,5 @@
 import Hero from "./components/Hero";
-import homeBg from "./images/velora-embroidery-machine-lion.png";
+import homeBg from "./images/velora-embroidery-machine-lion.webp";
 import HomeStats from "./components/HomeStats";
 import ServicesGrid from "./components/ServicesGrid";
 import WhyChooseUs from "./components/WhyChooseUs";
