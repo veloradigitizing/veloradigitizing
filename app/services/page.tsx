@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Hero from "../components/Hero";
+import servicesBg from "../images/velora-embroidery-workstation.png";
 import ServicesGrid from "../components/ServicesGrid";
 import WhyChooseUs from "../components/WhyChooseUs";
 import ProcessSteps from "../components/ProcessSteps";
@@ -29,12 +30,20 @@ export default function ServicesPage() {
   return (
     <>
       <Hero
-        eyebrow="Our Services"
+        eyebrow="What We Digitize"
         titleLines={[
           { text: "Premium Embroidery" },
           { text: "Digitizing Services", accent: true },
         ]}
         description="We offer high quality embroidery digitizing services with fast turnaround, perfect stitching and 100% customer satisfaction."
+        bgImage={servicesBg}
+        imageLabel="Professional Velora embroidery digitizing workspace"
+        features={[
+          { icon: "clock", title: "Fast Delivery", sub: "8-24 hours turnaround" },
+          { icon: "layers", title: "All Formats", sub: "DST, PES, JEF & more" },
+          { icon: "tag", title: "Free Quote", sub: "No hidden charges" },
+          { icon: "shield", title: "Satisfaction", sub: "100% money back guarantee" },
+        ]}
       />
 
       <ServicesGrid

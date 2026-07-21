@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef, useCallback, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Hero from "../components/Hero";
+import portfolioBg from "../images/velora-embroidery-showcase.png";
 import { SectionTag } from "../components/Section";
 import Icon from "../components/Icon";
 import PortfolioCard, {
@@ -212,12 +213,20 @@ export default function PortfolioPage() {
   return (
     <>
       <Hero
-        eyebrow="Our Portfolio"
+        eyebrow="Work That Speaks"
         titleLines={[
           { text: "Precision Work," },
           { text: "Perfect Results", accent: true },
         ]}
         description="Explore our latest embroidery digitizing projects. Every design is crafted with precision, quality, and perfection."
+        bgImage={portfolioBg}
+        imageLabel="Showcase of embroidered Velora apparel and accessories"
+        features={[
+          { icon: "trophy", title: "500+ Projects", sub: "Successfully delivered" },
+          { icon: "grid", title: "All Categories", sub: "Caps, jackets, bags & more" },
+          { icon: "scissors", title: "Custom Work", sub: "Tailored to your design" },
+          { icon: "star", title: "Top Rated", sub: "By happy clients" },
+        ]}
       />
 
       <Suspense fallback={<section className="mx-auto max-w-7xl px-5 py-20 lg:px-10"><div className="flex items-center justify-center py-16"><p className="text-sm text-navy-950/50">Loading portfolio...</p></div></section>}>

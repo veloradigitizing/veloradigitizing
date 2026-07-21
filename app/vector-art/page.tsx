@@ -1,6 +1,7 @@
 "use client";
 
 import Hero from "../components/Hero";
+import vectorBg from "../images/design-workspace-car-sketch.png";
 import WhyChooseUs from "../components/WhyChooseUs";
 import CTABanner from "../components/CTABanner";
 import ServiceTypeGrid from "../components/ServiceTypeGrid";
@@ -38,9 +39,17 @@ export default function VectorArtPage() {
   return (
     <>
       <Hero
-        eyebrow="Vector Art Services"
+        eyebrow="Raster to Vector Conversion"
         titleLines={[{ text: "Pixel-Perfect" }, { text: "Vector Conversion", accent: true }]}
         description="Convert any raster image into clean, scalable vector art. Manual tracing by expert artists with unlimited revisions and 24-hour turnaround."
+        bgImage={vectorBg}
+        imageLabel="Design workspace with car sketch — vector art conversion in progress"
+        features={[
+          { icon: "infinity", title: "Infinite Scaling", sub: "No pixelation ever" },
+          { icon: "smile", title: "Manual Tracing", sub: "By expert artists" },
+          { icon: "type", title: "All Formats", sub: "AI, SVG, EPS, PDF" },
+          { icon: "refresh", title: "Unlimited Revisions", sub: "Until you\'re happy" },
+        ]}
       />
 
       <ServiceTypeGrid items={VECTOR_TYPES} eyebrow="Our Services" title="Vector Art Solutions" subtitle="Professional vector conversion services for every application and industry." />

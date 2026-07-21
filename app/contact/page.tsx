@@ -1,4 +1,5 @@
 import Hero from "../components/Hero";
+import contactBg from "../images/velora-contact-workspace.png";
 import ContactInfoPanel from "../components/ContactInfoPanel";
 import ContactForm from "../components/ContactForm";
 import WhatsAppBanner from "../components/WhatsAppBanner";
@@ -32,13 +33,21 @@ export default function ContactPage() {
   return (
     <>
       <Hero
-        eyebrow="Contact Us"
+        eyebrow="Let's Talk"
         titleLines={[
           { text: "We're Here to" },
           { text: "Bring Your Designs", accent: true },
           { text: "to Life" },
         ]}
         description="Have a question or need a quote? Get in touch with us today. We're always ready to help you with premium digitizing services."
+        bgImage={contactBg}
+        imageLabel="Close-up of hands embroidering intricate blue and gold floral patterns"
+        features={[
+          { icon: "headset", title: "24/7 Support", sub: "Round-the-clock assistance" },
+          { icon: "send", title: "1h Response", sub: "Average reply time" },
+          { icon: "tag", title: "Free Quotes", sub: "No obligation" },
+          { icon: "shield", title: "100% Satisfaction", sub: "Money-back guarantee" },
+        ]}
       />
 
       <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10">

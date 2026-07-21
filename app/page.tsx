@@ -1,4 +1,5 @@
 import Hero from "./components/Hero";
+import homeBg from "./images/velora-embroidery-machine-lion.png";
 import HomeStats from "./components/HomeStats";
 import ServicesGrid from "./components/ServicesGrid";
 import WhyChooseUs from "./components/WhyChooseUs";
@@ -31,6 +32,14 @@ export default function Home() {
           { text: "Digitizing Services", accent: true },
         ]}
         description="We convert your artwork into flawless embroidery files with highest stitch quality, fast turnaround and 100% satisfaction."
+        bgImage={homeBg}
+        imageLabel="Velora multi-needle embroidery machine stitching a colorful lion-with-crown design"
+        features={[
+          { icon: "clock", title: "Fast Delivery", sub: "8-24 hours turnaround" },
+          { icon: "award", title: "High Quality", sub: "Premium stitch craftsmanship" },
+          { icon: "headset", title: "24/7 Support", sub: "Round-the-clock assistance" },
+          { icon: "shield", title: "Satisfaction", sub: "100% money back guarantee" },
+        ]}
       />
 
       <HomeStats />

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Hero from "../components/Hero";
+import aboutBg from "../images/velora-embroidery-machine-shirt-cap.png";
 import OurStorySection from "../components/OurStorySection";
 import FeatureCards from "../components/FeatureCards";
 import ExpertiseStrip from "../components/ExpertiseStrip";
@@ -89,12 +90,20 @@ export default function AboutPage() {
   return (
     <>
       <Hero
-        eyebrow="About Us"
+        eyebrow="Our Story"
         titleLines={[
           { text: "Crafting Perfection," },
           { text: "Stitch by Stitch", accent: true },
         ]}
         description="At velora Digitizing, we turn your ideas into flawless embroidery designs. With precision, experience, and passion, we deliver digitizing services that elevate your brand."
+        bgImage={aboutBg}
+        imageLabel="Velora embroidered polo shirt, cap, and multi-needle embroidery machine"
+        features={[
+          { icon: "award", title: "10+ Years", sub: "Of digitizing expertise" },
+          { icon: "smile", title: "Master Digitizers", sub: "Hand-crafted perfection" },
+          { icon: "heart", title: "Trusted by 500+", sub: "Brands worldwide" },
+          { icon: "shield", title: "100% Satisfaction", sub: "Money-back guarantee" },
+        ]}
       />
 
       <OurStorySection />

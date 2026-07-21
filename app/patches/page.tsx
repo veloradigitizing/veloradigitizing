@@ -1,6 +1,7 @@
 "use client";
 
 import Hero from "../components/Hero";
+import patchesBg from "../images/velora-embroidery-showcase-2.png";
 import WhyChooseUs from "../components/WhyChooseUs";
 import CTABanner from "../components/CTABanner";
 import ServiceTypeGrid from "../components/ServiceTypeGrid";
@@ -38,9 +39,17 @@ export default function PatchesPage() {
   return (
     <>
       <Hero
-        eyebrow="Custom Patches"
+        eyebrow="Custom Patch Digitizing"
         titleLines={[{ text: "Patches That" }, { text: "Stand Out", accent: true }]}
         description="From merrow borders to laser-cut, woven, chenille and PVC — we digitize patches in any shape, size, or backing. Wash-tested up to 50 cycles, shipped worldwide."
+        bgImage={patchesBg}
+        imageLabel="Curated display of Velora embroidered patches, cap, and apparel"
+        features={[
+          { icon: "scissors", title: "Any Shape & Size", sub: "Fully custom die-cut" },
+          { icon: "layers", title: "All Patch Types", sub: "Merrow, chenille, PVC & more" },
+          { icon: "clock", title: "Fast Turnaround", sub: "8-24 hours" },
+          { icon: "shield", title: "100% Satisfaction", sub: "Money-back guarantee" },
+        ]}
       />
 
       <ServiceTypeGrid items={PATCH_TYPES} eyebrow="Patch Types" title="Every Patch Style Imaginable" subtitle="Choose the construction that fits your design, garment, and budget." />

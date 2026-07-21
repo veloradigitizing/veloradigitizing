@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Hero from "../components/Hero";
+import storeBg from "../images/velora-embroidery-collection.png";
 import Icon, { IconName } from "../components/Icon";
 import { IconCircle, SectionTag } from "../components/Section";
 import { Reveal } from "../components/Reveal";
@@ -84,13 +85,20 @@ export default function StorePage() {
   return (
     <>
       <Hero
-        eyebrow="Patch Collection"
+        eyebrow="Shop Ready-Made Patches"
         titleLines={[
           { text: "Premium Embroidery" },
           { text: "Patch Designs", accent: true },
         ]}
         description="Explore our premium embroidery patch designs. Perfect for jackets, caps, bags, and more. Instant download in all major formats."
-        imageLabel="High Quality Embroidery Patches"
+        bgImage={storeBg}
+        imageLabel="Collection of embroidered Velora products — tote bags, keychains, and thread spools"
+        features={[
+          { icon: "download", title: "Instant Download", sub: "Get files immediately" },
+          { icon: "layers", title: "All Formats", sub: "Multiple stitch formats" },
+          { icon: "refresh", title: "Free Updates", sub: "Re-download anytime" },
+          { icon: "cart", title: "Secure Checkout", sub: "Encrypted payment" },
+        ]}
       />
 
       {/* Mobile Filter Toggle */}
