@@ -189,8 +189,8 @@ export default function Hero({
           sizes="100vw"
           className="object-cover object-center"
         />
-        {/* Soft, low opacity overlay - Image vibrant and clear */}
-        <div className="absolute inset-0 bg-gradient-to-r from-white/60 via-white/30 to-transparent" />
+        {/* Stronger overlay on small/tablet screens for text contrast, soft gradient on laptop/desktop */}
+        <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/85 to-white/75 lg:from-white/60 lg:via-white/30 lg:to-transparent" />
       </div>
 
       {/* Decorative gradient blobs */}
