@@ -90,18 +90,6 @@ export default function PatchCardGrid({
               <span className="absolute left-2 top-2 z-10 rounded-lg bg-gradient-to-r from-rose-500 to-pink-600 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-white shadow-lg">
                 25% OFF
               </span>
-
-              {/* Wishlist Button */}
-              <button
-                aria-label="Add to wishlist"
-                onClick={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                }}
-                className="absolute right-2 top-2 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-white/90 text-navy-950/50 shadow-md backdrop-blur transition-colors hover:bg-white hover:text-rose-500"
-              >
-                <Icon name="heart" className="h-4 w-4" />
-              </button>
             </div>
 
             {/* Content */}

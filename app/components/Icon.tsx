@@ -46,6 +46,8 @@ import {
   Compass,
   Gamepad2,
   Zap,
+  PenTool,
+  Square,
   type LucideIcon,
 } from "lucide-react";
 
@@ -99,6 +101,8 @@ const ICONS = {
   compass: Compass,
   "gamepad-2": Gamepad2,
   zap: Zap,
+  "pen-tool": PenTool,
+  square: Square,
 } satisfies Record<string, LucideIcon>;
 
 export type IconName = keyof typeof ICONS;

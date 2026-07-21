@@ -108,7 +108,6 @@ function CartDrawer() {
               </div>
               <div className="mt-4 flex flex-col gap-2">
                 <Link href="/store" onClick={closeCart} className="vr-btn vr-btn-primary flex items-center justify-center gap-2 rounded-md bg-brand-600 px-5 py-2.5 text-xs font-bold uppercase tracking-wide text-white hover:bg-brand-700">Checkout</Link>
-                <Link href="/store" onClick={closeCart} className="vr-btn flex items-center justify-center gap-2 rounded-md border border-navy-950/15 px-5 py-2.5 text-xs font-bold uppercase tracking-wide text-navy-950/70 hover:border-brand-600 hover:text-brand-600">View Cart</Link>
               </div>
             </div>
           </>

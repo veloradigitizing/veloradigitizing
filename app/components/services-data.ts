@@ -13,7 +13,7 @@ export type Service = {
 export const SERVICES: Service[] = [
   {
     slug: "patch-digitizing",
-    icon: "badge-check",
+    icon: "badge",
     title: "Patch Digitizing",
     description: "Custom embroidered patches for jackets, caps, bags and more.",
     count: 21,
@@ -43,7 +43,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "jacket-back-digitizing",
-    icon: "layers",
+    icon: "square",
     title: "Jacket Back Design",
     description:
       "Large format full back embroidery for denim and leather jackets.",
@@ -58,7 +58,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "3d-puff-digitizing",
-    icon: "rocket",
+    icon: "layers",
     title: "3D Puff Embroidery",
     description:
       "Raised dimensional puff embroidery for bold eye-catching designs.",
@@ -80,7 +80,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "vector-art",
-    icon: "share",
+    icon: "pen-tool",
     title: "Vector Art",
     description:
       "Convert any image to clean vector format for perfect digitizing.",

@@ -10,11 +10,11 @@ import { FAQ } from "../components/FAQ";
 
 const VECTOR_TYPES: { icon: IconName; title: string; desc: string }[] = [
   { icon: "share", title: "Raster to Vector", desc: "Convert low-resolution JPEG, PNG, or BMP images into crisp, scalable vector files. Perfect for logos and artwork that need to be resized without losing quality." },
-  { icon: "award", title: "Logo Vectorization", desc: "Recreate your existing logo as a clean vector file with precise paths, accurate colors, and proper layering. Ideal for print, embroidery, and large-format applications." },
+  { icon: "badge", title: "Logo Vectorization", desc: "Recreate your existing logo as a clean vector file with precise paths, accurate colors, and proper layering. Ideal for print, embroidery, and large-format applications." },
   { icon: "scissors", title: "Applique Vector", desc: "Create vector files optimized for applique cutting machines. Includes proper tack-down stitches, placement lines, and material boundaries for clean production." },
   { icon: "sliders", title: "Color Separation", desc: "Separate complex multi-color designs into individual vector layers for screen printing, vinyl cutting, or multi-needle embroidery production workflows." },
   { icon: "refresh", title: "Vector Cleanup", desc: "Fix poor-quality vectors with proper node editing, curve smoothing, and path optimization. Transform messy auto-traced files into production-ready artwork." },
-  { icon: "rocket", title: "Print-Ready Files", desc: "Prepare vector artwork for commercial printing with proper bleed, color profiles, and formatting. Compatible with offset, digital, and large-format print methods." },
+  { icon: "check", title: "Print-Ready Files", desc: "Prepare vector artwork for commercial printing with proper bleed, color profiles, and formatting. Compatible with offset, digital, and large-format print methods." },
 ];
 
 const VECTOR_FAQS: { question: string; answer: string }[] = [

@@ -20,7 +20,7 @@ import PatchCardGrid from "../components/PatchCardGrid";
 
 const WHY_SHOP: { icon: IconName; title: string; description: string }[] = [
   {
-    icon: "headset",
+    icon: "diamond",
     title: "Premium Quality Patches",
     description: "Perfect stitches and clean edges every time",
   },
@@ -30,7 +30,7 @@ const WHY_SHOP: { icon: IconName; title: string; description: string }[] = [
     description: "Get your patch files immediately after purchase",
   },
   {
-    icon: "paperclip",
+    icon: "layers",
     title: "All Formats Included",
     description: "DST, PES, EXP, JEF, VP3 and more formats",
   },
@@ -45,7 +45,7 @@ const WHY_SHOP: { icon: IconName; title: string; description: string }[] = [
     description: "Safe and secure checkout process",
   },
   {
-    icon: "smile",
+    icon: "headset",
     title: "24/7 Support",
     description: "We are here to help anytime you need",
   },

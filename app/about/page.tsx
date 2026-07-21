@@ -53,10 +53,10 @@ const EXPERTISE: { icon: IconName; label: string }[] = [
   { icon: "tag", label: "Logo Digitizing" },
   { icon: "layers", label: "3D Puff Digitizing" },
   { icon: "scissors", label: "Applique Digitizing" },
-  { icon: "cap", label: "Patch Digitizing" },
-  { icon: "shirt", label: "Cap / Hat Digitizing" },
-  { icon: "grid", label: "Jacket Back Digitizing" },
-  { icon: "badge-check", label: "Chenille Digitizing" },
+  { icon: "badge", label: "Patch Digitizing" },
+  { icon: "cap", label: "Cap / Hat Digitizing" },
+  { icon: "shirt", label: "Jacket Back Digitizing" },
+  { icon: "grid", label: "Chenille Digitizing" },
 ];
 
 const TEAM = [

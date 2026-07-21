@@ -10,7 +10,7 @@ import { FAQ } from "../components/FAQ";
 
 const PATCH_TYPES: { icon: IconName; title: string; desc: string }[] = [
   { icon: "badge-check", title: "Merrow Border Patches", desc: "Classic overlocked edge with a raised thread border. The traditional patch look that is durable, clean, and timeless. Best for simple shapes like circles, squares, and rectangles." },
-  { icon: "layers", title: "Laser Cut Patches", desc: "Precision laser-cut edges for intricate shapes that merrow stitching cannot achieve. Perfect for detailed logos, custom outlines, and die-cut designs with tight corners." },
+  { icon: "scissors", title: "Laser Cut Patches", desc: "Precision laser-cut edges for intricate shapes that merrow stitching cannot achieve. Perfect for detailed logos, custom outlines, and die-cut designs with tight corners." },
   { icon: "grid", title: "Woven Patches", desc: "Fine thread woven patches with photographic detail. Supports smaller text and tighter details than embroidered patches. Ideal for badges and uniform insignia." },
   { icon: "star", title: "Chenille Patches", desc: "Fuzzy, raised chenille yarn for varsity letters and mascot patches. The classic letterman jacket look that is bold, textured, and nostalgic." },
   { icon: "shield", title: "PVC Patches", desc: "Rubber-like PVC patches for tactical gear, outdoor equipment and heavy-use apparel. Waterproof, fade-proof, and virtually indestructible in any environment." },
