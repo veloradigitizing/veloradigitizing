@@ -13,7 +13,7 @@ export type Service = {
 export const SERVICES: Service[] = [
   {
     slug: "patch-digitizing",
-    icon: "badge",
+    icon: "sticker",
     title: "Patch Digitizing",
     description: "Custom embroidered patches for jackets, caps, bags and more.",
     count: 21,
@@ -36,14 +36,14 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "chenille-digitizing",
-    icon: "grid",
+    icon: "feather",
     title: "Chenille Patches",
     description: "Premium chenille lettering and patches for varsity jackets.",
     count: 6,
   },
   {
     slug: "jacket-back-digitizing",
-    icon: "square",
+    icon: "panel-top",
     title: "Jacket Back Design",
     description:
       "Large format full back embroidery for denim and leather jackets.",
@@ -51,7 +51,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "left-chest-logo",
-    icon: "shirt",
+    icon: "shirt-logo",
     title: "Left Chest Logo",
     description: "Corporate and sports logos for polo shirts and workwear.",
     count: 3,
@@ -66,7 +66,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "towel-embroidery",
-    icon: "heart",
+    icon: "towel-rack",
     title: "Towel Embroidery",
     description: "Personalized monogram and custom embroidery on towels.",
     count: 4,
@@ -88,7 +88,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "shoulder-embroidery",
-    icon: "award",
+    icon: "sleeve-patch",
     title: "Shoulder Design",
     description:
       "Flag designs and shoulder embroidery for uniforms and apparel.",

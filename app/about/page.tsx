@@ -56,7 +56,7 @@ const EXPERTISE: { icon: IconName; label: string }[] = [
   { icon: "badge", label: "Patch Digitizing" },
   { icon: "cap", label: "Cap / Hat Digitizing" },
   { icon: "shirt", label: "Jacket Back Digitizing" },
-  { icon: "grid", label: "Chenille Digitizing" },
+  { icon: "feather", label: "Chenille Digitizing" },
 ];
 
 const TEAM = [
