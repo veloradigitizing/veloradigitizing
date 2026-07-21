@@ -1,16 +1,14 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import Icon, { IconName } from "./Icon";
+import Icon from "./Icon";
 import { Reveal } from "./Reveal";
+import { SERVICES } from "./services-data";
 
 const SERVICE_OPTIONS = [
   "Select a service",
-  "Embroidery Digitizing",
-  "Vector Conversion",
-  "Rush Orders",
-  "3D Puff Digitizing",
-  "Patch Digitizing",
+  ...SERVICES.map((s) => s.title),
+  "Other",
 ];
 
 const WEB3FORMS_ACCESS_KEY = "ac346419-5c85-4f5d-a7bc-080c76cef9e7";
@@ -116,36 +114,6 @@ export default function ContactForm({
             className="rounded-md border border-navy-950/15 px-4 py-2.5 text-sm outline-none transition-colors focus:border-brand-600 focus:ring-2 focus:ring-brand-600/15"
           />
         </label>
-
-        <div className="sm:col-span-2">
-          <p className="mb-2 text-sm font-medium text-navy-950">
-            Upload Design (Optional)
-          </p>
-          <label
-            htmlFor={`${formId}-attachment`}
-            className="vr-lift group flex cursor-pointer flex-col items-center gap-2 rounded-lg border border-dashed border-navy-950/20 bg-navy-950/[0.02] px-6 py-8 text-center transition-colors group-hover:border-brand-600/40 group-hover:bg-brand-50/30"
-          >
-            <input
-              type="file"
-              id={`${formId}-attachment`}
-              name="attachment"
-              accept=".jpg,.jpeg,.png,.pdf,.ai,.eps,.cdr"
-              className="hidden"
-            />
-            <Icon
-              name="paperclip"
-              className="h-6 w-6 text-navy-950/30 transition-colors group-hover:text-brand-600"
-            />
-            <p className="text-sm text-navy-950/50">
-              Drag &amp; drop your file here or{" "}
-              <span className="font-semibold text-brand-600">browse</span>
-            </p>
-            <p className="text-xs text-navy-950/35">
-              Supported formats: JPG, PNG, PDF, AI, EPS, CDR (Max file size:
-              5MB)
-            </p>
-          </label>
-        </div>
 
         <button
           type="submit"
