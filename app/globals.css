@@ -225,6 +225,12 @@ body {
   opacity: 0;
   animation: velora-scale-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
+.vr-modal-overlay {
+  animation: velora-fade-in 0.2s ease forwards;
+}
+.vr-modal-panel {
+  animation: velora-scale-in 0.25s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
 .vr-float {
   animation: velora-float 6s ease-in-out infinite;
 }

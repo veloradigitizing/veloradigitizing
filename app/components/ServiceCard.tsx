@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { IconCircle } from "./Section";
 import Icon from "./Icon";
 import { SERVICES } from "./services-data";
@@ -8,6 +9,7 @@ import { SERVICES } from "./services-data";
 export type Service = {
   slug: string;
   icon: string;
+  iconImage?: string;
   title: string;
   description: string;
   image?: string;
@@ -68,10 +70,22 @@ export default function ServiceCard({ service }: { service: Service }) {
       >
         {/* Icon - Fixed Size */}
         <div
-          className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-500 to-brand-600 text-white shadow-lg transition-transform duration-300 group-hover:scale-110 group-hover:shadow-brand-500/30"
+          className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl shadow-lg transition-transform duration-300 group-hover:scale-110 group-hover:shadow-brand-500/30"
           style={{ transform: "translateZ(20px)" }}
         >
-          <IconCircle icon={service.icon as any} size="sm" dark />
+          {service.iconImage ? (
+            <Image
+              src={service.iconImage}
+              alt={service.title}
+              width={64}
+              height={64}
+              className="h-16 w-16 object-contain"
+            />
+          ) : (
+            <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-500 to-brand-600 text-white">
+              <IconCircle icon={service.icon as any} size="sm" dark />
+            </div>
+          )}
         </div>
 
         {/* Title - Fixed Height */}

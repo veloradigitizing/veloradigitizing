@@ -410,9 +410,30 @@ export const PORTFOLIO_CATEGORIES = [
   { label: "Bundles", value: "bundles" },
 ];
 
-export default function PortfolioCard({ item }: { item: PortfolioItem }) {
+export default function PortfolioCard({
+  item,
+  onClick,
+}: {
+  item: PortfolioItem;
+  onClick?: () => void;
+}) {
   return (
-    <div className="vr-lift group overflow-hidden rounded-xl border border-navy-950/10 bg-white">
+    <div
+      className="vr-lift group cursor-pointer overflow-hidden rounded-xl border border-navy-950/10 bg-white"
+      onClick={onClick}
+      role={onClick ? "button" : undefined}
+      tabIndex={onClick ? 0 : undefined}
+      onKeyDown={
+        onClick
+          ? (e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                onClick();
+              }
+            }
+          : undefined
+      }
+    >
       <div className="vr-zoom relative aspect-[4/3] w-full overflow-hidden bg-navy-950/[0.03]">
         <Image
           src={item.image}
@@ -424,6 +445,28 @@ export default function PortfolioCard({ item }: { item: PortfolioItem }) {
         <span className="absolute left-2 top-2 rounded bg-brand-600/95 px-2 py-0.5 text-[9px] font-bold uppercase tracking-wide text-white backdrop-blur-sm">
           {item.tag}
         </span>
+        <div className="absolute inset-0 flex items-center justify-center bg-navy-950/0 transition-colors duration-300 group-hover:bg-navy-950/40">
+          <span className="flex h-11 w-11 scale-75 items-center justify-center rounded-full bg-white text-navy-950 opacity-0 shadow-lg transition-all duration-300 group-hover:scale-100 group-hover:opacity-100">
+            <svg
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z"
+              />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M11 8v6M8 11h6"
+              />
+            </svg>
+          </span>
+        </div>
       </div>
       <div className="px-4 py-3">
         <p className="text-sm font-semibold text-navy-950">{item.title}</p>

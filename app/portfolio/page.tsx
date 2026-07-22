@@ -8,7 +8,9 @@ import { SectionTag } from "../components/Section";
 import Icon from "../components/Icon";
 import PortfolioCard, {
   PORTFOLIO_CATEGORIES,
-  PORTFOLIO_ITEMS, } from "../components/PortfolioCard";
+  PORTFOLIO_ITEMS,
+  type PortfolioItem, } from "../components/PortfolioCard";
+import PortfolioModal from "../components/PortfolioModal";
 import { FAQ, PORTFOLIO_FAQS } from "../components/FAQ";
 import HomeStats from "../components/HomeStats";
 import TestimonialCTASection from "../components/TestimonialCTASection";
@@ -32,6 +34,7 @@ function PortfolioContent() {
 
   const [active, setActive] = useState(urlCategory);
   const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
+  const [previewItem, setPreviewItem] = useState<PortfolioItem | null>(null);
   const portfolioSectionRef = useRef<HTMLDivElement>(null);
 
   const isTabClick = useRef(false);
@@ -138,10 +141,18 @@ function PortfolioContent() {
               direction="up"
               delay={stagger(i % 9, 70)}
             >
-              <PortfolioCard item={item} />
+              <PortfolioCard
+                item={item}
+                onClick={() => setPreviewItem(item)}
+              />
             </Reveal>
           ))}
         </div>
+
+        <PortfolioModal
+          item={previewItem}
+          onClose={() => setPreviewItem(null)}
+        />
 
         {filteredItems.length === 0 && (
           <div className="mt-12 flex flex-col items-center justify-center py-16 text-center">
