@@ -71,7 +71,7 @@ const SERVICE_LINKS = [
   { label: "Towel Design", href: "/portfolio?category=towel" },
   { label: "Applique", href: "/portfolio?category=applique" },
   { label: "Vector Art", href: "/portfolio?category=vector-art" },
-  { label: "Shoulder", href: "/portfolio?category=shoulder" },
+  { label: "Sleeve", href: "/portfolio?category=sleeve" },
   { label: "Bundles", href: "/portfolio?category=bundles" },
 ];
 

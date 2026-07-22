@@ -384,7 +384,7 @@ export const HOME_FAQS: FAQItem[] = [
   {
     question: "What types of designs can you digitize?",
     answer:
-      "We digitize virtually any design — corporate logos, monograms, text, 3D puff embroidery, appliqué, chenille patches, cap front and side logos, full jacket-back designs, left-chest logos, towel embroidery, shoulder designs, custom patches, and vector artwork conversions. If you can draw it or photograph it, we can stitch it.",
+      "We digitize virtually any design — corporate logos, monograms, text, 3D puff embroidery, appliqué, chenille patches, cap front and side logos, full jacket-back designs, left-chest logos, towel embroidery, sleeve designs, custom patches, and vector artwork conversions. If you can draw it or photograph it, we can stitch it.",
     category: "General",
   },
   {

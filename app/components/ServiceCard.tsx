@@ -27,7 +27,7 @@ const SERVICE_TO_CATEGORY: Record<string, string> = {
   "towel-embroidery": "towel",
   "applique-digitizing": "applique",
   "vector-art": "vector-art",
-  "shoulder-embroidery": "shoulder",
+  "sleeve-embroidery": "sleeve",
   "bundle-packages": "bundles",
 };
 

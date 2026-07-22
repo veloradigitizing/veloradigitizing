@@ -7,16 +7,76 @@ import { SectionTag } from "./Section";
 import { Reveal } from "./Reveal";
 
 const FEATURED_CATEGORIES = [
-  { id: 1, name: "3D PUFF", subtitle: "3D Puff Digitizing", image: "/images/3d-puff/3d-puff-sample-01.webp", href: "/store?category=3d-puff" },
-  { id: 2, name: "APPLIQUE", subtitle: "Applique Design", image: "/images/applique-design/ADesign.webp", href: "/store?category=applique-design" },
-  { id: 3, name: "CAP LOGO", subtitle: "Cap Digitizing", image: "/images/cap-logo/cap-logo-02.webp", href: "/store?category=cap-logo" },
-  { id: 4, name: "CHENILLE", subtitle: "Chenille Patch", image: "/images/chenille/chenille-01.webp", href: "/store?category=chenille" },
-  { id: 5, name: "JACKET BACK", subtitle: "Jacket Back Design", image: "/images/jacket-back-design/jacket-back-01.webp", href: "/store?category=jacket-back-design" },
-  { id: 6, name: "LEFT CHEST", subtitle: "Left Chest Logo", image: "/images/left-chest-logo/left-chest-shirt-01.webp", href: "/store?category=left-chest-logo" },
-  { id: 7, name: "TOWEL", subtitle: "Towel Embroidery", image: "/images/towel-design/towel-design-01.webp", href: "/store?category=towel-design" },
-  { id: 8, name: "SHOULDER", subtitle: "Shoulder Design", image: "/images/shoulder-design/pilipinas-logo-01.webp", href: "/store?category=shoulder-design" },
-  { id: 9, name: "PATCHES", subtitle: "Custom Patches", image: "/images/custom-patches/DadByDay.webp", href: "/store?category=custom-patches" },
-  { id: 10, name: "VECTOR ART", subtitle: "Vector Artwork", image: "/images/vector-art/GokuVector.webp", href: "/store?category=vector-art" },
+  {
+    id: 1,
+    name: "3D PUFF",
+    subtitle: "3D Puff Digitizing",
+    image: "/images/3d-puff/3d-puff-sample-01.webp",
+    href: "/store?category=3d-puff",
+  },
+  {
+    id: 2,
+    name: "APPLIQUE",
+    subtitle: "Applique Design",
+    image: "/images/applique-design/ADesign.webp",
+    href: "/store?category=applique-design",
+  },
+  {
+    id: 3,
+    name: "CAP LOGO",
+    subtitle: "Cap Digitizing",
+    image: "/images/cap-logo/cap-logo-02.webp",
+    href: "/store?category=cap-logo",
+  },
+  {
+    id: 4,
+    name: "CHENILLE",
+    subtitle: "Chenille Patch",
+    image: "/images/chenille/chenille-01.webp",
+    href: "/store?category=chenille",
+  },
+  {
+    id: 5,
+    name: "JACKET BACK",
+    subtitle: "Jacket Back Design",
+    image: "/images/jacket-back-design/jacket-back-01.webp",
+    href: "/store?category=jacket-back-design",
+  },
+  {
+    id: 6,
+    name: "LEFT CHEST",
+    subtitle: "Left Chest Logo",
+    image: "/images/left-chest-logo/left-chest-shirt-01.webp",
+    href: "/store?category=left-chest-logo",
+  },
+  {
+    id: 7,
+    name: "TOWEL",
+    subtitle: "Towel Embroidery",
+    image: "/images/towel-design/towel-design-01.webp",
+    href: "/store?category=towel-design",
+  },
+  {
+    id: 8,
+    name: "Sleeve",
+    subtitle: "Sleeve Design",
+    image: "/images/shoulder-design/pilipinas-logo-01.webp",
+    href: "/store?category=shoulder-design",
+  },
+  {
+    id: 9,
+    name: "PATCHES",
+    subtitle: "Custom Patches",
+    image: "/images/custom-patches/DadByDay.webp",
+    href: "/store?category=custom-patches",
+  },
+  {
+    id: 10,
+    name: "VECTOR ART",
+    subtitle: "Vector Artwork",
+    image: "/images/vector-art/GokuVector.webp",
+    href: "/store?category=vector-art",
+  },
 ];
 
 export default function FeaturedCategories() {
@@ -86,7 +146,9 @@ export default function FeaturedCategories() {
               className="vr-btn vr-btn-primary mt-6 inline-flex items-center gap-2 rounded-md bg-brand-600 px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-brand-700"
             >
               EXPLORE PORTFOLIO
-              <span aria-hidden className="vr-arrow">&rarr;</span>
+              <span aria-hidden className="vr-arrow">
+                &rarr;
+              </span>
             </Link>
           </Reveal>
 
@@ -154,15 +216,22 @@ export default function FeaturedCategories() {
                   onClick={() => {
                     const el = scrollRef.current;
                     if (!el) return;
-                    const card = el.querySelector<HTMLElement>("[data-feature-card]");
-                    const cardWidth = card?.getBoundingClientRect().width || 210;
+                    const card = el.querySelector<HTMLElement>(
+                      "[data-feature-card]",
+                    );
+                    const cardWidth =
+                      card?.getBoundingClientRect().width || 210;
                     const gap = 16;
                     el.scrollTo({
                       left: i * (cardWidth + gap),
                       behavior: "smooth",
                     });
                   }}
-                  className={i === activeIndex ? "h-1.5 rounded-full transition-all duration-300 w-7 bg-brand-600" : "h-1.5 rounded-full transition-all duration-300 w-1.5 bg-navy-950/15"}
+                  className={
+                    i === activeIndex
+                      ? "h-1.5 rounded-full transition-all duration-300 w-7 bg-brand-600"
+                      : "h-1.5 rounded-full transition-all duration-300 w-1.5 bg-navy-950/15"
+                  }
                   aria-label={"Go to slide " + (i + 1)}
                 />
               ))}

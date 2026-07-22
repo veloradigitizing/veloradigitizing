@@ -87,11 +87,11 @@ export const SERVICES: Service[] = [
     count: 5,
   },
   {
-    slug: "shoulder-embroidery",
+    slug: "sleeve-embroidery",
     icon: "sleeve-patch",
-    title: "Shoulder Design",
+    title: "Sleeve Design",
     description:
-      "Flag designs and shoulder embroidery for uniforms and apparel.",
+      "Flag designs and sleeve embroidery for uniforms and apparel.",
     count: 2,
   },
   {
