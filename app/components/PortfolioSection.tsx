@@ -30,7 +30,7 @@ const PORTFOLIO_ITEMS = [
   { id: "3d-puff", category: "3d-puff", title: "3D Puff Embroidery", image: "/images/3d-puff/3d-puff-sample-01.webp", count: 1, slug: "/portfolio?category=3d-puff" },
   { id: "towel-design", category: "towel-design", title: "Towel Embroidery", image: "/images/towel-design/towel-design-01.webp", count: 4, slug: "/portfolio?category=towel-design" },
   { id: "applique-design", category: "applique-design", title: "Applique Design", image: "/images/applique-design/ADesign.webp", count: 2, slug: "/portfolio?category=applique-design" },
-  { id: "vector-art", category: "vector-art", title: "Vector Artwork", image: "/images/vector-art/GokuVector.webp", count: 5, slug: "/portfolio?category=vector-art" },
+  { id: "vector-art", category: "vector-art", title: "Vector Artwork", image: "/images/vector-art/GokuVector.webp", count: 8, slug: "/portfolio?category=vector-art" },
   { id: "shoulder-design", category: "shoulder-design", title: "Shoulder Design", image: "/images/shoulder-design/pilipinas-logo-01.webp", count: 2, slug: "/portfolio?category=shoulder-design" },
   { id: "bundles", category: "bundles", title: "Bundle Packages", image: "/images/bundles/bundle1.webp", count: 6, slug: "/portfolio?category=bundles" },
 ];

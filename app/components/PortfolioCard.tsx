@@ -76,6 +76,9 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   { title: "Paint Vector Art", tag: "Artistic", category: "vector-art", image: "/images/vector-art/PaintVector.webp" },
   { title: "Raven Vector", tag: "Bird Design", category: "vector-art", image: "/images/vector-art/RavenVector.webp" },
   { title: "Volf Vector", tag: "Animal Art", category: "vector-art", image: "/images/vector-art/VolfVector.webp" },
+  { title: "Messi Vector Art", tag: "Sports Illustration", category: "vector-art", image: "/images/vector-art/MessiVector.webp" },
+  { title: "Dragon Ball Vector", tag: "Anime Style", category: "vector-art", image: "/images/vector-art/DragonBallVector.webp" },
+  { title: "Skull Van Vector", tag: "Artistic", category: "vector-art", image: "/images/vector-art/SkullVanVector.webp" },
 
   // === SHOULDER DESIGN (from /images/shoulder-design/) ===
   { title: "Pilipinas Shoulder", tag: "Flag Design", category: "shoulder", image: "/images/shoulder-design/pilipinas-logo-01.webp" },
