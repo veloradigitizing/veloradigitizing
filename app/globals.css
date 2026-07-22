@@ -157,6 +157,28 @@ body {
   }
 }
 
+@keyframes velora-testimonial-in-right {
+  from {
+    opacity: 0;
+    transform: translate3d(24px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes velora-testimonial-in-left {
+  from {
+    opacity: 0;
+    transform: translate3d(-24px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 /* ---------- Scroll-reveal base classes ----------
    Elements start hidden; .is-visible is toggled by IntersectionObserver. */
 .vr-reveal {
@@ -211,6 +233,12 @@ body {
 }
 .vr-pulse-ring {
   animation: velora-pulse-ring 2.4s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
+.vr-testimonial-in-right {
+  animation: velora-testimonial-in-right 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.vr-testimonial-in-left {
+  animation: velora-testimonial-in-left 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 /* ---------- Decorative: animated gradient text + shimmer ---------- */

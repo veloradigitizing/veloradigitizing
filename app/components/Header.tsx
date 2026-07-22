@@ -46,15 +46,17 @@ function CartButton() {
 
 function CartDrawer() {
   const { items, updateQty, removeItem, itemCount, subtotal, isCartOpen, closeCart } = useCart();
-  const [mounted, setMounted] = useState(false);
+  const mountedState = useState(false);
+  const isMounted = mountedState[0];
+  const setIsMounted = mountedState[1];
 
-  useEffect(() => { setMounted(true); }, []);
+  useEffect(() => { setIsMounted(true); }, []);
 
   useEffect(() => {
     if (isCartOpen) { document.body.style.overflow = "hidden"; }
     else { document.body.style.overflow = ""; }
     return () => { document.body.style.overflow = ""; };
-  }, [isCartOpen]);
+  }, [ isCartOpen ] );
 
   useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => { if (e.key === "Escape") closeCart(); };
@@ -62,7 +64,7 @@ function CartDrawer() {
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [closeCart]);
 
-  if (!mounted) return null;
+  if (!isMounted) return null;
 
   return createPortal(
     <div className={`fixed inset-0 z-[70] transition-opacity duration-300 ${isCartOpen ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"}`} aria-hidden={!isCartOpen}>
@@ -119,8 +121,10 @@ function CartDrawer() {
 }
 
 function MobileNavDrawer({ open, onClose, pathname }: { open: boolean; onClose: () => void; pathname: string }) {
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => { setMounted(true); }, []);
+  const mountedState = useState(false);
+  const isMounted = mountedState[0];
+  const setIsMounted = mountedState[1];
+  useEffect(() => { setIsMounted(true); }, []);
 
   useEffect(() => {
     if (open) { document.body.style.overflow = "hidden"; }
@@ -134,7 +138,7 @@ function MobileNavDrawer({ open, onClose, pathname }: { open: boolean; onClose: 
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [onClose]);
 
-  if (!mounted) return null;
+  if (!isMounted) return null;
 
   return createPortal(
     <div className={`fixed inset-0 z-[70] transition-opacity duration-300 lg:hidden ${open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"}`} aria-hidden={!open}>
@@ -183,33 +187,64 @@ function MobileNavDrawer({ open, onClose, pathname }: { open: boolean; onClose: 
 
 export default function Header() {
   const pathname = usePathname();
-  const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-  const [hidden, setHidden] = useState(false);
+  const openState = useState(false);
+  const setOpen = openState[1];
+  const scrolledState = useState(false);
+  const setScrolled = scrolledState[1];
+  const hiddenState = useState(false);
+  const isHidden = hiddenState[0];
+  const setIsHidden = hiddenState[1];
 
   useEffect(() => {
+    const open = openState[0];
     if (!open) return;
     const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") setOpen(false); };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [open]);
+  }, [openState]);
 
+  // Hide on scroll down, show on scroll up — rAF-throttled for smoothness
   useEffect(() => {
     let lastY = window.scrollY;
+    let ticking = false;
+
     const onScroll = () => {
-      const y = window.scrollY;
-      setScrolled(y > 20);
-      if (y > 200 && y > lastY + 8) { setHidden(true); }
-      else if (y < lastY - 8 || y < 100) { setHidden(false); }
-      lastY = y;
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        const y = window.scrollY;
+        setScrolled(y > 20);
+        // Show when near the top
+        if (y < 100) {
+          setIsHidden(false);
+          lastY = y;
+        }
+        // Hide when scrolling DOWN past 200px (with 12px threshold to avoid jitter)
+        else if (y > 200 && y > lastY + 12) {
+          setIsHidden(true);
+          lastY = y;
+        }
+        // Show when scrolling UP past the threshold
+        else if (y < lastY - 12) {
+          setIsHidden(false);
+          lastY = y;
+        }
+        // Otherwise: don't move the reference point, so small per-frame
+        // deltas accumulate across frames until a threshold is crossed.
+        ticking = false;
+      });
     };
+
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
     <>
-      <header className={`sticky top-0 z-50 w-full transition-all duration-500 ${hidden ? "-translate-y-full" : "translate-y-0"} ${scrolled ? "border-b border-navy-950/10 bg-white/80 shadow-sm backdrop-blur-xl supports-[backdrop-filter]:bg-white/70" : "border-b border-transparent bg-white/95 backdrop-blur"}`}>
+      <header
+        className={`sticky top-0 z-50 w-full will-change-transform transition-transform duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] ${isHidden ? "-translate-y-full opacity-0 pointer-events-none" : "translate-y-0 opacity-100"} ${scrolledState[0] ? "border-b border-navy-950/10 bg-white/80 shadow-sm backdrop-blur-xl supports-[backdrop-filter]:bg-white/70" : "border-b border-transparent bg-white/95 backdrop-blur"}`}
+        style={{ transform: isHidden ? "translate3d(0, -100%, 0)" : "translate3d(0, 0, 0)" }}
+      >
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-2 px-3 sm:h-20 sm:gap-4 sm:px-6 lg:px-8 md:h-24">
           <Link href="/" aria-label="Velora Digitizing home" className="group flex shrink-0 items-center transition-transform hover:scale-105">
             <Logo />
@@ -272,17 +307,17 @@ export default function Header() {
               </span>
               <span aria-hidden className="vr-arrow relative h-3.5 w-3.5 shrink-0 transition-transform group-hover:translate-x-0.5 sm:h-4 sm:w-4">&rarr;</span>
             </Link>
-            <button type="button" aria-label="Toggle menu" aria-expanded={open} onClick={() => setOpen((v) => !v)} className="lg:hidden inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-md border border-navy-950/15 text-navy-950 transition-colors hover:border-brand-600 hover:text-brand-600 sm:h-10 sm:w-10">
-              {open ? <X size={20} /> : <Menu size={20} />}
+            <button type="button" aria-label="Toggle menu" aria-expanded={openState[0]} onClick={() => setOpen(!openState[0])} className="lg:hidden inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-md border border-navy-950/15 text-navy-950 transition-colors hover:border-brand-600 hover:text-brand-600 sm:h-10 sm:w-10">
+              {openState[0] ? <X size={20} /> : <Menu size={20} />}
             </button>
           </div>
         </div>
       </header>
 
       {/* Mobile nav backdrop */}
-      <div aria-hidden onClick={() => setOpen(false)} className={`fixed inset-0 z-40 bg-black/40 backdrop-blur-sm transition-opacity duration-300 lg:hidden ${open ? "opacity-100" : "pointer-events-none opacity-0"}`} />
+      <div aria-hidden onClick={() => setOpen(false)} className={`fixed inset-0 z-40 bg-black/40 backdrop-blur-sm transition-opacity duration-300 lg:hidden ${openState[0] ? "opacity-100" : "pointer-events-none opacity-0"}`} />
 
-      <MobileNavDrawer open={open} onClose={() => setOpen(false)} pathname={pathname} />
+      <MobileNavDrawer open={openState[0]} onClose={() => setOpen(false)} pathname={pathname} />
       <CartDrawer />
     </>
   );

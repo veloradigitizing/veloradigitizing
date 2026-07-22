@@ -6,6 +6,7 @@ import FeatureCards from "../components/FeatureCards";
 import ExpertiseStrip from "../components/ExpertiseStrip";
 import TeamSection from "../components/TeamSection";
 import CTABanner from "../components/CTABanner";
+import TestimonialCTASection from "../components/TestimonialCTASection";
 import HomeStats from "../components/HomeStats";
 import { FAQ, ABOUT_FAQS } from "../components/FAQ";
 import { IconName } from "../components/Icon";
@@ -128,6 +129,38 @@ export default function AboutPage() {
         items={ABOUT_FAQS}
         title="About Velora - Frequently Asked Questions"
         subtitle="Learn more about our company, team, and what makes us different."
+      />
+
+      <TestimonialCTASection
+        eyebrow="Client Story"
+        title="Trusted by Embroiderers Worldwide"
+        testimonials={[
+          {
+            quote:
+              "Excellent quality digitizing and super fast delivery. Highly recommended!",
+            author: "John Smith",
+            authorOrigin: "USA",
+            authorImage: "/images/testimonials/john-smith.png",
+          },
+          {
+            quote:
+              "The team truly understands embroidery. Every file ran clean on the first try, no re-digitizing needed.",
+            author: "Sarah Johnson",
+            authorOrigin: "Australia",
+            authorInitial: "S",
+          },
+          {
+            quote:
+              "Their attention to stitch detail and consistent turnaround has made them our go-to digitizing partner.",
+            author: "David Lee",
+            authorOrigin: "Singapore",
+            authorInitial: "D",
+          },
+        ]}
+        ctaTitle="Ready to Bring Your Designs to Life?"
+        ctaSubtitle="Join hundreds of happy clients who trust Velora for premium digitizing."
+        ctaLabel="GET FREE QUOTE"
+        ctaHref="/contact"
       />
 
       <CTABanner

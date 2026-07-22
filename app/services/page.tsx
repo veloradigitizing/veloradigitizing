@@ -5,6 +5,7 @@ import ServicesGrid from "../components/ServicesGrid";
 import WhyChooseUs from "../components/WhyChooseUs";
 import ProcessSteps from "../components/ProcessSteps";
 import CTABanner from "../components/CTABanner";
+import TestimonialCTASection from "../components/TestimonialCTASection";
 import { FAQ, SERVICES_FAQS } from "../components/FAQ";
 import PortfolioSection from "../components/PortfolioSection";
 
@@ -64,6 +65,38 @@ export default function ServicesPage() {
         items={SERVICES_FAQS}
         title="Services - Frequently Asked Questions"
         subtitle="Questions about our embroidery digitizing services and capabilities."
+      />
+
+      <TestimonialCTASection
+        eyebrow="Client Story"
+        title="Service That Exceeds Expectations"
+        testimonials={[
+          {
+            quote:
+              "Best digitizing service I have worked with. Very professional and reliable.",
+            author: "Michael Brown",
+            authorOrigin: "Canada",
+            authorImage: "/images/testimonials/michael-brown.png",
+          },
+          {
+            quote:
+              "From flat embroidery to complex patches, they nail the stitch density every single time.",
+            author: "Laura Bennett",
+            authorOrigin: "USA",
+            authorInitial: "L",
+          },
+          {
+            quote:
+              "Great value for the quality delivered. Their vector art service saved us hours of manual cleanup.",
+            author: "Ahmed Khan",
+            authorOrigin: "UAE",
+            authorInitial: "A",
+          },
+        ]}
+        ctaTitle="Need Help Choosing a Service?"
+        ctaSubtitle="Tell us about your project and we'll recommend the perfect digitizing solution."
+        ctaLabel="TALK TO AN EXPERT"
+        ctaHref="/contact"
       />
 
       <CTABanner />

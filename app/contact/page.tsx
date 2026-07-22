@@ -3,6 +3,7 @@ import contactBg from "../images/velora-contact-workspace.webp";
 import ContactInfoPanel from "../components/ContactInfoPanel";
 import ContactForm from "../components/ContactForm";
 import WhatsAppBanner from "../components/WhatsAppBanner";
+import TestimonialCTASection from "../components/TestimonialCTASection";
 import Icon, { IconName } from "../components/Icon";
 import { FAQ, CONTACT_FAQS } from "../components/FAQ";
 
@@ -58,6 +59,37 @@ export default function ContactPage() {
       </section>
 
       <WhatsAppBanner />
+
+      <TestimonialCTASection
+        eyebrow="Client Story"
+        title="Responsive. Reliable. Ready to Help."
+        testimonials={[
+          {
+            quote: "Very fast turnaround and the quality was beyond my expectations.",
+            author: "James Wilson",
+            authorOrigin: "United Kingdom",
+            authorImage: "/images/testimonials/james-wilson.png",
+          },
+          {
+            quote:
+              "I emailed my design at night and had a perfect proof waiting for me the next morning. Great communication throughout.",
+            author: "Emma Davis",
+            authorOrigin: "Canada",
+            authorInitial: "E",
+          },
+          {
+            quote:
+              "Support answered every question quickly and made sure my file was exactly right before production.",
+            author: "Carlos Rivera",
+            authorOrigin: "Spain",
+            authorInitial: "C",
+          },
+        ]}
+        ctaTitle="Let's Start Your Project"
+        ctaSubtitle="Send us your design and get a free quote within 1 hour."
+        ctaLabel="SEND YOUR DESIGN"
+        ctaHref="#contact-form"
+      />
 
       <FAQ
         items={CONTACT_FAQS}
