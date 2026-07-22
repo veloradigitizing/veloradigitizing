@@ -6,6 +6,7 @@ import WhatsAppBanner from "../components/WhatsAppBanner";
 import TestimonialCTASection from "../components/TestimonialCTASection";
 import Icon, { IconName } from "../components/Icon";
 import { FAQ, CONTACT_FAQS } from "../components/FAQ";
+import CTABanner from "../components/CTABanner";
 
 const CONTACT_INFO: { icon: IconName; title: string; lines: string[] }[] = [
   {
@@ -60,6 +61,16 @@ export default function ContactPage() {
 
       <WhatsAppBanner />
 
+      <FAQ
+        items={CONTACT_FAQS}
+        title="Frequently Asked Questions"
+        subtitle="Quick answers about turnaround, file formats, and how to send us your artwork. Can't find what you're looking for? Reach out anytime."
+        eyebrow="FAQ"
+        showCta
+        ctaLabel="Send Us a Message"
+        ctaHref="#contact-form"
+      />
+
       <TestimonialCTASection
         eyebrow="Client Story"
         title="Responsive. Reliable. Ready to Help."
@@ -91,15 +102,7 @@ export default function ContactPage() {
         ctaHref="#contact-form"
       />
 
-      <FAQ
-        items={CONTACT_FAQS}
-        title="Frequently Asked Questions"
-        subtitle="Quick answers about turnaround, file formats, and how to send us your artwork. Can't find what you're looking for? Reach out anytime."
-        eyebrow="FAQ"
-        showCta
-        ctaLabel="Send Us a Message"
-        ctaHref="#contact-form"
-      />
+      <CTABanner />
     </>
   );
 }

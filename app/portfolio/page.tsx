@@ -189,8 +189,6 @@ function PortfolioContent() {
 
       <HomeStats />
 
-      <TestimonialCTASection />
-
       <WhyChooseUs
         eyebrow="Why Choose Velora"
         title="The Velora Difference"
@@ -203,6 +201,8 @@ function PortfolioContent() {
         title="Portfolio - Frequently Asked Questions"
         subtitle="Questions about our portfolio, samples, and previous work."
       />
+
+      <TestimonialCTASection />
 
       <CTABanner />
     </>
