@@ -59,8 +59,7 @@ export function FAQ({
     return Array.from(seen);
   }, [items]);
 
-  const showSearch =
-    searchable ?? (items.length >= 5 || categories.length > 0);
+  const showSearch = searchable ?? (items.length >= 5 || categories.length > 0);
   const showCategories = categories.length > 0;
 
   /* Reset category if it disappears from the filtered set. */
@@ -109,7 +108,7 @@ export function FAQ({
       {/* Soft decorative glow */}
       <div
         aria-hidden
-        className="pointer-events-none absolute -top-24 left-1/2 h-72 w-[40rem] -translate-x-1/2 rounded-full bg-brand-500/10 blur-3xl"
+        className="pointer-events-none absolute -top-24 left-1/2 h-72 w-[40rem] -translate-x-1/2 rounded-full bg-brand-500/10 blur-3xl hidden sm:block"
       />
 
       <div className={`relative mx-auto ${maxWidthClass} px-5 lg:px-8`}>
@@ -485,7 +484,8 @@ export const PORTFOLIO_FAQS: FAQItem[] = [
     category: "Files",
   },
   {
-    question: "Do you sign NDAs for client work that shouldn't appear publicly?",
+    question:
+      "Do you sign NDAs for client work that shouldn't appear publicly?",
     answer:
       "Yes. Many of our enterprise and fashion-brand clients require NDAs, and we never publish their work. If your project is sensitive or pre-launch, let us know and we'll sign a mutual NDA before any artwork is exchanged. Your confidentiality is part of our standard service.",
     category: "Ordering",
@@ -569,7 +569,8 @@ export const SERVICES_FAQS: FAQItem[] = [
     category: "Vector",
   },
   {
-    question: "What's the difference between left chest and jacket back digitizing?",
+    question:
+      "What's the difference between left chest and jacket back digitizing?",
     answer:
       "Left chest designs are smaller (typically 3–4 inches), simpler, and optimized for polo shirts — they use tighter stitch density and lighter underlay to avoid puckering on thin fabrics. Jacket back designs are much larger (up to 10+ inches), require more detail, much higher stitch count, and careful pull-compensation to prevent distortion across the larger sew area.",
     category: "Techniques",
@@ -587,7 +588,8 @@ export const SERVICES_FAQS: FAQItem[] = [
     category: "Techniques",
   },
   {
-    question: "Can you work with multiple logo variations or color separations?",
+    question:
+      "Can you work with multiple logo variations or color separations?",
     answer:
       "Yes. We routinely deliver multi-version files — full-color, one-color, two-color, reversed (knockout), and stacked layouts — all from a single order. For screen-printing clients we also provide proper color separations including underbase, trap, and halftone layers. Just describe your production setup and we'll structure the files accordingly.",
     category: "Vector",
