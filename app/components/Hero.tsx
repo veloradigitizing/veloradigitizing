@@ -1,8 +1,10 @@
+"use client";
 import Icon, { IconName } from "./Icon";
 import { Reveal } from "./Reveal";
 import { stagger } from "./stagger";
 import Link from "next/link";
 import Image, { type StaticImageData } from "next/image";
+import { useRef, useEffect, useState } from "react";
 import heroImage from "../images/veloraHero3.webp";
 
 export function SectionTag({
@@ -159,6 +161,93 @@ export function StarRating({ count = 5 }: { count?: number }) {
   );
 }
 
+// Floating stats card — animated counter + rating, sits at bottom-right of hero on desktop
+function HeroStatsCard() {
+  const spanRef = useRef<HTMLSpanElement | null>(null);
+  const countState = useState(0);
+  const count = countState[0];
+  const setCount = countState[1];
+  const startedState = useState(false);
+  const started = startedState[0];
+  const setStarted = startedState[1];
+  const ratingState = useState(0);
+  const rating = ratingState[0];
+  const setRating = ratingState[1];
+
+  useEffect(() => {
+    const node = spanRef.current;
+    if (!node) return;
+    const obs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setStarted(true);
+            obs.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.3 },
+    );
+    obs.observe(node);
+    return () => obs.disconnect();
+  }, [setStarted]);
+
+  useEffect(() => {
+    if (!started) return;
+    let raf: number;
+    const startTime = performance.now();
+    const duration = 2000;
+    const tick = (now: number) => {
+      const progress = Math.min((now - startTime) / duration, 1);
+      const eased = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+      setCount(Math.round(eased * 15000));
+      setRating(Math.round(eased * 4.9 * 10) / 10);
+      if (progress < 1) raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+  }, [started, setCount, setRating]);
+
+  const formatted = count.toLocaleString("en-US");
+
+  return (
+    <div
+      className="vr-hero-fade absolute hidden lg:flex lg:top-40 lg:right-10 xl:top-48"
+      style={{ animationDelay: "1s" }}
+    >
+      <div className="flex items-center gap-4 rounded-2xl bg-white px-6 py-4 shadow-2xl ring-1 ring-navy-950/5 vr-float">
+        <div>
+          <div className="font-serif text-3xl font-extrabold text-brand-600">
+            <span ref={spanRef}>{formatted}+</span>
+          </div>
+          <div className="text-[10px] font-medium uppercase tracking-wider text-navy-950/50">
+            Completed Projects
+          </div>
+        </div>
+        <div className="h-10 w-px bg-navy-950/10" />
+        <div>
+          <div className="flex items-center gap-1">
+            <svg
+              className="h-4 w-4 text-gold-400"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden
+            >
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <span className="font-serif text-2xl font-extrabold text-navy-950">
+              {rating.toFixed(1)}
+            </span>
+          </div>
+          <div className="text-[10px] font-medium uppercase tracking-wider text-navy-950/50">
+            Client Rating
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function Hero({
   eyebrow,
   titleLines,
@@ -275,6 +364,8 @@ export default function Hero({
             <HeroFeatures features={features} />
           </div>
         </div>
+
+        <HeroStatsCard />
       </div>
     </section>
   );
