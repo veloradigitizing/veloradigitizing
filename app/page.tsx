@@ -1,26 +1,27 @@
 import Hero from "./components/Hero";
+import FeaturesSection from "./components/FeaturesSection";
 import homeBg from "./images/velora-embroidery-machine-lion.webp";
-import HomeStats from "./components/HomeStats";
 import ServicesGrid from "./components/ServicesGrid";
-import WhyChooseUs from "./components/WhyChooseUs";
+// import WhyChooseUs from "./components/WhyChooseUs";
 import FeaturedCategories from "./components/FeaturedCategories";
 import PatchesStoreSection from "./components/PatchesStoreSection";
 import ProcessSteps from "./components/ProcessSteps";
 import Testimonials from "./components/Testimonials";
 import CTABanner from "./components/CTABanner";
 import { FAQ, HOME_FAQS } from "./components/FAQ";
+import HomeStats from "./components/HomeStats";
 
-const WHY_CHOOSE_ITEMS: {
-  icon: Parameters<typeof WhyChooseUs>[0]["items"][number]["icon"];
-  title: string;
-}[] = [
-  { icon: "headset", title: "24/7 Support" },
-  { icon: "rocket", title: "Fast Delivery" },
-  { icon: "refresh", title: "Unlimited Revisions" },
-  { icon: "award", title: "High Stitch Quality" },
-  { icon: "tag", title: "Affordable Pricing" },
-  { icon: "shield", title: "100% Satisfaction Guaranteed" },
-];
+// const WHY_CHOOSE_ITEMS: {
+//   icon: Parameters<typeof WhyChooseUs>[0]["items"][number]["icon"];
+//   title: string;
+// }[] = [
+//   { icon: "headset", title: "24/7 Support" },
+//   { icon: "rocket", title: "Fast Delivery" },
+//   { icon: "refresh", title: "Unlimited Revisions" },
+//   { icon: "award", title: "High Stitch Quality" },
+//   { icon: "tag", title: "Affordable Pricing" },
+//   { icon: "shield", title: "100% Satisfaction Guaranteed" },
+// ];
 
 export default function Home() {
   return (
@@ -35,26 +36,45 @@ export default function Home() {
         bgImage={homeBg}
         imageLabel="Velora multi-needle embroidery machine stitching a colorful lion-with-crown design"
         features={[
-          { icon: "clock", title: "Fast Delivery", sub: "8-24 hours turnaround" },
-          { icon: "award", title: "High Quality", sub: "Premium stitch craftsmanship" },
-          { icon: "headset", title: "24/7 Support", sub: "Round-the-clock assistance" },
-          { icon: "shield", title: "Satisfaction", sub: "100% money back guarantee" },
+          {
+            icon: "clock",
+            title: "Fast Delivery",
+            sub: "Delivery within 8-24 hours",
+          },
+          {
+            icon: "award",
+            title: "High Quality",
+            sub: "Premium stitch craftsmanship",
+          },
+          {
+            icon: "headset",
+            title: "24/7 Support",
+            sub: "Round-the-clock assistance",
+          },
+          {
+            icon: "shield",
+            title: "Satisfaction",
+            sub: "100% money-back guaranteed",
+          },
         ]}
       />
 
-      <HomeStats />
+      <FeaturesSection />
 
       <ServicesGrid />
 
       <FeaturedCategories />
 
-      <WhyChooseUs
+      {/* <WhyChooseUs
         eyebrow="Why Choose Velora?"
         title="We Make The Difference"
         items={WHY_CHOOSE_ITEMS}
-      />
+      /> */}
 
       <ProcessSteps />
+
+      <HomeStats />
+
       <Testimonials />
 
       <PatchesStoreSection />

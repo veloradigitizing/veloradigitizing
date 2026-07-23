@@ -100,10 +100,10 @@ export default function AboutPage() {
         bgImage={aboutBg}
         imageLabel="Velora embroidered polo shirt, cap, and multi-needle embroidery machine"
         features={[
-          { icon: "award", title: "10+ Years", sub: "Of digitizing expertise" },
-          { icon: "smile", title: "Master Digitizers", sub: "Hand-crafted perfection" },
-          { icon: "heart", title: "Trusted by 500+", sub: "Brands worldwide" },
-          { icon: "shield", title: "100% Satisfaction", sub: "Money-back guarantee" },
+          { icon: "award", title: "10+ Years", sub: "Years of digitizing expertise" },
+          { icon: "smile", title: "Master Digitizers", sub: "Hand-crafted perfection daily" },
+          { icon: "heart", title: "Trusted by 500+", sub: "Trusted by 500+ brands globally" },
+          { icon: "shield", title: "100% Satisfaction", sub: "Money-back guarantee always" },
         ]}
       />
 

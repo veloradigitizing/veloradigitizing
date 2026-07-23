@@ -94,10 +94,10 @@ export default function StorePage() {
         bgImage={storeBg}
         imageLabel="Collection of embroidered Velora products — tote bags, keychains, and thread spools"
         features={[
-          { icon: "download", title: "Instant Download", sub: "Get files immediately" },
-          { icon: "layers", title: "All Formats", sub: "Multiple stitch formats" },
-          { icon: "refresh", title: "Free Updates", sub: "Re-download anytime" },
-          { icon: "cart", title: "Secure Checkout", sub: "Encrypted payment" },
+          { icon: "download", title: "Instant Download", sub: "Download files immediately" },
+          { icon: "layers", title: "All Formats", sub: "All stitch formats included" },
+          { icon: "refresh", title: "Free Updates", sub: "Re-download anytime, forever" },
+          { icon: "cart", title: "Secure Checkout", sub: "Secure encrypted checkout" },
         ]}
       />
 

@@ -45,10 +45,10 @@ export default function VectorArtPage() {
         bgImage={vectorBg}
         imageLabel="Design workspace with car sketch — vector art conversion in progress"
         features={[
-          { icon: "infinity", title: "Infinite Scaling", sub: "No pixelation ever" },
-          { icon: "smile", title: "Manual Tracing", sub: "By expert artists" },
-          { icon: "type", title: "All Formats", sub: "AI, SVG, EPS, PDF" },
-          { icon: "refresh", title: "Unlimited Revisions", sub: "Until you\'re happy" },
+          { icon: "infinity", title: "Infinite Scaling", sub: "Infinite scaling, no pixelation" },
+          { icon: "smile", title: "Manual Tracing", sub: "Manual tracing by expert artists" },
+          { icon: "type", title: "All Formats", sub: "AI, SVG, EPS, PDF formats" },
+          { icon: "refresh", title: "Unlimited Revisions", sub: "Unlimited revisions included" },
         ]}
       />
 

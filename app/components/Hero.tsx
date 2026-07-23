@@ -53,10 +53,10 @@ export function SectionTag({
 }
 
 const HERO_FEATURES: { icon: IconName; title: string; sub: string }[] = [
-  { icon: "clock", title: "Fast Delivery", sub: "8-24 hours turnaround" },
-  { icon: "award", title: "High Quality", sub: "Premium craftsmanship" },
-  { icon: "headset", title: "24/7 Support", sub: "Round-the-clock assistance" },
-  { icon: "shield", title: "Satisfaction", sub: "100% money back guarantee" },
+  { icon: "clock", title: "Fast Delivery", sub: "Delivered in 8-24 hours" },
+  { icon: "award", title: "High Quality", sub: "Premium stitch quality" },
+  { icon: "headset", title: "24/7 Support", sub: "Always here to help you" },
+  { icon: "shield", title: "Satisfaction", sub: "Money-back guaranteed" },
 ];
 
 export function HeroFeatures({
@@ -75,11 +75,11 @@ export function HeroFeatures({
             <Icon name={f.icon} className="h-5 w-5 stroke-[2]" />
           </div>
 
-          <p className="text-xs font-bold text-navy-950 leading-tight">
+          <p className="text-xs font-bold text-navy-950 leading-tight min-h-[1rem] flex items-center justify-center">
             {f.title}
           </p>
 
-          <p className="mt-0.5 text-[10px] sm:text-[11px] font-medium text-navy-950/80 leading-tight max-w-full break-words">
+          <p className="mt-0.5 text-[10px] sm:text-[11px] font-medium text-navy-950/80 leading-tight max-w-full break-words min-h-[2rem] flex items-center justify-center text-center">
             {f.sub}
           </p>
         </div>

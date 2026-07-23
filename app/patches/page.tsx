@@ -45,10 +45,10 @@ export default function PatchesPage() {
         bgImage={patchesBg}
         imageLabel="Curated display of Velora embroidered patches, cap, and apparel"
         features={[
-          { icon: "scissors", title: "Any Shape & Size", sub: "Fully custom die-cut" },
+          { icon: "scissors", title: "Any Shape & Size", sub: "Fully custom die-cut edges" },
           { icon: "layers", title: "All Patch Types", sub: "Merrow, chenille, PVC & more" },
-          { icon: "clock", title: "Fast Turnaround", sub: "8-24 hours" },
-          { icon: "shield", title: "100% Satisfaction", sub: "Money-back guarantee" },
+          { icon: "clock", title: "Fast Turnaround", sub: "Delivery within 8-24 hours" },
+          { icon: "shield", title: "100% Satisfaction", sub: "100% money-back guaranteed" },
         ]}
       />
 

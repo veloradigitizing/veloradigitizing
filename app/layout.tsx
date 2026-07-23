@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import ScrollProgress from "./components/ScrollProgress";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
+import AnnouncementBar from "./components/AnnouncementBar";
 import { CartProvider } from "./context/CartContext";
 import "./globals.css";
 
@@ -41,6 +42,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col text-navy-950">
         <CartProvider>
           <ScrollProgress />
+          <AnnouncementBar />
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />

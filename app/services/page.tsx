@@ -40,10 +40,10 @@ export default function ServicesPage() {
         bgImage={servicesBg}
         imageLabel="Professional Velora embroidery digitizing workspace"
         features={[
-          { icon: "clock", title: "Fast Delivery", sub: "8-24 hours turnaround" },
-          { icon: "layers", title: "All Formats", sub: "DST, PES, JEF & more" },
-          { icon: "tag", title: "Free Quote", sub: "No hidden charges" },
-          { icon: "shield", title: "Satisfaction", sub: "100% money back guarantee" },
+          { icon: "clock", title: "Fast Delivery", sub: "Delivery within 8-24 hours" },
+          { icon: "layers", title: "All Formats", sub: "DST, PES, JEF & more formats" },
+          { icon: "tag", title: "Free Quote", sub: "Free quote, no hidden charges" },
+          { icon: "shield", title: "Satisfaction", sub: "100% money-back guaranteed" },
         ]}
       />
 

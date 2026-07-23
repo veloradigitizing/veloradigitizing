@@ -46,9 +46,9 @@ export default function ContactPage() {
         imageLabel="Close-up of hands embroidering intricate blue and gold floral patterns"
         features={[
           { icon: "headset", title: "24/7 Support", sub: "Round-the-clock assistance" },
-          { icon: "send", title: "1h Response", sub: "Average reply time" },
-          { icon: "tag", title: "Free Quotes", sub: "No obligation" },
-          { icon: "shield", title: "100% Satisfaction", sub: "Money-back guarantee" },
+          { icon: "send", title: "1h Response", sub: "1-hour average reply time" },
+          { icon: "tag", title: "Free Quotes", sub: "Free quotes, no obligation" },
+          { icon: "shield", title: "100% Satisfaction", sub: "100% money-back guaranteed" },
         ]}
       />
 
