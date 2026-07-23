@@ -84,6 +84,7 @@ export default function FeaturedCategories() {
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [maxIndex, setMaxIndex] = useState(0);
 
   const checkScroll = useCallback(() => {
     const el = scrollRef.current;
@@ -93,8 +94,15 @@ export default function FeaturedCategories() {
     const card = el.querySelector("[data-feature-card]");
     const cardWidth = card?.getBoundingClientRect().width || 210;
     const gap = 16;
-    const newIndex = Math.round(el.scrollLeft / (cardWidth + gap));
-    setActiveIndex(Math.min(newIndex, FEATURED_CATEGORIES.length - 1));
+    const step = cardWidth + gap;
+    const maxScrollLeft = el.scrollWidth - el.clientWidth;
+    const computedMaxIndex = Math.max(0, Math.round(maxScrollLeft / step));
+    setMaxIndex(computedMaxIndex);
+    const newIndex = Math.min(
+      Math.round(el.scrollLeft / step),
+      computedMaxIndex,
+    );
+    setActiveIndex(newIndex);
   }, []);
 
   useEffect(() => {
@@ -208,9 +216,9 @@ export default function FeaturedCategories() {
               ))}
             </div>
 
-            {/* Dots Indicator */}
+            {/* Dots Indicator — one dot per scroll page (not per item) */}
             <div className="mt-5 flex justify-center gap-1.5">
-              {FEATURED_CATEGORIES.map((_, i) => (
+              {Array.from({ length: maxIndex + 1 }).map((_, i) => (
                 <button
                   key={i}
                   onClick={() => {
@@ -232,7 +240,7 @@ export default function FeaturedCategories() {
                       ? "h-1.5 rounded-full transition-all duration-300 w-7 bg-brand-600"
                       : "h-1.5 rounded-full transition-all duration-300 w-1.5 bg-navy-950/15"
                   }
-                  aria-label={"Go to slide " + (i + 1)}
+                  aria-label={"Go to page " + (i + 1)}
                 />
               ))}
             </div>

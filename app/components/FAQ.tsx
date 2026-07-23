@@ -212,7 +212,9 @@ export function FAQ({
                     >
                       <span
                         className={`text-base font-semibold transition-colors duration-200 sm:text-[17px] ${
-                          isOpen ? "text-brand-700" : "text-navy-950"
+                          isOpen
+                            ? "text-brand-700"
+                            : "text-navy-950 group-hover:text-brand-600"
                         }`}
                       >
                         {item.question}
