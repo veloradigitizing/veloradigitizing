@@ -70,7 +70,7 @@ export default function ServiceCard({ service }: { service: Service }) {
       >
         {/* Icon - Fixed Size */}
         <div
-          className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl shadow-lg transition-transform duration-300 group-hover:scale-110 bg-brand-600 group-hover:shadow-brand-500/30"
+          className="mx-auto flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl shadow-lg transition-transform duration-300 group-hover:scale-110 bg-brand-600 group-hover:shadow-brand-500/30"
           style={{ transform: "translateZ(20px)" }}
         >
           {service.iconImage ? (
@@ -93,7 +93,7 @@ export default function ServiceCard({ service }: { service: Service }) {
         {/* Title - Fixed Height */}
         <div className="mt-5 shrink-0">
           <h3
-            className="text-lg font-bold leading-tight text-navy-950 transition-colors group-hover:text-brand-600 line-clamp-2"
+            className="text-lg font-bold leading-tight text-navy-950 transition-colors group-hover:text-brand-600 line-clamp-2 text-center"
             style={{ minHeight: "2.5rem" }}
           >
             {service.title}
@@ -103,7 +103,7 @@ export default function ServiceCard({ service }: { service: Service }) {
         {/* Description - Fixed Height with line clamp */}
         <div className="mt-3 grow shrink-0">
           <p
-            className="text-sm leading-relaxed text-navy-950/60 line-clamp-3"
+            className="text-sm leading-relaxed text-navy-950/60 line-clamp-3 text-center"
             style={{ minHeight: "3.75rem" }}
           >
             {service.description}
