@@ -79,7 +79,9 @@ export default function ServiceCard({ service }: { service: Service }) {
               alt={service.title}
               width={55}
               height={55}
-              className="h-12 w-12 object-contain"
+              className={`h-12 w-12 object-contain ${
+                "transform" in service && service.transform ? "scale-125" : ""
+              }`}
             />
           ) : (
             <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-500 to-brand-700 text-white">

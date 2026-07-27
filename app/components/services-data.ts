@@ -9,6 +9,7 @@ export type Service = {
   image?: string;
   features?: string[];
   count?: number;
+  transform?: boolean;
 };
 
 export const SERVICES: Service[] = [
@@ -112,5 +113,6 @@ export const SERVICES: Service[] = [
     title: "Bundle Packages",
     description: "Save big with our curated design packs and bundle deals.",
     count: 6,
+    transform: true,
   },
 ];
