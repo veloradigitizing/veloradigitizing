@@ -70,19 +70,19 @@ export default function ServiceCard({ service }: { service: Service }) {
       >
         {/* Icon - Fixed Size */}
         <div
-          className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl shadow-lg transition-transform duration-300 group-hover:scale-110 group-hover:shadow-brand-500/30"
+          className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl shadow-lg transition-transform duration-300 group-hover:scale-110 bg-brand-600 group-hover:shadow-brand-500/30"
           style={{ transform: "translateZ(20px)" }}
         >
           {service.iconImage ? (
             <Image
               src={service.iconImage}
               alt={service.title}
-              width={64}
-              height={64}
-              className="h-16 w-16 object-contain"
+              width={55}
+              height={55}
+              className="h-12 w-12 object-contain"
             />
           ) : (
-            <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-500 to-brand-600 text-white">
+            <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-500 to-brand-700 text-white">
               <IconCircle icon={service.icon as any} size="sm" dark />
             </div>
           )}

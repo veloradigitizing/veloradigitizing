@@ -1,8 +1,5 @@
 import Link from "next/link";
 import { Reveal } from "./components/Reveal";
-import HomeIcon from "lucide-react/dist/esm/icons/home";
-import SearchIcon from "lucide-react/dist/esm/icons/search";
-import ArrowLeftIcon from "lucide-react/dist/esm/icons/arrow-left";
 
 export default function NotFound() {
   return (
