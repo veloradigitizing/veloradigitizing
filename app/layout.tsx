@@ -85,7 +85,8 @@ export const metadata: Metadata = {
     description:
       "Convert your artwork into flawless embroidery files. Premium stitch quality, 8–24h delivery, unlimited revisions, and 100% satisfaction guaranteed.",
     images: ["/images/og-image.jpg"],
-    creator: "@veloradigitizing",
+    site: "@veloradigitizing",
+    creator: "@burlinleo",
   },
   alternates: {
     canonical: "https://www.veloradigitizing.com",
@@ -100,6 +101,16 @@ export const metadata: Metadata = {
     ],
     shortcut: "/favicon.ico",
   },
+  other: {
+    "og:see_also": [
+      "https://www.facebook.com/share/1Dtbi6tg9V/",
+      "https://www.instagram.com/veloradigitizing",
+      "https://www.threads.com/@veloradigitizing?invite=0",
+      "https://www.tiktok.com/@muheeb.rehmani?_r=1&_t=ZS-9846QsaPrjY",
+      "https://x.com/burlinleo",
+      "https://www.youtube.com/@VeloraDigitizing",
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -107,11 +118,42 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Velora Digitizing",
+    "url": "https://www.veloradigitizing.com",
+    "logo": "https://www.veloradigitizing.com/icon1.png",
+    "description":
+      "Velora Digitizing converts your artwork into flawless embroidery files with the highest stitch quality, fast turnaround, and 100% satisfaction guaranteed.",
+    "sameAs": [
+      "https://www.facebook.com/share/1Dtbi6tg9V/",
+      "https://www.instagram.com/veloradigitizing",
+      "https://www.threads.com/@veloradigitizing?invite=0",
+      "https://www.tiktok.com/@muheeb.rehmani?_r=1&_t=ZS-9846QsaPrjY",
+      "https://x.com/burlinleo",
+      "https://www.youtube.com/@VeloraDigitizing",
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-213-456-7880",
+      "contactType": "customer service",
+      "email": "info@veloradigitizing.com",
+      "availableLanguage": "English",
+    },
+  };
+
   return (
     <html
       lang="en"
       className={`${inter.variable} ${playfair.variable} ${script.variable} antialiased`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="min-h-full flex flex-col text-navy-950">
         <CartProvider>
           <ScrollProgress />
