@@ -1,4 +1,17 @@
-"use client";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms & Conditions",
+  description:
+    "Review Velora Digitizing's Terms and Conditions governing the use of our embroidery digitizing and vector art services, including order policies and intellectual property.",
+  alternates: {
+    canonical: "https://www.veloradigitizing.com/terms-and-conditions",
+  },
+  robots: {
+    index: true,
+    follow: false,
+  },
+};
 
 export default function TermsPage() {
   return (

@@ -12,9 +12,39 @@ import { FAQ, ABOUT_FAQS } from "../components/FAQ";
 import { IconName } from "../components/Icon";
 
 export const metadata: Metadata = {
-  title: "About Us | Velora Digitizing",
+  title: "About Us",
   description:
-    "Velora Digitizing was founded to provide world-class embroidery digitizing services with unmatched quality and reliability.",
+    "Learn about Velora Digitizing — founded to provide world-class embroidery digitizing with unmatched quality, a passionate team, and 100% satisfaction guaranteed.",
+  keywords: [
+    "about Velora Digitizing",
+    "embroidery digitizing company",
+    "professional digitizers",
+    "embroidery team",
+    "digitizing experts",
+  ],
+  alternates: {
+    canonical: "https://www.veloradigitizing.com/about",
+  },
+  openGraph: {
+    title: "About Us | Velora Digitizing",
+    description:
+      "Meet the team behind Velora Digitizing. 10+ years of embroidery digitizing expertise, trusted by 500+ brands worldwide.",
+    url: "https://www.veloradigitizing.com/about",
+    images: [
+      {
+        url: "/images/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Velora Digitizing Team",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us | Velora Digitizing",
+    description:
+      "Meet the team behind Velora Digitizing. 10+ years of expertise, trusted by 500+ brands worldwide.",
+  },
 };
 
 const WHY_ITEMS: { icon: IconName; title: string; description: string }[] = [

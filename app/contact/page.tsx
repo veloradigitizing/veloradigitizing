@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Hero from "../components/Hero";
 import contactBg from "../images/velora-contact-workspace.webp";
 import ContactInfoPanel from "../components/ContactInfoPanel";
@@ -30,6 +31,42 @@ const CONTACT_INFO: { icon: IconName; title: string; lines: string[] }[] = [
     lines: ["128 Business Blvd, Suite 204", "Los Angeles, CA 90017, USA"],
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Contact Us",
+  description:
+    "Get in touch with Velora Digitizing for embroidery digitizing quotes, questions, and support. We reply within 1 hour — 24/7 availability via email and WhatsApp.",
+  keywords: [
+    "contact Velora Digitizing",
+    "digitizing quote",
+    "embroidery digitizing contact",
+    "free digitizing quote",
+    "embroidery support",
+  ],
+  alternates: {
+    canonical: "https://www.veloradigitizing.com/contact",
+  },
+  openGraph: {
+    title: "Contact Us | Velora Digitizing",
+    description:
+      "Get a free digitizing quote in under 1 hour. Reach us via email, WhatsApp or our contact form — 24/7 support available.",
+    url: "https://www.veloradigitizing.com/contact",
+    images: [
+      {
+        url: "/images/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Contact Velora Digitizing",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Us | Velora Digitizing",
+    description:
+      "Get a free digitizing quote in under 1 hour. 24/7 support available.",
+  },
+};
 
 export default function ContactPage() {
   return (

@@ -1,5 +1,5 @@
-"use client";
 
+import type { Metadata } from "next";
 import Hero from "../components/Hero";
 import vectorBg from "../images/design-workspace-car-sketch.webp";
 import WhyChooseUs from "../components/WhyChooseUs";
@@ -34,6 +34,45 @@ const WHY_CHOOSE_ITEMS = [
   { icon: "tag" as const, title: "Affordable Pricing" },
   { icon: "shield" as const, title: "100% Satisfaction Guaranteed" },
 ];
+
+export const metadata: Metadata = {
+  title: "Vector Art Conversion Services",
+  description:
+    "Professional vector art conversion and raster-to-vector services by Velora Digitizing. Manual tracing by expert artists with unlimited revisions and 24-hour turnaround.",
+  keywords: [
+    "vector art conversion",
+    "raster to vector",
+    "logo vectorization",
+    "vector conversion service",
+    "image to vector",
+    "vector art services",
+    "color separation",
+    "vector cleanup",
+  ],
+  alternates: {
+    canonical: "https://www.veloradigitizing.com/vector-art",
+  },
+  openGraph: {
+    title: "Vector Art Conversion Services | Velora Digitizing",
+    description:
+      "Manual raster-to-vector conversion by expert artists. Unlimited revisions, 24h turnaround, all formats delivered.",
+    url: "https://www.veloradigitizing.com/vector-art",
+    images: [
+      {
+        url: "/images/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Vector Art Conversion by Velora Digitizing",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Vector Art Conversion Services | Velora Digitizing",
+    description:
+      "Manual raster-to-vector conversion. Unlimited revisions, 24h turnaround.",
+  },
+};
 
 export default function VectorArtPage() {
   return (

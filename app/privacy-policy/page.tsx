@@ -1,4 +1,17 @@
-"use client";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description:
+    "Read Velora Digitizing's Privacy Policy to understand how we collect, use, and protect your personal information when you use our embroidery digitizing services.",
+  alternates: {
+    canonical: "https://www.veloradigitizing.com/privacy-policy",
+  },
+  robots: {
+    index: true,
+    follow: false,
+  },
+};
 
 export default function PrivacyPolicyPage() {
   return (

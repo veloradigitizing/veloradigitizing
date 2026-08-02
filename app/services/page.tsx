@@ -10,9 +10,43 @@ import { FAQ, SERVICES_FAQS } from "../components/FAQ";
 import PortfolioSection from "../components/PortfolioSection";
 
 export const metadata: Metadata = {
-  title: "Services | Velora Digitizing",
+  title: "Embroidery Digitizing Services",
   description:
-    "Explore Velora Digitizing's full range of embroidery digitizing services — logos, patches, 3D puff, applique, chenille and more.",
+    "Explore Velora Digitizing's full range of embroidery digitizing services — logos, patches, 3D puff, applique, chenille, cap digitizing and more. Fast turnaround & free quotes.",
+  keywords: [
+    "embroidery digitizing services",
+    "logo digitizing",
+    "3D puff digitizing",
+    "applique digitizing",
+    "patch digitizing",
+    "cap digitizing",
+    "chenille digitizing",
+    "jacket back digitizing",
+    "custom embroidery digitizing",
+  ],
+  alternates: {
+    canonical: "https://www.veloradigitizing.com/services",
+  },
+  openGraph: {
+    title: "Embroidery Digitizing Services | Velora Digitizing",
+    description:
+      "Premium embroidery digitizing: logos, patches, 3D puff, applique, chenille & more. Fast delivery, free quotes, 100% satisfaction.",
+    url: "https://www.veloradigitizing.com/services",
+    images: [
+      {
+        url: "/images/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Velora Digitizing Services",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Embroidery Digitizing Services | Velora Digitizing",
+    description:
+      "Premium embroidery digitizing services — fast delivery, free quotes, 100% satisfaction.",
+  },
 };
 
 const WHY_ITEMS: {
