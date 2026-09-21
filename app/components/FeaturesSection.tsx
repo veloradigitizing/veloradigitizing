@@ -46,12 +46,18 @@ export default function FeaturesSection() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal direction="up">
-          <div className="grid grid-cols-2 divide-x divide-white/20 gap-y-8 sm:grid-cols-3 lg:grid-cols-6">
-            {FEATURES.map((f) => {
+          <div className="grid grid-cols-2 gap-y-8 sm:grid-cols-3 lg:grid-cols-6">
+            {FEATURES.map((f, i) => {
+              const borderClasses = [
+                i % 2 === 0 ? "border-r border-white/20" : "border-r-0",
+                (i + 1) % 3 === 0 ? "sm:border-r-0" : "sm:border-r sm:border-white/20",
+                i === FEATURES.length - 1 ? "lg:border-r-0" : "lg:border-r lg:border-white/20",
+              ].join(" ");
+
               return (
                 <div
                   key={f.title}
-                  className="group relative flex flex-col items-center justify-start text-center px-3 sm:px-5 py-4"
+                  className={`group relative flex flex-col items-center justify-start text-center px-3 sm:px-5 py-4 ${borderClasses}`}
                 >
                   <span className="pointer-events-none absolute -inset-2 rounded-2xl bg-brand-500/0 blur-xl transition-all duration-500 group-hover:bg-brand-500/20" />
 
