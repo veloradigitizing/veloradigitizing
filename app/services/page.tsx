@@ -10,9 +10,88 @@ import { FAQ, SERVICES_FAQS } from "../components/FAQ";
 import PortfolioSection from "../components/PortfolioSection";
 
 export const metadata: Metadata = {
-  title: "Services | Velora Digitizing",
+  title: "Custom Embroidery Digitizing Services | Logo, 3D Puff & Patches",
   description:
-    "Explore Velora Digitizing's full range of embroidery digitizing services — logos, patches, 3D puff, applique, chenille and more.",
+    "Expert embroidery digitizing services by Velora Digitizing. Left chest logos, 3D puff embroidery, jacket back designs, applique, chenille, and custom patches. 8–24h turnaround.",
+  keywords: [
+    "embroidery digitizing services",
+    "logo digitizing",
+    "3D puff embroidery digitizing",
+    "jacket back embroidery digitizing",
+    "left chest logo digitizing",
+    "applique digitizing",
+    "chenille digitizing",
+    "cap digitizing service",
+    "custom patch digitizing",
+    "DST PES EXP conversion",
+  ],
+  alternates: {
+    canonical: "https://www.veloradigitizing.com/services",
+  },
+  openGraph: {
+    title: "Custom Embroidery Digitizing Services | Velora Digitizing",
+    description:
+      "Transform any logo or artwork into clean embroidery files. 3D Puff, Left Chest, Jacket Backs, Applique & Patches with 8–24h rush delivery.",
+    url: "https://www.veloradigitizing.com/services",
+    siteName: "Velora Digitizing",
+    images: [
+      {
+        url: "/images/og/og-services.webp",
+        width: 1200,
+        height: 630,
+        alt: "Velora Digitizing Services — Logo, 3D Puff, Cap & Patch Digitizing",
+        type: "image/webp",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Custom Embroidery Digitizing Services | Velora Digitizing",
+    description:
+      "Transform any logo or artwork into clean embroidery files. 3D Puff, Left Chest, Jacket Backs, Applique & Patches.",
+    images: ["/images/og/og-services.webp"],
+  },
+};
+
+const servicesJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Custom Embroidery Digitizing Services",
+      "provider": {
+        "@type": "Organization",
+        "name": "Velora Digitizing",
+        "url": "https://www.veloradigitizing.com",
+      },
+      "serviceType": "Embroidery Digitizing",
+      "description":
+        "Professional digitization of logos and artwork into commercial embroidery machine files (DST, PES, EXP, JEF) for left chest, caps, jackets, and patches.",
+      "areaServed": "Worldwide",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+      },
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.veloradigitizing.com",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.veloradigitizing.com/services",
+        },
+      ],
+    },
+  ],
 };
 
 const WHY_ITEMS: {
@@ -30,6 +109,10 @@ const WHY_ITEMS: {
 export default function ServicesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesJsonLd) }}
+      />
       <Hero
         eyebrow="What We Digitize"
         titleLines={[

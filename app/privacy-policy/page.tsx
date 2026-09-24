@@ -1,4 +1,17 @@
-"use client";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy | Velora Digitizing",
+  description:
+    "Read the Velora Digitizing Privacy Policy. Understand how we collect, use, protect, and handle your artwork files and personal data.",
+  alternates: {
+    canonical: "https://www.veloradigitizing.com/privacy-policy",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 export default function PrivacyPolicyPage() {
   return (

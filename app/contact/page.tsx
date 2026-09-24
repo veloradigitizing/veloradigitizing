@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Hero from "../components/Hero";
 import contactBg from "../images/velora-contact-workspace.webp";
 import ContactInfoPanel from "../components/ContactInfoPanel";
@@ -7,6 +8,89 @@ import TestimonialCTASection from "../components/TestimonialCTASection";
 import Icon, { IconName } from "../components/Icon";
 import { FAQ, CONTACT_FAQS } from "../components/FAQ";
 import CTABanner from "../components/CTABanner";
+
+export const metadata: Metadata = {
+  title: "Contact Us | Get a Free Embroidery Digitizing Quote",
+  description:
+    "Contact Velora Digitizing for free digitizing quotes, rush orders, or embroidery inquiries. Available 24/7 via WhatsApp, phone (+1 213 456 7880), or email.",
+  keywords: [
+    "contact embroidery digitizer",
+    "embroidery digitizing quote",
+    "rush embroidery digitizing contact",
+    "digitizing customer support",
+    "embroidery design inquiry",
+  ],
+  alternates: {
+    canonical: "https://www.veloradigitizing.com/contact",
+  },
+  openGraph: {
+    title: "Contact Velora Digitizing | Free Quote & 24/7 Support",
+    description:
+      "Get a fast response and free quote for your embroidery digitizing or vector art project. 24/7 customer assistance.",
+    url: "https://www.veloradigitizing.com/contact",
+    siteName: "Velora Digitizing",
+    images: [
+      {
+        url: "/images/og/og-contact.webp",
+        width: 1200,
+        height: 630,
+        alt: "Contact Velora Digitizing — 24/7 Customer Support and Free Quotes",
+        type: "image/webp",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Velora Digitizing | Free Quote & 24/7 Support",
+    description:
+      "Get in touch with our embroidery digitizing specialists for free quotes and rapid project turnaround.",
+    images: ["/images/og/og-contact.webp"],
+  },
+};
+
+const contactJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ContactPage",
+      "name": "Contact Velora Digitizing",
+      "url": "https://www.veloradigitizing.com/contact",
+      "description":
+        "Contact page for requesting free embroidery digitizing quotes, vector conversions, and customer support.",
+      "mainEntity": {
+        "@type": "LocalBusiness",
+        "name": "Velora Digitizing",
+        "telephone": "+1-213-456-7880",
+        "email": "info@veloradigitizing.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "128 Business Blvd, Suite 204",
+          "addressLocality": "Los Angeles",
+          "addressRegion": "CA",
+          "postalCode": "90017",
+          "addressCountry": "US",
+        },
+      },
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.veloradigitizing.com",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Contact",
+          "item": "https://www.veloradigitizing.com/contact",
+        },
+      ],
+    },
+  ],
+};
 
 const CONTACT_INFO: { icon: IconName; title: string; lines: string[] }[] = [
   {
@@ -34,6 +118,10 @@ const CONTACT_INFO: { icon: IconName; title: string; lines: string[] }[] = [
 export default function ContactPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactJsonLd) }}
+      />
       <Hero
         eyebrow="Let's Talk"
         titleLines={[

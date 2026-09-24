@@ -12,9 +12,77 @@ import { FAQ, ABOUT_FAQS } from "../components/FAQ";
 import { IconName } from "../components/Icon";
 
 export const metadata: Metadata = {
-  title: "About Us | Velora Digitizing",
+  title: "About Velora Digitizing | Master Embroidery Digitizers & Story",
   description:
-    "Velora Digitizing was founded to provide world-class embroidery digitizing services with unmatched quality and reliability.",
+    "Learn about Velora Digitizing — our team of master digitizers with 10+ years of craftsmanship delivering precision embroidery stitch files and vector conversions worldwide.",
+  keywords: [
+    "about velora digitizing",
+    "embroidery digitizing experts",
+    "master digitizers",
+    "professional digitizing studio",
+    "custom embroidery team",
+  ],
+  alternates: {
+    canonical: "https://www.veloradigitizing.com/about",
+  },
+  openGraph: {
+    title: "About Velora Digitizing | Master Embroidery Digitizers",
+    description:
+      "Crafting perfection stitch by stitch. Learn about our 10+ years of embroidery digitizing expertise and commitment to 100% stitch quality.",
+    url: "https://www.veloradigitizing.com/about",
+    siteName: "Velora Digitizing",
+    images: [
+      {
+        url: "/images/og/og-about.webp",
+        width: 1200,
+        height: 630,
+        alt: "About Velora Digitizing — Master Embroidery Digitizers in Studio",
+        type: "image/webp",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Velora Digitizing | Master Embroidery Digitizers",
+    description:
+      "Crafting perfection stitch by stitch. Discover our digitizing team, standards, and machine test processes.",
+    images: ["/images/og/og-about.webp"],
+  },
+};
+
+const aboutJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "name": "About Velora Digitizing",
+      "url": "https://www.veloradigitizing.com/about",
+      "description":
+        "Velora Digitizing provides world-class embroidery digitizing services with unmatched quality, rapid turnaround, and guaranteed customer satisfaction.",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "Velora Digitizing",
+        "url": "https://www.veloradigitizing.com",
+      },
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.veloradigitizing.com",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About Us",
+          "item": "https://www.veloradigitizing.com/about",
+        },
+      ],
+    },
+  ],
 };
 
 const WHY_ITEMS: { icon: IconName; title: string; description: string }[] = [
@@ -90,6 +158,10 @@ const TEAM = [
 export default function AboutPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutJsonLd) }}
+      />
       <Hero
         eyebrow="Our Story"
         titleLines={[
