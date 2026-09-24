@@ -24,7 +24,7 @@ const FEATURES: Feature[] = [
   {
     icon: "globe",
     title: "Global Clients",
-    desc: "Trusted by brands in 50+ countries",
+    desc: "Trusted by brands in 20+ countries",
   },
   {
     icon: "refresh",

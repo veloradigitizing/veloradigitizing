@@ -64,7 +64,7 @@ export const ABOUT_FAQS: FAQItem[] = [
   {
     question: "How long has Velora Digitizing been in business?",
     answer:
-      "Velora Digitizing has been providing professional embroidery digitizing services for years, serving thousands of clients worldwide — including embroidery shops, promotional product companies, fashion brands, and individual crafters across 50+ countries. Our senior digitizers each have 10+ years of hands-on production experience.",
+      "Velora Digitizing has been providing professional embroidery digitizing services for years, serving hundreds of clients worldwide — including embroidery shops, promotional product companies, fashion brands, and individual crafters across 20+ countries. Our senior digitizers each have 10+ years of hands-on production experience.",
     category: "Company",
   },
   {
@@ -76,7 +76,7 @@ export const ABOUT_FAQS: FAQItem[] = [
   {
     question: "How many projects have you completed?",
     answer:
-      "We've successfully delivered 15,000+ digitizing projects for 8,000+ happy clients worldwide. Our portfolio spans sports teams, corporate brands, fashion labels, schools, military and law enforcement units, and promotional product distributors. Each piece is reviewed by a second digitizer before delivery.",
+      "We've successfully delivered 3,200+ digitizing projects for 850+ happy clients worldwide. Our portfolio spans sports teams, corporate brands, fashion labels, schools, military and law enforcement units, and promotional product distributors. Each piece is reviewed by a second digitizer before delivery.",
     category: "Company",
   },
   {

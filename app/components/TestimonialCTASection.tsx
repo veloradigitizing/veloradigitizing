@@ -41,7 +41,7 @@ const DEFAULT_TESTIMONIALS: Testimonial[] = [
 
 export default function TestimonialCTASection({
   eyebrow = "What Our Clients Say",
-  title = "Trusted by Thousands",
+  title = "Trusted by 850+ Clients",
   testimonials = DEFAULT_TESTIMONIALS,
   ctaTitle = "Ready to Digitize Your Design?",
   ctaSubtitle = "Get your FREE quote now and experience premium quality digitizing.",

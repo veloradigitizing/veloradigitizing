@@ -3,10 +3,10 @@ import { Reveal } from "./Reveal";
 import { stagger } from "./stagger";
 
 export const DEFAULT_STATS: { icon: IconName; value: string; label: string }[] = [
-  { icon: "award", value: "15,000+", label: "Projects Completed" },
-  { icon: "smile", value: "8,000+", label: "Happy Clients" },
+  { icon: "award", value: "3,200+", label: "Projects Completed" },
+  { icon: "smile", value: "850+", label: "Happy Clients" },
   { icon: "clock", value: "2-24 Hrs", label: "Turnaround Time" },
-  { icon: "globe", value: "50+", label: "Countries Served" },
+  { icon: "globe", value: "20+", label: "Countries Served" },
 ];
 
 export default function HomeStats({

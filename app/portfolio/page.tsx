@@ -233,7 +233,7 @@ export default function PortfolioPage() {
         bgImage={portfolioBg}
         imageLabel="Showcase of embroidered Velora apparel and accessories"
         features={[
-          { icon: "trophy", title: "500+ Projects", sub: "500+ projects delivered well" },
+          { icon: "trophy", title: "3,000+ Projects", sub: "3,000+ projects delivered" },
           { icon: "grid", title: "All Categories", sub: "Caps, jackets, bags & more" },
           { icon: "scissors", title: "Custom Work", sub: "Tailored to your design needs" },
           { icon: "star", title: "Top Rated", sub: "Top-rated by happy clients" },

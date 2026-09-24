@@ -1,4 +1,5 @@
 "use client";
+import { SITE_RATING } from "../site-rating";
 import Icon, { IconName } from "./Icon";
 import { Reveal } from "./Reveal";
 import { stagger } from "./stagger";
@@ -200,8 +201,8 @@ function HeroStatsCard() {
     const tick = (now: number) => {
       const progress = Math.min((now - startTime) / duration, 1);
       const eased = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
-      setCount(Math.round(eased * 15000));
-      setRating(Math.round(eased * 4.9 * 10) / 10);
+      setCount(Math.round(eased * 3200));
+      setRating(Math.round(eased * SITE_RATING.value * 10) / 10);
       if (progress < 1) raf = requestAnimationFrame(tick);
     };
     raf = requestAnimationFrame(tick);
@@ -240,7 +241,7 @@ function HeroStatsCard() {
             </span>
           </div>
           <div className="text-[10px] font-medium uppercase tracking-wider text-navy-950/50">
-            Client Rating
+            Client Rating &middot; {SITE_RATING.count} reviews
           </div>
         </div>
       </div>

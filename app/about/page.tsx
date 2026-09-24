@@ -174,7 +174,7 @@ export default function AboutPage() {
         features={[
           { icon: "award", title: "10+ Years", sub: "Years of digitizing expertise" },
           { icon: "smile", title: "Master Digitizers", sub: "Hand-crafted perfection daily" },
-          { icon: "heart", title: "Trusted by 500+", sub: "Trusted by 500+ brands globally" },
+          { icon: "heart", title: "Trusted by 400+", sub: "Trusted by 400+ brands globally" },
           { icon: "shield", title: "100% Satisfaction", sub: "Money-back guarantee always" },
         ]}
       />
@@ -183,7 +183,7 @@ export default function AboutPage() {
 
       <FeatureCards
         eyebrow="Why Choose Us"
-        title="Why Thousands Choose velora Digitizing"
+        title="Why Hundreds of Brands Choose Velora Digitizing"
         items={WHY_ITEMS}
       />
 

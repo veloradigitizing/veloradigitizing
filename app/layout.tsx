@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://www.veloradigitizing.com",
     siteName: "Velora Digitizing",
-    title: "Velora Digitizing | #1 Custom Embroidery Digitizing & Vector Art Services",
+    title: "Velora Digitizing | Custom Embroidery Digitizing & Vector Art Services",
     description:
       "Convert your artwork into flawless embroidery files with premier stitch quality, 8–24h delivery, unlimited revisions, and 100% satisfaction guaranteed.",
     images: [
@@ -90,7 +90,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Velora Digitizing | #1 Custom Embroidery Digitizing & Vector Art Services",
+    title: "Velora Digitizing | Custom Embroidery Digitizing & Vector Art Services",
     description:
       "Convert your artwork into flawless embroidery files with premier stitch quality, 8–24h delivery, unlimited revisions, and 100% satisfaction guaranteed.",
     images: ["/images/og/og-home.webp"],

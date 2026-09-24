@@ -1,3 +1,4 @@
+import { SITE_RATING } from "./site-rating";
 import Hero from "./components/Hero";
 import FeaturesSection from "./components/FeaturesSection";
 import homeBg from "./images/velora-embroidery-machine-lion.webp";
@@ -63,8 +64,8 @@ const homeJsonLd = {
       ],
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "520",
+        "ratingValue": SITE_RATING.value.toFixed(1),
+        "reviewCount": String(SITE_RATING.count),
         "bestRating": "5",
         "worstRating": "1",
       },

@@ -13,7 +13,7 @@ export default function TestimonialCTA() {
           </p>
           <div className="mt-3 flex items-center gap-3">
             <h3 className="font-serif text-2xl font-bold text-navy-950">
-              Trusted by Thousands
+              Trusted by 850+ Clients
             </h3>
             <StarRating />
           </div>
