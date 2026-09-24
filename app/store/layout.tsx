@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Digital Embroidery Designs Store",
+  title: {
+    default: "Digital Embroidery Designs Store",
+    template: "%s | Velora Digitizing",
+  },
   description:
     "Shop premium ready-to-stitch embroidery designs & patch files. Instant download in DST, PES, JEF, and EXP formats with verified stitch counts. Download now!",
   keywords: [

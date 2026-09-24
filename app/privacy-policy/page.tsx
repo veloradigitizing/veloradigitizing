@@ -7,6 +7,19 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.veloradigitizing.com/privacy-policy",
   },
+  openGraph: {
+    title: "Privacy Policy & Data Security | Velora Digitizing",
+    description:
+      "Read Velora Digitizing's Privacy Policy. Learn how we safeguard your personal details and custom artwork designs with confidentiality.",
+    url: "https://www.veloradigitizing.com/privacy-policy",
+    siteName: "Velora Digitizing",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy & Data Security | Velora Digitizing",
+    description:
+      "Read Velora Digitizing's Privacy Policy. Learn how we safeguard your personal details and custom artwork designs with confidentiality.",
+  },
   robots: {
     index: true,
     follow: true,

@@ -6,10 +6,9 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/_next/"],
+        disallow: ["/api/"],
       },
     ],
     sitemap: "https://www.veloradigitizing.com/sitemap.xml",
-    host: "https://www.veloradigitizing.com",
   };
 }

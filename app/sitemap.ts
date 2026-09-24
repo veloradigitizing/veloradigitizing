@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { PRODUCTS } from "./store/products";
+import { STORE_ITEMS } from "./store/catalog";
 
 const BASE_URL = "https://www.veloradigitizing.com";
 
@@ -67,12 +67,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  const productRoutes: MetadataRoute.Sitemap = PRODUCTS.map((product) => ({
-    url: `${BASE_URL}/store/${product.slug}`,
+  const storeRoutes: MetadataRoute.Sitemap = STORE_ITEMS.map((item) => ({
+    url: `${BASE_URL}/store/${item.slug}`,
     lastModified: new Date(),
     changeFrequency: "weekly",
-    priority: 0.7,
+    priority: item.kind === "bundle" ? 0.75 : 0.7,
   }));
 
-  return [...staticRoutes, ...productRoutes];
+  return [...staticRoutes, ...storeRoutes];
 }

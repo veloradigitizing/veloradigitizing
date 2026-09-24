@@ -7,6 +7,19 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.veloradigitizing.com/terms-and-conditions",
   },
+  openGraph: {
+    title: "Terms and Conditions of Service | Velora Digitizing",
+    description:
+      "Review the Terms and Conditions for Velora Digitizing embroidery digitizing, vector art conversion, and custom patch design services.",
+    url: "https://www.veloradigitizing.com/terms-and-conditions",
+    siteName: "Velora Digitizing",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms and Conditions of Service | Velora Digitizing",
+    description:
+      "Review the Terms and Conditions for Velora Digitizing embroidery digitizing, vector art conversion, and custom patch design services.",
+  },
   robots: {
     index: true,
     follow: true,

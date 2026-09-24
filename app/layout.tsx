@@ -94,21 +94,11 @@ export const metadata: Metadata = {
     description:
       "Convert your artwork into flawless embroidery files with premier stitch quality, 8–24h delivery, unlimited revisions, and 100% satisfaction guaranteed.",
     images: ["/images/og/og-home.webp"],
-    site: "@veloradigitizing",
+    site: "@burlinleo",
     creator: "@burlinleo",
   },
   alternates: {
     canonical: "https://www.veloradigitizing.com",
-  },
-  icons: {
-    icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/icon1.png", type: "image/png", sizes: "32x32" },
-    ],
-    apple: [
-      { url: "/apple-icon.png", type: "image/png", sizes: "180x180" },
-    ],
-    shortcut: "/favicon.ico",
   },
   other: {
     "og:see_also": [
@@ -137,9 +127,9 @@ export default function RootLayout({
         "url": "https://www.veloradigitizing.com",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.veloradigitizing.com/icon1.png",
-          "width": 512,
-          "height": 512,
+          "url": "https://www.veloradigitizing.com/images/veloralogo.webp",
+          "width": 1254,
+          "height": 1254,
         },
         "image": "https://www.veloradigitizing.com/images/og/og-home.webp",
         "description":
