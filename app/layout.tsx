@@ -26,11 +26,11 @@ const script = Dancing_Script({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.veloradigitizing.com"),
   title: {
-    default: "Velora Digitizing | #1 Custom Embroidery Digitizing & Vector Art Services",
+    default: "Custom Embroidery Digitizing & Vector Art | Velora Digitizing",
     template: "%s | Velora Digitizing",
   },
   description:
-    "Velora Digitizing provides premier custom embroidery digitizing and vector art conversion services. Flawless 3D puff, left chest logos, custom patches & rapid 8–24h turnaround. 100% satisfaction guaranteed.",
+    "Velora Digitizing provides custom embroidery digitizing & vector conversion. Flawless 3D puff, left chest logos & fast 8–24h delivery. Get a free quote today!",
   keywords: [
     "embroidery digitizing",
     "custom embroidery digitizing",

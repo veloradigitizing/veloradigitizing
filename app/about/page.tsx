@@ -12,9 +12,9 @@ import { FAQ, ABOUT_FAQS } from "../components/FAQ";
 import { IconName } from "../components/Icon";
 
 export const metadata: Metadata = {
-  title: "About Velora Digitizing | Master Embroidery Digitizers & Story",
+  title: "About Master Embroidery Digitizers",
   description:
-    "Learn about Velora Digitizing — our team of master digitizers with 10+ years of craftsmanship delivering precision embroidery stitch files and vector conversions worldwide.",
+    "Meet Velora Digitizing's master digitizers with 10+ years of craftsmanship delivering precision embroidery files with 100% stitch quality. Learn our story!",
   keywords: [
     "about velora digitizing",
     "embroidery digitizing experts",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     canonical: "https://www.veloradigitizing.com/about",
   },
   openGraph: {
-    title: "About Velora Digitizing | Master Embroidery Digitizers",
+    title: "About Master Embroidery Digitizers | Velora Digitizing",
     description:
-      "Crafting perfection stitch by stitch. Learn about our 10+ years of embroidery digitizing expertise and commitment to 100% stitch quality.",
+      "Meet Velora Digitizing's master digitizers with 10+ years of craftsmanship delivering precision embroidery files with 100% stitch quality. Learn our story!",
     url: "https://www.veloradigitizing.com/about",
     siteName: "Velora Digitizing",
     images: [
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Velora Digitizing | Master Embroidery Digitizers",
+    title: "About Master Embroidery Digitizers | Velora Digitizing",
     description:
       "Crafting perfection stitch by stitch. Discover our digitizing team, standards, and machine test processes.",
     images: ["/images/og/og-about.webp"],

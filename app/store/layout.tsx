@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Digital Embroidery Designs & Patches Store | Velora Digitizing",
+  title: "Digital Embroidery Designs Store",
   description:
-    "Shop premium ready-to-stitch embroidery design packages and digital patches. Instant download in DST, PES, JEF, EXP formats with verified stitch counts.",
+    "Shop premium ready-to-stitch embroidery designs & patch files. Instant download in DST, PES, JEF, and EXP formats with verified stitch counts. Download now!",
   keywords: [
     "embroidery designs store",
     "buy embroidery files",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Digital Embroidery Designs & Patches Store | Velora Digitizing",
     description:
-      "Instant download embroidery stitch files (DST, PES, JEF, EXP). Premium tested designs with complete color run sheets.",
+      "Shop premium ready-to-stitch embroidery designs & patch files. Instant download in DST, PES, JEF, and EXP formats with verified stitch counts. Download now!",
     url: "https://www.veloradigitizing.com/store",
     siteName: "Velora Digitizing",
     images: [

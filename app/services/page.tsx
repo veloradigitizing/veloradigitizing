@@ -10,9 +10,9 @@ import { FAQ, SERVICES_FAQS } from "../components/FAQ";
 import PortfolioSection from "../components/PortfolioSection";
 
 export const metadata: Metadata = {
-  title: "Custom Embroidery Digitizing Services | Logo, 3D Puff & Patches",
+  title: "Custom Embroidery Digitizing Services",
   description:
-    "Expert embroidery digitizing services by Velora Digitizing. Left chest logos, 3D puff embroidery, jacket back designs, applique, chenille, and custom patches. 8–24h turnaround.",
+    "Professional custom embroidery digitizing. Get flawless 3D puff, left chest logos & patches in 8–24h with free revisions. Request your free quote today!",
   keywords: [
     "embroidery digitizing services",
     "logo digitizing",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Custom Embroidery Digitizing Services | Velora Digitizing",
     description:
-      "Transform any logo or artwork into clean embroidery files. 3D Puff, Left Chest, Jacket Backs, Applique & Patches with 8–24h rush delivery.",
+      "Professional custom embroidery digitizing. Flawless 3D puff, left chest logos & patches in 8–24h with free revisions. Request your free quote today!",
     url: "https://www.veloradigitizing.com/services",
     siteName: "Velora Digitizing",
     images: [
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Custom Embroidery Digitizing Services | Velora Digitizing",
     description:
-      "Transform any logo or artwork into clean embroidery files. 3D Puff, Left Chest, Jacket Backs, Applique & Patches.",
+      "Professional custom embroidery digitizing. Flawless 3D puff, left chest logos & patches in 8–24h with free revisions. Request your free quote today!",
     images: ["/images/og/og-services.webp"],
   },
 };

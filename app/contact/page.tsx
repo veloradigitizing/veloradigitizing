@@ -10,9 +10,9 @@ import { FAQ, CONTACT_FAQS } from "../components/FAQ";
 import CTABanner from "../components/CTABanner";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Get a Free Embroidery Digitizing Quote",
+  title: "Contact Us for Free Digitizing Quote",
   description:
-    "Contact Velora Digitizing for free digitizing quotes, rush orders, or embroidery inquiries. Available 24/7 via WhatsApp, phone (+1 213 456 7880), or email.",
+    "Contact Velora Digitizing for free quotes, rush orders, or embroidery inquiries. Available 24/7 via WhatsApp, phone, or email. Get your free estimate now!",
   keywords: [
     "contact embroidery digitizer",
     "embroidery digitizing quote",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contact Velora Digitizing | Free Quote & 24/7 Support",
     description:
-      "Get a fast response and free quote for your embroidery digitizing or vector art project. 24/7 customer assistance.",
+      "Contact Velora Digitizing for free quotes, rush orders, or embroidery inquiries. Available 24/7 via WhatsApp, phone, or email. Get your free estimate now!",
     url: "https://www.veloradigitizing.com/contact",
     siteName: "Velora Digitizing",
     images: [

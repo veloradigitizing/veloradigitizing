@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Embroidery Digitizing Portfolio & Work Samples | Velora Digitizing",
+  title: "Embroidery Digitizing Portfolio",
   description:
-    "Explore Velora Digitizing's portfolio of work samples: 3D puff embroidery, cap logos, corporate left chest badges, jacket back embroidery, applique, and vector artwork.",
+    "Explore our embroidery digitizing portfolio. Inspect 3D puff caps, left chest badges, jacket back stitches & vector art samples. View our work and order now!",
   keywords: [
     "embroidery digitizing portfolio",
     "digitizing work samples",
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     canonical: "https://www.veloradigitizing.com/portfolio",
   },
   openGraph: {
-    title: "Embroidery Digitizing Portfolio & Work Samples | Velora Digitizing",
+    title: "Embroidery Digitizing Portfolio | Velora Digitizing",
     description:
-      "Inspect high-resolution digitized embroidery samples: 3D puff, left chest, jacket backs, custom patches, and vector artwork.",
+      "Explore our embroidery digitizing portfolio. Inspect 3D puff caps, left chest badges, jacket back stitches & vector art samples. View our work and order now!",
     url: "https://www.veloradigitizing.com/portfolio",
     siteName: "Velora Digitizing",
     images: [

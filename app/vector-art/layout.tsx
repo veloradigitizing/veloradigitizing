@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Vector Art Conversion Services | Raster to Vector Tracing",
+  title: "Vector Art Conversion Services",
   description:
-    "Convert low-res JPEG, PNG, or hand drawings into clean, scalable vector files (AI, EPS, SVG, PDF). Expert manual tracing for screen printing, vinyl & embroidery. 12–24h delivery.",
+    "Convert raster images to clean scalable vector art (AI, EPS, SVG, PDF). Expert manual tracing for screen printing & embroidery. Get your free quote today!",
   keywords: [
     "vector art conversion",
     "raster to vector conversion",
@@ -20,9 +20,9 @@ export const metadata: Metadata = {
     canonical: "https://www.veloradigitizing.com/vector-art",
   },
   openGraph: {
-    title: "Vector Art Conversion Services | Raster to Vector | Velora",
+    title: "Vector Art Conversion Services | Velora Digitizing",
     description:
-      "Convert low-res JPEG/PNG images into crisp, scalable vector artwork (AI, EPS, SVG, PDF) with manual node precision and unlimited revisions.",
+      "Convert raster images to clean scalable vector art (AI, EPS, SVG, PDF). Expert manual tracing for screen printing & embroidery. Get your free quote today!",
     url: "https://www.veloradigitizing.com/vector-art",
     siteName: "Velora Digitizing",
     images: [
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Vector Art Conversion Services | Velora Digitizing",
     description:
-      "Transform low-res images into infinitely scalable vector art (AI, EPS, SVG, PDF). Manual tracing with 12–24h turnaround.",
+      "Convert raster images to clean scalable vector art (AI, EPS, SVG, PDF). Expert manual tracing with 12–24h turnaround.",
     images: ["/images/og/og-vector-art.webp"],
   },
 };

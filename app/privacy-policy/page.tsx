@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Velora Digitizing",
+  title: "Privacy Policy & Data Security",
   description:
-    "Read the Velora Digitizing Privacy Policy. Understand how we collect, use, protect, and handle your artwork files and personal data.",
+    "Read Velora Digitizing's Privacy Policy. Learn how we safeguard your personal details and custom artwork designs with confidentiality. View policy.",
   alternates: {
     canonical: "https://www.veloradigitizing.com/privacy-policy",
   },

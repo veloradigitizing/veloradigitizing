@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms and Conditions | Velora Digitizing",
+  title: "Terms and Conditions of Service",
   description:
-    "Review the Terms and Conditions for Velora Digitizing embroidery digitizing, vector art conversion, and custom patch design services.",
+    "Review the Terms and Conditions for Velora Digitizing embroidery digitizing, vector art conversion, and custom patch design services. Read terms.",
   alternates: {
     canonical: "https://www.veloradigitizing.com/terms-and-conditions",
   },

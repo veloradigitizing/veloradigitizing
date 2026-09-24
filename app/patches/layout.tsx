@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Custom Embroidered Patches | Merrow Border, PVC & Chenille Patches",
+  title: "Custom Embroidered Patch Services",
   description:
-    "Custom patch digitizing & manufacturing by Velora Digitizing. Merrowed borders, laser cut, woven, varsity chenille, iron-on, velcro and tactical PVC patches. Wash-tested durability.",
+    "Custom patch digitizing & manufacturing. Merrow border, chenille, tactical PVC & iron-on embroidered patches with wash durability. Order custom patches now!",
   keywords: [
     "custom embroidered patches",
     "patch digitizing",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Custom Embroidered Patches | Velora Digitizing",
     description:
-      "Merrowed borders, laser-cut, chenille, woven, and tactical PVC patches digitized with precision stitch density.",
+      "Custom patch digitizing & manufacturing. Merrow border, chenille, tactical PVC & iron-on embroidered patches with wash durability. Order custom patches now!",
     url: "https://www.veloradigitizing.com/patches",
     siteName: "Velora Digitizing",
     images: [
