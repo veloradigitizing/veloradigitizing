@@ -4,6 +4,7 @@ import FeaturesSection from "./components/FeaturesSection";
 import homeBg from "./images/velora-embroidery-machine-lion.webp";
 import ServicesGrid from "./components/ServicesGrid";
 // import WhyChooseUs from "./components/WhyChooseUs";
+//
 import FeaturedCategories from "./components/FeaturedCategories";
 import PatchesStoreSection from "./components/PatchesStoreSection";
 import ProcessSteps from "./components/ProcessSteps";
