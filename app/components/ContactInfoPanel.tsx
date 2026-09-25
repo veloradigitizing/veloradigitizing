@@ -13,9 +13,9 @@ export default function ContactInfoPanel({
       direction="left"
       className="rounded-2xl border border-navy-950/10 bg-white p-8"
     >
-      <h3 className="font-serif text-2xl font-bold text-navy-950">
+      <h2 className="font-serif text-2xl font-bold text-navy-950">
         Get In Touch
-      </h3>
+      </h2>
       <div className="mt-3 h-[3px] w-12 rounded-full bg-brand-600" />
       <div className="mt-8 flex flex-col gap-7">
         {contactInfo.map((info, i) => (
@@ -28,7 +28,7 @@ export default function ContactInfoPanel({
               <Icon name={info.icon} className="h-5 w-5" />
             </span>
             <div>
-              <p className="text-sm font-bold text-brand-600">{info.title}</p>
+              <h3 className="text-sm font-bold text-brand-600">{info.title}</h3>
               {info.lines.map((l) => (
                 <p key={l} className="text-sm text-navy-950/60">
                   {l}

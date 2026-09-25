@@ -41,7 +41,7 @@ export default function WhyChooseUs({
               <span className="vr-icon-pop inline-flex text-white">
                 <Icon name={item.icon} className="h-8 w-8" strokeWidth={1.75} />
               </span>
-              <p className="text-sm font-semibold text-white">{item.title}</p>
+              <h3 className="text-sm font-semibold text-white">{item.title}</h3>
               {item.description && (
                 <p className="text-xs text-white/50">{item.description}</p>
               )}

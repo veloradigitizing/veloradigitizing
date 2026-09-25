@@ -54,7 +54,7 @@ export default function PatchesStoreSection() {
                   <div className="vr-zoom relative aspect-square w-full overflow-hidden bg-white/[0.06]">
                     <Image
                       src={product.image}
-                      alt={product.title}
+                      alt={`${product.title} embroidered patch design`}
                       fill
                       sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
                       className="object-cover"
@@ -64,7 +64,7 @@ export default function PatchesStoreSection() {
                     </span>
                   </div>
                   <div className="p-3">
-                    <p className="text-sm font-semibold text-white line-clamp-1">{product.title}</p>
+                    <h3 className="text-sm font-semibold text-white line-clamp-1">{product.title}</h3>
                     <div className="mt-2 flex items-center justify-between">
                       <span className="text-sm font-bold text-gold-400">${product.price.toFixed(2)}</span>
                       <button

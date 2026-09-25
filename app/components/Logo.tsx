@@ -5,7 +5,7 @@ export default function Logo({ dark = false }: { dark?: boolean }) {
     <div className="flex items-center gap-2.5 shrink-0 cursor-pointer">
       <Image
         src="/images/veloralogo.webp"
-        alt="Velora Digitizing"
+        alt="Velora Digitizing logo"
         width={40}
         height={40}
         className={`h-10 w-10 rounded-full object-cover ${

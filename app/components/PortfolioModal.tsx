@@ -62,7 +62,7 @@ export default function PortfolioModal({
         <div className="relative aspect-[4/3] w-full bg-navy-950/[0.03]">
           <Image
             src={item.image}
-            alt={item.title}
+            alt={`${item.title} - ${item.tag} embroidery digitizing sample`}
             fill
             sizes="(max-width: 768px) 100vw, 768px"
             className="object-contain"
@@ -70,7 +70,7 @@ export default function PortfolioModal({
         </div>
 
         <div className="flex items-center justify-between gap-3 border-t border-navy-950/10 px-5 py-4">
-          <p className="text-base font-bold text-navy-950">{item.title}</p>
+          <h2 className="text-base font-bold text-navy-950">{item.title}</h2>
           <span className="shrink-0 rounded-full bg-brand-50 px-3 py-1.5 text-xs font-semibold text-brand-600">
             {item.tag}
           </span>

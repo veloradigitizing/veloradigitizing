@@ -93,7 +93,7 @@ function TestimonialCard({ t }: { t: Testimonial }) {
         <span className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full ring-2 ring-brand-100 ring-offset-2 transition-transform duration-300 group-hover:scale-105">
           <Image
             src={t.image}
-            alt={`${t.name} - ${t.location}`}
+            alt={`${t.name}, Velora Digitizing client from ${t.location}`}
             fill
             sizes="48px"
             className="object-cover object-center"

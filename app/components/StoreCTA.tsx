@@ -26,9 +26,9 @@ export default function StoreCTA({
         className="vr-lift group flex flex-col gap-8 rounded-2xl bg-navy-950 p-9 lg:flex-row lg:items-center lg:justify-between"
       >
         <div>
-          <h3 className="font-serif text-2xl font-bold text-white">
+          <h2 className="font-serif text-2xl font-bold text-white">
             {title}
-          </h3>
+          </h2>
           <p className="mt-2 max-w-md text-sm text-white/60">
             {subtitle}
           </p>

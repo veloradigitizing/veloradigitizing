@@ -51,9 +51,9 @@ export default function ContactForm({
       direction="right"
       className="rounded-2xl border border-navy-950/10 bg-white p-8"
     >
-      <h3 className="font-serif text-2xl font-bold text-navy-950">
+      <h2 className="font-serif text-2xl font-bold text-navy-950">
         Send Us a Message
-      </h3>
+      </h2>
       <div className="mt-3 h-[3px] w-12 rounded-full bg-brand-600" />
       <p className="mt-4 text-sm text-navy-950/55">
         Fill out the form and we&rsquo;ll get back to you as soon as possible.

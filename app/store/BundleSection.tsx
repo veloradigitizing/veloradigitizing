@@ -238,7 +238,7 @@ export default function BundleSection({
                   <Link href={`/store/${bundle.slug}`} className="relative block aspect-[4/3] w-full overflow-hidden bg-gradient-to-br from-gray-100 via-gray-50 to-white flex-shrink-0">
                     <Image
                       src={bundle.image}
-                      alt={bundle.name}
+                      alt={`${bundle.name} embroidery patch bundle preview`}
                       fill
                       sizes="(max-width: 640px) 300px, (max-width: 768px) 320px, 340px"
                       className="object-cover transition-transform duration-700 group-hover:scale-105"

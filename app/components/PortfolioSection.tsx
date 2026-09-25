@@ -171,7 +171,7 @@ export default function PortfolioSection() {
                 <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-gray-100 to-gray-50">
                   <Image
                     src={item.image}
-                    alt={item.title}
+                    alt={`${item.title} embroidery digitizing samples`}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-110"

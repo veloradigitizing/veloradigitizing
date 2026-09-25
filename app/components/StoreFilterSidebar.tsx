@@ -33,9 +33,9 @@ export default function StoreFilterSidebar({
     <aside className={`${isOpen ? "block" : "hidden"} lg:block`}>
       <div className="sticky top-24 rounded-xl border border-navy-950/10 bg-white p-6 shadow-sm">
         <div className="flex items-center justify-between">
-          <h3 className="text-sm font-bold uppercase tracking-wider text-navy-950">
+          <h2 className="text-sm font-bold uppercase tracking-wider text-navy-950">
             Patch Filters
-          </h3>
+          </h2>
           {hasFilters && (
             <button
               onClick={onClearFilters}
@@ -63,9 +63,9 @@ export default function StoreFilterSidebar({
 
         {/* Category Filter */}
         <div className="mt-6">
-          <h4 className="mb-3 text-xs font-bold uppercase tracking-wider text-navy-950/60">
+          <h3 className="mb-3 text-xs font-bold uppercase tracking-wider text-navy-950/60">
             Patch Type
-          </h4>
+          </h3>
           <div className="flex flex-col gap-1.5">
             {categories.map((cat) => (
               <button
@@ -89,9 +89,9 @@ export default function StoreFilterSidebar({
 
         {/* Price Range Filter */}
         <div className="mt-6">
-          <h4 className="mb-3 text-xs font-bold uppercase tracking-wider text-navy-950/60">
+          <h3 className="mb-3 text-xs font-bold uppercase tracking-wider text-navy-950/60">
             Price Range
-          </h4>
+          </h3>
           <input
             type="range"
             min="0"

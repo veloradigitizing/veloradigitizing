@@ -28,18 +28,30 @@ const WHY_CHOOSE_ITEMS = [
   { icon: "smile" as const, title: "Expert Digitizers", description: "Professional digitizers with 10+ years of experience in every stitch type." },
 ];
 
-function PortfolioContent() {
+/**
+ * Reads ?category= from the URL. Isolated in its own Suspense boundary so
+ * the rest of the page still prerenders to static HTML for search engines.
+ */
+function CategoryFromUrl({ onChange }: { onChange: (category: string) => void }) {
   const searchParams = useSearchParams();
   const urlCategory = searchParams.get("category") || "all";
 
-  const [active, setActive] = useState(urlCategory);
+  useEffect(() => {
+    onChange(urlCategory);
+  }, [urlCategory, onChange]);
+
+  return null;
+}
+
+function PortfolioContent() {
+  const [active, setActive] = useState("all");
   const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
   const [previewItem, setPreviewItem] = useState<PortfolioItem | null>(null);
   const portfolioSectionRef = useRef<HTMLDivElement>(null);
 
   const isTabClick = useRef(false);
 
-  useEffect(() => {
+  const handleUrlCategory = useCallback((urlCategory: string) => {
     if (urlCategory && urlCategory !== "all") {
       setActive(urlCategory);
 
@@ -48,7 +60,8 @@ function PortfolioContent() {
           portfolioSectionRef.current?.scrollIntoView({
             behavior: "smooth",
             block: "start", }); }, 400); }
-      isTabClick.current = false; } }, [urlCategory]);
+    }
+    isTabClick.current = false; }, []);
 
   const filteredItems =
     active === "all"
@@ -75,6 +88,9 @@ function PortfolioContent() {
   return (
     <>
       <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10">
+        <Suspense fallback={null}>
+          <CategoryFromUrl onChange={handleUrlCategory} />
+        </Suspense>
         
         <div className="mt-8">
           <Reveal direction="up" delay={80}>
@@ -240,9 +256,7 @@ export default function PortfolioPage() {
         ]}
       />
 
-      <Suspense fallback={<section className="mx-auto max-w-7xl px-5 py-20 lg:px-10"><div className="flex items-center justify-center py-16"><p className="text-sm text-navy-950/50">Loading portfolio...</p></div></section>}>
-        <PortfolioContent />
-      </Suspense>
+      <PortfolioContent />
     </>
   );
 }

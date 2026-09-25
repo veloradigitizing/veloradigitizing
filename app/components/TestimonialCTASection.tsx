@@ -78,9 +78,9 @@ export default function TestimonialCTASection({
             {eyebrow}
           </p>
           <div className="mt-3 flex items-center gap-3">
-            <h3 className="font-serif text-2xl font-bold text-navy-950">
+            <h2 className="font-serif text-2xl font-bold text-navy-950">
               {title}
-            </h3>
+            </h2>
             <StarRating />
           </div>
 
@@ -98,7 +98,7 @@ export default function TestimonialCTASection({
                 <span className="relative h-11 w-11 shrink-0 overflow-hidden rounded-full ring-2 ring-brand-100 ring-offset-2">
                   <Image
                     src={current.authorImage}
-                    alt={`${current.author} - ${current.authorOrigin}`}
+                    alt={`${current.author}, Velora Digitizing client from ${current.authorOrigin}`}
                     fill
                     sizes="44px"
                     className="object-cover object-center"

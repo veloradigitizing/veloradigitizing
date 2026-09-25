@@ -28,7 +28,7 @@ export default function WhyShopSection({
             <span className="vr-icon-pop">
               <IconCircle icon={item.icon} size="md" />
             </span>
-            <p className="text-xs font-bold text-navy-950">{item.title}</p>
+            <h3 className="text-xs font-bold text-navy-950">{item.title}</h3>
             <p className="[11px] leading-relaxed text-navy-950/50">
               {item.description}
             </p>

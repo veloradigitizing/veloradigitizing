@@ -43,15 +43,15 @@ export default function TeamSection({
                 <div className="vr-zoom relative aspect-square w-full overflow-hidden rounded-xl border border-navy-950/10 bg-navy-950/[0.03]">
                   <Image
                     src={member.image}
-                    alt={member.name}
+                    alt={`${member.name}, ${member.role} at Velora Digitizing`}
                     fill
                     sizes="(max-width: 640px) 50vw, 25vw"
                     className="object-cover"
                   />
                 </div>
-                <p className="mt-3 text-sm font-semibold text-navy-950">
+                <h3 className="mt-3 text-sm font-semibold text-navy-950">
                   {member.name}
-                </p>
+                </h3>
                 <p className="text-xs text-navy-950/50">{member.role}</p>
               </Reveal>
             ))}

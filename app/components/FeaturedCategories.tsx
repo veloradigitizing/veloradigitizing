@@ -198,16 +198,16 @@ export default function FeaturedCategories() {
                   <div className="vr-zoom relative aspect-[2/3] w-full overflow-hidden bg-gray-100">
                     <img
                       src={cat.image}
-                      alt={cat.name}
+                      alt={`${cat.subtitle} embroidery sample by Velora Digitizing`}
                       className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                       loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 p-4 z-10">
-                    <span className="block text-sm font-bold uppercase tracking-wide text-white">
+                    <h3 className="block text-sm font-bold uppercase tracking-wide text-white">
                       {cat.name}
-                    </span>
+                    </h3>
                     <span className="block mt-0.5 text-[11px] font-medium uppercase tracking-wider text-white/75 leading-tight">
                       {cat.subtitle}
                     </span>

@@ -208,7 +208,8 @@ export function FAQ({
                         : "border-navy-950/10 bg-white hover:border-brand-200 hover:shadow-md"
                     }`}
                   >
-                    <button
+                    <h3>
+                      <button
                       onClick={() =>
                         setOpenIndex(isOpen ? null : item.originalIndex)
                       }
@@ -236,6 +237,7 @@ export function FAQ({
                         <Icon name="chevron-down" className="h-4 w-4" />
                       </span>
                     </button>
+                    </h3>
 
                     {/* Smooth grid-rows animation — no jank, no scroll jump. */}
                     <div

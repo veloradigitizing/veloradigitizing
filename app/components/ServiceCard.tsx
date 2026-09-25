@@ -76,7 +76,7 @@ export default function ServiceCard({ service }: { service: Service }) {
           {service.iconImage ? (
             <Image
               src={service.iconImage}
-              alt={service.title}
+              alt={`${service.title} service icon`}
               width={55}
               height={55}
               className={`h-12 w-12 object-contain ${

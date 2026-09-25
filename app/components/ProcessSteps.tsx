@@ -58,7 +58,7 @@ export default function ProcessSteps() {
               <p className="mt-1 text-xs font-bold uppercase tracking-[0.15em] text-brand-600">
                 Step {s.step}
               </p>
-              <h4 className="-mt-2 font-semibold text-navy-950">{s.title}</h4>
+              <h3 className="-mt-2 font-semibold text-navy-950">{s.title}</h3>
               <p className="max-w-[14rem] text-sm text-navy-950/55">{s.sub}</p>
             </Reveal>
             {i < STEPS.length - 1 && (

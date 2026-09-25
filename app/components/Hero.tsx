@@ -322,6 +322,7 @@ export default function Hero({
                 ) : (
                   line.text
                 )}
+                {i < titleLines.length - 1 ? " " : ""}
               </span>
             ))}
           </h1>

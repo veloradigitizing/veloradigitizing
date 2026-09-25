@@ -74,7 +74,7 @@ export default function PatchCardGrid({
                 <div className="vr-zoom relative aspect-square w-full overflow-hidden bg-gradient-to-br from-gray-100 via-gray-50 to-white">
                   <Image
                     src={patch.image}
-                    alt={patch.title}
+                    alt={`${patch.title} embroidered patch design, ${patch.size}`}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
                     className="object-cover"
@@ -100,12 +100,14 @@ export default function PatchCardGrid({
               </p>
 
               {/* Title */}
-              <Link
-                href={`/store/${patch.slug}`}
-                className="mt-1 text-sm font-semibold text-navy-950 hover:text-brand-600 line-clamp-2"
-              >
-                {patch.title}
-              </Link>
+              <h3 className="mt-1 text-sm font-semibold line-clamp-2">
+                <Link
+                  href={`/store/${patch.slug}`}
+                  className="text-navy-950 hover:text-brand-600"
+                >
+                  {patch.title}
+                </Link>
+              </h3>
 
               {/* Stitch Count Info */}
               <p className="mt-1 text-xs text-navy-950/45">

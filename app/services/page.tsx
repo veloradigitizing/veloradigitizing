@@ -116,7 +116,7 @@ export default function ServicesPage() {
       <Hero
         eyebrow="What We Digitize"
         titleLines={[
-          { text: "Premium Embroidery" },
+          { text: "Custom Embroidery" },
           { text: "Digitizing Services", accent: true },
         ]}
         description="We offer high quality embroidery digitizing services with fast turnaround, perfect stitching and 100% customer satisfaction."

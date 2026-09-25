@@ -437,7 +437,7 @@ export default function PortfolioCard({
       <div className="vr-zoom relative aspect-[4/3] w-full overflow-hidden bg-navy-950/[0.03]">
         <Image
           src={item.image}
-          alt={item.title}
+          alt={`${item.title} - ${item.tag} embroidery digitizing sample`}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-cover"
@@ -469,7 +469,7 @@ export default function PortfolioCard({
         </div>
       </div>
       <div className="px-4 py-3">
-        <p className="text-sm font-semibold text-navy-950">{item.title}</p>
+        <h3 className="text-sm font-semibold text-navy-950">{item.title}</h3>
       </div>
     </div>
   );

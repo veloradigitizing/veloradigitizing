@@ -60,7 +60,7 @@ export default function ProductDetail({ product, related }: Props) {
           <div className="relative aspect-square w-full overflow-hidden rounded-2xl bg-navy-950/[0.03]">
             <Image
               src={product.image}
-              alt={product.title}
+              alt={`${product.title} - ${product.categoryLabel} preview`}
               fill
               priority
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -157,19 +157,21 @@ export default function ProductDetail({ product, related }: Props) {
                   <div className="vr-zoom relative aspect-square w-full overflow-hidden rounded-lg bg-navy-950/[0.03]">
                     <Image
                       src={p.image}
-                      alt={p.title}
+                      alt={`${p.title} embroidery design preview`}
                       fill
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                       className="object-cover"
                     />
                   </div>
                 </Link>
-                <Link
-                  href={`/store/${p.slug}`}
-                  className="mt-3 flex-1 text-sm font-semibold text-navy-950 hover:text-brand-600"
-                >
-                  {p.title}
-                </Link>
+                <h3 className="mt-3 flex-1 text-sm font-semibold">
+                  <Link
+                    href={`/store/${p.slug}`}
+                    className="text-navy-950 hover:text-brand-600"
+                  >
+                    {p.title}
+                  </Link>
+                </h3>
                 <p className="mt-2 font-serif text-lg font-bold text-brand-600">
                   ${p.price.toFixed(2)}
                 </p>

@@ -41,7 +41,7 @@ export default function FeatureCards({
                 <Icon name={item.icon} className="h-6 w-6" />
               </span>
             </span>
-            <p className="text-sm font-bold text-navy-950">{item.title}</p>
+            <h3 className="text-sm font-bold text-navy-950">{item.title}</h3>
             <p className="text-xs leading-relaxed text-navy-950/55">
               {item.description}
             </p>
