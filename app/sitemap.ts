@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { STORE_ITEMS } from "./store/catalog";
+import { BLOG_POSTS } from "./blog/posts";
 
 const BASE_URL = "https://www.veloradigitizing.com";
 
@@ -42,6 +43,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${BASE_URL}/blog`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
       url: `${BASE_URL}/about`,
       lastModified: new Date(),
       changeFrequency: "monthly",
@@ -74,5 +81,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: item.kind === "bundle" ? 0.75 : 0.7,
   }));
 
-  return [...staticRoutes, ...storeRoutes];
+  const blogRoutes: MetadataRoute.Sitemap = BLOG_POSTS.map((post) => ({
+    url: `${BASE_URL}/blog/${post.slug}`,
+    lastModified: new Date(post.updatedAt ?? post.publishedAt),
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
+  return [...staticRoutes, ...storeRoutes, ...blogRoutes];
 }
