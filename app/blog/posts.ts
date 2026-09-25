@@ -54,6 +54,7 @@ export const BLOG_POSTS: BlogPost[] = [
     tags: ["embroidery digitizing", "beginner guide", "stitch files"],
     publishedAt: "2026-09-25",
     readTime: 7,
+    image: "/images/blog/what-is-embroidery-digitizing.jpg",
     imagePrompt:
       "Close-up photo of a professional embroidery digitizer's desk: a large monitor showing embroidery digitizing software with a colorful logo mapped into stitch paths, a multi-needle embroidery machine slightly out of focus in the background stitching the same logo on a navy polo shirt, warm studio lighting, shallow depth of field, photorealistic, 16:9.",
     imageAlt:
@@ -184,6 +185,7 @@ export const BLOG_POSTS: BlogPost[] = [
     tags: ["DST", "PES", "JEF", "embroidery file formats"],
     publishedAt: "2026-09-25",
     readTime: 6,
+    image: "/images/blog/dst-vs-pes-vs-jef-embroidery-file-formats.jpg",
     imagePrompt:
       "Flat lay photo on a clean white desk: a USB stick, an embroidered cap with a logo, and a laptop screen showing a file browser with embroidery files named logo.dst, logo.pes and logo.jef, thread spools in navy, gold and white arranged beside them, soft natural light, photorealistic, 16:9.",
     imageAlt:
@@ -310,6 +312,7 @@ export const BLOG_POSTS: BlogPost[] = [
     tags: ["3D puff embroidery", "cap digitizing", "foam embroidery"],
     publishedAt: "2026-09-25",
     readTime: 8,
+    image: "/images/blog/3d-puff-embroidery-digitizing-guide.jpg",
     imagePrompt:
       "Macro product photo of a black structured snapback cap with bold white 3D puff embroidered letters on the front panel, raised foam lettering with crisp satin edges, a sheet of white embroidery foam and a spool of white thread beside the cap, dark studio background with soft rim light, photorealistic, 16:9.",
     imageAlt:
@@ -440,6 +443,7 @@ export const BLOG_POSTS: BlogPost[] = [
     tags: ["logo preparation", "artwork tips", "vector artwork"],
     publishedAt: "2026-09-25",
     readTime: 7,
+    image: "/images/blog/how-to-prepare-logo-for-embroidery-digitizing.jpg",
     imagePrompt:
       "Overhead photo of a designer's desk with a printed logo sheet showing the same logo in three versions: original with gradients, simplified flat version, and the finished embroidered version on a white polo shirt, a ruler, pencil and thread color chart beside them, bright even lighting, photorealistic, 16:9.",
     imageAlt:
@@ -569,6 +573,7 @@ export const BLOG_POSTS: BlogPost[] = [
     tags: ["custom patches", "woven patches", "PVC patches", "chenille"],
     publishedAt: "2026-09-25",
     readTime: 7,
+    image: "/images/blog/embroidered-vs-woven-vs-pvc-patches.jpg",
     imagePrompt:
       "Studio product photo of five custom patches laid in a row on a dark denim jacket: an embroidered merrow-border patch, a woven patch with fine detail, a rubber PVC patch, a fuzzy chenille varsity letter patch and a printed patch, each with the same simple mountain logo, soft directional lighting showing texture differences, photorealistic, 16:9.",
     imageAlt:
@@ -720,6 +725,7 @@ export const BLOG_POSTS: BlogPost[] = [
     tags: ["digitizing mistakes", "troubleshooting", "embroidery quality"],
     publishedAt: "2026-09-25",
     readTime: 8,
+    image: "/images/blog/common-embroidery-digitizing-mistakes.jpg",
     imagePrompt:
       "Side-by-side comparison photo of two embroidered versions of the same round logo on grey fleece: left side puckered with gaps, loose threads and unreadable small text, right side crisp and clean with smooth satin edges, embroidery hoop visible at the edge, neutral studio lighting, photorealistic, 16:9.",
     imageAlt:
