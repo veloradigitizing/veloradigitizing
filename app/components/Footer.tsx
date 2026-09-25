@@ -217,10 +217,10 @@ export default function Footer() {
                 <Phone className="mt-0.5 h-4 w-4 shrink-0 text-brand-500 transition-transform duration-300 group-hover:scale-110" />
                 <span className="space-y-0.5">
                   <a
-                    href="tel:+12134567880"
+                    href="tel:+12136358137"
                     className="block transition-colors duration-300 hover:text-brand-400 focus:outline-none focus:text-brand-400"
                   >
-                    +1 (213) 456-7880
+                    +1 (213) 635-8137
                   </a>
                   <span className="block text-xs text-white/40">
                     WhatsApp Available

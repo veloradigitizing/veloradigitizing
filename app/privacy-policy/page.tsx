@@ -126,7 +126,7 @@ export default function PrivacyPolicyPage() {
               <div className="bg-[#eaf1ff] rounded-lg p-5">
                 <p className="font-semibold text-[#060e28] mb-1">Velora Digitizing</p>
                 <p>Email: privacy@veloradigitizing.com</p>
-                <p>Phone: +1 (555) 123-4567</p>
+                <p>Phone: +1 (213) 635-8137</p>
               </div>
             </div>
           </div>

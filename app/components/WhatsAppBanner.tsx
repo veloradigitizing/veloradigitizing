@@ -6,7 +6,7 @@ export default function WhatsAppBanner({
   title = "Need Urgent Help?",
   subtitle = "Chat with us on WhatsApp for instant support.",
   ctaLabel = "CHAT ON WHATSAPP",
-  ctaHref = "https://wa.me/12134567880",
+  ctaHref = "https://wa.me/12136358137",
 }: {
   icon?: IconName;
   title?: string;

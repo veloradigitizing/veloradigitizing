@@ -36,7 +36,7 @@ const homeJsonLd = {
       "url": "https://www.veloradigitizing.com",
       "logo": "https://www.veloradigitizing.com/images/veloralogo.webp",
       "image": "https://www.veloradigitizing.com/images/og/og-home.webp",
-      "telephone": "+1-213-456-7880",
+      "telephone": "+1-213-635-8137",
       "email": "info@veloradigitizing.com",
       "priceRange": "$$",
       "address": {

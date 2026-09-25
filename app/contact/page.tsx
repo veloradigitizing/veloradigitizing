@@ -60,7 +60,7 @@ const contactJsonLd = {
       "mainEntity": {
         "@type": "LocalBusiness",
         "name": "Velora Digitizing",
-        "telephone": "+1-213-456-7880",
+        "telephone": "+1-213-635-8137",
         "email": "info@veloradigitizing.com",
         "address": {
           "@type": "PostalAddress",
@@ -101,7 +101,7 @@ const CONTACT_INFO: { icon: IconName; title: string; lines: string[] }[] = [
   {
     icon: "phone",
     title: "Call / WhatsApp",
-    lines: ["+1 (213) 456-7880", "24/7 Available"],
+    lines: ["+1 (213) 635-8137", "24/7 Available"],
   },
   {
     icon: "globe",
