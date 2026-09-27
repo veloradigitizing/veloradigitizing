@@ -24,6 +24,8 @@ export const metadata: Metadata = {
     "cap digitizing service",
     "custom patch digitizing",
     "DST PES EXP conversion",
+    "convert png to dst embroidery file",
+    "cheap 3d puff digitizing for caps",
   ],
   alternates: {
     canonical: "https://www.veloradigitizing.com/services",
