@@ -32,8 +32,8 @@ function CartButton() {
   return (
     <button
       onClick={toggleCart}
-      className="relative flex h-9 w-9 items-center justify-center rounded-full border border-navy-950/15 text-navy-950/70 transition-colors hover:border-brand-600 hover:text-brand-600"
-      aria-label="Open cart"
+      className="relative flex h-10 w-10 min-h-[40px] min-w-[40px] items-center justify-center rounded-full border border-navy-950/15 text-navy-950/80 transition-colors hover:border-brand-600 hover:text-brand-600"
+      aria-label={`Open shopping cart, ${itemCount} items`}
     >
       <Icon name="cart" className="h-[18px] w-[18px]" />
       {itemCount > 0 && (
@@ -308,7 +308,13 @@ export default function Header() {
               </span>
               <span aria-hidden className="vr-arrow relative h-3.5 w-3.5 shrink-0 transition-transform group-hover:translate-x-0.5 sm:h-4 sm:w-4">&rarr;</span>
             </Link>
-            <button type="button" aria-label="Toggle menu" aria-expanded={openState[0]} onClick={() => setOpen(!openState[0])} className="lg:hidden inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-md border border-navy-950/15 text-navy-950 transition-colors hover:border-brand-600 hover:text-brand-600 sm:h-10 sm:w-10">
+            <button
+              type="button"
+              aria-label={openState[0] ? "Close navigation menu" : "Open navigation menu"}
+              aria-expanded={openState[0]}
+              onClick={() => setOpen(!openState[0])}
+              className="lg:hidden inline-flex h-10 w-10 min-h-[40px] min-w-[40px] shrink-0 items-center justify-center rounded-md border border-navy-950/15 text-navy-950 transition-colors hover:border-brand-600 hover:text-brand-600"
+            >
               {openState[0] ? <X size={20} /> : <Menu size={20} />}
             </button>
           </div>

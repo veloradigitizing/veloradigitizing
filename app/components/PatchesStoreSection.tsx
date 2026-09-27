@@ -69,6 +69,7 @@ export default function PatchesStoreSection() {
                       <span className="text-sm font-bold text-gold-400">${product.price.toFixed(2)}</span>
                       <button
                         onClick={() => handleAddToCart(product)}
+                        aria-label={`Add ${product.title} to cart`}
                         className="inline-flex items-center gap-1.5 rounded-md bg-brand-600 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-wide text-white transition-all hover:bg-brand-700 hover:shadow-md hover:shadow-brand-600/20 active:scale-95"
                       >
                         <Icon name="cart" className="h-3 w-3" />

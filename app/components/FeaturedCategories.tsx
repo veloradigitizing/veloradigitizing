@@ -168,7 +168,7 @@ export default function FeaturedCategories() {
                 onClick={() => scroll("left")}
                 disabled={!canScrollLeft}
                 className={leftBtnClass}
-                aria-label="Previous"
+                aria-label="Scroll to previous categories"
               >
                 <Icon name="chevron-down" className="h-4 w-4 rotate-90" />
               </button>
@@ -176,7 +176,7 @@ export default function FeaturedCategories() {
                 onClick={() => scroll("right")}
                 disabled={!canScrollRight}
                 className={rightBtnClass}
-                aria-label="Next"
+                aria-label="Scroll to next categories"
               >
                 <Icon name="chevron-down" className="h-4 w-4 -rotate-90" />
               </button>
@@ -193,6 +193,7 @@ export default function FeaturedCategories() {
                   key={cat.id}
                   href={cat.href}
                   data-feature-card
+                  aria-label={`View ${cat.name} - ${cat.subtitle} designs`}
                   className="vr-lift group relative flex-shrink-0 overflow-hidden rounded-xl border border-navy-950/10 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md snap-start w-[290px] sm:w-[230px] md:w-[250px] lg:w-[calc(25%-12px)] xl:w-[calc(20%-13px)]"
                 >
                   <div className="vr-zoom relative aspect-[2/3] w-full overflow-hidden bg-gray-100">
@@ -217,7 +218,7 @@ export default function FeaturedCategories() {
             </div>
 
             {/* Dots Indicator — one dot per scroll page (not per item) */}
-            <div className="mt-5 flex justify-center gap-1.5">
+            <div className="mt-5 flex justify-center gap-2">
               {Array.from({ length: maxIndex + 1 }).map((_, i) => (
                 <button
                   key={i}
@@ -237,10 +238,10 @@ export default function FeaturedCategories() {
                   }}
                   className={
                     i === activeIndex
-                      ? "h-1.5 rounded-full transition-all duration-300 w-7 bg-brand-600"
-                      : "h-1.5 rounded-full transition-all duration-300 w-1.5 bg-navy-950/15"
+                      ? "h-2 rounded-full transition-all duration-300 w-7 bg-brand-600"
+                      : "h-2 rounded-full transition-all duration-300 w-2 bg-navy-950/20 hover:bg-navy-950/40"
                   }
-                  aria-label={"Go to page " + (i + 1)}
+                  aria-label={"Go to categories slide " + (i + 1)}
                 />
               ))}
             </div>

@@ -50,20 +50,21 @@ export default function StoreFilterSidebar({
         <div className="relative mt-5">
           <Icon
             name="search"
-            className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-navy-950/35"
+            className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-navy-950/60"
           />
           <input
             type="text"
             value={query}
             onChange={(e) => onQueryChange(e.target.value)}
             placeholder="Search patches..."
-            className="h-10 w-full rounded-lg border border-navy-950/12 pl-9 pr-3 text-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/15"
+            aria-label="Search patches by keyword"
+            className="h-10 w-full rounded-lg border border-navy-950/20 pl-9 pr-3 text-sm text-navy-950 outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/15"
           />
         </div>
 
         {/* Category Filter */}
         <div className="mt-6">
-          <h3 className="mb-3 text-xs font-bold uppercase tracking-wider text-navy-950/60">
+          <h3 className="mb-3 text-xs font-bold uppercase tracking-wider text-navy-950/80">
             Patch Type
           </h3>
           <div className="flex flex-col gap-1.5">
@@ -71,15 +72,16 @@ export default function StoreFilterSidebar({
               <button
                 key={cat.value}
                 onClick={() => onCategoryChange(cat.value)}
+                aria-label={`Filter by category ${cat.label}`}
                 className={`flex items-center gap-2.5 rounded-lg px-3 py-2 text-left text-sm font-medium transition-all ${
                   activeCategory === cat.value
                     ? "bg-brand-50 text-brand-700 ring-1 ring-brand-500/20"
-                    : "text-navy-950/65 hover:bg-navy-950/[0.03] hover:text-navy-950"
+                    : "text-navy-950/80 hover:bg-navy-950/[0.04] hover:text-navy-950"
                 }`}
               >
                 <Icon
                   name={cat.icon as IconName}
-                  className={`h-4 w-4 ${activeCategory === cat.value ? "text-brand-600" : "text-navy-930/40"}`}
+                  className={`h-4 w-4 ${activeCategory === cat.value ? "text-brand-600" : "text-navy-950/60"}`}
                 />
                 {cat.label}
               </button>
@@ -89,7 +91,7 @@ export default function StoreFilterSidebar({
 
         {/* Price Range Filter */}
         <div className="mt-6">
-          <h3 className="mb-3 text-xs font-bold uppercase tracking-wider text-navy-950/60">
+          <h3 className="mb-3 text-xs font-bold uppercase tracking-wider text-navy-950/80">
             Price Range
           </h3>
           <input
@@ -99,9 +101,10 @@ export default function StoreFilterSidebar({
             step="0.5"
             value={maxPrice}
             onChange={(e) => onMaxPriceChange(Number(e.target.value))}
+            aria-label="Filter patches by maximum price"
             className="mt-2 w-full accent-brand-600"
           />
-          <div className="mt-2 flex items-center justify-between text-xs text-navy-950/50">
+          <div className="mt-2 flex items-center justify-between text-xs text-navy-950/70 font-medium">
             <span>$0</span>
             <span className="rounded-full bg-brand-50 px-2.5 py-1 font-semibold text-brand-700">
               Up to ${maxPrice.toFixed(2)}

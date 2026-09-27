@@ -124,15 +124,15 @@ export default function AnnouncementBar() {
         </div>
 
         {/* Dots */}
-        <div className="hidden items-center gap-1 sm:flex">
+        <div className="hidden items-center gap-1.5 sm:flex">
           {MESSAGES.map((_, i) => (
             <button
               key={i}
               type="button"
-              aria-label={`Show announcement ${i + 1}`}
+              aria-label={`Show announcement message ${i + 1}`}
               onClick={() => setIdx(i)}
-              className={`h-1.5 rounded-full transition-all ${
-                i === idx ? "w-4 bg-white" : "w-1.5 bg-white/40 hover:bg-white/70"
+              className={`h-2 rounded-full transition-all ${
+                i === idx ? "w-4 bg-white" : "w-2 bg-white/40 hover:bg-white/70"
               }`}
             />
           ))}
@@ -141,8 +141,8 @@ export default function AnnouncementBar() {
         <button
           type="button"
           onClick={dismiss}
-          aria-label="Dismiss announcement"
-          className="ml-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-white/80 transition-colors hover:bg-white/15 hover:text-white"
+          aria-label="Dismiss announcement banner"
+          className="ml-1 flex h-8 w-8 min-h-[32px] min-w-[32px] shrink-0 items-center justify-center rounded-full text-white/90 transition-colors hover:bg-white/20 hover:text-white"
         >
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" aria-hidden>
             <path d="M18 6L6 18M6 6l12 12" />

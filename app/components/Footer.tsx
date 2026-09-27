@@ -137,7 +137,7 @@ export default function Footer() {
           <div className="lg:col-span-3">
             <Logo dark />
 
-            <p className="mt-4 text-sm leading-relaxed">
+            <p className="mt-4 text-sm leading-relaxed text-white/85">
               We provide premium quality embroidery digitizing services with
               fast delivery and unbeatable customer support.
             </p>
@@ -150,8 +150,8 @@ export default function Footer() {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={`Follow us on ${label}`}
-                  className="group flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition-all duration-300 hover:scale-110 hover:bg-brand-600 hover:shadow-[0_4px_12px_-4px_rgba(26,63,196,0.5)] focus:outline-none focus:ring-2 focus:ring-brand-500/50"
+                  aria-label={`Follow Velora Digitizing on ${label}`}
+                  className="group flex h-10 w-10 min-h-[40px] min-w-[40px] items-center justify-center rounded-full bg-white/10 text-white transition-all duration-300 hover:scale-110 hover:bg-brand-600 hover:shadow-[0_4px_12px_-4px_rgba(26,63,196,0.5)] focus:outline-none focus:ring-2 focus:ring-brand-500/50"
                 >
                   <Icon className="h-4 w-4 transition-transform duration-300 group-hover:scale-110" />
                 </a>
@@ -164,15 +164,15 @@ export default function Footer() {
             <h3 className="text-xs font-bold uppercase tracking-[0.15em] text-white/90 mb-4 leading-none">
               Quick Links
             </h3>
-            <ul className="space-y-2.5">
+            <ul className="space-y-2">
               {QUICK_LINKS.map((l) => (
                 <li key={l.label}>
                   <Link
                     href={l.href}
-                    className="group inline-flex items-center text-sm text-white/70 transition-all duration-300 hover:text-brand-400 hover:translate-x-1 focus:outline-none focus:text-brand-400"
+                    className="group inline-flex items-center py-1 text-sm text-white/80 transition-all duration-300 hover:text-white hover:translate-x-1 focus:outline-none focus:text-white"
                   >
                     <span className="flex items-center w-0 opacity-0 transition-all duration-300 group-hover:w-3.5 group-hover:opacity-100">
-                      <span className="h-px w-2.5 bg-brand-500" />
+                      <span className="h-px w-2.5 bg-brand-400" />
                     </span>
                     {l.label}
                   </Link>
@@ -186,15 +186,15 @@ export default function Footer() {
             <h3 className="text-xs font-bold uppercase tracking-[0.15em] text-white/90 mb-4 leading-none">
               Services
             </h3>
-            <ul className="space-y-2.5">
+            <ul className="space-y-2">
               {SERVICE_LINKS.map((s) => (
                 <li key={s.label}>
                   <Link
                     href={s.href}
-                    className="group inline-flex items-center text-sm text-white/70 transition-all duration-300 hover:text-brand-400 hover:translate-x-1 focus:outline-none focus:text-brand-400"
+                    className="group inline-flex items-center py-1 text-sm text-white/80 transition-all duration-300 hover:text-white hover:translate-x-1 focus:outline-none focus:text-white"
                   >
                     <span className="flex items-center w-0 opacity-0 transition-all duration-300 group-hover:w-3.5 group-hover:opacity-100">
-                      <span className="h-px w-2.5 bg-brand-500" />
+                      <span className="h-px w-2.5 bg-brand-400" />
                     </span>
                     {s.label}
                   </Link>
@@ -208,15 +208,15 @@ export default function Footer() {
             <h3 className="text-xs font-bold uppercase tracking-[0.15em] text-white/90 mb-4 leading-none">
               Guides &amp; Blog
             </h3>
-            <ul className="space-y-2.5">
+            <ul className="space-y-2">
               {BLOG_LINKS.map((b) => (
                 <li key={b.label}>
                   <Link
                     href={b.href}
-                    className="group inline-flex items-center text-sm text-white/70 transition-all duration-300 hover:text-brand-400 hover:translate-x-1 focus:outline-none focus:text-brand-400"
+                    className="group inline-flex items-center py-1 text-sm text-white/80 transition-all duration-300 hover:text-white hover:translate-x-1 focus:outline-none focus:text-white"
                   >
                     <span className="flex items-center w-0 opacity-0 transition-all duration-300 group-hover:w-3.5 group-hover:opacity-100">
-                      <span className="h-px w-2.5 bg-brand-500" />
+                      <span className="h-px w-2.5 bg-brand-400" />
                     </span>
                     {b.label}
                   </Link>
@@ -231,13 +231,14 @@ export default function Footer() {
               Contact Us
             </h3>
 
-            <ul className="space-y-3 text-sm text-white/70">
+            <ul className="space-y-3 text-sm text-white/80">
               {/* Email */}
               <li className="group flex items-start gap-3">
-                <Mail className="mt-0.5 h-4 w-4 shrink-0 text-brand-500 transition-transform duration-300 group-hover:scale-110" />
+                <Mail className="mt-0.5 h-4 w-4 shrink-0 text-brand-400 transition-transform duration-300 group-hover:scale-110" />
                 <a
                   href="mailto:info@veloradigitizing.com"
-                  className="whitespace-nowrap transition-colors duration-300 hover:text-brand-400 focus:outline-none focus:text-brand-400"
+                  aria-label="Email Velora Digitizing at info@veloradigitizing.com"
+                  className="whitespace-nowrap transition-colors duration-300 hover:text-white focus:outline-none focus:text-white"
                 >
                   info@veloradigitizing.com
                 </a>
@@ -245,15 +246,16 @@ export default function Footer() {
 
               {/* Phone */}
               <li className="group flex items-start gap-3">
-                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-brand-500 transition-transform duration-300 group-hover:scale-110" />
+                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-brand-400 transition-transform duration-300 group-hover:scale-110" />
                 <span className="space-y-0.5">
                   <a
                     href="tel:+12136358137"
-                    className="block transition-colors duration-300 hover:text-brand-400 focus:outline-none focus:text-brand-400"
+                    aria-label="Call Velora Digitizing at +1 (213) 635-8137"
+                    className="block transition-colors duration-300 hover:text-white focus:outline-none focus:text-white"
                   >
                     +1 (213) 635-8137
                   </a>
-                  <span className="block text-xs text-white/40">
+                  <span className="block text-xs text-white/60">
                     WhatsApp Available
                   </span>
                 </span>
@@ -261,7 +263,7 @@ export default function Footer() {
 
               {/* Business Hours */}
               <li className="group flex items-start gap-3">
-                <Clock className="mt-0.5 h-4 w-4 shrink-0 text-brand-500 transition-transform duration-300 group-hover:scale-110" />
+                <Clock className="mt-0.5 h-4 w-4 shrink-0 text-brand-400 transition-transform duration-300 group-hover:scale-110" />
                 <span className="leading-relaxed">
                   Mon - Sat: 9:00 AM - 7:00 PM
                   <br />
@@ -271,13 +273,13 @@ export default function Footer() {
 
               {/* Location */}
               <li className="group flex items-start gap-3 pt-2 border-t border-white/10">
-                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-brand-500 transition-transform duration-300 group-hover:scale-110" />
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-brand-400 transition-transform duration-300 group-hover:scale-110" />
                 <div className="leading-relaxed">
-                  <p className="font-medium text-white/90">Head Office</p>
-                  <p className="text-sm text-white/60 mt-0.5">
+                  <p className="font-medium text-white/95">Head Office</p>
+                  <p className="text-sm text-white/75 mt-0.5">
                     128 Business Blvd, Suite 204
                   </p>
-                  <p className="text-sm text-white/60">
+                  <p className="text-sm text-white/75">
                     Los Angeles, CA 90017, USA
                   </p>
 
@@ -285,7 +287,8 @@ export default function Footer() {
                     href="https://maps.google.com/?q=128+Business+Blvd+Suite+204+Los+Angeles+CA+90017"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 mt-2 text-xs font-medium text-brand-400 hover:text-brand-300 transition-colors duration-300 focus:outline-none focus:underline"
+                    aria-label="View Velora Digitizing office on Google Maps"
+                    className="inline-flex items-center gap-1 mt-2 text-xs font-medium text-brand-300 hover:text-white transition-colors duration-300 focus:outline-none focus:underline py-1"
                   >
                     View on Google Maps
                   </a>
@@ -297,19 +300,19 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 sm:flex-row">
-          <p className="text-xs text-white/60 order-2 sm:order-1">
+          <p className="text-xs text-white/70 order-2 sm:order-1">
             &copy; 2026 Velora Digitizing. All Rights Reserved.
           </p>
-          <div className="flex items-center gap-6 text-xs text-white/60 order-1 sm:order-2">
+          <div className="flex items-center gap-6 text-xs text-white/70 order-1 sm:order-2">
             <Link
               href="/privacy-policy"
-              className="transition-colors duration-300 hover:text-white focus:outline-none focus:text-white"
+              className="py-1 transition-colors duration-300 hover:text-white focus:outline-none focus:text-white"
             >
               Privacy Policy
             </Link>
             <Link
               href="/terms-and-conditions"
-              className="transition-colors duration-300 hover:text-white focus:outline-none focus:text-white"
+              className="py-1 transition-colors duration-300 hover:text-white focus:outline-none focus:text-white"
             >
               Terms &amp; Conditions
             </Link>

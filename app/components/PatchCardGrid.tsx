@@ -50,7 +50,10 @@ export default function PatchCardGrid({
               Instant download in all formats
             </p>
           </div>
-          <select className="hidden rounded-lg border border-navy-950/12 px-4 py-2.5 text-sm outline-none focus:border-brand-500 sm:block">
+          <select
+            aria-label="Sort patch designs"
+            className="hidden rounded-lg border border-navy-950/20 px-4 py-2.5 text-sm text-navy-950 outline-none focus:border-brand-500 sm:block"
+          >
             <option>Sort by: Popular</option>
             <option>Price: Low to High</option>
             <option>Price: High to Low</option>
@@ -70,11 +73,11 @@ export default function PatchCardGrid({
           >
             {/* Image Container */}
             <div className="relative block">
-              <Link href={`/store/${patch.slug}`}>
+              <Link href={`/store/${patch.slug}`} aria-label={`View ${patch.title} patch details`}>
                 <div className="vr-zoom relative aspect-square w-full overflow-hidden bg-gradient-to-br from-gray-100 via-gray-50 to-white">
                   <Image
                     src={patch.image}
-                    alt={`${patch.title} embroidered patch design, ${patch.size}`}
+                    alt={`${patch.title} embroidered patch design, size ${patch.size}`}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
                     className="object-cover"
@@ -110,22 +113,23 @@ export default function PatchCardGrid({
               </h3>
 
               {/* Stitch Count Info */}
-              <p className="mt-1 text-xs text-navy-950/45">
+              <p className="mt-1 text-xs text-navy-950/65">
                 ~{patch.stitchCount} stitches
               </p>
 
               {/* Price & Add to Cart */}
               <div className="mt-auto pt-3">
                 <div className="flex items-baseline gap-2">
-                  <span className="font-serif text-xl font-bold text-green-600">
+                  <span className="font-serif text-xl font-bold text-green-700">
                     ${patch.price.toFixed(2)}
                   </span>
-                  <span className="text-sm font-medium text-navy-940/45 line-through">
+                  <span className="text-sm font-medium text-navy-950/50 line-through">
                     $4.00
                   </span>
                 </div>
                 <button
                   onClick={() => onAddToCart(patch)}
+                  aria-label={justAdded === patch.slug ? `${patch.title} added to cart` : `Add ${patch.title} to cart`}
                   className={`vr-btn mt-2 flex w-full items-center justify-center gap-2 rounded-lg py-2.5 text-xs font-bold uppercase tracking-wide transition-all ${
                     justAdded === patch.slug
                       ? "bg-green-600 text-white shadow-[0_4px_14px_-4px_rgba(22,163,74,0.45)]"
