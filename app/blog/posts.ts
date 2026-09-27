@@ -844,6 +844,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     publishedAt: "2026-09-27",
     readTime: 8,
+    image: "/images/blog/convert-png-jpg-to-dst-embroidery-file.jpg",
     imagePrompt:
       "High quality split screen comparison showing a colorful PNG logo on the left and 3D realistic embroidery stitches on a Tajima DST wireframe layout on the right, cinematic studio lighting, 16:9.",
     imageAlt:
@@ -931,6 +932,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     publishedAt: "2026-09-27",
     readTime: 7,
+    image: "/images/blog/cheap-3d-puff-embroidery-digitizing-for-caps.jpg",
     imagePrompt:
       "Dramatic close-up macro shot of raised 3D puff embroidery on the front panel of a black structured snapback hat, showing thick high density satin stitches covering EVA foam cleanly, studio lighting, 16:9.",
     imageAlt:
