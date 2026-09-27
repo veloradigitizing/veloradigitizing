@@ -195,7 +195,7 @@ export default function AboutPage() {
 
       <HomeStats />
 
-      <TeamSection members={TEAM} />
+      {/* <TeamSection members={TEAM} /> */}
 
       <FAQ
         items={ABOUT_FAQS}
