@@ -28,7 +28,14 @@ function getPrerenderedRoutes() {
     try {
       const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf-8'));
       return Object.keys(manifest.routes)
-        .filter(r => !r.startsWith('/_') && !r.includes('.png') && !r.includes('.ico') && !r.includes('.txt') && !r.includes('.xml'))
+        .filter(r => 
+          !r.startsWith('/_') && 
+          !r.includes('.png') && 
+          !r.includes('.ico') && 
+          !r.includes('.txt') && 
+          !r.includes('.xml') &&
+          r !== '/pricing' // /pricing redirects to /
+        )
         .map(r => r === '/' ? BASE_URL : `${BASE_URL}${r}`);
     } catch (e) {}
   }
