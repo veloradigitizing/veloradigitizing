@@ -32,10 +32,11 @@ export default function OurStorySection({
           <Image
             src={imageSrc}
             alt={imageAlt}
-            width={1200}
-            height={900}
+            width={800}
+            height={600}
+            sizes="(max-width: 1024px) 100vw, 50vw"
             className="h-full w-full object-cover"
-            priority
+            loading="lazy"
           />
         </Reveal>
         <Reveal direction="right">

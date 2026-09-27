@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useRef, useEffect, useCallback } from "react";
 import Link from "next/link";
 import Icon from "./Icon";
@@ -197,10 +198,12 @@ export default function FeaturedCategories() {
                   className="vr-lift group relative flex-shrink-0 overflow-hidden rounded-xl border border-navy-950/10 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md snap-start w-[290px] sm:w-[230px] md:w-[250px] lg:w-[calc(25%-12px)] xl:w-[calc(20%-13px)]"
                 >
                   <div className="vr-zoom relative aspect-[2/3] w-full overflow-hidden bg-gray-100">
-                    <img
+                    <Image
                       src={cat.image}
                       alt={`${cat.subtitle} embroidery sample by Velora Digitizing`}
-                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      fill
+                      sizes="(max-width: 640px) 290px, (max-width: 768px) 230px, (max-width: 1024px) 250px, 20vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
                       loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />

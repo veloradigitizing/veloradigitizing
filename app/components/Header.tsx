@@ -93,7 +93,7 @@ function CartDrawer() {
               <div className="flex flex-col gap-5">
                 {items.map((item) => (
                   <div key={item.id} className="flex items-start gap-3">
-                    <img src={item.image} alt={item.title} className="h-16 w-16 flex-none rounded-lg object-cover" />
+                    <img src={item.image} alt={item.title} width={64} height={64} loading="lazy" className="h-16 w-16 flex-none rounded-lg object-cover" />
                     <div className="min-w-0 flex-1">
                       <p className="truncate text-sm font-semibold text-navy-950">{item.title}</p>
                       <p className="mt-0.5 text-sm font-bold text-brand-600">${item.price.toFixed(2)}</p>

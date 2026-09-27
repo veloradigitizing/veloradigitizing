@@ -245,20 +245,16 @@ html {
 
 /* ---------- Utility animation classes ---------- */
 .vr-hero-up {
-  opacity: 0;
-  animation: velora-fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation: velora-fade-up 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 .vr-hero-down {
-  opacity: 0;
-  animation: velora-fade-down 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation: velora-fade-down 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 .vr-hero-fade {
-  opacity: 0;
-  animation: velora-fade-in 0.9s ease forwards;
+  animation: velora-fade-in 0.7s ease both;
 }
 .vr-hero-scale {
-  opacity: 0;
-  animation: velora-scale-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation: velora-scale-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 .vr-modal-overlay {
   animation: velora-fade-in 0.2s ease forwards;

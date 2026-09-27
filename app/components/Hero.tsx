@@ -276,6 +276,7 @@ export default function Hero({
           alt={imageLabel}
           fill
           priority
+          quality={80}
           sizes="100vw"
           className="object-cover object-center"
         />
