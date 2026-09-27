@@ -151,6 +151,8 @@ export default function PortfolioSection() {
             <button
               key={cat.id}
               onClick={() => setActiveCategory(cat.id)}
+              aria-label={`Filter portfolio by ${cat.name}`}
+              aria-pressed={activeCategory === cat.id}
               className={`rounded-full border px-5 py-2.5 text-sm font-medium transition-all duration-300 ${
                 activeCategory === cat.id
                   ? "border-brand-500 bg-brand-500 text-white shadow-lg shadow-brand-500/25"
@@ -165,7 +167,12 @@ export default function PortfolioSection() {
         {/* Portfolio Grid */}
         <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {filteredItems.map((item) => (
-            <Link key={item.id} href={item.slug} className="group block">
+            <Link
+              key={item.id}
+              href={item.slug}
+              aria-label={`View ${item.count} designs for ${item.title}`}
+              className="group block"
+            >
               <div className="relative overflow-hidden rounded-2xl border border-navy-950/10 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
                 {/* Image */}
                 <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-gray-100 to-gray-50">
