@@ -290,14 +290,11 @@ html {
     90deg,
     var(--color-brand-600),
     var(--color-brand-500),
-    var(--color-navy-700),
-    var(--color-brand-600)
+    var(--color-navy-700)
   );
-  background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: velora-gradient-pan 6s ease infinite;
 }
 
 .vr-shimmer-line {
@@ -307,8 +304,6 @@ html {
     rgba(26, 63, 196, 0.55),
     transparent
   );
-  background-size: 200% 100%;
-  animation: velora-shimmer 3s linear infinite;
 }
 
 /* ---------- Brand marquee ---------- */

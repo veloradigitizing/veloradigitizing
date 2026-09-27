@@ -22,8 +22,8 @@ export default function Logo({ dark = false }: { dark?: boolean }) {
           VELORA
         </span>
         <span
-          className={`text-[9px] font-medium tracking-[0.3em] ${
-            dark ? "text-white/60" : "text-navy-950/50"
+          className={`text-[9px] font-semibold tracking-[0.3em] ${
+            dark ? "text-white/90" : "text-navy-900"
           }`}
         >
           DIGITIZING

@@ -178,7 +178,7 @@ export default function BundleSection({
                     ? "border-brand-600 text-brand-600 hover:bg-brand-600 hover:text-white cursor-pointer" 
                     : "border-navy-950/15 text-navy-950/25 cursor-not-allowed"
                 }`}
-                aria-label="Previous"
+                aria-label="Previous patch bundle"
               >
                 <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -192,7 +192,7 @@ export default function BundleSection({
                     ? "border-brand-600 text-brand-600 hover:bg-brand-600 hover:text-white cursor-pointer" 
                     : "border-navy-950/15 text-navy-950/25 cursor-not-allowed"
                 }`}
-                aria-label="Next"
+                aria-label="Next patch bundle"
               >
                 <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
@@ -235,7 +235,7 @@ export default function BundleSection({
                   )}
 
                   {/* Image Container */}
-                  <Link href={`/store/${bundle.slug}`} className="relative block aspect-[4/3] w-full overflow-hidden bg-gradient-to-br from-gray-100 via-gray-50 to-white flex-shrink-0">
+                  <Link href={`/store/${bundle.slug}`} aria-label={`View ${bundle.name} preview`} className="relative block aspect-[4/3] w-full overflow-hidden bg-gradient-to-br from-gray-100 via-gray-50 to-white flex-shrink-0">
                     <Image
                       src={bundle.image}
                       alt={`${bundle.name} embroidery patch bundle preview`}
@@ -251,7 +251,9 @@ export default function BundleSection({
                     {/* Title & Designs Count */}
                     <div className="flex items-start justify-between gap-2">
                       <h3 className="text-lg font-bold text-navy-950 transition-colors group-hover:text-brand-600 line-clamp-1">
-                        {bundle.name}
+                        <Link href={`/store/${bundle.slug}`} className="hover:text-brand-600">
+                          {bundle.name}
+                        </Link>
                       </h3>
                       <span className="shrink-0 inline-flex items-center gap-1 rounded-full bg-brand-50 px-2.5 py-1 text-xs font-semibold text-brand-600">
                         <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -262,15 +264,15 @@ export default function BundleSection({
                     </div>
 
                     {/* Tagline */}
-                    <p className="mt-2 text-sm text-navy-950/60 line-clamp-2 leading-relaxed">
+                    <p className="mt-2 text-sm text-navy-950/70 line-clamp-2 leading-relaxed">
                       {bundle.tagline}
                     </p>
 
                     {/* Features Preview */}
                     <ul className="mt-3 space-y-1.5">
                       {bundle.features.slice(0, 3).map((feature, idx) => (
-                        <li key={idx} className="flex items-center gap-2 text-xs text-navy-950/70">
-                          <svg className="h-3.5 w-3.5 shrink-0 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
+                        <li key={idx} className="flex items-center gap-2 text-xs text-navy-950/80">
+                          <svg className="h-3.5 w-3.5 shrink-0 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 111.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clipRule="evenodd" />
                           </svg>
                           <span>{feature}</span>
@@ -285,12 +287,12 @@ export default function BundleSection({
                           ${bundle.price.toFixed(2)}
                         </span>
                         {bundle.originalPrice && (
-                          <span className="ml-2 text-sm text-navy-950/40 line-through">
+                          <span className="ml-2 text-sm text-navy-950/50 line-through">
                             ${bundle.originalPrice.toFixed(2)}
                           </span>
                         )}
                       </div>
-                      <span className="mb-0.5 ml-auto text-xs text-rose-500 font-semibold">
+                      <span className="mb-0.5 ml-auto text-xs text-rose-600 font-semibold">
                         Save ${(bundle.originalPrice ? (bundle.originalPrice - bundle.price) : 0).toFixed(2)}
                       </span>
                     </div>
@@ -299,6 +301,7 @@ export default function BundleSection({
                     <button
                       onClick={() => handleAddToCart(bundle)}
                       disabled={addingToCart === bundle.slug}
+                      aria-label={`Add ${bundle.name} to cart`}
                       className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-brand-600 px-5 py-3.5 text-sm font-bold uppercase tracking-wide text-white shadow-lg shadow-brand-600/25 transition-all hover:bg-brand-700 hover:shadow-xl hover:shadow-brand-600/30 active:scale-[0.98] disabled:opacity-70 disabled:cursor-wait flex-shrink-0"
                     >
                       {addingToCart === bundle.slug ? (
@@ -320,7 +323,7 @@ export default function BundleSection({
                     </button>
 
                     {/* View Details Link */}
-                    <Link href={`/store/${bundle.slug}`} className="mt-3 flex items-center justify-center gap-1.5 text-xs font-semibold text-navy-950/45 transition-colors hover:text-brand-600 flex-shrink-0">
+                    <Link href={`/store/${bundle.slug}`} aria-label={`View ${bundle.name} specifications`} className="mt-3 flex items-center justify-center gap-1.5 py-1 text-xs font-semibold text-navy-950/60 transition-colors hover:text-brand-600 flex-shrink-0">
                       View Details
                       <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
@@ -333,10 +336,10 @@ export default function BundleSection({
           </div>
         </div>
 
-        {/* Dots Indicator */}
+        {/* Dots Indicator with Accessible 40px Touch Targets */}
         {showDots && (
-          <div className="mt-8 flex justify-center gap-2">
-            {BUNDLES.map((_, i) => (
+          <div className="mt-8 flex justify-center items-center gap-1">
+            {BUNDLES.map((bundle, i) => (
               <button
                 key={i}
                 onClick={() => {
@@ -347,13 +350,17 @@ export default function BundleSection({
                   const gap = 20;
                   el.scrollTo({ left: i * (cardWidth + gap), behavior: "smooth" });
                 }}
-                className={`h-2.5 rounded-full transition-all duration-300 ${
-                  i === activeIndex 
-                    ? "w-8 bg-brand-600" 
-                    : "w-2.5 bg-navy-950/20 hover:bg-navy-950/35"
-                }`}
-                aria-label={`Go to slide ${i + 1}`}
-              />
+                className="flex h-10 w-10 min-h-[40px] min-w-[40px] items-center justify-center p-2"
+                aria-label={`Go to slide ${i + 1}: ${bundle.name}`}
+              >
+                <span
+                  className={`h-2.5 rounded-full transition-all duration-300 ${
+                    i === activeIndex 
+                      ? "w-8 bg-brand-600" 
+                      : "w-2.5 bg-navy-950/25 hover:bg-navy-950/45"
+                  }`}
+                />
+              </button>
             ))}
           </div>
         )}

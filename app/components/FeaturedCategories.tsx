@@ -217,8 +217,8 @@ export default function FeaturedCategories() {
               ))}
             </div>
 
-            {/* Dots Indicator — one dot per scroll page (not per item) */}
-            <div className="mt-5 flex justify-center gap-2">
+            {/* Dots Indicator with Accessible 40px Touch Targets */}
+            <div className="mt-5 flex justify-center items-center gap-1">
               {Array.from({ length: maxIndex + 1 }).map((_, i) => (
                 <button
                   key={i}
@@ -236,13 +236,17 @@ export default function FeaturedCategories() {
                       behavior: "smooth",
                     });
                   }}
-                  className={
-                    i === activeIndex
-                      ? "h-2 rounded-full transition-all duration-300 w-7 bg-brand-600"
-                      : "h-2 rounded-full transition-all duration-300 w-2 bg-navy-950/20 hover:bg-navy-950/40"
-                  }
+                  className="flex h-10 w-10 min-h-[40px] min-w-[40px] items-center justify-center p-2"
                   aria-label={"Go to categories slide " + (i + 1)}
-                />
+                >
+                  <span
+                    className={
+                      i === activeIndex
+                        ? "h-2 rounded-full transition-all duration-300 w-7 bg-brand-600"
+                        : "h-2 rounded-full transition-all duration-300 w-2 bg-navy-950/25 hover:bg-navy-950/45"
+                    }
+                  />
+                </button>
               ))}
             </div>
           </div>

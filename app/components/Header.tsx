@@ -68,7 +68,11 @@ function CartDrawer() {
   if (!isMounted) return null;
 
   return createPortal(
-    <div className={`fixed inset-0 z-[70] transition-opacity duration-300 ${isCartOpen ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"}`} aria-hidden={!isCartOpen}>
+    <div
+      className={`fixed inset-0 z-[70] transition-opacity duration-300 ${isCartOpen ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"}`}
+      aria-hidden={!isCartOpen}
+      hidden={!isCartOpen}
+    >
       <div onClick={closeCart} className="absolute inset-0 bg-navy-950/40 backdrop-blur-sm" />
       <div className={`absolute right-0 top-0 flex h-full w-full max-w-sm flex-col bg-white shadow-[-16px_0_40px_-16px_rgba(6,14,40,0.35)] transition-transform duration-300 ${isCartOpen ? "translate-x-0" : "translate-x-full"}`}>
         <div className="flex items-center justify-between border-b border-navy-950/10 px-5 py-4">
@@ -142,7 +146,11 @@ function MobileNavDrawer({ open, onClose, pathname }: { open: boolean; onClose: 
   if (!isMounted) return null;
 
   return createPortal(
-    <div className={`fixed inset-0 z-[70] transition-opacity duration-300 lg:hidden ${open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"}`} aria-hidden={!open}>
+    <div
+      className={`fixed inset-0 z-[70] transition-opacity duration-300 lg:hidden ${open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"}`}
+      aria-hidden={!open}
+      hidden={!open}
+    >
       <div onClick={onClose} className="absolute inset-0 bg-navy-950/40 backdrop-blur-sm" />
       <div className={`absolute left-0 top-0 flex h-full w-full max-w-xs flex-col bg-white shadow-[16px_0_40px_-16px_rgba(6,14,40,0.35)] transition-transform duration-500 ${open ? "translate-x-0" : "-translate-x-full"}`}>
         <div className="flex items-center justify-between border-b border-navy-950/10 px-5 py-4">

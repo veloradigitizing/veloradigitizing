@@ -18,19 +18,19 @@ const MESSAGES: Msg[] = [
   {
     icon: "zap",
     text: "50% OFF on all embroidery font packs — this week only!",
-    cta: "Shop Now",
+    cta: "Shop Font Packs",
     href: "/store#products",
   },
   {
     icon: "sparkles",
     text: "New: 3D Puff digitizing now available with same-day delivery",
-    cta: "Learn More",
+    cta: "Explore Services",
     href: "/services",
   },
   {
     icon: "phone",
     text: "Get a free quote in under 5 minutes — 24/7 live support",
-    cta: "Get Quote",
+    cta: "Get Free Quote",
     href: "/contact",
   },
 ];

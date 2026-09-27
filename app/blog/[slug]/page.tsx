@@ -316,9 +316,10 @@ export default async function BlogPostPage({ params }: Props) {
             </div>
             <Link
               href={post.relatedService.href}
+              aria-label={`Explore our ${post.relatedService.label}`}
               className="vr-btn vr-btn-primary inline-flex items-center gap-2 rounded-md bg-brand-600 px-5 py-3 text-sm font-semibold text-white hover:bg-brand-700"
             >
-              LEARN MORE
+              EXPLORE SERVICE
               <span aria-hidden className="vr-arrow">
                 &rarr;
               </span>

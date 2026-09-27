@@ -23,7 +23,7 @@ export type BundleProduct = {
 export const BUNDLES: BundleProduct[] = [
   {
     slug: "70-patches-pack-1",
-    name: "70 Patches Pack",
+    name: "70 Patches Pack Vol. 1",
     category: "bundles",
     categoryLabel: "Patches Bundle",
     price: 209.99,
@@ -57,7 +57,7 @@ export const BUNDLES: BundleProduct[] = [
   },
   {
     slug: "100-patches-mega-pack",
-    name: "100 Patches Pack",
+    name: "100 Patches Mega Pack",
     category: "bundles",
     categoryLabel: "Patches Bundle",
     price: 299.99,
@@ -91,7 +91,7 @@ export const BUNDLES: BundleProduct[] = [
   },
   {
     slug: "70-patches-pack-3",
-    name: "70 Patches Pack",
+    name: "70 Patches Pack Vol. 3",
     category: "bundles",
     categoryLabel: "Patches Bundle",
     price: 209.99,
@@ -125,7 +125,7 @@ export const BUNDLES: BundleProduct[] = [
   },
   {
     slug: "50-patches-starter-pack",
-    name: "50 Patches Pack",
+    name: "50 Patches Starter Pack",
     category: "bundles",
     categoryLabel: "Patches Bundle",
     price: 149.99,
@@ -159,7 +159,7 @@ export const BUNDLES: BundleProduct[] = [
   },
   {
     slug: "50-patches-value-pack",
-    name: "50 Patches Pack",
+    name: "50 Patches Value Pack",
     category: "bundles",
     categoryLabel: "Patches Bundle",
     price: 149.99,
@@ -193,7 +193,7 @@ export const BUNDLES: BundleProduct[] = [
   },
   {
     slug: "100-patches-ultimate-pack",
-    name: "100 Patches Pack",
+    name: "100 Patches Ultimate Pack",
     category: "bundles",
     categoryLabel: "Patches Bundle",
     price: 299.99,
