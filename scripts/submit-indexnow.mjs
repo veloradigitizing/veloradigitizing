@@ -6,7 +6,6 @@ const SITE_HOST = 'www.veloradigitizing.com';
 const KEY_LOCATION = `https://${SITE_HOST}/${INDEXNOW_KEY}.txt`;
 const BASE_URL = `https://${SITE_HOST}`;
 
-// Core URLs
 const coreRoutes = [
   '/',
   '/services',
@@ -34,7 +33,7 @@ function getPrerenderedRoutes() {
           !r.includes('.ico') && 
           !r.includes('.txt') && 
           !r.includes('.xml') &&
-          r !== '/pricing' // /pricing redirects to /
+          r !== '/pricing'
         )
         .map(r => r === '/' ? BASE_URL : `${BASE_URL}${r}`);
     } catch (e) {}
@@ -42,11 +41,20 @@ function getPrerenderedRoutes() {
   return coreRoutes.map(r => r === '/' ? BASE_URL : `${BASE_URL}${r}`);
 }
 
+async function submitToEndpoint(endpoint, payload) {
+  const res = await fetch(endpoint, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json; charset=utf-8' },
+    body: JSON.stringify(payload),
+  });
+  return { status: res.status, text: await res.text() };
+}
+
 async function main() {
   const customArgs = process.argv.slice(2);
   const urlsToSubmit = customArgs.length > 0 ? customArgs : getPrerenderedRoutes();
 
-  console.log(`📡 Submitting ${urlsToSubmit.length} URLs to IndexNow (Bing / Yandex / Seznam)...`);
+  console.log(`📡 Submitting ${urlsToSubmit.length} URLs to IndexNow network...`);
   console.log(`🔑 Key: ${INDEXNOW_KEY}`);
   console.log(`📄 Key Location: ${KEY_LOCATION}\n`);
 
@@ -57,24 +65,31 @@ async function main() {
     urlList: urlsToSubmit,
   };
 
-  try {
-    const res = await fetch('https://api.indexnow.org/indexnow', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json; charset=utf-8',
-      },
-      body: JSON.stringify(payload),
-    });
+  // Submit via IndexNow endpoints (IndexNow protocol shares data across Bing, Yandex, Seznam)
+  const endpoints = [
+    { name: 'IndexNow Central', url: 'https://api.indexnow.org/indexnow' },
+    { name: 'Yandex IndexNow', url: 'https://yandex.com/indexnow' },
+    { name: 'Bing IndexNow', url: 'https://www.bing.com/indexnow' },
+  ];
 
-    if (res.status === 200 || res.status === 202) {
-      console.log(`✅ SUCCESS! HTTP Status: ${res.status}`);
-      console.log(`🚀 All ${urlsToSubmit.length} URLs have been successfully submitted to IndexNow!`);
-    } else {
-      const body = await res.text();
-      console.error(`⚠️ IndexNow returned HTTP ${res.status}:`, body || 'No response body');
+  let successCount = 0;
+
+  for (const ep of endpoints) {
+    try {
+      const { status, text } = await submitToEndpoint(ep.url, payload);
+      if (status === 200 || status === 202) {
+        console.log(`✅ [${ep.name}] HTTP ${status} (Accepted) -> Successfully broadcasted to search engines!`);
+        successCount++;
+      } else {
+        console.log(`ℹ️ [${ep.name}] HTTP ${status} -> ${text.split('\n')[0]}`);
+      }
+    } catch (err) {
+      console.log(`❌ [${ep.name}] Error: ${err.message}`);
     }
-  } catch (err) {
-    console.error('❌ Network error during submission:', err.message);
+  }
+
+  if (successCount > 0) {
+    console.log(`\n🎉 Success: ${urlsToSubmit.length} URLs are submitted and being shared across the IndexNow network!`);
   }
 }
 
