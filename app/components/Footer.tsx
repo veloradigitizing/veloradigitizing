@@ -71,11 +71,42 @@ const SERVICE_LINKS = [
   { label: "Bundles", href: "/portfolio?category=bundles" },
 ];
 
+const BLOG_LINKS = [
+  {
+    label: "Convert PNG to DST",
+    href: "/blog/convert-png-jpg-to-dst-embroidery-file",
+  },
+  {
+    label: "3D Puff Cap Digitizing",
+    href: "/blog/cheap-3d-puff-embroidery-digitizing-for-caps",
+  },
+  {
+    label: "DST vs PES vs JEF Files",
+    href: "/blog/dst-vs-pes-vs-jef-embroidery-file-formats",
+  },
+  {
+    label: "What Is Digitizing?",
+    href: "/blog/what-is-embroidery-digitizing",
+  },
+  {
+    label: "Prepare Logo for Digitizing",
+    href: "/blog/how-to-prepare-logo-for-embroidery-digitizing",
+  },
+  {
+    label: "Embroidered vs PVC Patches",
+    href: "/blog/embroidered-vs-woven-vs-pvc-patches",
+  },
+  {
+    label: "Common Digitizing Mistakes",
+    href: "/blog/common-embroidery-digitizing-mistakes",
+  },
+];
+
 const HELP_LINKS = [
   { label: "FAQs", href: "/contact#faq" },
   { label: "How It Works", href: "/services#process" },
+  { label: "Pricing", href: "/pricing" },
   { label: "Shipping & Delivery", href: "/store#shipping" },
-  { label: "Return Policy", href: "/terms-and-conditions#returns" },
   { label: "Privacy Policy", href: "/privacy-policy" },
   { label: "Terms & Conditions", href: "/terms-and-conditions" },
 ];
@@ -172,22 +203,22 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* 4. Help & Support */}
+          {/* 4. Guides & Articles (Blog) */}
           <div className="lg:col-span-2">
             <h3 className="text-xs font-bold uppercase tracking-[0.15em] text-white/90 mb-4 leading-none">
-              Help &amp; Support
+              Guides &amp; Blog
             </h3>
             <ul className="space-y-2.5">
-              {HELP_LINKS.map((l) => (
-                <li key={l.label}>
+              {BLOG_LINKS.map((b) => (
+                <li key={b.label}>
                   <Link
-                    href={l.href}
+                    href={b.href}
                     className="group inline-flex items-center text-sm text-white/70 transition-all duration-300 hover:text-brand-400 hover:translate-x-1 focus:outline-none focus:text-brand-400"
                   >
                     <span className="flex items-center w-0 opacity-0 transition-all duration-300 group-hover:w-3.5 group-hover:opacity-100">
                       <span className="h-px w-2.5 bg-brand-500" />
                     </span>
-                    {l.label}
+                    {b.label}
                   </Link>
                 </li>
               ))}
