@@ -126,6 +126,8 @@ export const metadata: Metadata = {
   },
   other: {
     "og:see_also": [
+      "https://www.behance.net/veloradigitizing",
+      "https://www.pinterest.com/veloradigitizing/",
       "https://www.facebook.com/share/1Dtbi6tg9V/",
       "https://www.instagram.com/veloradigitizing",
       "https://www.threads.com/@veloradigitizing?invite=0",
@@ -159,6 +161,8 @@ export default function RootLayout({
         "description":
           "Velora Digitizing converts artwork into flawless embroidery and vector files with highest stitch quality, 8–24h delivery, and 100% satisfaction guaranteed.",
         "sameAs": [
+          "https://www.behance.net/veloradigitizing",
+          "https://www.pinterest.com/veloradigitizing/",
           "https://www.facebook.com/share/1Dtbi6tg9V/",
           "https://www.instagram.com/veloradigitizing",
           "https://www.threads.com/@veloradigitizing?invite=0",

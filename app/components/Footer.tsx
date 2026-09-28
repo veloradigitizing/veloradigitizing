@@ -9,11 +9,23 @@ import {
   FaXTwitter,
   FaYoutube,
   FaThreads,
+  FaPinterestP,
+  FaBehance,
 } from "react-icons/fa6";
 import { Mail, Phone, Clock, MapPin, ArrowRight } from "lucide-react";
 import Logo from "./Logo";
 
 const SOCIALS = [
+  {
+    label: "Behance",
+    href: "https://www.behance.net/veloradigitizing",
+    Icon: FaBehance,
+  },
+  {
+    label: "Pinterest",
+    href: "https://www.pinterest.com/veloradigitizing/",
+    Icon: FaPinterestP,
+  },
   {
     label: "Facebook",
     href: "https://www.facebook.com/share/1Dtbi6tg9V/",
