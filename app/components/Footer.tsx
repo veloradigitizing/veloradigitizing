@@ -57,12 +57,12 @@ const QUICK_LINKS = [
 ];
 
 const SERVICE_LINKS = [
+  { label: "3D Puff Embroidery", href: "/services/3d-puff-digitizing" },
+  { label: "Cap Logo Digitizing", href: "/services/cap-logo-digitizing" },
   { label: "Applique Digitizing", href: "/services/applique-digitizing" },
   { label: "Vector Art Conversion", href: "/vector-art" },
   { label: "Custom Patches", href: "/patches" },
-  { label: "Digitizing Services", href: "/services" },
-  { label: "Cap Logo Digitizing", href: "/portfolio?category=cap-logo" },
-  { label: "3D Puff Embroidery", href: "/portfolio?category=3d-puff" },
+  { label: "All Digitizing Services", href: "/services" },
   { label: "Jacket Back Design", href: "/portfolio?category=jacket-back" },
   { label: "Left Chest Logo", href: "/portfolio?category=left-chest" },
   { label: "Chenille Patches", href: "/portfolio?category=chenille" },

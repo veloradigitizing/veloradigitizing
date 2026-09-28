@@ -36,6 +36,8 @@ const SERVICE_TO_CATEGORY: Record<string, string> = {
 // Map service slugs to dedicated pages if they exist
 const SERVICE_DIRECT_LINKS: Record<string, string> = {
   "applique-digitizing": "/services/applique-digitizing",
+  "3d-puff-digitizing": "/services/3d-puff-digitizing",
+  "cap-logo-digitizing": "/services/cap-logo-digitizing",
   "vector-art": "/vector-art",
   "patch-digitizing": "/patches",
   "custom-patches": "/patches",
