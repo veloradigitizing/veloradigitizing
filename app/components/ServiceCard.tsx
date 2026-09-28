@@ -33,6 +33,14 @@ const SERVICE_TO_CATEGORY: Record<string, string> = {
   "bundle-packages": "bundles",
 };
 
+// Map service slugs to dedicated pages if they exist
+const SERVICE_DIRECT_LINKS: Record<string, string> = {
+  "applique-digitizing": "/services/applique-digitizing",
+  "vector-art": "/vector-art",
+  "patch-digitizing": "/patches",
+  "custom-patches": "/patches",
+};
+
 export default function ServiceCard({ service }: { service: Service }) {
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const card = e.currentTarget;
@@ -53,12 +61,14 @@ export default function ServiceCard({ service }: { service: Service }) {
       "perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)";
   };
 
-  // Get the portfolio category for this service
+  // Get the link for this service (direct page or portfolio filter)
   const portfolioCategory = SERVICE_TO_CATEGORY[service.slug] || "all";
-  const portfolioLink = `/portfolio?category=${portfolioCategory}`;
+  const linkHref =
+    SERVICE_DIRECT_LINKS[service.slug] ||
+    `/portfolio?category=${portfolioCategory}`;
 
   return (
-    <Link href={portfolioLink} className="group block h-full">
+    <Link href={linkHref} className="group block h-full">
       <div
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
