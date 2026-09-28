@@ -57,18 +57,18 @@ const QUICK_LINKS = [
 ];
 
 const SERVICE_LINKS = [
-  { label: "Patches", href: "/portfolio?category=patches" },
-  { label: "Custom Patches", href: "/portfolio?category=custom-patches" },
-  { label: "Cap Logo", href: "/portfolio?category=cap-logo" },
-  { label: "Chenille", href: "/portfolio?category=chenille" },
-  { label: "Jacket Back", href: "/portfolio?category=jacket-back" },
-  { label: "Left Chest", href: "/portfolio?category=left-chest" },
-  { label: "3D Puff", href: "/portfolio?category=3d-puff" },
+  { label: "Applique Digitizing", href: "/services/applique-digitizing" },
+  { label: "Vector Art Conversion", href: "/vector-art" },
+  { label: "Custom Patches", href: "/patches" },
+  { label: "Digitizing Services", href: "/services" },
+  { label: "Cap Logo Digitizing", href: "/portfolio?category=cap-logo" },
+  { label: "3D Puff Embroidery", href: "/portfolio?category=3d-puff" },
+  { label: "Jacket Back Design", href: "/portfolio?category=jacket-back" },
+  { label: "Left Chest Logo", href: "/portfolio?category=left-chest" },
+  { label: "Chenille Patches", href: "/portfolio?category=chenille" },
   { label: "Towel Design", href: "/portfolio?category=towel" },
-  { label: "Applique", href: "/portfolio?category=applique" },
-  { label: "Vector Art", href: "/portfolio?category=vector-art" },
-  { label: "Sleeve", href: "/portfolio?category=sleeve" },
-  { label: "Bundles", href: "/portfolio?category=bundles" },
+  { label: "Sleeve Design", href: "/portfolio?category=sleeve" },
+  { label: "Bundle Packages", href: "/portfolio?category=bundles" },
 ];
 
 const BLOG_LINKS = [

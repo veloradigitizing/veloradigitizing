@@ -16,6 +16,7 @@ const NAV_LINKS = [
     label: "Services",
     children: [
       { href: "/services", label: "Digitizing Service" },
+      { href: "/services/applique-digitizing", label: "Applique Digitizing" },
       { href: "/patches", label: "Patches Service" },
       { href: "/vector-art", label: "Vector Art Service" },
     ],
