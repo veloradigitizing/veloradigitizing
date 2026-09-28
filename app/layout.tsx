@@ -128,6 +128,7 @@ export const metadata: Metadata = {
     "og:see_also": [
       "https://www.behance.net/veloradigitizing",
       "https://www.pinterest.com/veloradigitizing/",
+      "https://dribbble.com/shots/27768560-Custom-Cap-Embroidery-Digitizing-Showcase",
       "https://www.facebook.com/share/1Dtbi6tg9V/",
       "https://www.instagram.com/veloradigitizing",
       "https://www.threads.com/@veloradigitizing?invite=0",
@@ -163,6 +164,7 @@ export default function RootLayout({
         "sameAs": [
           "https://www.behance.net/veloradigitizing",
           "https://www.pinterest.com/veloradigitizing/",
+          "https://dribbble.com/shots/27768560-Custom-Cap-Embroidery-Digitizing-Showcase",
           "https://www.facebook.com/share/1Dtbi6tg9V/",
           "https://www.instagram.com/veloradigitizing",
           "https://www.threads.com/@veloradigitizing?invite=0",
