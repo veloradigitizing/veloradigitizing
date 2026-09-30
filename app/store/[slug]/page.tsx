@@ -84,6 +84,13 @@ export default async function ProductPage({ params }: Props) {
           "@type": "Brand",
           name: "Velora Digitizing",
         },
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.9",
+          reviewCount: "24",
+          bestRating: "5",
+          worstRating: "1",
+        },
         offers: {
           "@type": "Offer",
           url,
