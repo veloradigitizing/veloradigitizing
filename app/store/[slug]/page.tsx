@@ -89,6 +89,7 @@ export default async function ProductPage({ params }: Props) {
           url,
           price: item.price.toFixed(2),
           priceCurrency: "USD",
+          priceValidUntil: "2027-12-31",
           availability: "https://schema.org/InStock",
           itemCondition: "https://schema.org/NewCondition",
           seller: {
