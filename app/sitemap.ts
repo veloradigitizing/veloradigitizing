@@ -3,7 +3,7 @@ import { STORE_ITEMS } from "./store/catalog";
 import { BLOG_POSTS } from "./blog/posts";
 
 const BASE_URL = "https://www.veloradigitizing.com";
-const STATIC_LASTMOD = new Date("2026-09-28T00:00:00Z");
+const STATIC_LASTMOD = new Date("2026-09-30T00:00:00Z");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [

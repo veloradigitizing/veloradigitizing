@@ -1,0 +1,45 @@
+{
+  "$schema": "https://ai-catalog.org/schema/v1/ai-catalog.json",
+  "name": "Velora Digitizing AI Catalog",
+  "publisher": "Velora Digitizing",
+  "url": "https://www.veloradigitizing.com",
+  "description": "Catalog of resources, services, and machine embroidery format documentation provided by Velora Digitizing.",
+  "resources": [
+    {
+      "name": "Custom Embroidery Digitizing",
+      "media_type": "text/html",
+      "url": "https://www.veloradigitizing.com/services",
+      "description": "Professional manual embroidery digitizing service converting PNG, JPG, and vector art into DST, PES, EXP, JEF, and VP3 machine files."
+    },
+    {
+      "name": "3D Puff Cap Digitizing",
+      "media_type": "text/html",
+      "url": "https://www.veloradigitizing.com/services/3d-puff-digitizing",
+      "description": "Specialized 3D foam embroidery digitizing for structured snapback hats, dad hats, beanies, and jackets."
+    },
+    {
+      "name": "Cap Logo Digitizing",
+      "media_type": "text/html",
+      "url": "https://www.veloradigitizing.com/services/cap-logo-digitizing",
+      "description": "Curved 270-degree cap embroidery digitizing with center-out stitch sequencing."
+    },
+    {
+      "name": "Vector Art Conversion",
+      "media_type": "text/html",
+      "url": "https://www.veloradigitizing.com/vector-art",
+      "description": "Raster to vector conversion delivering AI, EPS, SVG, and PDF files for screen printing and vinyl cutting."
+    },
+    {
+      "name": "Custom Patches",
+      "media_type": "text/html",
+      "url": "https://www.veloradigitizing.com/patches",
+      "description": "Embroidered, woven, PVC, and chenille patch design and physical production."
+    },
+    {
+      "name": "LLMs Content Summary",
+      "media_type": "text/markdown",
+      "url": "https://www.veloradigitizing.com/llms.txt",
+      "description": "Plain-text summary of Velora Digitizing services, turnarounds, pricing, and machine format specs for AI search agents."
+    }
+  ]
+}
