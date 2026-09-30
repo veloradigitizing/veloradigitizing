@@ -28,7 +28,25 @@ export default function ContactForm({
     const formData = new FormData(form);
     formData.append("access_key", WEB3FORMS_ACCESS_KEY);
 
+    const name = String(formData.get("name") || "");
+    const email = String(formData.get("email") || "");
+    const service = String(formData.get("service") || "");
+    const subject = String(formData.get("subject") || "");
+    const message = String(formData.get("message") || "");
+
     setStatus("submitting");
+
+    // Fire ntfy alert in background
+    fetch("https://ntfy.sh/velora-alerts", {
+      method: "POST",
+      headers: {
+        "Title": `New Lead: ${name}`,
+        "Priority": "urgent",
+        "Tags": "tada,briefcase,email",
+      },
+      body: `Name: ${name}\nEmail: ${email}\nService: ${service}\nSubject: ${subject}\nMessage: ${message}`,
+    }).catch((err) => console.error("Ntfy alert failed:", err));
+
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",

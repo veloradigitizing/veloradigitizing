@@ -8,6 +8,11 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
         disallow: ["/api/"],
       },
+      {
+        userAgent: ["OAI-SearchBot", "Claude-SearchBot", "PerplexityBot", "Googlebot", "Bingbot", "Applebot"],
+        allow: "/",
+        disallow: ["/api/"],
+      },
     ],
     sitemap: "https://www.veloradigitizing.com/sitemap.xml",
   };

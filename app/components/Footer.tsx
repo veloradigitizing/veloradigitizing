@@ -114,14 +114,6 @@ const BLOG_LINKS = [
   },
 ];
 
-const HELP_LINKS = [
-  { label: "FAQs", href: "/contact#faq" },
-  { label: "How It Works", href: "/services#process" },
-  { label: "Pricing", href: "/pricing" },
-  { label: "Shipping & Delivery", href: "/store#shipping" },
-  { label: "Privacy Policy", href: "/privacy-policy" },
-  { label: "Terms & Conditions", href: "/terms-and-conditions" },
-];
 
 export default function Footer() {
   return (
@@ -181,11 +173,8 @@ export default function Footer() {
                 <li key={l.label}>
                   <Link
                     href={l.href}
-                    className="group inline-flex items-center py-1 text-sm text-white/80 transition-all duration-300 hover:text-white hover:translate-x-1 focus:outline-none focus:text-white"
+                    className="inline-block py-1 text-sm text-white/80 transition-all duration-200 hover:text-white hover:translate-x-1 focus:outline-none focus:text-white"
                   >
-                    <span className="flex items-center w-0 opacity-0 transition-all duration-300 group-hover:w-3.5 group-hover:opacity-100">
-                      <span className="h-px w-2.5 bg-brand-400" />
-                    </span>
                     {l.label}
                   </Link>
                 </li>
@@ -203,11 +192,8 @@ export default function Footer() {
                 <li key={s.label}>
                   <Link
                     href={s.href}
-                    className="group inline-flex items-center py-1 text-sm text-white/80 transition-all duration-300 hover:text-white hover:translate-x-1 focus:outline-none focus:text-white"
+                    className="inline-block py-1 text-sm text-white/80 transition-all duration-200 hover:text-white hover:translate-x-1 focus:outline-none focus:text-white"
                   >
-                    <span className="flex items-center w-0 opacity-0 transition-all duration-300 group-hover:w-3.5 group-hover:opacity-100">
-                      <span className="h-px w-2.5 bg-brand-400" />
-                    </span>
                     {s.label}
                   </Link>
                 </li>
@@ -225,11 +211,8 @@ export default function Footer() {
                 <li key={b.label}>
                   <Link
                     href={b.href}
-                    className="group inline-flex items-center py-1 text-sm text-white/80 transition-all duration-300 hover:text-white hover:translate-x-1 focus:outline-none focus:text-white"
+                    className="inline-block py-1 text-sm text-white/80 transition-all duration-200 hover:text-white hover:translate-x-1 focus:outline-none focus:text-white"
                   >
-                    <span className="flex items-center w-0 opacity-0 transition-all duration-300 group-hover:w-3.5 group-hover:opacity-100">
-                      <span className="h-px w-2.5 bg-brand-400" />
-                    </span>
                     {b.label}
                   </Link>
                 </li>
