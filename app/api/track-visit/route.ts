@@ -90,17 +90,15 @@ export async function POST(request: Request) {
     visitCache.set(pageKey, now);
     visitCache.set(ipRecentKey, now);
 
-    // 4. Geolocation details
+    // 4. Geolocation details (City, Country)
     let country = headers.get("x-vercel-ip-country") || headers.get("cf-ipcountry") || "";
     let city = headers.get("x-vercel-ip-city") || "";
-    let region = headers.get("x-vercel-ip-country-region") || "";
     let countryCode = country;
     let isp = "";
-    let mapUrl = "";
 
     if (!country || (clientIp !== "127.0.0.1" && clientIp !== "::1")) {
       try {
-        const geoRes = await fetch(`http://ip-api.com/json/${clientIp}?fields=status,country,countryCode,regionName,city,zip,lat,lon,isp,org`, {
+        const geoRes = await fetch(`http://ip-api.com/json/${clientIp}?fields=status,country,countryCode,city,isp,org`, {
           signal: AbortSignal.timeout(2000),
         });
         if (geoRes.ok) {
@@ -108,12 +106,8 @@ export async function POST(request: Request) {
           if (geo.status === "success") {
             city = geo.city || city;
             country = geo.country || country;
-            region = geo.regionName || region;
             countryCode = geo.countryCode || countryCode;
             isp = geo.isp || geo.org || "";
-            if (geo.lat && geo.lon) {
-              mapUrl = `https://www.google.com/maps?q=${geo.lat},${geo.lon}`;
-            }
           }
         }
       } catch {
@@ -122,14 +116,14 @@ export async function POST(request: Request) {
     }
 
     const flag = getCountryFlag(countryCode);
-    const locationStr = [city, region, country].filter(Boolean).join(", ") || "Unknown Location";
+    const locationStr = [city, country].filter(Boolean).join(", ") || "Unknown Location";
     const pageUrl = data.url || headers.get("referer") || "https://www.veloradigitizing.com";
     const referrer = data.referrer || headers.get("referer") || "Direct Visit";
     const screenSize = data.screenSize || "Unknown";
     const language = data.language || headers.get("accept-language")?.split(",")[0] || "en";
 
     // 5. Title & Message Format
-    const title = `${flag} New Visit from ${city ? `${city}, ` : ""}${country || "Visitor"}`;
+    const title = `${flag} New Visit: ${locationStr}`;
     
     const messageLines = [
       `📍 Location: ${locationStr}`,
@@ -139,7 +133,6 @@ export async function POST(request: Request) {
       `💻 Device: ${device} • ${os} • ${browser}`,
       `📐 Screen: ${screenSize} • 🗣️ Lang: ${language}`,
       data.utmSource ? `🎯 Campaign: ${data.utmSource} / ${data.utmMedium || ""}` : null,
-      mapUrl ? `🗺️ Maps: ${mapUrl}` : null,
     ].filter(Boolean);
 
     const ntfyPayload = {
@@ -149,15 +142,6 @@ export async function POST(request: Request) {
       priority: 3,
       tags: ["eyes", "globe_with_meridians", device === "Mobile" ? "iphone" : "desktop_computer"],
       click: pageUrl,
-      actions: mapUrl
-        ? [
-            {
-              action: "view",
-              label: "Open Location Map",
-              url: mapUrl,
-            },
-          ]
-        : undefined,
     };
 
     // 6. Send to Ntfy
