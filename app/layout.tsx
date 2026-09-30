@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import type { Metadata, Viewport } from "next";
 import { Inter, Playfair_Display, Dancing_Script } from "next/font/google";
 import Header from "./components/Header";
@@ -5,6 +6,7 @@ import ScrollProgress from "./components/ScrollProgress";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
 import AnnouncementBar from "./components/AnnouncementBar";
+import VisitorTracker from "./components/VisitorTracker";
 import { CartProvider } from "./context/CartContext";
 import "./globals.css";
 
@@ -205,6 +207,9 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col text-navy-950">
+        <Suspense fallback={null}>
+          <VisitorTracker />
+        </Suspense>
         <CartProvider>
           <ScrollProgress />
           <AnnouncementBar />
