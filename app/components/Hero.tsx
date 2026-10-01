@@ -165,13 +165,13 @@ export function StarRating({ count = 5 }: { count?: number }) {
 // Floating stats card — animated counter + rating, sits at bottom-right of hero on desktop
 function HeroStatsCard() {
   const spanRef = useRef<HTMLSpanElement | null>(null);
-  const countState = useState(0);
+  const countState = useState(3200);
   const count = countState[0];
   const setCount = countState[1];
   const startedState = useState(false);
   const started = startedState[0];
   const setStarted = startedState[1];
-  const ratingState = useState(0);
+  const ratingState = useState<number>(SITE_RATING.value);
   const rating = ratingState[0];
   const setRating = ratingState[1];
 

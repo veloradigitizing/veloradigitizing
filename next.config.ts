@@ -33,6 +33,30 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async redirects() {
+    return [
+      {
+        source: "/blog/cheap-3d-puff-embroidery-digitizing-for-caps",
+        destination: "/blog/3d-puff-embroidery-digitizing-guide",
+        permanent: true,
+      },
+      {
+        source: "/blog/cheap-3d-puff-embroidery-digitizing-for-caps/",
+        destination: "/blog/3d-puff-embroidery-digitizing-guide",
+        permanent: true,
+      },
+      {
+        source: "/blog/embroidered-vs-woven-vs-pvc-patches",
+        destination: "/blog/custom-patch-types-embroidered-woven-pvc-leather-chenille",
+        permanent: true,
+      },
+      {
+        source: "/blog/embroidered-vs-woven-vs-pvc-patches/",
+        destination: "/blog/custom-patch-types-embroidered-woven-pvc-leather-chenille",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

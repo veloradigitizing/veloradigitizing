@@ -111,11 +111,19 @@ function renderInline(text: string): ReactNode[] {
   return parts;
 }
 
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)+/g, "");
+}
+
 function Block({ block }: { block: BlogBlock }) {
   switch (block.type) {
     case "h2":
+      const id = slugify(block.text);
       return (
-        <h2 className="mt-10 font-serif text-2xl font-bold leading-snug text-navy-950 sm:text-3xl">
+        <h2 id={id} className="mt-12 scroll-mt-24 font-serif text-2xl font-bold leading-snug text-navy-950 sm:text-3xl">
           {block.text}
         </h2>
       );
@@ -301,6 +309,42 @@ export default async function BlogPostPage({ params }: Props) {
 
         {/* Body */}
         <div className="mx-auto mt-6 max-w-3xl">
+          {/* Table of Contents */}
+          {(() => {
+            const headings = post.content.filter(
+              (b): b is { type: "h2"; text: string } => b.type === "h2"
+            );
+            if (headings.length < 2) return null;
+            return (
+              <nav
+                aria-label="Table of contents"
+                className="mb-8 rounded-2xl border border-navy-950/10 bg-brand-50/30 p-6"
+              >
+                <div className="flex items-center gap-2">
+                  <Icon name="award" className="h-4 w-4 text-brand-600" />
+                  <p className="font-serif text-base font-bold text-navy-950">
+                    Table of Contents
+                  </p>
+                </div>
+                <ol className="mt-4 grid grid-cols-1 gap-2 sm:grid-cols-2 text-sm">
+                  {headings.map((h, index) => (
+                    <li key={h.text} className="flex items-start gap-2">
+                      <span className="font-mono text-xs font-bold text-brand-600">
+                        {index + 1}.
+                      </span>
+                      <a
+                        href={`#${slugify(h.text)}`}
+                        className="text-navy-950/75 hover:text-brand-600 hover:underline transition-colors leading-snug"
+                      >
+                        {h.text}
+                      </a>
+                    </li>
+                  ))}
+                </ol>
+              </nav>
+            );
+          })()}
+
           {post.content.map((block, i) => (
             <Block key={i} block={block} />
           ))}
