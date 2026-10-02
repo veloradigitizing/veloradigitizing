@@ -12,7 +12,10 @@ Velora Digitizing provides manual embroidery digitizing, 3D puff cap digitizing,
 - [Custom Patches](https://www.veloradigitizing.com/patches): Custom patch digitizing and physical production (merrow border, laser cut, woven, PVC, chenille, iron-on, velcro).
 - [Embroidery Designs Store](https://www.veloradigitizing.com/store): Instant download digital embroidery patterns and design bundles.
 - [Portfolio](https://www.veloradigitizing.com/portfolio): Gallery of 3,000+ completed embroidery stitch-outs and vector designs.
-- [Blog & Guides](https://www.veloradigitizing.com/blog): In-depth tutorials on embroidery file formats (DST vs PES vs JEF), 3D puff techniques, patch types, and logo preparation.
+- [Blog & Guides](https://www.veloradigitizing.com/blog): In-depth tutorials on Illustrator to embroidery digitizing, manual vs AI auto-digitizing, PVC vs embroidered patches, embroidery file formats (DST vs PES vs JEF), 3D puff techniques, and logo preparation.
+- [How to Digitize in Illustrator](https://www.veloradigitizing.com/blog/digitize-logo-illustrator-embroidery): Complete vector preparation and DST/PES conversion guide.
+- [Manual vs AI Auto-Digitizing](https://www.veloradigitizing.com/blog/manual-digitizing-vs-ai-auto-digitizing): Stitch quality, push-pull compensation, and thread break comparison.
+- [PVC vs Embroidered Patches](https://www.veloradigitizing.com/blog/pvc-patches-vs-embroidered-patches): Weatherproof durability, cost, and backing options comparison.
 
 ## Technical Specifications
 - Supported Output Formats: DST (Tajima), PES (Brother/Babylock), JEF (Janome), EXP (Melco/Bernina), VP3 (Husqvarna/Pfaff), XXX (Singer), SVG, AI, EPS, PDF.
