@@ -2426,7 +2426,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ]
   },
   {
-    "slug": "how-to-digitize-a-logo-for-embroidery-in-illustrator",
+    "slug": "digitize-logo-illustrator-embroidery",
     "title": "How to Digitize a Logo for Embroidery in Adobe Illustrator: Step-by-Step Guide",
     "metaTitle": "How to Digitize a Logo for Embroidery in Illustrator",
     "description": "Learn how to prepare and digitize a logo for embroidery using Adobe Illustrator. Step-by-step vector preparation, stitch conversion methods, and DST/PES export tips.",
