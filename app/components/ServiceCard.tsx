@@ -115,7 +115,7 @@ export default function ServiceCard({ service }: { service: Service }) {
         {/* Description - Fixed Height with line clamp */}
         <div className="mt-3 grow shrink-0">
           <p
-            className="text-sm leading-relaxed text-navy-950/60 line-clamp-3 text-center"
+            className="text-sm leading-relaxed text-slate-600 line-clamp-3 text-center"
             style={{ minHeight: "3.75rem" }}
           >
             {service.description}
@@ -132,7 +132,7 @@ export default function ServiceCard({ service }: { service: Service }) {
               {service.count}+ Designs
             </span>
           )}
-          <span className="flex h-9 w-9 items-center justify-center rounded-full border border-navy-950/10 text-navy-950/40 transition-all group-hover:border-brand-500 group-hover:bg-brand-500 group-hover:text-white">
+          <span className="flex h-9 w-9 items-center justify-center rounded-full border border-navy-950/15 text-slate-600 transition-all group-hover:border-brand-500 group-hover:bg-brand-500 group-hover:text-white">
             <svg
               className="h-4 w-4 transition-transform group-hover:translate-x-0.5"
               fill="none"

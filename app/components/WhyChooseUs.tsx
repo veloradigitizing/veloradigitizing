@@ -43,7 +43,7 @@ export default function WhyChooseUs({
               </span>
               <h3 className="text-sm font-semibold text-white">{item.title}</h3>
               {item.description && (
-                <p className="text-xs text-white/50">{item.description}</p>
+                <p className="text-xs font-medium text-slate-300">{item.description}</p>
               )}
             </Reveal>
           ))}

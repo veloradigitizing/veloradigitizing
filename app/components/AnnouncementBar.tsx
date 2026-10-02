@@ -124,17 +124,23 @@ export default function AnnouncementBar() {
         </div>
 
         {/* Dots */}
-        <div className="hidden items-center gap-1.5 sm:flex">
+        <div className="hidden items-center gap-1 sm:flex" role="tablist" aria-label="Announcement slides">
           {MESSAGES.map((_, i) => (
             <button
               key={i}
               type="button"
+              role="tab"
+              aria-selected={i === idx}
               aria-label={`Show announcement message ${i + 1}`}
               onClick={() => setIdx(i)}
-              className={`h-2 rounded-full transition-all ${
-                i === idx ? "w-4 bg-white" : "w-2 bg-white/40 hover:bg-white/70"
-              }`}
-            />
+              className="flex h-8 w-8 items-center justify-center rounded-full text-white transition-opacity hover:opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+            >
+              <span
+                className={`h-2 rounded-full transition-all duration-300 ${
+                  i === idx ? "w-4 bg-white opacity-100" : "w-2 bg-white/50 opacity-70 hover:opacity-90"
+                }`}
+              />
+            </button>
           ))}
         </div>
 

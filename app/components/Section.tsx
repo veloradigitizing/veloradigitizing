@@ -38,7 +38,7 @@ export function SectionTag({
       {subtitle && (
         <p
           className={`mx-auto mt-5 max-w-2xl text-[15px] leading-relaxed ${
-            dark ? "text-white/60" : "text-navy-950/60"
+            dark ? "text-slate-200" : "text-slate-600"
           } ${center ? "text-center" : ""}`}
         >
           {subtitle}
@@ -72,7 +72,7 @@ export function HeroFeatures() {
           </span>
           <div className="leading-tight">
             <p className="text-sm font-bold text-navy-950">{f.title}</p>
-            <p className="mt-1 text-xs text-navy-950/55">{f.sub}</p>
+            <p className="mt-1 text-xs text-slate-600">{f.sub}</p>
           </div>
         </div>
       ))}
@@ -82,7 +82,7 @@ export function HeroFeatures() {
 
 export function Breadcrumb({ current }: { current: string }) {
   return (
-    <p className="text-sm text-navy-950/50">
+    <p className="text-sm font-medium text-navy-950/75">
       <span className="text-brand-600">Home</span>
       <span className="mx-2">&rsaquo;</span>
       <span>{current}</span>
@@ -110,7 +110,7 @@ export function StatsBar({
               <p className="font-serif text-2xl font-bold text-white">
                 {s.value}
               </p>
-              <p className="text-xs text-white/50">{s.label}</p>
+              <p className="text-xs font-medium text-white/80">{s.label}</p>
             </div>
           </Reveal>
         ))}

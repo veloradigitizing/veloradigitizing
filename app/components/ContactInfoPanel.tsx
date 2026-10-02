@@ -30,7 +30,7 @@ export default function ContactInfoPanel({
             <div>
               <h3 className="text-sm font-bold text-brand-600">{info.title}</h3>
               {info.lines.map((l) => (
-                <p key={l} className="text-sm text-navy-950/60">
+                <p key={l} className="text-sm font-medium text-slate-600">
                   {l}
                 </p>
               ))}
@@ -39,14 +39,14 @@ export default function ContactInfoPanel({
         ))}
       </div>
       <div className="mt-8 border-t border-navy-950/10 pt-6">
-        <p className="mb-3 text-xs font-bold uppercase tracking-wide text-navy-950/50">
+        <p className="mb-3 text-xs font-bold uppercase tracking-wide text-navy-950/75">
           Follow Us
         </p>
         <div className="flex gap-3">
           {socialIcons.map((icon) => (
             <span
               key={icon}
-              className="vr-lift flex h-9 w-9 items-center justify-center rounded-full border border-navy-950/15 text-navy-950/50 hover:border-brand-600 hover:text-brand-600"
+              className="vr-lift flex h-9 w-9 items-center justify-center rounded-full border border-navy-950/15 text-slate-600 hover:border-brand-600 hover:text-brand-600"
             >
               <Icon name={icon} className="h-4 w-4" />
             </span>

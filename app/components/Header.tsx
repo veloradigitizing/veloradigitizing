@@ -158,7 +158,7 @@ function MobileNavDrawer({ open, onClose, pathname }: { open: boolean; onClose: 
       <div className={`absolute left-0 top-0 flex h-full w-full max-w-xs flex-col bg-white shadow-[16px_0_40px_-16px_rgba(6,14,40,0.35)] transition-transform duration-500 ${open ? "translate-x-0" : "-translate-x-full"}`}>
         <div className="flex items-center justify-between border-b border-navy-950/10 px-5 py-4">
           <Logo />
-          <button aria-label="Close menu" onClick={onClose} className="flex h-10 w-10 items-center justify-center rounded-full text-navy-950/50 transition-colors hover:bg-navy-950/5 hover:text-navy-950">
+          <button aria-label="Close menu" onClick={onClose} className="flex h-10 w-10 items-center justify-center rounded-full text-navy-950/75 transition-colors hover:bg-navy-950/5 hover:text-navy-950">
             <Icon name="close" className="h-5 w-5" />
           </button>
         </div>
@@ -169,13 +169,13 @@ function MobileNavDrawer({ open, onClose, pathname }: { open: boolean; onClose: 
             const isChildActive = hasChildren ? link.children.some((c: { href: string }) => pathname === c.href.split("#")[0]) : false;
             return (
               <div key={link.href}>
-                <Link href={link.href} onClick={onClose} className={`flex min-h-[44px] items-center rounded-md px-3 text-sm font-semibold uppercase tracking-wide transition-all ${active || isChildActive ? "bg-brand-600/10 text-brand-600" : "text-navy-950/70 hover:bg-navy-950/5 hover:text-brand-600"} ${open ? "translate-x-0 opacity-100" : "-translate-x-4 opacity-0"}`} style={{ transitionDelay: open ? `${idx * 60}ms` : "0ms" }}>
+                <Link href={link.href} onClick={onClose} className={`flex min-h-[44px] items-center rounded-md px-3 text-sm font-semibold uppercase tracking-wide transition-all ${active || isChildActive ? "bg-brand-600/10 text-brand-600" : "text-navy-950/75 hover:bg-navy-950/5 hover:text-brand-600"} ${open ? "translate-x-0 opacity-100" : "-translate-x-4 opacity-0"}`} style={{ transitionDelay: open ? `${idx * 60}ms` : "0ms" }}>
                   {link.label}
                 </Link>
                 {hasChildren && (
                   <div className="ml-4 mt-1 flex flex-col gap-1 border-l-2 border-brand-600/20 pl-3">
                     {link.children.map((child: { href: string; label: string }) => (
-                      <Link key={child.href} href={child.href} onClick={onClose} className={`rounded-md px-3 py-1.5 text-xs font-medium uppercase tracking-wide transition-colors ${pathname === child.href.split("#")[0] ? "text-brand-600 font-semibold" : "text-navy-950/50 hover:text-brand-600"}`}>
+                      <Link key={child.href} href={child.href} onClick={onClose} className={`rounded-md px-3 py-1.5 text-xs font-medium uppercase tracking-wide transition-colors ${pathname === child.href.split("#")[0] ? "text-brand-600 font-semibold" : "text-slate-600 hover:text-brand-600"}`}>
                         {child.label}
                       </Link>
                     ))}
@@ -286,7 +286,7 @@ export default function Header() {
                             <Link
                               key={child.href}
                               href={child.href}
-                              className={`flex items-center justify-between px-4 py-2.5 text-[13px] tracking-wide transition-colors duration-150 ${childActive ? "text-brand-600 font-semibold bg-brand-600/[0.04]" : "text-navy-950/60 hover:text-brand-600 hover:bg-brand-600/[0.03]"}`}
+                              className={`flex items-center justify-between px-4 py-2.5 text-[13px] tracking-wide transition-colors duration-150 ${childActive ? "text-brand-600 font-semibold bg-brand-600/[0.04]" : "text-slate-600 hover:text-brand-600 hover:bg-brand-600/[0.03]"}`}
                             >
                               {child.label}
                               <svg className={`h-3 w-3 opacity-0 transition-opacity duration-150 ${childActive ? "opacity-100 text-brand-600" : "group-hover/item:opacity-100"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>

@@ -35,7 +35,7 @@ export default function HomeStats({
                 <p className="font-serif text-2xl font-bold text-white">
                   {stat.value}
                 </p>
-                <p className="text-xs text-white/50">{stat.label}</p>
+                <p className="text-xs font-medium text-white/80">{stat.label}</p>
               </div>
             </Reveal>
           ))}

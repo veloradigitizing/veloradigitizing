@@ -282,7 +282,7 @@ export default function CapDigitizingPage() {
                 <p className="font-mono text-base font-bold text-brand-300">
                   {f.format}
                 </p>
-                <p className="text-[11px] text-white/50">{f.desc}</p>
+                <p className="text-[11px] font-medium text-slate-300">{f.desc}</p>
               </div>
             ))}
           </div>

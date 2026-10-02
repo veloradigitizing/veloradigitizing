@@ -52,7 +52,7 @@ export default function TeamSection({
                 <h3 className="mt-3 text-sm font-semibold text-navy-950">
                   {member.name}
                 </h3>
-                <p className="text-xs text-navy-950/50">{member.role}</p>
+                <p className="text-xs font-medium text-slate-600">{member.role}</p>
               </Reveal>
             ))}
           </div>
@@ -69,7 +69,7 @@ export default function TeamSection({
             {goalTitle}
           </h3>
           <div className="mx-auto mt-3 h-[3px] w-12 rounded-full bg-brand-600/60" />
-          <p className="mt-4 text-sm leading-relaxed text-white/60">
+          <p className="mt-4 text-sm leading-relaxed text-slate-200">
             {goalDescription}
           </p>
           <p className="mt-5 font-script text-xl text-white/80">

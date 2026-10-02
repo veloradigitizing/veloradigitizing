@@ -26,7 +26,7 @@ export default function NotFound() {
           </span>
         </h2>
 
-        <p className="mx-auto mt-4 max-w-md text-base text-white/50 sm:text-lg">
+        <p className="mx-auto mt-4 max-w-md text-base font-medium text-slate-300 sm:text-lg">
           The page you are looking for doesn&apos;t exist or has been moved.
           Let us help you find your way back.
         </p>

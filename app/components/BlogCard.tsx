@@ -20,16 +20,16 @@ export default function BlogCard({ post }: { post: BlogPost }) {
           <span className="rounded-full bg-brand-50 px-2.5 py-0.5 text-brand-600">
             {post.category}
           </span>
-          <span className="text-navy-950/40">{post.readTime} min read</span>
+          <span className="text-slate-600">{post.readTime} min read</span>
         </div>
         <h3 className="mt-3 font-serif text-lg font-bold leading-snug text-navy-950 transition-colors group-hover:text-brand-600">
           <Link href={href}>{post.title}</Link>
         </h3>
-        <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-navy-950/60">
+        <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-slate-600">
           {post.excerpt}
         </p>
         <div className="mt-auto flex items-center justify-between pt-5 text-xs">
-          <time dateTime={post.publishedAt} className="text-navy-950/45">
+          <time dateTime={post.publishedAt} className="text-slate-500 font-medium">
             {formatPostDate(post.publishedAt)}
           </time>
           <Link

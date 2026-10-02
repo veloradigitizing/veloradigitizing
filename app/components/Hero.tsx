@@ -121,7 +121,7 @@ export function StatsBar({
               <p className="font-serif text-2xl font-bold text-white">
                 {s.value}
               </p>
-              <p className="text-xs text-white/50">{s.label}</p>
+              <p className="text-xs font-medium text-white/80">{s.label}</p>
             </div>
           </Reveal>
         ))}
@@ -227,7 +227,7 @@ function HeroStatsCard() {
           <div className="font-serif text-3xl font-extrabold text-brand-600">
             <span ref={spanRef}>{displayCount}+</span>
           </div>
-          <div className="text-[10px] font-medium uppercase tracking-wider text-navy-950/50">
+          <div className="text-[10px] font-semibold uppercase tracking-wider text-slate-700">
             Completed Projects
           </div>
         </div>
@@ -246,7 +246,7 @@ function HeroStatsCard() {
               {displayRating}
             </span>
           </div>
-          <div className="text-[10px] font-medium uppercase tracking-wider text-navy-950/50">
+          <div className="text-[10px] font-semibold uppercase tracking-wider text-slate-700">
             Client Rating &middot; {SITE_RATING.count} reviews
           </div>
         </div>

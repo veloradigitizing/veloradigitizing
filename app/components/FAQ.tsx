@@ -132,7 +132,7 @@ export function FAQ({
             {title}
           </h2>
           {subtitle && (
-            <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-navy-950/60">
+            <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-slate-600">
               {subtitle}
             </p>
           )}
@@ -145,7 +145,7 @@ export function FAQ({
               <div className="relative w-full max-w-xl">
                 <Icon
                   name="search"
-                  className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-navy-950/40"
+                  className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-500"
                 />
                 <input
                   ref={searchRef}
@@ -154,14 +154,14 @@ export function FAQ({
                   onChange={(e) => setQuery(e.target.value)}
                   placeholder="Search questions…  (press “/” to focus)"
                   aria-label="Search FAQ"
-                  className="w-full rounded-full border border-navy-950/10 bg-white py-3 pl-11 pr-10 text-sm text-navy-950 shadow-sm transition-all placeholder:text-navy-950/40 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/20"
+                  className="w-full rounded-full border border-navy-950/10 bg-white py-3 pl-11 pr-10 text-sm text-navy-950 shadow-sm transition-all placeholder:text-slate-500 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/20"
                 />
                 {query && (
                   <button
                     type="button"
                     onClick={() => setQuery("")}
                     aria-label="Clear search"
-                    className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full p-1 text-navy-950/40 transition-colors hover:bg-navy-950/5 hover:text-navy-950"
+                    className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full p-1 text-slate-500 transition-colors hover:bg-navy-950/5 hover:text-navy-950"
                   >
                     <Icon name="close" className="h-4 w-4" />
                   </button>
@@ -249,7 +249,7 @@ export function FAQ({
                     >
                       <div className="overflow-hidden">
                         <div className="border-t border-navy-950/5 px-5 pb-5 pt-4 sm:px-6">
-                          <p className="text-sm leading-relaxed text-navy-950/70 sm:text-[15px]">
+                          <p className="text-sm leading-relaxed text-slate-600 sm:text-[15px]">
                             {item.answer}
                           </p>
                         </div>
@@ -265,7 +265,7 @@ export function FAQ({
         {/* Bottom CTA */}
         {showCta && (
           <Reveal direction="up" delay={160} className="mt-12 text-center">
-            <p className="mb-4 text-sm text-navy-950/50">
+            <p className="mb-4 text-sm font-medium text-slate-600">
               Still have questions? We&apos;re here 24/7.
             </p>
             <a
@@ -346,7 +346,7 @@ function EmptyState({
       <p className="text-sm font-semibold text-navy-950">
         No questions match &ldquo;{query}&rdquo;
       </p>
-      <p className="mt-1 text-sm text-navy-950/60">
+      <p className="mt-1 text-sm text-slate-600">
         Try a different keyword or clear the search.
       </p>
       <button
