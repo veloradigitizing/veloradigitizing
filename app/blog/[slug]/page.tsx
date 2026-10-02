@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
@@ -48,7 +49,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       siteName: "Velora Digitizing",
       publishedTime: post.publishedAt,
       modifiedTime: post.updatedAt ?? post.publishedAt,
-      authors: ["Velora Digitizing"],
+      authors: ["David Thompson"],
       tags: post.tags,
       images: [{ url: ogImage, alt: post.imageAlt }],
     },
@@ -210,9 +211,16 @@ export default async function BlogPostPage({ params }: Props) {
           ? { image: [`${BASE_URL}${post.image}`] }
           : {}),
         author: {
-          "@type": "Organization",
-          name: "Velora Digitizing",
-          url: BASE_URL,
+          "@type": "Person",
+          name: "David Thompson",
+          jobTitle: "Lead Digitizer",
+          image: `${BASE_URL}/images/team/team-02.webp`,
+          url: `${BASE_URL}/about`,
+          worksFor: {
+            "@type": "Organization",
+            name: "Velora Digitizing",
+            url: BASE_URL,
+          },
         },
         publisher: { "@id": `${BASE_URL}/#organization` },
         isPartOf: { "@id": `${BASE_URL}/blog#blog` },
@@ -282,15 +290,23 @@ export default async function BlogPostPage({ params }: Props) {
           <p className="mt-5 text-[17px] leading-relaxed text-navy-950/65">
             {post.excerpt}
           </p>
-          <div className="mt-6 flex items-center justify-center gap-3 text-sm text-navy-950/55">
-            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-brand-600 text-white">
-              <Icon name="award" className="h-4 w-4" />
-            </span>
-            <span>
-              By <span className="font-semibold text-navy-950">Velora Digitizing</span>
-            </span>
-            <span aria-hidden>&middot;</span>
-            <time dateTime={post.publishedAt}>
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-3 text-sm text-navy-950/70">
+            <div className="relative h-10 w-10 overflow-hidden rounded-full border-2 border-brand-600/30 shadow-sm">
+              <Image
+                src="/images/team/team-02.webp"
+                alt="David Thompson, Lead Digitizer at Velora Digitizing"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="text-left">
+              <Link href="/about" className="font-semibold text-navy-950 hover:text-brand-600">
+                David Thompson
+              </Link>
+              <p className="text-xs text-navy-950/55">Lead Digitizer &middot; 12+ Yrs Exp</p>
+            </div>
+            <span aria-hidden className="hidden sm:inline text-navy-950/30">&middot;</span>
+            <time dateTime={post.publishedAt} className="text-xs text-navy-950/60 font-medium">
               {formatPostDate(post.publishedAt)}
             </time>
           </div>
@@ -362,6 +378,38 @@ export default async function BlogPostPage({ params }: Props) {
                 {tag}
               </span>
             ))}
+          </div>
+
+          {/* E-E-A-T Author Bio Card */}
+          <div className="mt-12 rounded-2xl border border-navy-950/10 bg-brand-50/40 p-6 sm:p-7">
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+              <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-2xl border border-brand-600/20 shadow-sm">
+                <Image
+                  src="/images/team/team-02.webp"
+                  alt="David Thompson, Lead Digitizer at Velora Digitizing"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="flex-1">
+                <div className="flex flex-wrap items-center gap-2">
+                  <h4 className="font-serif text-lg font-bold text-navy-950">
+                    Written by David Thompson
+                  </h4>
+                  <span className="rounded-full bg-brand-600/10 px-2.5 py-0.5 text-xs font-semibold text-brand-700">
+                    Lead Digitizer
+                  </span>
+                </div>
+                <p className="mt-2 text-sm leading-relaxed text-navy-950/70">
+                  David has over 12 years of specialized craftsmanship in commercial embroidery punching, stitch-path optimization, and fabric-tension calibration. He oversees quality control for thousands of embroidery files weekly at Velora Digitizing.
+                </p>
+                <div className="mt-3 flex items-center gap-3 text-xs font-semibold text-brand-600">
+                  <Link href="/about" className="hover:underline flex items-center gap-1">
+                    Meet the Team <span aria-hidden>&rarr;</span>
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Related service CTA */}
