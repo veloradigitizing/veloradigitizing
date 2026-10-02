@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, type FormEvent } from "react";
 import Icon from "./Icon";
@@ -40,7 +40,7 @@ export default function ContactForm({
     fetch("https://ntfy.sh/velora-alerts", {
       method: "POST",
       headers: {
-        "Title": `New Lead: ${name}`,
+        "Title": `[Velora Digitizing] 🚀 New Lead: ${name}`,
         "Priority": "urgent",
         "Tags": "tada,briefcase,email",
       },

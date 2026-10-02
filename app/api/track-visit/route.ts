@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+﻿import { NextResponse } from "next/server";
 import { NTFY_TOPIC } from "@/lib/ntfy";
 
 // In-memory cache for IP + Page visit deduplication: Map<key, timestamp>
@@ -117,21 +117,20 @@ export async function POST(request: Request) {
 
     const flag = getCountryFlag(countryCode);
     const locationStr = [city, country].filter(Boolean).join(", ") || "Unknown Location";
-    const pageUrl = data.url || headers.get("referer") || "https://www.veloradigitizing.com";
     const referrer = data.referrer || headers.get("referer") || "Direct Visit";
     const screenSize = data.screenSize || "Unknown";
     const language = data.language || headers.get("accept-language")?.split(",")[0] || "en";
 
     // 5. Title & Message Format
-    const title = `${flag} New Visit: ${locationStr}`;
+    const title = `[Velora Digitizing] ${flag} Visit: ${locationStr}`;
     
     const messageLines = [
       `📍 Location: ${locationStr}`,
       `🌐 IP: ${clientIp}${isp ? ` (${isp})` : ""}`,
       `📄 Page: ${pagePath}`,
       `🔗 Referrer: ${referrer}`,
-      `💻 Device: ${device} • ${os} • ${browser}`,
-      `📐 Screen: ${screenSize} • 🗣️ Lang: ${language}`,
+      `📱 Device: ${device} • ${os} • ${browser}`,
+      `🖥️ Screen: ${screenSize} • 🌐 Lang: ${language}`,
       data.utmSource ? `🎯 Campaign: ${data.utmSource} / ${data.utmMedium || ""}` : null,
     ].filter(Boolean);
 
@@ -141,7 +140,6 @@ export async function POST(request: Request) {
       message: messageLines.join("\n"),
       priority: 3,
       tags: ["eyes", "globe_with_meridians", device === "Mobile" ? "iphone" : "desktop_computer"],
-      click: pageUrl,
     };
 
     // 6. Send to Ntfy

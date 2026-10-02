@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Ntfy notification utility for Velora Digitizing.
  * Topic is hardcoded to 'velora-alerts'.
  */
@@ -28,7 +28,7 @@ export async function sendNtfyAlert(options: NtfyMessageOptions): Promise<boolea
   try {
     const payload = {
       topic: NTFY_TOPIC,
-      title: options.title || "Velora Digitizing Alert",
+      title: options.title || "[Velora Digitizing] Alert",
       message: options.message,
       priority: options.priority || 4,
       tags: options.tags || ["bell", "email"],
@@ -61,22 +61,31 @@ export async function sendContactLeadAlert(data: {
   subject?: string;
   message?: string;
 }): Promise<boolean> {
-  const title = `🚨 New Quote Request: ${data.name}`;
+  const title = `[Velora Digitizing] 🚀 New Quote Request: ${data.name}`;
   const details = [
     `👤 Name: ${data.name}`,
     `📧 Email: ${data.email}`,
     data.service ? `🏷️ Service: ${data.service}` : null,
-    data.subject ? `📌 Subject: ${data.subject}` : null,
+    data.subject ? `📝 Subject: ${data.subject}` : null,
     data.message ? `💬 Message: ${data.message}` : null,
   ]
     .filter(Boolean)
     .join("\n");
+
+  const actions = [];
+  if (data.email) {
+    actions.push({
+      action: "view" as const,
+      label: "✉️ Reply via Email",
+      url: `mailto:${data.email}?subject=Re:%20Quote%20Inquiry%20from%20Velora%20Digitizing`,
+    });
+  }
 
   return sendNtfyAlert({
     title,
     message: details,
     priority: 5, // Urgent priority for incoming business leads
     tags: ["tada", "briefcase", "moneybag", "email"],
-    click: `mailto:${data.email}`,
+    actions,
   });
 }
