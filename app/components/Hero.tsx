@@ -165,17 +165,17 @@ export function StarRating({ count = 5 }: { count?: number }) {
 // Floating stats card — animated counter + rating, sits at bottom-right of hero on desktop
 function HeroStatsCard() {
   const spanRef = useRef<HTMLSpanElement | null>(null);
-  const countState = useState(3200);
-  const count = countState[0];
-  const setCount = countState[1];
-  const startedState = useState(false);
-  const started = startedState[0];
-  const setStarted = startedState[1];
-  const ratingState = useState<number>(SITE_RATING.value);
-  const rating = ratingState[0];
-  const setRating = ratingState[1];
+  const [mounted, setMounted] = useState(false);
+  const [count, setCount] = useState(3200);
+  const [rating, setRating] = useState<number>(SITE_RATING.value);
+  const [started, setStarted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!mounted) return;
     const node = spanRef.current;
     if (!node) return;
     const obs = new IntersectionObserver(
@@ -191,25 +191,31 @@ function HeroStatsCard() {
     );
     obs.observe(node);
     return () => obs.disconnect();
-  }, [setStarted]);
+  }, [mounted]);
 
   useEffect(() => {
     if (!started) return;
     let raf: number;
     const startTime = performance.now();
-    const duration = 2000;
+    const duration = 1800;
+    const startCount = 2850;
+    const targetCount = 3200;
+    const startRating = 4.6;
+    const targetRating = SITE_RATING.value;
+
     const tick = (now: number) => {
       const progress = Math.min((now - startTime) / duration, 1);
       const eased = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
-      setCount(Math.round(eased * 3200));
-      setRating(Math.round(eased * SITE_RATING.value * 10) / 10);
+      setCount(Math.round(startCount + eased * (targetCount - startCount)));
+      setRating(Math.round((startRating + eased * (targetRating - startRating)) * 10) / 10);
       if (progress < 1) raf = requestAnimationFrame(tick);
     };
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
-  }, [started, setCount, setRating]);
+  }, [started]);
 
-  const formatted = count.toLocaleString("en-US");
+  const displayCount = (mounted && started ? count : 3200).toLocaleString("en-US");
+  const displayRating = (mounted && started ? rating : SITE_RATING.value).toFixed(1);
 
   return (
     <div
@@ -219,7 +225,7 @@ function HeroStatsCard() {
       <div className="flex items-center gap-4 rounded-2xl bg-white px-6 py-4 shadow-2xl ring-1 ring-navy-950/5 vr-float">
         <div>
           <div className="font-serif text-3xl font-extrabold text-brand-600">
-            <span ref={spanRef}>{formatted}+</span>
+            <span ref={spanRef}>{displayCount}+</span>
           </div>
           <div className="text-[10px] font-medium uppercase tracking-wider text-navy-950/50">
             Completed Projects
@@ -237,7 +243,7 @@ function HeroStatsCard() {
               <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
             </svg>
             <span className="font-serif text-2xl font-extrabold text-navy-950">
-              {rating.toFixed(1)}
+              {displayRating}
             </span>
           </div>
           <div className="text-[10px] font-medium uppercase tracking-wider text-navy-950/50">

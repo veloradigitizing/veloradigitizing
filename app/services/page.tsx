@@ -158,24 +158,24 @@ export default function ServicesPage() {
         testimonials={[
           {
             quote:
-              "Best digitizing service I have worked with. Very professional and reliable.",
-            author: "Michael Brown",
-            authorOrigin: "Canada",
-            authorImage: "/images/testimonials/michael-brown.png",
+              "Turnaround was under 10 hours. Stitch pathing was optimized with minimal trims. Ran clean on our 6-head Tajima with zero thread breaks.",
+            author: "Marcus T.",
+            authorOrigin: "Screen Printing & Embroidery (Ohio, USA)",
+            authorInitial: "MT",
           },
           {
             quote:
-              "From flat embroidery to complex patches, they nail the stitch density every single time.",
-            author: "Laura Bennett",
-            authorOrigin: "USA",
-            authorInitial: "L",
+              "Clean pull-compensation on pique cotton polos. Even the 4mm secondary text was sharp and legible.",
+            author: "Jason L.",
+            authorOrigin: "Workwear & Uniforms (Ontario, Canada)",
+            authorInitial: "JL",
           },
           {
             quote:
-              "Great value for the quality delivered. Their vector art service saved us hours of manual cleanup.",
-            author: "Ahmed Khan",
-            authorOrigin: "UAE",
-            authorInitial: "A",
+              "High density fill without puckering. Excellent communication via WhatsApp for rush delivery.",
+            author: "Liam W.",
+            authorOrigin: "Merch Designer (Manchester, UK)",
+            authorInitial: "LW",
           },
         ]}
         ctaTitle="Need Help Choosing a Service?"

@@ -18,18 +18,17 @@ export default function TestimonialCTA() {
             <StarRating />
           </div>
           <p className="mt-4 max-w-md text-[15px] leading-relaxed text-navy-950/60">
-            &ldquo;Velora Digitizing delivered excellent quality and super
-            fast turnaround. Highly recommended!&rdquo;
+            &ldquo;Turnaround was under 10 hours. Stitch pathing was optimized with minimal trims. Ran clean on our 6-head Tajima with zero thread breaks.&rdquo;
           </p>
           <div className="mt-6 flex items-center gap-4">
             <span className="flex h-11 w-11 items-center justify-center rounded-full bg-brand-50 text-sm font-bold text-brand-600">
-              J
+              MT
             </span>
             <div>
               <p className="text-sm font-semibold text-navy-950">
-                John Smith
+                Marcus T.
               </p>
-              <p className="text-xs text-navy-950/50">USA</p>
+              <p className="text-xs text-navy-950/50">Screen Printing & Embroidery Shop (Ohio, USA)</p>
             </div>
             <div className="ml-auto flex gap-2">
               <button

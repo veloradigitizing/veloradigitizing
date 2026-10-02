@@ -18,24 +18,24 @@ export interface Testimonial {
 const DEFAULT_TESTIMONIALS: Testimonial[] = [
   {
     quote:
-      "Velora Digitizing delivered excellent quality and super fast turnaround. Highly recommended!",
-    author: "John Smith",
-    authorOrigin: "USA",
-    authorImage: "/images/testimonials/john-smith.png",
+      "Turnaround was under 10 hours. Stitch pathing was optimized with minimal trims. Ran clean on our 6-head Tajima with zero thread breaks.",
+    author: "Marcus T.",
+    authorOrigin: "Screen Printing & Embroidery (Ohio, USA)",
+    authorInitial: "MT",
   },
   {
     quote:
-      "Very fast turnaround and the quality was beyond my expectations.",
-    author: "James Wilson",
-    authorOrigin: "United Kingdom",
-    authorImage: "/images/testimonials/james-wilson.png",
+      "Clean pull-compensation on pique cotton polos. Even the 4mm secondary text was sharp and legible.",
+    author: "Jason L.",
+    authorOrigin: "Workwear & Uniforms (Ontario, Canada)",
+    authorInitial: "JL",
   },
   {
     quote:
-      "Best digitizing service I have worked with. Very professional and reliable.",
-    author: "Michael Brown",
-    authorOrigin: "Canada",
-    authorImage: "/images/testimonials/michael-brown.png",
+      "High density fill without puckering. Excellent communication via WhatsApp for rush delivery.",
+    author: "Liam W.",
+    authorOrigin: "Merch Designer (Manchester, UK)",
+    authorInitial: "LW",
   },
 ];
 

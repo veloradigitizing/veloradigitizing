@@ -209,24 +209,24 @@ export default function AboutPage() {
         testimonials={[
           {
             quote:
-              "Excellent quality digitizing and super fast delivery. Highly recommended!",
-            author: "John Smith",
-            authorOrigin: "USA",
-            authorImage: "/images/testimonials/john-smith.png",
+              "Turnaround was under 10 hours. Stitch pathing was optimized with minimal trims. Ran clean on our 6-head Tajima with zero thread breaks.",
+            author: "Marcus T.",
+            authorOrigin: "Screen Printing & Embroidery (Ohio, USA)",
+            authorInitial: "MT",
           },
           {
             quote:
-              "The team truly understands embroidery. Every file ran clean on the first try, no re-digitizing needed.",
-            author: "Sarah Johnson",
-            authorOrigin: "Australia",
-            authorInitial: "S",
+              "Clean pull-compensation on pique cotton polos. Even the 4mm secondary text was sharp and legible.",
+            author: "Jason L.",
+            authorOrigin: "Workwear & Uniforms (Ontario, Canada)",
+            authorInitial: "JL",
           },
           {
             quote:
-              "Their attention to stitch detail and consistent turnaround has made them our go-to digitizing partner.",
-            author: "David Lee",
-            authorOrigin: "Singapore",
-            authorInitial: "D",
+              "High density fill without puckering. Excellent communication via WhatsApp for rush delivery.",
+            author: "Liam W.",
+            authorOrigin: "Merch Designer (Manchester, UK)",
+            authorInitial: "LW",
           },
         ]}
         ctaTitle="Ready to Bring Your Designs to Life?"

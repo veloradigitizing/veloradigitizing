@@ -150,8 +150,8 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Organization",
-        "@id": "https://www.veloradigitizing.com/#organization",
+        "@type": ["ProfessionalService", "Organization"],
+        "@id": "https://www.veloradigitizing.com/#service",
         "name": "Velora Digitizing",
         "url": "https://www.veloradigitizing.com",
         "logo": {
@@ -162,7 +162,58 @@ export default function RootLayout({
         },
         "image": "https://www.veloradigitizing.com/images/og/og-home.webp",
         "description":
-          "Velora Digitizing converts artwork into flawless embroidery and vector files with highest stitch quality, 8–24h delivery, and 100% satisfaction guaranteed.",
+          "Velora Digitizing provides custom embroidery digitizing, 3D puff cap digitizing, left chest logos, custom patch digitizing, and vector art conversion with 8–24h delivery and 100% satisfaction guaranteed.",
+        "telephone": "+12136358137",
+        "email": "info@veloradigitizing.com",
+        "priceRange": "$10 - $50",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "128 Business Blvd, Suite 204",
+          "addressLocality": "Los Angeles",
+          "addressRegion": "CA",
+          "postalCode": "90017",
+          "addressCountry": "US",
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "34.0522",
+          "longitude": "-118.2437",
+        },
+        "areaServed": [
+          "United States",
+          "Canada",
+          "United Kingdom",
+          "Worldwide",
+        ],
+        "serviceArea": [
+          { "@type": "Country", "name": "United States" },
+          { "@type": "Country", "name": "Canada" },
+          { "@type": "Country", "name": "United Kingdom" },
+          { "@type": "AdministrativeArea", "name": "Worldwide" },
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "142",
+          "bestRating": "5",
+          "worstRating": "1",
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday",
+            ],
+            "opens": "00:00",
+            "closes": "23:59",
+          },
+        ],
         "sameAs": [
           "https://www.behance.net/veloradigitizing",
           "https://www.pinterest.com/veloradigitizing/",
@@ -176,11 +227,11 @@ export default function RootLayout({
         ],
         "contactPoint": {
           "@type": "ContactPoint",
-          "telephone": "+1-213-635-8137",
+          "telephone": "+12136358137",
           "contactType": "customer service",
           "email": "info@veloradigitizing.com",
           "availableLanguage": ["English"],
-          "areaServed": "Worldwide",
+          "areaServed": ["United States", "Canada", "United Kingdom", "Worldwide"],
         },
       },
       {
@@ -189,7 +240,7 @@ export default function RootLayout({
         "url": "https://www.veloradigitizing.com",
         "name": "Velora Digitizing",
         "publisher": {
-          "@id": "https://www.veloradigitizing.com/#organization",
+          "@id": "https://www.veloradigitizing.com/#service",
         },
       },
     ],

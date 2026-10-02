@@ -3,9 +3,9 @@ import { Reveal } from "./Reveal";
 import { stagger } from "./stagger";
 
 export const DEFAULT_STATS: { icon: IconName; value: string; label: string }[] = [
-  { icon: "award", value: "3,200+", label: "Projects Completed" },
-  { icon: "smile", value: "850+", label: "Happy Clients" },
-  { icon: "clock", value: "2-24 Hrs", label: "Turnaround Time" },
+  { icon: "award", value: "3,200+", label: "Completed Projects" },
+  { icon: "star", value: "4.8 / 5.0", label: "140+ Verified Reviews" },
+  { icon: "clock", value: "8–24 Hours", label: "Fast Turnaround" },
   { icon: "globe", value: "20+", label: "Countries Served" },
 ];
 

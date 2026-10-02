@@ -58,10 +58,11 @@ const contactJsonLd = {
       "description":
         "Contact page for requesting free embroidery digitizing quotes, vector conversions, and customer support.",
       "mainEntity": {
-        "@type": "LocalBusiness",
+        "@type": "ProfessionalService",
         "name": "Velora Digitizing",
-        "telephone": "+1-213-635-8137",
+        "telephone": "+12136358137",
         "email": "info@veloradigitizing.com",
+        "priceRange": "$10 - $50",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "128 Business Blvd, Suite 204",
@@ -164,24 +165,25 @@ export default function ContactPage() {
         title="Responsive. Reliable. Ready to Help."
         testimonials={[
           {
-            quote: "Very fast turnaround and the quality was beyond my expectations.",
-            author: "James Wilson",
-            authorOrigin: "United Kingdom",
-            authorImage: "/images/testimonials/james-wilson.png",
+            quote:
+              "Turnaround was under 10 hours. Stitch pathing was optimized with minimal trims. Ran clean on our 6-head Tajima with zero thread breaks.",
+            author: "Marcus T.",
+            authorOrigin: "Screen Printing & Embroidery (Ohio, USA)",
+            authorInitial: "MT",
           },
           {
             quote:
-              "I emailed my design at night and had a perfect proof waiting for me the next morning. Great communication throughout.",
-            author: "Emma Davis",
-            authorOrigin: "Canada",
-            authorInitial: "E",
+              "Clean pull-compensation on pique cotton polos. Even the 4mm secondary text was sharp and legible.",
+            author: "Jason L.",
+            authorOrigin: "Workwear & Uniforms (Ontario, Canada)",
+            authorInitial: "JL",
           },
           {
             quote:
-              "Support answered every question quickly and made sure my file was exactly right before production.",
-            author: "Carlos Rivera",
-            authorOrigin: "Spain",
-            authorInitial: "C",
+              "High density fill without puckering. Excellent communication via WhatsApp for rush delivery.",
+            author: "Liam W.",
+            authorOrigin: "Merch Designer (Manchester, UK)",
+            authorInitial: "LW",
           },
         ]}
         ctaTitle="Let's Start Your Project"
