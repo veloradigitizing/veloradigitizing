@@ -28,61 +28,15 @@ import HomeStats from "./components/HomeStats";
 
 const homeJsonLd = {
   "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "ProfessionalService",
-      "@id": "https://www.veloradigitizing.com/#service",
-      "name": "Velora Digitizing",
-      "url": "https://www.veloradigitizing.com",
-      "logo": "https://www.veloradigitizing.com/images/veloralogo.webp",
-      "image": "https://www.veloradigitizing.com/images/og/og-home.webp",
-      "telephone": "+12136358137",
-      "email": "info@veloradigitizing.com",
-      "priceRange": "$10 - $50",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "128 Business Blvd, Suite 204",
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "postalCode": "90017",
-        "addressCountry": "US",
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday",
-          ],
-          "opens": "00:00",
-          "closes": "23:59",
-        },
-      ],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": SITE_RATING.value.toFixed(1),
-        "reviewCount": String(SITE_RATING.count),
-        "bestRating": "5",
-        "worstRating": "1",
-      },
+  "@type": "FAQPage",
+  "mainEntity": HOME_FAQS.map((faq) => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer,
     },
-    {
-      "@type": "FAQPage",
-      "mainEntity": HOME_FAQS.map((faq) => ({
-        "@type": "Question",
-        "name": faq.question,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": faq.answer,
-        },
-      })),
-    },
-  ],
+  })),
 };
 
 export default function Home() {

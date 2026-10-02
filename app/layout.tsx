@@ -38,11 +38,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.veloradigitizing.com"),
   title: {
-    default: "Custom Embroidery Digitizing & Vector Art | Velora Digitizing",
+    default: "Custom Embroidery Digitizing Services | Velora Digitizing",
     template: "%s | Velora Digitizing",
   },
   description:
-    "Velora Digitizing provides custom embroidery digitizing & vector conversion. Flawless 3D puff, left chest logos & fast 8–24h delivery. Get a free quote today!",
+    "Professional embroidery digitizing & vector conversion. Flawless 3D puff, left chest logos & fast 8–24h delivery. Get your free quote today!",
   keywords: [
     "embroidery digitizing",
     "custom embroidery digitizing",

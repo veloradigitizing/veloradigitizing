@@ -1,4 +1,4 @@
-﻿import { NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import { NTFY_TOPIC } from "@/lib/ntfy";
 
 // In-memory cache for IP + Page visit deduplication: Map<key, timestamp>
@@ -54,9 +54,26 @@ export async function POST(request: Request) {
     const data = await request.json().catch(() => ({}));
     const headers = request.headers;
 
-    // 1. Extract client IP
+    // 1. Extract client IP and host
     const forwarded = headers.get("x-forwarded-for");
     const clientIp = forwarded ? forwarded.split(",")[0].trim() : headers.get("x-real-ip") || "127.0.0.1";
+    const host = headers.get("host") || "";
+
+    // Skip localhost and private dev environments
+    const isLocalhost =
+      process.env.NODE_ENV === "development" ||
+      host.includes("localhost") ||
+      host.includes("127.0.0.1") ||
+      clientIp === "127.0.0.1" ||
+      clientIp === "::1" ||
+      clientIp === "localhost" ||
+      clientIp.startsWith("192.168.") ||
+      clientIp.startsWith("10.") ||
+      clientIp.startsWith("172.16.");
+
+    if (isLocalhost && !data.force) {
+      return NextResponse.json({ skipped: "localhost_dev_filtered" });
+    }
 
     const pagePath = data.path || "/";
 
