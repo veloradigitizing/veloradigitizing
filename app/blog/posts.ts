@@ -10,6 +10,7 @@ import post_custom_patch_types_embroidered_woven_pvc_leather_chenille from './co
 import post_digitize_logo_illustrator_embroidery from './content/digitize-logo-illustrator-embroidery';
 import post_dst_vs_pes_vs_jef_embroidery_file_formats from './content/dst-vs-pes-vs-jef-embroidery-file-formats';
 import post_embroidery_stabilizer_guide_cutaway_vs_tearaway from './content/embroidery-stabilizer-guide-cutaway-vs-tearaway';
+import post_embroidery_digitizing_cost_pricing_guide from './content/embroidery-digitizing-cost-pricing-guide';
 import post_embroidery_underlay_types_explained from './content/embroidery-underlay-types-explained';
 import post_fix_embroidery_fabric_puckering_and_thread_breaks from './content/fix-embroidery-fabric-puckering-and-thread-breaks';
 import post_how_to_estimate_embroidery_stitch_count from './content/how-to-estimate-embroidery-stitch-count';
@@ -32,6 +33,7 @@ export const BLOG_POSTS: BlogPost[] = [
   post_digitize_logo_illustrator_embroidery,
   post_dst_vs_pes_vs_jef_embroidery_file_formats,
   post_embroidery_stabilizer_guide_cutaway_vs_tearaway,
+  post_embroidery_digitizing_cost_pricing_guide,
   post_embroidery_underlay_types_explained,
   post_fix_embroidery_fabric_puckering_and_thread_breaks,
   post_how_to_estimate_embroidery_stitch_count,
