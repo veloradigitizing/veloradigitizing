@@ -3,8 +3,8 @@ import type { BlogPost } from '../types';
 export const post: BlogPost = {
   "slug": "manual-digitizing-vs-ai-auto-digitizing",
   "title": "Manual Digitizing vs AI Auto-Digitizing Software: Which Is Best for Embroidery?",
-  "metaTitle": "Manual Digitizing vs AI Auto-Digitizing: Full Comparison",
-  "description": "Compare manual embroidery digitizing against automated AI auto-digitizing software. Learn key differences in stitch quality, thread breaks, and production costs.",
+  "metaTitle": "Manual vs AI Embroidery Digitizing",
+  "description": "Compare manual embroidery digitizing with AI auto-digitizing software. Key differences in stitch quality, thread breaks, and production costs.",
   "excerpt": "Can AI software replace professional manual digitizers? We compare stitch quality, push-pull compensation, production speed, and real-world costs.",
   "category": "Comparisons",
   "tags": [

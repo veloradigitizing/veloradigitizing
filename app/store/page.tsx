@@ -25,9 +25,9 @@ const WHY_SHOP: { icon: IconName; title: string; description: string }[] = [
     description: "Perfect stitches and clean edges every time",
   },
   {
-    icon: "download",
-    title: "Instant Download",
-    description: "Get your patch files immediately after purchase",
+    icon: "mail",
+    title: "Delivered by Email",
+    description: "Files arrive as a zip once your order is confirmed",
   },
   {
     icon: "layers",
@@ -41,8 +41,8 @@ const WHY_SHOP: { icon: IconName; title: string; description: string }[] = [
   },
   {
     icon: "badge-check",
-    title: "Secure Payment",
-    description: "Safe and secure checkout process",
+    title: "Simple Ordering",
+    description: "Order by WhatsApp or through our contact page",
   },
   {
     icon: "headset",
@@ -90,14 +90,14 @@ export default function StorePage() {
           { text: "Premium Embroidery" },
           { text: "Patch Designs", accent: true },
         ]}
-        description="Explore our premium embroidery patch designs. Perfect for jackets, caps, bags, and more. Instant download in all major formats."
+        description="Explore our premium embroidery patch designs. Perfect for jackets, caps, bags, and more. Delivered by email in all major formats."
         bgImage={storeBg}
         imageLabel="Collection of embroidered Velora products — tote bags, keychains, and thread spools"
         features={[
-          { icon: "download", title: "Instant Download", sub: "Download files immediately" },
+          { icon: "mail", title: "Email Delivery", sub: "Files sent to you as a zip" },
           { icon: "layers", title: "All Formats", sub: "All stitch formats included" },
-          { icon: "refresh", title: "Free Updates", sub: "Re-download anytime, forever" },
-          { icon: "cart", title: "Secure Checkout", sub: "Secure encrypted checkout" },
+          { icon: "refresh", title: "Free Re-sends", sub: "Lost a file? We send it again" },
+          { icon: "send", title: "Easy Ordering", sub: "Order by WhatsApp or contact page" },
         ]}
       />
 
@@ -169,7 +169,7 @@ export default function StorePage() {
       <FAQ
         items={STORE_FAQS}
         title="Store - Frequently Asked Questions"
-        subtitle="Questions about purchasing, downloads, licensing, and support for our patch designs."
+        subtitle="Questions about ordering, file delivery, licensing, and support for our patch designs."
       />
 
       <StoreCTA />

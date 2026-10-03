@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { IconCircle } from "./Section";
-import Icon from "./Icon";
+import Icon, { type IconName } from "./Icon";
 import { SERVICES } from "./services-data";
 
 export type Service = {
@@ -97,7 +97,7 @@ export default function ServiceCard({ service }: { service: Service }) {
             />
           ) : (
             <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-500 to-brand-700 text-white">
-              <IconCircle icon={service.icon as any} size="sm" dark />
+              <IconCircle icon={service.icon as IconName} size="sm" dark />
             </div>
           )}
         </div>

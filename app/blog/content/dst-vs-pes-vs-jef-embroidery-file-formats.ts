@@ -3,7 +3,7 @@ import type { BlogPost } from '../types';
 export const post: BlogPost = {
   "slug": "dst-vs-pes-vs-jef-embroidery-file-formats",
   "title": "DST vs PES vs JEF vs EXP: Which Embroidery File Format Do You Need?",
-  "metaTitle": "DST vs PES vs JEF vs EXP Embroidery Formats Explained",
+  "metaTitle": "DST vs PES vs JEF Embroidery Formats",
   "description": "Compare Tajima DST, Brother PES, Janome JEF, and Melco EXP embroidery file formats. Discover machine compatibility, color palette limits, and best uses.",
   "excerpt": "Different embroidery machines require distinct file extensions. Learn the technical differences between commercial DST and home PES/JEF files.",
   "category": "File Formats",

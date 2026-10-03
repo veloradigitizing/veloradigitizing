@@ -3,7 +3,7 @@ import type { BlogPost } from '../types';
 export const post: BlogPost = {
   "slug": "common-embroidery-digitizing-mistakes",
   "title": "10 Common Embroidery Digitizing Mistakes and How to Avoid Them",
-  "metaTitle": "10 Common Embroidery Digitizing Mistakes & How to Fix Them",
+  "metaTitle": "10 Common Embroidery Digitizing Mistakes",
   "description": "Avoid the top 10 embroidery digitizing errors: bad push-pull compensation, missing underlay, density overcrowding, poor sequencing, and thread breaks.",
   "excerpt": "From birdnesting under the needle plate to puckered fabric and misaligned outlines, discover the most costly digitizing errors and how pros solve them.",
   "category": "Troubleshooting",

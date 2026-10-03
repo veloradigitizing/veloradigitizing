@@ -4,9 +4,14 @@ import {
   useEffect,
   useRef,
   useState,
+  useSyncExternalStore,
   type ElementType,
   type ReactNode,
 } from "react";
+
+const subscribeNoop = () => () => {};
+const hasIntersectionObserver = () => typeof IntersectionObserver !== "undefined";
+const assumeSupportedOnServer = () => true;
 
 type Direction = "up" | "down" | "left" | "right" | "scale" | "fade";
 
@@ -42,26 +47,27 @@ export function Reveal({
 }) {
   const Tag = (as ?? "div") as ElementType;
   const ref = useRef<HTMLElement | null>(null);
-  const [visible, setVisible] = useState(false);
+  const [inView, setInView] = useState(false);
+  const ioSupported = useSyncExternalStore(
+    subscribeNoop,
+    hasIntersectionObserver,
+    assumeSupportedOnServer,
+  );
+  // If IO is unsupported, just show.
+  const visible = inView || !ioSupported;
 
   useEffect(() => {
     const node = ref.current;
-    if (!node) return;
-
-    // If IO unsupported, just show.
-    if (typeof IntersectionObserver === "undefined") {
-      setVisible(true);
-      return;
-    }
+    if (!node || !ioSupported) return;
 
     const obs = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setVisible(true);
+            setInView(true);
             if (once) obs.unobserve(entry.target);
           } else if (!once) {
-            setVisible(false);
+            setInView(false);
           }
         });
       },
@@ -70,7 +76,7 @@ export function Reveal({
 
     obs.observe(node);
     return () => obs.disconnect();
-  }, [threshold, once]);
+  }, [threshold, once, ioSupported]);
 
   return (
     <Tag

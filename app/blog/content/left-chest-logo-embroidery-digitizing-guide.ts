@@ -3,7 +3,7 @@ import type { BlogPost } from '../types';
 export const post: BlogPost = {
   "slug": "left-chest-logo-embroidery-digitizing-guide",
   "title": "Left Chest Logo Digitizing: Size, Density, Placement & Fabric Guide",
-  "metaTitle": "Left Chest Logo Digitizing Guide: Size, Placement & Density",
+  "metaTitle": "Left Chest Logo Embroidery Digitizing",
   "description": "Complete guide to left chest logo digitizing. Master dimensions (3.0-3.8 in), stitch count budgets (4k-8k), polo placement metrics, and fabric stabilization.",
   "excerpt": "Left chest embroidery is the single most popular corporate apparel placement. Discover exact sizing standards, placement metrics, and stitch density rules.",
   "category": "Guides",

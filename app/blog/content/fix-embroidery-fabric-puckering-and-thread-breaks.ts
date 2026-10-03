@@ -3,7 +3,7 @@ import type { BlogPost } from '../types';
 export const post: BlogPost = {
   "slug": "fix-embroidery-fabric-puckering-and-thread-breaks",
   "title": "How to Fix Fabric Puckering and Thread Breaks in Machine Embroidery",
-  "metaTitle": "Fix Embroidery Fabric Puckering & Thread Breaks (Pro Guide)",
+  "metaTitle": "Fix Embroidery Puckering & Thread Breaks",
   "description": "Comprehensive troubleshooting guide for machine embroidery: fix fabric puckering, birdnesting, needle breaks, and thread shredding with tension calibration.",
   "excerpt": "Tired of ruined garments, puckered logos, and endless thread breaks? Discover the root causes and step-by-step calibration fixes from master digitizers.",
   "category": "Troubleshooting",

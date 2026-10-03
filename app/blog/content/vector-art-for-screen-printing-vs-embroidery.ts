@@ -3,7 +3,7 @@ import type { BlogPost } from '../types';
 export const post: BlogPost = {
   "slug": "vector-art-for-screen-printing-vs-embroidery",
   "title": "Vector Art for Screen Printing vs Embroidery: Complete File Prep Guide",
-  "metaTitle": "Vector Art for Screen Printing vs Embroidery Compared",
+  "metaTitle": "Screen Printing vs Embroidery Vector Art",
   "description": "Compare vector art preparation for screen printing vs embroidery digitizing. Understand color separations, trapping, line weights, and file constraints.",
   "excerpt": "Why can't the same vector file be used for screen printing and embroidery without modification? Compare trapping, line thickness, and color separations.",
   "category": "Design",

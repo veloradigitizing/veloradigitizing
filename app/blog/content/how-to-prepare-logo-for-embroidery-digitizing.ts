@@ -3,7 +3,7 @@ import type { BlogPost } from '../types';
 export const post: BlogPost = {
   "slug": "how-to-prepare-logo-for-embroidery-digitizing",
   "title": "How to Prepare Your Logo for Embroidery Digitizing: Artwork, Sizing & Typography",
-  "metaTitle": "How to Prepare a Logo for Embroidery Digitizing (Artwork Guide)",
+  "metaTitle": "How to Prepare a Logo for Embroidery",
   "description": "Learn how to prepare logos for embroidery digitizing. Master minimum text heights (4-5mm), vector artwork prep, color reduction, and line thickness rules.",
   "excerpt": "Not every print logo is directly embroiderable. Discover how to adapt fonts, drop intricate gradients, and size vector artwork for crisp stitch results.",
   "category": "Preparation",

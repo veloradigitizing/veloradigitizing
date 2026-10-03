@@ -16,7 +16,6 @@ export {
   HOME_FAQS,
   ABOUT_FAQS,
   PORTFOLIO_FAQS,
-  PRICING_FAQS,
   SERVICES_FAQS,
   STORE_FAQS,
   CONTACT_FAQS,
@@ -82,13 +81,11 @@ export function FAQ({
       });
   }, [items, query, activeCategory]);
 
-  /* If the currently-open item gets filtered out, collapse the accordion. */
-  useEffect(() => {
-    if (openIndex === null) return;
-    if (!filtered.some((f) => f.originalIndex === openIndex)) {
-      setOpenIndex(null);
-    }
-  }, [filtered, openIndex]);
+  /* If the currently-open item gets filtered out, the accordion shows as collapsed. */
+  const visibleOpenIndex =
+    openIndex !== null && filtered.some((f) => f.originalIndex === openIndex)
+      ? openIndex
+      : null;
 
   /* Keyboard shortcut: "/" focuses the search box. */
   useEffect(() => {
@@ -198,7 +195,7 @@ export function FAQ({
               <EmptyState query={query} onReset={() => setQuery("")} />
             ) : (
               filtered.map((item, displayIndex) => {
-                const isOpen = openIndex === item.originalIndex;
+                const isOpen = visibleOpenIndex === item.originalIndex;
                 return (
                   <div
                     key={item.originalIndex}

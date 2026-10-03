@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Icon from "./Icon";
+import Icon, { type IconName } from "./Icon";
 import { IconCircle, SectionTag } from "./Section";
 import { Reveal } from "./Reveal";
 import { stagger } from "./stagger";
@@ -63,7 +63,7 @@ export default function TeamSection({
           className="flex flex-col justify-center rounded-2xl bg-navy-950 p-8 text-center"
         >
           <span className="inline-flex justify-center">
-            <IconCircle icon={goalIcon as any} size="lg" dark />
+            <IconCircle icon={goalIcon as IconName} size="lg" dark />
           </span>
           <h3 className="mt-5 font-serif text-xl font-bold text-white">
             {goalTitle}

@@ -27,19 +27,19 @@ const PATCHES = [
   },
   {
     id: 3,
-    title: "Gaming Controller Patch",
-    slug: "gaming-controller",
-    image: "/images/custom-patches/GamingController.webp",
-    category: "Custom Patches",
+    title: "Wild Adventure Patch",
+    slug: "wild-adventure-patch",
+    image: "/images/patches/WildPatch.webp",
+    category: "Embroidered Patches",
     price: 2.99,
     originalPrice: 4.00,
     badge: "SALE"
   },
   {
     id: 4,
-    title: "Vintage Style Patch",
-    slug: "vintage-patch",
-    image: "/images/patches/OddFuturePatch.webp",
+    title: "Stay Wild Patch",
+    slug: "stay-wild-patch",
+    image: "/images/patches/StayWIldPatch.webp",
     category: "Embroidered Patches",
     price: 2.99,
     originalPrice: 4.00,
@@ -83,7 +83,7 @@ export default function PatchesSection() {
             
             <p className="mt-6 max-w-md text-base leading-relaxed text-navy-950/60">
               Explore our collection of embroidery designs, fonts, and patch packs. 
-              High-quality digitized files ready for instant download.
+              High-quality digitized files, delivered by email and ready to stitch.
             </p>
             
             <div className="mt-8">

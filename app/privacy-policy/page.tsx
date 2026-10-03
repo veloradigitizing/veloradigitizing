@@ -13,6 +13,15 @@ export const metadata: Metadata = {
       "Read Velora Digitizing's Privacy Policy. Learn how we safeguard your personal details and custom artwork designs with confidentiality.",
     url: "https://www.veloradigitizing.com/privacy-policy",
     siteName: "Velora Digitizing",
+    images: [
+      {
+        url: "/images/og/og-home.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Velora Digitizing — Custom Embroidery Digitizing Services",
+        type: "image/jpeg",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",

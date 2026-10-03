@@ -3,8 +3,8 @@ import type { BlogPost } from '../types';
 export const post: BlogPost = {
   "slug": "digitize-logo-illustrator-embroidery",
   "title": "How to Digitize a Logo for Embroidery in Adobe Illustrator: Step-by-Step Guide",
-  "metaTitle": "How to Digitize a Logo for Embroidery in Illustrator",
-  "description": "Learn how to prepare and digitize a logo for embroidery using Adobe Illustrator. Step-by-step vector preparation, stitch conversion methods, and DST/PES export tips.",
+  "metaTitle": "Digitize Embroidery Logos in Illustrator",
+  "description": "Learn how to prepare and digitize a logo for embroidery in Adobe Illustrator. Step-by-step vector prep, stitch conversion and DST/PES export tips.",
   "excerpt": "Can Adobe Illustrator create embroidery files? Discover how to prepare vector artwork in Illustrator and convert it into flawless machine-ready DST and PES stitch files.",
   "category": "Tutorials",
   "tags": [

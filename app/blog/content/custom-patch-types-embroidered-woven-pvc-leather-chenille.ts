@@ -3,7 +3,7 @@ import type { BlogPost } from '../types';
 export const post: BlogPost = {
   "slug": "custom-patch-types-embroidered-woven-pvc-leather-chenille",
   "title": "Custom Patch Types Explained: Embroidered, Woven, PVC, Leather, Chenille & Printed",
-  "metaTitle": "Custom Patch Types: Embroidered vs Woven vs PVC vs Leather",
+  "metaTitle": "Patch Types: Embroidered vs Woven vs PVC",
   "description": "Compare all custom patch types: Embroidered (50-100%), Woven, PVC rubber, Laser Leather, Chenille, and Sublimated. Backings, borders, and cost comparison.",
   "excerpt": "Choosing between embroidered, woven, PVC, leather, or chenille patches? Compare durability, detail resolution, backing types, and unit costs.",
   "category": "Patches",

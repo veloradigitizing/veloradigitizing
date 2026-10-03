@@ -3,7 +3,7 @@ import type { BlogPost } from '../types';
 export const post: BlogPost = {
   "slug": "convert-png-jpg-to-dst-embroidery-file",
   "title": "How to Convert PNG and JPG to DST Embroidery Files: Complete Guide",
-  "metaTitle": "How to Convert PNG / JPG to DST File (Step-by-Step)",
+  "metaTitle": "Convert PNG/JPG to DST Embroidery Files",
   "description": "Learn how to convert PNG and JPG images into machine-ready Tajima DST embroidery files. Understand manual tracing, vector nodes, density, and stitch simulation.",
   "excerpt": "Can you convert a JPG or PNG image to a DST file for free? Discover the true process of digitizing raster images into production stitch files.",
   "category": "Tutorials",

@@ -3,7 +3,7 @@ import type { BlogPost } from '../types';
 export const post: BlogPost = {
   "slug": "embroidery-stabilizer-guide-cutaway-vs-tearaway",
   "title": "The Complete Embroidery Stabilizer Guide: Cutaway, Tearaway & Topping Matrix",
-  "metaTitle": "Embroidery Stabilizer Guide: Cutaway vs Tearaway vs Topping",
+  "metaTitle": "Stabilizer Guide: Cutaway vs Tearaway",
   "description": "Master embroidery stabilizers: Cutaway vs Tearaway vs Water-Soluble toppings. Complete fabric-by-fabric backing matrix, weights (oz/gsm), and puckering fixes.",
   "excerpt": "The golden rule of embroidery: If you wear it, cut it; if you tear it, tear it. Master backing weights, no-show mesh, and water-soluble toppings for every garment.",
   "category": "Stabilizers & Technical",

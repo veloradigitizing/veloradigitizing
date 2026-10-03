@@ -6,33 +6,23 @@ export const metadata: Metadata = {
     template: "%s | Velora Digitizing",
   },
   description:
-    "Shop premium ready-to-stitch embroidery designs & patch files. Instant download in DST, PES, JEF, and EXP formats with verified stitch counts. Download now!",
-  keywords: [
-    "embroidery designs store",
-    "buy embroidery files",
-    "digital embroidery patches",
-    "DST files download",
-    "PES embroidery designs",
-    "embroidery bundle packs",
-    "instant embroidery download",
-    "machine embroidery patterns",
-  ],
+    "Shop premium ready-to-stitch embroidery designs & patch files in DST, PES, JEF and EXP formats with verified stitch counts. Delivered by email. Order today!",
   alternates: {
     canonical: "https://www.veloradigitizing.com/store",
   },
   openGraph: {
     title: "Digital Embroidery Designs & Patches Store | Velora Digitizing",
     description:
-      "Shop premium ready-to-stitch embroidery designs & patch files. Instant download in DST, PES, JEF, and EXP formats with verified stitch counts. Download now!",
+      "Shop premium ready-to-stitch embroidery designs & patch files in DST, PES, JEF and EXP formats with verified stitch counts. Delivered by email. Order today!",
     url: "https://www.veloradigitizing.com/store",
     siteName: "Velora Digitizing",
     images: [
       {
-        url: "/images/og/og-store.webp",
+        url: "/images/og/og-store.jpg",
         width: 1200,
         height: 630,
         alt: "Velora Digitizing Store — Digital Embroidery Designs & Patches",
-        type: "image/webp",
+        type: "image/jpeg",
       },
     ],
   },
@@ -40,8 +30,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Digital Embroidery Designs Store | Velora Digitizing",
     description:
-      "Instant download ready-to-stitch embroidery designs and patch packs (DST, PES, JEF, EXP).",
-    images: ["/images/og/og-store.webp"],
+      "Ready-to-stitch embroidery designs and patch packs (DST, PES, JEF, EXP), delivered by email.",
+    images: ["/images/og/og-store.jpg"],
   },
 };
 

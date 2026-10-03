@@ -22,8 +22,16 @@ const PATCH_CATEGORY_LABELS: Record<string, string> = Object.fromEntries(
   PATCH_CATEGORIES.map((c) => [c.value, c.label]),
 );
 
+/**
+ * The digitizing-file products in ./products are hidden until their images
+ * exist in public/images/store (prod-01.webp to prod-10.webp). Without them
+ * the product pages, share images and Product schema all point at 404s.
+ * Set this to true once the image files are added.
+ */
+const SHOW_DIGITIZING_FILE_PRODUCTS = false;
+
 export const STORE_ITEMS: StoreItem[] = [
-  ...PRODUCTS.map<StoreItem>((p) => ({
+  ...(SHOW_DIGITIZING_FILE_PRODUCTS ? PRODUCTS : []).map<StoreItem>((p) => ({
     slug: p.slug,
     title: p.title,
     price: p.price,

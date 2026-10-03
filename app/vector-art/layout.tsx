@@ -4,18 +4,6 @@ export const metadata: Metadata = {
   title: "Vector Art Conversion Services",
   description:
     "Convert raster images to clean scalable vector art (AI, EPS, SVG, PDF). Expert manual tracing for screen printing & embroidery. Get your free quote today!",
-  keywords: [
-    "vector art conversion",
-    "raster to vector conversion",
-    "logo vectorization",
-    "vector tracing services",
-    "convert jpg to vector",
-    "convert png to svg",
-    "color separation vector",
-    "vector artwork for screen printing",
-    "vector cleanup services",
-    "print ready vector files",
-  ],
   alternates: {
     canonical: "https://www.veloradigitizing.com/vector-art",
   },
@@ -27,11 +15,11 @@ export const metadata: Metadata = {
     siteName: "Velora Digitizing",
     images: [
       {
-        url: "/images/og/og-vector-art.webp",
+        url: "/images/og/og-vector-art.jpg",
         width: 1200,
         height: 630,
         alt: "Velora Vector Art Conversion — Pixel Perfect Raster to Vector Tracing",
-        type: "image/webp",
+        type: "image/jpeg",
       },
     ],
   },
@@ -40,7 +28,7 @@ export const metadata: Metadata = {
     title: "Vector Art Conversion Services | Velora Digitizing",
     description:
       "Convert raster images to clean scalable vector art (AI, EPS, SVG, PDF). Expert manual tracing with 12–24h turnaround.",
-    images: ["/images/og/og-vector-art.webp"],
+    images: ["/images/og/og-vector-art.jpg"],
   },
 };
 

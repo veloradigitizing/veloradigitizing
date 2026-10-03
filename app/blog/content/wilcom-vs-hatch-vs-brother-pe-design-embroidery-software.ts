@@ -3,7 +3,7 @@ import type { BlogPost } from '../types';
 export const post: BlogPost = {
   "slug": "wilcom-vs-hatch-vs-brother-pe-design-embroidery-software",
   "title": "Wilcom vs Hatch vs Brother PE-Design: Best Embroidery Software Compared (2026)",
-  "metaTitle": "Wilcom vs Hatch vs PE-Design: Embroidery Software (2026)",
+  "metaTitle": "Wilcom vs Hatch vs PE-Design (2026)",
   "description": "Compare Wilcom EmbroideryStudio, Hatch 3, and Brother PE-Design 11. In-depth analysis of features, learning curves, auto-digitizing quality, and pricing.",
   "excerpt": "Choosing between Wilcom, Hatch, and Brother PE-Design? Compare stitch quality, commercial production tools, learning curves, and software pricing.",
   "category": "Software",

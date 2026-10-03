@@ -25,26 +25,9 @@ import HomeStats from "./components/HomeStats";
 //   { icon: "shield", title: "100% Satisfaction Guaranteed" },
 // ];
 
-const homeJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": HOME_FAQS.map((faq) => ({
-    "@type": "Question",
-    "name": faq.question,
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": faq.answer,
-    },
-  })),
-};
-
 export default function Home() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeJsonLd) }}
-      />
       <Hero
         eyebrow="Precision. Quality. Perfection."
         titleLines={[

@@ -3,7 +3,7 @@ import type { BlogPost } from '../types';
 export const post: BlogPost = {
   "slug": "embroidery-underlay-types-explained",
   "title": "Embroidery Underlay Types Explained: Center Walk, Edge Run, Zig-Zag & Tatami",
-  "metaTitle": "Embroidery Underlay Types: Center Walk, Edge Run & Tatami",
+  "metaTitle": "Embroidery Underlay Types Explained",
   "description": "Comprehensive guide to embroidery underlay types. Discover when to use Center Walk, Edge Run, Double Zig-Zag, and Full Tatami Grid for different fabrics.",
   "excerpt": "Underlay is the invisible foundation of every great embroidery file. Learn the specific use cases for Center Walk, Edge Run, Zig-Zag, and Tatami grids.",
   "category": "Technical",

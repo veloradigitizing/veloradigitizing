@@ -165,17 +165,11 @@ export function StarRating({ count = 5 }: { count?: number }) {
 // Floating stats card — animated counter + rating, sits at bottom-right of hero on desktop
 function HeroStatsCard() {
   const spanRef = useRef<HTMLSpanElement | null>(null);
-  const [mounted, setMounted] = useState(false);
   const [count, setCount] = useState(3200);
   const [rating, setRating] = useState<number>(SITE_RATING.value);
   const [started, setStarted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  useEffect(() => {
-    if (!mounted) return;
     const node = spanRef.current;
     if (!node) return;
     const obs = new IntersectionObserver(
@@ -191,7 +185,7 @@ function HeroStatsCard() {
     );
     obs.observe(node);
     return () => obs.disconnect();
-  }, [mounted]);
+  }, []);
 
   useEffect(() => {
     if (!started) return;
@@ -214,8 +208,8 @@ function HeroStatsCard() {
     return () => cancelAnimationFrame(raf);
   }, [started]);
 
-  const displayCount = (mounted && started ? count : 3200).toLocaleString("en-US");
-  const displayRating = (mounted && started ? rating : SITE_RATING.value).toFixed(1);
+  const displayCount = (started ? count : 3200).toLocaleString("en-US");
+  const displayRating = (started ? rating : SITE_RATING.value).toFixed(1);
 
   return (
     <div

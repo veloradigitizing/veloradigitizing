@@ -47,7 +47,7 @@ export default function PatchCardGrid({
             <p className="mt-1.5 text-sm text-navy-950/55">
               {patches.length} patch
               {patches.length !== 1 ? "es" : ""} available •
-              Instant download in all formats
+              Delivered by email in all formats
             </p>
           </div>
           <select

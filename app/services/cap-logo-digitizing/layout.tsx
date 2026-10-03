@@ -1,44 +1,34 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cap & Hat Logo Embroidery Digitizing Services | Velora Digitizing",
+  title: { absolute: "Cap & Hat Logo Digitizing Services | Velora Digitizing" },
   description:
-    "Specialized cap & hat embroidery digitizing services. Engineered center-out sequencing for structured snapbacks, dad hats, beanies & visors in DST, PES & JEF formats.",
-  keywords: [
-    "cap logo digitizing",
-    "hat embroidery digitizing",
-    "snapback logo digitizing",
-    "cap digitizing services",
-    "beanie embroidery digitizing",
-    "baseball hat embroidery files",
-    "convert logo to cap dst",
-    "Velora Digitizing",
-  ],
+    "Specialized cap & hat embroidery digitizing with center-out sequencing for structured snapbacks, dad hats, beanies & visors. Formats: DST, PES, JEF & more.",
   alternates: {
     canonical: "https://www.veloradigitizing.com/services/cap-logo-digitizing",
   },
   openGraph: {
-    title: "Cap & Hat Logo Embroidery Digitizing Services | Velora Digitizing",
+    title: { absolute: "Cap & Hat Logo Digitizing Services | Velora Digitizing" },
     description:
       "Specialized cap & hat embroidery digitizing services. Engineered center-out sequencing for structured snapbacks, dad hats, beanies & visors.",
     url: "https://www.veloradigitizing.com/services/cap-logo-digitizing",
     siteName: "Velora Digitizing",
     images: [
       {
-        url: "/images/og/og-services.webp",
+        url: "/images/og/og-services.jpg",
         width: 1200,
         height: 630,
         alt: "Velora Cap & Hat Logo Embroidery Digitizing Services",
-        type: "image/webp",
+        type: "image/jpeg",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cap & Hat Logo Embroidery Digitizing Services | Velora Digitizing",
+    title: { absolute: "Cap & Hat Logo Digitizing Services | Velora Digitizing" },
     description:
       "Specialized cap & hat embroidery digitizing with center-out sequencing.",
-    images: ["/images/og/og-services.webp"],
+    images: ["/images/og/og-services.jpg"],
   },
 };
 

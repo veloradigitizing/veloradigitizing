@@ -1,19 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "3D Puff Embroidery Digitizing Services | Raised Foam Files",
+  title: { absolute: "3D Puff Embroidery Digitizing Services | Velora Digitizing" },
   description:
-    "Professional 3D puff embroidery digitizing services for caps, hats, snapbacks & hoodies. Clean end-capping, foam perforations, and all machine formats (DST, PES, JEF).",
-  keywords: [
-    "3D puff embroidery digitizing",
-    "3D puff digitizing services",
-    "puff embroidery for caps",
-    "raised embroidery digitizing",
-    "3D foam digitizing",
-    "custom snapback digitizing",
-    "convert logo to 3D puff dst",
-    "Velora Digitizing",
-  ],
+    "Professional 3D puff embroidery digitizing for caps, hats, snapbacks & hoodies. Clean end-capping, foam perforations & all machine formats (DST, PES, JEF).",
   alternates: {
     canonical: "https://www.veloradigitizing.com/services/3d-puff-digitizing",
   },
@@ -25,11 +15,11 @@ export const metadata: Metadata = {
     siteName: "Velora Digitizing",
     images: [
       {
-        url: "/images/og/og-services.webp",
+        url: "/images/og/og-services.jpg",
         width: 1200,
         height: 630,
         alt: "Velora 3D Puff Embroidery Digitizing Services",
-        type: "image/webp",
+        type: "image/jpeg",
       },
     ],
   },
@@ -38,7 +28,7 @@ export const metadata: Metadata = {
     title: "3D Puff Embroidery Digitizing Services | Velora Digitizing",
     description:
       "Professional 3D puff embroidery digitizing services for caps, hats, snapbacks & hoodies.",
-    images: ["/images/og/og-services.webp"],
+    images: ["/images/og/og-services.jpg"],
   },
 };
 

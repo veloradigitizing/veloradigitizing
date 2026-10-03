@@ -14,14 +14,6 @@ export const metadata: Metadata = {
   title: "Embroidery Digitizing Blog: Guides & Tips",
   description:
     "Practical guides on embroidery digitizing, file formats, 3D puff, custom patches and artwork preparation from the digitizers at Velora Digitizing.",
-  keywords: [
-    "embroidery digitizing blog",
-    "embroidery digitizing guide",
-    "embroidery file formats",
-    "3D puff embroidery",
-    "custom patches guide",
-    "embroidery tips",
-  ],
   alternates: {
     canonical: `${BASE_URL}/blog`,
   },
@@ -34,11 +26,11 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/og/og-home.webp",
+        url: "/images/og/og-home.jpg",
         width: 1200,
         height: 630,
         alt: "Velora Digitizing Blog: Embroidery Digitizing Guides and Tips",
-        type: "image/webp",
+        type: "image/jpeg",
       },
     ],
   },
@@ -47,7 +39,7 @@ export const metadata: Metadata = {
     title: "Embroidery Digitizing Blog: Guides & Tips | Velora Digitizing",
     description:
       "Guides on embroidery digitizing, file formats, 3D puff, custom patches and artwork preparation.",
-    images: ["/images/og/og-home.webp"],
+    images: ["/images/og/og-home.jpg"],
   },
 };
 
@@ -61,7 +53,7 @@ const blogJsonLd = {
       url: `${BASE_URL}/blog`,
       description:
         "Guides and tips on embroidery digitizing, file formats, 3D puff, custom patches and artwork preparation.",
-      publisher: { "@id": `${BASE_URL}/#organization` },
+      publisher: { "@id": `${BASE_URL}/#service` },
       blogPost: BLOG_POSTS.map((post) => ({
         "@type": "BlogPosting",
         headline: post.title,

@@ -10,9 +10,9 @@ import { useCart } from "../../context/CartContext";
 import type { StoreItem } from "../catalog";
 
 const TRUST_POINTS: { icon: IconName; label: string }[] = [
-  { icon: "download", label: "Instant Download" },
+  { icon: "mail", label: "Delivered by Email" },
   { icon: "shield", label: "Money Back Guarantee" },
-  { icon: "badge-check", label: "Secure Payment" },
+  { icon: "send", label: "Easy Ordering" },
   { icon: "headset", label: "24/7 Support" },
 ];
 

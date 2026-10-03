@@ -3,7 +3,7 @@ import type { BlogPost } from '../types';
 export const post: BlogPost = {
   "slug": "what-is-embroidery-digitizing",
   "title": "What Is Embroidery Digitizing and How Does It Work? The Master Guide",
-  "metaTitle": "What Is Embroidery Digitizing? Complete Beginner's Guide",
+  "metaTitle": "What Is Embroidery Digitizing?",
   "description": "Master the fundamentals of embroidery digitizing. Learn how logos convert into DST/PES stitch files, the 3 core stitch types, and manual vs auto digitizing.",
   "excerpt": "Embroidery machines cannot sew a standard JPG or vector PNG. Digitizing transforms artwork into precise needle paths, density coordinates, and trim commands.",
   "category": "Basics",

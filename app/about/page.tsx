@@ -15,13 +15,6 @@ export const metadata: Metadata = {
   title: "About Master Embroidery Digitizers",
   description:
     "Meet Velora Digitizing's master digitizers with 10+ years of craftsmanship delivering precision embroidery files with 100% stitch quality. Learn our story!",
-  keywords: [
-    "about velora digitizing",
-    "embroidery digitizing experts",
-    "master digitizers",
-    "professional digitizing studio",
-    "custom embroidery team",
-  ],
   alternates: {
     canonical: "https://www.veloradigitizing.com/about",
   },
@@ -33,11 +26,11 @@ export const metadata: Metadata = {
     siteName: "Velora Digitizing",
     images: [
       {
-        url: "/images/og/og-about.webp",
+        url: "/images/og/og-about.jpg",
         width: 1200,
         height: 630,
         alt: "About Velora Digitizing — Master Embroidery Digitizers in Studio",
-        type: "image/webp",
+        type: "image/jpeg",
       },
     ],
   },
@@ -46,7 +39,7 @@ export const metadata: Metadata = {
     title: "About Master Embroidery Digitizers | Velora Digitizing",
     description:
       "Crafting perfection stitch by stitch. Discover our digitizing team, standards, and machine test processes.",
-    images: ["/images/og/og-about.webp"],
+    images: ["/images/og/og-about.jpg"],
   },
 };
 
@@ -165,8 +158,8 @@ export default function AboutPage() {
       <Hero
         eyebrow="Our Story"
         titleLines={[
-          { text: "Crafting Perfection," },
-          { text: "Stitch by Stitch", accent: true },
+          { text: "About Velora Digitizing" },
+          { text: "Master Embroidery Digitizers", accent: true },
         ]}
         description="At velora Digitizing, we turn your ideas into flawless embroidery designs. With precision, experience, and passion, we deliver digitizing services that elevate your brand."
         bgImage={aboutBg}

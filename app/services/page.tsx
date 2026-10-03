@@ -10,48 +10,34 @@ import { FAQ, SERVICES_FAQS } from "../components/FAQ";
 import PortfolioSection from "../components/PortfolioSection";
 
 export const metadata: Metadata = {
-  title: "Custom Embroidery Digitizing Services",
+  title: "Embroidery Digitizing Services",
   description:
     "Professional custom embroidery digitizing. Get flawless 3D puff, left chest logos & patches in 8–24h with free revisions. Request your free quote today!",
-  keywords: [
-    "embroidery digitizing services",
-    "logo digitizing",
-    "3D puff embroidery digitizing",
-    "jacket back embroidery digitizing",
-    "left chest logo digitizing",
-    "applique digitizing",
-    "chenille digitizing",
-    "cap digitizing service",
-    "custom patch digitizing",
-    "DST PES EXP conversion",
-    "convert png to dst embroidery file",
-    "cheap 3d puff digitizing for caps",
-  ],
   alternates: {
     canonical: "https://www.veloradigitizing.com/services",
   },
   openGraph: {
-    title: "Custom Embroidery Digitizing Services | Velora Digitizing",
+    title: "Embroidery Digitizing Services | Velora Digitizing",
     description:
       "Professional custom embroidery digitizing. Flawless 3D puff, left chest logos & patches in 8–24h with free revisions. Request your free quote today!",
     url: "https://www.veloradigitizing.com/services",
     siteName: "Velora Digitizing",
     images: [
       {
-        url: "/images/og/og-services.webp",
+        url: "/images/og/og-services.jpg",
         width: 1200,
         height: 630,
         alt: "Velora Digitizing Services — Logo, 3D Puff, Cap & Patch Digitizing",
-        type: "image/webp",
+        type: "image/jpeg",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Custom Embroidery Digitizing Services | Velora Digitizing",
+    title: "Embroidery Digitizing Services | Velora Digitizing",
     description:
       "Professional custom embroidery digitizing. Flawless 3D puff, left chest logos & patches in 8–24h with free revisions. Request your free quote today!",
-    images: ["/images/og/og-services.webp"],
+    images: ["/images/og/og-services.jpg"],
   },
 };
 
@@ -118,8 +104,8 @@ export default function ServicesPage() {
       <Hero
         eyebrow="What We Digitize"
         titleLines={[
-          { text: "Custom Embroidery" },
-          { text: "Digitizing Services", accent: true },
+          { text: "Embroidery Digitizing" },
+          { text: "Services for Every Garment", accent: true },
         ]}
         description="We offer high quality embroidery digitizing services with fast turnaround, perfect stitching and 100% customer satisfaction."
         bgImage={servicesBg}

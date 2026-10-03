@@ -33,7 +33,7 @@ export default function PatchesStoreSection() {
             <SectionTag
               eyebrow="Patches Store"
               title="Featured Patches"
-              subtitle="Explore our premium embroidery patch designs. Ready to download and stitch."
+              subtitle="Explore our premium embroidery patch designs. Delivered by email, ready to stitch."
               dark
               center={false}
             />

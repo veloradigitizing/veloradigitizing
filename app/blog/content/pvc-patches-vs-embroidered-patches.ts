@@ -3,7 +3,7 @@ import type { BlogPost } from '../types';
 export const post: BlogPost = {
   "slug": "pvc-patches-vs-embroidered-patches",
   "title": "PVC Patches vs Embroidered Patches: Complete Durability & Cost Comparison",
-  "metaTitle": "PVC Patches vs Embroidered Patches: Which Is Better?",
+  "metaTitle": "PVC vs Embroidered Patches Compared",
   "description": "Deciding between custom PVC patches and traditional embroidered patches? Compare outdoor durability, detail precision, cost, and backing options.",
   "excerpt": "Discover the differences between waterproof 3D PVC rubber patches and classic embroidered thread emblems to choose the ideal badge for your apparel brand.",
   "category": "Comparisons",

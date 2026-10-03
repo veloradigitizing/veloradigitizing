@@ -13,6 +13,15 @@ export const metadata: Metadata = {
       "Review the Terms and Conditions for Velora Digitizing embroidery digitizing, vector art conversion, and custom patch design services.",
     url: "https://www.veloradigitizing.com/terms-and-conditions",
     siteName: "Velora Digitizing",
+    images: [
+      {
+        url: "/images/og/og-home.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Velora Digitizing — Custom Embroidery Digitizing Services",
+        type: "image/jpeg",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",

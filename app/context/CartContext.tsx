@@ -39,6 +39,9 @@ export function CartProvider({ children }: { children: ReactNode }) {
   const [hydrated, setHydrated] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
 
+  // The saved cart can only be read in the browser, after the first render,
+  // so the server and client markup match. Setting state here is intentional.
+  /* eslint-disable react-hooks/set-state-in-effect */
   useEffect(() => {
     try {
       const stored = localStorage.getItem(STORAGE_KEY);
@@ -48,6 +51,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
     }
     setHydrated(true);
   }, []);
+  /* eslint-enable react-hooks/set-state-in-effect */
 
   useEffect(() => {
     if (!hydrated) return;

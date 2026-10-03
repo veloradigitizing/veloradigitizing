@@ -3,7 +3,7 @@ import type { BlogPost } from '../types';
 export const post: BlogPost = {
   "slug": "applique-embroidery-digitizing-guide",
   "title": "Appliqué Embroidery Digitizing: Complete Guide for Cut-Outs & Tackdown",
-  "metaTitle": "Appliqué Embroidery Digitizing Guide (Tackdown & Satin Borders)",
+  "metaTitle": "Appliqué Embroidery Digitizing Guide",
   "description": "Master appliqué embroidery digitizing. Learn the 3-step formula: placement running stitch, material tackdown, and cover satin border width rules.",
   "excerpt": "Appliqué reduces stitch counts and creates bold varsity lettering. Learn the 3-step digitizing formula for placement, tackdown, and cover borders.",
   "category": "Techniques",

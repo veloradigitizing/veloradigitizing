@@ -3,7 +3,7 @@ import type { BlogPost } from '../types';
 export const post: BlogPost = {
   "slug": "embroidery-digitizing-cost-pricing-guide",
   "title": "How Much Does Embroidery Digitizing Cost? 2026 Pricing Guide",
-  "metaTitle": "Embroidery Digitizing Cost: 2026 Pricing Guide",
+  "metaTitle": "Embroidery Digitizing Cost Guide (2026)",
   "description": "How much does embroidery digitizing cost? Compare per-1,000-stitch vs flat-rate pricing, typical logo prices, and what makes a quote go up or down.",
   "excerpt": "Per-stitch or flat rate? Learn what embroidery digitizing really costs in 2026, what drives the price, and how to avoid cheap files that ruin your garments.",
   "category": "Pricing & Guides",

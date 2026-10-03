@@ -13,13 +13,6 @@ export const metadata: Metadata = {
   title: "Contact Us for Free Digitizing Quote",
   description:
     "Contact Velora Digitizing for free quotes, rush orders, or embroidery inquiries. Available 24/7 via WhatsApp, phone, or email. Get your free estimate now!",
-  keywords: [
-    "contact embroidery digitizer",
-    "embroidery digitizing quote",
-    "rush embroidery digitizing contact",
-    "digitizing customer support",
-    "embroidery design inquiry",
-  ],
   alternates: {
     canonical: "https://www.veloradigitizing.com/contact",
   },
@@ -31,11 +24,11 @@ export const metadata: Metadata = {
     siteName: "Velora Digitizing",
     images: [
       {
-        url: "/images/og/og-contact.webp",
+        url: "/images/og/og-contact.jpg",
         width: 1200,
         height: 630,
         alt: "Contact Velora Digitizing — 24/7 Customer Support and Free Quotes",
-        type: "image/webp",
+        type: "image/jpeg",
       },
     ],
   },
@@ -44,7 +37,7 @@ export const metadata: Metadata = {
     title: "Contact Velora Digitizing | Free Quote & 24/7 Support",
     description:
       "Get in touch with our embroidery digitizing specialists for free quotes and rapid project turnaround.",
-    images: ["/images/og/og-contact.webp"],
+    images: ["/images/og/og-contact.jpg"],
   },
 };
 

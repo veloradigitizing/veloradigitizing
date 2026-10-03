@@ -7,7 +7,26 @@ import { createPortal } from "react-dom";
 import { Menu, X } from "lucide-react";
 import Logo from "./Logo";
 import Icon from "./Icon";
-import { useCart } from "../context/CartContext";
+import { FaWhatsapp } from "react-icons/fa6";
+import { useCart, type CartItem } from "../context/CartContext";
+
+const WHATSAPP_NUMBER = "12136358137";
+
+/** Opens WhatsApp with the cart contents prefilled as an order message. */
+function buildWhatsAppOrderUrl(items: CartItem[], subtotal: number) {
+  const lines = items.map(
+    (item, i) =>
+      `${i + 1}. ${item.title} x${item.qty} - $${(item.price * item.qty).toFixed(2)}`,
+  );
+  const message = [
+    "Hi Velora Digitizing, I would like to order:",
+    "",
+    ...lines,
+    "",
+    `Subtotal: $${subtotal.toFixed(2)}`,
+  ].join("\n");
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+}
 
 const NAV_LINKS = [
   { href: "/", label: "Home" },
@@ -117,7 +136,19 @@ function CartDrawer() {
                 <span className="font-serif text-lg font-bold text-navy-950">${subtotal.toFixed(2)}</span>
               </div>
               <div className="mt-4 flex flex-col gap-2">
-                <Link href="/store" onClick={closeCart} className="vr-btn vr-btn-primary flex items-center justify-center gap-2 rounded-md bg-brand-600 px-5 py-2.5 text-xs font-bold uppercase tracking-wide text-white hover:bg-brand-700">Checkout</Link>
+                <a
+                  href={buildWhatsAppOrderUrl(items, subtotal)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="vr-btn flex items-center justify-center gap-2 rounded-md bg-[#128C7E] px-5 py-3 text-xs font-bold uppercase tracking-wide text-white transition-colors hover:bg-[#0f7a6e]"
+                >
+                  <FaWhatsapp size={16} aria-hidden />
+                  Order on WhatsApp
+                </a>
+                <Link href="/store" onClick={closeCart} className="flex items-center justify-center rounded-md border border-navy-950/15 px-5 py-2.5 text-xs font-bold uppercase tracking-wide text-navy-950/70 transition-colors hover:border-brand-600 hover:text-brand-600">Continue Shopping</Link>
+                <p className="text-center text-[11px] leading-snug text-navy-950/50">
+                  We confirm your order on WhatsApp and email your files as a zip.
+                </p>
               </div>
             </div>
           </>

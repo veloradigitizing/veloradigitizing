@@ -145,57 +145,6 @@ export const PORTFOLIO_FAQS: FAQItem[] = [
   },
 ];
 
-export const PRICING_FAQS: FAQItem[] = [
-  {
-    question: "Is there a minimum order requirement?",
-    answer:
-      "No minimum order required. You can order a single design or bulk orders — the same great per-design pricing applies. Volume discounts kick in automatically for orders of 10+ designs, with steeper discounts at 25+, 50+, and 100+ designs. Contact us for a custom quote on bulk projects.",
-    category: "Orders",
-  },
-  {
-    question: "What's included in each pricing tier?",
-    answer:
-      "Basic ($6.99): up to 5,000 stitches, standard sizes, 1 revision, 24–48hr delivery. Standard ($12.99): up to 15,000 stitches, all sizes, 3 revisions, 12–24hr delivery, plus a free vector file. Rush ($19.99): unlimited stitches, unlimited revisions, 2–4hr priority delivery with dedicated support and a free sew-out simulation.",
-    category: "Plans",
-  },
-  {
-    question: "Are there any hidden fees?",
-    answer:
-      "Never. The price you see is the price you pay — no setup fees, no file-format fees, no per-color charges, no surprise add-ons. If your design requires special handling beyond standard parameters (extreme size, complex appliqué, multi-layer 3D puff), we'll always confirm the revised scope and price with you before proceeding.",
-    category: "Plans",
-  },
-  {
-    question: "Can I upgrade my plan after ordering?",
-    answer:
-      "Yes. You can upgrade at any time before production begins — just reply to your order confirmation. If your design turns out to be more complex than the chosen plan allows, our team will proactively recommend the best tier and you can choose to upgrade or simplify the design scope. No penalty fees.",
-    category: "Plans",
-  },
-  {
-    question: "Do you offer discounts for repeat customers?",
-    answer:
-      "Absolutely. We value our loyal customers and offer automatic discounts for repeat orders, plus a loyalty program with credits, free rush upgrades, and dedicated account management for clients sending 25+ designs per month. Contact us to enroll or to set up a monthly retainer at preferred rates.",
-    category: "Discounts",
-  },
-  {
-    question: "What payment methods do you accept?",
-    answer:
-      "We accept all major credit cards (Visa, MasterCard, American Express, Discover), PayPal, bank transfers (ACH and wire), and various regional payment methods. All transactions are encrypted and processed through PCI-compliant gateways. Net-15 and Net-30 invoicing is available for verified business accounts.",
-    category: "Payments",
-  },
-  {
-    question: "Do you offer monthly retainers or subscription plans?",
-    answer:
-      "Yes. For embroidery shops, print houses, and promotional product companies with steady volume, we offer monthly retainers starting at 25 designs per month. Retainer clients enjoy priority turnaround, locked-in discounted pricing, a dedicated digitizer, and a single monthly invoice. Contact us for a custom retainer quote.",
-    category: "Plans",
-  },
-  {
-    question: "What happens if I'm not satisfied with the final design?",
-    answer:
-      "We stand behind every file with a 100% satisfaction guarantee. If the first delivery isn't right, we'll revise it free of charge based on your feedback — as many times as your plan allows (unlimited on Rush plans). If we still can't meet your expectations after good-faith revisions, we issue a full refund.",
-    category: "Payments",
-  },
-];
-
 export const SERVICES_FAQS: FAQItem[] = [
   {
     question: "Which digitizing service should I choose for my project?",
@@ -251,10 +200,10 @@ export const SERVICES_FAQS: FAQItem[] = [
 
 export const STORE_FAQS: FAQItem[] = [
   {
-    question: "How does instant download work?",
+    question: "How do I order a design and receive my files?",
     answer:
-      "Once your payment is confirmed, you'll receive an immediate download link via email and the files will also appear in your account dashboard under \"My Downloads.\" There's no waiting — you can start stitching within seconds of checkout. Download links never expire, so you can re-download anytime from your account.",
-    category: "Downloads",
+      "Message us on WhatsApp or through the contact page with the names of the designs you want. We confirm your order and payment details, then email your files in a single zip archive. If you ever lose a file, contact us with your order details and we'll send it again.",
+    category: "Ordering",
   },
   {
     question: "What formats are included with store purchases?",
@@ -265,19 +214,19 @@ export const STORE_FAQS: FAQItem[] = [
   {
     question: "Can I use purchased designs on products I sell?",
     answer:
-      "License terms vary by product. Most individual designs include commercial-use rights for physical products (embroidered apparel, patches, and accessories you sell). Mass production (1,000+ units) and digital resale require an extended license — check each product description for specifics or contact us for a commercial license quote.",
+      "Yes. Store designs include commercial-use rights for physical products, so you can embroider them on apparel, patches, and accessories you sell. Reselling or redistributing the digital file itself is not allowed. For very large production runs, contact us and we'll confirm the right license for your order.",
     category: "Licensing",
   },
   {
-    question: "What if I have issues with my downloaded file?",
+    question: "What if I have issues with my file?",
     answer:
-      "We stand behind every file in our store. If you experience any technical issues — a corrupted download, wrong format, or stitch error on your machine — our support team is ready to help troubleshoot. If the file itself has a defect, we'll fix it immediately or issue a full refund, no questions asked.",
+      "We stand behind every file in our store. If you experience any technical issues — a file that won't open, the wrong format, or a stitch error on your machine — our support team is ready to help troubleshoot. If the file itself has a defect, we'll fix it immediately or issue a full refund, no questions asked.",
     category: "Support",
   },
   {
     question: "Do you offer refunds on store purchases?",
     answer:
-      "Yes — we offer a 14-day satisfaction guarantee on all store purchases. If you're not happy with your purchase, contact us within 14 days for a full refund or exchange. Digital downloads that haven't been used qualify for immediate refund; once a file has been stitched out we'll usually issue store credit instead.",
+      "Yes — we offer a 14-day satisfaction guarantee on all store purchases. If you're not happy with your purchase, contact us within 14 days for a full refund or exchange. Files that haven't been stitched out qualify for a full refund; once a file has been stitched out we'll usually issue store credit instead.",
     category: "Support",
   },
   {
@@ -295,7 +244,7 @@ export const STORE_FAQS: FAQItem[] = [
   {
     question: "How often do you add new designs to the store?",
     answer:
-      "We add new designs weekly — typically 20–40 fresh designs per week across categories like monograms, sports logos, holiday themes,patches, and trending streetwear. Subscribe to our newsletter to get notified of new drops, or follow us on social media for first-look previews and subscriber-only discounts.",
+      "We add new designs regularly across categories like cap logos, patches, monograms, and seasonal themes. Follow us on social media for first-look previews of new releases, or contact us if you're looking for a design that isn't in the store yet.",
     category: "Catalog",
   },
 ];

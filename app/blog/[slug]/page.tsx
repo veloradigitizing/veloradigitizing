@@ -34,12 +34,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const url = `${BASE_URL}/blog/${post.slug}`;
-  const ogImage = post.image ?? "/images/og/og-home.webp";
+  const ogImage = post.image ?? "/images/og/og-home.jpg";
 
   return {
     title: post.metaTitle,
     description: post.description,
-    keywords: post.tags,
     alternates: { canonical: url },
     openGraph: {
       type: "article",
@@ -49,7 +48,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       siteName: "Velora Digitizing",
       publishedTime: post.publishedAt,
       modifiedTime: post.updatedAt ?? post.publishedAt,
-      authors: ["David Thompson"],
+      authors: ["Velora Digitizing"],
       tags: post.tags,
       images: [{ url: ogImage, alt: post.imageAlt }],
     },
@@ -211,18 +210,12 @@ export default async function BlogPostPage({ params }: Props) {
           ? { image: [`${BASE_URL}${post.image}`] }
           : {}),
         author: {
-          "@type": "Person",
-          name: "David Thompson",
-          jobTitle: "Lead Digitizer",
-          image: `${BASE_URL}/images/team/team-02.webp`,
-          url: `${BASE_URL}/about`,
-          worksFor: {
-            "@type": "Organization",
-            name: "Velora Digitizing",
-            url: BASE_URL,
-          },
+          "@type": "Organization",
+          "@id": `${BASE_URL}/#service`,
+          name: "Velora Digitizing",
+          url: BASE_URL,
         },
-        publisher: { "@id": `${BASE_URL}/#organization` },
+        publisher: { "@id": `${BASE_URL}/#service` },
         isPartOf: { "@id": `${BASE_URL}/blog#blog` },
       },
       {
@@ -293,17 +286,18 @@ export default async function BlogPostPage({ params }: Props) {
           <div className="mt-6 flex flex-wrap items-center justify-center gap-3 text-sm text-navy-950/70">
             <div className="relative h-10 w-10 overflow-hidden rounded-full border-2 border-brand-600/30 shadow-sm">
               <Image
-                src="/images/team/team-02.webp"
-                alt="David Thompson, Lead Digitizer at Velora Digitizing"
+                src="/images/veloralogo.webp"
+                alt="Velora Digitizing logo"
                 fill
+                sizes="40px"
                 className="object-cover"
               />
             </div>
             <div className="text-left">
               <Link href="/about" className="font-semibold text-navy-950 hover:text-brand-600">
-                David Thompson
+                Velora Digitizing Team
               </Link>
-              <p className="text-xs text-navy-950/55">Lead Digitizer &middot; 12+ Yrs Exp</p>
+              <p className="text-xs text-navy-950/55">Embroidery Digitizing Studio</p>
             </div>
             <span aria-hidden className="hidden sm:inline text-navy-950/30">&middot;</span>
             <time dateTime={post.publishedAt} className="text-xs text-navy-950/60 font-medium">
@@ -385,27 +379,28 @@ export default async function BlogPostPage({ params }: Props) {
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
               <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-2xl border border-brand-600/20 shadow-sm">
                 <Image
-                  src="/images/team/team-02.webp"
-                  alt="David Thompson, Lead Digitizer at Velora Digitizing"
+                  src="/images/veloralogo.webp"
+                  alt="Velora Digitizing logo"
                   fill
+                  sizes="64px"
                   className="object-cover"
                 />
               </div>
               <div className="flex-1">
                 <div className="flex flex-wrap items-center gap-2">
                   <h4 className="font-serif text-lg font-bold text-navy-950">
-                    Written by David Thompson
+                    Written by the Velora Digitizing Team
                   </h4>
                   <span className="rounded-full bg-brand-600/10 px-2.5 py-0.5 text-xs font-semibold text-brand-700">
-                    Lead Digitizer
+                    Digitizing Studio
                   </span>
                 </div>
                 <p className="mt-2 text-sm leading-relaxed text-navy-950/70">
-                  David has over 12 years of specialized craftsmanship in commercial embroidery punching, stitch-path optimization, and fabric-tension calibration. He oversees quality control for thousands of embroidery files weekly at Velora Digitizing.
+                  This guide is written and reviewed by the digitizers at Velora Digitizing, who prepare embroidery files for caps, jackets, patches, and left chest logos every day. The advice here comes from the same stitch-path, underlay, and fabric choices we make on client orders.
                 </p>
                 <div className="mt-3 flex items-center gap-3 text-xs font-semibold text-brand-600">
                   <Link href="/about" className="hover:underline flex items-center gap-1">
-                    Meet the Team <span aria-hidden>&rarr;</span>
+                    About Velora Digitizing <span aria-hidden>&rarr;</span>
                   </Link>
                 </div>
               </div>

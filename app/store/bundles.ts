@@ -176,7 +176,7 @@ export const BUNDLES: BundleProduct[] = [
       "Best-seller selection",
       "Versatile applications",
       "Commercial license included",
-      "Fast download access",
+      "Fast email delivery",
     ],
     includes: [
       "50 designs in 5 formats",

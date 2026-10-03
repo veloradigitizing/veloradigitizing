@@ -15,6 +15,5 @@ export default function robots(): MetadataRoute.Robots {
       },
     ],
     sitemap: "https://www.veloradigitizing.com/sitemap.xml",
-    host: "https://www.veloradigitizing.com",
   };
 }

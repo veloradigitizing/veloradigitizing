@@ -1,46 +1,34 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Applique Digitizing Services | Custom Embroidery Files",
+  title: { absolute: "Applique Embroidery Digitizing Services | Velora Digitizing" },
   description:
-    "Professional custom applique embroidery digitizing for jackets, hoodies, jerseys & patches. Clean tackdown stitches, precise borders, and all machine formats (DST, PES, JEF).",
-  keywords: [
-    "applique digitizing",
-    "applique embroidery digitizing",
-    "custom applique digitizing",
-    "tackle twill digitizing",
-    "laser cut applique digitizing",
-    "embroidery applique file",
-    "convert logo to applique dst",
-    "varsity applique embroidery",
-    "applique digitizing services",
-    "Velora Digitizing",
-  ],
+    "Professional applique embroidery digitizing for jackets, hoodies, jerseys & patches. Clean tackdown stitches, precise borders & all formats (DST, PES, JEF).",
   alternates: {
     canonical: "https://www.veloradigitizing.com/services/applique-digitizing",
   },
   openGraph: {
-    title: "Applique Digitizing Services | Velora Digitizing",
+    title: "Applique Embroidery Digitizing Services | Velora Digitizing",
     description:
       "Professional custom applique embroidery digitizing for jackets, hoodies, jerseys & patches. Clean tackdown stitches, precise borders, and all machine formats.",
     url: "https://www.veloradigitizing.com/services/applique-digitizing",
     siteName: "Velora Digitizing",
     images: [
       {
-        url: "/images/og/og-services.webp",
+        url: "/images/og/og-services.jpg",
         width: 1200,
         height: 630,
         alt: "Velora Applique Digitizing Services — Master Tackdown & Border Files",
-        type: "image/webp",
+        type: "image/jpeg",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Applique Digitizing Services | Velora Digitizing",
+    title: "Applique Embroidery Digitizing Services | Velora Digitizing",
     description:
       "Professional custom applique embroidery digitizing for jackets, hoodies, jerseys & patches. Clean tackdown stitches and all machine formats.",
-    images: ["/images/og/og-services.webp"],
+    images: ["/images/og/og-services.jpg"],
   },
 };
 

@@ -3,7 +3,7 @@ import type { BlogPost } from '../types';
 export const post: BlogPost = {
   "slug": "how-to-estimate-embroidery-stitch-count",
   "title": "How to Estimate Embroidery Stitch Count: The Sizing, Pricing & Run Time Guide",
-  "metaTitle": "How to Estimate Embroidery Stitch Count (Pro Formulas)",
+  "metaTitle": "How to Estimate Embroidery Stitch Count",
   "description": "Learn how to accurately estimate embroidery stitch counts for left chest logos, caps, and jacket backs. Formulas, pricing charts, and run time math.",
   "excerpt": "Before ordering custom digitizing or quoting apparel decorating jobs, you need to know the stitch count. Learn the 1-square-inch rule and calculation formulas.",
   "category": "Pricing & Guides",
