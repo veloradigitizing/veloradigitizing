@@ -1,4 +1,3 @@
-import { SITE_RATING } from "./site-rating";
 import Hero from "./components/Hero";
 import FeaturesSection from "./components/FeaturesSection";
 import homeBg from "./images/velora-embroidery-machine-lion.webp";
