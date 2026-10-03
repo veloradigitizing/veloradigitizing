@@ -51,6 +51,10 @@ export const post: BlogPost = {
       "text": "The straightforward answer is that while **Adobe Illustrator is the gold standard tool for creating and prepping vector artwork**, an embroidery machine does not understand bezier curves, strokes, or CMYK fills. An embroidery machine requires a **stitch coordinate file** (such as **Tajima .DST**, **Brother .PES**, or **Wilcom .EMB**) containing exact needle penetrations, densities, underlays, and trim commands."
     },
     {
+      "type": "tip",
+      "text": "Are you a graphic designer or apparel decorator needing specialized vector artwork prep or embroidery digitizing for your clients? Explore our [vector art conversion services](/vector-art) and [custom embroidery digitizing services](/services) to partner with our expert punching team."
+    },
+    {
       "type": "p",
       "text": "In this master guide, we break down the exact professional workflow to prepare your logo in Adobe Illustrator, bridge vector paths into stitch geometry, and produce flawless embroidery files without thread breaks or puckering."
     },
