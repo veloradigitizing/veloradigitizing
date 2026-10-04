@@ -68,11 +68,16 @@ export async function POST(request: Request) {
       return NextResponse.json({ skipped: "bot_filtered" });
     }
 
+    // 🚫 CRAWLER SUBNET BLOCK (Known Chinese crawler IP pools e.g., 116.179.x.x / Taiyuan)
+    if (clientIp.startsWith("116.179.")) {
+      return NextResponse.json({ skipped: "crawler_subnet_blocked" });
+    }
+
     // 3. Strict Deduplication: IP / Subnet + Page throttling
     const now = Date.now();
     const pageKey = clientIp + "_" + pagePath;
     const ipRecentKey = clientIp + "_recent";
-    const ipSubnet = clientIp.split(".").slice(0, 3).join(".");
+    const ipSubnet = clientIp.split(".").slice(0, 2).join("."); // e.g. 116.179 or 192.168
     const subnetKey = "subnet_" + ipSubnet + "_recent";
 
     const lastPageVisit = visitCache.get(pageKey);
@@ -89,8 +94,8 @@ export async function POST(request: Request) {
       return NextResponse.json({ skipped: "rapid_navigation_debounced" });
     }
 
-    // If subnet has bombarded requests within 30 seconds -> SKIP
-    if (lastSubnetVisit && now - lastSubnetVisit < 30 * 1000 && !data.force) {
+    // If subnet has bombarded requests within 5 minutes -> SKIP
+    if (lastSubnetVisit && now - lastSubnetVisit < 5 * 60 * 1000 && !data.force) {
       return NextResponse.json({ skipped: "subnet_rate_limited" });
     }
 
@@ -120,6 +125,10 @@ export async function POST(request: Request) {
       } catch {
         // geo lookup fallback
       }
+    }
+
+    if (city.includes("Taiyuan") || country.includes("China") || country === "CN") {
+      return NextResponse.json({ skipped: "china_crawler_region_filtered" });
     }
 
     const locationStr = [city, country].filter(Boolean).join(", ") || "Unknown Location";
