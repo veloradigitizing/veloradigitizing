@@ -1,10 +1,10 @@
-﻿/**
+/**
  * Ntfy notification utility for Velora Digitizing.
  * Topic is hardcoded to 'velora-alerts'.
  */
 
 export const NTFY_TOPIC = "velora-alerts";
-export const NTFY_SERVER_URL = `https://ntfy.sh/${NTFY_TOPIC}`;
+export const NTFY_SERVER_URL = "https://ntfy.sh/" + NTFY_TOPIC;
 
 export type NtfyPriority = 1 | 2 | 3 | 4 | 5 | "min" | "low" | "default" | "high" | "urgent";
 
@@ -28,7 +28,7 @@ export async function sendNtfyAlert(options: NtfyMessageOptions): Promise<boolea
   try {
     const payload = {
       topic: NTFY_TOPIC,
-      title: options.title || "[Velora Digitizing] Alert",
+      title: options.title || "Velora Digitizing Alert",
       message: options.message,
       priority: options.priority || 4,
       tags: options.tags || ["bell", "email"],
@@ -61,13 +61,18 @@ export async function sendContactLeadAlert(data: {
   subject?: string;
   message?: string;
 }): Promise<boolean> {
-  const title = `[Velora Digitizing] 🚀 New Quote Request: ${data.name}`;
+  const title = "🔥 New Quote Request: " + data.name;
   const details = [
-    `👤 Name: ${data.name}`,
-    `📧 Email: ${data.email}`,
-    data.service ? `🏷️ Service: ${data.service}` : null,
-    data.subject ? `📝 Subject: ${data.subject}` : null,
-    data.message ? `💬 Message: ${data.message}` : null,
+    "🔥 NEW QUOTE REQUEST",
+    "",
+    "👤 Name: " + data.name,
+    "📧 Email: " + data.email,
+    data.service ? "🧵 Service: " + data.service : null,
+    data.subject ? "🏷️ Subject: " + data.subject : null,
+    "",
+    data.message ? "💬 Message:\n\"" + data.message + "\"" : null,
+    "",
+    "🕒 Time: " + new Date().toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit", hour12: true }),
   ]
     .filter(Boolean)
     .join("\n");
@@ -77,7 +82,7 @@ export async function sendContactLeadAlert(data: {
     actions.push({
       action: "view" as const,
       label: "✉️ Reply via Email",
-      url: `mailto:${data.email}?subject=Re:%20Quote%20Inquiry%20from%20Velora%20Digitizing`,
+      url: "mailto:" + data.email + "?subject=Re:%20Quote%20Inquiry%20from%20Velora%20Digitizing",
     });
   }
 

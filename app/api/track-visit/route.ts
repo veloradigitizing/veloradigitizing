@@ -5,15 +5,7 @@ import { NTFY_TOPIC } from "@/lib/ntfy";
 const visitCache = new Map<string, number>();
 const DEDUPLICATION_WINDOW_MS = 30 * 60 * 1000; // 30 minutes window
 
-// Clean up stale cache entries every 15 minutes
-setInterval(() => {
-  const now = Date.now();
-  for (const [key, time] of visitCache.entries()) {
-    if (now - time > DEDUPLICATION_WINDOW_MS) {
-      visitCache.delete(key);
-    }
-  }
-}, 15 * 60 * 1000);
+const BOT_USER_AGENTS_REGEX = /bot|crawler|spider|slurp|facebookexternalhit|bytespider|gptbot|claudebot|ccbot|cohere|anthropic|perplex|googlebot|bingbot|yandex|baidu|duckduckbot|sogou|exabot|facebot|ia_archiver|python-requests|curl|wget|httpclient|axios|postman|headless|lighthouse|phantomjs|ahrefs|semrush|mozdotcom|dotbot|rogerbot/i;
 
 function parseUserAgent(ua: string) {
   let browser = "Unknown Browser";
@@ -35,18 +27,9 @@ function parseUserAgent(ua: string) {
   else if (/safari/i.test(ua)) browser = "Safari";
   else if (/opera|opr/i.test(ua)) browser = "Opera";
 
-  const isBot = /bot|spider|crawl|slurp|lighthouse|googlebot|bingbot|yandex/i.test(ua);
+  const isBot = !ua || BOT_USER_AGENTS_REGEX.test(ua);
 
   return { browser, os, device, isBot };
-}
-
-function getCountryFlag(countryCode?: string): string {
-  if (!countryCode || countryCode.length !== 2) return "🌐";
-  const codePoints = countryCode
-    .toUpperCase()
-    .split("")
-    .map((char) => 127397 + char.charCodeAt(0));
-  return String.fromCodePoint(...codePoints);
 }
 
 export async function POST(request: Request) {
@@ -85,13 +68,16 @@ export async function POST(request: Request) {
       return NextResponse.json({ skipped: "bot_filtered" });
     }
 
-    // 3. Strict Deduplication: Same IP on Same Page within 30 minutes OR same IP overall within 2 minutes
+    // 3. Strict Deduplication: IP / Subnet + Page throttling
     const now = Date.now();
-    const pageKey = `${clientIp}_${pagePath}`;
-    const ipRecentKey = `${clientIp}_recent`;
+    const pageKey = clientIp + "_" + pagePath;
+    const ipRecentKey = clientIp + "_recent";
+    const ipSubnet = clientIp.split(".").slice(0, 3).join(".");
+    const subnetKey = "subnet_" + ipSubnet + "_recent";
 
     const lastPageVisit = visitCache.get(pageKey);
     const lastAnyVisit = visitCache.get(ipRecentKey);
+    const lastSubnetVisit = visitCache.get(subnetKey);
 
     // If reloaded or visited the exact same page within 30 minutes -> SKIP
     if (lastPageVisit && now - lastPageVisit < DEDUPLICATION_WINDOW_MS && !data.force) {
@@ -103,19 +89,24 @@ export async function POST(request: Request) {
       return NextResponse.json({ skipped: "rapid_navigation_debounced" });
     }
 
+    // If subnet has bombarded requests within 30 seconds -> SKIP
+    if (lastSubnetVisit && now - lastSubnetVisit < 30 * 1000 && !data.force) {
+      return NextResponse.json({ skipped: "subnet_rate_limited" });
+    }
+
     // Update timestamps
     visitCache.set(pageKey, now);
     visitCache.set(ipRecentKey, now);
+    visitCache.set(subnetKey, now);
 
     // 4. Geolocation details (City, Country)
     let country = headers.get("x-vercel-ip-country") || headers.get("cf-ipcountry") || "";
     let city = headers.get("x-vercel-ip-city") || "";
-    let countryCode = country;
     let isp = "";
 
     if (!country || (clientIp !== "127.0.0.1" && clientIp !== "::1")) {
       try {
-        const geoRes = await fetch(`http://ip-api.com/json/${clientIp}?fields=status,country,countryCode,city,isp,org`, {
+        const geoRes = await fetch("http://ip-api.com/json/" + clientIp + "?fields=status,country,city,isp,org", {
           signal: AbortSignal.timeout(2000),
         });
         if (geoRes.ok) {
@@ -123,7 +114,6 @@ export async function POST(request: Request) {
           if (geo.status === "success") {
             city = geo.city || city;
             country = geo.country || country;
-            countryCode = geo.countryCode || countryCode;
             isp = geo.isp || geo.org || "";
           }
         }
@@ -132,24 +122,28 @@ export async function POST(request: Request) {
       }
     }
 
-    const flag = getCountryFlag(countryCode);
     const locationStr = [city, country].filter(Boolean).join(", ") || "Unknown Location";
     const referrer = data.referrer || headers.get("referer") || "Direct Visit";
     const screenSize = data.screenSize || "Unknown";
     const language = data.language || headers.get("accept-language")?.split(",")[0] || "en";
+    const timeStr = new Date().toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit", hour12: true });
 
-    // 5. Title & Message Format
-    const title = `[Velora Digitizing] ${flag} Visit: ${locationStr}`;
-    
+    // 5. Title & Clean Message Format (Clean unicode emojis, no corrupted text, no title brackets)
+    const title = "👀 Visitor from " + locationStr;
+
     const messageLines = [
-      `📍 Location: ${locationStr}`,
-      `🌐 IP: ${clientIp}${isp ? ` (${isp})` : ""}`,
-      `📄 Page: ${pagePath}`,
-      `🔗 Referrer: ${referrer}`,
-      `📱 Device: ${device} • ${os} • ${browser}`,
-      `🖥️ Screen: ${screenSize} • 🌐 Lang: ${language}`,
-      data.utmSource ? `🎯 Campaign: ${data.utmSource} / ${data.utmMedium || ""}` : null,
-    ].filter(Boolean);
+      "👀 NEW WEBSITE VISITOR",
+      "",
+      "📍 Location: " + locationStr,
+      "📄 Page: " + pagePath,
+      "🌐 IP: " + clientIp + (isp ? " (" + isp + ")" : ""),
+      "📱 Device: " + device + " • " + os + " • " + browser,
+      "🔗 Source: " + referrer,
+      "💻 Screen: " + screenSize + " • Lang: " + language,
+      data.utmSource ? "🎯 Campaign: " + data.utmSource + " / " + (data.utmMedium || "") : null,
+      "",
+      "🕒 Time: " + timeStr,
+    ].filter(Boolean) as string[];
 
     const ntfyPayload = {
       topic: NTFY_TOPIC,
