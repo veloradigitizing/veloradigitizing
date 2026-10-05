@@ -304,8 +304,8 @@ export default function AppliqueDigitizingPage() {
             <div className="group overflow-hidden rounded-2xl border border-navy-950/10 bg-white shadow-sm transition-all hover:shadow-md">
               <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
                 <Image
-                  src="/images/applique-design/ADesign.webp"
-                  alt="Custom embroidered applique design sample"
+                  src="/images/applique-design/varsity-letter-a-applique-embroidery-digitizing-dst.webp"
+                  alt="Varsity Letter A Collegiate Applique Embroidery Digitizing DST sample"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -324,8 +324,8 @@ export default function AppliqueDigitizingPage() {
             <div className="group overflow-hidden rounded-2xl border border-navy-950/10 bg-white shadow-sm transition-all hover:shadow-md">
               <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
                 <Image
-                  src="/images/applique-design/Cougars.webp"
-                  alt="Cougars mascot sports team applique digitizing sample"
+                  src="/images/applique-design/cougars-sports-team-applique-embroidery-digitizing-dst.webp"
+                  alt="Cougars mascot sports team applique embroidery digitizing DST sample"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"

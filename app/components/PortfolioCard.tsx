@@ -13,61 +13,61 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     title: "Hike More Worry Less",
     tag: "Adventure Patch",
     category: "patches",
-    image: "/images/patches/HikeMorePatch.webp",
+    image: "/images/patches/hike-more-worry-less-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "Wild Adventure Patch",
     tag: "Nature Patch",
     category: "patches",
-    image: "/images/patches/WildPatch.webp",
+    image: "/images/patches/wild-adventure-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "Stay Wild Patch",
     tag: "Motivational",
     category: "patches",
-    image: "/images/patches/StayWIldPatch.webp",
+    image: "/images/patches/stay-wild-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "Explore The Path",
     tag: "Adventure Patch",
     category: "patches",
-    image: "/images/patches/ExplorePatch.webp",
+    image: "/images/patches/explore-the-path-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "Find Your Path",
     tag: "Inspirational",
     category: "patches",
-    image: "/images/patches/FindYourPathPatch.webp",
+    image: "/images/patches/find-your-path-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "Happy Place Patch",
     tag: "Lifestyle",
     category: "patches",
-    image: "/images/patches/HappyPlacePatch.webp",
+    image: "/images/patches/happy-place-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "Keep It Simple",
     tag: "Minimalist",
     category: "patches",
-    image: "/images/patches/KeepItSimplePatch.webp",
+    image: "/images/patches/keep-it-simple-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "Life Is Better",
     tag: "Quote Patch",
     category: "patches",
-    image: "/images/patches/LifeIsBetterPatch.webp",
+    image: "/images/patches/life-is-better-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "Chase The Sun",
     tag: "Motivational",
     category: "patches",
-    image: "/images/patches/ChaseTheSunPatch.webp",
+    image: "/images/patches/chase-the-sun-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "Adventure Awaits",
     tag: "Outdoor",
     category: "patches",
-    image: "/images/patches/AdventurePatch.webp",
+    image: "/images/patches/adventure-awaits-patch-embroidery-digitizing-dst.webp",
   },
 
   // === CUSTOM PATCHES (from /images/custom-patches/) ===
@@ -75,67 +75,67 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     title: "Dad By Day Gamer",
     tag: "Gaming Patch",
     category: "custom-patches",
-    image: "/images/custom-patches/DadByDay.webp",
+    image: "/images/custom-patches/dad-by-day-gamer-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "Endeavour Patch",
     tag: "Motivational",
     category: "custom-patches",
-    image: "/images/custom-patches/Endeavour.webp",
+    image: "/images/custom-patches/endeavour-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "Gumshoe Detective",
     tag: "Fun Design",
     category: "custom-patches",
-    image: "/images/custom-patches/Gumshoe.webp",
+    image: "/images/custom-patches/gumshoe-detective-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "Home Of Hustle",
     tag: "Motivational",
     category: "custom-patches",
-    image: "/images/custom-patches/HomeOfHustle.webp",
+    image: "/images/custom-patches/home-of-hustle-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "Love Heart Patch",
     tag: "Romantic",
     category: "custom-patches",
-    image: "/images/custom-patches/LovePatch.webp",
+    image: "/images/custom-patches/love-heart-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "Mentally Strong",
     tag: "Inspirational",
     category: "custom-patches",
-    image: "/images/custom-patches/Mentally.webp",
+    image: "/images/custom-patches/mentally-strong-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "Paranormal Patch",
     tag: "Mystery",
     category: "custom-patches",
-    image: "/images/custom-patches/Paranormal.webp",
+    image: "/images/custom-patches/paranormal-mystery-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "People Safety",
     tag: "Community",
     category: "custom-patches",
-    image: "/images/custom-patches/PeopleSafety.webp",
+    image: "/images/custom-patches/people-safety-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "Search Rescan",
     tag: "Gaming",
     category: "custom-patches",
-    image: "/images/custom-patches/SearchRescan.webp",
+    image: "/images/custom-patches/search-rescan-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "Veracruz Mexico",
     tag: "Travel",
     category: "custom-patches",
-    image: "/images/custom-patches/Veracruz.webp",
+    image: "/images/custom-patches/veracruz-mexico-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "Wild Spirit",
     tag: "Adventure",
     category: "custom-patches",
-    image: "/images/custom-patches/Wild.webp",
+    image: "/images/custom-patches/wild-spirit-patch-embroidery-digitizing-dst.webp",
   },
 
   // === CAP LOGO (from /images/cap-logo/) ===
@@ -143,31 +143,31 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     title: "Diesel Masters Cap",
     tag: "Skull Design",
     category: "cap-logo",
-    image: "/images/cap-logo/cap-design-01.webp",
+    image: "/images/cap-logo/diesel-masters-skull-cap-embroidery-digitizing-dst.webp",
   },
   {
     title: "Cap Logo Design 02",
     tag: "Custom Logo",
     category: "cap-logo",
-    image: "/images/cap-logo/cap-logo-02.webp",
+    image: "/images/cap-logo/custom-headwear-cap-logo-embroidery-digitizing-dst.webp",
   },
   {
     title: "Cap Logo Design 03",
     tag: "Embroidery",
     category: "cap-logo",
-    image: "/images/cap-logo/cap-logo-03.webp",
+    image: "/images/cap-logo/sports-team-cap-logo-embroidery-digitizing-dst.webp",
   },
   {
     title: "Cap Logo Design 04",
     tag: "Digitizing",
     category: "cap-logo",
-    image: "/images/cap-logo/cap-logo-04.webp",
+    image: "/images/cap-logo/vintage-trucker-cap-logo-embroidery-digitizing-dst.webp",
   },
   {
     title: "Cap Logo Design 05",
     tag: "Custom Work",
     category: "cap-logo",
-    image: "/images/cap-logo/cap-logo-05.webp",
+    image: "/images/cap-logo/baseball-snapback-cap-logo-embroidery-digitizing-dst.webp",
   },
 
   // === CHENILLE (from /images/chenille/) ===
@@ -175,37 +175,37 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     title: "Chenille Design 01",
     tag: "Chenille Patch",
     category: "chenille",
-    image: "/images/chenille/chenille-01.webp",
+    image: "/images/chenille/varsity-letter-chenille-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "Strategy Chenille",
     tag: "Letter Patch",
     category: "chenille",
-    image: "/images/chenille/chenille-02.webp",
+    image: "/images/chenille/strategy-chenille-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "Chenille Design 03",
     tag: "Varsity Style",
     category: "chenille",
-    image: "/images/chenille/chenille-03.webp",
+    image: "/images/chenille/collegiate-chenille-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "Chenille Design 04",
     tag: "Text Patch",
     category: "chenille",
-    image: "/images/chenille/chenille-04.webp",
+    image: "/images/chenille/athletic-number-chenille-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "Chenille Design 05",
     tag: "Custom",
     category: "chenille",
-    image: "/images/chenille/chenille-05.webp",
+    image: "/images/chenille/custom-jacket-chenille-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "Chenille Design 06",
     tag: "Premium",
     category: "chenille",
-    image: "/images/chenille/chenille-06.webp",
+    image: "/images/chenille/premium-fluffy-chenille-patch-embroidery-digitizing-dst.webp",
   },
 
   // === JACKET BACK (from /images/jacket-back-design/) ===
@@ -213,13 +213,13 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     title: "Leopard Jacket Back",
     tag: "Full Back",
     category: "jacket-back",
-    image: "/images/jacket-back-design/jacket-back-01.webp",
+    image: "/images/jacket-back-design/leopard-large-jacket-back-embroidery-digitizing-dst.webp",
   },
   {
     title: "Jacket Back Original",
     tag: "Large Design",
     category: "jacket-back",
-    image: "/images/jacket-back-design/jacket-back-original.webp",
+    image: "/images/jacket-back-design/biker-eagle-jacket-back-embroidery-digitizing-dst.webp",
   },
 
   // === LEFT CHEST LOGO (from /images/left-chest-logo/) ===
@@ -227,19 +227,19 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     title: "Christ Tiger Logo",
     tag: "Sports Logo",
     category: "left-chest",
-    image: "/images/left-chest-logo/ChristLogo.webp",
+    image: "/images/left-chest-logo/christ-tiger-sports-left-chest-embroidery-digitizing-dst.webp",
   },
   {
     title: "Knight Logo",
     tag: "Crest Design",
     category: "left-chest",
-    image: "/images/left-chest-logo/KnightLogo.webp",
+    image: "/images/left-chest-logo/knight-shield-crest-left-chest-embroidery-digitizing-dst.webp",
   },
   {
     title: "Left Chest Shirt",
     tag: "Corporate",
     category: "left-chest",
-    image: "/images/left-chest-logo/left-chest-shirt-01.webp",
+    image: "/images/left-chest-logo/corporate-polo-shirt-left-chest-embroidery-digitizing-dst.webp",
   },
 
   // === 3D PUFF (from /images/3d-puff/) ===
@@ -247,7 +247,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     title: "3D Puff Sample",
     tag: "Puff Embroidery",
     category: "3d-puff",
-    image: "/images/3d-puff/3d-puff-sample-01.webp",
+    image: "/images/3d-puff/custom-3d-puff-cap-embroidery-digitizing-dst.webp",
   },
 
   // === TOWEL DESIGN (from /images/towel-design/) ===
@@ -255,25 +255,25 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     title: "Elena Monogram Towel",
     tag: "Personalized",
     category: "towel",
-    image: "/images/towel-design/towel-design-01.webp",
+    image: "/images/towel-design/elena-monogram-bath-towel-embroidery-digitizing-dst.webp",
   },
   {
     title: "Towel Design 02",
     tag: "Custom Text",
     category: "towel",
-    image: "/images/towel-design/towel-design-02.webp",
+    image: "/images/towel-design/hotel-spa-luxury-towel-embroidery-digitizing-dst.webp",
   },
   {
     title: "Towel Design 03",
     tag: "Embroidery",
     category: "towel",
-    image: "/images/towel-design/towel-design-03.webp",
+    image: "/images/towel-design/personalized-gift-towel-embroidery-digitizing-dst.webp",
   },
   {
     title: "Towel Design 04",
     tag: "Gift Item",
     category: "towel",
-    image: "/images/towel-design/towel-design-04.webp",
+    image: "/images/towel-design/floral-script-hand-towel-embroidery-digitizing-dst.webp",
   },
 
   // === APPLIQUE (from /images/applique-design/) ===
@@ -281,13 +281,13 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     title: "Applique A Design",
     tag: "Applique Work",
     category: "applique",
-    image: "/images/applique-design/ADesign.webp",
+    image: "/images/applique-design/varsity-letter-a-applique-embroidery-digitizing-dst.webp",
   },
   {
     title: "Cougars Applique",
     tag: "Sports Mascot",
     category: "applique",
-    image: "/images/applique-design/Cougars.webp",
+    image: "/images/applique-design/cougars-sports-team-applique-embroidery-digitizing-dst.webp",
   },
 
   // === VECTOR ART (from /images/vector-art/) ===
@@ -295,49 +295,49 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     title: "Goku Vector Art",
     tag: "Anime Style",
     category: "vector-art",
-    image: "/images/vector-art/GokuVector.webp",
+    image: "/images/vector-art/goku-anime-character-vector-art-conversion-dst.webp",
   },
   {
     title: "Never Stop Vector",
     tag: "Motivational",
     category: "vector-art",
-    image: "/images/vector-art/NeverStopVector.webp",
+    image: "/images/vector-art/never-stop-motivational-vector-art-conversion-dst.webp",
   },
   {
     title: "Paint Vector Art",
     tag: "Artistic",
     category: "vector-art",
-    image: "/images/vector-art/PaintVector.webp",
+    image: "/images/vector-art/paint-splash-artistic-vector-art-conversion-dst.webp",
   },
   {
     title: "Raven Vector",
     tag: "Bird Design",
     category: "vector-art",
-    image: "/images/vector-art/RavenVector.webp",
+    image: "/images/vector-art/raven-bird-illustration-vector-art-conversion-dst.webp",
   },
   {
     title: "Volf Vector",
     tag: "Animal Art",
     category: "vector-art",
-    image: "/images/vector-art/VolfVector.webp",
+    image: "/images/vector-art/wolf-wildlife-animal-vector-art-conversion-dst.webp",
   },
   {
     title: "Messi Vector Art",
     tag: "Sports Illustration",
     category: "vector-art",
-    image: "/images/vector-art/MessiVector.webp",
+    image: "/images/vector-art/messi-football-sports-vector-art-conversion-dst.webp",
   },
   {
     title: "Dragon Ball Vector",
     tag: "Anime Style",
     category: "vector-art",
-    image: "/images/vector-art/DragonBallVector.webp",
+    image: "/images/vector-art/dragon-ball-anime-vector-art-conversion-dst.webp",
   },
   {
     title: "Skull Van Vector",
     tag: "Artistic",
     category: "vector-art",
-    image: "/images/vector-art/SkullVanVector.webp",
+    image: "/images/vector-art/vintage-skull-van-vector-art-conversion-dst.webp",
   },
 
   // === SLEEVE DESIGN (from /images/shoulder-design/) ===
@@ -345,13 +345,13 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     title: "Pilipinas Sleeve",
     tag: "Flag Design",
     category: "sleeve",
-    image: "/images/shoulder-design/pilipinas-logo-01.webp",
+    image: "/images/shoulder-design/pilipinas-flag-sleeve-shoulder-embroidery-digitizing-dst.webp",
   },
   {
     title: "Pilipinas Original",
     tag: "National",
     category: "sleeve",
-    image: "/images/shoulder-design/pilipinas-original.webp",
+    image: "/images/shoulder-design/philippines-national-sleeve-embroidery-digitizing-dst.webp",
   },
 
   // === BUNDLES (from /images/bundles/) ===
@@ -359,37 +359,37 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     title: "Bundle Pack 01",
     tag: "Value Pack",
     category: "bundles",
-    image: "/images/bundles/bundle1.webp",
+    image: "/images/bundles/adventure-outdoor-embroidery-designs-bundle-pack-dst.webp",
   },
   {
     title: "Bundle Pack 02",
     tag: "Multi Design",
     category: "bundles",
-    image: "/images/bundles/bundle2.webp",
+    image: "/images/bundles/vintage-typography-embroidery-designs-bundle-pack-dst.webp",
   },
   {
     title: "Bundle Pack 03",
     tag: "Collection",
     category: "bundles",
-    image: "/images/bundles/bundle3.webp",
+    image: "/images/bundles/sports-mascot-embroidery-designs-bundle-pack-dst.webp",
   },
   {
     title: "Bundle Pack 04",
     tag: "Premium Set",
     category: "bundles",
-    image: "/images/bundles/bundle4.webp",
+    image: "/images/bundles/floral-nature-embroidery-designs-bundle-pack-dst.webp",
   },
   {
     title: "Bundle Pack 05",
     tag: "Mega Pack",
     category: "bundles",
-    image: "/images/bundles/bundle5.webp",
+    image: "/images/bundles/gaming-pop-culture-embroidery-designs-bundle-pack-dst.webp",
   },
   {
     title: "Bundle Pack 06",
     tag: "Complete Kit",
     category: "bundles",
-    image: "/images/bundles/bundle6.webp",
+    image: "/images/bundles/commercial-mega-embroidery-designs-bundle-pack-dst.webp",
   },
 ];
 
@@ -437,7 +437,7 @@ export default function PortfolioCard({
       <div className="vr-zoom relative aspect-[4/3] w-full overflow-hidden bg-navy-950/[0.03]">
         <Image
           src={item.image}
-          alt={`${item.title} - ${item.tag} embroidery digitizing sample`}
+          alt={`${item.title} - Custom ${item.tag} Embroidery Digitizing Sample in DST, PES & JEF Formats`}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-cover"

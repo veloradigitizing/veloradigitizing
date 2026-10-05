@@ -9,10 +9,10 @@ import { stagger } from "./stagger";
 import { useCart } from "../context/CartContext";
 
 const PATCHES_PRODUCTS = [
-  { slug: "hike-more", title: "Hike More Worry Less", price: 2.99, image: "/images/patches/HikeMorePatch.webp", tag: "Adventure Patch" },
-  { slug: "wild-adventure", title: "Wild Adventure Patch", price: 2.99, image: "/images/patches/WildPatch.webp", tag: "Nature Patch" },
-  { slug: "stay-wild", title: "Stay Wild Patch", price: 2.99, image: "/images/patches/StayWIldPatch.webp", tag: "Motivational" },
-  { slug: "dad-gamer", title: "Dad By Day Gamer", price: 2.99, image: "/images/custom-patches/DadByDay.webp", tag: "Gaming Patch" },
+  { slug: "hike-more", title: "Hike More Worry Less", price: 2.99, image: "/images/patches/hike-more-worry-less-patch-embroidery-digitizing-dst.webp", tag: "Adventure Patch" },
+  { slug: "wild-adventure", title: "Wild Adventure Patch", price: 2.99, image: "/images/patches/wild-adventure-patch-embroidery-digitizing-dst.webp", tag: "Nature Patch" },
+  { slug: "stay-wild", title: "Stay Wild Patch", price: 2.99, image: "/images/patches/stay-wild-patch-embroidery-digitizing-dst.webp", tag: "Motivational" },
+  { slug: "dad-gamer", title: "Dad By Day Gamer", price: 2.99, image: "/images/custom-patches/dad-by-day-gamer-patch-embroidery-digitizing-dst.webp", tag: "Gaming Patch" },
 ];
 
 export default function PatchesStoreSection() {
@@ -54,7 +54,7 @@ export default function PatchesStoreSection() {
                   <div className="vr-zoom relative aspect-square w-full overflow-hidden bg-white/[0.06]">
                     <Image
                       src={product.image}
-                      alt={`${product.title} embroidered patch design`}
+                      alt={`${product.title} - Custom ${product.tag} Embroidery Digitizing DST file`}
                       fill
                       sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
                       className="object-cover"

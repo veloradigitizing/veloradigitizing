@@ -20,7 +20,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     price: 2.99,
     originalPrice: 4.00,
     category: "adventure",
-    image: "/images/patches/HikeMorePatch.webp",
+    image: "/images/patches/hike-more-worry-less-patch-embroidery-digitizing-dst.webp",
     description: "Circular outdoor adventure patch featuring hiker silhouette against mountain backdrop. Perfect for backpacks and outdoor gear.",
     size: "4x4 inch",
     stitchCount: 15000
@@ -30,7 +30,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     price: 2.99,
     originalPrice: 4.00,
     category: "adventure",
-    image: "/images/patches/WildPatch.webp",
+    image: "/images/patches/wild-adventure-patch-embroidery-digitizing-dst.webp",
     description: "Bold wilderness themed patch with nature-inspired design. Ideal for camping and hiking enthusiasts.",
     size: "3.5x3.5 inch",
     stitchCount: 12000
@@ -40,7 +40,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     price: 2.99,
     originalPrice: 4.00,
     category: "adventure",
-    image: "/images/patches/StayWIldPatch.webp",
+    image: "/images/patches/stay-wild-patch-embroidery-digitizing-dst.webp",
     description: "Inspirational stay wild patch with adventurous spirit theme. Great for jackets and caps.",
     size: "3x3 inch",
     stitchCount: 10000
@@ -50,7 +50,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     price: 2.99,
     originalPrice: 4.00,
     category: "adventure",
-    image: "/images/patches/ExplorePatch.webp",
+    image: "/images/patches/explore-the-path-patch-embroidery-digitizing-dst.webp",
     description: "Exploration themed patch encouraging adventure and discovery. Perfect for travel gear.",
     size: "3.5x3.5 inch",
     stitchCount: 14000
@@ -60,7 +60,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     price: 2.99,
     originalPrice: 4.00,
     category: "adventure",
-    image: "/images/patches/FindYourPathPatch.webp",
+    image: "/images/patches/find-your-path-patch-embroidery-digitizing-dst.webp",
     description: "Motivational path-finding patch with compass theme. Great for adventurers.",
     size: "3x3 inch",
     stitchCount: 9000
@@ -70,7 +70,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     price: 2.99,
     originalPrice: 4.00,
     category: "lifestyle",
-    image: "/images/patches/HappyPlacePatch.webp",
+    image: "/images/patches/happy-place-patch-embroidery-digitizing-dst.webp",
     description: "Cheerful happy place themed patch with positive vibes. Great for casual wear.",
     size: "3.5x3.5 inch",
     stitchCount: 13000
@@ -80,7 +80,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     price: 2.99,
     originalPrice: 4.00,
     category: "lifestyle",
-    image: "/images/patches/KeepItSimplePatch.webp",
+    image: "/images/patches/keep-it-simple-patch-embroidery-digitizing-dst.webp",
     description: "Minimalist text patch with clean typography. Modern design for everyday wear.",
     size: "3x2 inch",
     stitchCount: 6000
@@ -90,7 +90,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     price: 2.99,
     originalPrice: 4.00,
     category: "lifestyle",
-    image: "/images/patches/LifeIsBetterPatch.webp",
+    image: "/images/patches/life-is-better-patch-embroidery-digitizing-dst.webp",
     description: "Inspirational life quote patch with cheerful message. Uplifting design.",
     size: "4x2 inch",
     stitchCount: 9000
@@ -100,7 +100,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     price: 2.99,
     originalPrice: 4.00,
     category: "lifestyle",
-    image: "/images/patches/ChaseTheSunPatch.webp",
+    image: "/images/patches/chase-the-sun-patch-embroidery-digitizing-dst.webp",
     description: "Sunny optimistic patch encouraging you to chase your dreams. Bright design.",
     size: "3x3 inch",
     stitchCount: 8000
@@ -110,7 +110,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     price: 2.99,
     originalPrice: 4.00,
     category: "adventure",
-    image: "/images/patches/AdventurePatch.webp",
+    image: "/images/patches/adventure-awaits-patch-embroidery-digitizing-dst.webp",
     description: "Bold adventure awaits patch for thrill seekers and explorers.",
     size: "4x4 inch",
     stitchCount: 16000
@@ -122,7 +122,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     price: 2.99,
     originalPrice: 4.00,
     category: "gaming",
-    image: "/images/custom-patches/DadByDay.webp",
+    image: "/images/custom-patches/dad-by-day-gamer-patch-embroidery-digitizing-dst.webp",
     description: "Fun gaming dad patch with controller graphic and retro styling. Great for gamer dads.",
     size: "4x4 inch",
     stitchCount: 18000
@@ -132,7 +132,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     price: 2.99,
     originalPrice: 4.00,
     category: "motivational",
-    image: "/images/custom-patches/Endeavour.webp",
+    image: "/images/custom-patches/endeavour-patch-embroidery-digitizing-dst.webp",
     description: "Endeavour motivational patch with bold lettering. Inspiring design for achievers.",
     size: "3.5x2.5 inch",
     stitchCount: 11000
@@ -142,7 +142,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     price: 2.99,
     originalPrice: 4.00,
     category: "fun",
-    image: "/images/custom-patches/Gumshoe.webp",
+    image: "/images/custom-patches/gumshoe-detective-patch-embroidery-digitizing-dst.webp",
     description: "Playful detective-themed gumshoe patch with mystery vibe.",
     size: "3x3 inch",
     stitchCount: 10000
@@ -152,7 +152,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     price: 2.99,
     originalPrice: 4.00,
     category: "motivational",
-    image: "/images/custom-patches/HomeOfHustle.webp",
+    image: "/images/custom-patches/home-of-hustle-patch-embroidery-digitizing-dst.webp",
     description: "Motivational hustle culture patch with bold typography. Perfect for workwear.",
     size: "3.5x2.5 inch",
     stitchCount: 12000
@@ -162,7 +162,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     price: 2.99,
     originalPrice: 4.00,
     category: "lifestyle",
-    image: "/images/custom-patches/LovePatch.webp",
+    image: "/images/custom-patches/love-heart-patch-embroidery-digitizing-dst.webp",
     description: "Elegant love-themed patch with heart motif. Romantic design for couples apparel.",
     size: "3x3 inch",
     stitchCount: 8000
@@ -172,7 +172,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     price: 2.99,
     originalPrice: 4.00,
     category: "motivational",
-    image: "/images/custom-patches/Mentally.webp",
+    image: "/images/custom-patches/mentally-strong-patch-embroidery-digitizing-dst.webp",
     description: "Powerful mental strength patch with inspiring message. Build resilience.",
     size: "4x3 inch",
     stitchCount: 20000
@@ -182,7 +182,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     price: 2.99,
     originalPrice: 4.00,
     category: "fun",
-    image: "/images/custom-patches/Paranormal.webp",
+    image: "/images/custom-patches/paranormal-mystery-patch-embroidery-digitizing-dst.webp",
     description: "Spooky paranormal themed patch for supernatural fans. Mysterious design.",
     size: "3.5x3.5 inch",
     stitchCount: 14000
@@ -192,7 +192,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     price: 2.99,
     originalPrice: 4.00,
     category: "community",
-    image: "/images/custom-patches/PeopleSafety.webp",
+    image: "/images/custom-patches/people-safety-patch-embroidery-digitizing-dst.webp",
     description: "Community safety awareness patch with protective message.",
     size: "3x3 inch",
     stitchCount: 11000
@@ -202,7 +202,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     price: 2.99,
     originalPrice: 4.00,
     category: "gaming",
-       image: "/images/custom-patches/SearchRescan.webp",
+    image: "/images/custom-patches/search-rescan-patch-embroidery-digitizing-dst.webp",
     description: "Gaming-inspired search rescan action patch for gamers.",
     size: "3.5x2.5 inch",
     stitchCount: 13000
@@ -212,7 +212,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     price: 2.99,
     originalPrice: 4.00,
     category: "travel",
-    image: "/images/custom-patches/Veracruz.webp",
+    image: "/images/custom-patches/veracruz-mexico-patch-embroidery-digitizing-dst.webp",
     description: "Veracruz Mexico travel souvenir patch with cultural design.",
     size: "4x4 inch",
     stitchCount: 17000
@@ -222,7 +222,7 @@ const RAW_PATCHES: Array<Omit<Patch, "slug" | "formats">> = [
     price: 2.99,
     originalPrice: 4.00,
     category: "adventure",
-    image: "/images/custom-patches/Wild.webp",
+    image: "/images/custom-patches/wild-spirit-patch-embroidery-digitizing-dst.webp",
     description: "Fierce wild spirit patch with untamed energy. Bold nature design.",
     size: "4x4 inch",
     stitchCount: 19000

@@ -9,7 +9,7 @@ const PATCHES = [
     id: 1,
     title: "Hike More Worry Less",
     slug: "hike-more-patch",
-    image: "/images/patches/HikeMorePatch.webp",
+    image: "/images/patches/hike-more-worry-less-patch-embroidery-digitizing-dst.webp",
     category: "Embroidered Patches",
     price: 2.99,
     originalPrice: 4.00,
@@ -19,7 +19,7 @@ const PATCHES = [
     id: 2,
     title: "Dad By Day Gamer",
     slug: "dad-by-day",
-    image: "/images/custom-patches/DadByDay.webp",
+    image: "/images/custom-patches/dad-by-day-gamer-patch-embroidery-digitizing-dst.webp",
     category: "Custom Patches",
     price: 2.99,
     originalPrice: 4.00,
@@ -29,7 +29,7 @@ const PATCHES = [
     id: 3,
     title: "Wild Adventure Patch",
     slug: "wild-adventure-patch",
-    image: "/images/patches/WildPatch.webp",
+    image: "/images/patches/wild-adventure-patch-embroidery-digitizing-dst.webp",
     category: "Embroidered Patches",
     price: 2.99,
     originalPrice: 4.00,
@@ -39,7 +39,7 @@ const PATCHES = [
     id: 4,
     title: "Stay Wild Patch",
     slug: "stay-wild-patch",
-    image: "/images/patches/StayWIldPatch.webp",
+    image: "/images/patches/stay-wild-patch-embroidery-digitizing-dst.webp",
     category: "Embroidered Patches",
     price: 2.99,
     originalPrice: 4.00,
@@ -119,7 +119,7 @@ export default function PatchesSection() {
                     <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-gray-100 to-gray-50">
                       <Image
                         src={patch.image}
-                        alt={patch.title}
+                        alt={`${patch.title} - ${patch.category} Embroidery Digitizing DST file`}
                         fill
                         sizes="(max-width: 640px) 50vw, 25vw"
                         className="object-cover transition-transform duration-500 group-hover:scale-110"

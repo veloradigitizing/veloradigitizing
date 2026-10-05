@@ -62,7 +62,7 @@ export default function PortfolioModal({
         <div className="relative aspect-[4/3] w-full bg-navy-950/[0.03]">
           <Image
             src={item.image}
-            alt={`${item.title} - ${item.tag} embroidery digitizing sample`}
+            alt={`${item.title} - Custom ${item.tag} Embroidery Digitizing Sample in DST, PES & JEF Formats`}
             fill
             sizes="(max-width: 768px) 100vw, 768px"
             className="object-contain"

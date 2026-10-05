@@ -302,8 +302,8 @@ export default function PuffDigitizingPage() {
             <div className="group overflow-hidden rounded-2xl border border-navy-950/10 bg-white shadow-sm transition-all hover:shadow-md">
               <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
                 <Image
-                  src="/images/3d-puff/3d-puff-sample-01.webp"
-                  alt="3D puff embroidery digitizing sample on cap"
+                  src="/images/3d-puff/custom-3d-puff-cap-embroidery-digitizing-dst.webp"
+                  alt="Custom 3D puff cap embroidery digitizing DST sample on baseball snapback"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -322,8 +322,8 @@ export default function PuffDigitizingPage() {
             <div className="group overflow-hidden rounded-2xl border border-navy-950/10 bg-white shadow-sm transition-all hover:shadow-md">
               <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
                 <Image
-                  src="/images/cap-logo/cap-design-01.webp"
-                  alt="Embroidered cap front logo with 3D puff detailing"
+                  src="/images/cap-logo/diesel-masters-skull-cap-embroidery-digitizing-dst.webp"
+                  alt="Embroidered cap front logo with 3D puff detailing digitizing DST file"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"

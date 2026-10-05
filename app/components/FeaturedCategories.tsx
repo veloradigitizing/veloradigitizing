@@ -12,70 +12,70 @@ const FEATURED_CATEGORIES = [
     id: 1,
     name: "3D PUFF",
     subtitle: "3D Puff Digitizing",
-    image: "/images/3d-puff/3d-puff-sample-01.webp",
+    image: "/images/3d-puff/custom-3d-puff-cap-embroidery-digitizing-dst.webp",
     href: "/store?category=3d-puff",
   },
   {
     id: 2,
     name: "APPLIQUE",
     subtitle: "Applique Design",
-    image: "/images/applique-design/ADesign.webp",
+    image: "/images/applique-design/varsity-letter-a-applique-embroidery-digitizing-dst.webp",
     href: "/store?category=applique-design",
   },
   {
     id: 3,
     name: "CAP LOGO",
     subtitle: "Cap Digitizing",
-    image: "/images/cap-logo/cap-logo-02.webp",
+    image: "/images/cap-logo/custom-headwear-cap-logo-embroidery-digitizing-dst.webp",
     href: "/store?category=cap-logo",
   },
   {
     id: 4,
     name: "CHENILLE",
     subtitle: "Chenille Patch",
-    image: "/images/chenille/chenille-01.webp",
+    image: "/images/chenille/varsity-letter-chenille-patch-embroidery-digitizing-dst.webp",
     href: "/store?category=chenille",
   },
   {
     id: 5,
     name: "JACKET BACK",
     subtitle: "Jacket Back Design",
-    image: "/images/jacket-back-design/jacket-back-01.webp",
+    image: "/images/jacket-back-design/leopard-large-jacket-back-embroidery-digitizing-dst.webp",
     href: "/store?category=jacket-back-design",
   },
   {
     id: 6,
     name: "LEFT CHEST",
     subtitle: "Left Chest Logo",
-    image: "/images/left-chest-logo/left-chest-shirt-01.webp",
+    image: "/images/left-chest-logo/corporate-polo-shirt-left-chest-embroidery-digitizing-dst.webp",
     href: "/store?category=left-chest-logo",
   },
   {
     id: 7,
     name: "TOWEL",
     subtitle: "Towel Embroidery",
-    image: "/images/towel-design/towel-design-01.webp",
+    image: "/images/towel-design/elena-monogram-bath-towel-embroidery-digitizing-dst.webp",
     href: "/store?category=towel-design",
   },
   {
     id: 8,
     name: "Sleeve",
     subtitle: "Sleeve Design",
-    image: "/images/shoulder-design/pilipinas-logo-01.webp",
+    image: "/images/shoulder-design/pilipinas-flag-sleeve-shoulder-embroidery-digitizing-dst.webp",
     href: "/store?category=shoulder-design",
   },
   {
     id: 9,
     name: "PATCHES",
     subtitle: "Custom Patches",
-    image: "/images/custom-patches/DadByDay.webp",
+    image: "/images/custom-patches/dad-by-day-gamer-patch-embroidery-digitizing-dst.webp",
     href: "/store?category=custom-patches",
   },
   {
     id: 10,
     name: "VECTOR ART",
     subtitle: "Vector Artwork",
-    image: "/images/vector-art/GokuVector.webp",
+    image: "/images/vector-art/goku-anime-character-vector-art-conversion-dst.webp",
     href: "/store?category=vector-art",
   },
 ];
@@ -200,7 +200,7 @@ export default function FeaturedCategories() {
                   <div className="vr-zoom relative aspect-[2/3] w-full overflow-hidden bg-gray-100">
                     <Image
                       src={cat.image}
-                      alt={`${cat.subtitle} embroidery sample by Velora Digitizing`}
+                      alt={`${cat.name} - ${cat.subtitle} Custom Embroidery Digitizing DST file`}
                       fill
                       sizes="(max-width: 640px) 290px, (max-width: 768px) 230px, (max-width: 1024px) 250px, 20vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"

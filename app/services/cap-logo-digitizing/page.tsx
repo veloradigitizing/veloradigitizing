@@ -302,8 +302,8 @@ export default function CapDigitizingPage() {
             <div className="group overflow-hidden rounded-2xl border border-navy-950/10 bg-white shadow-sm transition-all hover:shadow-md">
               <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
                 <Image
-                  src="/images/cap-logo/cap-design-01.webp"
-                  alt="Embroidered cap front logo with precise center-out stitching"
+                  src="/images/cap-logo/diesel-masters-skull-cap-embroidery-digitizing-dst.webp"
+                  alt="Custom 3D skull cap embroidery digitizing DST sample"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -322,8 +322,8 @@ export default function CapDigitizingPage() {
             <div className="group overflow-hidden rounded-2xl border border-navy-950/10 bg-white shadow-sm transition-all hover:shadow-md">
               <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
                 <Image
-                  src="/images/cap-logo/cap-logo-02.webp"
-                  alt="Cap logo embroidery with fine script lettering"
+                  src="/images/cap-logo/custom-headwear-cap-logo-embroidery-digitizing-dst.webp"
+                  alt="Cap logo embroidery digitizing DST file with fine script lettering"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -342,8 +342,8 @@ export default function CapDigitizingPage() {
             <div className="group overflow-hidden rounded-2xl border border-navy-950/10 bg-white shadow-sm transition-all hover:shadow-md">
               <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
                 <Image
-                  src="/images/cap-logo/cap-logo-05.webp"
-                  alt="Custom baseball hat embroidered graphic"
+                  src="/images/cap-logo/baseball-snapback-cap-logo-embroidery-digitizing-dst.webp"
+                  alt="Custom baseball hat embroidered graphic digitizing DST file"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
