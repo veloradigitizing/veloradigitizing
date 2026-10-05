@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import RelatedGuides from "../../components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: { absolute: "3D Puff Embroidery Digitizing Services | Velora Digitizing" },
@@ -86,6 +87,15 @@ export default function PuffDigitizingLayout({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(puffJsonLd) }}
       />
       {children}
+      <RelatedGuides
+        title="3D Puff Embroidery Guides"
+        subtitle="Learn how raised foam embroidery is digitized, underlaid and priced before you order."
+        slugs={[
+          "3d-puff-embroidery-digitizing-guide",
+          "embroidery-underlay-types-explained",
+          "how-to-estimate-embroidery-stitch-count",
+        ]}
+      />
     </>
   );
 }

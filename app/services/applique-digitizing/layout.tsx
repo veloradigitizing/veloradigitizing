@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import RelatedGuides from "../../components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: { absolute: "Applique Embroidery Digitizing Services | Velora Digitizing" },
@@ -86,6 +87,15 @@ export default function AppliqueDigitizingLayout({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(appliqueJsonLd) }}
       />
       {children}
+      <RelatedGuides
+        title="Applique Embroidery Guides"
+        subtitle="How applique files are built, where they work best, and how they compare with patches."
+        slugs={[
+          "applique-embroidery-digitizing-guide",
+          "jacket-back-embroidery-digitizing-guide",
+          "custom-patch-types-embroidered-woven-pvc-leather-chenille",
+        ]}
+      />
     </>
   );
 }

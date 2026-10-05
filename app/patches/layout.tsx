@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import RelatedGuides from "../components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "Custom Embroidered Patch Services",
@@ -80,6 +81,15 @@ export default function PatchesLayout({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(patchesJsonLd) }}
       />
       {children}
+      <RelatedGuides
+        title="Custom Patch Guides"
+        subtitle="Compare patch types and materials before you choose a style for your order."
+        slugs={[
+          "custom-patch-types-embroidered-woven-pvc-leather-chenille",
+          "pvc-patches-vs-embroidered-patches",
+          "applique-embroidery-digitizing-guide",
+        ]}
+      />
     </>
   );
 }

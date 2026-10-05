@@ -18,6 +18,15 @@ import {
 
 const BASE_URL = "https://www.veloradigitizing.com";
 
+const SERVICE_LINKS = [
+  { label: "Embroidery Digitizing Services", href: "/services" },
+  { label: "3D Puff Digitizing", href: "/services/3d-puff-digitizing" },
+  { label: "Cap & Hat Logo Digitizing", href: "/services/cap-logo-digitizing" },
+  { label: "Applique Digitizing", href: "/services/applique-digitizing" },
+  { label: "Custom Patch Digitizing", href: "/patches" },
+  { label: "Vector Art Conversion", href: "/vector-art" },
+];
+
 type Props = {
   params: Promise<{ slug: string }>;
 };
@@ -428,6 +437,27 @@ export default async function BlogPostPage({ params }: Props) {
               </span>
             </Link>
           </div>
+
+          {/* Links to the other service pages */}
+          <nav aria-label="More Velora Digitizing services" className="mt-6">
+            <p className="text-[11px] font-bold uppercase tracking-wider text-navy-950/50">
+              More services from Velora Digitizing
+            </p>
+            <ul className="mt-3 flex flex-wrap gap-2">
+              {SERVICE_LINKS.filter(
+                (s) => s.href !== post.relatedService.href,
+              ).map((s) => (
+                <li key={s.href}>
+                  <Link
+                    href={s.href}
+                    className="inline-block rounded-full border border-navy-950/15 px-3.5 py-1.5 text-sm font-medium text-navy-950/75 transition-colors hover:border-brand-600 hover:text-brand-600"
+                  >
+                    {s.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
       </article>
 

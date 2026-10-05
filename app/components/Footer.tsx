@@ -90,7 +90,7 @@ const BLOG_LINKS = [
   },
   {
     label: "3D Puff Cap Digitizing",
-    href: "/blog/cheap-3d-puff-embroidery-digitizing-for-caps",
+    href: "/blog/3d-puff-embroidery-digitizing-guide",
   },
   {
     label: "DST vs PES vs JEF Files",
@@ -106,7 +106,7 @@ const BLOG_LINKS = [
   },
   {
     label: "Embroidered vs PVC Patches",
-    href: "/blog/embroidered-vs-woven-vs-pvc-patches",
+    href: "/blog/pvc-patches-vs-embroidered-patches",
   },
   {
     label: "Common Digitizing Mistakes",

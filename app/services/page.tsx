@@ -8,6 +8,7 @@ import CTABanner from "../components/CTABanner";
 import TestimonialCTASection from "../components/TestimonialCTASection";
 import { FAQ, SERVICES_FAQS } from "../components/FAQ";
 import PortfolioSection from "../components/PortfolioSection";
+import RelatedGuides from "../components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "Embroidery Digitizing Services",
@@ -168,6 +169,16 @@ export default function ServicesPage() {
         ctaSubtitle="Tell us about your project and we'll recommend the perfect digitizing solution."
         ctaLabel="TALK TO AN EXPERT"
         ctaHref="/contact"
+      />
+
+      <RelatedGuides
+        title="Embroidery Digitizing Guides"
+        subtitle="New to digitizing? Start with how it works, what it costs, and how to size a logo."
+        slugs={[
+          "what-is-embroidery-digitizing",
+          "embroidery-digitizing-cost-pricing-guide",
+          "left-chest-logo-embroidery-digitizing-guide",
+        ]}
       />
 
       <CTABanner />

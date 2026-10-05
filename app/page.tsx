@@ -12,6 +12,7 @@ import CTABanner from "./components/CTABanner";
 import { FAQ } from "./components/FAQ";
 import { HOME_FAQS } from "./components/faq-data";
 import HomeStats from "./components/HomeStats";
+import RelatedGuides, { latestGuideSlugs } from "./components/RelatedGuides";
 
 // const WHY_CHOOSE_ITEMS: {
 //   icon: Parameters<typeof WhyChooseUs>[0]["items"][number]["icon"];
@@ -80,6 +81,12 @@ export default function Home() {
       <Testimonials />
 
       <PatchesStoreSection />
+
+      <RelatedGuides
+        title="Latest Embroidery Digitizing Guides"
+        subtitle="Practical advice from our digitizers on file formats, stitch quality and artwork prep."
+        slugs={latestGuideSlugs(3)}
+      />
 
       <FAQ
         items={HOME_FAQS}

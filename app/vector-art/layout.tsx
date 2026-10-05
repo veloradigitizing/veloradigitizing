@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import RelatedGuides from "../components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "Vector Art Conversion Services",
@@ -80,6 +81,15 @@ export default function VectorArtLayout({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(vectorJsonLd) }}
       />
       {children}
+      <RelatedGuides
+        title="Vector Art & Artwork Prep Guides"
+        subtitle="How to prepare logos and vector files for embroidery and screen printing."
+        slugs={[
+          "vector-art-for-screen-printing-vs-embroidery",
+          "digitize-logo-illustrator-embroidery",
+          "how-to-prepare-logo-for-embroidery-digitizing",
+        ]}
+      />
     </>
   );
 }

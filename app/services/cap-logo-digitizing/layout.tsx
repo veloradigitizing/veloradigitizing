@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import RelatedGuides from "../../components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: { absolute: "Cap & Hat Logo Digitizing Services | Velora Digitizing" },
@@ -86,6 +87,15 @@ export default function CapDigitizingLayout({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(capJsonLd) }}
       />
       {children}
+      <RelatedGuides
+        title="Cap & Hat Embroidery Guides"
+        subtitle="Practical reading on puff lettering, stabilizers and avoiding puckering on caps."
+        slugs={[
+          "3d-puff-embroidery-digitizing-guide",
+          "embroidery-stabilizer-guide-cutaway-vs-tearaway",
+          "fix-embroidery-fabric-puckering-and-thread-breaks",
+        ]}
+      />
     </>
   );
 }
