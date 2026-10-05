@@ -4,6 +4,7 @@ export type { BlogPost, BlogBlock };
 import post_3d_puff_embroidery_digitizing_guide from './content/3d-puff-embroidery-digitizing-guide';
 import post_applique_embroidery_digitizing_guide from './content/applique-embroidery-digitizing-guide';
 import post_best_online_embroidery_digitizing_services_comparison_guide from './content/best-online-embroidery-digitizing-services-comparison-guide';
+import post_cap_hat_logo_embroidery_digitizing_guide from './content/cap-hat-logo-embroidery-digitizing-guide';
 import post_common_embroidery_digitizing_mistakes from './content/common-embroidery-digitizing-mistakes';
 import post_convert_png_jpg_to_dst_embroidery_file from './content/convert-png-jpg-to-dst-embroidery-file';
 import post_custom_patch_types_embroidered_woven_pvc_leather_chenille from './content/custom-patch-types-embroidered-woven-pvc-leather-chenille';
@@ -27,6 +28,7 @@ export const BLOG_POSTS: BlogPost[] = [
   post_3d_puff_embroidery_digitizing_guide,
   post_applique_embroidery_digitizing_guide,
   post_best_online_embroidery_digitizing_services_comparison_guide,
+  post_cap_hat_logo_embroidery_digitizing_guide,
   post_common_embroidery_digitizing_mistakes,
   post_convert_png_jpg_to_dst_embroidery_file,
   post_custom_patch_types_embroidered_woven_pvc_leather_chenille,

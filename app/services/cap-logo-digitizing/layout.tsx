@@ -89,11 +89,11 @@ export default function CapDigitizingLayout({
       {children}
       <RelatedGuides
         title="Cap & Hat Embroidery Guides"
-        subtitle="Practical reading on puff lettering, stabilizers and avoiding puckering on caps."
+        subtitle="Practical reading on cap logo sizing, puff lettering and stabilizers for hats."
         slugs={[
+          "cap-hat-logo-embroidery-digitizing-guide",
           "3d-puff-embroidery-digitizing-guide",
           "embroidery-stabilizer-guide-cutaway-vs-tearaway",
-          "fix-embroidery-fabric-puckering-and-thread-breaks",
         ]}
       />
     </>
