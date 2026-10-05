@@ -90,21 +90,21 @@ const CONTACT_INFO: { icon: IconName; title: string; lines: string[] }[] = [
   {
     icon: "mail",
     title: "Email Us",
-    lines: ["info@veloradigitizing.com", "We reply within minutes"],
+    lines: ["info@veloradigitizing.com", "24/7 Order Intake & Inquiries"],
   },
   {
     icon: "phone",
-    title: "Call / WhatsApp",
-    lines: ["+1 (213) 635-8137", "24/7 Available"],
+    title: "Phone & WhatsApp",
+    lines: ["+1 (213) 635-8137", "WhatsApp: 24/7 | Phone: Mon-Sat 9AM-7PM PT"],
   },
   {
     icon: "globe",
     title: "Website",
-    lines: ["www.veloradigitizing.com", "Visit our website"],
+    lines: ["www.veloradigitizing.com", "Send your order any time"],
   },
   {
     icon: "pin",
-    title: "Location",
+    title: "Office Location",
     lines: ["128 Business Blvd, Suite 204", "Los Angeles, CA 90017, USA"],
   },
 ];

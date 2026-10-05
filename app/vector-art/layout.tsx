@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Vector Art Conversion Services | Velora Digitizing",
     description:
-      "Convert raster images to clean scalable vector art (AI, EPS, SVG, PDF). Expert manual tracing with 12–24h turnaround.",
+      "Convert raster images to clean scalable vector art (AI, EPS, SVG, PDF). Expert manual tracing with 12-24h turnaround.",
     images: ["/images/og/og-vector-art.jpg"],
   },
 };

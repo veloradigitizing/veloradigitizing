@@ -101,10 +101,10 @@ export const post: BlogPost = {
     {
       "type": "ul",
       "items": [
-        "**Wilcom ES:** Commercial Power ★★★★★ | Ease of Use ★★☆☆☆ | Stitch Precision ★★★★★ | Price: $2,000–$4,500+",
+        "**Wilcom ES:** Commercial Power ★★★★★ | Ease of Use ★★☆☆☆ | Stitch Precision ★★★★★ | Price: $2,000-$4,500+",
         "**Hatch 3:** Commercial Power ★★★★☆ | Ease of Use ★★★★★ | Stitch Precision ★★★★★ | Price: ~$1,099",
-        "**PE-Design 11:** Commercial Power ★★★☆☆ | Ease of Use ★★★★☆ | Stitch Precision ★★★☆☆ | Price: ~$800–$1,200",
-        "**Embrilliance StitchArtist:** Commercial Power ★★★☆☆ | Ease of Use ★★★★☆ | Stitch Precision ★★★☆☆ | Price: $169–$649"
+        "**PE-Design 11:** Commercial Power ★★★☆☆ | Ease of Use ★★★★☆ | Stitch Precision ★★★☆☆ | Price: ~$800-$1,200",
+        "**Embrilliance StitchArtist:** Commercial Power ★★★☆☆ | Ease of Use ★★★★☆ | Stitch Precision ★★★☆☆ | Price: $169-$649"
       ]
     },
     {
@@ -113,7 +113,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Software is simply a tool—true embroidery quality depends 100% on the digitizer's understanding of textile physics, fabric elasticity, and needle mechanics. That is why thousands of successful apparel decorators choose to partner with **Velora Digitizing** for fast 8–24h turnaround rather than losing production hours on software punching."
+      "text": "Software is simply a tool—true embroidery quality depends 100% on the digitizer's understanding of textile physics, fabric elasticity, and needle mechanics. That is why thousands of successful apparel decorators choose to partner with **Velora Digitizing** for fast 8-24h turnaround rather than losing production hours on software punching."
     },
     {
       "type": "h2",
@@ -121,7 +121,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Skip the steep software learning curve. Send your artwork to Velora Digitizing for guaranteed, production-tested DST, PES, and EXP files delivered in 8–24 hours. Explore our [digitizing services](/services) to get started."
+      "text": "Skip the steep software learning curve. Send your artwork to Velora Digitizing for guaranteed, production-tested DST, PES, and EXP files delivered in 8-24 hours. Explore our [digitizing services](/services) to get started."
     },
     {
       "type": "h2",

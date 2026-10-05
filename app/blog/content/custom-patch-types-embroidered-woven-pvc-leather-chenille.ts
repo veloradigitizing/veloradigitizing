@@ -40,7 +40,7 @@ export const post: BlogPost = {
     },
     {
       "question": "What is the difference between a Merrowed border and a Laser Cut border?",
-      "answer": "A Merrowed border is a thick, rounded overlock edge (approx. 3mm–4mm wide) wrapped completely around the patch perimeter; it is only possible on standard geometric shapes (circles, squares, shields). A Laser Heat-Cut satin border is precision-cut to follow irregular custom die-cut contours."
+      "answer": "A Merrowed border is a thick, rounded overlock edge (approx. 3mm-4mm wide) wrapped completely around the patch perimeter; it is only possible on standard geometric shapes (circles, squares, shields). A Laser Heat-Cut satin border is precision-cut to follow irregular custom die-cut contours."
     }
   ],
   "content": [
@@ -169,8 +169,8 @@ export const post: BlogPost = {
     {
       "type": "ul",
       "items": [
-        "**Merrowed Border (3.5mm – 4.0mm):** Created using a specialized 3-thread overlock Merrow sewing machine that wraps heavy yarn around the edge of a pre-cut twill base. Ideal for classic symmetrical shapes (circles, squares, shields, rectangles).",
-        "**Laser Heat-Cut Satin Border (1.5mm – 2.5mm):** The embroidery machine sews a heavy satin stitch border around the design contour, and an automated laser cutter melts and seals the synthetic patch edge within 0.1mm of the stitches. Ideal for complex custom die-cut shapes and jagged emblems."
+        "**Merrowed Border (3.5mm - 4.0mm):** Created using a specialized 3-thread overlock Merrow sewing machine that wraps heavy yarn around the edge of a pre-cut twill base. Ideal for classic symmetrical shapes (circles, squares, shields, rectangles).",
+        "**Laser Heat-Cut Satin Border (1.5mm - 2.5mm):** The embroidery machine sews a heavy satin stitch border around the design contour, and an automated laser cutter melts and seals the synthetic patch edge within 0.1mm of the stitches. Ideal for complex custom die-cut shapes and jagged emblems."
       ]
     },
     {
@@ -180,7 +180,7 @@ export const post: BlogPost = {
     {
       "type": "ul",
       "items": [
-        "**Iron-On / Heat Seal Backing:** Heat press application at **320°F (160°C) for 12–15 seconds** at 40 PSI medium pressure. Turn garment inside out and press for another 10 seconds. Best for retail t-shirts, hoodies, and backpacks.",
+        "**Iron-On / Heat Seal Backing:** Heat press application at **320°F (160°C) for 12-15 seconds** at 40 PSI medium pressure. Turn garment inside out and press for another 10 seconds. Best for retail t-shirts, hoodies, and backpacks.",
         "**Hook & Loop (Velcro) Backing:** Male hook backing sewn directly to patch perimeter with female loop piece provided. Best for military tactical vests, law enforcement uniforms, and morale gear.",
         "**Peel-and-Stick 3M Adhesive:** Industrial pressure-sensitive sticker backing. Ideal for single-day conventions, temporary branding, and hard-hat placement.",
         "**Plastic / PVC Stiffener (Sew-On):** Heavy 0.3mm clear plastic backing that keeps the patch rigid and flat when sewn onto denim or motorcycle leather vests."

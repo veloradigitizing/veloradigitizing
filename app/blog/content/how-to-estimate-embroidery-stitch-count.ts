@@ -38,7 +38,7 @@ export const post: BlogPost = {
     },
     {
       "question": "Why does 3D puff embroidery have a higher stitch count than flat embroidery?",
-      "answer": "3D puff requires almost double the satin stitch density (0.18mm–0.24mm vs 0.40mm) to completely enclose the EVA foam and prevent it from showing through, increasing total stitch count by 40% to 70%."
+      "answer": "3D puff requires almost double the satin stitch density (0.18mm-0.24mm vs 0.40mm) to completely enclose the EVA foam and prevent it from showing through, increasing total stitch count by 40% to 70%."
     }
   ],
   "content": [
@@ -77,12 +77,12 @@ export const post: BlogPost = {
     {
       "type": "ul",
       "items": [
-        "**Left Chest Logo (Polo / T-Shirt / Uniform):** Dimensions: 3.25\" to 3.8\" wide. Typical Stitch Count: **4,500 – 7,500 stitches** (Heavy crests: 8,000–11,000).",
-        "**Structured Baseball Cap (Front Crown):** Dimensions: 2.25\" tall × 4.5\" wide. Typical Stitch Count: **5,000 – 9,000 stitches** (Flat) or **8,000 – 14,000 stitches** (3D Puff).",
-        "**Cap Side / Back Arch:** Dimensions: 0.75\" tall × 3.0\" wide. Typical Stitch Count: **1,800 – 3,500 stitches**.",
-        "**Knit Beanie / Winter Cuff:** Dimensions: 2.0\" tall × 3.5\" wide. Typical Stitch Count: **3,500 – 6,500 stitches**.",
-        "**Sleeve / Shoulder Emblem:** Dimensions: 2.5\" to 3.25\" wide. Typical Stitch Count: **3,000 – 5,500 stitches**.",
-        "**Full Jacket Back / Hoodie Center Back:** Dimensions: 10.0\" to 12.5\" wide. Typical Stitch Count: **35,000 – 85,000+ stitches**."
+        "**Left Chest Logo (Polo / T-Shirt / Uniform):** Dimensions: 3.25\" to 3.8\" wide. Typical Stitch Count: **4,500 - 7,500 stitches** (Heavy crests: 8,000-11,000).",
+        "**Structured Baseball Cap (Front Crown):** Dimensions: 2.25\" tall × 4.5\" wide. Typical Stitch Count: **5,000 - 9,000 stitches** (Flat) or **8,000 - 14,000 stitches** (3D Puff).",
+        "**Cap Side / Back Arch:** Dimensions: 0.75\" tall × 3.0\" wide. Typical Stitch Count: **1,800 - 3,500 stitches**.",
+        "**Knit Beanie / Winter Cuff:** Dimensions: 2.0\" tall × 3.5\" wide. Typical Stitch Count: **3,500 - 6,500 stitches**.",
+        "**Sleeve / Shoulder Emblem:** Dimensions: 2.5\" to 3.25\" wide. Typical Stitch Count: **3,000 - 5,500 stitches**.",
+        "**Full Jacket Back / Hoodie Center Back:** Dimensions: 10.0\" to 12.5\" wide. Typical Stitch Count: **35,000 - 85,000+ stitches**."
       ]
     },
     {

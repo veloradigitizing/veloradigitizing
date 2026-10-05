@@ -19,7 +19,7 @@ const CAP_FAQS = [
   {
     question: "What is the maximum embroidery size for caps and hats?",
     answer:
-      "For standard structured snapbacks and baseball caps, the maximum front height is typically 2.25 to 2.5 inches (57–63mm), and width is 4.0 to 4.5 inches. Unstructured dad hats generally require designs under 2.0 inches in height.",
+      "For standard structured snapbacks and baseball caps, the maximum front height is typically 2.25 to 2.5 inches (57-63mm), and width is 4.0 to 4.5 inches. Unstructured dad hats generally require designs under 2.0 inches in height.",
   },
   {
     question: "How do you handle the center seam on 6-panel caps?",
@@ -49,31 +49,31 @@ const CAP_APPLICATIONS: {
   icon: IconName;
   tag: string;
 }[] = [
-  {
-    title: "6-Panel Structured Snapbacks",
-    desc: "Engineered center-out sequencing with seam-bridge underlay for stiff buckram front panels.",
-    icon: "cap",
-    tag: "Snapbacks & Fitted",
-  },
-  {
-    title: "Unstructured 'Dad' Hats",
-    desc: "Soft pull compensation and lighter stitch density designed for flexible cotton and washed twill crowns.",
-    icon: "badge",
-    tag: "Dad Hats",
-  },
-  {
-    title: "Knit Beanies & Toques",
-    desc: "Heavy grid underlay that keeps fine text and stitches from sinking into ribbed and chunky knit fabrics.",
-    icon: "shirt-logo",
-    tag: "Winter Headwear",
-  },
-  {
-    title: "Side & Back Cap Arch Placements",
-    desc: "Custom curved text and small side logo digitizing calibrated for cylindrical side clamp embroidery frames.",
-    icon: "layers",
-    tag: "Side & Back Arches",
-  },
-];
+    {
+      title: "6-Panel Structured Snapbacks",
+      desc: "Engineered center-out sequencing with seam-bridge underlay for stiff buckram front panels.",
+      icon: "cap",
+      tag: "Snapbacks & Fitted",
+    },
+    {
+      title: "Unstructured 'Dad' Hats",
+      desc: "Soft pull compensation and lighter stitch density designed for flexible cotton and washed twill crowns.",
+      icon: "badge",
+      tag: "Dad Hats",
+    },
+    {
+      title: "Knit Beanies & Toques",
+      desc: "Heavy grid underlay that keeps fine text and stitches from sinking into ribbed and chunky knit fabrics.",
+      icon: "shirt-logo",
+      tag: "Winter Headwear",
+    },
+    {
+      title: "Side & Back Cap Arch Placements",
+      desc: "Custom curved text and small side logo digitizing calibrated for cylindrical side clamp embroidery frames.",
+      icon: "layers",
+      tag: "Side & Back Arches",
+    },
+  ];
 
 const CAP_STEPS = [
   {

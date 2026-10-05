@@ -13,14 +13,14 @@ import RelatedGuides from "../components/RelatedGuides";
 export const metadata: Metadata = {
   title: "Embroidery Digitizing Services",
   description:
-    "Professional custom embroidery digitizing. Get flawless 3D puff, left chest logos & patches in 8–24h with free revisions. Request your free quote today!",
+    "Professional custom embroidery digitizing. Get flawless 3D puff, left chest logos & patches in 8-24h with free revisions. Request your free quote today!",
   alternates: {
     canonical: "https://www.veloradigitizing.com/services",
   },
   openGraph: {
     title: "Embroidery Digitizing Services | Velora Digitizing",
     description:
-      "Professional custom embroidery digitizing. Flawless 3D puff, left chest logos & patches in 8–24h with free revisions. Request your free quote today!",
+      "Professional custom embroidery digitizing. Flawless 3D puff, left chest logos & patches in 8-24h with free revisions. Request your free quote today!",
     url: "https://www.veloradigitizing.com/services",
     siteName: "Velora Digitizing",
     images: [
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Embroidery Digitizing Services | Velora Digitizing",
     description:
-      "Professional custom embroidery digitizing. Flawless 3D puff, left chest logos & patches in 8–24h with free revisions. Request your free quote today!",
+      "Professional custom embroidery digitizing. Flawless 3D puff, left chest logos & patches in 8-24h with free revisions. Request your free quote today!",
     images: ["/images/og/og-services.jpg"],
   },
 };
@@ -87,13 +87,13 @@ const WHY_ITEMS: {
   icon: "award" | "rocket" | "refresh" | "tag" | "headset" | "shield";
   title: string;
 }[] = [
-  { icon: "award", title: "High Quality Stitching" },
-  { icon: "rocket", title: "Super Fast Delivery" },
-  { icon: "refresh", title: "Unlimited Revisions" },
-  { icon: "tag", title: "Affordable Pricing" },
-  { icon: "headset", title: "24/7 Customer Support" },
-  { icon: "shield", title: "100% Satisfaction Guaranteed" },
-];
+    { icon: "award", title: "High Quality Stitching" },
+    { icon: "rocket", title: "Super Fast Delivery" },
+    { icon: "refresh", title: "Unlimited Revisions" },
+    { icon: "tag", title: "Affordable Pricing" },
+    { icon: "headset", title: "24/7 Customer Support" },
+    { icon: "shield", title: "100% Satisfaction Guaranteed" },
+  ];
 
 export default function ServicesPage() {
   return (

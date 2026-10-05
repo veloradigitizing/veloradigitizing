@@ -256,14 +256,18 @@ export default function Footer() {
                 </span>
               </li>
 
-              {/* Business Hours */}
+              {/* Business & Support Hours */}
               <li className="group flex items-start gap-3">
                 <Clock className="mt-0.5 h-4 w-4 shrink-0 text-brand-400 transition-transform duration-300 group-hover:scale-110" />
-                <span className="leading-relaxed">
-                  Mon - Sat: 9:00 AM - 7:00 PM
-                  <br />
-                  Sunday: Closed
-                </span>
+                <div className="leading-relaxed">
+                  <p className="font-medium text-white/95">24/7 Order Intake &amp; WhatsApp</p>
+                  <p className="text-sm text-white/75 mt-0.5">
+                    Phone Support: Mon - Sat 9:00 AM - 7:00 PM PT
+                  </p>
+                  <p className="text-xs text-white/60 mt-0.5">
+                    Sunday: Closed for calls (WhatsApp active)
+                  </p>
+                </div>
               </li>
 
               {/* Location */}

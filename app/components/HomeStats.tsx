@@ -5,7 +5,7 @@ import { stagger } from "./stagger";
 export const DEFAULT_STATS: { icon: IconName; value: string; label: string }[] = [
   { icon: "award", value: "3,200+", label: "Completed Projects" },
   { icon: "shield", value: "100%", label: "Satisfaction Guaranteed" },
-  { icon: "clock", value: "8–24 Hours", label: "Fast Turnaround" },
+  { icon: "clock", value: "8-24 Hours", label: "Fast Turnaround" },
   { icon: "globe", value: "20+", label: "Countries Served" },
 ];
 

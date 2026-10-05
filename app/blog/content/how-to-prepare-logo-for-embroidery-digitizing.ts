@@ -52,7 +52,7 @@ export const post: BlogPost = {
     },
     {
       "type": "h3",
-      "text": "1. Enforce Minimum Text Heights (4.0mm – 5.0mm Rule)"
+      "text": "1. Enforce Minimum Text Heights (4.0mm - 5.0mm Rule)"
     },
     {
       "type": "p",

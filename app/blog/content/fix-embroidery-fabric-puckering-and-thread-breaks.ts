@@ -81,7 +81,7 @@ export const post: BlogPost = {
     {
       "type": "ol",
       "items": [
-        "**Replace the Needle (8-Hour Rule):** Commercial needles wear down after 8–10 hours of high-speed running. A micro-burr on the needle eye will fray 40wt polyester thread constantly. Install a fresh Groz-Beckert DBxK5 75/11 needle.",
+        "**Replace the Needle (8-Hour Rule):** Commercial needles wear down after 8-10 hours of high-speed running. A micro-burr on the needle eye will fray 40wt polyester thread constantly. Install a fresh Groz-Beckert DBxK5 75/11 needle.",
         "**Calibrate Bobbin Tension (Towa Gauge):** Ensure bobbin tension reads **18g to 22g**. Clean lint out of the bobbin case tension spring with a business card corner.",
         "**Balance Top Thread Tension:** Sew an 'I-stitch' or 'FOX' satin column test. Inspect the back: top thread should occupy 1/3 on each side with white bobbin thread centered in the middle third.",
         "**Check Thread Path:** Ensure thread is not looping around the spool pin, snagged on tension disks, or twisted around the take-up lever.",

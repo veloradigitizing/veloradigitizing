@@ -193,7 +193,7 @@ export default async function ProductPage({ params }: Props) {
             custom embroidery digitizing service
           </Link>{" "}
           turns your own logo or artwork into a production-ready file within
-          8–24 hours, and you can{" "}
+          8-24 hours, and you can{" "}
           <Link
             href="/contact"
             className="font-semibold text-brand-600 underline decoration-brand-600/30 underline-offset-2 hover:text-brand-700"

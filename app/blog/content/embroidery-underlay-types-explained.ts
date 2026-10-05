@@ -35,7 +35,7 @@ export const post: BlogPost = {
     },
     {
       "question": "What underlay is required for large background Tatami fills?",
-      "answer": "A perpendicular Tatami or Double Grid (Net) underlay with light density (1.5mm–2.5mm spacing) laid at a 90-degree angle to the top fill stitches."
+      "answer": "A perpendicular Tatami or Double Grid (Net) underlay with light density (1.5mm-2.5mm spacing) laid at a 90-degree angle to the top fill stitches."
     }
   ],
   "content": [
@@ -65,7 +65,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Walk stitches that travel along both outer edges of a satin column (inset roughly 0.3mm–0.5mm from the border). Edge Run defines sharp, crisp borders, prevents fabric edges from curling, and provides an elevated rail for satin stitches to rest upon."
+      "text": "Walk stitches that travel along both outer edges of a satin column (inset roughly 0.3mm-0.5mm from the border). Edge Run defines sharp, crisp borders, prevents fabric edges from curling, and provides an elevated rail for satin stitches to rest upon."
     },
     {
       "type": "h3",

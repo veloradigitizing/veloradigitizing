@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     template: "%s | Velora Digitizing",
   },
   description:
-    "Professional embroidery digitizing & vector conversion. Flawless 3D puff, left chest logos & fast 8–24h delivery. Get your free quote today!",
+    "Professional embroidery digitizing & vector conversion. Flawless 3D puff, left chest logos & fast 8-24h delivery. Get your free quote today!",
   authors: [{ name: "Velora Digitizing", url: "https://www.veloradigitizing.com" }],
   creator: "Velora Digitizing",
   publisher: "Velora Digitizing",
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     siteName: "Velora Digitizing",
     title: "Velora Digitizing | Custom Embroidery Digitizing & Vector Art Services",
     description:
-      "Convert your artwork into flawless embroidery files with premier stitch quality, 8–24h delivery, unlimited revisions, and 100% satisfaction guaranteed.",
+      "Convert your artwork into flawless embroidery files with premier stitch quality, 8-24h delivery, unlimited revisions, and 100% satisfaction guaranteed.",
     images: [
       {
         url: "/images/og/og-home.jpg",
@@ -96,7 +96,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Velora Digitizing | Custom Embroidery Digitizing & Vector Art Services",
     description:
-      "Convert your artwork into flawless embroidery files with premier stitch quality, 8–24h delivery, unlimited revisions, and 100% satisfaction guaranteed.",
+      "Convert your artwork into flawless embroidery files with premier stitch quality, 8-24h delivery, unlimited revisions, and 100% satisfaction guaranteed.",
     images: ["/images/og/og-home.jpg"],
     site: "@burlinleo",
     creator: "@burlinleo",
@@ -140,7 +140,7 @@ export default function RootLayout({
         },
         "image": "https://www.veloradigitizing.com/images/og/og-home.jpg",
         "description":
-          "Velora Digitizing provides custom embroidery digitizing, 3D puff cap digitizing, left chest logos, custom patch digitizing, and vector art conversion with 8–24h delivery and 100% satisfaction guaranteed.",
+          "Velora Digitizing provides custom embroidery digitizing, 3D puff cap digitizing, left chest logos, custom patch digitizing, and vector art conversion with 8-24h delivery and 100% satisfaction guaranteed.",
         "telephone": "+12136358137",
         "email": "info@veloradigitizing.com",
         "priceRange": "$10 - $50",
@@ -179,10 +179,9 @@ export default function RootLayout({
               "Thursday",
               "Friday",
               "Saturday",
-              "Sunday",
             ],
-            "opens": "00:00",
-            "closes": "23:59",
+            "opens": "09:00",
+            "closes": "19:00",
           },
         ],
         "sameAs": [
@@ -196,14 +195,51 @@ export default function RootLayout({
           "https://x.com/burlinleo",
           "https://www.youtube.com/@VeloraDigitizing",
         ],
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+12136358137",
-          "contactType": "customer service",
-          "email": "info@veloradigitizing.com",
-          "availableLanguage": ["English"],
-          "areaServed": ["United States", "Canada", "United Kingdom", "Worldwide"],
-        },
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+12136358137",
+            "contactType": "customer service",
+            "email": "info@veloradigitizing.com",
+            "availableLanguage": ["English"],
+            "areaServed": ["United States", "Canada", "United Kingdom", "Worldwide"],
+            "hoursAvailable": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+              ],
+              "opens": "09:00",
+              "closes": "19:00",
+            },
+          },
+          {
+            "@type": "ContactPoint",
+            "contactType": "sales",
+            "name": "WhatsApp orders and support",
+            "url": "https://wa.me/12136358137",
+            "availableLanguage": ["English"],
+            "areaServed": ["United States", "Canada", "United Kingdom", "Worldwide"],
+            "hoursAvailable": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday",
+              ],
+              "opens": "00:00",
+              "closes": "23:59",
+            },
+          },
+        ],
       },
       {
         "@type": "WebSite",

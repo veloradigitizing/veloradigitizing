@@ -27,11 +27,11 @@ export const post: BlogPost = {
   "faqs": [
     {
       "question": "How much does it cost to digitize a logo for embroidery?",
-      "answer": "Most professional services charge about $10–$30 for a standard left-chest logo on a flat-rate basis. Larger or more complex work such as jacket backs, caps, 3D puff and detailed artwork commonly runs $30–$60 or more."
+      "answer": "Most professional services charge about $10-$30 for a standard left-chest logo on a flat-rate basis. Larger or more complex work such as jacket backs, caps, 3D puff and detailed artwork commonly runs $30-$60 or more."
     },
     {
       "question": "What is the typical price per 1,000 stitches?",
-      "answer": "Per-stitch pricing generally falls between $1.00 and $3.00 per 1,000 stitches, usually with a minimum charge of roughly $10–$25 per design."
+      "answer": "Per-stitch pricing generally falls between $1.00 and $3.00 per 1,000 stitches, usually with a minimum charge of roughly $10-$25 per design."
     },
     {
       "question": "Is flat-rate or per-stitch digitizing cheaper?",
@@ -69,7 +69,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Most per-stitch providers also apply a **minimum charge**, often around $10–$25, because even a tiny design needs setup, testing and file preparation. A 5,000-stitch logo at $2.00 per 1,000 would be $10 before any minimum is applied."
+      "text": "Most per-stitch providers also apply a **minimum charge**, often around $10-$25, because even a tiny design needs setup, testing and file preparation. A 5,000-stitch logo at $2.00 per 1,000 would be $10 before any minimum is applied."
     },
     {
       "type": "h3",
@@ -77,7 +77,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Many modern services quote one fixed price per design, so you know the cost before you upload anything. Standard small logos typically land around **$10–$30**, while bigger or more technical jobs such as jacket backs, caps and 3D puff commonly reach **$30–$60+**."
+      "text": "Many modern services quote one fixed price per design, so you know the cost before you upload anything. Standard small logos typically land around **$10-$30**, while bigger or more technical jobs such as jacket backs, caps and 3D puff commonly reach **$30-$60+**."
     },
     {
       "type": "tip",
@@ -94,11 +94,11 @@ export const post: BlogPost = {
     {
       "type": "ul",
       "items": [
-        "**Small left-chest logo (up to ~4 inches):** about $10–$30.",
-        "**Cap or hat logo:** often $15–$40, because caps need special underlay and push-pull compensation.",
-        "**3D puff / raised foam designs:** commonly $20–$45 due to the extra foam-specific programming.",
-        "**Large jacket back designs:** frequently $30–$60+ because stitch counts can climb into the tens of thousands.",
-        "**Patch and applique files:** usually $15–$45 depending on borders and number of layers."
+        "**Small left-chest logo (up to ~4 inches):** about $10-$30.",
+        "**Cap or hat logo:** often $15-$40, because caps need special underlay and push-pull compensation.",
+        "**3D puff / raised foam designs:** commonly $20-$45 due to the extra foam-specific programming.",
+        "**Large jacket back designs:** frequently $30-$60+ because stitch counts can climb into the tens of thousands.",
+        "**Patch and applique files:** usually $15-$45 depending on borders and number of layers."
       ]
     },
     {
@@ -114,7 +114,7 @@ export const post: BlogPost = {
         "**Garment type:** caps, fleece, towels and stretch knits need extra compensation and underlay.",
         "**Special techniques:** 3D puff, applique, metallic thread and chenille add programming time.",
         "**Artwork quality:** a clean vector logo is faster to digitize than a blurry screenshot.",
-        "**Turnaround time:** rush orders often cost more than standard 8–24 hour delivery."
+        "**Turnaround time:** rush orders often cost more than standard 8-24 hour delivery."
       ]
     },
     {
@@ -144,9 +144,9 @@ export const post: BlogPost = {
     {
       "type": "ul",
       "items": [
-        "**Small left-chest logo, 6,000 stitches:** at $2.00 per 1,000 stitches that is $12.00. A flat rate for the same design would likely sit around $10–$20.",
-        "**Mid-size design, 12,000 stitches:** at $2.00 per 1,000 stitches that is $24.00. Flat rate for a design this size is often $20–$35.",
-        "**Jacket back, 40,000 stitches:** at $1.50 per 1,000 stitches that is $60.00. Flat-rate jacket backs commonly land around $40–$60+ depending on detail."
+        "**Small left-chest logo, 6,000 stitches:** at $2.00 per 1,000 stitches that is $12.00. A flat rate for the same design would likely sit around $10-$20.",
+        "**Mid-size design, 12,000 stitches:** at $2.00 per 1,000 stitches that is $24.00. Flat rate for a design this size is often $20-$35.",
+        "**Jacket back, 40,000 stitches:** at $1.50 per 1,000 stitches that is $60.00. Flat-rate jacket backs commonly land around $40-$60+ depending on detail."
       ]
     },
     {
@@ -172,7 +172,7 @@ export const post: BlogPost = {
     {
       "type": "ol",
       "items": [
-        "**A price far below the market range** (for example $3–$5 for a normal logo), which usually means auto-digitizing with no human review.",
+        "**A price far below the market range** (for example $3-$5 for a normal logo), which usually means auto-digitizing with no human review.",
         "**No mention of revisions,** so a small fix could become a new paid order.",
         "**No stated turnaround time,** which makes it hard to plan production.",
         "**Only one file format offered,** when your machine may need DST, PES, EXP or JEF.",
@@ -223,7 +223,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Velora Digitizing delivers hand-punched embroidery files with 8–24 hour turnaround for logos, caps, 3D puff, patches and jacket backs. Browse our [digitizing services](/services) or send your artwork through our [contact page](/contact) to request a free quote."
+      "text": "Velora Digitizing delivers hand-punched embroidery files with 8-24 hour turnaround for logos, caps, 3D puff, patches and jacket backs. Browse our [digitizing services](/services) or send your artwork through our [contact page](/contact) to request a free quote."
     }
   ]
 };

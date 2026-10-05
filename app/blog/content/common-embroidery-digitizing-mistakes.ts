@@ -26,7 +26,7 @@ export const post: BlogPost = {
   "faqs": [
     {
       "question": "Why do my design outlines never line up with the color fills?",
-      "answer": "This is caused by failing to account for push-pull compensation. Fills pull fabric along the stitch angle while pushing outward at the ends. Digitizers must extend fill borders by 0.3mm–0.5mm (overlap) where the satin outline meets the fill."
+      "answer": "This is caused by failing to account for push-pull compensation. Fills pull fabric along the stitch angle while pushing outward at the ends. Digitizers must extend fill borders by 0.3mm-0.5mm (overlap) where the satin outline meets the fill."
     },
     {
       "question": "What causes thread to bunch up in a massive knot under the fabric (birdnesting)?",
@@ -68,7 +68,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Layering multiple heavy tatami fills and satins directly on top of each other creates an inflexible, rock-hard patch that breaks needles and feels uncomfortable against the skin. Standard density should remain **0.38mm–0.42mm**, and underlying layers must be hollowed out before placing top objects."
+      "text": "Layering multiple heavy tatami fills and satins directly on top of each other creates an inflexible, rock-hard patch that breaks needles and feels uncomfortable against the skin. Standard density should remain **0.38mm-0.42mm**, and underlying layers must be hollowed out before placing top objects."
     },
     {
       "type": "h2",

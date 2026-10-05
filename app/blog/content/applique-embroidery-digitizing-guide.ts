@@ -64,7 +64,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Once the fabric is placed, the machine sews a tackdown stitch to hold the material firmly in place. Digitizers use either a medium-density **zig-zag stitch** (width 1.8mm–2.2mm) or a double-run box stitch. If the operator is trimming fabric in-hoop with applique scissors, the machine stops again here."
+      "text": "Once the fabric is placed, the machine sews a tackdown stitch to hold the material firmly in place. Digitizers use either a medium-density **zig-zag stitch** (width 1.8mm-2.2mm) or a double-run box stitch. If the operator is trimming fabric in-hoop with applique scissors, the machine stops again here."
     },
     {
       "type": "h3",

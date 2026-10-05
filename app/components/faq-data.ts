@@ -19,7 +19,7 @@ export const HOME_FAQS: FAQItem[] = [
   {
     question: "How long does it take to complete an order?",
     answer:
-      "Standard orders are delivered within 12–24 hours. We also offer rush services including 2-hour, 4-hour, and same-day delivery for urgent projects. Weekend rush delivery is available on request — just select the rush option at checkout or mention it when you send your artwork.",
+      "Standard orders are delivered within 12-24 hours. We also offer rush services including 2-hour, 4-hour, and same-day delivery for urgent projects. Weekend rush delivery is available on request — just select the rush option at checkout or mention it when you send your artwork.",
     category: "Turnaround",
   },
   {
@@ -174,7 +174,7 @@ export const SERVICES_FAQS: FAQItem[] = [
     question:
       "What's the difference between left chest and jacket back digitizing?",
     answer:
-      "Left chest designs are smaller (typically 3–4 inches), simpler, and optimized for polo shirts — they use tighter stitch density and lighter underlay to avoid puckering on thin fabrics. Jacket back designs are much larger (up to 10+ inches), require more detail, much higher stitch count, and careful pull-compensation to prevent distortion across the larger sew area.",
+      "Left chest designs are smaller (typically 3-4 inches), simpler, and optimized for polo shirts — they use tighter stitch density and lighter underlay to avoid puckering on thin fabrics. Jacket back designs are much larger (up to 10+ inches), require more detail, much higher stitch count, and careful pull-compensation to prevent distortion across the larger sew area.",
     category: "Techniques",
   },
   {
@@ -253,7 +253,7 @@ export const CONTACT_FAQS: FAQItem[] = [
   {
     question: "How fast can I get my digitizing file?",
     answer:
-      "Standard orders are delivered within 12–24 hours of artwork approval. Rush orders can be delivered in as fast as 2 hours, with 4-hour and same-day options also available. Weekend rush delivery is offered on request. When you send your artwork, let us know your deadline and we'll confirm the fastest feasible turnaround.",
+      "Standard orders are delivered within 12-24 hours of artwork approval. Rush orders can be delivered in as fast as 2 hours, with 4-hour and same-day options also available. Weekend rush delivery is offered on request. When you send your artwork, let us know your deadline and we'll confirm the fastest feasible turnaround.",
     category: "Turnaround",
   },
   {
@@ -295,7 +295,7 @@ export const CONTACT_FAQS: FAQItem[] = [
   {
     question: "What are your support hours?",
     answer:
-      "Our live chat and email support is available 24/7 — yes, including weekends and holidays. Phone and WhatsApp support is available 8 AM–10 PM Pacific. When you message us, a real person (not a bot) replies, usually within a few minutes.",
+      "Our WhatsApp chat, live email support, and online order intake are available 24/7 - including weekends and holidays. Direct phone support is available Monday through Saturday, 9:00 AM - 7:00 PM PT (Sunday closed for phone calls). When you message us, a real digitizer or support agent replies, usually within a few minutes.",
     category: "Support",
   },
 ];

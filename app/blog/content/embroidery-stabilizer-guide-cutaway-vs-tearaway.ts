@@ -68,7 +68,7 @@ export const post: BlogPost = {
       "items": [
         "**Primary Function:** Provides permanent structural support throughout the lifetime of the garment.",
         "**Best Fabrics:** All stretchy knits, polo shirts, t-shirts, performance moisture-wicking dry-fit, fleece hoodies, sweaters, and softshell jackets.",
-        "**Standard Weights:** 2.0oz (Light), **2.5oz – 3.0oz (Medium/Heavy Commercial Standard)**."
+        "**Standard Weights:** 2.0oz (Light), **2.5oz - 3.0oz (Medium/Heavy Commercial Standard)**."
       ]
     },
     {
@@ -84,7 +84,7 @@ export const post: BlogPost = {
       "items": [
         "**Primary Function:** Provides temporary firmness during the stitching cycle on fabrics that already possess natural dimensional stability.",
         "**Best Fabrics:** Woven dress shirts, structured baseball caps, canvas tote bags, denim jackets, heavy aprons, and leather.",
-        "**Standard Weights:** 1.5oz (Light Tearaway), **2.0oz – 2.5oz (Heavy Cap / Canvas Tearaway)**."
+        "**Standard Weights:** 1.5oz (Light Tearaway), **2.0oz - 2.5oz (Heavy Cap / Canvas Tearaway)**."
       ]
     },
     {

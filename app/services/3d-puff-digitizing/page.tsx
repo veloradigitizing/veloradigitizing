@@ -49,31 +49,31 @@ const PUFF_USE_CASES: {
   icon: IconName;
   tag: string;
 }[] = [
-  {
-    title: "Snapbacks & Fitted Caps",
-    desc: "Bold 3D letters and sports team initials programmed with center-out sequencing for curved cap frames.",
-    icon: "cap",
-    tag: "Headwear",
-  },
-  {
-    title: "Streetwear Hoodies & Fleece",
-    desc: "High-density puff emblems on heavyweight cotton hoodies and sweatshirts with custom underlay adjustments.",
-    icon: "shirt-logo",
-    tag: "Outerwear",
-  },
-  {
-    title: "Trucker Hats & Dad Hats",
-    desc: "Calibrated density for structured foam fronts and soft unstructured panels without fabric puckering.",
-    icon: "badge",
-    tag: "Lifestyle Caps",
-  },
-  {
-    title: "Combination Flat + 3D Puff",
-    desc: "Smart multi-step sequences where background details sew flat first before the machine stops for foam placement.",
-    icon: "layers",
-    tag: "Hybrid Designs",
-  },
-];
+    {
+      title: "Snapbacks & Fitted Caps",
+      desc: "Bold 3D letters and sports team initials programmed with center-out sequencing for curved cap frames.",
+      icon: "cap",
+      tag: "Headwear",
+    },
+    {
+      title: "Streetwear Hoodies & Fleece",
+      desc: "High-density puff emblems on heavyweight cotton hoodies and sweatshirts with custom underlay adjustments.",
+      icon: "shirt-logo",
+      tag: "Outerwear",
+    },
+    {
+      title: "Trucker Hats & Dad Hats",
+      desc: "Calibrated density for structured foam fronts and soft unstructured panels without fabric puckering.",
+      icon: "badge",
+      tag: "Lifestyle Caps",
+    },
+    {
+      title: "Combination Flat + 3D Puff",
+      desc: "Smart multi-step sequences where background details sew flat first before the machine stops for foam placement.",
+      icon: "layers",
+      tag: "Hybrid Designs",
+    },
+  ];
 
 const PUFF_STEPS = [
   {
@@ -94,7 +94,7 @@ const PUFF_STEPS = [
   {
     step: "04",
     title: "High-Density Satin Enclosure",
-    desc: "Tight satin stitching (0.30mm–0.35mm spacing) wraps completely around the foam for a smooth, sculpted finish.",
+    desc: "Tight satin stitching (0.30mm-0.35mm spacing) wraps completely around the foam for a smooth, sculpted finish.",
   },
 ];
 
@@ -172,7 +172,7 @@ export default function PuffDigitizingPage() {
               <ul className="mt-6 space-y-3">
                 {[
                   "Clean end-caps that seal the foam at column endpoints.",
-                  "Appropriate satin density (0.30mm–0.35mm) to cut foam smoothly.",
+                  "Appropriate satin density (0.30mm-0.35mm) to cut foam smoothly.",
                   "Center-out sequencing for curved hat frames without distortion.",
                   "Automated stop commands programmed for effortless foam placement.",
                 ].map((item, i) => (

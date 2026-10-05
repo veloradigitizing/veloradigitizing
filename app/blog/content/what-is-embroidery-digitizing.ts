@@ -153,7 +153,7 @@ export const post: BlogPost = {
         "**1. Artwork Evaluation & Sizing:** Analyzing vector/raster art to verify minimum lettering heights (4mm to 5mm minimum for clean satins) and simplifying intricate print elements.",
         "**2. Planning Sewing Sequence:** Ordering background fills first, middle design elements second, and top text/outlines last to eliminate registration gaps.",
         "**3. Punching Underlay Foundations:** Applying fabric-specific underlay recipes tailored to the customer's intended blank apparel.",
-        "**4. Calibrating Pull Compensation & Density:** Tuning stitch spacing (0.38mm–0.42mm) and angle transitions.",
+        "**4. Calibrating Pull Compensation & Density:** Tuning stitch spacing (0.38mm-0.42mm) and angle transitions.",
         "**5. Physical Machine Test Sew-Out:** Running the file on industrial multi-head machines to verify zero thread breaks and crisp edge definition before client handover."
       ]
     },

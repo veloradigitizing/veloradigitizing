@@ -55,7 +55,7 @@ export const post: BlogPost = {
       "items": [
         "**1. 100% Manual Digitizing by Human Master Punchers:** Ensure the service never uses automated AI trace scripts. Professional digitizers manually assign every stitch path, underlay anchor, and pull compensation factor.",
         "**2. Physical Machine Sew-Out Proofing:** Top-tier services test sew their files on commercial multi-head machines and provide high-resolution photo proofs before delivering the final files.",
-        "**3. Guaranteed 8–24 Hour Turnaround:** Look for consistent 24-hour turnaround with available rush options for tight client deadlines.",
+        "**3. Guaranteed 8-24 Hour Turnaround:** Look for consistent 24-hour turnaround with available rush options for tight client deadlines.",
         "**4. Free and Unlimited Revisions:** Apparel fabrics behave differently. Your digitizing partner should provide hassle-free density and size adjustments without extra fees.",
         "**5. Multi-Format Deliverables & Production Sheets:** Every order should include all major machine formats (DST, PES, EXP, JEF) alongside a detailed PDF color run sheet showing stitch counts, trims, and thread sequences."
       ]
@@ -78,7 +78,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Investing in $15–$25 quality manual digitizing saves hundreds of dollars in scrap garments and operator labor on the very first production run."
+      "text": "Investing in $15-$25 quality manual digitizing saves hundreds of dollars in scrap garments and operator labor on the very first production run."
     },
     {
       "type": "h2",
@@ -86,7 +86,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "At **Velora Digitizing**, our master digitizing team has processed over 30,000 custom designs for apparel decorators across the US, Canada, the UK, and Europe. Every file is manually punched, test-sewn on commercial equipment, and backed by guaranteed 8–24h delivery with free unlimited revisions."
+      "text": "At **Velora Digitizing**, our master digitizing team has processed over 30,000 custom designs for apparel decorators across the US, Canada, the UK, and Europe. Every file is manually punched, test-sewn on commercial equipment, and backed by guaranteed 8-24h delivery with free unlimited revisions."
     },
     {
       "type": "h2",

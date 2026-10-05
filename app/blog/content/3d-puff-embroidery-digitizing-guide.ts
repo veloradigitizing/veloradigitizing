@@ -64,11 +64,11 @@ export const post: BlogPost = {
     },
     {
       "type": "h3",
-      "text": "1. Double the Satin Stitch Density (0.18mm – 0.24mm)"
+      "text": "1. Double the Satin Stitch Density (0.18mm - 0.24mm)"
     },
     {
       "type": "p",
-      "text": "Flat embroidery uses a stitch spacing of 0.38mm–0.42mm. In 3D puff, this spacing allows the colored foam underneath to show through. Digitizers must tighten satin density to **0.18mm – 0.24mm**. This ultra-dense coverage conceals the foam completely and cleanly cuts the foam along the column edges."
+      "text": "Flat embroidery uses a stitch spacing of 0.38mm-0.42mm. In 3D puff, this spacing allows the colored foam underneath to show through. Digitizers must tighten satin density to **0.18mm - 0.24mm**. This ultra-dense coverage conceals the foam completely and cleanly cuts the foam along the column edges."
     },
     {
       "type": "h3",
@@ -84,7 +84,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Before laying the heavy satin cover, a light travel running stitch (length 1.5mm–2.0mm) should trace the perimeter of the 3D element. This pre-cuts the foam boundary, ensuring that when the operator pulls the excess foam away at the end, it tears cleanly without pulling thread loose."
+      "text": "Before laying the heavy satin cover, a light travel running stitch (length 1.5mm-2.0mm) should trace the perimeter of the 3D element. This pre-cuts the foam boundary, ensuring that when the operator pulls the excess foam away at the end, it tears cleanly without pulling thread loose."
     },
     {
       "type": "h3",
@@ -106,8 +106,8 @@ export const post: BlogPost = {
       "type": "ul",
       "items": [
         "**Needle Selection:** Use a 75/11 or 80/12 Sharp Point needle (such as Groz-Beckert DBxK5). Sharp needles cut the foam cleanly, whereas ballpoint needles tear and shred it.",
-        "**Top Tension:** Loosen top thread tension slightly (100g–110g on a tension gauge) to prevent thread from snapping under the elevated foam height.",
-        "**Machine Speed:** Slow machine speed from 850 RPM down to 550–650 RPM during 3D puff layers to prevent needle deflection against the cap crown seam.",
+        "**Top Tension:** Loosen top thread tension slightly (100g-110g on a tension gauge) to prevent thread from snapping under the elevated foam height.",
+        "**Machine Speed:** Slow machine speed from 850 RPM down to 550-650 RPM during 3D puff layers to prevent needle deflection against the cap crown seam.",
         "**Post-Sewing Heat Treatment:** Use a commercial heat gun (set to medium) for 2 to 3 seconds over the finished embroidery to shrink any microscopic foam fuzzies back inside the satin stitches."
       ]
     },
@@ -117,7 +117,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Custom 3D puff headwear commands a $10 to $18 retail premium per cap compared to flat embroidery. Outsourcing your 3D puff digitizing to Velora Digitizing ensures you get production-ready cap files tested on real curved cap frames for only $15–$25."
+      "text": "Custom 3D puff headwear commands a $10 to $18 retail premium per cap compared to flat embroidery. Outsourcing your 3D puff digitizing to Velora Digitizing ensures you get production-ready cap files tested on real curved cap frames for only $15-$25."
     },
     {
       "type": "h2",
@@ -152,7 +152,7 @@ export const post: BlogPost = {
       "items": [
         "**Foam Poking Through Edges:** Density is too loose. Increase satin density to 0.20mm (or 5.0 lines/mm) and verify triangle capping stitches are applied to all open column terminals.",
         "**Top Thread Snapping on Foam:** Top tension is too tight or needle is too small. Switch to an 80/12 Sharp needle and loosen top tension dials until white bobbin thread is 1/3 centered on reverse.",
-        "**Needle Deflecting on Center Seam:** Slow machine running speed down to 550–600 RPM and add extra tie-in underlay stitches across the seam trench.",
+        "**Needle Deflecting on Center Seam:** Slow machine running speed down to 550-600 RPM and add extra tie-in underlay stitches across the seam trench.",
         "**Microscopic Foam Fuzzies After Tearaway:** Lightly blast the finished embroidery with a heat gun on medium setting for 2-3 seconds to shrink residual EVA foam cleanly inside the stitches."
       ]
     }
