@@ -48,6 +48,14 @@ const capJsonLd = {
       "description":
         "Specialized cap and hat logo embroidery digitizing using center-out, bottom-up stitch paths to eliminate seam bunching on curved cap frames.",
       "areaServed": "Worldwide",
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "USD",
+        "lowPrice": "6.99",
+        "highPrice": "19.99",
+        "offerCount": "3",
+        "url": "https://www.veloradigitizing.com/services/cap-logo-digitizing#pricing",
+      },
     },
     {
       "@type": "BreadcrumbList",
@@ -93,7 +101,7 @@ export default function CapDigitizingLayout({
         slugs={[
           "cap-hat-logo-embroidery-digitizing-guide",
           "3d-puff-embroidery-digitizing-guide",
-          "embroidery-stabilizer-guide-cutaway-vs-tearaway",
+          "fix-embroidery-fabric-puckering-and-thread-breaks",
         ]}
       />
     </>

@@ -9,6 +9,7 @@ import TestimonialCTASection from "../components/TestimonialCTASection";
 import { FAQ, SERVICES_FAQS } from "../components/FAQ";
 import PortfolioSection from "../components/PortfolioSection";
 import RelatedGuides from "../components/RelatedGuides";
+import PricingTable from "../components/PricingTable";
 
 export const metadata: Metadata = {
   title: "Embroidery Digitizing Services in 8-24h",
@@ -58,9 +59,12 @@ const servicesJsonLd = {
         "Professional digitization of logos and artwork into commercial embroidery machine files (DST, PES, EXP, JEF) for left chest, caps, jackets, and patches.",
       "areaServed": "Worldwide",
       "offers": {
-        "@type": "Offer",
+        "@type": "AggregateOffer",
         "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock",
+        "lowPrice": "6.99",
+        "highPrice": "19.99",
+        "offerCount": "3",
+        "url": "https://www.veloradigitizing.com/services#pricing",
       },
     },
     {
@@ -130,6 +134,8 @@ export default function ServicesPage() {
         title="We Deliver More Than Just Stitches"
         items={WHY_ITEMS}
       />
+
+      <PricingTable />
 
       <ProcessSteps />
 

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Hero from "../../components/Hero";
+import PricingTable from "../../components/PricingTable";
 import servicesBg from "../../images/velora-embroidery-workstation.webp";
 import WhyChooseUs from "../../components/WhyChooseUs";
 import CTABanner from "../../components/CTABanner";
@@ -360,6 +361,8 @@ export default function PuffDigitizingPage() {
       />
 
       {/* FAQs */}
+      <PricingTable title="3D Puff Digitizing Prices" />
+
       <FAQ
         items={PUFF_FAQS}
         title="Frequently Asked Questions"

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Hero from "../../components/Hero";
+import PricingTable from "../../components/PricingTable";
 import servicesBg from "../../images/velora-embroidery-workstation.webp";
 import WhyChooseUs from "../../components/WhyChooseUs";
 import CTABanner from "../../components/CTABanner";
@@ -362,6 +363,8 @@ export default function AppliqueDigitizingPage() {
       />
 
       {/* 8. Frequently Asked Questions */}
+      <PricingTable title="Applique Digitizing Prices" />
+
       <FAQ
         items={APPLIQUE_FAQS}
         title="Frequently Asked Questions"

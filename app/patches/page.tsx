@@ -1,6 +1,7 @@
 "use client";
 
 import Hero from "../components/Hero";
+import PricingTable from "../components/PricingTable";
 import patchesBg from "../images/velora-embroidery-showcase-2.webp";
 import WhyChooseUs from "../components/WhyChooseUs";
 import CTABanner from "../components/CTABanner";
@@ -59,6 +60,8 @@ export default function PatchesPage() {
         title="We Make The Difference"
         items={WHY_CHOOSE_ITEMS}
       />
+
+      <PricingTable title="Patch Digitizing Prices" />
 
       <FAQ items={PATCH_FAQS} title="Patches - Frequently Asked Questions" subtitle="Everything you need to know before ordering patch digitizing services." />
 

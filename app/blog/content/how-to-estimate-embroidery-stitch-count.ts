@@ -67,6 +67,10 @@ export const post: BlogPost = {
       ]
     },
     {
+      "type": "calculator",
+      "id": "stitch-count"
+    },
+    {
       "type": "h2",
       "text": "Stitch Count Benchmarks by Standard Garment Placement"
     },

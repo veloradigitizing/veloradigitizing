@@ -4,7 +4,8 @@ export type BlogBlock =
   | { type: "h3"; text: string }
   | { type: "ul"; items: string[] }
   | { type: "ol"; items: string[] }
-  | { type: "tip"; text: string };
+  | { type: "tip"; text: string }
+  | { type: "calculator"; id: "stitch-count" };
 
 export type BlogPost = {
   slug: string;

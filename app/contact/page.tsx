@@ -55,7 +55,7 @@ const contactJsonLd = {
         "name": "Velora Digitizing",
         "telephone": "+12136358137",
         "email": "info@veloradigitizing.com",
-        "priceRange": "$10 - $50",
+        "priceRange": "$6.99 - $19.99",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "128 Business Blvd, Suite 204",

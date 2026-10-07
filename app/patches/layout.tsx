@@ -48,6 +48,14 @@ const patchesJsonLd = {
       "description":
         "Custom patch digitizing and production services covering merrowed border, laser cut, woven, chenille, tactical PVC, and heat-seal iron-on patches.",
       "areaServed": "Worldwide",
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "USD",
+        "lowPrice": "6.99",
+        "highPrice": "19.99",
+        "offerCount": "3",
+        "url": "https://www.veloradigitizing.com/patches#pricing",
+      },
     },
     {
       "@type": "BreadcrumbList",

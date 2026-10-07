@@ -16,6 +16,8 @@ import {
   type BlogBlock,
 } from "../posts";
 
+import StitchCountCalculator from "../../components/StitchCountCalculator";
+
 const BASE_URL = "https://www.veloradigitizing.com";
 
 const SERVICE_LINKS = [
@@ -183,6 +185,8 @@ function Block({ block }: { block: BlogBlock }) {
           </p>
         </aside>
       );
+    case "calculator":
+      return <StitchCountCalculator />;
     default:
       return null;
   }
@@ -212,7 +216,11 @@ export default async function BlogPostPage({ params }: Props) {
         keywords: post.tags.join(", "),
         wordCount: post.content.reduce((total, block) => {
           const text =
-            "text" in block ? block.text : block.items.join(" ");
+            "text" in block
+              ? block.text
+              : "items" in block
+                ? block.items.join(" ")
+                : "";
           return total + text.split(/\s+/).length;
         }, 0),
         ...(post.image
