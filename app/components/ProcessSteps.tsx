@@ -7,26 +7,26 @@ const STEPS: { icon: IconName; step: string; title: string; sub: string }[] = [
   {
     icon: "cloud-upload",
     step: "01",
-    title: "Upload Design",
-    sub: "Upload your logo or artwork in any format.",
+    title: "Send Artwork",
+    sub: "Upload your logo or sketch in JPG, PNG, PDF or Vector format.",
   },
   {
     icon: "monitor",
     step: "02",
-    title: "Digitizing",
-    sub: "Our experts digitize your design with precision.",
+    title: "Manual Digitizing",
+    sub: "Expert pathing, stitch density calibration & pull compensation.",
   },
   {
     icon: "badge-check",
     step: "03",
-    title: "Quality Check",
-    sub: "We ensure 100% quality and accuracy.",
+    title: "Quality Sew-Out",
+    sub: "Stitch simulation review to prevent thread breaks & puckering.",
   },
   {
     icon: "send",
     step: "04",
-    title: "Email Delivery",
-    sub: "Final files delivered to your email on time.",
+    title: "File Delivery",
+    sub: "Production-ready DST, PES & EXP files delivered in 8-24 hours.",
   },
 ];
 

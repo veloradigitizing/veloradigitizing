@@ -76,14 +76,14 @@ export default function PatchesSection() {
             </span>
             
             <h2 className="font-serif text-4xl font-bold leading-tight text-navy-950 lg:text-5xl">
-              Premium<br />
+              Machine<br />
               Embroidery<br />
-              Designs <span className="text-brand-600">&</span> More
+              Patches <span className="text-brand-600">&</span> DST Files
             </h2>
             
             <p className="mt-6 max-w-md text-base leading-relaxed text-navy-950/60">
-              Explore our collection of embroidery designs, fonts, and patch packs. 
-              High-quality digitized files, delivered by email and ready to stitch.
+              Ready-to-stitch machine embroidery patch designs & stitch files, delivered by email. 
+              Production-ready DST, PES & EXP files, digitized for hats, jackets, and backpacks.
             </p>
             
             <div className="mt-8">

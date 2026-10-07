@@ -2,18 +2,18 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    default: "Digital Embroidery Designs Store",
+    default: "Embroidery Patch Designs & DST Files Store",
     template: "%s | Velora Digitizing",
   },
   description:
-    "Shop premium ready-to-stitch embroidery designs & patch files in DST, PES, JEF and EXP formats with verified stitch counts. Delivered by email. Order today!",
+    "Shop ready-to-stitch machine embroidery designs & custom patch DST files (DST, PES, JEF, EXP). Delivered by email with verified stitch counts. Order today!",
   alternates: {
     canonical: "https://www.veloradigitizing.com/store",
   },
   openGraph: {
-    title: "Digital Embroidery Designs & Patches Store | Velora Digitizing",
+    title: "Embroidery Patch Designs & DST Files Store | Velora Digitizing",
     description:
-      "Shop premium ready-to-stitch embroidery designs & patch files in DST, PES, JEF and EXP formats with verified stitch counts. Delivered by email. Order today!",
+      "Shop ready-to-stitch machine embroidery designs & custom patch DST files (DST, PES, JEF, EXP). Delivered by email with verified stitch counts. Order today!",
     url: "https://www.veloradigitizing.com/store",
     siteName: "Velora Digitizing",
     images: [
@@ -21,16 +21,16 @@ export const metadata: Metadata = {
         url: "/images/og/og-store.jpg",
         width: 1200,
         height: 630,
-        alt: "Velora Digitizing Store — Digital Embroidery Designs & Patches",
+        alt: "Velora Digitizing Store — Embroidery Patch Designs & DST Files",
         type: "image/jpeg",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Digital Embroidery Designs Store | Velora Digitizing",
+    title: "Embroidery Patch Designs & DST Files Store | Velora Digitizing",
     description:
-      "Ready-to-stitch embroidery designs and patch packs (DST, PES, JEF, EXP), delivered by email.",
+      "Ready-to-stitch machine embroidery designs and patch packs (DST, PES, JEF, EXP), delivered by email.",
     images: ["/images/og/og-store.jpg"],
   },
 };

@@ -18,63 +18,63 @@ const FEATURED_CATEGORIES = [
   {
     id: 2,
     name: "APPLIQUE",
-    subtitle: "Applique Design",
+    subtitle: "Applique Embroidery",
     image: "/images/applique-design/varsity-letter-a-applique-embroidery-digitizing-dst.webp",
     href: "/store?category=applique-design",
   },
   {
     id: 3,
     name: "CAP LOGO",
-    subtitle: "Cap Digitizing",
+    subtitle: "Cap Logo Digitizing",
     image: "/images/cap-logo/custom-headwear-cap-logo-embroidery-digitizing-dst.webp",
     href: "/store?category=cap-logo",
   },
   {
     id: 4,
     name: "CHENILLE",
-    subtitle: "Chenille Patch",
+    subtitle: "Chenille Patches",
     image: "/images/chenille/varsity-letter-chenille-patch-embroidery-digitizing-dst.webp",
     href: "/store?category=chenille",
   },
   {
     id: 5,
     name: "JACKET BACK",
-    subtitle: "Jacket Back Design",
+    subtitle: "Jacket Back Digitizing",
     image: "/images/jacket-back-design/leopard-large-jacket-back-embroidery-digitizing-dst.webp",
     href: "/store?category=jacket-back-design",
   },
   {
     id: 6,
     name: "LEFT CHEST",
-    subtitle: "Left Chest Logo",
+    subtitle: "Left Chest Digitizing",
     image: "/images/left-chest-logo/corporate-polo-shirt-left-chest-embroidery-digitizing-dst.webp",
     href: "/store?category=left-chest-logo",
   },
   {
     id: 7,
     name: "TOWEL",
-    subtitle: "Towel Embroidery",
+    subtitle: "Towel Monogram",
     image: "/images/towel-design/elena-monogram-bath-towel-embroidery-digitizing-dst.webp",
     href: "/store?category=towel-design",
   },
   {
     id: 8,
     name: "Sleeve",
-    subtitle: "Sleeve Design",
+    subtitle: "Sleeve Embroidery",
     image: "/images/shoulder-design/pilipinas-flag-sleeve-shoulder-embroidery-digitizing-dst.webp",
     href: "/store?category=shoulder-design",
   },
   {
     id: 9,
     name: "PATCHES",
-    subtitle: "Custom Patches",
+    subtitle: "Patch DST Files",
     image: "/images/custom-patches/dad-by-day-gamer-patch-embroidery-digitizing-dst.webp",
     href: "/store?category=custom-patches",
   },
   {
     id: 10,
     name: "VECTOR ART",
-    subtitle: "Vector Artwork",
+    subtitle: "Vector Tracing",
     image: "/images/vector-art/goku-anime-character-vector-art-conversion-dst.webp",
     href: "/store?category=vector-art",
   },
@@ -146,8 +146,8 @@ export default function FeaturedCategories() {
           <Reveal direction="left" className="lg:w-72 lg:shrink-0 text-left">
             <SectionTag
               eyebrow="Our Portfolio"
-              title="Featured Work"
-              subtitle="Explore some of our recent digitizing projects. Quality speaks for itself."
+              title="Digitizing Work Samples"
+              subtitle="Explore our 3D puff, cap embroidery, and custom patch digitizing stitch samples."
               center={false}
             />
             <Link

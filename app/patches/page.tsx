@@ -39,8 +39,8 @@ export default function PatchesPage() {
   return (
     <>
       <Hero
-        eyebrow="Custom Patch Digitizing"
-        titleLines={[{ text: "Patches That" }, { text: "Stand Out", accent: true }]}
+        eyebrow="Any Shape, Size or Backing"
+        titleLines={[{ text: "Custom Patch" }, { text: "Digitizing Services", accent: true }]}
         description="From merrow borders to laser-cut, woven, chenille and PVC — we digitize patches in any shape, size, or backing. Wash-tested up to 50 cycles, shipped worldwide."
         bgImage={patchesBg}
         imageLabel="Curated display of Velora embroidered patches, cap, and apparel"

@@ -11,14 +11,14 @@ import PortfolioSection from "../components/PortfolioSection";
 import RelatedGuides from "../components/RelatedGuides";
 
 export const metadata: Metadata = {
-  title: "Embroidery Digitizing Services",
+  title: "Embroidery Digitizing Services in 8-24h",
   description:
     "Professional custom embroidery digitizing. Get flawless 3D puff, left chest logos & patches in 8-24h with free revisions. Request your free quote today!",
   alternates: {
     canonical: "https://www.veloradigitizing.com/services",
   },
   openGraph: {
-    title: "Embroidery Digitizing Services | Velora Digitizing",
+    title: "Embroidery Digitizing Services in 8-24h | Velora Digitizing",
     description:
       "Professional custom embroidery digitizing. Flawless 3D puff, left chest logos & patches in 8-24h with free revisions. Request your free quote today!",
     url: "https://www.veloradigitizing.com/services",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Embroidery Digitizing Services | Velora Digitizing",
+    title: "Embroidery Digitizing Services in 8-24h | Velora Digitizing",
     description:
       "Professional custom embroidery digitizing. Flawless 3D puff, left chest logos & patches in 8-24h with free revisions. Request your free quote today!",
     images: ["/images/og/og-services.jpg"],

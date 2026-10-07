@@ -40,7 +40,7 @@ export default function VectorArtPage() {
     <>
       <Hero
         eyebrow="Raster to Vector Conversion"
-        titleLines={[{ text: "Pixel-Perfect" }, { text: "Vector Conversion", accent: true }]}
+        titleLines={[{ text: "Vector Art" }, { text: "Conversion Services", accent: true }]}
         description="Convert any raster image into clean, scalable vector art. Manual tracing by expert artists with unlimited revisions and 24-hour turnaround."
         bgImage={vectorBg}
         imageLabel="Design workspace with car sketch — vector art conversion in progress"

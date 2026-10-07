@@ -32,8 +32,8 @@ export default function PatchesStoreSection() {
           <Reveal direction="left" className="lg:w-72 lg:shrink-0 text-left">
             <SectionTag
               eyebrow="Patches Store"
-              title="Featured Patches"
-              subtitle="Explore our premium embroidery patch designs. Delivered by email, ready to stitch."
+              title="Machine Embroidery Patches"
+              subtitle="Explore ready-to-stitch embroidery patch designs and production-ready DST stitch files."
               dark
               center={false}
             />

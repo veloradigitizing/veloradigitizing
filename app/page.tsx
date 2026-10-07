@@ -30,12 +30,12 @@ export default function Home() {
   return (
     <>
       <Hero
-        eyebrow="Precision. Quality. Perfection."
+        eyebrow="Precision Stitch Engineering"
         titleLines={[
-          { text: "Premium Embroidery" },
+          { text: "Custom Embroidery" },
           { text: "Digitizing Services", accent: true },
         ]}
-        description="We convert your artwork into flawless embroidery files with highest stitch quality, fast turnaround and 100% satisfaction."
+        description="We convert logos & artwork into production-ready embroidery files (DST, PES, EXP). Specialized in 3D puff, cap logos, left chest & fast 8-24h delivery."
         bgImage={homeBg}
         imageLabel="Velora multi-needle embroidery machine stitching a colorful lion-with-crown design"
         features={[

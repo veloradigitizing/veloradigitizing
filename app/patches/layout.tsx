@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import RelatedGuides from "../components/RelatedGuides";
 
 export const metadata: Metadata = {
-  title: "Custom Embroidered Patch Services",
+  title: "Custom Patch Digitizing Services",
   description:
-    "Custom patch digitizing & manufacturing. Merrow border, chenille, tactical PVC & iron-on embroidered patches with wash durability. Order custom patches now!",
+    "Custom patch digitizing for merrow, chenille, woven, PVC and iron-on patches, with manufacturing on request. DST, PES and EXP files in 8 to 24 hours.",
   alternates: {
     canonical: "https://www.veloradigitizing.com/patches",
   },
   openGraph: {
-    title: "Custom Embroidered Patches | Velora Digitizing",
+    title: "Custom Patch Digitizing Services | Velora Digitizing",
     description:
-      "Custom patch digitizing & manufacturing. Merrow border, chenille, tactical PVC & iron-on embroidered patches with wash durability. Order custom patches now!",
+      "Custom patch digitizing for merrow, chenille, woven, PVC and iron-on patches, with manufacturing on request. DST, PES and EXP files in 8 to 24 hours.",
     url: "https://www.veloradigitizing.com/patches",
     siteName: "Velora Digitizing",
     images: [
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Custom Embroidered Patches | Velora Digitizing",
+    title: "Custom Patch Digitizing Services | Velora Digitizing",
     description:
-      "Custom patch digitizing and manufacturing in any shape, size, or backing. Merrow, Chenille, Woven, PVC, Iron-on.",
+      "Custom patch digitizing in any shape, size or backing: merrow, chenille, woven, PVC and iron-on patch files, with manufacturing on request.",
     images: ["/images/og/og-patches.jpg"],
   },
 };
@@ -44,7 +44,7 @@ const patchesJsonLd = {
         "name": "Velora Digitizing",
         "url": "https://www.veloradigitizing.com",
       },
-      "serviceType": "Custom Embroidered Patches",
+      "serviceType": "Custom Patch Digitizing",
       "description":
         "Custom patch digitizing and production services covering merrowed border, laser cut, woven, chenille, tactical PVC, and heat-seal iron-on patches.",
       "areaServed": "Worldwide",
