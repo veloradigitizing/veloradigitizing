@@ -37,6 +37,8 @@ export interface FAQProps {
   /** Optional max-width class for the section. Defaults to max-w-4xl. */
   maxWidthClass?: string;
   className?: string;
+  /** Optional DOM id so the section can be deep-linked (e.g. /store#faq). */
+  id?: string;
 }
 
 export function FAQ({
@@ -50,6 +52,7 @@ export function FAQ({
   eyebrow = "FAQ",
   maxWidthClass = "max-w-4xl",
   className = "",
+  id,
 }: FAQProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   const [query, setQuery] = useState("");
@@ -105,6 +108,7 @@ export function FAQ({
 
   return (
     <section
+      id={id}
       className={`relative bg-gradient-to-b from-brand-50/40 via-white to-white py-16 lg:py-24 ${className}`}
     >
       {/* Soft decorative glow */}

@@ -16,6 +16,9 @@ export type StoreItem = {
   formats: string[];
   description: string;
   kind: "product" | "patch" | "bundle";
+  /** Average customer rating (1 to 5) shown on the product page. */
+  rating?: number;
+  reviewCount?: number;
 };
 
 const PATCH_CATEGORY_LABELS: Record<string, string> = Object.fromEntries(
@@ -62,6 +65,8 @@ export const STORE_ITEMS: StoreItem[] = [
     formats: b.formats,
     description: b.description,
     kind: "bundle",
+    rating: b.rating,
+    reviewCount: b.reviewCount,
   })),
 ];
 

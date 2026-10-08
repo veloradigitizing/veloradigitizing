@@ -76,6 +76,33 @@ export default function ProductDetail({ product, related }: Props) {
           <h1 className="mt-2 font-serif text-3xl font-bold text-navy-950">
             {product.title}
           </h1>
+          {product.rating && product.reviewCount ? (
+            <a
+              href="#reviews"
+              className="mt-3 inline-flex items-center gap-2 text-sm text-navy-950/70 hover:text-brand-600"
+            >
+              <span
+                className="flex gap-0.5 text-gold-400"
+                role="img"
+                aria-label={`${product.rating.toFixed(1)} out of 5 stars`}
+              >
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <Icon
+                    key={i}
+                    name="star"
+                    className={`h-4 w-4 ${
+                      i < Math.round(product.rating ?? 0) ? "" : "opacity-25"
+                    }`}
+                    filled
+                  />
+                ))}
+              </span>
+              <span className="font-semibold text-navy-950">
+                {product.rating.toFixed(1)}
+              </span>
+              <span>({product.reviewCount} reviews)</span>
+            </a>
+          ) : null}
           <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-navy-950/40">
             {product.formats.join(" · ")}
           </p>

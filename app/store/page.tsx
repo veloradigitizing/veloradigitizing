@@ -167,6 +167,7 @@ export default function StorePage() {
 
       {/* FAQ Section */}
       <FAQ
+        id="faq"
         items={STORE_FAQS}
         title="Store - Frequently Asked Questions"
         subtitle="Questions about ordering, file delivery, licensing, and support for our patch designs."

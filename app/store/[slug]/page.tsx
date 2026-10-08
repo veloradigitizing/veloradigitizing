@@ -8,6 +8,14 @@ import {
   type StoreItem,
 } from "../catalog";
 import ProductDetail from "./ProductDetail";
+import {
+  OFFER_VALID_FROM,
+  OFFER_VALID_UNTIL,
+  RETURN_POLICY,
+  SHIPPING_DETAILS,
+} from "../merchant-policies";
+import { getAggregateRating, getStoreReviews } from "../reviews";
+import StoreReviews from "./StoreReviews";
 
 const BASE_URL = "https://www.veloradigitizing.com";
 
@@ -121,6 +129,8 @@ export default async function ProductPage({ params }: Props) {
   const related = getRelatedStoreItems(item);
   const url = `${BASE_URL}/store/${item.slug}`;
   const noun = HEADING_NOUN[item.kind];
+  const reviews = getStoreReviews(item.slug);
+  const aggregateRating = getAggregateRating(item);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -138,12 +148,37 @@ export default async function ProductPage({ params }: Props) {
           "@type": "Brand",
           name: "Velora Digitizing",
         },
+        ...(aggregateRating && {
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: aggregateRating.ratingValue,
+            reviewCount: aggregateRating.reviewCount,
+            bestRating: 5,
+            worstRating: 1,
+          },
+        }),
+        ...(reviews.length > 0 && {
+          review: reviews.map((r) => ({
+            "@type": "Review",
+            author: { "@type": "Person", name: r.author },
+            datePublished: r.date,
+            ...(r.title && { name: r.title }),
+            reviewBody: r.body,
+            reviewRating: {
+              "@type": "Rating",
+              ratingValue: r.rating,
+              bestRating: 5,
+              worstRating: 1,
+            },
+          })),
+        }),
         offers: {
           "@type": "Offer",
           url,
           price: item.price.toFixed(2),
           priceCurrency: "USD",
-          priceValidUntil: "2027-12-31",
+          validFrom: OFFER_VALID_FROM,
+          priceValidUntil: OFFER_VALID_UNTIL,
           availability: "https://schema.org/InStock",
           itemCondition: "https://schema.org/NewCondition",
           seller: {
@@ -151,6 +186,8 @@ export default async function ProductPage({ params }: Props) {
             name: "Velora Digitizing",
             url: BASE_URL,
           },
+          shippingDetails: SHIPPING_DETAILS,
+          hasMerchantReturnPolicy: RETURN_POLICY,
         },
       },
       {
@@ -173,9 +210,10 @@ export default async function ProductPage({ params }: Props) {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
       />
       <ProductDetail product={item} related={related} />
+      <StoreReviews item={item} reviews={reviews} aggregate={aggregateRating} />
 
       <section className="mx-auto max-w-4xl px-5 pb-20 pt-4 lg:px-8">
         <h2 className="font-serif text-2xl font-bold text-navy-950 sm:text-3xl">
