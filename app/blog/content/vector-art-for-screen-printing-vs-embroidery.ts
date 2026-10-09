@@ -44,7 +44,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "While both processes begin with vector artwork (AI, EPS, or SVG), the preparation rules for screen printing vs. embroidery digitizing are fundamentally different. Here is how graphic designers and decorators must adjust their vector files for each method."
+      "text": "While both processes begin with vector artwork (AI, EPS, or SVG), the preparation rules for screen printing vs. embroidery digitizing are fundamentally different. Screen print vector paths are burned directly onto emulsion screens, whereas embroidery requires converting geometric contours into physical stitch coordinates. In our comparison of [manual digitizing vs AI auto-digitizing](/blog/manual-digitizing-vs-ai-auto-digitizing), we explain why automated auto-trace tools fail on complex contours and why hand-plotted pathing is critical."
     },
     {
       "type": "h2",
@@ -74,11 +74,19 @@ export const post: BlogPost = {
     },
     {
       "type": "h2",
+      "text": "Placement Constraints: Hats, Puffs, and Patches"
+    },
+    {
+      "type": "p",
+      "text": "Screen printing is typically done on flat garment panels. With embroidery, the garment silhouette directly determines vector design rules. When preparing files for curved headwear, vector paths must be adjusted for center-out sequencing in [cap logo digitizing](/services/cap-logo-digitizing). If you need raised, tactile typography on hats or hoodies, vectors must maintain 3mm to 12mm column widths for [3D puff digitizing](/services/3d-puff-digitizing). For oversized jacket designs, vector files can combine fabric cutouts using [applique digitizing](/services/applique-digitizing) or be formatted into physical [custom patches](/patches)."
+    },
+    {
+      "type": "h2",
       "text": "Get Expert Vector Redrawing and Digitizing"
     },
     {
       "type": "p",
-      "text": "Need your artwork cleaned up, vectorized, and digitized under one roof? Velora Digitizing provides complete vector conversion and embroidery digitizing services. Explore our [vector art solutions](/vector-art) today."
+      "text": "Need your artwork cleaned up, vectorized, and digitized under one roof? Velora Digitizing provides complete vector conversion and embroidery digitizing services. Explore our [vector art solutions](/vector-art) today, review our [transparent digitizing pricing](/services#pricing), or compare digitizers in our [best online embroidery digitizing services comparison guide](/blog/best-online-embroidery-digitizing-services-comparison-guide)."
     },
     {
       "type": "h2",

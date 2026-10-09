@@ -12,7 +12,7 @@ import CTABanner from "./components/CTABanner";
 import { FAQ } from "./components/FAQ";
 import { HOME_FAQS } from "./components/faq-data";
 import HomeStats from "./components/HomeStats";
-import RelatedGuides, { latestGuideSlugs } from "./components/RelatedGuides";
+import RelatedGuides from "./components/RelatedGuides";
 
 // const WHY_CHOOSE_ITEMS: {
 //   icon: Parameters<typeof WhyChooseUs>[0]["items"][number]["icon"];
@@ -83,9 +83,16 @@ export default function Home() {
       <PatchesStoreSection />
 
       <RelatedGuides
-        title="Latest Embroidery Digitizing Guides"
-        subtitle="Practical advice from our digitizers on file formats, stitch quality and artwork prep."
-        slugs={latestGuideSlugs(3)}
+        title="Featured Embroidery Digitizing Guides"
+        subtitle="Expert insights on manual vs AI digitizing, vector preparation, file formats, and stitch engineering."
+        slugs={[
+          "vector-art-for-screen-printing-vs-embroidery",
+          "manual-digitizing-vs-ai-auto-digitizing",
+          "best-online-embroidery-digitizing-services-comparison-guide",
+          "what-is-embroidery-digitizing",
+          "embroidery-digitizing-cost-pricing-guide",
+          "3d-puff-embroidery-digitizing-guide",
+        ]}
       />
 
       <FAQ
