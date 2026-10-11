@@ -6,7 +6,6 @@ import Link from "next/link";
 
 const PORTFOLIO_CATEGORIES = [
   { id: "all", name: "All Work" },
-  { id: "patches", name: "Patches" },
   { id: "custom-patches", name: "Custom Patches" },
   { id: "cap-logo", name: "Cap Logo" },
   { id: "chenille", name: "Chenille" },
@@ -16,33 +15,24 @@ const PORTFOLIO_CATEGORIES = [
   { id: "towel-design", name: "Towel" },
   { id: "applique-design", name: "Applique" },
   { id: "vector-art", name: "Vector Art" },
-  { id: "sleeve", name: "Sleeve" },
   { id: "bundles", name: "Bundles" },
 ];
 
 const PORTFOLIO_ITEMS = [
   {
-    id: "patches",
-    category: "patches",
-    title: "Embroidered Patches",
-    image: "/images/patches/hike-more-worry-less-patch-embroidery-digitizing-dst.webp",
-    count: 10,
-    slug: "/portfolio?category=patches",
-  },
-  {
     id: "custom-patches",
     category: "custom-patches",
     title: "Custom Patches",
     image: "/images/custom-patches/dad-by-day-gamer-patch-embroidery-digitizing-dst.webp",
-    count: 11,
+    count: 21,
     slug: "/portfolio?category=custom-patches",
   },
   {
     id: "cap-logo",
     category: "cap-logo",
     title: "Cap / Hat Logos",
-    image: "/images/cap-logo/diesel-masters-skull-cap-embroidery-digitizing-dst.webp",
-    count: 5,
+    image: "/images/cap-logo/custom-headwear-cap-logo-embroidery-digitizing-dst.webp",
+    count: 15,
     slug: "/portfolio?category=cap-logo",
   },
   {
@@ -57,16 +47,16 @@ const PORTFOLIO_ITEMS = [
     id: "jacket-back",
     category: "jacket-back",
     title: "Jacket Back Design",
-    image: "/images/jacket-back-design/leopard-large-jacket-back-embroidery-digitizing-dst.webp",
-    count: 2,
+    image: "/images/jacket-back-design/large-format-jacket-back-embroidery-digitizing.webp",
+    count: 19,
     slug: "/portfolio?category=jacket-back",
   },
   {
     id: "left-chest-logo",
     category: "left-chest-logo",
     title: "Left Chest Logos",
-    image: "/images/left-chest-logo/christ-tiger-sports-left-chest-embroidery-digitizing-dst.webp",
-    count: 3,
+    image: "/images/left-chest-logo/corporate-left-chest-logo-embroidery-digitizing.webp",
+    count: 23,
     slug: "/portfolio?category=left-chest-logo",
   },
   {
@@ -100,15 +90,6 @@ const PORTFOLIO_ITEMS = [
     image: "/images/vector-art/goku-anime-character-vector-art-conversion-dst.webp",
     count: 8,
     slug: "/portfolio?category=vector-art",
-  },
-  {
-    id: "sleeve",
-    category: "sleeve",
-    title: "Sleeve Design",
-    image: "/images/shoulder-design/pilipinas-flag-sleeve-shoulder-embroidery-digitizing-dst.webp",
-    count: 2,
-    slug: "/portfolio?category=sleeve",
-  },
   {
     id: "bundles",
     category: "bundles",

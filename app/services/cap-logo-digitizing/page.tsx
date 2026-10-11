@@ -299,20 +299,20 @@ export default function CapDigitizingPage() {
             subtitle="Samples of real digitized cap logos and headwear stitch-outs."
           />
 
-          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3 max-w-5xl mx-auto">
+          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 max-w-3xl mx-auto">
             <div className="group overflow-hidden rounded-2xl border border-navy-950/10 bg-white shadow-sm transition-all hover:shadow-md">
               <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
                 <Image
-                  src="/images/cap-logo/diesel-masters-skull-cap-embroidery-digitizing-dst.webp"
-                  alt="Custom 3D skull cap embroidery digitizing DST sample"
+                  src="/images/cap-logo/sports-team-cap-logo-embroidery-digitizing-dst.webp"
+                  alt="Sports team cap embroidery digitizing DST sample"
                   fill
-                  sizes="(max-width: 768px) 100vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
               <div className="p-5">
                 <h3 className="text-base font-bold text-navy-950">
-                  Snapback Front Emblem
+                  Sports Team Emblem
                 </h3>
                 <p className="mt-1 text-xs text-navy-950/60">
                   Center-out sequence with clean outline borders.
@@ -326,7 +326,7 @@ export default function CapDigitizingPage() {
                   src="/images/cap-logo/custom-headwear-cap-logo-embroidery-digitizing-dst.webp"
                   alt="Cap logo embroidery digitizing DST file with fine script lettering"
                   fill
-                  sizes="(max-width: 768px) 100vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
@@ -336,26 +336,6 @@ export default function CapDigitizingPage() {
                 </h3>
                 <p className="mt-1 text-xs text-navy-950/60">
                   Stabilized satin lettering on curved cap panel.
-                </p>
-              </div>
-            </div>
-
-            <div className="group overflow-hidden rounded-2xl border border-navy-950/10 bg-white shadow-sm transition-all hover:shadow-md">
-              <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
-                <Image
-                  src="/images/cap-logo/baseball-snapback-cap-logo-embroidery-digitizing-dst.webp"
-                  alt="Custom baseball hat embroidered graphic digitizing DST file"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="p-5">
-                <h3 className="text-base font-bold text-navy-950">
-                  Baseball Team Emblem
-                </h3>
-                <p className="mt-1 text-xs text-navy-950/60">
-                  Multi-color registration across the center seam.
                 </p>
               </div>
             </div>

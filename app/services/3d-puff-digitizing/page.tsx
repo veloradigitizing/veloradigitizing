@@ -299,7 +299,7 @@ export default function PuffDigitizingPage() {
             subtitle="Samples of real digitized 3D puff stitch-outs on structured caps."
           />
 
-          <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-2 max-w-3xl mx-auto">
+          <div className="mt-12 grid grid-cols-1 max-w-lg mx-auto">
             <div className="group overflow-hidden rounded-2xl border border-navy-950/10 bg-white shadow-sm transition-all hover:shadow-md">
               <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
                 <Image
@@ -316,26 +316,6 @@ export default function PuffDigitizingPage() {
                 </h3>
                 <p className="mt-1 text-xs text-navy-950/60">
                   Dense satin coverage over 2mm foam with clean end-caps.
-                </p>
-              </div>
-            </div>
-
-            <div className="group overflow-hidden rounded-2xl border border-navy-950/10 bg-white shadow-sm transition-all hover:shadow-md">
-              <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
-                <Image
-                  src="/images/cap-logo/diesel-masters-skull-cap-embroidery-digitizing-dst.webp"
-                  alt="Embroidered cap front logo with 3D puff detailing digitizing DST file"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-lg font-bold text-navy-950">
-                  Structured Cap Front Embroidery
-                </h3>
-                <p className="mt-1 text-xs text-navy-950/60">
-                  Center-out sequence with tight registration on curved cap panel.
                 </p>
               </div>
             </div>

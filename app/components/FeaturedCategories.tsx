@@ -40,14 +40,15 @@ const FEATURED_CATEGORIES = [
     id: 5,
     name: "JACKET BACK",
     subtitle: "Jacket Back Digitizing",
-    image: "/images/jacket-back-design/leopard-large-jacket-back-embroidery-digitizing-dst.webp",
+    image: "/images/jacket-back-design/large-format-jacket-back-embroidery-digitizing.webp",
     href: "/store?category=jacket-back-design",
   },
+
   {
     id: 6,
     name: "LEFT CHEST",
     subtitle: "Left Chest Digitizing",
-    image: "/images/left-chest-logo/corporate-polo-shirt-left-chest-embroidery-digitizing-dst.webp",
+    image: "/images/left-chest-logo/corporate-left-chest-logo-embroidery-digitizing.webp",
     href: "/store?category=left-chest-logo",
   },
   {
@@ -57,13 +58,7 @@ const FEATURED_CATEGORIES = [
     image: "/images/towel-design/elena-monogram-bath-towel-embroidery-digitizing-dst.webp",
     href: "/store?category=towel-design",
   },
-  {
-    id: 8,
-    name: "Sleeve",
-    subtitle: "Sleeve Embroidery",
-    image: "/images/shoulder-design/pilipinas-flag-sleeve-shoulder-embroidery-digitizing-dst.webp",
-    href: "/store?category=shoulder-design",
-  },
+
   {
     id: 9,
     name: "PATCHES",

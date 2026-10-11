@@ -19,7 +19,7 @@ export type Service = {
 
 // Map service slugs to portfolio categories - MUST MATCH PORTFOLIO_CATEGORIES values!
 const SERVICE_TO_CATEGORY: Record<string, string> = {
-  "patch-digitizing": "patches",
+  "patch-digitizing": "custom-patches",
   "custom-patches": "custom-patches",
   "cap-logo-digitizing": "cap-logo",
   "chenille-digitizing": "chenille",
@@ -29,7 +29,6 @@ const SERVICE_TO_CATEGORY: Record<string, string> = {
   "towel-embroidery": "towel",
   "applique-digitizing": "applique",
   "vector-art": "vector-art",
-  "sleeve-embroidery": "sleeve",
   "bundle-packages": "bundles",
 };
 

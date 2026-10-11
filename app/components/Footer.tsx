@@ -79,7 +79,6 @@ const SERVICE_LINKS = [
   { label: "Left Chest Logo", href: "/portfolio?category=left-chest" },
   { label: "Chenille Patches", href: "/portfolio?category=chenille" },
   { label: "Towel Design", href: "/portfolio?category=towel" },
-  { label: "Sleeve Design", href: "/portfolio?category=sleeve" },
   { label: "Bundle Packages", href: "/portfolio?category=bundles" },
 ];
 

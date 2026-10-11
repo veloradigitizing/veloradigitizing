@@ -21,15 +21,7 @@ export const SERVICES: Service[] = [
     description: "Custom embroidery patch digitizing with merrowed borders for hats, jackets and bags.",
     count: 21,
   },
-  {
-    slug: "custom-patches",
-    icon: "star",
-    iconImage: "/images/icons/services/custompatch.png",
-    title: "Ready-to-Stitch Patch Files",
-    description:
-      "Ready-to-stitch patch files and custom designs for gaming, outdoor & lifestyle brands.",
-    count: 11,
-  },
+
   {
     slug: "cap-logo-digitizing",
     icon: "cap",
@@ -54,7 +46,7 @@ export const SERVICES: Service[] = [
     title: "Jacket Back Digitizing",
     description:
       "Large-format full back embroidery digitizing for denim, bomber & leather jackets.",
-    count: 2,
+    count: 19,
   },
   {
     slug: "left-chest-logo",
@@ -62,7 +54,7 @@ export const SERVICES: Service[] = [
     iconImage: "/images/icons/services/left-chest-logo1.png",
     title: "Left Chest Logo Digitizing",
     description: "Crisp lettering and corporate logo digitizing for polo shirts & uniforms.",
-    count: 3,
+    count: 23,
   },
   {
     slug: "3d-puff-digitizing",
@@ -97,14 +89,6 @@ export const SERVICES: Service[] = [
     description:
       "Manual raster to vector tracing (AI, EPS, SVG, PDF) for screen printing & DTF.",
     count: 5,
-  },
-  {
-    slug: "sleeve-embroidery",
-    icon: "sleeve-patch",
-    iconImage: "/images/icons/services/sleeve-embroidery1.png",
-    title: "Sleeve Design",
-    description: "Flag designs and sleeve embroidery for uniforms and apparel.",
-    count: 2,
   },
   {
     slug: "bundle-packages",

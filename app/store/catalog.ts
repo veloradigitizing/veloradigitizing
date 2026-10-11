@@ -1,6 +1,10 @@
 import { PRODUCTS, CATEGORY_LABELS } from "./products";
 import { PATCHES, PATCH_CATEGORIES } from "./patches";
 import { BUNDLES } from "./bundles";
+import { LEFT_CHEST_PRODUCTS } from "./left-chest";
+import { APPLIQUE_PRODUCTS } from "./applique";
+import { JACKET_BACK_PRODUCTS } from "./jacket-back";
+import { CAP_LOGO_PRODUCTS } from "./cap-logo";
 
 /**
  * A single, normalized shape for everything sold under /store/[slug]:
@@ -39,6 +43,46 @@ export const STORE_ITEMS: StoreItem[] = [
     title: p.title,
     price: p.price,
     categoryLabel: CATEGORY_LABELS[p.category] ?? p.category,
+    image: p.image,
+    formats: p.formats,
+    description: p.description,
+    kind: "product",
+  })),
+  ...LEFT_CHEST_PRODUCTS.map<StoreItem>((p) => ({
+    slug: p.slug,
+    title: p.title,
+    price: p.price,
+    categoryLabel: "Left Chest Logo",
+    image: p.image,
+    formats: p.formats,
+    description: p.description,
+    kind: "product",
+  })),
+  ...APPLIQUE_PRODUCTS.map<StoreItem>((p) => ({
+    slug: p.slug,
+    title: p.title,
+    price: p.price,
+    categoryLabel: "Applique Digitizing",
+    image: p.image,
+    formats: p.formats,
+    description: p.description,
+    kind: "product",
+  })),
+  ...JACKET_BACK_PRODUCTS.map<StoreItem>((p) => ({
+    slug: p.slug,
+    title: p.title,
+    price: p.price,
+    categoryLabel: "Jacket Back Logo",
+    image: p.image,
+    formats: p.formats,
+    description: p.description,
+    kind: "product",
+  })),
+  ...CAP_LOGO_PRODUCTS.map<StoreItem>((p) => ({
+    slug: p.slug,
+    title: p.title,
+    price: p.price,
+    categoryLabel: "Cap Logo",
     image: p.image,
     formats: p.formats,
     description: p.description,

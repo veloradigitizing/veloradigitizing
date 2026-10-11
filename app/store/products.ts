@@ -21,7 +21,7 @@ const RAW_PRODUCTS: Array<Omit<Product, "slug" | "formats">> = [
   },
   {
     title: "LA Cap Logo Embroidery Digitizing File",
-    price: 6.99,
+    price: 7.00,
     category: "digitizing-files",
     image: "/images/store/prod-02.webp",
     description:
@@ -61,7 +61,7 @@ const RAW_PRODUCTS: Array<Omit<Product, "slug" | "formats">> = [
   },
   {
     title: "Applique Letter Embroidery Digitizing File",
-    price: 7.99,
+    price: 6.00,
     category: "digitizing-files",
     image: "/images/store/prod-07.webp",
     description:

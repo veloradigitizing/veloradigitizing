@@ -12,61 +12,61 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     title: "Hike More Worry Less",
     tag: "Adventure Patch",
-    category: "patches",
+    category: "custom-patches",
     image: "/images/patches/hike-more-worry-less-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "Wild Adventure Patch",
     tag: "Nature Patch",
-    category: "patches",
+    category: "custom-patches",
     image: "/images/patches/wild-adventure-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "Stay Wild Patch",
     tag: "Motivational",
-    category: "patches",
+    category: "custom-patches",
     image: "/images/patches/stay-wild-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "Explore The Path",
     tag: "Adventure Patch",
-    category: "patches",
+    category: "custom-patches",
     image: "/images/patches/explore-the-path-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "Find Your Path",
     tag: "Inspirational",
-    category: "patches",
+    category: "custom-patches",
     image: "/images/patches/find-your-path-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "Happy Place Patch",
     tag: "Lifestyle",
-    category: "patches",
+    category: "custom-patches",
     image: "/images/patches/happy-place-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "Keep It Simple",
     tag: "Minimalist",
-    category: "patches",
+    category: "custom-patches",
     image: "/images/patches/keep-it-simple-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "Life Is Better",
     tag: "Quote Patch",
-    category: "patches",
+    category: "custom-patches",
     image: "/images/patches/life-is-better-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "Chase The Sun",
     tag: "Motivational",
-    category: "patches",
+    category: "custom-patches",
     image: "/images/patches/chase-the-sun-patch-embroidery-digitizing-dst.webp",
   },
   {
     title: "Adventure Awaits",
     tag: "Outdoor",
-    category: "patches",
+    category: "custom-patches",
     image: "/images/patches/adventure-awaits-patch-embroidery-digitizing-dst.webp",
   },
 
@@ -140,12 +140,6 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
 
   // === CAP LOGO (from /images/cap-logo/) ===
   {
-    title: "Diesel Masters Cap",
-    tag: "Skull Design",
-    category: "cap-logo",
-    image: "/images/cap-logo/diesel-masters-skull-cap-embroidery-digitizing-dst.webp",
-  },
-  {
     title: "Cap Logo Design 02",
     tag: "Custom Logo",
     category: "cap-logo",
@@ -158,16 +152,82 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     image: "/images/cap-logo/sports-team-cap-logo-embroidery-digitizing-dst.webp",
   },
   {
-    title: "Cap Logo Design 04",
-    tag: "Digitizing",
+    title: "Custom 3D Puff Cap",
+    tag: "3D Puff Digitizing",
     category: "cap-logo",
-    image: "/images/cap-logo/vintage-trucker-cap-logo-embroidery-digitizing-dst.webp",
+    image: "/images/cap-logo/custom-3d-puff-cap-embroidery-digitizing.webp",
   },
   {
-    title: "Cap Logo Design 05",
-    tag: "Custom Work",
+    title: "Snapback Hat Logo",
+    tag: "Hat Embroidery",
     category: "cap-logo",
-    image: "/images/cap-logo/baseball-snapback-cap-logo-embroidery-digitizing-dst.webp",
+    image: "/images/cap-logo/snapback-hat-logo-digitizing-dst-pes.webp",
+  },
+  {
+    title: "Baseball Cap Front",
+    tag: "Cap Digitizing",
+    category: "cap-logo",
+    image: "/images/cap-logo/baseball-cap-front-embroidery-digitizing.webp",
+  },
+  {
+    title: "Trucker Hat Logo",
+    tag: "Custom Headwear",
+    category: "cap-logo",
+    image: "/images/cap-logo/trucker-hat-custom-logo-digitizing.webp",
+  },
+  {
+    title: "Beanie Hat Logo",
+    tag: "Beanie Digitizing",
+    category: "cap-logo",
+    image: "/images/cap-logo/beanie-hat-embroidery-digitizing-services.webp",
+  },
+  {
+    title: "Structured Cap Design",
+    tag: "Center-Out Sequence",
+    category: "cap-logo",
+    image: "/images/cap-logo/structured-cap-center-out-digitizing.webp",
+  },
+  {
+    title: "Dad Hat Embroidery",
+    tag: "Unstructured Cap",
+    category: "cap-logo",
+    image: "/images/cap-logo/unstructured-dad-hat-embroidery-digitizing.webp",
+  },
+  {
+    title: "Sports Team Cap",
+    tag: "Sports Logo",
+    category: "cap-logo",
+    image: "/images/cap-logo/sports-team-cap-logo-digitizing-service.webp",
+  },
+  {
+    title: "Corporate Headwear",
+    tag: "Corporate Cap",
+    category: "cap-logo",
+    image: "/images/cap-logo/corporate-headwear-embroidery-digitizing.webp",
+  },
+  {
+    title: "Flat Cap Embroidery",
+    tag: "Flat Embroidery",
+    category: "cap-logo",
+    image: "/images/cap-logo/flat-embroidery-cap-logo-digitizing.webp",
+  },
+  {
+    title: "Custom Hat Patch",
+    tag: "Hat Patch",
+    category: "cap-logo",
+    image: "/images/cap-logo/custom-hat-patch-embroidery-digitizing.webp",
+  },
+  {
+    title: "Raised 3D Puff Logo",
+    tag: "Raised Embroidery",
+    category: "cap-logo",
+    image: "/images/cap-logo/raised-3d-puff-embroidery-hat-logo.webp",
+  },
+  {
+    title: "Premium Cap Design",
+    tag: "Premium Quality",
+    category: "cap-logo",
+    image: "/images/cap-logo/premium-cap-embroidery-digitizing-dst.webp",
   },
 
   // === CHENILLE (from /images/chenille/) ===
@@ -210,36 +270,258 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
 
   // === JACKET BACK (from /images/jacket-back-design/) ===
   {
-    title: "Leopard Jacket Back",
-    tag: "Full Back",
+    title: "Large Format Jacket Back",
+    tag: "Large Format",
     category: "jacket-back",
-    image: "/images/jacket-back-design/leopard-large-jacket-back-embroidery-digitizing-dst.webp",
+    image: "/images/jacket-back-design/large-format-jacket-back-embroidery-digitizing.webp",
   },
   {
-    title: "Jacket Back Original",
-    tag: "Large Design",
+    title: "Custom Motorcycle Jacket",
+    tag: "Biker Jacket",
     category: "jacket-back",
-    image: "/images/jacket-back-design/biker-eagle-jacket-back-embroidery-digitizing-dst.webp",
+    image: "/images/jacket-back-design/custom-motorcycle-jacket-back-digitizing-dst.webp",
+  },
+  {
+    title: "Denim Jacket Full Back",
+    tag: "Denim Back",
+    category: "jacket-back",
+    image: "/images/jacket-back-design/denim-jacket-full-back-embroidery-digitizing.webp",
+  },
+  {
+    title: "Leather Bomber Logo",
+    tag: "Bomber Jacket",
+    category: "jacket-back",
+    image: "/images/jacket-back-design/leather-bomber-jacket-back-logo-digitizing.webp",
+  },
+  {
+    title: "Premium Jacket Embroidery",
+    tag: "Premium Quality",
+    category: "jacket-back",
+    image: "/images/jacket-back-design/premium-jacket-back-embroidery-digitizing-pes.webp",
+  },
+  {
+    title: "Custom Biker Patch",
+    tag: "Back Patch",
+    category: "jacket-back",
+    image: "/images/jacket-back-design/custom-biker-patch-jacket-back-digitizing.webp",
+  },
+  {
+    title: "Large Scale Back Patch",
+    tag: "Large Patch",
+    category: "jacket-back",
+    image: "/images/jacket-back-design/large-scale-back-patch-embroidery-digitizing.webp",
+  },
+  {
+    title: "Varsity Jacket Back",
+    tag: "Varsity Design",
+    category: "jacket-back",
+    image: "/images/jacket-back-design/varsity-jacket-back-embroidery-digitizing.webp",
+  },
+  {
+    title: "Custom Back Service",
+    tag: "Custom Design",
+    category: "jacket-back",
+    image: "/images/jacket-back-design/custom-jacket-back-digitizing-services-dst.webp",
+  },
+  {
+    title: "Detailed Jacket Back",
+    tag: "Detailed Stitching",
+    category: "jacket-back",
+    image: "/images/jacket-back-design/detailed-jacket-back-embroidery-digitizing.webp",
+  },
+  {
+    title: "Intricate Full Back",
+    tag: "Intricate Design",
+    category: "jacket-back",
+    image: "/images/jacket-back-design/intricate-full-back-jacket-digitizing.webp",
+  },
+  {
+    title: "Custom Logo Jacket",
+    tag: "Custom Logo",
+    category: "jacket-back",
+    image: "/images/jacket-back-design/custom-logo-jacket-back-embroidery-pes.webp",
+  },
+  {
+    title: "Large Apparel Design",
+    tag: "Apparel Back",
+    category: "jacket-back",
+    image: "/images/jacket-back-design/large-apparel-jacket-back-digitizing.webp",
+  },
+  {
+    title: "Sports Jacket Back",
+    tag: "Sports Design",
+    category: "jacket-back",
+    image: "/images/jacket-back-design/sports-jacket-back-embroidery-digitizing.webp",
+  },
+  {
+    title: "Club Jacket Back",
+    tag: "Club Emblem",
+    category: "jacket-back",
+    image: "/images/jacket-back-design/club-jacket-back-embroidery-digitizing-dst.webp",
+  },
+  {
+    title: "Jacket Back Patch",
+    tag: "Patch Digitizing",
+    category: "jacket-back",
+    image: "/images/jacket-back-design/jacket-back-patch-embroidery-digitizing.webp",
+  },
+  {
+    title: "High Quality Jacket",
+    tag: "High Quality",
+    category: "jacket-back",
+    image: "/images/jacket-back-design/high-quality-jacket-back-digitizing-pes.webp",
+  },
+  {
+    title: "Custom Back Piece",
+    tag: "Back Piece",
+    category: "jacket-back",
+    image: "/images/jacket-back-design/custom-back-piece-embroidery-digitizing.webp",
+  },
+  {
+    title: "Full Size Jacket Back",
+    tag: "Full Size",
+    category: "jacket-back",
+    image: "/images/jacket-back-design/full-size-jacket-back-embroidery-digitizing.webp",
   },
 
   // === LEFT CHEST LOGO (from /images/left-chest-logo/) ===
   {
-    title: "Christ Tiger Logo",
-    tag: "Sports Logo",
+    title: "Corporate Left Chest",
+    tag: "Corporate Logo",
     category: "left-chest",
-    image: "/images/left-chest-logo/christ-tiger-sports-left-chest-embroidery-digitizing-dst.webp",
+    image: "/images/left-chest-logo/corporate-left-chest-logo-embroidery-digitizing.webp",
   },
   {
-    title: "Knight Logo",
-    tag: "Crest Design",
+    title: "Custom Business Logo",
+    tag: "Business Logo",
     category: "left-chest",
-    image: "/images/left-chest-logo/knight-shield-crest-left-chest-embroidery-digitizing-dst.webp",
+    image: "/images/left-chest-logo/custom-business-left-chest-embroidery-digitizing.webp",
   },
   {
-    title: "Left Chest Shirt",
-    tag: "Corporate",
+    title: "Polo Shirt Logo",
+    tag: "Polo Shirt",
     category: "left-chest",
-    image: "/images/left-chest-logo/corporate-polo-shirt-left-chest-embroidery-digitizing-dst.webp",
+    image: "/images/left-chest-logo/polo-shirt-left-chest-logo-digitizing-dst.webp",
+  },
+  {
+    title: "Left Chest Monogram",
+    tag: "Monogram",
+    category: "left-chest",
+    image: "/images/left-chest-logo/left-chest-monogram-embroidery-digitizing.webp",
+  },
+  {
+    title: "Company Uniform",
+    tag: "Uniform Logo",
+    category: "left-chest",
+    image: "/images/left-chest-logo/company-uniform-left-chest-logo-digitizing.webp",
+  },
+  {
+    title: "Sports Team Logo",
+    tag: "Sports Team",
+    category: "left-chest",
+    image: "/images/left-chest-logo/sports-team-left-chest-embroidery-digitizing.webp",
+  },
+  {
+    title: "Medical Scrubs",
+    tag: "Medical Scrubs",
+    category: "left-chest",
+    image: "/images/left-chest-logo/medical-scrubs-left-chest-logo-digitizing.webp",
+  },
+  {
+    title: "Custom Apparel",
+    tag: "Custom Apparel",
+    category: "left-chest",
+    image: "/images/left-chest-logo/custom-apparel-left-chest-embroidery-digitizing.webp",
+  },
+  {
+    title: "Left Chest Patch",
+    tag: "Patch Logo",
+    category: "left-chest",
+    image: "/images/left-chest-logo/left-chest-patch-logo-digitizing-services.webp",
+  },
+  {
+    title: "Small Text Logo",
+    tag: "Small Text",
+    category: "left-chest",
+    image: "/images/left-chest-logo/small-text-left-chest-embroidery-digitizing.webp",
+  },
+  {
+    title: "Intricate Logo",
+    tag: "Intricate Design",
+    category: "left-chest",
+    image: "/images/left-chest-logo/intricate-left-chest-logo-digitizing-pes.webp",
+  },
+  {
+    title: "Workwear Logo",
+    tag: "Workwear",
+    category: "left-chest",
+    image: "/images/left-chest-logo/workwear-left-chest-embroidery-digitizing.webp",
+  },
+  {
+    title: "Custom Crest",
+    tag: "Crest Logo",
+    category: "left-chest",
+    image: "/images/left-chest-logo/custom-crest-left-chest-logo-digitizing.webp",
+  },
+  {
+    title: "Restaurant Uniform",
+    tag: "Restaurant Logo",
+    category: "left-chest",
+    image: "/images/left-chest-logo/restaurant-uniform-left-chest-embroidery.webp",
+  },
+  {
+    title: "Detailed Left Chest",
+    tag: "Detailed Logo",
+    category: "left-chest",
+    image: "/images/left-chest-logo/detailed-left-chest-logo-embroidery-digitizing.webp",
+  },
+  {
+    title: "Jacket Left Chest",
+    tag: "Jacket Logo",
+    category: "left-chest",
+    image: "/images/left-chest-logo/jacket-left-chest-logo-digitizing-dst.webp",
+  },
+  {
+    title: "Custom Brand Logo",
+    tag: "Brand Logo",
+    category: "left-chest",
+    image: "/images/left-chest-logo/custom-brand-left-chest-embroidery-digitizing.webp",
+  },
+  {
+    title: "High Quality Logo",
+    tag: "High Quality",
+    category: "left-chest",
+    image: "/images/left-chest-logo/high-quality-left-chest-logo-digitizing.webp",
+  },
+  {
+    title: "Premium Embroidery",
+    tag: "Premium Quality",
+    category: "left-chest",
+    image: "/images/left-chest-logo/premium-left-chest-embroidery-digitizing-pes.webp",
+  },
+  {
+    title: "Left Chest Emblem",
+    tag: "Emblem Logo",
+    category: "left-chest",
+    image: "/images/left-chest-logo/left-chest-emblem-embroidery-digitizing.webp",
+  },
+  {
+    title: "Promotional Wear",
+    tag: "Promo Wear",
+    category: "left-chest",
+    image: "/images/left-chest-logo/promotional-wear-left-chest-logo-digitizing.webp",
+  },
+  {
+    title: "Custom Design",
+    tag: "Custom Design",
+    category: "left-chest",
+    image: "/images/left-chest-logo/custom-design-left-chest-embroidery-digitizing.webp",
+  },
+  {
+    title: "Expert Services Logo",
+    tag: "Expert Services",
+    category: "left-chest",
+    image: "/images/left-chest-logo/left-chest-logo-digitizing-expert-services.webp",
   },
 
   // === 3D PUFF (from /images/3d-puff/) ===
@@ -340,19 +622,6 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     image: "/images/vector-art/vintage-skull-van-vector-art-conversion-dst.webp",
   },
 
-  // === SLEEVE DESIGN (from /images/shoulder-design/) ===
-  {
-    title: "Pilipinas Sleeve",
-    tag: "Flag Design",
-    category: "sleeve",
-    image: "/images/shoulder-design/pilipinas-flag-sleeve-shoulder-embroidery-digitizing-dst.webp",
-  },
-  {
-    title: "Pilipinas Original",
-    tag: "National",
-    category: "sleeve",
-    image: "/images/shoulder-design/philippines-national-sleeve-embroidery-digitizing-dst.webp",
-  },
 
   // === BUNDLES (from /images/bundles/) ===
   {
@@ -396,7 +665,6 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
 // Categories based on ACTUAL available images
 export const PORTFOLIO_CATEGORIES = [
   { label: "All Work", value: "all" },
-  { label: "Patches", value: "patches" },
   { label: "Custom Patches", value: "custom-patches" },
   { label: "Cap Logo", value: "cap-logo" },
   { label: "Chenille", value: "chenille" },
@@ -406,7 +674,6 @@ export const PORTFOLIO_CATEGORIES = [
   { label: "Towel Design", value: "towel" },
   { label: "Applique", value: "applique" },
   { label: "Vector Art", value: "vector-art" },
-  { label: "Sleeve", value: "sleeve" },
   { label: "Bundles", value: "bundles" },
 ];
 
