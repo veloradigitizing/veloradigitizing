@@ -42,7 +42,7 @@ const WHY_SHOP: { icon: IconName; title: string; description: string }[] = [
   {
     icon: "badge-check",
     title: "Simple Ordering",
-    description: "Order by WhatsApp or through our contact page",
+    description: "Add to cart & checkout via WhatsApp or contact page",
   },
   {
     icon: "headset",
@@ -97,7 +97,7 @@ export default function StorePage() {
           { icon: "mail", title: "Email Delivery", sub: "Files sent to you as a zip" },
           { icon: "layers", title: "All Formats", sub: "All stitch formats included" },
           { icon: "refresh", title: "Free Re-sends", sub: "Lost a file? We send it again" },
-          { icon: "send", title: "Easy Ordering", sub: "Order by WhatsApp or contact page" },
+          { icon: "send", title: "Easy Ordering", sub: "Add to cart & checkout via WhatsApp" },
         ]}
       />
 

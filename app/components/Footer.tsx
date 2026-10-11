@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import {
-  FaFacebookF,
   FaInstagram,
   FaEnvelope,
   FaTiktok,
@@ -10,26 +9,15 @@ import {
   FaYoutube,
   FaThreads,
   FaPinterestP,
-  FaBehance,
 } from "react-icons/fa6";
 import { Mail, Phone, Clock, MapPin, ArrowRight } from "lucide-react";
 import Logo from "./Logo";
 
 const SOCIALS = [
   {
-    label: "Behance",
-    href: "https://www.behance.net/veloradigitizing",
-    Icon: FaBehance,
-  },
-  {
     label: "Pinterest",
     href: "https://www.pinterest.com/veloradigitizing/",
     Icon: FaPinterestP,
-  },
-  {
-    label: "Facebook",
-    href: "https://www.facebook.com/share/1Dtbi6tg9V/",
-    Icon: FaFacebookF,
   },
   {
     label: "Instagram",
@@ -259,12 +247,12 @@ export default function Footer() {
               <li className="group flex items-start gap-3">
                 <Clock className="mt-0.5 h-4 w-4 shrink-0 text-brand-400 transition-transform duration-300 group-hover:scale-110" />
                 <div className="leading-relaxed">
-                  <p className="font-medium text-white/95">24/7 Order Intake &amp; WhatsApp</p>
+                  <p className="font-medium text-white/95">24/7 Chat, Email &amp; Order Intake</p>
                   <p className="text-sm text-white/75 mt-0.5">
-                    Phone Support: Mon - Sat 9:00 AM - 7:00 PM PT
+                    Phone Lines: Mon - Sat 9:00 AM - 7:00 PM PT
                   </p>
                   <p className="text-xs text-white/60 mt-0.5">
-                    Sunday: Closed for calls (WhatsApp active)
+                    Sunday: Phone lines closed (WhatsApp &amp; Email active 24/7)
                   </p>
                 </div>
               </li>

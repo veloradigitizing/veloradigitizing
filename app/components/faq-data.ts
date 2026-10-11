@@ -202,7 +202,7 @@ export const STORE_FAQS: FAQItem[] = [
   {
     question: "How do I order a design and receive my files?",
     answer:
-      "Message us on WhatsApp or through the contact page with the names of the designs you want. We confirm your order and payment details, then email your files in a single zip archive. If you ever lose a file, contact us with your order details and we'll send it again.",
+      "Simply click 'Add to Cart' on any design you like, open your cart drawer, and click 'Order on WhatsApp' to submit your order instantly. You can also message us directly on WhatsApp or through our contact page with the names of the designs you want. We will confirm your order and email your files right away in a single zip archive. If you ever misplace a file, reach out with your order details and we will re-send it at no charge.",
     category: "Ordering",
   },
   {
@@ -277,7 +277,7 @@ export const CONTACT_FAQS: FAQItem[] = [
   {
     question: "How do I send you my artwork?",
     answer:
-      "Three easy ways: (1) use the upload field on our contact form, (2) email it directly to info@veloradigitizing.com, or (3) share a cloud link (Google Drive, Dropbox, WeTransfer). We accept AI, EPS, PDF, PNG, JPG, SVG, CDR, PSD, and even clear photographs or hand-drawn scans.",
+      "Three easy ways: (1) send your files directly on WhatsApp (+1 213-635-8137) for the fastest 1-hour quote, (2) share a cloud link (Google Drive, Dropbox, WeTransfer) in our contact form, or (3) email us at info@veloradigitizing.com. We accept AI, EPS, PDF, PNG, JPG, SVG, CDR, PSD, DST, PES, and clear photos or scans.",
     category: "Ordering",
   },
   {

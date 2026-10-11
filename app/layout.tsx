@@ -112,10 +112,8 @@ export const metadata: Metadata = {
   other: {
     "msvalidate.01": "2E86448A719E4063934826A1195B1159",
     "og:see_also": [
-      "https://www.behance.net/veloradigitizing",
       "https://www.pinterest.com/veloradigitizing/",
       "https://dribbble.com/shots/27768560-Custom-Cap-Embroidery-Digitizing-Showcase",
-      "https://www.facebook.com/share/1Dtbi6tg9V/",
       "https://www.instagram.com/veloradigitizing",
       "https://www.threads.com/@veloradigitizing?invite=0",
       "https://www.tiktok.com/@muheeb.rehmani?_r=1&_t=ZS-9846QsaPrjY",
@@ -202,10 +200,8 @@ export default function RootLayout({
           },
         ],
         "sameAs": [
-          "https://www.behance.net/veloradigitizing",
           "https://www.pinterest.com/veloradigitizing/",
           "https://dribbble.com/shots/27768560-Custom-Cap-Embroidery-Digitizing-Showcase",
-          "https://www.facebook.com/share/1Dtbi6tg9V/",
           "https://www.instagram.com/veloradigitizing",
           "https://www.threads.com/@veloradigitizing?invite=0",
           "https://www.tiktok.com/@muheeb.rehmani?_r=1&_t=ZS-9846QsaPrjY",
