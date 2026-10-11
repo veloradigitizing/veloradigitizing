@@ -1,6 +1,7 @@
 import { PRODUCTS, CATEGORY_LABELS } from "./products";
 import { PATCHES, PATCH_CATEGORIES } from "./patches";
 import { BUNDLES } from "./bundles";
+import { STORE_LONG_DESCRIPTIONS } from "./descriptions";
 import { LEFT_CHEST_PRODUCTS } from "./left-chest";
 import { APPLIQUE_PRODUCTS } from "./applique";
 import { JACKET_BACK_PRODUCTS } from "./jacket-back";
@@ -23,6 +24,8 @@ export type StoreItem = {
   /** Average customer rating (1 to 5) shown on the product page. */
   rating?: number;
   reviewCount?: number;
+  /** Unique long-form copy shown in the About section of the product page. */
+  longDescription?: string;
 };
 
 const PATCH_CATEGORY_LABELS: Record<string, string> = Object.fromEntries(
@@ -97,6 +100,7 @@ export const STORE_ITEMS: StoreItem[] = [
     image: p.image,
     formats: p.formats,
     description: p.description,
+    longDescription: STORE_LONG_DESCRIPTIONS[p.slug],
     kind: "patch",
   })),
   ...BUNDLES.map<StoreItem>((b) => ({
@@ -108,6 +112,7 @@ export const STORE_ITEMS: StoreItem[] = [
     image: b.image,
     formats: b.formats,
     description: b.description,
+    longDescription: STORE_LONG_DESCRIPTIONS[b.slug],
     kind: "bundle",
     rating: b.rating,
     reviewCount: b.reviewCount,

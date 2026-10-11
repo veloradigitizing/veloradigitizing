@@ -246,6 +246,10 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "Velora Digitizing prepares cap files with center-out sequencing, seam-bridge underlay and sizing matched to your cap style. Send your artwork, the cap type and the machine format you need through our [cap logo digitizing service](/services/cap-logo-digitizing), or [contact us for a free quote](/contact)."
+    },
+    {
+      "type": "p",
+      "text": "Looking for cap-ready designs that are already digitized? Compact patches from our store such as [Stay Wild](/store/stay-wild-patch), [Find Your Path](/store/find-your-path-patch) and [Chase The Sun](/store/chase-the-sun-patch) are all 3 inches or smaller, use a center-walk underlay for knit caps and run under 10,000 stitches."
     }
   ]
 };

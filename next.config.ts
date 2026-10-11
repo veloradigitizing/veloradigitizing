@@ -1,5 +1,18 @@
 import type { NextConfig } from "next";
 
+const LEGACY_STORE_SLUGS = [
+  "tiger-head-embroidery-digitizing-file",
+  "la-cap-logo-embroidery-digitizing-file",
+  "skull-patch-embroidery-digitizing-file",
+  "nike-logo-embroidery-digitizing-file",
+  "bear-embroidery-digitizing-file",
+  "3d-puff-embroidery-digitizing-file",
+  "applique-letter-embroidery-digitizing-file",
+  "ny-logo-embroidery-digitizing-file",
+  "bull-head-embroidery-digitizing-file",
+  "college-logo-embroidery-digitizing-file",
+];
+
 const nextConfig: NextConfig = {
   compress: true,
   images: {
@@ -36,6 +49,13 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // Legacy digitizing-file product URLs that Google indexed before those
+      // products were hidden from the catalog (see SHOW_DIGITIZING_FILE_PRODUCTS
+      // in app/store/catalog.ts). Send them to the store instead of 404ing.
+      ...LEGACY_STORE_SLUGS.flatMap((slug) => [
+        { source: `/store/${slug}`, destination: "/store", permanent: true },
+        { source: `/store/${slug}/`, destination: "/store", permanent: true },
+      ]),
       {
         source: "/blog/cheap-3d-puff-embroidery-digitizing-for-caps",
         destination: "/blog/3d-puff-embroidery-digitizing-guide",

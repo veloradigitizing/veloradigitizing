@@ -109,6 +109,10 @@ export const post: BlogPost = {
         "**Nylon Bomber Jackets & Windbreakers:** 2 layers of 2.5oz Cutaway backing adhered with temporary embroidery spray adhesive to prevent slippery nylon shifts.",
         "**Motorcycle Leather & Heavy Hide:** 1 layer of specialized heavy non-directional backing with 80/12 Leather Wedge needles. Avoid high stitch density to prevent cutting leather like a postage stamp."
       ]
+    },
+    {
+      "type": "p",
+      "text": "Need a jacket back design without a custom digitizing job? Our store carries large-format patches that are already tested on denim and twill, including [Adventure Awaits](/store/adventure-awaits-patch) at 4 x 4 inches and 16,000 stitches, [Wild Spirit](/store/wild-spirit-patch) with a detailed wolf fill, and the travel-themed [Veracruz Patch](/store/veracruz-patch)."
     }
   ]
 };

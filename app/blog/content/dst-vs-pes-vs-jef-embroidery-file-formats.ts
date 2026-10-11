@@ -164,6 +164,10 @@ export const post: BlogPost = {
         "**2. Avoid Re-Digitizing from Raw Stitch Data:** Opening a compiled DST file and scaling it by more than 10% in basic viewing software will stretch stitch spacing, turning solid satins into loose, unwearable threads.",
         "**3. Reassign Thread Numbers When Converting to PES/JEF:** When converting an industrial DST into a Brother PES file, manually assign the correct Madeira Polyneon or Isacord thread numbers in software before transferring to USB."
       ]
+    },
+    {
+      "type": "p",
+      "text": "Every design in our [embroidery patch store](/store) is delivered in DST, PES, EXP, JEF and VP3 together, so you never need to convert between formats yourself. Bundles such as the [100 Patches Mega Pack](/store/100-patches-mega-pack) add HUS and XXX as well, and single designs like [Chase The Sun](/store/chase-the-sun-patch) and [Dad By Day Gamer By Night](/store/dad-by-day-gamer-by-night) list the included formats on the product page."
     }
   ]
 };

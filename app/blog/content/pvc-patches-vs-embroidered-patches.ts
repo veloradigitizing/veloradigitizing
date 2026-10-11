@@ -116,6 +116,10 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
+      "text": "Prefer to start from a proven embroidered design instead of digitizing from scratch? Our patch store carries tested files such as [Adventure Awaits](/store/adventure-awaits-patch), [Home Of Hustle](/store/home-of-hustle-patch) and [Search Rescan](/store/search-rescan-patch), each sewn out on twill blanks before listing and supplied in every major machine format."
+    },
+    {
+      "type": "p",
       "text": "Ready to bring your patch concept to life? Explore our [custom patch services and backing options](/patches) or request a quote on our [contact page](/contact)!"
     }
   ]

@@ -185,6 +185,10 @@ export const post: BlogPost = {
         "**Peel-and-Stick 3M Adhesive:** Industrial pressure-sensitive sticker backing. Ideal for single-day conventions, temporary branding, and hard-hat placement.",
         "**Plastic / PVC Stiffener (Sew-On):** Heavy 0.3mm clear plastic backing that keeps the patch rigid and flat when sewn onto denim or motorcycle leather vests."
       ]
+    },
+    {
+      "type": "p",
+      "text": "If you want to see how a finished embroidered patch file is built, browse the ready-made designs in our store. [Hike More Worry Less](/store/hike-more-worry-less), [Wild Spirit](/store/wild-spirit-patch) and [Mentally Strong](/store/mentally-strong-patch) each ship in DST, PES, EXP, JEF and VP3 with commercial-use rights, and the [70 Patches Pack Vol. 1](/store/70-patches-pack-1) bundles a complete outdoor collection in one download."
     }
   ]
 };

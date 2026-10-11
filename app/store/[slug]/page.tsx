@@ -219,6 +219,11 @@ export default async function ProductPage({ params }: Props) {
         <h2 className="font-serif text-2xl font-bold text-navy-950 sm:text-3xl">
           About This {noun}
         </h2>
+        {item.longDescription && (
+          <p className="mt-4 text-[15px] leading-relaxed text-navy-950/75">
+            {item.longDescription}
+          </p>
+        )}
         <p className="mt-4 text-[15px] leading-relaxed text-navy-950/75">
           Every {noun.toLowerCase()} in our store is punched by hand by Velora&apos;s
           senior digitizers — never auto-traced — and sewn out on industrial
