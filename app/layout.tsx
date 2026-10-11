@@ -104,7 +104,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.veloradigitizing.com",
   },
+  verification: {
+    other: {
+      "msvalidate.01": "2E86448A719E4063934826A1195B1159",
+    },
+  },
   other: {
+    "msvalidate.01": "2E86448A719E4063934826A1195B1159",
     "og:see_also": [
       "https://www.behance.net/veloradigitizing",
       "https://www.pinterest.com/veloradigitizing/",
@@ -134,11 +140,22 @@ export default function RootLayout({
         "url": "https://www.veloradigitizing.com",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.veloradigitizing.com/images/veloralogo.webp",
-          "width": 1254,
-          "height": 1254,
+          "url": "https://www.veloradigitizing.com/icon.png",
+          "contentUrl": "https://www.veloradigitizing.com/images/veloralogo.webp",
+          "caption": "Velora Digitizing Logo",
+          "width": 512,
+          "height": 512,
         },
-        "image": "https://www.veloradigitizing.com/images/og/og-home.jpg",
+        "image": [
+          "https://www.veloradigitizing.com/images/og/og-home.jpg",
+          "https://www.veloradigitizing.com/icon.png",
+          "https://www.veloradigitizing.com/images/veloralogo.webp",
+        ],
+        "brand": {
+          "@type": "Brand",
+          "name": "Velora Digitizing",
+          "logo": "https://www.veloradigitizing.com/icon.png",
+        },
         "description":
           "Velora Digitizing provides custom embroidery digitizing, 3D puff cap digitizing, left chest logos, custom patch digitizing, and vector art conversion with 8-24h delivery and 100% satisfaction guaranteed.",
         "telephone": "+12136358137",

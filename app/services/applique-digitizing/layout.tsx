@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import RelatedGuides from "../../components/RelatedGuides";
 
 export const metadata: Metadata = {
-  title: { absolute: "Applique Embroidery Digitizing Services | Velora Digitizing" },
+  title: { absolute: "Applique Digitizing | Velora Digitizing" },
   description:
     "Professional applique embroidery digitizing for jackets, hoodies, jerseys & patches. Clean tackdown stitches, precise borders & all formats (DST, PES, JEF).",
   alternates: {

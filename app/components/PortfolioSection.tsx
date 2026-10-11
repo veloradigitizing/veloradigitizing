@@ -90,6 +90,7 @@ const PORTFOLIO_ITEMS = [
     image: "/images/vector-art/goku-anime-character-vector-art-conversion-dst.webp",
     count: 8,
     slug: "/portfolio?category=vector-art",
+  },
   {
     id: "bundles",
     category: "bundles",

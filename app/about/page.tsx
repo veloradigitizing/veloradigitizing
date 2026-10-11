@@ -12,7 +12,7 @@ import { FAQ, ABOUT_FAQS } from "../components/FAQ";
 import { IconName } from "../components/Icon";
 
 export const metadata: Metadata = {
-  title: "About Master Embroidery Digitizers",
+  title: "About Us",
   description:
     "Meet Velora Digitizing's master digitizers with 10+ years of craftsmanship delivering precision embroidery files with 100% stitch quality. Learn our story!",
   alternates: {

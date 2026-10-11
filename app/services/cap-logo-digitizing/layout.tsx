@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import RelatedGuides from "../../components/RelatedGuides";
 
 export const metadata: Metadata = {
-  title: { absolute: "Cap & Hat Logo Digitizing Services | Velora Digitizing" },
+  title: { absolute: "Cap Logo Digitizing | Velora Digitizing" },
   description:
     "Specialized cap & hat embroidery digitizing with center-out sequencing for structured snapbacks, dad hats, beanies & visors. Formats: DST, PES, JEF & more.",
   alternates: {

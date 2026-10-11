@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import RelatedGuides from "../../components/RelatedGuides";
 
 export const metadata: Metadata = {
-  title: { absolute: "3D Puff Embroidery Digitizing Services | Velora Digitizing" },
+  title: { absolute: "3D Puff Digitizing | Velora Digitizing" },
   description:
     "Professional 3D puff embroidery digitizing for caps, hats, snapbacks & hoodies. Clean end-capping, foam perforations & all machine formats (DST, PES, JEF).",
   alternates: {
