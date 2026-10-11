@@ -47,10 +47,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const url = `${BASE_URL}/store/${item.slug}`;
   const description = metaDescription(item.description);
   const ogTitle = `${item.title} | Velora Digitizing`;
+  const isIndexed = Boolean(item.longDescription);
 
   return {
     title: item.title,
     description,
+    robots: isIndexed
+      ? { index: true, follow: true }
+      : { index: false, follow: true },
     alternates: { canonical: url },
     openGraph: {
       type: "website",

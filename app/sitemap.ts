@@ -93,12 +93,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  const storeRoutes: MetadataRoute.Sitemap = STORE_ITEMS.map((item) => ({
-    url: `${BASE_URL}/store/${item.slug}`,
-    lastModified: STATIC_LASTMOD,
-    changeFrequency: "weekly",
-    priority: item.kind === "bundle" ? 0.75 : 0.7,
-  }));
+  // Submit only verified catalog patches and bundles with unique descriptions.
+  // Excludes the 61 non-catalog products with templated descriptions to conserve crawl budget.
+  const storeRoutes: MetadataRoute.Sitemap = STORE_ITEMS
+    .filter((item) => item.kind === "patch" || item.kind === "bundle")
+    .map((item) => ({
+      url: `${BASE_URL}/store/${item.slug}`,
+      lastModified: STATIC_LASTMOD,
+      changeFrequency: "weekly",
+      priority: item.kind === "bundle" ? 0.75 : 0.7,
+    }));
 
   const blogRoutes: MetadataRoute.Sitemap = BLOG_POSTS.map((post) => ({
     url: `${BASE_URL}/blog/${post.slug}`,

@@ -9,10 +9,10 @@ import { stagger } from "./stagger";
 import { useCart } from "../context/CartContext";
 
 const PATCHES_PRODUCTS = [
-  { slug: "hike-more", title: "Hike More Worry Less", price: 2.99, image: "/images/patches/hike-more-worry-less-patch-embroidery-digitizing-dst.webp", tag: "Adventure Patch" },
-  { slug: "wild-adventure", title: "Wild Adventure Patch", price: 2.99, image: "/images/patches/wild-adventure-patch-embroidery-digitizing-dst.webp", tag: "Nature Patch" },
-  { slug: "stay-wild", title: "Stay Wild Patch", price: 2.99, image: "/images/patches/stay-wild-patch-embroidery-digitizing-dst.webp", tag: "Motivational" },
-  { slug: "dad-gamer", title: "Dad By Day Gamer", price: 2.99, image: "/images/custom-patches/dad-by-day-gamer-patch-embroidery-digitizing-dst.webp", tag: "Gaming Patch" },
+  { slug: "hike-more-worry-less", title: "Hike More Worry Less", price: 2.99, image: "/images/patches/hike-more-worry-less-patch-embroidery-digitizing-dst.webp", tag: "Adventure Patch" },
+  { slug: "wild-adventure-patch", title: "Wild Adventure Patch", price: 2.99, image: "/images/patches/wild-adventure-patch-embroidery-digitizing-dst.webp", tag: "Nature Patch" },
+  { slug: "stay-wild-patch", title: "Stay Wild Patch", price: 2.99, image: "/images/patches/stay-wild-patch-embroidery-digitizing-dst.webp", tag: "Motivational" },
+  { slug: "dad-by-day-gamer-by-night", title: "Dad By Day Gamer", price: 2.99, image: "/images/custom-patches/dad-by-day-gamer-patch-embroidery-digitizing-dst.webp", tag: "Gaming Patch" },
 ];
 
 export default function PatchesStoreSection() {
@@ -51,20 +51,26 @@ export default function PatchesStoreSection() {
             {PATCHES_PRODUCTS.map((product, i) => (
               <Reveal key={product.slug} direction="up" delay={stagger(i, 70)}>
                 <div className="vr-lift group overflow-hidden rounded-xl border border-white/10 bg-white/[0.04] backdrop-blur-sm transition-all hover:border-brand-500/30 hover:shadow-lg hover:shadow-brand-600/10">
-                  <div className="vr-zoom relative aspect-square w-full overflow-hidden bg-white/[0.06]">
-                    <Image
-                      src={product.image}
-                      alt={`${product.title} - Custom ${product.tag} Embroidery Digitizing DST file`}
-                      fill
-                      sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                      className="object-cover"
-                    />
-                    <span className="absolute left-2 top-2 rounded bg-brand-600/95 px-2 py-0.5 text-[9px] font-bold uppercase tracking-wide text-white backdrop-blur-sm">
-                      {product.tag}
-                    </span>
-                  </div>
+                  <Link href={`/store/${product.slug}`} aria-label={`View ${product.title} patch details`} className="block">
+                    <div className="vr-zoom relative aspect-square w-full overflow-hidden bg-white/[0.06]">
+                      <Image
+                        src={product.image}
+                        alt={`${product.title} - Custom ${product.tag} Embroidery Digitizing DST file`}
+                        fill
+                        sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                        className="object-cover"
+                      />
+                      <span className="absolute left-2 top-2 rounded bg-brand-600/95 px-2 py-0.5 text-[9px] font-bold uppercase tracking-wide text-white backdrop-blur-sm">
+                        {product.tag}
+                      </span>
+                    </div>
+                  </Link>
                   <div className="p-3">
-                    <h3 className="text-sm font-semibold text-white line-clamp-1">{product.title}</h3>
+                    <h3 className="text-sm font-semibold text-white line-clamp-1">
+                      <Link href={`/store/${product.slug}`} className="hover:text-brand-400 transition-colors">
+                        {product.title}
+                      </Link>
+                    </h3>
                     <div className="mt-2 flex items-center justify-between">
                       <span className="text-sm font-bold text-gold-400">${product.price.toFixed(2)}</span>
                       <button

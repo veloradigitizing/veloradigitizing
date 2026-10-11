@@ -50,8 +50,11 @@ const SOCIALS = [
 const QUICK_LINKS = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
+  { label: "Embroidery Store", href: "/store" },
+  { label: "70 Patches Bundle", href: "/store/70-patches-pack-1" },
+  { label: "100 Patches Pack", href: "/store/100-patches-mega-pack" },
+  { label: "50 Patches Pack", href: "/store/50-patches-starter-pack" },
   { label: "Portfolio", href: "/portfolio" },
-  { label: "Store", href: "/store" },
   { label: "Blog", href: "/blog" },
   { label: "Contact Us", href: "/contact" },
 ];
