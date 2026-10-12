@@ -82,8 +82,72 @@ export default function StorePage() {
     setMaxPrice(20);
   };
 
+  const storeJsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Store",
+        "@id": "https://www.veloradigitizing.com/store#store",
+        "name": "Velora Digitizing Store",
+        "url": "https://www.veloradigitizing.com/store",
+        "image": "https://www.veloradigitizing.com/images/og/og-store.jpg",
+        "telephone": "+12136358137",
+        "description":
+          "Online store for ready-to-stitch digital embroidery patterns, patch files, and design bundles.",
+        "currenciesAccepted": "USD",
+        "priceRange": "$2.99 - $299.99",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "128 Business Blvd, Suite 204",
+          "addressLocality": "Los Angeles",
+          "addressRegion": "CA",
+          "postalCode": "90017",
+          "addressCountry": "US",
+        },
+        "parentOrganization": {
+          "@type": "Organization",
+          "name": "Velora Digitizing",
+          "url": "https://www.veloradigitizing.com",
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Embroidery Patch Designs & Bundles",
+          "itemListElement": [
+            { "@type": "OfferCatalog", "name": "Adventure Patches" },
+            { "@type": "OfferCatalog", "name": "Lifestyle Patches" },
+            { "@type": "OfferCatalog", "name": "Gaming Patches" },
+            { "@type": "OfferCatalog", "name": "Motivational Patches" },
+            { "@type": "OfferCatalog", "name": "Fun & Unique Patches" },
+            { "@type": "OfferCatalog", "name": "Patch Bundles" },
+          ],
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.veloradigitizing.com",
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Store",
+            "item": "https://www.veloradigitizing.com/store",
+          },
+        ],
+      },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(storeJsonLd) }}
+      />
       <Hero
         eyebrow="Shop Ready-Made Patches"
         titleLines={[

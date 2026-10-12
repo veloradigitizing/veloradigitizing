@@ -35,85 +35,12 @@ export const metadata: Metadata = {
   },
 };
 
-const storeJsonLd = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Store",
-      "name": "Velora Digitizing Store",
-      "url": "https://www.veloradigitizing.com/store",
-      "description":
-        "Online store for ready-to-stitch digital embroidery patterns, patch files, and design bundles.",
-      "currenciesAccepted": "USD",
-      "priceRange": "$2.99 - $299.99",
-      "provider": {
-        "@type": "Organization",
-        "name": "Velora Digitizing",
-        "url": "https://www.veloradigitizing.com",
-      },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Embroidery Patch Designs & Bundles",
-        "itemListElement": [
-          {
-            "@type": "OfferCatalog",
-            "name": "Adventure Patches",
-          },
-          {
-            "@type": "OfferCatalog",
-            "name": "Lifestyle Patches",
-          },
-          {
-            "@type": "OfferCatalog",
-            "name": "Gaming Patches",
-          },
-          {
-            "@type": "OfferCatalog",
-            "name": "Motivational Patches",
-          },
-          {
-            "@type": "OfferCatalog",
-            "name": "Fun & Unique Patches",
-          },
-          {
-            "@type": "OfferCatalog",
-            "name": "Patch Bundles",
-          },
-        ],
-      },
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.veloradigitizing.com",
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Store",
-          "item": "https://www.veloradigitizing.com/store",
-        },
-      ],
-    },
-  ],
-};
+
 
 export default function StoreLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(storeJsonLd) }}
-      />
-      {children}
-    </>
-  );
+  return <>{children}</>;
 }

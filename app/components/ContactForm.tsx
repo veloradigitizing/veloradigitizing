@@ -96,7 +96,7 @@ export default function ContactForm({
           <a
             href={WHATSAPP_QUOTE_URL}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="nofollow noopener noreferrer"
             className="inline-flex shrink-0 items-center justify-center gap-2 rounded-lg bg-[#25D366] px-5 py-3 text-xs font-bold text-white shadow-sm transition-all hover:bg-[#20ba59] hover:shadow-md active:scale-95"
           >
             <FaWhatsapp size={16} className="shrink-0" aria-hidden />

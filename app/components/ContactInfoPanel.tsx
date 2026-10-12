@@ -73,7 +73,7 @@ export default function ContactInfoPanel({
               key={label}
               href={href}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               aria-label={`Follow Velora Digitizing on ${label}`}
               className="flex h-9 w-9 items-center justify-center rounded-full border border-navy-950/15 text-slate-600 transition-all duration-200 hover:scale-110 hover:border-brand-600 hover:bg-brand-600 hover:text-white"
             >

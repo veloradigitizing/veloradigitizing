@@ -102,7 +102,7 @@ function renderInline(text: string): ReactNode[] {
             key={key++}
             href={href}
             className="font-semibold text-brand-600 underline decoration-brand-600/30 underline-offset-2 hover:text-brand-700"
-            rel="noopener noreferrer"
+            rel="nofollow noopener noreferrer"
             target="_blank"
           >
             {match[1]}

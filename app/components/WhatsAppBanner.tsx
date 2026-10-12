@@ -33,7 +33,7 @@ export default function WhatsAppBanner({
         <a
           href={ctaHref}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="nofollow noopener noreferrer"
           className="vr-btn flex items-center gap-2 rounded-md border border-white/25 px-6 py-3 text-sm font-semibold text-white hover:bg-white/10"
         >
           {ctaLabel}
