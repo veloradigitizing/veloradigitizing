@@ -1,4 +1,4 @@
-export const INDEXNOW_KEY = "b6555280ca4340e2b6be80b0b61d8243";
+export const INDEXNOW_KEY = "2e86448a719e4063934826a1195b1159";
 export const SITE_HOST = "www.veloradigitizing.com";
 export const KEY_LOCATION = `https://${SITE_HOST}/${INDEXNOW_KEY}.txt`;
 
