@@ -47,7 +47,7 @@ const vectorJsonLd = {
       "serviceType": "Vector Graphic Design & Tracing",
       "description":
         "Manual raster-to-vector conversion and tracing service delivering AI, EPS, SVG, and PDF files for commercial print, screen printing, and embroidery.",
-      "areaServed": "Worldwide",
+      "areaServed": ["United States", "Canada", "United Kingdom", "Worldwide"],
     },
     {
       "@type": "BreadcrumbList",

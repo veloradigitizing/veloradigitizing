@@ -10,6 +10,7 @@ import CTABanner from "../../components/CTABanner";
 import { FAQ } from "../../components/FAQ";
 import { SectionTag } from "../../components/Hero";
 import Icon, { IconName } from "../../components/Icon";
+import RelatedServicesNav from "../../components/RelatedServicesNav";
 
 const PUFF_FAQS = [
   {
@@ -348,6 +349,8 @@ export default function PuffDigitizingPage() {
         title="Frequently Asked Questions"
         subtitle="Common questions about our 3D puff embroidery digitizing services."
       />
+
+      <RelatedServicesNav currentSlug="3d-puff-digitizing" />
 
       {/* CTA */}
       <CTABanner />

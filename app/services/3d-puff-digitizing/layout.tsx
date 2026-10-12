@@ -47,13 +47,13 @@ const puffJsonLd = {
       "serviceType": "3D Puff Embroidery Digitizing",
       "description":
         "Custom 3D puff raised foam digitizing services with calculated satin density, column capping, and underlay adjustments for baseball caps, snapbacks, and apparel.",
-      "areaServed": "Worldwide",
+      "areaServed": ["United States", "Canada", "United Kingdom", "Worldwide"],
       "offers": {
         "@type": "AggregateOffer",
         "priceCurrency": "USD",
         "lowPrice": "6.99",
         "highPrice": "19.99",
-        "offerCount": "3",
+        "offerCount": 3,
         "url": "https://www.veloradigitizing.com/services/3d-puff-digitizing#pricing",
       },
     },

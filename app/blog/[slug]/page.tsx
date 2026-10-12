@@ -223,17 +223,23 @@ export default async function BlogPostPage({ params }: Props) {
                 : "";
           return total + text.split(/\s+/).length;
         }, 0),
-        ...(post.image
-          ? { image: [`${BASE_URL}${post.image}`] }
-          : {}),
+        image: post.image
+          ? [`${BASE_URL}${post.image}`]
+          : [`${BASE_URL}/images/og/og-home.jpg`],
         author: {
           "@type": "Organization",
-          "@id": `${BASE_URL}/#service`,
           name: "Velora Digitizing",
           url: BASE_URL,
         },
-        publisher: { "@id": `${BASE_URL}/#service` },
-        isPartOf: { "@id": `${BASE_URL}/blog#blog` },
+        publisher: {
+          "@type": "Organization",
+          name: "Velora Digitizing",
+          url: BASE_URL,
+          logo: {
+            "@type": "ImageObject",
+            url: `${BASE_URL}/icon.png`,
+          },
+        },
       },
       {
         "@type": "BreadcrumbList",

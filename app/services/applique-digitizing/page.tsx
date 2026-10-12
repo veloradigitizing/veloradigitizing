@@ -10,6 +10,7 @@ import CTABanner from "../../components/CTABanner";
 import { FAQ } from "../../components/FAQ";
 import { SectionTag } from "../../components/Hero";
 import Icon, { IconName } from "../../components/Icon";
+import RelatedServicesNav from "../../components/RelatedServicesNav";
 
 const APPLIQUE_FAQS = [
   {
@@ -370,6 +371,8 @@ export default function AppliqueDigitizingPage() {
         title="Frequently Asked Questions"
         subtitle="Common questions about our custom applique digitizing services."
       />
+
+      <RelatedServicesNav currentSlug="applique-digitizing" />
 
       {/* 9. Get a Quote for Applique Digitizing (CTA) */}
       <CTABanner />

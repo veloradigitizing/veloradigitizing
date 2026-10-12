@@ -204,6 +204,17 @@ export default function ContactForm({
           <Icon name="send" className="h-4 w-4" />
         </button>
 
+        <p className="sm:col-span-2 text-center text-xs text-navy-950/60">
+          By sending your request, you agree to our{" "}
+          <a href="/terms-and-conditions" className="underline hover:text-brand-600">
+            Terms &amp; Conditions
+          </a>{" "}
+          and{" "}
+          <a href="/privacy-policy" className="underline hover:text-brand-600">
+            Privacy Policy
+          </a>.
+        </p>
+
         {status === "success" && (
           <div className="rounded-lg border border-green-200 bg-green-50 p-4 text-sm font-medium text-green-800 sm:col-span-2">
             <p className="font-semibold">Message sent successfully!</p>
@@ -212,7 +223,7 @@ export default function ContactForm({
               <a
                 href={WHATSAPP_QUOTE_URL}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow noopener noreferrer"
                 className="font-bold underline hover:text-green-900"
               >
                 WhatsApp (+1 213-635-8137)

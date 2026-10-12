@@ -47,13 +47,13 @@ const appliqueJsonLd = {
       "serviceType": "Applique Embroidery Digitizing",
       "description":
         "Custom applique embroidery digitizing services creating placement outlines, tackdown stitches, and satin cover borders for sports jerseys, varsity jackets, hoodies, and patches.",
-      "areaServed": "Worldwide",
+      "areaServed": ["United States", "Canada", "United Kingdom", "Worldwide"],
       "offers": {
         "@type": "AggregateOffer",
         "priceCurrency": "USD",
         "lowPrice": "6.99",
         "highPrice": "19.99",
-        "offerCount": "3",
+        "offerCount": 3,
         "url": "https://www.veloradigitizing.com/services/applique-digitizing#pricing",
       },
     },

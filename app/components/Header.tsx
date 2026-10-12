@@ -139,7 +139,7 @@ function CartDrawer() {
                 <a
                   href={buildWhatsAppOrderUrl(items, subtotal)}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="nofollow noopener noreferrer"
                   className="vr-btn flex items-center justify-center gap-2 rounded-md bg-[#128C7E] px-5 py-3 text-xs font-bold uppercase tracking-wide text-white transition-colors hover:bg-[#0f7a6e]"
                 >
                   <FaWhatsapp size={16} aria-hidden />

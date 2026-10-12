@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Reveal } from "./Reveal";
 
 export default function OurStorySection({
@@ -56,6 +57,26 @@ export default function OurStorySection({
             {signature}
           </p>
           <p className="text-xs text-navy-950/50">{signatureTitle}</p>
+          <div className="mt-8 flex flex-wrap items-center gap-3">
+            <Link
+              href="/services"
+              className="vr-btn vr-btn-primary rounded-lg bg-brand-600 px-5 py-2.5 text-xs font-bold uppercase tracking-wide text-white hover:bg-brand-700"
+            >
+              Explore Services
+            </Link>
+            <Link
+              href="/portfolio"
+              className="rounded-lg border border-navy-950/15 px-5 py-2.5 text-xs font-bold uppercase tracking-wide text-navy-950/70 hover:border-brand-600 hover:text-brand-600"
+            >
+              View Portfolio
+            </Link>
+            <Link
+              href="/store"
+              className="rounded-lg border border-navy-950/15 px-5 py-2.5 text-xs font-bold uppercase tracking-wide text-navy-950/70 hover:border-brand-600 hover:text-brand-600"
+            >
+              Embroidery Store
+            </Link>
+          </div>
         </Reveal>
       </div>
     </section>

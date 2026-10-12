@@ -8,6 +8,7 @@ import CTABanner from "../components/CTABanner";
 import ServiceTypeGrid from "../components/ServiceTypeGrid";
 import type { IconName } from "../components/Icon";
 import { FAQ } from "../components/FAQ";
+import RelatedServicesNav from "../components/RelatedServicesNav";
 
 const PATCH_TYPES: { icon: IconName; title: string; desc: string }[] = [
   { icon: "badge-check", title: "Merrow Border Patches", desc: "Classic overlocked edge with a raised thread border. The traditional patch look that is durable, clean, and timeless. Best for simple shapes like circles, squares, and rectangles." },
@@ -64,6 +65,8 @@ export default function PatchesPage() {
       <PricingTable title="Patch Digitizing Prices" />
 
       <FAQ items={PATCH_FAQS} title="Patches - Frequently Asked Questions" subtitle="Everything you need to know before ordering patch digitizing services." />
+
+      <RelatedServicesNav currentSlug="patches" />
 
       <CTABanner />
     </>

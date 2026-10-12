@@ -26,7 +26,7 @@ const SOCIALS = [
   },
   {
     label: "Threads",
-    href: "https://www.threads.com/@veloradigitizing?invite=0",
+    href: "https://www.threads.net/@veloradigitizing",
     Icon: FaThreads,
   },
   {
@@ -143,7 +143,7 @@ export default function Footer() {
                   key={i}
                   href={href}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="nofollow noopener noreferrer"
                   aria-label={`Follow Velora Digitizing on ${label}`}
                   className="group flex h-10 w-10 min-h-[40px] min-w-[40px] items-center justify-center rounded-full bg-white/10 text-white transition-all duration-300 hover:scale-110 hover:bg-brand-600 hover:shadow-[0_4px_12px_-4px_rgba(26,63,196,0.5)] focus:outline-none focus:ring-2 focus:ring-brand-500/50"
                 >
@@ -273,9 +273,9 @@ export default function Footer() {
                   </p>
 
                   <a
-                    href="https://maps.google.com/?q=128+Business+Blvd+Suite+204+Los+Angeles+CA+90017"
+                    href="https://www.google.com/maps/search/?api=1&query=128+Business+Blvd+Suite+204+Los+Angeles+CA+90017"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="nofollow noopener noreferrer"
                     aria-label="View Velora Digitizing office on Google Maps"
                     className="inline-flex items-center gap-1 mt-2 text-xs font-medium text-brand-300 hover:text-white transition-colors duration-300 focus:outline-none focus:underline py-1"
                   >

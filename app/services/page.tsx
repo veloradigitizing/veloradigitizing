@@ -57,13 +57,13 @@ const servicesJsonLd = {
       "serviceType": "Embroidery Digitizing",
       "description":
         "Professional digitization of logos and artwork into commercial embroidery machine files (DST, PES, EXP, JEF) for left chest, caps, jackets, and patches.",
-      "areaServed": "Worldwide",
+      "areaServed": ["United States", "Canada", "United Kingdom", "Worldwide"],
       "offers": {
         "@type": "AggregateOffer",
         "priceCurrency": "USD",
         "lowPrice": "6.99",
         "highPrice": "19.99",
-        "offerCount": "3",
+        "offerCount": 3,
         "url": "https://www.veloradigitizing.com/services#pricing",
       },
     },

@@ -98,7 +98,15 @@ function buildFaqs(item: StoreItem) {
     },
     {
       question: `Can I use the ${item.title} on products I sell?`,
-      answer: `Yes. You can embroider the ${noun} on caps, shirts, jackets, bags or any finished goods you sell. Reselling or redistributing the digital file itself is not allowed.`,
+      answer: `Yes. You can embroider the ${noun} on caps, shirts, jackets, bags or any finished goods you sell commercially. Reselling, sublicensing, or redistributing the digital embroidery file itself is strictly prohibited.`,
+    },
+    {
+      question: `What stabilizer and needle should I use for stitching this ${noun.toLowerCase()}?`,
+      answer: `For knit and stretchy fabrics such as polo shirts, performance tees, and fleece hoodies, we strongly recommend a 2.5oz to 3.0oz cutaway stabilizer with a 75/11 ballpoint needle. For structured cap fronts, canvas, and woven twill jackets, a tearaway backing or 80/12 sharp embroidery needle provides crisp stitch registration without puckering.`,
+    },
+    {
+      question: `What if I need a different machine format or small size tweak?`,
+      answer: `Every purchase includes all standard formats (${formatList}). If your machine requires a specific legacy format (like HUS, VIP, CSD, or XXX) or you need a minor size adjustment within ±15% to fit your hoop, our team will provide it free of charge.`,
     },
   ];
 }
@@ -305,6 +313,27 @@ export default async function ProductPage({ params }: Props) {
             needs a tweak
           </li>
         </ul>
+
+        <h2 className="mt-12 font-serif text-2xl font-bold text-navy-950 sm:text-3xl">
+          Industrial Stitch Quality &amp; Machine Compatibility
+        </h2>
+        <p className="mt-4 text-[15px] leading-relaxed text-navy-950/75">
+          Each design file is calibrated with exact pull compensation, balanced column widths, and smart underlay scaffolding so you achieve zero thread breaks, clean stitch borders, and crisp lettering even on high-speed industrial embroidery machines running up to 1,000 SPM.
+        </p>
+        <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
+          <div className="rounded-xl border border-navy-950/10 bg-navy-950/[0.02] p-5">
+            <h3 className="text-base font-bold text-navy-950">Supported Embroidery Machines</h3>
+            <p className="mt-2 text-sm leading-relaxed text-navy-950/70">
+              Compatible with commercial multi-needle equipment (Tajima, Barudan, SWF, Melco, Ricoma, Happy) as well as domestic embroidery machines (Brother, Babylock, Janome, Bernina, Husqvarna Viking, Singer, Pfaff).
+            </p>
+          </div>
+          <div className="rounded-xl border border-navy-950/10 bg-navy-950/[0.02] p-5">
+            <h3 className="text-base font-bold text-navy-950">Fabric &amp; Backing Recommendations</h3>
+            <p className="mt-2 text-sm leading-relaxed text-navy-950/70">
+              Tested on pique polo knits, ringspun cotton t-shirts, heavy fleece hoodies, structured twill caps, canvas tote bags, and nylon jackets. Use cutaway backing for stretch garments and tearaway for stable wovens.
+            </p>
+          </div>
+        </div>
 
         <StoreFaq item={item} />
       </section>

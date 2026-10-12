@@ -10,6 +10,7 @@ import CTABanner from "../../components/CTABanner";
 import { FAQ } from "../../components/FAQ";
 import { SectionTag } from "../../components/Hero";
 import Icon, { IconName } from "../../components/Icon";
+import RelatedServicesNav from "../../components/RelatedServicesNav";
 
 const CAP_FAQS = [
   {
@@ -368,6 +369,8 @@ export default function CapDigitizingPage() {
         title="Frequently Asked Questions"
         subtitle="Common questions about our cap and hat embroidery digitizing services."
       />
+
+      <RelatedServicesNav currentSlug="cap-logo-digitizing" />
 
       {/* CTA */}
       <CTABanner />

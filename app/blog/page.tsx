@@ -53,7 +53,15 @@ const blogJsonLd = {
       url: `${BASE_URL}/blog`,
       description:
         "Guides and tips on embroidery digitizing, file formats, 3D puff, custom patches and artwork preparation.",
-      publisher: { "@id": `${BASE_URL}/#service` },
+      publisher: {
+        "@type": "Organization",
+        name: "Velora Digitizing",
+        url: BASE_URL,
+        logo: {
+          "@type": "ImageObject",
+          url: `${BASE_URL}/icon.png`,
+        },
+      },
       blogPost: BLOG_POSTS.map((post) => ({
         "@type": "BlogPosting",
         headline: post.title,
@@ -61,6 +69,23 @@ const blogJsonLd = {
         datePublished: post.publishedAt,
         dateModified: post.updatedAt ?? post.publishedAt,
         description: post.description,
+        image: post.image
+          ? `${BASE_URL}${post.image}`
+          : `${BASE_URL}/images/og/og-home.jpg`,
+        author: {
+          "@type": "Organization",
+          name: "Velora Digitizing",
+          url: BASE_URL,
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "Velora Digitizing",
+          url: BASE_URL,
+          logo: {
+            "@type": "ImageObject",
+            url: `${BASE_URL}/icon.png`,
+          },
+        },
       })),
     },
     {

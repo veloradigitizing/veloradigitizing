@@ -7,6 +7,7 @@ import CTABanner from "../components/CTABanner";
 import ServiceTypeGrid from "../components/ServiceTypeGrid";
 import type { IconName } from "../components/Icon";
 import { FAQ } from "../components/FAQ";
+import RelatedServicesNav from "../components/RelatedServicesNav";
 
 const VECTOR_TYPES: { icon: IconName; title: string; desc: string }[] = [
   { icon: "share", title: "Raster to Vector", desc: "Convert low-resolution JPEG, PNG, or BMP images into crisp, scalable vector files. Perfect for logos and artwork that need to be resized without losing quality." },
@@ -61,6 +62,8 @@ export default function VectorArtPage() {
       />
 
       <FAQ items={VECTOR_FAQS} title="Vector Art - Frequently Asked Questions" subtitle="Common questions about our vector conversion services." />
+
+      <RelatedServicesNav currentSlug="vector-art" />
 
       <CTABanner />
     </>
