@@ -14,6 +14,8 @@ interface ServiceNavItem {
   href: string;
   description: string;
   icon: IconName;
+  blogHref?: string;
+  blogTitle?: string;
 }
 
 const CORE_SERVICES: ServiceNavItem[] = [
@@ -23,6 +25,8 @@ const CORE_SERVICES: ServiceNavItem[] = [
     href: "/services/3d-puff-digitizing",
     description: "Raised dimensional foam embroidery for caps, snapbacks and hoodies.",
     icon: "layers",
+    blogHref: "/blog/3d-puff-embroidery-digitizing-guide",
+    blogTitle: "Complete 3D Puff Digitizing Guide & Formulas",
   },
   {
     slug: "cap-logo-digitizing",
@@ -30,6 +34,8 @@ const CORE_SERVICES: ServiceNavItem[] = [
     href: "/services/cap-logo-digitizing",
     description: "Center-out digitizing engineered for curved cap frames with zero seam bunching.",
     icon: "cap",
+    blogHref: "/blog/cap-hat-logo-embroidery-digitizing-guide",
+    blogTitle: "Cap & Hat Center-Out Digitizing Master Guide",
   },
   {
     slug: "applique-digitizing",
@@ -37,6 +43,8 @@ const CORE_SERVICES: ServiceNavItem[] = [
     href: "/services/applique-digitizing",
     description: "Tackdown and satin border stitches for jerseys, varsity jackets and large text.",
     icon: "scissors",
+    blogHref: "/blog/applique-embroidery-digitizing-guide",
+    blogTitle: "Appliqué Tack-Down & Cut Lines Guide",
   },
   {
     slug: "vector-art",
@@ -44,6 +52,8 @@ const CORE_SERVICES: ServiceNavItem[] = [
     href: "/vector-art",
     description: "Manual raster-to-vector artwork tracing for screen print, vinyl and DTF.",
     icon: "pen-tool",
+    blogHref: "/blog/vector-art-for-screen-printing-vs-embroidery",
+    blogTitle: "Vector Art for Screen Printing vs Embroidery Guide",
   },
   {
     slug: "patches",
@@ -51,15 +61,40 @@ const CORE_SERVICES: ServiceNavItem[] = [
     href: "/patches",
     description: "Embroidered, PVC, woven, and leather patches with merrowed borders.",
     icon: "sticker",
+    blogHref: "/blog/custom-patch-types-embroidered-woven-pvc-leather-chenille",
+    blogTitle: "Custom Patch Types & Backings Master Guide",
   },
 ];
 
 export default function RelatedServicesNav({ currentSlug }: RelatedServicesNavProps) {
+  const currentService = CORE_SERVICES.find((s) => s.slug === currentSlug);
   const otherServices = CORE_SERVICES.filter((s) => s.slug !== currentSlug);
 
   return (
     <section className="border-t border-navy-950/10 bg-slate-50/60 py-16">
       <div className="mx-auto max-w-7xl px-5 lg:px-10">
+        {currentService?.blogHref && (
+          <div className="mb-10 mx-auto max-w-2xl rounded-2xl border border-brand-600/25 bg-gradient-to-r from-brand-50/70 to-blue-50/40 p-5 shadow-xs flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div>
+              <p className="text-[11px] font-bold uppercase tracking-wider text-brand-600">
+                Technique Deep Dive
+              </p>
+              <h3 className="mt-1 font-serif text-base font-bold text-navy-950">
+                {currentService.blogTitle}
+              </h3>
+              <p className="mt-1 text-xs text-navy-950/65">
+                Learn stitch densities, needle choices, and machine hooping rules for this technique.
+              </p>
+            </div>
+            <Link
+              href={currentService.blogHref}
+              className="inline-flex shrink-0 items-center justify-center gap-1.5 rounded-lg bg-navy-950 px-4 py-2.5 text-xs font-semibold text-white transition-all hover:bg-brand-600 shadow-xs"
+            >
+              Read Guide &rarr;
+            </Link>
+          </div>
+        )}
+
         <Reveal direction="up" className="text-center">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-600">
             Explore More Services
