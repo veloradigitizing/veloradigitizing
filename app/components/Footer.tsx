@@ -99,6 +99,22 @@ const BLOG_LINKS = [
     href: "/blog/pvc-patches-vs-embroidered-patches",
   },
   {
+    label: "Small Text Micro-Lettering",
+    href: "/blog/how-to-digitize-small-text-micro-lettering-embroidery",
+  },
+  {
+    label: "Towel Knockdown Stitches",
+    href: "/blog/embroidery-on-towels-and-fleece-knockdown-stitch-guide",
+  },
+  {
+    label: "Free Digitizing Software",
+    href: "/blog/best-free-embroidery-digitizing-software-inkstitch-guide",
+  },
+  {
+    label: "Varsity Chenille Patches",
+    href: "/blog/chenille-and-varsity-jacket-patch-digitizing-guide",
+  },
+  {
     label: "Common Digitizing Mistakes",
     href: "/blog/common-embroidery-digitizing-mistakes",
   },

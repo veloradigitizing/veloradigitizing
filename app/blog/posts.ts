@@ -23,6 +23,10 @@ import post_pvc_patches_vs_embroidered_patches from './content/pvc-patches-vs-em
 import post_vector_art_for_screen_printing_vs_embroidery from './content/vector-art-for-screen-printing-vs-embroidery';
 import post_what_is_embroidery_digitizing from './content/what-is-embroidery-digitizing';
 import post_wilcom_vs_hatch_vs_brother_pe_design_embroidery_software from './content/wilcom-vs-hatch-vs-brother-pe-design-embroidery-software';
+import post_how_to_digitize_small_text_micro_lettering_embroidery from './content/how-to-digitize-small-text-micro-lettering-embroidery';
+import post_embroidery_on_towels_and_fleece_knockdown_stitch_guide from './content/embroidery-on-towels-and-fleece-knockdown-stitch-guide';
+import post_best_free_embroidery_digitizing_software_inkstitch_guide from './content/best-free-embroidery-digitizing-software-inkstitch-guide';
+import post_chenille_and_varsity_jacket_patch_digitizing_guide from './content/chenille-and-varsity-jacket-patch-digitizing-guide';
 
 export const BLOG_POSTS: BlogPost[] = [
   post_3d_puff_embroidery_digitizing_guide,
@@ -47,6 +51,10 @@ export const BLOG_POSTS: BlogPost[] = [
   post_vector_art_for_screen_printing_vs_embroidery,
   post_what_is_embroidery_digitizing,
   post_wilcom_vs_hatch_vs_brother_pe_design_embroidery_software,
+  post_how_to_digitize_small_text_micro_lettering_embroidery,
+  post_embroidery_on_towels_and_fleece_knockdown_stitch_guide,
+  post_best_free_embroidery_digitizing_software_inkstitch_guide,
+  post_chenille_and_varsity_jacket_patch_digitizing_guide,
 ];
 
 export const BLOG_CATEGORIES = Array.from(
