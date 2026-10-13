@@ -1,10 +1,10 @@
 import fs from 'fs';
 import path from 'path';
 
-const INDEXNOW_KEY = 'b6555280ca4340e2b6be80b0b61d8243';
-const SITE_HOST = 'www.veloradigitizing.com';
+const INDEXNOW_KEY = '2e86448a719e4063934826a1195b1159';
+const SITE_HOST = 'veloradigitizing.com';
 const KEY_LOCATION = `https://${SITE_HOST}/${INDEXNOW_KEY}.txt`;
-const BASE_URL = `https://${SITE_HOST}`;
+const BASE_URL = `https://www.veloradigitizing.com`;
 
 const coreRoutes = [
   '/',

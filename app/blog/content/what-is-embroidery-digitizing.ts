@@ -9,6 +9,8 @@ export const post: BlogPost = {
   "category": "Basics",
   "tags": [
     "embroidery digitizing",
+    "how to digitize for embroidery",
+    "how do i digitize a logo for embroidery",
     "beginner guide",
     "stitch files",
     "embroidery basics",
@@ -24,6 +26,10 @@ export const post: BlogPost = {
     "href": "/services"
   },
   "faqs": [
+    {
+      "question": "How do I digitize for embroidery or digitize a logo?",
+      "answer": "To digitize a logo for machine embroidery: (1) Import high-resolution artwork or clean vector paths; (2) Set underlay stitching to secure the fabric grain; (3) Map needle paths and angles with proper pull compensation (0.2mm to 0.4mm); (4) Assign stitch densities (0.38-0.42mm for standard satin columns); and (5) Export machine-ready DST or PES stitch files. If you want flawless production without costly stitch breaks or puckering, Velora Digitizing delivers professional custom files within 8 to 24 hours."
+    },
     {
       "question": "Is embroidery digitizing the same as graphic design or vectorizing?",
       "answer": "No. Vectorizing converts pixels into scalable vector lines (SVG/EPS) for digital print. Digitizing converts artwork into machine movement instructions: stitch types, needle penetration angles, density spacing (typically 0.38mm to 0.42mm), underlay scaffolding, and thread trim commands."
