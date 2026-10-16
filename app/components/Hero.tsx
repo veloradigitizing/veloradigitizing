@@ -1,12 +1,10 @@
-"use client";
-import { SITE_RATING } from "../site-rating";
 import Icon, { IconName } from "./Icon";
 import { Reveal } from "./Reveal";
 import { stagger } from "./stagger";
 import Link from "next/link";
 import Image, { type StaticImageData } from "next/image";
-import { useRef, useEffect, useState } from "react";
 import heroImage from "../images/veloraHero3.webp";
+import HeroStatsCard from "./HeroStatsCard";
 
 export function SectionTag({
   eyebrow,
@@ -162,93 +160,6 @@ export function StarRating({ count = 5 }: { count?: number }) {
   );
 }
 
-// Floating stats card — animated counter + rating, sits at bottom-right of hero on desktop
-function HeroStatsCard() {
-  const spanRef = useRef<HTMLSpanElement | null>(null);
-  const [count, setCount] = useState(3200);
-  const [rating, setRating] = useState<number>(SITE_RATING.value);
-  const [started, setStarted] = useState(false);
-
-  useEffect(() => {
-    const node = spanRef.current;
-    if (!node) return;
-    const obs = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setStarted(true);
-            obs.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.3 },
-    );
-    obs.observe(node);
-    return () => obs.disconnect();
-  }, []);
-
-  useEffect(() => {
-    if (!started) return;
-    let raf: number;
-    const startTime = performance.now();
-    const duration = 1800;
-    const startCount = 2850;
-    const targetCount = 3200;
-    const startRating = 4.6;
-    const targetRating = SITE_RATING.value;
-
-    const tick = (now: number) => {
-      const progress = Math.min((now - startTime) / duration, 1);
-      const eased = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
-      setCount(Math.round(startCount + eased * (targetCount - startCount)));
-      setRating(Math.round((startRating + eased * (targetRating - startRating)) * 10) / 10);
-      if (progress < 1) raf = requestAnimationFrame(tick);
-    };
-    raf = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(raf);
-  }, [started]);
-
-  const displayCount = (started ? count : 3200).toLocaleString("en-US");
-  const displayRating = (started ? rating : SITE_RATING.value).toFixed(1);
-
-  return (
-    <div
-      className="vr-hero-fade absolute hidden lg:flex lg:top-40 lg:right-10 xl:top-48"
-      style={{ animationDelay: "1s" }}
-    >
-      <div className="flex items-center gap-4 rounded-2xl bg-white px-6 py-4 shadow-2xl ring-1 ring-navy-950/5 vr-float">
-        <div>
-          <div className="font-serif text-3xl font-extrabold text-brand-600">
-            <span ref={spanRef}>{displayCount}+</span>
-          </div>
-          <div className="text-[10px] font-semibold uppercase tracking-wider text-slate-700">
-            Completed Projects
-          </div>
-        </div>
-        <div className="h-10 w-px bg-navy-950/10" />
-        <div>
-          <div className="flex items-center gap-1">
-            <svg
-              className="h-4 w-4 text-gold-400"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              aria-hidden
-            >
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-            </svg>
-            <span className="font-serif text-2xl font-extrabold text-navy-950">
-              {displayRating}
-            </span>
-          </div>
-          <div className="text-[10px] font-semibold uppercase tracking-wider text-slate-700">
-            Client Rating &middot; {SITE_RATING.count} reviews
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
 export default function Hero({
   eyebrow,
   titleLines,
@@ -296,18 +207,12 @@ export default function Hero({
       <div className="relative z-20 mx-auto max-w-7xl px-5 pt-28 pb-20 lg:px-10 lg:pt-36 lg:pb-28">
         <div className="max-w-3xl">
           {breadcrumbCurrent && (
-            <div
-              className="mb-4 vr-hero-down"
-              style={{ animationDelay: "0.05s" }}
-            >
+            <div className="mb-4">
               <Breadcrumb current={breadcrumbCurrent} />
             </div>
           )}
 
-          <p
-            className="text-xs font-bold uppercase tracking-[0.2em] text-brand-600 vr-hero-down"
-            style={{ animationDelay: "0.12s" }}
-          >
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-600">
             {eyebrow}
           </p>
 
@@ -315,8 +220,7 @@ export default function Hero({
             {titleLines.map((line, i) => (
               <span
                 key={i}
-                className="block vr-hero-up"
-                style={{ animationDelay: `${0.18 + i * 0.12}s` }}
+                className="block"
               >
                 {line.accent ? (
                   <span className="vr-text-gradient">{line.text}</span>
@@ -328,17 +232,11 @@ export default function Hero({
             ))}
           </h1>
 
-          <p
-            className="mt-6 max-w-2xl text-[15px] leading-relaxed text-navy-950/80 vr-hero-up"
-            style={{ animationDelay: "0.5s" }}
-          >
+          <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-navy-950/80">
             {description}
           </p>
 
-          <div
-            className="mt-8 flex flex-wrap gap-4 vr-hero-up"
-            style={{ animationDelay: "0.62s" }}
-          >
+          <div className="mt-8 flex flex-wrap gap-4">
             <Link
               href="/contact"
               className="vr-btn vr-btn-primary flex items-center gap-2 rounded-md bg-brand-600 px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-brand-700 shadow-md"
@@ -360,10 +258,7 @@ export default function Hero({
             </Link>
           </div>
 
-          <div
-            className="mt-6 vr-hero-fade"
-            style={{ animationDelay: "0.85s" }}
-          >
+          <div className="mt-6">
             <HeroFeatures features={features} />
           </div>
         </div>

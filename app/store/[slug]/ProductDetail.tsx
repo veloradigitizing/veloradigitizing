@@ -56,20 +56,18 @@ export default function ProductDetail({ product, related }: Props) {
       </nav>
 
       <div className="mt-8 grid grid-cols-1 gap-10 lg:grid-cols-2">
-        <Reveal direction="up">
-          <div className="relative aspect-square w-full overflow-hidden rounded-2xl bg-navy-950/[0.03]">
-            <Image
-              src={product.image}
-              alt={`${product.title} - ${product.categoryLabel} preview`}
-              fill
-              priority
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-cover"
-            />
-          </div>
-        </Reveal>
+        <div className="relative aspect-square w-full overflow-hidden rounded-2xl bg-navy-950/[0.03]">
+          <Image
+            src={product.image}
+            alt={`${product.title} - ${product.categoryLabel} preview`}
+            fill
+            priority
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            className="object-cover"
+          />
+        </div>
 
-        <Reveal direction="up" delay={80}>
+        <div>
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-600">
             {product.categoryLabel}
           </p>
@@ -164,7 +162,7 @@ export default function ProductDetail({ product, related }: Props) {
               </div>
             ))}
           </div>
-        </Reveal>
+        </div>
       </div>
 
       {related.length > 0 && (

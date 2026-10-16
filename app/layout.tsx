@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import type { Metadata, Viewport } from "next";
-import { Inter, Playfair_Display, Dancing_Script } from "next/font/google";
+import Script from "next/script";
+import { Inter, Playfair_Display } from "next/font/google";
 import Header from "./components/Header";
 import ScrollProgress from "./components/ScrollProgress";
 import Footer from "./components/Footer";
@@ -18,12 +19,6 @@ const inter = Inter({
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const script = Dancing_Script({
-  variable: "--font-script",
   subsets: ["latin"],
   display: "swap",
 });
@@ -267,25 +262,28 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${playfair.variable} ${script.variable} antialiased`}
+      className={`${inter.variable} ${playfair.variable} antialiased`}
     >
       <head>
-        {/* Google tag (gtag.js) */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-SF2BZRJZ7K"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        {/* Preconnect to Required Origins for analytics & CDNs */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
 
-  gtag('config', 'G-SF2BZRJZ7K');
-            `,
-          }}
+        {/* Google tag (gtag.js) - loaded afterInteractive to never block rendering / LCP */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-SF2BZRJZ7K"
+          strategy="afterInteractive"
         />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-SF2BZRJZ7K');
+          `}
+        </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

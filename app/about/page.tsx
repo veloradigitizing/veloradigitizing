@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
+import { Dancing_Script } from "next/font/google";
 import Hero from "../components/Hero";
+
+const script = Dancing_Script({
+  variable: "--font-script",
+  subsets: ["latin"],
+  display: "swap",
+});
 import aboutBg from "../images/velora-embroidery-machine-shirt-cap.webp";
 import OurStorySection from "../components/OurStorySection";
 import FeatureCards from "../components/FeatureCards";
@@ -150,7 +157,7 @@ const TEAM = [
 
 export default function AboutPage() {
   return (
-    <>
+    <div className={script.variable}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutJsonLd) }}
@@ -232,6 +239,6 @@ export default function AboutPage() {
         title="Ready to Digitize Your Design?"
         subtitle="Experience premium quality digitizing with fast delivery and 100% satisfaction."
       />
-    </>
+    </div>
   );
 }

@@ -1,5 +1,3 @@
-"use client";
-
 import Hero from "../components/Hero";
 import PricingTable from "../components/PricingTable";
 import patchesBg from "../images/velora-embroidery-showcase-2.webp";

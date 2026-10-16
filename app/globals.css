@@ -218,29 +218,28 @@ html {
    Elements start hidden; .is-visible is toggled by IntersectionObserver. */
 .vr-reveal {
   opacity: 0;
-  will-change: opacity, transform;
 }
 .vr-reveal.vr-up {
-  transform: translate3d(0, 28px, 0);
+  transform: translate3d(0, 24px, 0);
 }
 .vr-reveal.vr-down {
   transform: translate3d(0, -16px, 0);
 }
 .vr-reveal.vr-left {
-  transform: translate3d(-28px, 0, 0);
+  transform: translate3d(-24px, 0, 0);
 }
 .vr-reveal.vr-right {
-  transform: translate3d(28px, 0, 0);
+  transform: translate3d(24px, 0, 0);
 }
 .vr-reveal.vr-scale {
-  transform: scale(0.94);
+  transform: scale(0.96);
 }
 .vr-reveal.is-visible {
   opacity: 1;
   transform: translate3d(0, 0, 0) scale(1);
   transition:
-    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
-    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    opacity 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 /* ---------- Utility animation classes ---------- */

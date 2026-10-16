@@ -1,5 +1,3 @@
-"use client";
-
 import Hero from "../components/Hero";
 import vectorBg from "../images/design-workspace-car-sketch.webp";
 import WhyChooseUs from "../components/WhyChooseUs";
