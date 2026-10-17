@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import RelatedGuides from "../../components/RelatedGuides";
 
 export const metadata: Metadata = {
-  title: { absolute: "Applique Digitizing | Velora Digitizing" },
+  title: { absolute: "Applique Embroidery Digitizing for Varsity & Hoodies" },
   description:
-    "Professional applique embroidery digitizing for jackets, hoodies, jerseys & patches. Clean tackdown stitches, precise borders & all formats (DST, PES, JEF).",
+    "Custom applique embroidery digitizing for varsity jackets, hoodies & patches. Clean placement runs, tackdown stitches & machine-ready DST & PES files in 8-24h.",
   alternates: {
     canonical: "https://www.veloradigitizing.com/services/applique-digitizing",
   },
   openGraph: {
-    title: "Applique Embroidery Digitizing Services | Velora Digitizing",
+    title: "Applique Embroidery Digitizing for Varsity & Hoodies",
     description:
-      "Professional custom applique embroidery digitizing for jackets, hoodies, jerseys & patches. Clean tackdown stitches, precise borders, and all machine formats.",
+      "Custom applique embroidery digitizing for varsity jackets, hoodies & patches. Clean placement runs, tackdown stitches, and machine-ready DST & PES files.",
     url: "https://www.veloradigitizing.com/services/applique-digitizing",
     siteName: "Velora Digitizing",
     images: [
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Applique Embroidery Digitizing Services | Velora Digitizing",
+    title: "Applique Embroidery Digitizing for Varsity & Hoodies",
     description:
-      "Professional custom applique embroidery digitizing for jackets, hoodies, jerseys & patches. Clean tackdown stitches and all machine formats.",
+      "Custom applique embroidery digitizing for varsity jackets, hoodies & patches.",
     images: ["/images/og/og-services.jpg"],
   },
 };

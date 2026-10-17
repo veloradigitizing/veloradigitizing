@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import RelatedGuides from "../../components/RelatedGuides";
 
 export const metadata: Metadata = {
-  title: { absolute: "3D Puff Digitizing | Velora Digitizing" },
+  title: { absolute: "3D Puff Embroidery Digitizing for Caps & Hats (DST, PES)" },
   description:
-    "Professional 3D puff embroidery digitizing for caps, hats, snapbacks & hoodies. Clean end-capping, foam perforations & all machine formats (DST, PES, JEF).",
+    "Custom 3D puff embroidery digitizing for caps, snapbacks & hoodies. Clean foam perforations, calibrated density & machine-ready DST & PES files in 8-24h.",
   alternates: {
     canonical: "https://www.veloradigitizing.com/services/3d-puff-digitizing",
   },
   openGraph: {
-    title: "3D Puff Embroidery Digitizing Services | Velora Digitizing",
+    title: "3D Puff Embroidery Digitizing for Caps & Hats (DST, PES)",
     description:
-      "Professional 3D puff embroidery digitizing services for caps, hats, snapbacks & hoodies. Clean end-capping, foam perforations, and all machine formats.",
+      "Custom 3D puff embroidery digitizing for caps, snapbacks & hoodies. Clean foam perforations, calibrated density, and machine-ready DST & PES files.",
     url: "https://www.veloradigitizing.com/services/3d-puff-digitizing",
     siteName: "Velora Digitizing",
     images: [
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "3D Puff Embroidery Digitizing Services | Velora Digitizing",
+    title: "3D Puff Embroidery Digitizing for Caps & Hats (DST, PES)",
     description:
-      "Professional 3D puff embroidery digitizing services for caps, hats, snapbacks & hoodies.",
+      "Custom 3D puff embroidery digitizing for caps, snapbacks & hoodies in 8-24h.",
     images: ["/images/og/og-services.jpg"],
   },
 };

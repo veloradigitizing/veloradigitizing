@@ -12,16 +12,16 @@ import RelatedGuides from "../components/RelatedGuides";
 import PricingTable from "../components/PricingTable";
 
 export const metadata: Metadata = {
-  title: "Embroidery Digitizing Services in 8-24h",
+  title: { absolute: "Custom Embroidery Digitizing: DST, PES Files in 8-24h" },
   description:
-    "Professional custom embroidery digitizing. Get flawless 3D puff, left chest logos & patches in 8-24h with free revisions. Request your free quote today!",
+    "Order custom embroidery digitizing in DST & PES formats. Flawless 3D puff, left chest logos & cap digitizing delivered in 8-24h. Free stitch quote today!",
   alternates: {
     canonical: "https://www.veloradigitizing.com/services",
   },
   openGraph: {
-    title: "Embroidery Digitizing Services in 8-24h | Velora Digitizing",
+    title: "Custom Embroidery Digitizing: DST, PES Files in 8-24h",
     description:
-      "Professional custom embroidery digitizing. Flawless 3D puff, left chest logos & patches in 8-24h with free revisions. Request your free quote today!",
+      "Order custom embroidery digitizing in DST & PES formats. Flawless 3D puff, left chest logos & cap digitizing delivered in 8-24h with free revisions.",
     url: "https://www.veloradigitizing.com/services",
     siteName: "Velora Digitizing",
     images: [
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Embroidery Digitizing Services in 8-24h | Velora Digitizing",
+    title: "Custom Embroidery Digitizing: DST, PES Files in 8-24h",
     description:
-      "Professional custom embroidery digitizing. Flawless 3D puff, left chest logos & patches in 8-24h with free revisions. Request your free quote today!",
+      "Order custom embroidery digitizing in DST & PES formats. Flawless 3D puff, left chest logos & cap digitizing delivered in 8-24h.",
     images: ["/images/og/og-services.jpg"],
   },
 };

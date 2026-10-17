@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import RelatedGuides from "../components/RelatedGuides";
 
 export const metadata: Metadata = {
-  title: "Vector Art Conversion Services",
+  title: { absolute: "Convert JPG & PNG to Vector (AI, EPS, SVG) in 8-24h" },
   description:
-    "Convert raster images to clean scalable vector art (AI, EPS, SVG, PDF). Expert manual tracing for screen printing & embroidery. Get your free quote today!",
+    "Convert JPG, PNG & raster logos into clean scalable vector files (AI, EPS, SVG, PDF). Hand-traced for screen printing & embroidery. Free quote in 8-24 hours.",
   alternates: {
     canonical: "https://www.veloradigitizing.com/vector-art",
   },
   openGraph: {
-    title: "Vector Art Conversion Services | Velora Digitizing",
+    title: "Convert JPG & PNG to Vector (AI, EPS, SVG) in 8-24h",
     description:
-      "Convert raster images to clean scalable vector art (AI, EPS, SVG, PDF). Expert manual tracing for screen printing & embroidery. Get your free quote today!",
+      "Convert JPG, PNG & raster logos into clean scalable vector files (AI, EPS, SVG, PDF). Hand-traced for screen printing & embroidery.",
     url: "https://www.veloradigitizing.com/vector-art",
     siteName: "Velora Digitizing",
     images: [
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vector Art Conversion Services | Velora Digitizing",
+    title: "Convert JPG & PNG to Vector (AI, EPS, SVG) in 8-24h",
     description:
-      "Convert raster images to clean scalable vector art (AI, EPS, SVG, PDF). Expert manual tracing with 12-24h turnaround.",
+      "Convert raster images to clean scalable vector art (AI, EPS, SVG, PDF). Expert manual tracing with 8-24h turnaround.",
     images: ["/images/og/og-vector-art.jpg"],
   },
 };

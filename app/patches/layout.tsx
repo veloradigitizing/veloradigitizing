@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import RelatedGuides from "../components/RelatedGuides";
 
 export const metadata: Metadata = {
-  title: "Custom Patch Digitizing Services",
+  title: { absolute: "Custom Patch Digitizing: Embroidered, PVC & Chenille Files" },
   description:
-    "Custom patch digitizing for merrow, chenille, woven, PVC and iron-on patches, with manufacturing on request. DST, PES and EXP files in 8 to 24 hours.",
+    "Professional custom patch digitizing for embroidered, PVC, chenille & leather patches. Merrowed borders, iron-on backing & machine stitch files in 8-24 hours.",
   alternates: {
     canonical: "https://www.veloradigitizing.com/patches",
   },
   openGraph: {
-    title: "Custom Patch Digitizing Services | Velora Digitizing",
+    title: "Custom Patch Digitizing: Embroidered, PVC & Chenille Files",
     description:
-      "Custom patch digitizing for merrow, chenille, woven, PVC and iron-on patches, with manufacturing on request. DST, PES and EXP files in 8 to 24 hours.",
+      "Professional custom patch digitizing for embroidered, PVC, chenille & leather patches. Merrowed borders, iron-on backing & machine stitch files in 8-24 hours.",
     url: "https://www.veloradigitizing.com/patches",
     siteName: "Velora Digitizing",
     images: [
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Custom Patch Digitizing Services | Velora Digitizing",
+    title: "Custom Patch Digitizing: Embroidered, PVC & Chenille Files",
     description:
-      "Custom patch digitizing in any shape, size or backing: merrow, chenille, woven, PVC and iron-on patch files, with manufacturing on request.",
+      "Custom patch digitizing in any shape, size or backing: merrow, chenille, woven, PVC and iron-on patch files in 8-24h.",
     images: ["/images/og/og-patches.jpg"],
   },
 };
