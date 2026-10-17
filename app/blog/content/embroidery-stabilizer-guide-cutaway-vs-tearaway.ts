@@ -109,14 +109,14 @@ export const post: BlogPost = {
     {
       "type": "ul",
       "items": [
-        "**Pique Cotton Polo Shirt:** 1 layer 2.5oz Medium Cutaway + 1 layer Water-Soluble Topping (Solvy).",
+        "**Pique Cotton Polo Shirt:** 1 layer 2.5oz Medium Cutaway + 1 layer Water-Soluble Topping (Solvy) — see our [custom embroidery digitizing services](/services).",
         "**Performance Moisture-Wicking (Dry-Fit):** 1-2 layers 1.5oz No-Show PolyMesh Cutaway (soft against skin).",
-        "**Structured Baseball Cap (Buckram Front):** 1 layer 2.5oz Heavy Crisp Tearaway.",
+        "**Structured Baseball Cap (Buckram Front):** 1 layer 2.5oz Heavy Crisp Tearaway — essential for [cap logo digitizing](/services/cap-logo-digitizing) and [3D puff digitizing](/services/3d-puff-digitizing).",
         "**Unstructured Dad Hat:** 1 layer 2.5oz Firm Cutaway (prevents crown collapse).",
-        "**Fleece Hoodie / Quarter-Zip:** 1 layer 2.5oz Cutaway + 1 layer Water-Soluble Topping.",
+        "**Fleece Hoodie / Quarter-Zip:** 1 layer 2.5oz Cutaway + 1 layer Water-Soluble Topping (perfect for [applique digitizing](/services/applique-digitizing) and [3D puff embroidery](/services/3d-puff-digitizing)).",
         "**Terrycloth Bath Towel / Robe:** 1 layer 2.0oz Medium Tearaway (Back) + 1 layer Heavy Solvy Topping (Front).",
         "**Woven Dress Shirt / Twill Workwear:** 1 layer 2.0oz Firm Tearaway.",
-        "**Leather / Heavy Canvas / Carhartt Jacket:** 1 layer 3.0oz Heavy Cutaway + 80/12 Leather Wedge Needle."
+        "**Leather / Heavy Canvas / Carhartt Jacket:** 1 layer 3.0oz Heavy Cutaway + 80/12 Leather Wedge Needle (pairs with [custom patch digitizing](/patches))."
       ]
     },
     {
@@ -137,7 +137,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Stabilizers and digitizing underlays work as a unified system. At Velora Digitizing, our master punchers calibrate underlay foundations specifically tailored to your garment fabrics and stabilizer choices. Explore our [custom embroidery digitizing services](/services) or upload your artwork on our [contact page](/contact) for a 24-hour turnaround."
+      "text": "Stabilizers and digitizing underlays work as a unified system. At Velora Digitizing, our master punchers calibrate underlay foundations specifically tailored to your garment fabrics and stabilizer choices. Explore our full [custom embroidery digitizing services](/services), order specialized [3D puff digitizing](/services/3d-puff-digitizing), or upload your artwork on our [contact page](/contact) for a guaranteed 24-hour turnaround."
     }
   ]
 };

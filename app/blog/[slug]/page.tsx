@@ -378,6 +378,30 @@ export default async function BlogPostPage({ params }: Props) {
             );
           })()}
 
+          {/* Contextual Service Callout: Passes PageRank from indexed blog to target service page and boosts reader conversion */}
+          <div className="mb-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 rounded-xl border border-brand-600/20 bg-gradient-to-r from-brand-50/70 to-white p-4 sm:p-5 shadow-xs">
+            <div>
+              <p className="text-[11px] font-bold uppercase tracking-wider text-brand-700">
+                Commercial Digitizing Service
+              </p>
+              <p className="mt-1 text-sm font-bold text-navy-950">
+                Need production-ready machine files? Explore our{" "}
+                <Link
+                  href={post.relatedService.href}
+                  className="text-brand-600 underline decoration-brand-600/30 underline-offset-2 hover:text-brand-700"
+                >
+                  {post.relatedService.label}
+                </Link>
+              </p>
+            </div>
+            <Link
+              href={post.relatedService.href}
+              className="inline-flex shrink-0 items-center justify-center gap-1.5 rounded-md bg-brand-600 px-4 py-2 text-xs font-bold text-white shadow-sm hover:bg-brand-700 transition-colors"
+            >
+              Get Free Quote <span aria-hidden>&rarr;</span>
+            </Link>
+          </div>
+
           {post.content.map((block, i) => (
             <Block key={i} block={block} />
           ))}
