@@ -26,6 +26,10 @@ export const post: BlogPost = {
   },
   "faqs": [
     {
+      "question": "Should edge run or tatami underlay stitch first?",
+      "answer": "In professional embroidery digitizing sequencing, the edge-run underlay always stitches first along the perimeter boundary. This establishes the physical outline and prevents push-pull fabric distortion. The open tatami grid (or zig-zag) underlay then stitches immediately inside this boundary to compress the fabric fibers and lock the garment to the stabilizer backing before the dense top cover stitches are sewn."
+    },
+    {
       "question": "Why can't I just increase top density instead of adding underlay?",
       "answer": "Increasing top density without underlay drives excessive thread into unsupported fabric, causing severe puckering, fabric cutting, and needle jams. Underlay anchors the fabric to the stabilizer backing and lifts the top stitches off the garment surface."
     },

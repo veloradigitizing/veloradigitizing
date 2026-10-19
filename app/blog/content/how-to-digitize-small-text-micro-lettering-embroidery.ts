@@ -25,6 +25,10 @@ export const post: BlogPost = {
   },
   "faqs": [
     {
+      "question": "How do you digitize an outline or small text on a hat?",
+      "answer": "To digitize small text or outlines on a hat: 1) Sequence embroidery center-out, bottom-up to prevent seam bunching on curved cap frames; 2) Maintain a minimum letter height of 5.0mm for standard 40wt thread, or down to 3.5mm if using fine 60wt thread; 3) Use 1 layer of 2.5oz heavy crisp tearaway or firm cutaway backing with tight drum hooping; 4) Replace heavy edge-run underlays with a single light center-run stitch to avoid letter crowding; and 5) Apply +0.25mm push-pull compensation to counteract hat curvature tension."
+    },
+    {
       "question": "What is the minimum readable text height for standard machine embroidery?",
       "answer": "With standard #40 weight thread and a 75/11 needle, 5mm (approximately 0.20 inches) is the absolute safe minimum for satin column lettering. For letters smaller than 5mm down to 3mm, you must switch to #60 weight thread, a 65/9 needle, and digitize single-line center running stitches or bean stitches."
     },
@@ -119,6 +123,10 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "Digitizing micro-lettering on structured or unstructured caps requires extra care. Because cap frames curve over rotary cylinders, always sequence letters **center-out** to push distortion toward cap sides rather than bunching in the seam. For in-depth cap rules, explore our [Cap Logo Embroidery Digitizing Guide](/blog/cap-hat-logo-embroidery-digitizing-guide)."
+    },
+    {
+      "type": "tip",
+      "text": "Struggling with small lettering on snapbacks or curved hats? Let our master punchers manually calibrate your stitch file for clean, readable sewouts. Order professional [cap logo embroidery digitizing](/services/cap-logo-digitizing) or [custom 3D puff digitizing](/services/3d-puff-digitizing) starting at just $6.99 with guaranteed 8-24 hour delivery."
     },
     {
       "type": "p",

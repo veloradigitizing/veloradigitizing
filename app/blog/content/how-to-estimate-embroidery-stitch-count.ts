@@ -25,6 +25,10 @@ export const post: BlogPost = {
   },
   "faqs": [
     {
+      "question": "How to estimate the number of stitches for embroidery digitizing?",
+      "answer": "To accurately estimate embroidery stitch counts: 1) Multiply solid fill areas (width × height in inches) by 1,000 to 1,200 stitches per square inch; 2) Add 150 stitches for every standard letter (0.25\" to 0.5\" tall) or 500 stitches for large 1-inch varsity letters; 3) Add 100 to 150 stitches per linear inch for running stitch outlines; and 4) Add 40% to 70% extra density for 3D puff foam designs. For an instant guaranteed stitch count with zero guesswork, send your artwork to Velora Digitizing for a free 24-hour analysis."
+    },
+    {
       "question": "How many stitches are in an average 3.5-inch left chest logo?",
       "answer": "A standard 3.5-inch horizontal left chest corporate logo typically ranges from 4,500 to 7,500 stitches. Logos with solid background fills, intricate crests, or complex taglines can exceed 9,000 to 12,000 stitches."
     },

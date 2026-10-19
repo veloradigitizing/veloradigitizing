@@ -25,6 +25,10 @@ export const post: BlogPost = {
   },
   "faqs": [
     {
+      "question": "How does Hatch embroidery software compare to Wilcom embroidery software?",
+      "answer": "When comparing Hatch to Wilcom: both are engineered by Wilcom and share the exact same industry-leading stitch generation engine. Hatch 3 is designed for home crafters and boutique decorators ($1,099 one-time cost, simplified UI, single-head optimization). Wilcom EmbroideryStudio is built for industrial multi-head factories ($3,000–$4,500+, native CorelDRAW integration, multi-head team queues, enterprise machine protocols). For businesses wanting Wilcom-quality stitchouts without buying expensive software, outsourcing digitizing to Velora Digitizing costs just $6.99–$19.99 per design with zero software investment."
+    },
+    {
       "question": "Is Wilcom EmbroideryStudio worth the $3,000+ price tag?",
       "answer": "For commercial contract embroidery shops running high-volume multi-head machines, yes. Wilcom's proprietary .EMB object architecture, CorelDRAW vector integration, automated branching, and unmatched pull compensation tools save hundreds of production hours."
     },
@@ -34,7 +38,7 @@ export const post: BlogPost = {
     },
     {
       "question": "Why do most apparel shops outsource digitizing instead of buying software?",
-      "answer": "Commercial software costs $1,500 to $4,500+ and requires months of specialized training to master textile physics. Outsourcing to dedicated services like Velora Digitizing delivers professional, tested files for $10 to $25 per design with zero software overhead."
+      "answer": "Commercial software costs $1,500 to $4,500+ and requires months of specialized training to master textile physics. Outsourcing to dedicated services like Velora Digitizing delivers professional, tested files for $6.99 to $19.99 per design with zero software overhead."
     }
   ],
   "content": [

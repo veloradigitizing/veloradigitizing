@@ -44,6 +44,27 @@
 
 ---
 
+## 1.1 Bing Webmaster Tools Baseline (Recorded: October 20, 2026)
+
+*Source: Microsoft Bing Webmaster Tools — Live Performance Report*
+
+### High-Level KPI Scorecard (Bing)
+* **Total Impressions:** `69`
+* **Total Clicks:** `2`
+* **Indexing Mechanism:** Instant IndexNow Broadcast (`submit-clean-indexnow.mjs`)
+
+### Top Ranking Queries on Bing (Single-Digit Page 1 Positions)
+| Target Search Query on Bing | Impressions | Average Position | Target Blog Guide / URL | Status |
+| :--- | :---: | :---: | :--- | :--- |
+| `digitizing outline for small text on hat` | 2 | **1.0** 🥇 | `/blog/how-to-digitize-small-text-micro-lettering-embroidery` | **#1 on Bing!** |
+| `how to estimate number of stitches for embroidery digitizing` | 2 | **1.5** 🥈 | `/blog/how-to-estimate-embroidery-stitch-count` | **Top 2 on Bing!** |
+| `hatch embroidery software compared to wilcom embroidery software` | 2 | **3.0** 🥉 | `/blog/wilcom-vs-hatch-vs-brother-pe-design-embroidery-software` | **Top 3 on Bing!** |
+| `edge run or tatami underlay first` | 2 | **3.0** 🥉 | `/blog/embroidery-underlay-types-explained` | **Top 3 on Bing!** |
+| `woven vs embroidered vs pvc patches` | 2 | **8.0** | `/blog/custom-patch-types-embroidered-woven-pvc-leather-chenille` | **Page 1 on Bing** |
+| `difference between edge run underlay and parallel underlay embrilliance` | 2 | **8.5** | `/blog/embroidery-underlay-types-explained` | **Page 1 on Bing** |
+
+---
+
 ## 2. Optimizations Deployed (October 19, 2026)
 
 The following changes were coded, tested, and verified with `npm run build` (141 static pages, 0 errors):
