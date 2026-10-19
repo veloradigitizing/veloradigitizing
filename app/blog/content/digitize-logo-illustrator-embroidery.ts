@@ -25,6 +25,10 @@ export const post: BlogPost = {
   },
   "faqs": [
     {
+      "question": "How to digitize a logo for embroidery in Illustrator?",
+      "answer": "To digitize a logo for embroidery using Adobe Illustrator: 1) Scale the artwork to 1:1 real-world embroidery size; 2) Convert all typography to vector outlines (Ctrl+Shift+O); 3) Expand all strokes into closed vector paths (Object > Expand); 4) Merge same-color shapes using Pathfinder Unite to eliminate double-stitching; 5) Verify minimum letter height of 4.5mm (0.18\") and column width of 0.8mm-1.0mm; 6) Export as a clean vector SVG or AI legacy format; and 7) Import into specialized embroidery punch software (like Wilcom or Hatch) to assign underlays, pull compensation, and export production-ready DST or PES stitch files."
+    },
+    {
       "question": "Can Adobe Illustrator directly export DST or PES embroidery files?",
       "answer": "No. Native Adobe Illustrator cannot export machine stitch files like DST or PES directly because vectors contain mathematical geometric curves, whereas embroidery files require discrete needle puncture coordinates, trims, jump stitches, and thread tensions. You must prepare the vector in Illustrator and then process it through dedicated embroidery digitizing software or professional digitizing services."
     },
@@ -190,11 +194,11 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Adobe Illustrator is the essential starting point for top-tier embroidery. By cleaning vector paths, expanding strokes, sizing at 1:1 scale, and adhering to stitch tolerance guidelines, you pave the way for a smooth, high-precision sewout."
+      "text": "Adobe Illustrator is the essential starting point for top-tier embroidery. By cleaning vector paths, expanding strokes, sizing at 1:1 scale, and adhering to stitch tolerance guidelines, you pave the way for a smooth, high-precision sewout. To ensure your finished sewouts don't pucker, pair your file with the right backing from our [embroidery stabilizer guide: cutaway vs tearaway](/blog/embroidery-stabilizer-guide-cutaway-vs-tearaway)."
     },
     {
       "type": "p",
-      "text": "Need professional assistance converting your Illustrator files into ready-to-sew DST or PES files? Explore our [vector art recreation services](/vector-art) and [custom patches options](/patches) today!"
+      "text": "Need production-ready machine files? Explore our specialized [3D puff embroidery digitizing](/services/3d-puff-digitizing), order [custom patches digitizing](/patches), or let our punchers recreate your artwork via our [vector art conversion service](/vector-art)."
     }
   ]
 };

@@ -26,6 +26,18 @@ export const post: BlogPost = {
   },
   "faqs": [
     {
+      "question": "What is a cut away stabilizer for embroidery and how does it work?",
+      "answer": "A cut away stabilizer (or cut-away backing) is a permanent non-woven synthetic polyester backing that is hooped beneath stretchy or wearable fabrics. Unlike tearaway backing, cut-away stabilizer does not break down under machine needle penetrations or repeated washing cycles, providing permanent dimensional stability to prevent fabric puckering, stitch distortion, and outline misalignment."
+    },
+    {
+      "question": "What weight cut away stabilizer is best for machine embroidery?",
+      "answer": "Commercial standards specify 2.5oz to 3.0oz medium-heavy cutaway for standard pique polo shirts, fleece hoodies, and corporate apparel. For lightweight white or pastel performance dry-fit shirts, use 1.5oz No-Show PolyMesh cutaway to eliminate visible backing shadows while maintaining multi-directional stretch resistance."
+    },
+    {
+      "question": "How do you properly cut away stabilizer without snipping fabric or stitches?",
+      "answer": "Use sharp, blunt-tipped curved embroidery applique scissors (duckbill shears). Turn the garment inside out, pull the cut-away backing gently away from the embroidered stitches, and glide the shears around the perimeter leaving a clean 1/8-inch to 1/4-inch (3mm to 6mm) margin. Never pull or tear cut-away stabilizer by hand."
+    },
+    {
       "question": "What is the single most important rule for choosing stabilizers?",
       "answer": "The universal rule: 'If it stretches or you wear it, use Cutaway. If it is rigid/woven or a structured cap, use Tearaway. If it has high fabric pile or loops (fleece/towels), add a Water-Soluble Topping.'"
     },
@@ -68,8 +80,13 @@ export const post: BlogPost = {
       "items": [
         "**Primary Function:** Provides permanent structural support throughout the lifetime of the garment.",
         "**Best Fabrics:** All stretchy knits, polo shirts, t-shirts, performance moisture-wicking dry-fit, fleece hoodies, sweaters, and softshell jackets.",
-        "**Standard Weights:** 2.0oz (Light), **2.5oz - 3.0oz (Medium/Heavy Commercial Standard)**."
+        "**Standard Weights:** 2.0oz (Light), **2.5oz - 3.0oz (Medium/Heavy Commercial Standard)**.",
+        "**Trimming Method:** Trim gently around the perimeter with duckbill applique shears, leaving a 1/4\" border around the stitching. Never rip or pull."
       ]
+    },
+    {
+      "type": "tip",
+      "text": "For corporate left chest emblems, matching the right cut away stabilizer weight with precision underlays is critical. Check our in-depth [left chest logo embroidery digitizing guide](/blog/left-chest-logo-embroidery-digitizing-guide) for exact placement and stitch budget rules."
     },
     {
       "type": "h3",

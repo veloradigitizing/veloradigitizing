@@ -25,8 +25,8 @@ export const post: BlogPost = {
   },
   "faqs": [
     {
-      "question": "What is the standard size for a left chest embroidery logo?",
-      "answer": "The ideal width for a standard horizontal left chest logo is between 3.25 and 3.75 inches (max 4.0 inches). For circular or square emblems, 2.5 to 3.0 inches in diameter ensures the design does not wrap awkwardly under the armpit."
+      "question": "What is the standard embroidery size for left chest logos?",
+      "answer": "The standard embroidery size for left chest logos is 3.25 to 3.75 inches wide for horizontal emblems (height: 1.25 to 1.75 inches). For square or circular badges, the standard size is 2.5 to 3.0 inches in diameter. On larger adult shirts (2XL to 4XL), sizing can be expanded up to 4.0 inches wide."
     },
     {
       "question": "Where should a left chest logo be placed on a polo shirt?",
@@ -34,7 +34,7 @@ export const post: BlogPost = {
     },
     {
       "question": "What backing stabilizer should be used for polo shirts?",
-      "answer": "Always use a medium-weight (2.5oz to 3.0oz) **Cutaway stabilizer** for knit polo shirts. Never use tearaway backing on pique or performance knits, as the knit will stretch and distort after repeated washing."
+      "answer": "Always use a medium-weight (2.5oz to 3.0oz) **Cutaway stabilizer** for knit polo shirts. Never use tearaway backing on pique or performance knits, as the knit will stretch and distort after repeated washing. Read our complete [embroidery stabilizer guide: cutaway vs tearaway](/blog/embroidery-stabilizer-guide-cutaway-vs-tearaway) for full fabric matrices."
     }
   ],
   "content": [

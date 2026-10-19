@@ -74,6 +74,52 @@ const patchesJsonLd = {
         },
       ],
     },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.veloradigitizing.com/patches#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the minimum order quantity for patches?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For digital patch files, there is no minimum order. For physical patch manufacturing, the minimum is typically 50 pieces. Contact us for exact pricing based on your quantity, size, and backing type.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "How long does patch digitizing take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Standard turnaround is 24 hours for the digitized file. Rush delivery under 12 hours is available for an additional 30% fee. Physical patch manufacturing takes 7-10 business days after file approval.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "What file formats do you deliver for custom patches?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We deliver all major embroidery formats: DST, PES, JEF, EXP, VP3, and XXX. You will receive all formats in a single zip file.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between embroidered and woven patches?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Embroidered patches have raised stitching on a twill backing, which is thicker and more tactile. Woven patches are made entirely from thread woven together, which is flatter with finer detail and smaller text.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer physical patch manufacturing too?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we handle the full process from digitizing to manufacturing. After you approve the digital proof, we produce the physical patches in your chosen type, size, and backing.",
+          },
+        },
+      ],
+    },
   ],
 };
 

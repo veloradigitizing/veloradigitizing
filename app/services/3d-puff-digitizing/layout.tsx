@@ -80,6 +80,52 @@ const puffJsonLd = {
         },
       ],
     },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.veloradigitizing.com/services/3d-puff-digitizing#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is 3D puff embroidery digitizing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "3D puff digitizing is a technique where high-density satin stitches are programmed over a layer of EVA embroidery foam. When stitched, the needle punctures and cuts the foam along the satin edges, leaving a three-dimensional, raised embroidery effect.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Can any design be digitized for 3D puff?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bold letters, block fonts, and simple solid shapes work best. Thin lines (under 3mm) cannot hold foam, and very wide shapes (over 12mm) require split satin or flat fill.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "What foam thickness should I use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "2mm foam is the industry standard for caps and snapbacks, offering a crisp raised look without straining machine needles. 3mm foam is used for heavier lettering on structured jackets and heavy twill.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Why does foam poke out of poor digitizing files?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Foam pokes out when the digitizer misses end-capping stitches at the open ends of satin columns, or when stitch density is too loose to cut through the foam cleanly. Our files include precise end-caps and density calibrated to cleanly perforate the foam.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "What machine file formats are provided?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We provide DST, PES, JEF, EXP, VP3, and XXX formats, complete with a PDF production sheet showing color sequence and programmed foam stops.",
+          },
+        },
+      ],
+    },
   ],
 };
 
