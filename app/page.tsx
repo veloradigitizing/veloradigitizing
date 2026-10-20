@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Hero from "./components/Hero";
 import FeaturesSection from "./components/FeaturesSection";
 import homeBg from "./images/velora-embroidery-machine-lion.webp";
@@ -117,6 +118,102 @@ export default function Home() {
               <h3 className="text-xs font-bold uppercase tracking-wider text-navy-950/60">Quality Assurance</h3>
               <p className="mt-2 font-serif text-lg font-bold text-navy-950">Machine Sew-Out Tested</p>
               <p className="mt-1 text-xs text-navy-950/70">Free revisions, simulated stitch previews, and 100% money-back satisfaction guarantee.</p>
+            </div>
+          </div>
+
+          {/* Direct Crawlable Core Services Navigation for Googlebot & Users */}
+          <div className="mt-10 border-t border-navy-950/10 pt-8">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-brand-600">
+              Direct Service Navigation
+            </p>
+            <h3 className="mt-1 font-serif text-xl font-bold text-navy-950">
+              Specialized Digitizing Solutions &amp; Machine File Formats
+            </h3>
+            <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <Link
+                href="/services/3d-puff-digitizing"
+                className="group flex flex-col justify-between rounded-xl border border-navy-950/10 bg-white p-4 shadow-sm transition-all hover:border-brand-600 hover:shadow-md"
+              >
+                <div>
+                  <h4 className="font-serif text-base font-bold text-navy-950 group-hover:text-brand-600">
+                    3D Puff Embroidery Digitizing &rarr;
+                  </h4>
+                  <p className="mt-1 text-xs leading-relaxed text-navy-950/70">
+                    Custom raised EVA foam digitizing for snapbacks, caps, and streetwear hoodies with calibrated density and end-capping.
+                  </p>
+                </div>
+                <span className="mt-3 text-[11px] font-semibold text-brand-600">DST, PES Files &middot; 8-24h Turnaround</span>
+              </Link>
+              <Link
+                href="/services/cap-logo-digitizing"
+                className="group flex flex-col justify-between rounded-xl border border-navy-950/10 bg-white p-4 shadow-sm transition-all hover:border-brand-600 hover:shadow-md"
+              >
+                <div>
+                  <h4 className="font-serif text-base font-bold text-navy-950 group-hover:text-brand-600">
+                    Cap &amp; Hat Logo Digitizing &rarr;
+                  </h4>
+                  <p className="mt-1 text-xs leading-relaxed text-navy-950/70">
+                    Center-out curved frame digitizing engineered for baseball caps, trucker hats, and dad hats with zero seam bunching.
+                  </p>
+                </div>
+                <span className="mt-3 text-[11px] font-semibold text-brand-600">Curved Frames &middot; High Density</span>
+              </Link>
+              <Link
+                href="/services/applique-digitizing"
+                className="group flex flex-col justify-between rounded-xl border border-navy-950/10 bg-white p-4 shadow-sm transition-all hover:border-brand-600 hover:shadow-md"
+              >
+                <div>
+                  <h4 className="font-serif text-base font-bold text-navy-950 group-hover:text-brand-600">
+                    Applique Embroidery Digitizing &rarr;
+                  </h4>
+                  <p className="mt-1 text-xs leading-relaxed text-navy-950/70">
+                    Accurate positioning lines, tackdown stitches, and satin edge borders for sports jerseys and varsity letter apparel.
+                  </p>
+                </div>
+                <span className="mt-3 text-[11px] font-semibold text-brand-600">Fabric Cut Lines &middot; Laser Ready</span>
+              </Link>
+              <Link
+                href="/patches"
+                className="group flex flex-col justify-between rounded-xl border border-navy-950/10 bg-white p-4 shadow-sm transition-all hover:border-brand-600 hover:shadow-md"
+              >
+                <div>
+                  <h4 className="font-serif text-base font-bold text-navy-950 group-hover:text-brand-600">
+                    Custom Patch Digitizing &rarr;
+                  </h4>
+                  <p className="mt-1 text-xs leading-relaxed text-navy-950/70">
+                    Embroidered, woven, PVC, and chenille patch design with merrowed borders, iron-on, and velcro backing options.
+                  </p>
+                </div>
+                <span className="mt-3 text-[11px] font-semibold text-brand-600">Physical &middot; Digital Patches</span>
+              </Link>
+              <Link
+                href="/vector-art"
+                className="group flex flex-col justify-between rounded-xl border border-navy-950/10 bg-white p-4 shadow-sm transition-all hover:border-brand-600 hover:shadow-md"
+              >
+                <div>
+                  <h4 className="font-serif text-base font-bold text-navy-950 group-hover:text-brand-600">
+                    Vector Art Conversion &rarr;
+                  </h4>
+                  <p className="mt-1 text-xs leading-relaxed text-navy-950/70">
+                    High-resolution manual raster-to-vector artwork recreation for screen printing, vinyl cutting, and DTF heat transfers.
+                  </p>
+                </div>
+                <span className="mt-3 text-[11px] font-semibold text-brand-600">AI, EPS, SVG &middot; Clean Paths</span>
+              </Link>
+              <Link
+                href="/services"
+                className="group flex flex-col justify-between rounded-xl border border-brand-600/20 bg-brand-50/50 p-4 shadow-sm transition-all hover:border-brand-600 hover:shadow-md"
+              >
+                <div>
+                  <h4 className="font-serif text-base font-bold text-navy-950 group-hover:text-brand-600">
+                    All Digitizing Services &rarr;
+                  </h4>
+                  <p className="mt-1 text-xs leading-relaxed text-navy-950/70">
+                    Explore our complete digitizing portfolio including jacket back, left chest, towel monogram, and custom packages.
+                  </p>
+                </div>
+                <span className="mt-3 text-[11px] font-semibold text-brand-600">View Full Catalog &middot; Free Quote</span>
+              </Link>
             </div>
           </div>
         </div>

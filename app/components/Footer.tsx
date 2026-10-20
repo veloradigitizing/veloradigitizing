@@ -58,16 +58,16 @@ const QUICK_LINKS = [
 ];
 
 const SERVICE_LINKS = [
-  { label: "3D Puff Embroidery", href: "/services/3d-puff-digitizing" },
-  { label: "Cap Logo Digitizing", href: "/services/cap-logo-digitizing" },
-  { label: "Applique Digitizing", href: "/services/applique-digitizing" },
-  { label: "Vector Art Conversion", href: "/vector-art" },
-  { label: "Custom Patches", href: "/patches" },
+  { label: "3D Puff Embroidery Digitizing", href: "/services/3d-puff-digitizing" },
+  { label: "Cap & Hat Logo Digitizing", href: "/services/cap-logo-digitizing" },
+  { label: "Applique Embroidery Digitizing", href: "/services/applique-digitizing" },
+  { label: "Vector Art Conversion Service", href: "/vector-art" },
+  { label: "Custom Patches Digitizing", href: "/patches" },
   { label: "All Digitizing Services", href: "/services" },
-  { label: "Jacket Back Design", href: "/portfolio?category=jacket-back" },
-  { label: "Left Chest Logo", href: "/portfolio?category=left-chest" },
-  { label: "Chenille Patches", href: "/portfolio?category=chenille" },
-  { label: "Towel Design", href: "/portfolio?category=towel" },
+  { label: "Jacket Back Digitizing", href: "/portfolio?category=jacket-back" },
+  { label: "Left Chest Logo Digitizing", href: "/portfolio?category=left-chest" },
+  { label: "Chenille Patch Digitizing", href: "/portfolio?category=chenille" },
+  { label: "Towel Monogram Digitizing", href: "/portfolio?category=towel" },
   { label: "Bundle Packages", href: "/portfolio?category=bundles" },
 ];
 

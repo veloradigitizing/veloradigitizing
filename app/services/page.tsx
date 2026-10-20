@@ -10,6 +10,7 @@ import { FAQ, SERVICES_FAQS } from "../components/FAQ";
 import PortfolioSection from "../components/PortfolioSection";
 import RelatedGuides from "../components/RelatedGuides";
 import PricingTable from "../components/PricingTable";
+import RelatedServicesNav from "../components/RelatedServicesNav";
 
 export const metadata: Metadata = {
   title: { absolute: "Custom Embroidery Digitizing: DST, PES Files in 8-24h" },
@@ -176,6 +177,8 @@ export default function ServicesPage() {
         ctaLabel="TALK TO AN EXPERT"
         ctaHref="/contact"
       />
+
+      <RelatedServicesNav currentSlug="services" />
 
       <RelatedGuides
         title="Embroidery Digitizing Guides"
