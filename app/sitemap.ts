@@ -4,7 +4,7 @@ import { BLOG_POSTS } from "./blog/posts";
 
 const BASE_URL = "https://www.veloradigitizing.com";
 // Stable last-modified date prevents Googlebot from treating timestamps as dynamic noise
-const STATIC_LASTMOD = new Date("2026-10-21T00:00:00.000Z");
+const STATIC_LASTMOD = new Date("2026-10-22T00:00:00.000Z");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
