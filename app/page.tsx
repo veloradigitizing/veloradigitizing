@@ -79,6 +79,7 @@ export default function Home() {
             sub: "100% money-back guaranteed",
           },
         ]}
+        showQuickServices
       />
 
       <FeaturesSection />
@@ -219,7 +220,7 @@ export default function Home() {
         </div>
       </section>
 
-      <ServicesGrid />
+      <ServicesGrid showAllLink />
 
       <FeaturedCategories />
 

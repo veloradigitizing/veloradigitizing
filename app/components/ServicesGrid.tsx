@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { SectionTag } from "./Section";
 import ServiceCard, { Service } from "./ServiceCard";
 import { SERVICES } from "./services-data";
@@ -10,12 +11,14 @@ export default function ServicesGrid({
   subtitle = "We provide a wide range of embroidery digitizing services to meet all your needs.",
   services,
   className,
+  showAllLink = false,
 }: {
   eyebrow?: string;
   title?: string;
   subtitle?: string;
   services?: Service[];
   className?: string;
+  showAllLink?: boolean;
 }) {
   const items = services ?? SERVICES;
 
@@ -33,6 +36,16 @@ export default function ServicesGrid({
           </Reveal>
         ))}
       </div>
+      {showAllLink && (
+        <div className="mt-12 text-center">
+          <Link
+            href="/services"
+            className="inline-flex items-center gap-2 rounded-xl border border-brand-600/30 bg-brand-50/60 px-6 py-3.5 text-sm font-bold uppercase tracking-wider text-brand-600 transition-all hover:bg-brand-600 hover:text-white shadow-sm"
+          >
+            Explore All Digitizing Services &amp; Pricing Details &rarr;
+          </Link>
+        </div>
+      )}
     </section>
   );
 }

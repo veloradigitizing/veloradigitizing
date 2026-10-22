@@ -168,6 +168,7 @@ export default function Hero({
   imageLabel = "Embroidered Cap & Digitizing Software Mockup",
   bgImage,
   features,
+  showQuickServices = false,
 }: {
   eyebrow: string;
   titleLines: { text: string; accent?: boolean }[];
@@ -176,6 +177,7 @@ export default function Hero({
   imageLabel?: string;
   bgImage?: StaticImageData;
   features?: { icon: IconName; title: string; sub: string }[];
+  showQuickServices?: boolean;
 }) {
   const bg = bgImage ?? heroImage;
   return (
@@ -257,6 +259,19 @@ export default function Hero({
               </span>
             </Link>
           </div>
+
+          {showQuickServices && (
+            <div className="mt-4 flex flex-wrap items-center gap-x-2 gap-y-1.5 text-xs text-navy-950/70">
+              <span className="font-semibold text-brand-600">Popular Services:</span>
+              <Link href="/services" className="font-medium text-navy-950 transition-colors hover:text-brand-600 hover:underline">All Services &amp; Pricing</Link>
+              <span className="text-navy-950/30">&bull;</span>
+              <Link href="/services/3d-puff-digitizing" className="font-medium text-navy-950 transition-colors hover:text-brand-600 hover:underline">3D Puff Digitizing</Link>
+              <span className="text-navy-950/30">&bull;</span>
+              <Link href="/services/cap-logo-digitizing" className="font-medium text-navy-950 transition-colors hover:text-brand-600 hover:underline">Cap Logos</Link>
+              <span className="text-navy-950/30">&bull;</span>
+              <Link href="/services/applique-digitizing" className="font-medium text-navy-950 transition-colors hover:text-brand-600 hover:underline">Applique</Link>
+            </div>
+          )}
 
           <div className="mt-6">
             <HeroFeatures features={features} />
