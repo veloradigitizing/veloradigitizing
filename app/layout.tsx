@@ -107,6 +107,7 @@ export const metadata: Metadata = {
   other: {
     "msvalidate.01": "2E86448A719E4063934826A1195B1159",
     "og:see_also": [
+      "https://www.trustpilot.com/review/veloradigitizing.com",
       "https://www.pinterest.com/veloradigitizing/",
       "https://www.instagram.com/veloradigitizing",
       "https://www.threads.net/@veloradigitizing",
