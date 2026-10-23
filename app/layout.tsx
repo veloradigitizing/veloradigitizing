@@ -194,6 +194,7 @@ export default function RootLayout({
           },
         ],
         "sameAs": [
+          "https://www.trustpilot.com/review/veloradigitizing.com",
           "https://www.pinterest.com/veloradigitizing/",
           "https://www.instagram.com/veloradigitizing",
           "https://www.threads.net/@veloradigitizing",

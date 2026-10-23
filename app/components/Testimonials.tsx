@@ -1,6 +1,7 @@
 "use client";
 
 import Icon from "./Icon";
+import { SiTrustpilot } from "react-icons/si";
 import { SectionTag } from "./Section";
 import { Reveal } from "./Reveal";
 import { stagger } from "./stagger";
@@ -204,6 +205,15 @@ export default function Testimonials() {
               <p className="mt-3 text-xs font-semibold text-brand-300">
                 {SITE_RATING.breakdownText}
               </p>
+              <a
+                href="https://www.trustpilot.com/review/veloradigitizing.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2.5 inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 hover:text-emerald-300 transition-colors focus:outline-none focus:underline"
+              >
+                <SiTrustpilot className="h-3.5 w-3.5 text-[#00b67a]" />
+                <span>Verified reviews on Trustpilot &rarr;</span>
+              </a>
             </div>
 
             {/* Breakdown Progress Bars */}

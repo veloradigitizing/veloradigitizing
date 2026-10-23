@@ -8,6 +8,7 @@ import {
   FaThreads,
   FaPinterestP,
 } from "react-icons/fa6";
+import { SiTrustpilot } from "react-icons/si";
 import { Mail, Phone, Clock, MapPin, ArrowRight } from "lucide-react";
 import Logo from "./Logo";
 
@@ -165,6 +166,18 @@ export default function Footer() {
                 </a>
               ))}
             </div>
+
+            {/* Trustpilot Review Badge */}
+            <a
+              href="https://www.trustpilot.com/review/veloradigitizing.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View Velora Digitizing verified reviews on Trustpilot"
+              className="mt-4 inline-flex items-center gap-2 rounded-lg border border-emerald-500/25 bg-emerald-950/30 px-3 py-1.5 text-xs font-medium text-emerald-200 transition-all duration-300 hover:border-emerald-500/50 hover:bg-emerald-900/40 hover:text-white"
+            >
+              <SiTrustpilot className="h-4 w-4 text-[#00b67a]" />
+              <span>Verified on <strong className="font-semibold text-white">Trustpilot</strong></span>
+            </a>
           </div>
 
           {/* 2. Quick Links */}
