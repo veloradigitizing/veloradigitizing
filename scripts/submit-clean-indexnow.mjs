@@ -73,6 +73,13 @@ const blogSlugs = [
   'vector-art-for-screen-printing-vs-embroidery',
   'what-is-embroidery-digitizing',
   'wilcom-vs-hatch-vs-brother-pe-design-embroidery-software',
+  'how-to-digitize-small-text-micro-lettering-embroidery',
+  'embroidery-on-towels-and-fleece-knockdown-stitch-guide',
+  'best-free-embroidery-digitizing-software-inkstitch-guide',
+  'chenille-and-varsity-jacket-patch-digitizing-guide',
+  'hoodie-embroidery-digitizing-guide',
+  'custom-leather-patches-for-hats-guide',
+  'why-outsource-embroidery-digitizing-usa-guide',
 ];
 
 const allUrls = [

@@ -27,6 +27,9 @@ import post_how_to_digitize_small_text_micro_lettering_embroidery from './conten
 import post_embroidery_on_towels_and_fleece_knockdown_stitch_guide from './content/embroidery-on-towels-and-fleece-knockdown-stitch-guide';
 import post_best_free_embroidery_digitizing_software_inkstitch_guide from './content/best-free-embroidery-digitizing-software-inkstitch-guide';
 import post_chenille_and_varsity_jacket_patch_digitizing_guide from './content/chenille-and-varsity-jacket-patch-digitizing-guide';
+import post_hoodie_embroidery_digitizing_guide from './content/hoodie-embroidery-digitizing-guide';
+import post_custom_leather_patches_for_hats_guide from './content/custom-leather-patches-for-hats-guide';
+import post_why_outsource_embroidery_digitizing_usa_guide from './content/why-outsource-embroidery-digitizing-usa-guide';
 
 export const BLOG_POSTS: BlogPost[] = [
   post_3d_puff_embroidery_digitizing_guide,
@@ -55,6 +58,9 @@ export const BLOG_POSTS: BlogPost[] = [
   post_embroidery_on_towels_and_fleece_knockdown_stitch_guide,
   post_best_free_embroidery_digitizing_software_inkstitch_guide,
   post_chenille_and_varsity_jacket_patch_digitizing_guide,
+  post_hoodie_embroidery_digitizing_guide,
+  post_custom_leather_patches_for_hats_guide,
+  post_why_outsource_embroidery_digitizing_usa_guide,
 ];
 
 export const BLOG_CATEGORIES = Array.from(
