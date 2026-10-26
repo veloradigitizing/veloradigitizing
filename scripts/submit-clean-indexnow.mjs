@@ -6,6 +6,7 @@ const BASE_URL = `https://${SITE_HOST}`;
 const staticRoutes = [
   '/',
   '/services',
+  '/pricing',
   '/services/3d-puff-digitizing',
   '/services/cap-logo-digitizing',
   '/services/applique-digitizing',
