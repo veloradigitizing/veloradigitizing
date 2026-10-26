@@ -17,15 +17,15 @@ export default function HomeStats({
   variant?: "default" | "compact";
 }) {
   return (
-    <section className={variant === "compact" ? "bg-navy-950" : "bg-navy-950 py-12 lg:py-14"}>
-      <div className={variant === "compact" ? "mx-auto grid max-w-7xl grid-cols-2 gap-8 px-5 py-10 sm:grid-cols-4 lg:px-10" : "mx-auto max-w-7xl px-5 lg:px-10"}>
-        <div className={variant === "compact" ? "" : "grid grid-cols-2 gap-8 sm:grid-cols-4"}>
+    <section className={variant === "compact" ? "bg-navy-950/80 border-t border-white/10 py-10" : "bg-navy-950 py-12 lg:py-14"}>
+      <div className="mx-auto max-w-7xl px-5 lg:px-10">
+        <div className="grid grid-cols-2 gap-8 sm:grid-cols-4">
           {stats.map((stat, i) => (
             <Reveal
               key={stat.label}
               direction="up"
               delay={stagger(i, 100)}
-              className="flex items-center justify-center gap-3"
+              className="flex items-center justify-center gap-3 text-left"
             >
               <Icon
                 name={stat.icon}
