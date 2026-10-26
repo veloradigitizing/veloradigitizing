@@ -2,17 +2,17 @@ import type { BlogPost } from '../types';
 
 export const post: BlogPost = {
   "slug": "3d-puff-embroidery-digitizing-guide",
-  "title": "3D Puff Embroidery Digitizing: The Complete Pro Guide for Caps & Apparel",
-  "metaTitle": "3D Puff Embroidery Digitizing for Caps",
-  "description": "Master 3D puff embroidery digitizing. Learn EVA foam selection (2mm-4mm), capping stitches, stitch density formulas (0.18-0.24mm), and cap crown hooping.",
+  "title": "How to Do 3D Puff Embroidery on Hats: The Pro Digitizing & Foam Guide",
+  "metaTitle": "How to Do 3D Puff Embroidery on Hats & Caps",
+  "description": "Learn how to do 3D puff embroidery on hats and caps. Pro digitizing guide: EVA foam selection (2mm-4mm), capping stitches, density formulas, and hooping.",
   "excerpt": "3D puff embroidery creates bold, raised 3D lettering on caps and outerwear. Discover the exact digitizing rules, foam densities, and cap hooping techniques.",
   "category": "Techniques",
   "tags": [
-    "3d puff digitizing",
+    "3d puff embroidery on hats",
+    "how to do 3d puff embroidery",
+    "3d puff embroidery",
     "cap embroidery",
-    "foam digitizing",
-    "hat digitizing",
-    "3d embroidery"
+    "foam digitizing"
   ],
   "publishedAt": "2026-08-23",
   "readTime": 9,

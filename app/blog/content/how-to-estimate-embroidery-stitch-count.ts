@@ -2,14 +2,14 @@ import type { BlogPost } from '../types';
 
 export const post: BlogPost = {
   "slug": "how-to-estimate-embroidery-stitch-count",
-  "title": "How to Estimate Embroidery Stitch Count: The Sizing, Pricing & Run Time Guide",
-  "metaTitle": "How to Estimate Embroidery Stitch Count",
-  "description": "Learn how to accurately estimate embroidery stitch counts for left chest logos, caps, and jacket backs. Formulas, pricing charts, and run time math.",
+  "title": "Embroidery Stitch Count Calculator & Estimation Formulas (2026 Guide)",
+  "metaTitle": "Embroidery Stitch Count Calculator & Formula Guide",
+  "description": "Free embroidery stitch count calculator guide and formulas. Estimate stitch counts by square inch, letter size, and garment placement accurately.",
   "excerpt": "Before ordering custom digitizing or quoting apparel decorating jobs, you need to know the stitch count. Learn the 1-square-inch rule and calculation formulas.",
   "category": "Pricing & Guides",
   "tags": [
+    "embroidery stitch count calculator",
     "estimate stitch count",
-    "embroidery stitch calculator",
     "stitch count formulas",
     "embroidery pricing guide",
     "logo stitch count"

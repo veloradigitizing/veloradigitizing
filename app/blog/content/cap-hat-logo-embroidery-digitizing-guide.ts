@@ -2,17 +2,17 @@ import type { BlogPost } from '../types';
 
 export const post: BlogPost = {
   "slug": "cap-hat-logo-embroidery-digitizing-guide",
-  "title": "Cap Embroidery Digitizing: Hat Logo Size, Placement & Stitch Order Guide",
-  "metaTitle": "Cap Embroidery Digitizing & Logo Size",
-  "description": "Cap embroidery digitizing explained: max hat logo sizes by cap type, center-out stitch order, underlay, text limits and mistakes that cause distortion.",
+  "title": "Hat Logo Size for Embroidery & Cap Digitizing Guide (Placement & Stitch Order)",
+  "metaTitle": "Hat Logo Size for Embroidery & Cap Digitizing Guide",
+  "description": "Master hat logo size for embroidery and cap digitizing. Max dimensions for snapbacks, dad hats, structured 6-panel caps, and center-out stitch order.",
   "excerpt": "A cap is the hardest common garment to embroider. Learn the logo size limits for each cap type, the center-out stitch order, and the settings that keep hat embroidery sharp.",
   "category": "Techniques",
   "tags": [
-    "cap embroidery digitizing",
     "hat logo size for embroidery",
-    "cap logo digitizing",
+    "cap embroidery digitizing",
     "hat embroidery placement",
-    "center-out digitizing"
+    "center-out digitizing",
+    "cap logo digitizing"
   ],
   "publishedAt": "2026-10-05",
   "readTime": 9,

@@ -2,16 +2,16 @@ import type { BlogPost } from '../types';
 
 export const post: BlogPost = {
   "slug": "jacket-back-embroidery-digitizing-guide",
-  "title": "Jacket Back Embroidery Digitizing: Stitch Count, Sequencing & Stabilizers",
-  "metaTitle": "Jacket Back Embroidery Digitizing Guide",
-  "description": "Master large jacket back digitizing (35k-85k stitches). Learn panel sequencing, fabric warping control, multi-layer stabilizers, and denim/leather setups.",
+  "title": "Jacket Back Embroidery Size & Stitch Count: Digitizing & Stabilizer Guide",
+  "metaTitle": "Jacket Back Embroidery Size & Stitch Count Guide",
+  "description": "Master jacket back embroidery size (10-12.5 inches), stitch counts (35k-85k stitches), panel sequencing, multi-layer stabilizers, and denim/leather setups.",
   "excerpt": "Jacket back embroidery requires massive stitch counts and complex sequencing. Discover how to prevent garment distortion and manage 50,000+ stitch files.",
   "category": "Techniques",
   "tags": [
+    "jacket back embroidery size",
     "jacket back embroidery",
     "large embroidery designs",
     "jacket back digitizing",
-    "heavy embroidery",
     "stabilizers for jackets"
   ],
   "publishedAt": "2026-09-16",

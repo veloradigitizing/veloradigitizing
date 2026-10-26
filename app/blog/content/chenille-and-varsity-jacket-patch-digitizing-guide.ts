@@ -2,18 +2,18 @@ import type { BlogPost } from '../types';
 
 export const post: BlogPost = {
   "slug": "chenille-and-varsity-jacket-patch-digitizing-guide",
-  "title": "Chenille & Varsity Jacket Patches: The Ultimate Digitizing & Production Guide",
-  "metaTitle": "Chenille & Varsity Patch Digitizing Guide",
-  "description": "Master chenille patch digitizing for varsity letterman jackets. Learn moss loop stitches, chainstitch borders, wool felt stabilization, and production setups.",
+  "title": "Custom Chenille Patches for Varsity Jackets: The Pro Digitizing & Making Guide",
+  "metaTitle": "Custom Chenille Patches for Varsity Jackets Guide",
+  "description": "Master custom chenille patches for varsity letterman jackets. Learn moss loop stitches, chainstitch borders, wool felt stabilization, and digitizing setups.",
   "excerpt": "Vintage chenille patches dominate varsity jackets and streetwear. Learn how loop moss stitches work, chainstitch borders, and the secrets to digitizing custom chenille emblems.",
   "category": "Techniques",
   "tags": [
+    "custom chenille patches for jackets",
     "chenille patch digitizing",
     "varsity jacket patches",
     "letterman jacket chenille",
     "moss loop stitch",
-    "custom chenille patches",
-    "chainstitch embroidery"
+    "custom chenille patches"
   ],
   "publishedAt": "2026-10-14",
   "readTime": 9,
