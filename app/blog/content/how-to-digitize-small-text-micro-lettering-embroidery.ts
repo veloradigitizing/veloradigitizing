@@ -2,12 +2,13 @@ import type { BlogPost } from '../types';
 
 export const post: BlogPost = {
   "slug": "how-to-digitize-small-text-micro-lettering-embroidery",
-  "title": "How to Embroider Small Letters & Micro-Text: Digitizing Master Guide",
-  "metaTitle": "How to Embroider Small Letters: Micro-Text Digitizing Guide",
-  "description": "Learn how to embroider small letters and micro-text without blobbing. Master 65/9 needles, 60wt thread, center-line running stitches, and small font digitizing.",
+  "title": "How to Machine Embroider Small Letters & Micro-Text: Digitizing Guide",
+  "metaTitle": "How to Machine Embroider Small Letters: Digitizing Guide",
+  "description": "Learn how to machine embroider small letters and micro-text. Choose needles, thread, underlay and digitizing settings to keep tiny lettering readable.",
   "excerpt": "Small lettering under 5mm is the hardest embroidery challenge. Learn how to digitize microscopic fonts, select 60wt thread, and eliminate thread breaks and blob letters.",
   "category": "Techniques",
   "tags": [
+    "how to machine embroider small letters",
     "how to embroider small letters",
     "small text embroidery tips",
     "micro lettering embroidery",
@@ -15,6 +16,7 @@ export const post: BlogPost = {
     "60wt embroidery thread"
   ],
   "publishedAt": "2026-10-14",
+  "updatedAt": "2026-10-27",
   "readTime": 8,
   "image": "/images/blog/how-to-digitize-small-text-micro-lettering-embroidery.webp",
   "imagePrompt": "Macro close-up shot of crisp microscopic white and gold satin embroidered lettering stitched cleanly on a navy polo shirt chest, tiny 4mm lettering with needle-sharp definition, extreme detail showing individual threads, professional studio lighting, 16:9.",

@@ -2,19 +2,20 @@ import type { BlogPost } from '../types';
 
 export const post: BlogPost = {
   "slug": "digitize-logo-illustrator-embroidery",
-  "title": "How to Digitize a Logo for Embroidery in Adobe Illustrator: Step-by-Step Guide",
-  "metaTitle": "Digitize Embroidery Logos in Illustrator",
-  "description": "Learn how to prepare and digitize a logo for embroidery in Adobe Illustrator. Step-by-step vector prep, stitch conversion and DST/PES export tips.",
-  "excerpt": "Can Adobe Illustrator create embroidery files? Discover how to prepare vector artwork in Illustrator and convert it into flawless machine-ready DST and PES stitch files.",
+  "title": "How to Digitize a Logo for Embroidery: Illustrator Prep & Stitch Conversion",
+  "metaTitle": "Digitize a Logo for Embroidery: Illustrator Workflow",
+  "description": "Prepare a logo in Adobe Illustrator, then digitize it in embroidery software. Follow vector cleanup, stitch conversion and DST/PES export steps.",
+  "excerpt": "Prepare your logo in Adobe Illustrator, then use embroidery digitizing software to create DST or PES stitch files. Follow the complete artwork-to-stitch workflow.",
   "category": "Tutorials",
   "tags": [
     "illustrator to embroidery",
-    "digitize logo in illustrator",
+    "how to digitize a logo for embroidery in illustrator",
     "vector to dst",
     "embroidery digitizing tutorial",
     "adobe illustrator vector art"
   ],
   "publishedAt": "2026-10-02",
+  "updatedAt": "2026-10-27",
   "readTime": 9,
   "image": "/images/blog/digitize-logo-illustrator-embroidery.webp",
   "imagePrompt": "Top-down view of a creative studio workstation with Adobe Illustrator showing a vector logo on a 4K display and embroidery stitch generation software side by side, clean modern aesthetic, shallow depth of field, photorealistic 16:9.",
@@ -25,7 +26,7 @@ export const post: BlogPost = {
   },
   "faqs": [
     {
-      "question": "How to digitize a logo for embroidery in Illustrator?",
+      "question": "How do I prepare a logo in Illustrator for embroidery digitizing?",
       "answer": "To digitize a logo for embroidery using Adobe Illustrator: 1) Scale the artwork to 1:1 real-world embroidery size; 2) Convert all typography to vector outlines (Ctrl+Shift+O); 3) Expand all strokes into closed vector paths (Object > Expand); 4) Merge same-color shapes using Pathfinder Unite to eliminate double-stitching; 5) Verify minimum letter height of 4.5mm (0.18\") and column width of 0.8mm-1.0mm; 6) Export as a clean vector SVG or AI legacy format; and 7) Import into specialized embroidery punch software (like Wilcom or Hatch) to assign underlays, pull compensation, and export production-ready DST or PES stitch files."
     },
     {
