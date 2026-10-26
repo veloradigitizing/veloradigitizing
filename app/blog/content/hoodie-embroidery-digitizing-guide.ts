@@ -3,8 +3,8 @@ import type { BlogPost } from '../types';
 export const post: BlogPost = {
   "slug": "hoodie-embroidery-digitizing-guide",
   "title": "Hoodie Embroidery Digitizing: Settings, Stabilizer & Production Guide",
-  "metaTitle": "Hoodie Embroidery Digitizing: Settings, Density & Stabilizer Guide",
-  "description": "Master custom hoodie and sweatshirt embroidery digitizing. Learn fleece pull compensation, stitch density, cutaway stabilizer setups, and center chest placement.",
+  "metaTitle": "Hoodie Embroidery Digitizing Guide",
+  "description": "Hoodie and sweatshirt embroidery digitizing: fleece pull compensation, stitch density, cutaway stabilizer setups and center chest placement.",
   "excerpt": "Digitizing for heavyweight fleece hoodies requires careful tension, underlay, and pull compensation. Discover the exact machine settings and stabilization rules to prevent puckering and stitch sink.",
   "category": "Techniques",
   "tags": [

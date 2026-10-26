@@ -94,8 +94,8 @@ const BLOG_LINKS = [
     href: "/blog/how-to-prepare-logo-for-embroidery-digitizing",
   },
   {
-    label: "Embroidered vs PVC Patches",
-    href: "/blog/pvc-patches-vs-embroidered-patches",
+    label: "Patch Types Compared",
+    href: "/blog/custom-patch-types-embroidered-woven-pvc-leather-chenille",
   },
   {
     label: "Small Text Micro-Lettering",

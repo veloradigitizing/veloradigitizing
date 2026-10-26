@@ -69,7 +69,6 @@ const blogSlugs = [
   'jacket-back-embroidery-digitizing-guide',
   'left-chest-logo-embroidery-digitizing-guide',
   'manual-digitizing-vs-ai-auto-digitizing',
-  'pvc-patches-vs-embroidered-patches',
   'vector-art-for-screen-printing-vs-embroidery',
   'what-is-embroidery-digitizing',
   'wilcom-vs-hatch-vs-brother-pe-design-embroidery-software',

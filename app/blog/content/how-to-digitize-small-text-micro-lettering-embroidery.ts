@@ -3,8 +3,8 @@ import type { BlogPost } from '../types';
 export const post: BlogPost = {
   "slug": "how-to-digitize-small-text-micro-lettering-embroidery",
   "title": "How to Digitize Small Text & Micro-Lettering for Embroidery: The Master Guide",
-  "metaTitle": "Digitize Small Text & Micro-Lettering for Embroidery",
-  "description": "Master micro-lettering and small text embroidery digitizing. Learn needle sizes (65/9), 60wt thread, center-line running stitches, and push-pull formulas under 5mm.",
+  "metaTitle": "Small Text & Micro-Lettering Digitizing",
+  "description": "Small text and micro-lettering embroidery digitizing: 65/9 needles, 60wt thread, center-line running stitches and push-pull formulas under 5mm.",
   "excerpt": "Small lettering under 5mm is the hardest embroidery challenge. Learn how to digitize microscopic fonts, select 60wt thread, and eliminate thread breaks and blob letters.",
   "category": "Techniques",
   "tags": [

@@ -14,10 +14,12 @@ export const post: BlogPost = {
     "pvc patches",
     "leather patches",
     "chenille patches",
+    "pvc patches vs embroidered patches",
     "patch backings"
   ],
   "publishedAt": "2026-08-31",
-  "readTime": 10,
+  "updatedAt": "2026-10-26",
+  "readTime": 12,
   "image": "/images/blog/custom-patch-types-embroidered-woven-pvc-leather-chenille.webp",
   "imagePrompt": "Top-down showcase of six distinct custom patch types arranged in an aesthetic grid on dark wood: a classic embroidered patch with merrowed border, a high-detail woven patch, a 3D molded PVC rubber patch, an engraved caramel leather patch, a fluffy varsity chenille patch, and a printed badge, studio lighting, 16:9.",
   "imageAlt": "Showcase comparing custom embroidered, woven, PVC, leather, chenille, and sublimated patches",
@@ -33,6 +35,14 @@ export const post: BlogPost = {
     {
       "question": "Which custom patch type is most durable for outdoor and tactical gear?",
       "answer": "PVC (Polyvinyl Chloride) rubber patches are the most durable. They are 100% waterproof, mudproof, UV fade-resistant, and will not fray, unravel, or stain in harsh weather conditions."
+    },
+    {
+      "question": "Are PVC patches or embroidered patches cheaper for a small order?",
+      "answer": "Embroidered patches are cheaper for runs under about 50 pieces because they only need a digitized stitch file, not a steel mold. PVC patches carry a one-time mold fee of roughly $50 to $150, but the per-unit price drops sharply on reorders and bulk runs of 300 or more."
+    },
+    {
+      "question": "Which patch type handles tiny text and fine lines better: PVC or embroidered?",
+      "answer": "PVC. Liquid PVC is poured into CNC-machined metal molds, so it reproduces micro-lines and lettering that 40wt embroidery thread cannot. Embroidered lettering needs a minimum height of about 4 to 5 mm to stay legible, while woven patches can go down to roughly 2 mm."
     },
     {
       "question": "What are the best patch backing options?",
@@ -123,6 +133,62 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "Created with looping yarn stitched onto wool felt backing, producing the iconic fuzzy texture seen on collegiate letterman jackets and streetwear streetwear hoodies."
+    },
+    {
+      "type": "h2",
+      "text": "PVC Patches vs Embroidered Patches: Head-to-Head"
+    },
+    {
+      "type": "p",
+      "text": "The two patch types brands most often weigh against each other are classic embroidered thread emblems and molded PVC rubber badges. They are made in completely different ways, and that drives everything from weather resistance to the price of a 25-piece order."
+    },
+    {
+      "type": "h3",
+      "text": "Material and manufacturing"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "**Embroidered patches** are stitched in polyester or rayon thread onto a heavy twill base and finished with a merrowed or heat-cut satin border. The only tooling is the digitized stitch file.",
+        "**PVC patches** are made from liquid polyvinyl chloride poured into a custom CNC-milled metal mold and heat-cured into a flexible rubber badge with 2D or layered 3D relief."
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Weather and wear"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "**PVC:** 100% waterproof and mud-proof. Dirt wipes off with a damp cloth, and the material resists heat, sub-zero cold and UV fading, which is why it dominates tactical gear, search-and-rescue teams and outdoor sportswear.",
+        "**Embroidered:** Very durable on jackets, caps and everyday apparel, but thread can snag on brambles and absorb grease or moisture in heavy industrial use."
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Detail and visual style"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "**Choose embroidered** when you want a textured, heritage fabric look for trucker hats, bomber jackets, school clubs or corporate uniforms.",
+        "**Choose PVC** when the artwork needs sculpted 3D bevels, matte modern textures, glow-in-the-dark elements or typography finer than thread can resolve."
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Cost and order quantity"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "**Embroidered:** Low startup cost because a digitized file is quick to produce and there is no physical tooling. Best value for runs under 50 pieces and for designs that change often.",
+        "**PVC:** A one-time mold fee up front, after which unit prices fall steeply on reorders and volume runs. Best value once an order passes a few hundred pieces and the design is final."
+      ]
+    },
+    {
+      "type": "tip",
+      "text": "If your design relies on gradient colour shading, neither thread nor molded PVC reproduces it well. Consider woven or sublimated printed patches as a lighter-weight alternative to both."
     },
     {
       "type": "h2",

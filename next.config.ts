@@ -11,6 +11,27 @@ const LEGACY_STORE_SLUGS = [
   "ny-logo-embroidery-digitizing-file",
   "bull-head-embroidery-digitizing-file",
   "college-logo-embroidery-digitizing-file",
+  // Cap-logo catalog entries whose image files never existed (replaced by
+  // entries that map 1:1 to real files in public/images/cap-logo).
+  "3d-puff-cap-logo-embroidery-digitizing-pes",
+  "baseball-cap-logo-embroidery-digitizing-dst",
+  "classic-cap-logo-digitizing-services",
+  "corporate-cap-logo-embroidery-digitizing",
+  "custom-business-cap-logo-digitizing-dst",
+  "custom-cap-logo-embroidery-digitizing",
+  "custom-dad-hat-logo-digitizing-pes",
+  "detailed-cap-logo-embroidery-digitizing",
+  "fitted-cap-logo-embroidery-digitizing",
+  "flat-brim-cap-logo-digitizing-dst",
+  "front-panel-cap-logo-embroidery-digitizing",
+  "high-quality-cap-logo-digitizing-services",
+  "intricate-cap-logo-embroidery-digitizing",
+  "premium-cap-logo-embroidery-digitizing",
+  "small-text-cap-logo-digitizing-pes",
+  "snapback-cap-logo-embroidery-digitizing",
+  "sports-team-cap-logo-digitizing-dst",
+  "trucker-cap-logo-embroidery-digitizing",
+  "vector-to-cap-logo-embroidery-digitizing",
 ];
 
 const nextConfig: NextConfig = {
@@ -67,6 +88,18 @@ const nextConfig: NextConfig = {
       {
         source: "/blog/cheap-3d-puff-embroidery-digitizing-for-caps/",
         destination: "/blog/3d-puff-embroidery-digitizing-guide",
+        permanent: true,
+      },
+      // Merged into the custom patch types guide (same topic, was competing
+      // for the same "pvc vs embroidered patches" queries).
+      {
+        source: "/blog/pvc-patches-vs-embroidered-patches",
+        destination: "/blog/custom-patch-types-embroidered-woven-pvc-leather-chenille",
+        permanent: true,
+      },
+      {
+        source: "/blog/pvc-patches-vs-embroidered-patches/",
+        destination: "/blog/custom-patch-types-embroidered-woven-pvc-leather-chenille",
         permanent: true,
       },
       {

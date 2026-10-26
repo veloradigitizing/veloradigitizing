@@ -3,7 +3,7 @@ import type { BlogPost } from '../types';
 export const post: BlogPost = {
   "slug": "why-outsource-embroidery-digitizing-usa-guide",
   "title": "Why US Embroidery Shops Outsource Digitizing: Cost, Quality & Speed",
-  "metaTitle": "Why US Shops Outsource Embroidery Digitizing: Cost & ROI Guide",
+  "metaTitle": "Outsource Embroidery Digitizing: US Guide",
   "description": "Discover why commercial embroidery shops and apparel decorators in the USA outsource digitizing. Compare in-house software & labor costs vs outsourced ROI.",
   "excerpt": "Hiring full-time digitizers and paying thousands for software licenses can eat commercial embroidery shop margins. Learn why top US decorators outsource digitizing for 8-24h turnaround.",
   "category": "Business",

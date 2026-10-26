@@ -3,8 +3,8 @@ import type { BlogPost } from '../types';
 export const post: BlogPost = {
   "slug": "best-free-embroidery-digitizing-software-inkstitch-guide",
   "title": "Best Free Embroidery Digitizing Software: Is Ink/Stitch Actually Usable? (2026)",
-  "metaTitle": "Best Free Embroidery Digitizing Software (2026)",
-  "description": "Honest review of free embroidery digitizing software: Ink/Stitch, Bernina Artlink, and Embrilliance Express. Compare features, learning curves, and free vs paid vs outsourcing.",
+  "metaTitle": "Best Free Embroidery Digitizing Software",
+  "description": "Honest review of free embroidery digitizing software: Ink/Stitch, Bernina ArtLink and Embrilliance Express. Features, learning curve and when to outsource.",
   "excerpt": "Looking for free embroidery digitizing software? We test Ink/Stitch, Inkscape extensions, and free viewers to see if zero-dollar software can produce commercial stitch quality.",
   "category": "Software",
   "tags": [

@@ -15,6 +15,7 @@ import {
   SHIPPING_DETAILS,
 } from "../merchant-policies";
 import { getAggregateRating, getStoreReviews } from "../reviews";
+import { STORE_PRODUCT_FAQS } from "../product-faqs";
 import StoreReviews from "./StoreReviews";
 
 const BASE_URL = "https://www.veloradigitizing.com";
@@ -74,8 +75,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 /* ------------------------------------------------------------------
-   Editorial content generated per item so every product page answers
-   the practical questions buyers research before purchase.
+   FAQ content. Indexed items (patches and bundles) get hand-written,
+   product-specific questions from ../product-faqs so no two indexed
+   pages share the same FAQ copy. The generic template below is only a
+   fallback for the noindex catalog items that have no unique copy yet.
    ------------------------------------------------------------------ */
 
 const HEADING_NOUN: Record<StoreItem["kind"], string> = {
@@ -112,7 +115,7 @@ function buildFaqs(item: StoreItem) {
 }
 
 function StoreFaq({ item }: { item: StoreItem }) {
-  const faqs = buildFaqs(item);
+  const faqs = STORE_PRODUCT_FAQS[item.slug] ?? buildFaqs(item);
   return (
     <div className="mt-12">
       <h2 className="font-serif text-2xl font-bold text-navy-950 sm:text-3xl">
@@ -288,52 +291,11 @@ export default async function ProductPage({ params }: Props) {
           </li>
         </ul>
 
-        <h2 className="mt-12 font-serif text-2xl font-bold text-navy-950 sm:text-3xl">
-          Why Buy From Velora Digitizing
-        </h2>
-        <ul className="mt-4 list-disc space-y-2 pl-5 text-[15px] leading-relaxed text-navy-950/75">
-          <li>
-            Manually digitized by professionals with 12+ years of commercial
-            punching experience
-          </li>
-          <li>
-            Test-sewn on industrial flatbed and cap-frame machines before every
-            listing goes live
-          </li>
-          <li>
-            Optimized stitch pathing with clean trims and minimal jump stitches
-            for faster production
-          </li>
-          <li>
-            Correct underlay and pull compensation for pique, twill, fleece and
-            performance fabrics
-          </li>
-          <li>
-            Responsive support and free revisions if your machine or fabric
-            needs a tweak
-          </li>
-        </ul>
-
-        <h2 className="mt-12 font-serif text-2xl font-bold text-navy-950 sm:text-3xl">
-          Industrial Stitch Quality &amp; Machine Compatibility
-        </h2>
-        <p className="mt-4 text-[15px] leading-relaxed text-navy-950/75">
-          Each design file is calibrated with exact pull compensation, balanced column widths, and smart underlay scaffolding so you achieve zero thread breaks, clean stitch borders, and crisp lettering even on high-speed industrial embroidery machines running up to 1,000 SPM.
+        <p className="mt-10 text-[15px] leading-relaxed text-navy-950/75">
+          Need this {noun.toLowerCase()} adjusted for a specific machine, hoop
+          or fabric? Free file tweaks are included with every purchase, and
+          every file is test-sewn before it is listed.
         </p>
-        <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
-          <div className="rounded-xl border border-navy-950/10 bg-navy-950/[0.02] p-5">
-            <h3 className="text-base font-bold text-navy-950">Supported Embroidery Machines</h3>
-            <p className="mt-2 text-sm leading-relaxed text-navy-950/70">
-              Compatible with commercial multi-needle equipment (Tajima, Barudan, SWF, Melco, Ricoma, Happy) as well as domestic embroidery machines (Brother, Babylock, Janome, Bernina, Husqvarna Viking, Singer, Pfaff).
-            </p>
-          </div>
-          <div className="rounded-xl border border-navy-950/10 bg-navy-950/[0.02] p-5">
-            <h3 className="text-base font-bold text-navy-950">Fabric &amp; Backing Recommendations</h3>
-            <p className="mt-2 text-sm leading-relaxed text-navy-950/70">
-              Tested on pique polo knits, ringspun cotton t-shirts, heavy fleece hoodies, structured twill caps, canvas tote bags, and nylon jackets. Use cutaway backing for stretch garments and tearaway for stable wovens.
-            </p>
-          </div>
-        </div>
 
         <StoreFaq item={item} />
       </section>

@@ -19,7 +19,6 @@ import post_how_to_prepare_logo_for_embroidery_digitizing from './content/how-to
 import post_jacket_back_embroidery_digitizing_guide from './content/jacket-back-embroidery-digitizing-guide';
 import post_left_chest_logo_embroidery_digitizing_guide from './content/left-chest-logo-embroidery-digitizing-guide';
 import post_manual_digitizing_vs_ai_auto_digitizing from './content/manual-digitizing-vs-ai-auto-digitizing';
-import post_pvc_patches_vs_embroidered_patches from './content/pvc-patches-vs-embroidered-patches';
 import post_vector_art_for_screen_printing_vs_embroidery from './content/vector-art-for-screen-printing-vs-embroidery';
 import post_what_is_embroidery_digitizing from './content/what-is-embroidery-digitizing';
 import post_wilcom_vs_hatch_vs_brother_pe_design_embroidery_software from './content/wilcom-vs-hatch-vs-brother-pe-design-embroidery-software';
@@ -50,7 +49,6 @@ export const BLOG_POSTS: BlogPost[] = [
   post_jacket_back_embroidery_digitizing_guide,
   post_left_chest_logo_embroidery_digitizing_guide,
   post_manual_digitizing_vs_ai_auto_digitizing,
-  post_pvc_patches_vs_embroidered_patches,
   post_vector_art_for_screen_printing_vs_embroidery,
   post_what_is_embroidery_digitizing,
   post_wilcom_vs_hatch_vs_brother_pe_design_embroidery_software,

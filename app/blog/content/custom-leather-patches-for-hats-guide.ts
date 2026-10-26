@@ -3,7 +3,7 @@ import type { BlogPost } from '../types';
 export const post: BlogPost = {
   "slug": "custom-leather-patches-for-hats-guide",
   "title": "Custom Leather Patches for Hats: Engraving, Materials & Heat Press Guide",
-  "metaTitle": "Custom Leather Patches for Hats: Materials, Heat Press & Production",
+  "metaTitle": "Custom Leather Patches for Hats Guide",
   "description": "The complete guide to custom leather patches for hats. Compare genuine vs faux leatherette, laser engraving vectors, heat press application & stitching methods.",
   "excerpt": "Leather patch trucker hats dominate outdoor, corporate, and lifestyle headwear. Learn how laser engraving vectors work, genuine vs leatherette materials, and heat press temperature settings.",
   "category": "Patches",

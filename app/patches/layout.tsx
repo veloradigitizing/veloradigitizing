@@ -140,7 +140,7 @@ export default function PatchesLayout({
         subtitle="Compare patch types and materials before you choose a style for your order."
         slugs={[
           "custom-patch-types-embroidered-woven-pvc-leather-chenille",
-          "pvc-patches-vs-embroidered-patches",
+          "custom-leather-patches-for-hats-guide",
           "applique-embroidery-digitizing-guide",
         ]}
       />

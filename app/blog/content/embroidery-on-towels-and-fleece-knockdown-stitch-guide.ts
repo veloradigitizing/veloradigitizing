@@ -3,8 +3,8 @@ import type { BlogPost } from '../types';
 export const post: BlogPost = {
   "slug": "embroidery-on-towels-and-fleece-knockdown-stitch-guide",
   "title": "Embroidery on Towels & Fleece: The Complete Knockdown Stitch Guide",
-  "metaTitle": "Knockdown Stitch Guide for Towels & Fleece",
-  "description": "Master embroidery on high-pile fabrics: towels, sherpa, and fleece. Learn knockdown stitch digitizing, lattice grids, water-soluble Solvy topping, and underlay rules.",
+  "metaTitle": "Knockdown Stitch Guide: Towels & Fleece",
+  "description": "Embroidery on towels, sherpa and fleece: knockdown stitch digitizing, lattice grids, water-soluble topping and underlay rules for high-pile fabrics.",
   "excerpt": "Stitching on towels, fleece, or sherpa? Discover how knockdown stitches tamp down fluffy pile so monograms and logos sew crisp without sinking into terry loops.",
   "category": "Techniques",
   "tags": [
