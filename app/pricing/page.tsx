@@ -5,7 +5,6 @@ import StitchCountCalculator from "../components/StitchCountCalculator";
 import { FAQ } from "../components/FAQ";
 import CTABanner from "../components/CTABanner";
 import Icon, { IconName } from "../components/Icon";
-import HomeStats from "../components/HomeStats";
 
 export const metadata: Metadata = {
   title: "Embroidery Digitizing Pricing & Rates | Flat Prices from $8",
@@ -318,9 +317,6 @@ export default function PricingPage() {
             </div>
           </div>
         </section>
-
-        {/* Global Stats Strip */}
-        <HomeStats variant="compact" />
 
         {/* Flat Rate Pricing Cards */}
         <PricingTable
