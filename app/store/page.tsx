@@ -21,8 +21,8 @@ import PatchCardGrid from "../components/PatchCardGrid";
 const WHY_SHOP: { icon: IconName; title: string; description: string }[] = [
   {
     icon: "diamond",
-    title: "Premium Quality Patches",
-    description: "Perfect stitches and clean edges every time",
+    title: "Digital Patch Designs",
+    description: "Machine embroidery files for your own patch projects",
   },
   {
     icon: "mail",
@@ -149,12 +149,12 @@ export default function StorePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(storeJsonLd) }}
       />
       <Hero
-        eyebrow="Shop Ready-Made Patches"
+        eyebrow="Digital Machine Embroidery Files"
         titleLines={[
-          { text: "Premium Embroidery" },
-          { text: "Patch Designs", accent: true },
+          { text: "Embroidery Patch Designs" },
+          { text: "DST & PES Files", accent: true },
         ]}
-        description="Explore our premium embroidery patch designs. Perfect for jackets, caps, bags, and more. Delivered by email in all major formats."
+        description="Choose digital embroidery patch designs for jackets, caps and bags. Compare finished sizes and stitch counts, then receive your machine files by email after order confirmation."
         bgImage={storeBg}
         imageLabel="Collection of embroidered Velora products — tote bags, keychains, and thread spools"
         features={[
@@ -164,6 +164,26 @@ export default function StorePage() {
           { icon: "send", title: "Easy Ordering", sub: "Add to cart & checkout via WhatsApp" },
         ]}
       />
+
+      <section className="mx-auto max-w-7xl px-5 pt-8 lg:px-10" aria-labelledby="patch-file-guide">
+        <h2 id="patch-file-guide" className="font-serif text-2xl font-bold text-navy-950">
+          Choose embroidery patch designs for your machine
+        </h2>
+        <p className="mt-3 max-w-3xl text-sm leading-relaxed text-navy-950/70">
+          Each listing is a digital embroidery file, not a finished physical patch.
+          Check the design dimensions against your hoop and confirm the listed
+          format works with your machine. Stitch a sample on matching fabric and
+          backing before starting a production run.
+        </p>
+        <p className="mt-3 max-w-3xl text-sm leading-relaxed text-navy-950/70">
+          New to machine files? Read our{" "}
+          <Link href="/blog/dst-vs-pes-vs-jef-embroidery-file-formats" className="font-semibold text-brand-600 underline">DST, PES and JEF format guide</Link>.
+          {" "}For your own logo, request{" "}
+          <Link href="/patches" className="font-semibold text-brand-600 underline">custom patch digitizing</Link>
+          {" "}or learn how to{" "}
+          <Link href="/blog/convert-png-jpg-to-dst-embroidery-file" className="font-semibold text-brand-600 underline">convert PNG or JPG artwork to DST</Link>.
+        </p>
+      </section>
 
       {/* Mobile Filter Toggle */}
       <section className="mx-auto max-w-7xl px-5 pt-4 lg:hidden">

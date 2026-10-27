@@ -2,9 +2,9 @@ import type { BlogPost } from '../types';
 
 export const post: BlogPost = {
   "slug": "3d-puff-embroidery-digitizing-guide",
-  "title": "How to Do 3D Puff Embroidery on Hats: The Pro Digitizing & Foam Guide",
-  "metaTitle": "How to Do 3D Puff Embroidery on Hats & Caps",
-  "description": "Learn how to do 3D puff embroidery on hats and caps. Pro digitizing guide: EVA foam selection (2mm-4mm), capping stitches, density formulas, and hooping.",
+  "title": "3D Puff Embroidery on Hats: Foam, Digitizing & Stitching Guide",
+  "metaTitle": "3D Puff Embroidery on Hats: Foam & Digitizing Guide",
+  "description": "Learn how to do 3D puff embroidery on hats: choose foam, prepare bold lettering, digitize capped satin stitches and troubleshoot exposed foam.",
   "excerpt": "3D puff embroidery creates bold, raised 3D lettering on caps and outerwear. Discover the exact digitizing rules, foam densities, and cap hooping techniques.",
   "category": "Techniques",
   "tags": [
@@ -15,6 +15,7 @@ export const post: BlogPost = {
     "foam digitizing"
   ],
   "publishedAt": "2026-08-23",
+  "updatedAt": "2026-10-27",
   "readTime": 9,
   "image": "/images/blog/3d-puff-embroidery-digitizing-guide.webp",
   "imagePrompt": "Extreme macro photography of a navy structured snapback cap with vibrant raised 3D puff white satin embroidery stitching over 3mm high-density EVA foam, clean capped edges with zero foam peeking through, sharp lighting showing tactile 3D relief, 16:9.",
@@ -24,6 +25,14 @@ export const post: BlogPost = {
     "href": "/services/3d-puff-digitizing"
   },
   "faqs": [
+    {
+      "question": "What is 3D puff embroidery and how is it different from flat embroidery?",
+      "answer": "3D puff embroidery uses stitches over embroidery foam to create a raised surface. Flat embroidery stitches directly onto the supported fabric. Bold satin lettering is usually a better fit for puff than small text or fine detail, and the file needs foam-specific sequencing and end caps."
+    },
+    {
+      "question": "Can I use a regular embroidery file for 3D puff on hats?",
+      "answer": "Do not assume a flat embroidery file will work with foam. Ask the digitizer to check column widths, end caps, stitch coverage and cap sequencing, then test the file with your foam and hat. Fine lettering can remain flat while larger elements use puff."
+    },
     {
       "question": "What density setting is required for 3D puff embroidery?",
       "answer": "Standard flat embroidery uses 0.38mm to 0.42mm density. 3D Puff requires nearly double the density: between 0.18mm and 0.24mm (or 4.0 to 5.0 lines/mm). This dense satin layer completely envelops the EVA foam and slices through the edges cleanly for effortless foam tear-away."
@@ -44,11 +53,11 @@ export const post: BlogPost = {
   "content": [
     {
       "type": "p",
-      "text": "Look at any professional sports snapback cap (MLB, NBA, or streetwear brands like New Era), and you will notice bold, tactile lettering that rises 2mm to 3mm off the crown. That three-dimensional depth is **3D Puff Embroidery** (also known as raised foam embroidery)."
+      "text": "**3D puff embroidery** creates raised lettering and shapes by stitching over embroidery foam. It is often used on structured hats and caps with bold logos. This guide explains how to choose suitable artwork, prepare a foam-specific stitch file and check the first sew-out."
     },
     {
       "type": "p",
-      "text": "Achieving flawless 3D puff is one of the ultimate tests of a digitizer. If the file is digitized like standard flat embroidery, the foam will poke through the edges, the top thread will split, or the high stitch density will snap needles against the cap frame. Here is the definitive manual on digitizing and sewing 3D puff for commercial caps and apparel."
+      "text": "Start with wide, simple satin shapes and keep fine details flat. Settings depend on your foam, thread, machine and cap construction, so use the figures below as starting points for testing. If you need a file prepared for your logo, explore our [3D puff digitizing service](/services/3d-puff-digitizing) and send the finished size and hat type."
     },
     {
       "type": "h2",

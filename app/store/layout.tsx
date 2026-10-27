@@ -6,14 +6,14 @@ export const metadata: Metadata = {
     template: "%s | Velora Digitizing",
   },
   description:
-    "Shop ready-to-stitch machine embroidery designs & custom patch DST files (DST, PES, JEF, EXP). Delivered by email with verified stitch counts. Order today!",
+    "Shop digital embroidery patch designs in DST, PES, EXP and JEF formats. Compare sizes and stitch counts, order files by email, or choose a design bundle.",
   alternates: {
     canonical: "https://www.veloradigitizing.com/store",
   },
   openGraph: {
     title: "Embroidery Patch Designs & DST Files Store | Velora Digitizing",
     description:
-      "Shop ready-to-stitch machine embroidery designs & custom patch DST files (DST, PES, JEF, EXP). Delivered by email with verified stitch counts. Order today!",
+      "Shop digital embroidery patch designs in DST, PES, EXP and JEF formats. Compare sizes and stitch counts, order files by email, or choose a design bundle.",
     url: "https://www.veloradigitizing.com/store",
     siteName: "Velora Digitizing",
     images: [

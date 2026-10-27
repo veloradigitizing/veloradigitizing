@@ -67,7 +67,8 @@ export default function StitchCountCalculator() {
       </h3>
       <p className="mt-2 text-sm leading-relaxed text-navy-950/65">
         Enter the finished embroidery size and the kind of design. The estimate
-        uses the baselines above for 40-weight thread at 0.40 mm density.
+        uses a rough allowance per square inch, not an analysis of your artwork
+        or a confirmed production stitch count.
       </p>
 
       <div className="mt-5 grid grid-cols-2 gap-4 sm:grid-cols-4">

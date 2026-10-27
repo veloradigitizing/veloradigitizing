@@ -64,7 +64,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${BASE_URL}/store`,
-      lastModified: STATIC_LASTMOD,
+      lastModified: new Date("2026-10-27T00:00:00.000Z"),
       changeFrequency: "weekly",
       priority: 0.8,
     },

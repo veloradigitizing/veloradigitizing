@@ -200,6 +200,18 @@ export const SERVICES_FAQS: FAQItem[] = [
 
 export const STORE_FAQS: FAQItem[] = [
   {
+    question: "Are these embroidery patch designs digital files or physical patches?",
+    answer:
+      "Store purchases are digital machine embroidery files delivered by email after order confirmation. A finished physical patch is not included. Use a compatible embroidery machine, suitable fabric and backing to stitch the design yourself.",
+    category: "Files",
+  },
+  {
+    question: "How do I choose a patch design for my embroidery machine?",
+    answer:
+      "Check the listing's finished dimensions, stitch count and included formats. The design must fit your machine's usable embroidery field, which can be smaller than the hoop's outer dimensions. If you need another size or format, ask us before ordering rather than resizing the stitch file blindly.",
+    category: "Files",
+  },
+  {
     question: "How do I order a design and receive my files?",
     answer:
       "Simply click 'Add to Cart' on any design you like, open your cart drawer, and click 'Order on WhatsApp' to submit your order instantly. You can also message us directly on WhatsApp or through our contact page with the names of the designs you want. We will confirm your order and email your files right away in a single zip archive. If you ever misplace a file, reach out with your order details and we will re-send it at no charge.",
