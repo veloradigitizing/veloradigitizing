@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Hero from "../../components/Hero";
 import PricingTable from "../../components/PricingTable";
+import ServiceOrderDetails from "../../components/ServiceOrderDetails";
 import servicesBg from "../../images/velora-embroidery-workstation.webp";
 import WhyChooseUs from "../../components/WhyChooseUs";
 import CTABanner from "../../components/CTABanner";
@@ -34,7 +35,7 @@ const APPLIQUE_FAQS = [
   {
     question: "Can I request revisions if something needs adjustment on my machine?",
     answer:
-      "Yes, we provide free revisions to ensure your applique files run smoothly on your specific embroidery machine and fabric choice.",
+      "Yes. Basic includes one revision, Standard includes three, and Rush includes unlimited revisions. Include a sew-out photo, applique material and cutting method when requesting an adjustment.",
   },
   {
     question: "How do I order or get a quote for applique digitizing?",
@@ -124,7 +125,7 @@ export default function AppliqueDigitizingPage() {
         features={[
           { icon: "scissors", title: "Clean Tackdown", sub: "Engineered placement & tackdown" },
           { icon: "layers", title: "All Formats", sub: "DST, PES, JEF, EXP & vector cut files" },
-          { icon: "refresh", title: "Free Revisions", sub: "Revisions until clean sew-out" },
+          { icon: "refresh", title: "Included Revisions", sub: "Allowance depends on your plan" },
           { icon: "tag", title: "Free Quote", sub: "Send artwork for free review" },
         ]}
       />
@@ -362,6 +363,7 @@ export default function AppliqueDigitizingPage() {
       />
 
       {/* 8. Frequently Asked Questions */}
+      <ServiceOrderDetails kind="applique" />
       <PricingTable title="Applique Digitizing Prices" />
 
       <FAQ

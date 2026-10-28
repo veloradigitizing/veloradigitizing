@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Hero from "../../components/Hero";
 import PricingTable from "../../components/PricingTable";
+import ServiceOrderDetails from "../../components/ServiceOrderDetails";
 import servicesBg from "../../images/velora-embroidery-workstation.webp";
 import WhyChooseUs from "../../components/WhyChooseUs";
 import CTABanner from "../../components/CTABanner";
@@ -123,7 +124,7 @@ export default function PuffDigitizingPage() {
         features={[
           { icon: "layers", title: "Sculpted 3D", sub: "Engineered for 2mm & 3mm foam" },
           { icon: "award", title: "Clean Edges", sub: "Perpendicular end-caps" },
-          { icon: "refresh", title: "Free Revisions", sub: "Revisions until clean sew-out" },
+          { icon: "refresh", title: "Included Revisions", sub: "Allowance depends on your plan" },
           { icon: "tag", title: "Free Quote", sub: "Send artwork for free review" },
         ]}
       />
@@ -340,6 +341,7 @@ export default function PuffDigitizingPage() {
       />
 
       {/* FAQs */}
+      <ServiceOrderDetails kind="3d-puff" />
       <PricingTable title="3D Puff Digitizing Prices" />
 
       <FAQ

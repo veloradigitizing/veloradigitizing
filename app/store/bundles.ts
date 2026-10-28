@@ -14,8 +14,6 @@ export type BundleProduct = {
   features: string[];
   includes: string[];
   formats: string[];
-  rating: number;
-  reviewCount: number;
   designs: number;
   fileSize: string;
 };
@@ -50,8 +48,6 @@ export const BUNDLES: BundleProduct[] = [
       "Commercial license",
     ],
     formats: ["DST", "PES", "EXP", "JEF", "VP3"],
-    rating: 4.7,
-    reviewCount: 23,
     designs: 70,
     fileSize: "145 MB",
   },
@@ -84,8 +80,6 @@ export const BUNDLES: BundleProduct[] = [
       "Priority email support",
     ],
     formats: ["DST", "PES", "EXP", "JEF", "HUS", "VP3", "XXX"],
-    rating: 4.8,
-    reviewCount: 41,
     designs: 100,
     fileSize: "520 MB",
   },
@@ -118,8 +112,6 @@ export const BUNDLES: BundleProduct[] = [
       "Commercial license",
     ],
     formats: ["DST", "PES", "EXP", "JEF", "VP3"],
-    rating: 4.6,
-    reviewCount: 12,
     designs: 70,
     fileSize: "138 MB",
   },
@@ -152,8 +144,6 @@ export const BUNDLES: BundleProduct[] = [
       "Standard license",
     ],
     formats: ["DST", "PES", "EXP", "JEF", "VP3"],
-    rating: 4.5,
-    reviewCount: 9,
     designs: 50,
     fileSize: "95 MB",
   },
@@ -186,8 +176,6 @@ export const BUNDLES: BundleProduct[] = [
       "Commercial license",
     ],
     formats: ["DST", "PES", "EXP", "JEF", "VP3"],
-    rating: 4.7,
-    reviewCount: 18,
     designs: 50,
     fileSize: "98 MB",
   },
@@ -220,8 +208,6 @@ export const BUNDLES: BundleProduct[] = [
       "Priority support access",
     ],
     formats: ["DST", "PES", "EXP", "JEF", "HUS", "VP3", "XXX"],
-    rating: 4.8,
-    reviewCount: 36,
     designs: 100,
     fileSize: "510 MB",
   },

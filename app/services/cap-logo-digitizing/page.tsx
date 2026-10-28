@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Hero from "../../components/Hero";
 import PricingTable from "../../components/PricingTable";
+import ServiceOrderDetails from "../../components/ServiceOrderDetails";
 import servicesBg from "../../images/velora-embroidery-workstation.webp";
 import WhyChooseUs from "../../components/WhyChooseUs";
 import CTABanner from "../../components/CTABanner";
@@ -39,7 +40,7 @@ const CAP_FAQS = [
   {
     question: "Do you offer free revisions on cap files?",
     answer:
-      "Yes, we provide free revisions to ensure your cap design sews out cleanly on your specific cap frames and machine model.",
+      "Yes. Basic includes one revision, Standard includes three, and Rush includes unlimited revisions. Send a sew-out photo and your cap, frame and machine details when requesting an adjustment.",
   },
 ];
 
@@ -123,7 +124,7 @@ export default function CapDigitizingPage() {
         features={[
           { icon: "cap", title: "Center-Out", sub: "Engineered for curved frames" },
           { icon: "layers", title: "All Formats", sub: "DST, PES, JEF, EXP & more" },
-          { icon: "refresh", title: "Free Revisions", sub: "Revisions until clean sew-out" },
+          { icon: "refresh", title: "Included Revisions", sub: "Allowance depends on your plan" },
           { icon: "tag", title: "Free Quote", sub: "Send artwork for free review" },
         ]}
       />
@@ -360,6 +361,7 @@ export default function CapDigitizingPage() {
       />
 
       {/* FAQs */}
+      <ServiceOrderDetails kind="cap" />
       <PricingTable title="Cap Logo Digitizing Prices" />
 
       <FAQ

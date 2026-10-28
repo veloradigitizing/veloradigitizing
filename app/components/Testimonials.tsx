@@ -1,11 +1,9 @@
 "use client";
 
-import Icon from "./Icon";
-import { SiTrustpilot } from "react-icons/si";
 import { SectionTag } from "./Section";
 import { Reveal } from "./Reveal";
 import { stagger } from "./stagger";
-import { SITE_RATING } from "../site-rating";
+import Link from "next/link";
 
 export type Testimonial = {
   quote: string;
@@ -13,8 +11,6 @@ export type Testimonial = {
   role: string;
   location: string;
   service: string;
-  rating: number;
-  verifiedOrder: string;
   initials: string;
 };
 
@@ -24,8 +20,6 @@ export const B2B_TESTIMONIALS: Testimonial[] = [
     role: "Screen Printing & Embroidery Shop",
     location: "Ohio, USA",
     service: "3D Puff Cap Digitizing (DST & PES)",
-    rating: 5.0,
-    verifiedOrder: "Verified Order #VD-7821",
     quote:
       "Turnaround was under 10 hours. Stitch pathing was optimized with minimal trims. Ran clean on our 6-head Tajima with zero thread breaks.",
     initials: "MT",
@@ -35,8 +29,6 @@ export const B2B_TESTIMONIALS: Testimonial[] = [
     role: "Workwear & Uniforms",
     location: "Ontario, Canada",
     service: "Left Chest Corporate Logo",
-    rating: 4.9,
-    verifiedOrder: "Verified Order #VD-8142",
     quote:
       "Clean pull-compensation on pique cotton polos. Even the 4mm secondary text was sharp and legible across our 150-piece run.",
     initials: "JL",
@@ -46,34 +38,11 @@ export const B2B_TESTIMONIALS: Testimonial[] = [
     role: "Merch Designer",
     location: "Manchester, UK",
     service: "Jacket Back Chenille & Vector Redraw",
-    rating: 4.7,
-    verifiedOrder: "Verified Order #VD-6590",
     quote:
       "Initial test had slightly heavy underlay for thin fleece, but support fixed and resent updated DST in 25 minutes on WhatsApp. Final run was spotless.",
     initials: "LW",
   },
 ];
-
-function StarRatingRow({ rating }: { rating: number }) {
-  const fullStars = Math.floor(rating);
-  const hasPartial = rating % 1 !== 0;
-
-  return (
-    <div className="flex items-center gap-1">
-      <div className="flex gap-0.5 text-gold-400">
-        {Array.from({ length: fullStars }).map((_, i) => (
-          <Icon key={i} name="star" className="h-4 w-4" filled />
-        ))}
-        {hasPartial && (
-          <Icon name="star" className="h-4 w-4 text-gold-400 fill-current opacity-90" filled />
-        )}
-      </div>
-      <span className="text-xs font-bold text-navy-950/80 ml-1">
-        {rating.toFixed(1)}/5.0
-      </span>
-    </div>
-  );
-}
 
 function TestimonialCard({ t }: { t: Testimonial }) {
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -106,28 +75,6 @@ function TestimonialCard({ t }: { t: Testimonial }) {
       }}
     >
       <div>
-        {/* Top bar: Verified Tag + Rating */}
-        <div
-          className="flex flex-wrap items-center justify-between gap-2 border-b border-navy-950/5 pb-4"
-          style={{ transform: "translateZ(15px)" }}
-        >
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-2.5 py-1 text-[11px] font-semibold text-emerald-700 border border-emerald-200/60">
-            <svg
-              className="h-3 w-3 text-emerald-600 shrink-0"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fillRule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clipRule="evenodd"
-              />
-            </svg>
-            {t.verifiedOrder}
-          </span>
-          <StarRatingRow rating={t.rating} />
-        </div>
-
         {/* Service Tag */}
         <div className="mt-3.5" style={{ transform: "translateZ(10px)" }}>
           <span className="inline-block rounded-md bg-brand-50/80 px-2.5 py-1 text-[11px] font-medium text-brand-700 border border-brand-100">
@@ -175,87 +122,29 @@ export default function Testimonials() {
     <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10">
       <Reveal direction="up">
         <SectionTag
-          eyebrow="VERIFIED B2B SOCIAL PROOF"
+          eyebrow="Client Feedback"
           title="What Commercial Embroiderers Say"
-          subtitle="Real reviews from print shops, workwear manufacturers, and apparel decorators who rely on our stitch files daily."
+          subtitle="Feedback on embroidery digitizing for print shops, workwear and apparel."
         />
       </Reveal>
 
-      {/* Star Breakdown Summary Banner */}
-      <Reveal direction="up" delay={80}>
-        <div className="mt-10 mx-auto max-w-3xl rounded-2xl border border-navy-950/10 bg-gradient-to-r from-navy-950 via-slate-900 to-navy-950 p-6 text-white shadow-lg sm:p-8">
-          <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
-            {/* Rating Number & Stars */}
-            <div className="flex flex-col items-center text-center sm:items-start sm:text-left">
-              <div className="flex items-center gap-3">
-                <span className="font-serif text-4xl font-extrabold text-white">
-                  4.8
-                </span>
-                <div>
-                  <div className="flex gap-1 text-gold-400">
-                    {Array.from({ length: 5 }).map((_, i) => (
-                      <Icon key={i} name="star" className="h-4 w-4" filled />
-                    ))}
-                  </div>
-                  <p className="text-xs text-white/70 mt-0.5">
-                    out of 5.0 rating
-                  </p>
-                </div>
-              </div>
-              <p className="mt-3 text-xs font-semibold text-brand-300">
-                {SITE_RATING.breakdownText}
-              </p>
-              <a
-                href="https://www.trustpilot.com/review/veloradigitizing.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-2.5 inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 hover:text-emerald-300 transition-colors focus:outline-none focus:underline"
-              >
-                <SiTrustpilot className="h-3.5 w-3.5 text-[#00b67a]" />
-                <span>Verified reviews on Trustpilot &rarr;</span>
-              </a>
-            </div>
-
-            {/* Breakdown Progress Bars */}
-            <div className="w-full sm:w-64 space-y-2 text-xs">
-              <div className="flex items-center gap-2">
-                <span className="w-10 text-white/70 font-medium">5 Star</span>
-                <div className="h-2 flex-1 overflow-hidden rounded-full bg-white/10">
-                  <div
-                    className="h-full bg-gold-400 rounded-full"
-                    style={{ width: "86%" }}
-                  />
-                </div>
-                <span className="w-8 text-right font-bold text-white/90">
-                  86%
-                </span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="w-10 text-white/70 font-medium">4 Star</span>
-                <div className="h-2 flex-1 overflow-hidden rounded-full bg-white/10">
-                  <div
-                    className="h-full bg-gold-400 rounded-full"
-                    style={{ width: "11%" }}
-                  />
-                </div>
-                <span className="w-8 text-right font-bold text-white/90">
-                  11%
-                </span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="w-10 text-white/60 font-medium">3 Star</span>
-                <div className="h-2 flex-1 overflow-hidden rounded-full bg-white/10">
-                  <div
-                    className="h-full bg-gold-400/80 rounded-full"
-                    style={{ width: "3%" }}
-                  />
-                </div>
-                <span className="w-8 text-right text-white/70">3%</span>
-              </div>
-            </div>
+      <div className="mx-auto mt-10 max-w-4xl rounded-2xl bg-navy-950 p-6 text-white shadow-lg sm:p-8">
+        <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-brand-300">Your next embroidery project</p>
+            <h3 className="mt-2 font-serif text-2xl font-bold">Start with your artwork</h3>
+            <p className="mt-3 max-w-lg text-sm leading-relaxed text-white/70">Send your logo, finished size and fabric type. Include the machine format you need so we can review your requirements and confirm a quote.</p>
+            <ul className="mt-5 flex flex-wrap gap-2 text-xs font-medium text-white/85" aria-label="Details to include">
+              {["Logo artwork", "Finished size", "Fabric & placement"].map((detail) => (
+                <li key={detail} className="rounded-full border border-white/15 bg-white/5 px-3 py-1.5">{detail}</li>
+              ))}
+            </ul>
           </div>
+          <Link href="/contact" className="inline-flex shrink-0 items-center justify-center gap-3 rounded-lg bg-brand-600 px-5 py-3 text-sm font-bold text-white transition-colors hover:bg-brand-700">
+            Get a Free Quote <span aria-hidden>&rarr;</span>
+          </Link>
         </div>
-      </Reveal>
+      </div>
 
       {/* Review Cards */}
       <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">

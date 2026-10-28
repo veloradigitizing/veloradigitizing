@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import Icon from "./Icon";
-import { StarRating } from "./Section";
 import { Reveal } from "./Reveal";
 import Image from "next/image";
 
@@ -81,7 +80,6 @@ export default function TestimonialCTASection({
             <h2 className="font-serif text-2xl font-bold text-navy-950">
               {title}
             </h2>
-            <StarRating />
           </div>
 
           <div

@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Icon from "./Icon";
-import { StarRating } from "./Section";
 import { Reveal } from "./Reveal";
 
 export default function TestimonialCTA() {
@@ -15,7 +14,6 @@ export default function TestimonialCTA() {
             <h3 className="font-serif text-2xl font-bold text-navy-950">
               Trusted by 850+ Clients
             </h3>
-            <StarRating />
           </div>
           <p className="mt-4 max-w-md text-[15px] leading-relaxed text-navy-950/60">
             &ldquo;Turnaround was under 10 hours. Stitch pathing was optimized with minimal trims. Ran clean on our 6-head Tajima with zero thread breaks.&rdquo;

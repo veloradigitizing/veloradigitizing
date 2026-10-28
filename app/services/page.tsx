@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Hero from "../components/Hero";
 import servicesBg from "../images/velora-embroidery-workstation.webp";
-import ServicesGrid from "../components/ServicesGrid";
+import Link from "next/link";
+import ServiceOrderDetails from "../components/ServiceOrderDetails";
 import WhyChooseUs from "../components/WhyChooseUs";
-import ProcessSteps from "../components/ProcessSteps";
 import CTABanner from "../components/CTABanner";
 import TestimonialCTASection from "../components/TestimonialCTASection";
 import { FAQ, SERVICES_FAQS } from "../components/FAQ";
@@ -13,16 +13,16 @@ import PricingTable from "../components/PricingTable";
 import RelatedServicesNav from "../components/RelatedServicesNav";
 
 export const metadata: Metadata = {
-  title: { absolute: "Custom Embroidery Digitizing: DST, PES Files in 8-24h" },
+  title: { absolute: "Embroidery Digitizing Services & Prices | Velora Digitizing" },
   description:
-    "Order custom embroidery digitizing in DST & PES formats. Flawless 3D puff, left chest logos & cap digitizing delivered in 8-24h. Free stitch quote today!",
+    "Compare cap, 3D puff and applique digitizing services. See per-design prices, delivery plans and the artwork details needed for your embroidery quote.",
   alternates: {
     canonical: "https://www.veloradigitizing.com/services",
   },
   openGraph: {
-    title: "Custom Embroidery Digitizing: DST, PES Files in 8-24h",
+    title: "Embroidery Digitizing Services & Prices | Velora Digitizing",
     description:
-      "Order custom embroidery digitizing in DST & PES formats. Flawless 3D puff, left chest logos & cap digitizing delivered in 8-24h with free revisions.",
+      "Choose the right digitizing service for your garment, compare pricing plans and prepare your artwork for a quote.",
     url: "https://www.veloradigitizing.com/services",
     siteName: "Velora Digitizing",
     images: [
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Custom Embroidery Digitizing: DST, PES Files in 8-24h",
+    title: "Embroidery Digitizing Services & Prices | Velora Digitizing",
     description:
-      "Order custom embroidery digitizing in DST & PES formats. Flawless 3D puff, left chest logos & cap digitizing delivered in 8-24h.",
+      "Compare embroidery digitizing services, per-design prices and delivery plans before sending your artwork for a quote.",
     images: ["/images/og/og-services.jpg"],
   },
 };
@@ -94,7 +94,7 @@ const WHY_ITEMS: {
 }[] = [
     { icon: "award", title: "High Quality Stitching" },
     { icon: "rocket", title: "Super Fast Delivery" },
-    { icon: "refresh", title: "Unlimited Revisions" },
+    { icon: "refresh", title: "Revisions Included by Plan" },
     { icon: "tag", title: "Affordable Pricing" },
     { icon: "headset", title: "24/7 Customer Support" },
     { icon: "shield", title: "100% Satisfaction Guaranteed" },
@@ -113,20 +113,47 @@ export default function ServicesPage() {
           { text: "Embroidery Digitizing" },
           { text: "Services for Every Garment", accent: true },
         ]}
-        description="We offer high quality embroidery digitizing services with fast turnaround, perfect stitching and 100% customer satisfaction."
+        description="Choose a stitch file prepared for your garment, logo size and embroidery technique. Compare cap, 3D puff and applique services, check prices, and send the production details needed for a quote."
         bgImage={servicesBg}
         imageLabel="Professional Velora embroidery digitizing workspace"
         features={[
-          { icon: "clock", title: "Fast Delivery", sub: "Delivery within 8-24 hours" },
+          { icon: "clock", title: "Delivery Plans", sub: "Timing confirmed with your quote" },
           { icon: "layers", title: "All Formats", sub: "DST, PES, JEF & more formats" },
           { icon: "tag", title: "Free Quote", sub: "Free quote, no hidden charges" },
           { icon: "shield", title: "Satisfaction", sub: "100% money-back guaranteed" },
         ]}
       />
 
-      <ServicesGrid
-        className="!py-10"
-      />
+      <section className="bg-white py-16 lg:py-20" aria-labelledby="choose-service-title">
+        <div className="mx-auto max-w-7xl px-5 lg:px-10">
+          <h2 id="choose-service-title" className="font-serif text-2xl font-bold text-navy-950 sm:text-3xl">Which Digitizing Service Does Your Logo Need?</h2>
+          <p className="mt-4 max-w-3xl leading-relaxed text-navy-950/70">Start with the placement and finish. The same artwork may need separate stitch files for a polo shirt, a curved cap and a raised foam design.</p>
+          <div className="mt-8 overflow-x-auto">
+            <table className="w-full min-w-[640px] border-collapse text-left text-sm">
+              <caption className="sr-only">Compare embroidery services by placement, finish and required production details</caption>
+              <thead className="bg-slate-50 text-navy-950"><tr>
+                <th scope="col" className="p-4">Placement or finish</th><th scope="col" className="p-4">Service</th><th scope="col" className="p-4">What to confirm</th>
+              </tr></thead>
+              <tbody className="text-navy-950/75">
+                {[
+                  { placement: "Polo shirts, uniforms and jacket backs", label: "Flat logo digitizing", href: "/contact", details: "Finished size, fabric and placement; large and small versions need separate assessment." },
+                  { placement: "Hat fronts, sides and backs", label: "Cap logo digitizing", href: "/services/cap-logo-digitizing", details: "Hat construction, centre seam and usable cap-frame sewing area." },
+                  { placement: "Raised letters and bold emblems", label: "3D puff digitizing", href: "/services/3d-puff-digitizing", details: "Foam thickness and which areas should sew flat or raised." },
+                  { placement: "Fabric letters and layered designs", label: "Applique digitizing", href: "/services/applique-digitizing", details: "Applique material, cutting method and preferred border finish." },
+                  { placement: "Finished patches to attach to garments", label: "Custom patches", href: "/patches", details: "Patch type, dimensions, quantity and backing; specify whether you need physical patches or a file." },
+                  { placement: "Artwork for print, vinyl or cutting", label: "Vector art conversion", href: "/vector-art", details: "Output format and production method; vector artwork alone is not an embroidery stitch file." },
+                ].map((service) => <tr key={service.label} className="border-b border-navy-950/10">
+                  <th scope="row" className="p-4 font-medium text-navy-950">{service.placement}</th>
+                  <td className="p-4"><Link href={service.href} className="font-semibold text-brand-700 underline underline-offset-4">{service.label}</Link></td>
+                  <td className="p-4 leading-relaxed">{service.details}</td>
+                </tr>)}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <ServiceOrderDetails kind="services" />
 
       <PortfolioSection />
 
@@ -137,8 +164,6 @@ export default function ServicesPage() {
       />
 
       <PricingTable />
-
-      <ProcessSteps />
 
       <FAQ
         items={SERVICES_FAQS}

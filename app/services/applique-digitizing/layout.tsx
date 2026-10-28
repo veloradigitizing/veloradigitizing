@@ -4,7 +4,7 @@ import RelatedGuides from "../../components/RelatedGuides";
 export const metadata: Metadata = {
   title: { absolute: "Applique Embroidery Digitizing for Varsity & Hoodies" },
   description:
-    "Custom applique embroidery digitizing for varsity jackets, hoodies & patches. Clean placement runs, tackdown stitches & machine-ready DST & PES files in 8-24h.",
+    "Applique digitizing for varsity jackets, hoodies and patches. Plan placement, tackdown, cutting and borders. See prices and requirements for DST and PES files.",
   alternates: {
     canonical: "https://www.veloradigitizing.com/services/applique-digitizing",
   },

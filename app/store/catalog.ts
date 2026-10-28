@@ -118,8 +118,6 @@ export const STORE_ITEMS: StoreItem[] = [
     description: b.description,
     longDescription: STORE_LONG_DESCRIPTIONS[b.slug],
     kind: "bundle",
-    rating: b.rating,
-    reviewCount: b.reviewCount,
   })),
 ];
 

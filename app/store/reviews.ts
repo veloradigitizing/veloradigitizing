@@ -41,10 +41,7 @@ export type AggregateRating = {
   reviewCount: number;
 };
 
-/**
- * Prefers an average of the real reviews on the page; otherwise falls back to
- * the rating/reviewCount stored on the item itself (bundles carry these).
- */
+/** Only publish aggregate ratings calculated from actual customer reviews. */
 export function getAggregateRating(item: StoreItem): AggregateRating | null {
   const reviews = getStoreReviews(item.slug);
   if (reviews.length > 0) {
@@ -53,9 +50,6 @@ export function getAggregateRating(item: StoreItem): AggregateRating | null {
       ratingValue: Math.round((sum / reviews.length) * 10) / 10,
       reviewCount: reviews.length,
     };
-  }
-  if (item.rating && item.reviewCount && item.reviewCount > 0) {
-    return { ratingValue: item.rating, reviewCount: item.reviewCount };
   }
   return null;
 }

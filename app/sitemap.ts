@@ -5,6 +5,8 @@ import { BLOG_POSTS } from "./blog/posts";
 const BASE_URL = "https://www.veloradigitizing.com";
 // Stable last-modified date prevents Googlebot from treating timestamps as dynamic noise
 const STATIC_LASTMOD = new Date("2026-10-22T00:00:00.000Z");
+// Service selection and ordering content updated on this date.
+const SERVICES_LASTMOD = new Date("2026-10-28T00:00:00.000Z");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
@@ -16,7 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${BASE_URL}/services`,
-      lastModified: STATIC_LASTMOD,
+      lastModified: SERVICES_LASTMOD,
       changeFrequency: "monthly",
       priority: 0.95,
     },
@@ -28,19 +30,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${BASE_URL}/services/applique-digitizing`,
-      lastModified: STATIC_LASTMOD,
+      lastModified: SERVICES_LASTMOD,
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
       url: `${BASE_URL}/services/3d-puff-digitizing`,
-      lastModified: STATIC_LASTMOD,
+      lastModified: SERVICES_LASTMOD,
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
       url: `${BASE_URL}/services/cap-logo-digitizing`,
-      lastModified: STATIC_LASTMOD,
+      lastModified: SERVICES_LASTMOD,
       changeFrequency: "monthly",
       priority: 0.9,
     },

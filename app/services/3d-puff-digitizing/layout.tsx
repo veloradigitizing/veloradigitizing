@@ -4,7 +4,7 @@ import RelatedGuides from "../../components/RelatedGuides";
 export const metadata: Metadata = {
   title: { absolute: "3D Puff Embroidery Digitizing for Caps & Hats (DST, PES)" },
   description:
-    "Custom 3D puff embroidery digitizing for caps, snapbacks & hoodies. Clean foam perforations, calibrated density & machine-ready DST & PES files in 8-24h.",
+    "3D puff embroidery digitizing for caps and hoodies. Plan raised and flat details, foam placement and machine-ready DST or PES files. View prices and order requirements.",
   alternates: {
     canonical: "https://www.veloradigitizing.com/services/3d-puff-digitizing",
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "3D Puff Embroidery Digitizing for Caps & Hats (DST, PES)",
     description:
-      "Custom 3D puff embroidery digitizing for caps, snapbacks & hoodies in 8-24h.",
+      "Custom 3D puff embroidery digitizing for caps, snapbacks and hoodies. Compare delivery plans and send your artwork for a quote.",
     images: ["/images/og/og-services.jpg"],
   },
 };

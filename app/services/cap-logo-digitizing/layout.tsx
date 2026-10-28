@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import RelatedGuides from "../../components/RelatedGuides";
 
 export const metadata: Metadata = {
-  title: { absolute: "Cap & Hat Logo Embroidery Digitizing in 8-24h (DST, PES)" },
+  title: { absolute: "Cap & Hat Logo Digitizing Services (DST, PES)" },
   description:
-    "Specialized cap & hat logo digitizing with center-out sequencing for snapbacks, dad hats & beanies. Flawless stitch files in DST, PES & JEF in 8-24 hours.",
+    "Cap and hat logo digitizing for structured and unstructured headwear. Check frame requirements, prices and delivery plans for DST, PES and JEF files.",
   alternates: {
     canonical: "https://www.veloradigitizing.com/services/cap-logo-digitizing",
   },
   openGraph: {
-    title: { absolute: "Cap & Hat Logo Embroidery Digitizing in 8-24h (DST, PES)" },
+    title: "Cap & Hat Logo Digitizing Services (DST, PES)",
     description:
-      "Specialized cap & hat logo digitizing with center-out sequencing for snapbacks, dad hats & beanies. Flawless stitch files in DST, PES & JEF in 8-24 hours.",
+      "Cap and hat logo digitizing with sequencing for curved frames. Send your hat type, logo dimensions and machine format for a quote.",
     url: "https://www.veloradigitizing.com/services/cap-logo-digitizing",
     siteName: "Velora Digitizing",
     images: [
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: { absolute: "Cap & Hat Logo Embroidery Digitizing in 8-24h (DST, PES)" },
+    title: "Cap & Hat Logo Digitizing Services (DST, PES)",
     description:
-      "Specialized cap & hat embroidery digitizing with center-out sequencing in 8-24h.",
+      "Cap and hat logo digitizing for curved frames. Compare prices and delivery plans before ordering.",
     images: ["/images/og/og-services.jpg"],
   },
 };
