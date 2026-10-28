@@ -106,6 +106,18 @@ export const post: BlogPost = {
     },
     {
       "type": "h2",
+      "text": "Preparing Your Logo in Adobe Illustrator"
+    },
+    {
+      "type": "p",
+      "text": "Before sending your logo for embroidery digitizing, set it to the intended embroidery size in Adobe Illustrator, convert text to outlines, expand strokes, and simplify small details. Illustrator prepares the artwork; dedicated embroidery software creates the machine stitch file."
+    },
+    {
+      "type": "p",
+      "text": "For the complete workflow, follow our [step-by-step guide to preparing an embroidery logo in Illustrator](/blog/digitize-logo-illustrator-embroidery)."
+    },
+    {
+      "type": "h2",
       "text": "Let Velora Digitizing Optimize Your Artwork"
     },
     {
