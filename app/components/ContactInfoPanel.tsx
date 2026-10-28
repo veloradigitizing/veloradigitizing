@@ -1,8 +1,13 @@
-import { FaInstagram, FaPinterestP, FaWhatsapp, FaYoutube } from "react-icons/fa6";
+import { FaInstagram, FaLinkedinIn, FaPinterestP, FaWhatsapp, FaYoutube } from "react-icons/fa6";
 import Icon, { IconName } from "./Icon";
 import { Reveal } from "./Reveal";
 
 const SOCIAL_CHANNELS = [
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/velora-digitizing-854396429",
+    Icon: FaLinkedinIn,
+  },
   {
     label: "WhatsApp",
     href: "https://wa.me/12136358137",

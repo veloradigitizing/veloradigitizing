@@ -1,6 +1,7 @@
 import Link from "next/link";
 import {
   FaInstagram,
+  FaLinkedinIn,
   FaEnvelope,
   FaTiktok,
   FaXTwitter,
@@ -13,6 +14,11 @@ import { Mail, Phone, Clock, MapPin, ArrowRight } from "lucide-react";
 import Logo from "./Logo";
 
 const SOCIALS = [
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/velora-digitizing-854396429",
+    Icon: FaLinkedinIn,
+  },
   {
     label: "Pinterest",
     href: "https://www.pinterest.com/veloradigitizing/",
