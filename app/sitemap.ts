@@ -7,6 +7,8 @@ const BASE_URL = "https://www.veloradigitizing.com";
 const STATIC_LASTMOD = new Date("2026-10-22T00:00:00.000Z");
 // Service selection and ordering content updated on this date.
 const SERVICES_LASTMOD = new Date("2026-10-28T00:00:00.000Z");
+// Store product pages gained stitch-out notes and related guides on this date.
+const STORE_LASTMOD = new Date("2026-10-30T00:00:00.000Z");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
@@ -108,7 +110,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     .filter((item) => item.kind === "patch" || item.kind === "bundle")
     .map((item) => ({
       url: `${BASE_URL}/store/${item.slug}`,
-      lastModified: STATIC_LASTMOD,
+      lastModified: STORE_LASTMOD,
       changeFrequency: "weekly",
       priority: item.kind === "bundle" ? 0.75 : 0.7,
     }));

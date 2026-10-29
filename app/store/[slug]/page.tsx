@@ -16,7 +16,9 @@ import {
 } from "../merchant-policies";
 import { getAggregateRating, getStoreReviews } from "../reviews";
 import { STORE_PRODUCT_FAQS } from "../product-faqs";
+import { STORE_STITCH_NOTES } from "../stitch-notes";
 import StoreReviews from "./StoreReviews";
+import RelatedGuides from "../../components/RelatedGuides";
 
 const BASE_URL = "https://www.veloradigitizing.com";
 
@@ -113,6 +115,42 @@ function buildFaqs(item: StoreItem) {
     },
   ];
 }
+
+const STITCH_NOTE_LABELS = [
+  ["fabric", "Best fabrics"],
+  ["thread", "Thread and colours"],
+  ["placement", "Placement ideas"],
+  ["tip", "Production tip"],
+] as const;
+
+function StitchNotesSection({ item }: { item: StoreItem }) {
+  const notes = STORE_STITCH_NOTES[item.slug];
+  if (!notes) return null;
+  const noun = HEADING_NOUN[item.kind];
+  return (
+    <div className="mt-12">
+      <h2 className="font-serif text-2xl font-bold text-navy-950 sm:text-3xl">
+        Stitch-Out Notes for This {noun}
+      </h2>
+      <dl className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
+        {STITCH_NOTE_LABELS.map(([key, label]) => (
+          <div key={key}>
+            <dt className="text-base font-bold text-navy-950">{label}</dt>
+            <dd className="mt-2 text-[15px] leading-relaxed text-navy-950/70">
+              {notes[key]}
+            </dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+  );
+}
+
+const STORE_GUIDE_SLUGS = [
+  "custom-patch-types-embroidered-woven-pvc-leather-chenille",
+  "chenille-and-varsity-jacket-patch-digitizing-guide",
+  "embroidery-stabilizer-guide-cutaway-vs-tearaway",
+];
 
 function StoreFaq({ item }: { item: StoreItem }) {
   const faqs = STORE_PRODUCT_FAQS[item.slug] ?? buildFaqs(item);
@@ -297,8 +335,16 @@ export default async function ProductPage({ params }: Props) {
           every file is test-sewn before it is listed.
         </p>
 
+        <StitchNotesSection item={item} />
+
         <StoreFaq item={item} />
       </section>
+
+      <RelatedGuides
+        title="Patch Embroidery Guides"
+        subtitle="How to choose a patch style, stitch chenille and varsity badges, and pick the right stabilizer before you sew."
+        slugs={STORE_GUIDE_SLUGS}
+      />
     </>
   );
 }

@@ -123,6 +123,10 @@ const BLOG_LINKS = [
     label: "Common Digitizing Mistakes",
     href: "/blog/common-embroidery-digitizing-mistakes",
   },
+  {
+    label: "Digitizing Services Compared",
+    href: "/blog/best-online-embroidery-digitizing-services-comparison-guide",
+  },
 ];
 
 

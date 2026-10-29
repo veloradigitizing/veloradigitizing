@@ -15,7 +15,7 @@ export const post: BlogPost = {
     "logo stitch count"
   ],
   "publishedAt": "2026-10-04",
-  "updatedAt": "2026-10-27",
+  "updatedAt": "2026-10-30",
   "readTime": 9,
   "image": "/images/blog/how-to-estimate-embroidery-stitch-count.webp",
   "imagePrompt": "Top-down flat lay view of a commercial embroidery digitizer workbench showing a digital calipers measuring an embroidered circular patch, a printed stitch count worksheet with grid calculations, colorful spools of embroidery thread, and a tablet displaying stitch wireframes, clean studio lighting, 16:9 aspect ratio.",
@@ -61,7 +61,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Treat the result as a starting budget rather than an exact count or final quote. Stitch density, empty space, lettering and underlay change the total. For an existing design, check the count in its stitch file; for new artwork, ask our [embroidery digitizing team](/services) to review the design and [pricing options](/pricing)."
+      "text": "Treat the result as a starting budget rather than an exact count or final quote. Stitch density, empty space, lettering and underlay change the total. For an existing design, check the count in its stitch file; for new artwork, ask our [embroidery digitizing team](/services) to review the design and [pricing options](/services#pricing)."
     },
     {
       "type": "calculator",
@@ -149,7 +149,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "For a confirmed production count, review the final digitized file. Send your artwork, finished dimensions and fabric through our [contact page](/contact) for a design review and [digitizing quote](/pricing). For placement planning, see our [left chest logo placement guide](/blog/left-chest-logo-embroidery-digitizing-guide)."
+      "text": "For a confirmed production count, review the final digitized file. Send your artwork, finished dimensions and fabric through our [contact page](/contact) for a design review and [digitizing quote](/services#pricing). For placement planning, see our [left chest logo placement guide](/blog/left-chest-logo-embroidery-digitizing-guide)."
     }
   ]
 };

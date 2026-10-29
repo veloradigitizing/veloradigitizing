@@ -241,6 +241,7 @@ export default function Home() {
           "best-online-embroidery-digitizing-services-comparison-guide",
           "what-is-embroidery-digitizing",
           "embroidery-digitizing-cost-pricing-guide",
+          "best-free-embroidery-digitizing-software-inkstitch-guide",
           "3d-puff-embroidery-digitizing-guide",
         ]}
       />

@@ -125,8 +125,25 @@ export function getStoreItemBySlug(slug: string) {
   return STORE_ITEMS.find((item) => item.slug === slug);
 }
 
+/**
+ * Related items for the product page. Walks the same-kind list circularly
+ * from the current item, preferring the same category, so every patch and
+ * bundle is linked from several sibling pages instead of only the first few.
+ */
 export function getRelatedStoreItems(item: StoreItem, count = 4) {
-  return STORE_ITEMS.filter(
-    (other) => other.kind === item.kind && other.slug !== item.slug,
-  ).slice(0, count);
+  const siblings = STORE_ITEMS.filter((other) => other.kind === item.kind);
+  const start = siblings.findIndex((other) => other.slug === item.slug);
+  const total = siblings.length;
+  const rotated: StoreItem[] = [];
+  for (let step = 1; step < total; step += 1) {
+    const candidate = siblings[(start + step + total) % total];
+    if (candidate.slug !== item.slug) rotated.push(candidate);
+  }
+  const sameCategory = rotated.filter(
+    (other) => other.categoryLabel === item.categoryLabel,
+  );
+  const others = rotated.filter(
+    (other) => other.categoryLabel !== item.categoryLabel,
+  );
+  return [...sameCategory, ...others].slice(0, count);
 }

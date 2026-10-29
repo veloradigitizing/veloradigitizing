@@ -16,13 +16,14 @@ export const post: BlogPost = {
     "embroidery software comparison"
   ],
   "publishedAt": "2026-10-14",
+  "updatedAt": "2026-10-30",
   "readTime": 10,
   "image": "/images/blog/best-free-embroidery-digitizing-software-inkstitch-guide.webp",
   "imagePrompt": "A sleek modern workspace desk with dual monitors displaying open-source embroidery software vector nodes and stitch simulation interface, alongside an open laptop and neat multi-needle embroidery machine in the studio background, high quality, 16:9.",
   "imageAlt": "Open source embroidery software and digitizing workspace monitors with stitch simulation",
   "relatedService": {
-    "label": "Online Digitizing & Vector Art Services",
-    "href": "/pricing"
+    "label": "Custom Embroidery Digitizing Services",
+    "href": "/services"
   },
   "faqs": [
     {

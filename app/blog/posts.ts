@@ -69,13 +69,25 @@ export function getPostBySlug(slug: string): BlogPost | undefined {
   return BLOG_POSTS.find((p) => p.slug === slug);
 }
 
+/**
+ * Related posts for the "Keep Reading" block.
+ *
+ * Walks the post list circularly starting just after the current post, taking
+ * same-category posts first and then any others. Because the starting point
+ * moves with each post, every article (including the newest ones at the end
+ * of the list) receives inbound links from several other articles instead of
+ * the first few posts being linked from everywhere.
+ */
 export function getRelatedPosts(post: BlogPost, limit = 3): BlogPost[] {
-  const sameCategory = BLOG_POSTS.filter(
-    (p) => p.slug !== post.slug && p.category === post.category,
-  );
-  const others = BLOG_POSTS.filter(
-    (p) => p.slug !== post.slug && p.category !== post.category,
-  );
+  const start = BLOG_POSTS.findIndex((p) => p.slug === post.slug);
+  const total = BLOG_POSTS.length;
+  const rotated: BlogPost[] = [];
+  for (let step = 1; step < total; step += 1) {
+    const candidate = BLOG_POSTS[(start + step + total) % total];
+    if (candidate.slug !== post.slug) rotated.push(candidate);
+  }
+  const sameCategory = rotated.filter((p) => p.category === post.category);
+  const others = rotated.filter((p) => p.category !== post.category);
   return [...sameCategory, ...others].slice(0, limit);
 }
 
