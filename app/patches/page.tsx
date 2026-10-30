@@ -7,8 +7,11 @@ import ServiceTypeGrid from "../components/ServiceTypeGrid";
 import type { IconName } from "../components/Icon";
 import { FAQ } from "../components/FAQ";
 import RelatedServicesNav from "../components/RelatedServicesNav";
+import PatchGallery from "../components/PatchGallery";
 
 const PATCH_TYPES: { icon: IconName; title: string; desc: string }[] = [
+  { icon: "layers", title: "Felt Patches", desc: "Soft felt bases with embroidered logos, mascots, and badges for apparel, uniforms, and custom branding." },
+  { icon: "badge-check", title: "Twill Patches", desc: "Durable woven twill bases with detailed embroidery and clean stitched borders for logos, lettering, and custom designs." },
   { icon: "badge-check", title: "Merrow Border Patches", desc: "Classic overlocked edge with a raised thread border. The traditional patch look that is durable, clean, and timeless. Best for simple shapes like circles, squares, and rectangles." },
   { icon: "scissors", title: "Laser Cut Patches", desc: "Precision laser-cut edges for intricate shapes that merrow stitching cannot achieve. Perfect for detailed logos, custom outlines, and die-cut designs with tight corners." },
   { icon: "grid", title: "Woven Patches", desc: "Fine thread woven patches with photographic detail. Supports smaller text and tighter details than embroidered patches. Ideal for badges and uniform insignia." },
@@ -53,6 +56,8 @@ export default function PatchesPage() {
       />
 
       <ServiceTypeGrid items={PATCH_TYPES} eyebrow="Patch Types" title="Every Patch Style Imaginable" subtitle="Choose the construction that fits your design, garment, and budget." />
+
+      <PatchGallery />
 
       <WhyChooseUs
         eyebrow="Why Choose Velora?"

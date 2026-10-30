@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { PATCH_PORTFOLIO_ITEMS } from "../../lib/patch-portfolio";
 
 export type PortfolioItem = {
   title: string;
@@ -8,6 +9,7 @@ export type PortfolioItem = {
 };
 
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
+  ...PATCH_PORTFOLIO_ITEMS,
   // === PATCHES (from /images/patches/) ===
   {
     title: "Hike More Worry Less",
@@ -666,6 +668,8 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
 export const PORTFOLIO_CATEGORIES = [
   { label: "All Work", value: "all" },
   { label: "Custom Patches", value: "custom-patches" },
+  { label: "Felt Patches", value: "felt-patches" },
+  { label: "Twill Patches", value: "twill-patches" },
   { label: "Cap Logo", value: "cap-logo" },
   { label: "Chenille", value: "chenille" },
   { label: "Jacket Back", value: "jacket-back" },
@@ -707,7 +711,7 @@ export default function PortfolioCard({
           alt={`${item.title} - Custom ${item.tag} Embroidery Digitizing Sample in DST, PES & JEF Formats`}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          className="object-cover"
+          className={item.category === "felt-patches" || item.category === "twill-patches" ? "object-contain" : "object-cover"}
         />
         <span className="absolute left-2 top-2 rounded bg-brand-600/95 px-2 py-0.5 text-[9px] font-bold uppercase tracking-wide text-white backdrop-blur-sm">
           {item.tag}
