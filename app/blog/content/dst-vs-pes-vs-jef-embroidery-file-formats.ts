@@ -167,7 +167,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Every design in our [embroidery patch store](/store) is delivered in DST, PES, EXP, JEF and VP3 together, so you never need to convert between formats yourself. Bundles such as the [100 Patches Mega Pack](/store/100-patches-mega-pack) add HUS and XXX as well, and single designs like [Chase The Sun](/store/chase-the-sun-patch) and [Dad By Day Gamer By Night](/store/dad-by-day-gamer-by-night) list the included formats on the product page."
+      "text": "For [custom patch digitizing](/patches), tell our team which machine and embroidery format you use, such as DST, PES, EXP, JEF, or VP3. Browse our [felt and twill patch samples](/store) and request the formats required for your project when you ask for a quote."
     }
   ]
 };

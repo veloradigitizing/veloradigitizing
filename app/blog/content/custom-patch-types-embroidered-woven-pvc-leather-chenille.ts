@@ -254,7 +254,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "If you want to see how a finished embroidered patch file is built, browse the ready-made designs in our store. [Hike More Worry Less](/store/hike-more-worry-less), [Wild Spirit](/store/wild-spirit-patch) and [Mentally Strong](/store/mentally-strong-patch) each ship in DST, PES, EXP, JEF and VP3 with commercial-use rights, and the [70 Patches Pack Vol. 1](/store/70-patches-pack-1) bundles a complete outdoor collection in one download."
+      "text": "Compare our [felt patch samples](/portfolio?category=felt-patches) and [twill patch samples](/portfolio?category=twill-patches). For your own custom patch, share the artwork, finished dimensions, quantity, and backing requirements with our team for a quote."
     }
   ]
 };

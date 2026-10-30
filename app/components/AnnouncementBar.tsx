@@ -17,9 +17,9 @@ type Msg = {
 const MESSAGES: Msg[] = [
   {
     icon: "zap",
-    text: "50% OFF on all embroidery font packs — this week only!",
-    cta: "Shop Font Packs",
-    href: "/store#products",
+    text: "Explore our new custom Felt and Twill patch samples",
+    cta: "View Patch Samples",
+    href: "/store",
   },
   {
     icon: "sparkles",

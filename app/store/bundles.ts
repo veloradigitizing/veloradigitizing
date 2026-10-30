@@ -1,3 +1,5 @@
+import { isDesignVisible } from "../../lib/design-visibility";
+
 export type BundleProduct = {
   slug: string;
   name: string;
@@ -18,7 +20,7 @@ export type BundleProduct = {
   fileSize: string;
 };
 
-export const BUNDLES: BundleProduct[] = [
+const ARCHIVED_BUNDLES: BundleProduct[] = [
   {
     slug: "70-patches-pack-1",
     name: "70 Patches Pack Vol. 1",
@@ -212,3 +214,5 @@ export const BUNDLES: BundleProduct[] = [
     fileSize: "510 MB",
   },
 ];
+
+export const BUNDLES = ARCHIVED_BUNDLES.filter(bundle => isDesignVisible(bundle.image));

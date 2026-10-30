@@ -145,7 +145,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "For real-world reference, here are stitch counts from designs in our patch store: [Keep It Simple](/store/keep-it-simple-patch) is a 3 x 2 inch text patch at 6,000 stitches, [Gumshoe Detective](/store/gumshoe-detective-patch) is 3 x 3 inches at 10,000, and [Mentally Strong](/store/mentally-strong-patch) is 4 x 3 inches with a full background fill at 20,000. Every listing shows its size and stitch count so you can compare them against your own estimate."
+      "text": "Browse our [felt and twill patch samples](/store) for examples of custom patch work. To estimate a stitch count for your own design, send the artwork and finished dimensions to our team. Fabric, coverage, lettering, and stitch style all affect the final count."
     },
     {
       "type": "p",

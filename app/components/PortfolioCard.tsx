@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { isDesignVisible } from "../../lib/design-visibility";
 import thumbnails from "../../lib/portfolio-thumbnails.json";
 import { PATCH_PORTFOLIO_ITEMS } from "../../lib/patch-portfolio";
 
@@ -9,7 +10,7 @@ export type PortfolioItem = {
   image: string;
 };
 
-export const PORTFOLIO_ITEMS: PortfolioItem[] = [
+const ARCHIVED_PORTFOLIO_ITEMS: PortfolioItem[] = [
   ...PATCH_PORTFOLIO_ITEMS,
   // === PATCHES (from /images/patches/) ===
   {
@@ -666,7 +667,9 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
 ];
 
 // Categories based on ACTUAL available images
-export const PORTFOLIO_CATEGORIES = [
+export const PORTFOLIO_ITEMS = ARCHIVED_PORTFOLIO_ITEMS.filter(item => isDesignVisible(item.image));
+
+const ALL_PORTFOLIO_CATEGORIES = [
   { label: "All Work", value: "all" },
   { label: "Custom Patches", value: "custom-patches" },
   { label: "Felt Patches", value: "felt-patches" },
@@ -681,6 +684,10 @@ export const PORTFOLIO_CATEGORIES = [
   { label: "Vector Art", value: "vector-art" },
   { label: "Bundles", value: "bundles" },
 ];
+
+export const PORTFOLIO_CATEGORIES = ALL_PORTFOLIO_CATEGORIES.filter(category =>
+  category.value === "all" || category.value === "custom-patches" || PORTFOLIO_ITEMS.some(item => item.category === category.value)
+);
 
 export default function PortfolioCard({
   item,

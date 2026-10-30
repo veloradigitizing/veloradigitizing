@@ -1,3 +1,5 @@
+import { isDesignVisible } from "../../lib/design-visibility";
+
 export type Patch = {
   slug: string;
   title: string;
@@ -233,7 +235,7 @@ function slugify(title: string) {
   return title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 }
 
-export const PATCHES: Patch[] = RAW_PATCHES.map((p) => ({
+export const PATCHES: Patch[] = RAW_PATCHES.filter(p => isDesignVisible(p.image)).map((p) => ({
   ...p,
   slug: slugify(p.title),
   formats: FORMATS,

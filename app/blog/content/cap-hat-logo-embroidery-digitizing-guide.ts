@@ -249,7 +249,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Looking for cap-ready designs that are already digitized? Compact patches from our store such as [Stay Wild](/store/stay-wild-patch), [Find Your Path](/store/find-your-path-patch) and [Chase The Sun](/store/chase-the-sun-patch) are all 3 inches or smaller, use a center-walk underlay for knit caps and run under 10,000 stitches."
+      "text": "Explore our [felt patch samples](/portfolio?category=felt-patches) and [twill patch samples](/portfolio?category=twill-patches) for examples of custom patch work. For a cap project, send your logo, finished size, and cap material so our team can recommend a suitable digitizing setup."
     }
   ]
 };

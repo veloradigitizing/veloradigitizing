@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { PATCH_PORTFOLIO_ITEMS } from "../../lib/patch-portfolio";
 import { useState, useRef, useEffect, useCallback } from "react";
 import Link from "next/link";
 import Icon from "./Icon";
@@ -31,10 +32,10 @@ const FEATURED_CATEGORIES = [
   },
   {
     id: 4,
-    name: "CHENILLE",
-    subtitle: "Chenille Patches",
-    image: "/images/chenille/varsity-letter-chenille-patch-embroidery-digitizing-dst.webp",
-    href: "/portfolio?category=chenille",
+    name: "FELT PATCHES",
+    subtitle: "Custom Felt Patches",
+    image: PATCH_PORTFOLIO_ITEMS.find(item => item.category === "felt-patches")!.image,
+    href: "/portfolio?category=felt-patches",
   },
   {
     id: 5,
@@ -59,10 +60,10 @@ const FEATURED_CATEGORIES = [
   },
   {
     id: 9,
-    name: "PATCHES",
-    subtitle: "Patch DST Files",
-    image: "/images/custom-patches/dad-by-day-gamer-patch-embroidery-digitizing-dst.webp",
-    href: "/patches",
+    name: "TWILL PATCHES",
+    subtitle: "Custom Twill Patches",
+    image: PATCH_PORTFOLIO_ITEMS.find(item => item.category === "twill-patches")!.image,
+    href: "/portfolio?category=twill-patches",
   },
   {
     id: 10,

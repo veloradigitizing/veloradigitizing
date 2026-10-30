@@ -37,7 +37,7 @@ export default function PortfolioGallery() {
 
   const handleUrlCategory = useCallback((urlCategory: string) => {
     if (urlCategory && urlCategory !== "all") {
-      setActive(urlCategory);
+      setActive(PORTFOLIO_CATEGORIES.some(category => category.value === urlCategory) ? urlCategory : "custom-patches");
 
       if (!isTabClick.current) {
         setTimeout(() => {
@@ -50,7 +50,7 @@ export default function PortfolioGallery() {
   const filteredItems =
     active === "all"
       ? PORTFOLIO_ITEMS
-      : PORTFOLIO_ITEMS.filter((i) => i.category === active);
+      : PORTFOLIO_ITEMS.filter((i) => i.category === active || (active === "custom-patches" && (i.category === "felt-patches" || i.category === "twill-patches")));
 
   const visibleItems = filteredItems.slice(0, visibleCount);
   const hasMore = visibleCount < filteredItems.length;

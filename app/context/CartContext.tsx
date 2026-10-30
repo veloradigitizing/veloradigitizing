@@ -7,6 +7,7 @@ import {
   useState,
   type ReactNode,
 } from "react";
+import { isDesignVisible } from "../../lib/design-visibility";
 
 export type CartItem = {
   id: string;
@@ -45,7 +46,10 @@ export function CartProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     try {
       const stored = localStorage.getItem(STORAGE_KEY);
-      if (stored) setItems(JSON.parse(stored));
+      if (stored) {
+        const saved = JSON.parse(stored);
+        if (Array.isArray(saved)) setItems(saved.filter((item: CartItem) => typeof item?.image === "string" && isDesignVisible(item.image)));
+      }
     } catch {
       // ignore malformed storage
     }
@@ -59,6 +63,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   }, [items, hydrated]);
 
   const addItem: CartContextValue["addItem"] = (item, qty = 1) => {
+    if (!isDesignVisible(item.image)) return;
     setItems((prev) => {
       const existing = prev.find((p) => p.id === item.id);
       if (existing) {

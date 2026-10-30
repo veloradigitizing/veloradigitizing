@@ -112,7 +112,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Need a jacket back design without a custom digitizing job? Our store carries large-format patches that are already tested on denim and twill, including [Adventure Awaits](/store/adventure-awaits-patch) at 4 x 4 inches and 16,000 stitches, [Wild Spirit](/store/wild-spirit-patch) with a detailed wolf fill, and the travel-themed [Veracruz Patch](/store/veracruz-patch)."
+      "text": "Explore our [felt and twill patch samples](/store) and [jacket back digitizing portfolio](/portfolio?category=jacket-back) for project examples. Send your artwork, finished dimensions, and garment material to request a custom digitizing quote."
     }
   ]
 };

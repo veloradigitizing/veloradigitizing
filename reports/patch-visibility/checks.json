@@ -1,0 +1,10 @@
+{
+  "passed": 5,
+  "checks": [
+    "43 current sitemap pages return 200 without legacy patch images or product links",
+    "All 21 old patch pages and six patch bundle pages return 404",
+    "All Patches contains exactly 20 Felt and 20 Twill samples; old patch filters are hidden",
+    "Cap Logo, Vector Art, Jacket Back, and Left Chest portfolio collections remain available",
+    "Previously saved legacy patches are removed from the cart on load"
+  ]
+}

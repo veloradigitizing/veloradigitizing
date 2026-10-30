@@ -10,7 +10,7 @@ import {
   FaPinterestP,
 } from "react-icons/fa6";
 import { SiTrustpilot } from "react-icons/si";
-import { Mail, Phone, Clock, MapPin, ArrowRight } from "lucide-react";
+import { Mail, Phone, Clock, MapPin } from "lucide-react";
 import Logo from "./Logo";
 
 const SOCIALS = [
@@ -55,10 +55,10 @@ const SOCIALS = [
 const QUICK_LINKS = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
-  { label: "Embroidery Store", href: "/store" },
-  { label: "70 Patches Bundle", href: "/store/70-patches-pack-1" },
-  { label: "100 Patches Pack", href: "/store/100-patches-mega-pack" },
-  { label: "50 Patches Pack", href: "/store/50-patches-starter-pack" },
+  { label: "Patch Samples", href: "/store" },
+  { label: "Felt Patches", href: "/portfolio?category=felt-patches" },
+  { label: "Twill Patches", href: "/portfolio?category=twill-patches" },
+  { label: "Custom Patch Quote", href: "/contact" },
   { label: "Portfolio", href: "/portfolio" },
   { label: "Blog", href: "/blog" },
   { label: "Contact Us", href: "/contact" },
@@ -75,7 +75,7 @@ const SERVICE_LINKS = [
   { label: "Left Chest Logo Digitizing", href: "/portfolio?category=left-chest" },
   { label: "Chenille Patch Digitizing", href: "/portfolio?category=chenille" },
   { label: "Towel Monogram Digitizing", href: "/portfolio?category=towel" },
-  { label: "Bundle Packages", href: "/portfolio?category=bundles" },
+  { label: "Felt & Twill Patch Samples", href: "/patches" },
 ];
 
 const BLOG_LINKS = [

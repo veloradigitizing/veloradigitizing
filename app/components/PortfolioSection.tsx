@@ -1,10 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import { isDesignVisible } from "../../lib/design-visibility";
+import { PATCH_PORTFOLIO_ITEMS } from "../../lib/patch-portfolio";
 import Image from "next/image";
 import Link from "next/link";
 
-const PORTFOLIO_CATEGORIES = [
+const ARCHIVED_CATEGORIES = [
   { id: "all", name: "All Work" },
   { id: "custom-patches", name: "Custom Patches" },
   { id: "cap-logo", name: "Cap Logo" },
@@ -18,7 +20,7 @@ const PORTFOLIO_CATEGORIES = [
   { id: "bundles", name: "Bundles" },
 ];
 
-const PORTFOLIO_ITEMS = [
+const ARCHIVED_ITEMS = [
   {
     id: "custom-patches",
     category: "custom-patches",
@@ -99,6 +101,19 @@ const PORTFOLIO_ITEMS = [
     count: 6,
     slug: "/portfolio?category=bundles",
   },
+];
+
+const PORTFOLIO_ITEMS = [
+  ...["felt-patches", "twill-patches"].map(category => {
+    const items = PATCH_PORTFOLIO_ITEMS.filter(item => item.category === category);
+    return { id: category, category, title: category === "felt-patches" ? "Felt Patches" : "Twill Patches", image: items[0].image, count: items.length, slug: "/portfolio?category=" + category };
+  }),
+  ...ARCHIVED_ITEMS.filter(item => isDesignVisible(item.image)),
+];
+const PORTFOLIO_CATEGORIES = [
+  ...ARCHIVED_CATEGORIES.filter(category => category.id === "all" || PORTFOLIO_ITEMS.some(item => item.category === category.id)),
+  { id: "felt-patches", name: "Felt Patches" },
+  { id: "twill-patches", name: "Twill Patches" },
 ];
 
 export default function PortfolioSection() {
