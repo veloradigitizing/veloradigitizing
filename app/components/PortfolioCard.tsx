@@ -1,4 +1,5 @@
 import Image from "next/image";
+import thumbnails from "../../lib/portfolio-thumbnails.json";
 import { PATCH_PORTFOLIO_ITEMS } from "../../lib/patch-portfolio";
 
 export type PortfolioItem = {
@@ -688,6 +689,7 @@ export default function PortfolioCard({
   item: PortfolioItem;
   onClick?: () => void;
 }) {
+  const thumbnail = (thumbnails as Record<string, string>)[item.image];
   return (
     <div
       className="vr-lift group cursor-pointer overflow-hidden rounded-xl border border-navy-950/10 bg-white"
@@ -707,10 +709,11 @@ export default function PortfolioCard({
     >
       <div className="vr-zoom relative aspect-[4/3] w-full overflow-hidden bg-navy-950/[0.03]">
         <Image
-          src={item.image}
+          src={thumbnail ?? item.image}
+          unoptimized={Boolean(thumbnail)}
           alt={`${item.title} - Custom ${item.tag} Embroidery Digitizing Sample in DST, PES & JEF Formats`}
           fill
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          sizes="(max-width: 639px) calc(100vw - 40px), (max-width: 1023px) calc(50vw - 32px), (max-width: 1279px) calc(33vw - 43px), 384px"
           className={item.category === "felt-patches" || item.category === "twill-patches" ? "object-contain" : "object-cover"}
         />
         <span className="absolute left-2 top-2 rounded bg-brand-600/95 px-2 py-0.5 text-[9px] font-bold uppercase tracking-wide text-white backdrop-blur-sm">

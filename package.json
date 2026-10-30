@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/prepare-hero-images.mjs && node scripts/prepare-portfolio-images.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",

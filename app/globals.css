@@ -215,23 +215,27 @@ html {
 }
 
 /* ---------- Scroll-reveal base classes ----------
-   Elements start hidden; .is-visible is toggled by IntersectionObserver. */
+   Keep server-rendered content visible. Only offscreen elements are hidden
+   after hydration, so first paint and no-JavaScript browsing stay readable. */
 .vr-reveal {
+  opacity: 1;
+}
+.vr-reveal[data-reveal-pending] {
   opacity: 0;
 }
-.vr-reveal.vr-up {
+.vr-reveal[data-reveal-pending].vr-up {
   transform: translate3d(0, 24px, 0);
 }
-.vr-reveal.vr-down {
+.vr-reveal[data-reveal-pending].vr-down {
   transform: translate3d(0, -16px, 0);
 }
-.vr-reveal.vr-left {
+.vr-reveal[data-reveal-pending].vr-left {
   transform: translate3d(-24px, 0, 0);
 }
-.vr-reveal.vr-right {
+.vr-reveal[data-reveal-pending].vr-right {
   transform: translate3d(24px, 0, 0);
 }
-.vr-reveal.vr-scale {
+.vr-reveal[data-reveal-pending].vr-scale {
   transform: scale(0.96);
 }
 .vr-reveal.is-visible {

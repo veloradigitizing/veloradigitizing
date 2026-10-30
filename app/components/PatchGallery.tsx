@@ -1,11 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import { PATCH_PORTFOLIO_ITEMS } from "../../lib/patch-portfolio";
 import PortfolioCard, { type PortfolioItem } from "./PortfolioCard";
-import PortfolioModal from "./PortfolioModal";
 import { SectionTag } from "./Section";
+
+const PortfolioModal = dynamic(() => import("./PortfolioModal"));
 
 export default function PatchGallery() {
   const [preview, setPreview] = useState<PortfolioItem | null>(null);
@@ -30,7 +32,7 @@ export default function PatchGallery() {
           </div>
         </section>
       ))}
-      <PortfolioModal item={preview} onClose={() => setPreview(null)} />
+      {preview && <PortfolioModal item={preview} onClose={() => setPreview(null)} />}
     </>
   );
 }

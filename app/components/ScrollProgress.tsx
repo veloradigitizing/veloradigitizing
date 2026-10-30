@@ -3,18 +3,23 @@
 // Scroll progress bar — fixed at the top of the viewport, shows how far the
 // user has scrolled down the page. Slim brand-colored bar with a subtle glow.
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
 
 export default function ScrollProgress() {
-  const [progress, setProgress] = useState(0);
+  const barRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const onScroll = () => {
+    let frame = 0;
+    const update = () => {
+      frame = 0;
       const scrollTop = window.scrollY;
       const docHeight =
         document.documentElement.scrollHeight - window.innerHeight;
       const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-      setProgress(pct);
+      if (barRef.current) barRef.current.style.transform = `scaleX(${pct / 100})`;
+    };
+    const onScroll = () => {
+      if (!frame) frame = requestAnimationFrame(update);
     };
 
     onScroll();
@@ -23,6 +28,7 @@ export default function ScrollProgress() {
     return () => {
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", onScroll);
+      cancelAnimationFrame(frame);
     };
   }, []);
 
@@ -32,8 +38,9 @@ export default function ScrollProgress() {
       aria-hidden
     >
       <div
-        className="h-full bg-gradient-to-r from-brand-500 via-brand-600 to-brand-700 shadow-[0_0_10px_rgba(6,14,40,0.5)] transition-[width] duration-75 ease-out"
-        style={{ width: `${progress}%` }}
+        ref={barRef}
+        className="h-full origin-left bg-gradient-to-r from-brand-500 via-brand-600 to-brand-700 shadow-[0_0_10px_rgba(6,14,40,0.5)]"
+        style={{ transform: "scaleX(0)" }}
       />
     </div>
   );

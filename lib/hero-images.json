@@ -1,0 +1,42 @@
+{
+  "veloraHero3": {
+    "src": "/images/heroes/veloraHero3.d51a31d2df15-1600.webp",
+    "srcSet": "/images/heroes/veloraHero3.d51a31d2df15-480.webp 480w, /images/heroes/veloraHero3.d51a31d2df15-768.webp 768w, /images/heroes/veloraHero3.d51a31d2df15-1280.webp 1280w, /images/heroes/veloraHero3.d51a31d2df15-1600.webp 1600w"
+  },
+  "velora-embroidery-machine-lion": {
+    "src": "/images/heroes/velora-embroidery-machine-lion.6041460add5b-1672.webp",
+    "srcSet": "/images/heroes/velora-embroidery-machine-lion.6041460add5b-480.webp 480w, /images/heroes/velora-embroidery-machine-lion.6041460add5b-768.webp 768w, /images/heroes/velora-embroidery-machine-lion.6041460add5b-1280.webp 1280w, /images/heroes/velora-embroidery-machine-lion.6041460add5b-1672.webp 1672w"
+  },
+  "velora-embroidery-showcase": {
+    "src": "/images/heroes/velora-embroidery-showcase.b888a0eaaba3-1672.webp",
+    "srcSet": "/images/heroes/velora-embroidery-showcase.b888a0eaaba3-480.webp 480w, /images/heroes/velora-embroidery-showcase.b888a0eaaba3-768.webp 768w, /images/heroes/velora-embroidery-showcase.b888a0eaaba3-1280.webp 1280w, /images/heroes/velora-embroidery-showcase.b888a0eaaba3-1672.webp 1672w"
+  },
+  "velora-embroidery-showcase-2": {
+    "src": "/images/heroes/velora-embroidery-showcase-2.0c9fb5f77787-1672.webp",
+    "srcSet": "/images/heroes/velora-embroidery-showcase-2.0c9fb5f77787-480.webp 480w, /images/heroes/velora-embroidery-showcase-2.0c9fb5f77787-768.webp 768w, /images/heroes/velora-embroidery-showcase-2.0c9fb5f77787-1280.webp 1280w, /images/heroes/velora-embroidery-showcase-2.0c9fb5f77787-1672.webp 1672w"
+  },
+  "velora-embroidery-workstation": {
+    "src": "/images/heroes/velora-embroidery-workstation.7d06630ba53e-1672.webp",
+    "srcSet": "/images/heroes/velora-embroidery-workstation.7d06630ba53e-480.webp 480w, /images/heroes/velora-embroidery-workstation.7d06630ba53e-768.webp 768w, /images/heroes/velora-embroidery-workstation.7d06630ba53e-1280.webp 1280w, /images/heroes/velora-embroidery-workstation.7d06630ba53e-1672.webp 1672w"
+  },
+  "velora-embroidery-collection": {
+    "src": "/images/heroes/velora-embroidery-collection.8c872a5d1fbf-1672.webp",
+    "srcSet": "/images/heroes/velora-embroidery-collection.8c872a5d1fbf-480.webp 480w, /images/heroes/velora-embroidery-collection.8c872a5d1fbf-768.webp 768w, /images/heroes/velora-embroidery-collection.8c872a5d1fbf-1280.webp 1280w, /images/heroes/velora-embroidery-collection.8c872a5d1fbf-1672.webp 1672w"
+  },
+  "velora-embroidery-machine-shirt-cap": {
+    "src": "/images/heroes/velora-embroidery-machine-shirt-cap.b31e494e1cdd-1672.webp",
+    "srcSet": "/images/heroes/velora-embroidery-machine-shirt-cap.b31e494e1cdd-480.webp 480w, /images/heroes/velora-embroidery-machine-shirt-cap.b31e494e1cdd-768.webp 768w, /images/heroes/velora-embroidery-machine-shirt-cap.b31e494e1cdd-1280.webp 1280w, /images/heroes/velora-embroidery-machine-shirt-cap.b31e494e1cdd-1672.webp 1672w"
+  },
+  "velora-contact-workspace": {
+    "src": "/images/heroes/velora-contact-workspace.7361b6f59bbe-1672.webp",
+    "srcSet": "/images/heroes/velora-contact-workspace.7361b6f59bbe-480.webp 480w, /images/heroes/velora-contact-workspace.7361b6f59bbe-768.webp 768w, /images/heroes/velora-contact-workspace.7361b6f59bbe-1280.webp 1280w, /images/heroes/velora-contact-workspace.7361b6f59bbe-1672.webp 1672w"
+  },
+  "design-workspace-car-sketch": {
+    "src": "/images/heroes/design-workspace-car-sketch.93322bf48fc4-1672.webp",
+    "srcSet": "/images/heroes/design-workspace-car-sketch.93322bf48fc4-480.webp 480w, /images/heroes/design-workspace-car-sketch.93322bf48fc4-768.webp 768w, /images/heroes/design-workspace-car-sketch.93322bf48fc4-1280.webp 1280w, /images/heroes/design-workspace-car-sketch.93322bf48fc4-1672.webp 1672w"
+  },
+  "embroidery-digitizing-process": {
+    "src": "/images/heroes/embroidery-digitizing-process.e2450d4cc6f0-1672.webp",
+    "srcSet": "/images/heroes/embroidery-digitizing-process.e2450d4cc6f0-480.webp 480w, /images/heroes/embroidery-digitizing-process.e2450d4cc6f0-768.webp 768w, /images/heroes/embroidery-digitizing-process.e2450d4cc6f0-1280.webp 1280w, /images/heroes/embroidery-digitizing-process.e2450d4cc6f0-1672.webp 1672w"
+  }
+}

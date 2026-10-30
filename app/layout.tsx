@@ -275,10 +275,10 @@ export default function RootLayout({
         <link rel="preconnect" href="https://www.google-analytics.com" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
 
-        {/* Google tag (gtag.js) - loaded afterInteractive to never block rendering / LCP */}
+        {/* Keep the small event queue ready; load analytics after the page's resources. */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-SF2BZRJZ7K"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
         <Script id="google-analytics" strategy="afterInteractive">
           {`

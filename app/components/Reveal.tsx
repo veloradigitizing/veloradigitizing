@@ -3,15 +3,42 @@
 import {
   useEffect,
   useRef,
-  useState,
-  useSyncExternalStore,
   type ElementType,
   type ReactNode,
 } from "react";
 
-const subscribeNoop = () => () => {};
-const hasIntersectionObserver = () => typeof IntersectionObserver !== "undefined";
-const assumeSupportedOnServer = () => true;
+type ObserverPool = {
+  observer: IntersectionObserver;
+  callbacks: Map<Element, (entry: IntersectionObserverEntry) => void>;
+};
+
+const observers = new Map<number, ObserverPool>();
+
+function observe(node: Element, threshold: number, callback: (entry: IntersectionObserverEntry) => void) {
+  let pool = observers.get(threshold);
+  if (!pool) {
+    const callbacks: ObserverPool["callbacks"] = new Map();
+    const observer = new IntersectionObserver(entries => {
+      for (const entry of entries) callbacks.get(entry.target)?.(entry);
+    }, { threshold, rootMargin: "0px 0px -8% 0px" });
+    pool = { observer, callbacks };
+    observers.set(threshold, pool);
+  }
+  const current = pool;
+  current.callbacks.set(node, callback);
+  current.observer.observe(node);
+  let observing = true;
+  return () => {
+    if (!observing) return;
+    observing = false;
+    current.observer.unobserve(node);
+    current.callbacks.delete(node);
+    if (!current.callbacks.size) {
+      current.observer.disconnect();
+      observers.delete(threshold);
+    }
+  };
+}
 
 type Direction = "up" | "down" | "left" | "right" | "scale" | "fade";
 
@@ -47,46 +74,35 @@ export function Reveal({
 }) {
   const Tag = (as ?? "div") as ElementType;
   const ref = useRef<HTMLElement | null>(null);
-  const [inView, setInView] = useState(false);
-  const ioSupported = useSyncExternalStore(
-    subscribeNoop,
-    hasIntersectionObserver,
-    assumeSupportedOnServer,
-  );
-  // If IO is unsupported, just show.
-  const visible = inView || !ioSupported;
-
   useEffect(() => {
     const node = ref.current;
-    if (!node || !ioSupported) return;
+    if (!node || typeof IntersectionObserver === "undefined" || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
-    const obs = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setInView(true);
-            if (once) obs.unobserve(entry.target);
-          } else if (!once) {
-            setInView(false);
-          }
-        });
-      },
-      { threshold, rootMargin: "0px 0px -8% 0px" }
-    );
-
-    obs.observe(node);
-    return () => obs.disconnect();
-  }, [threshold, once, ioSupported]);
+    // SSR content is visible immediately. Only offscreen elements are prepared
+    // for a reveal; initial content never waits for hydration or an observer.
+    const stop = observe(node, threshold, entry => {
+      if (entry.isIntersecting) {
+        node.removeAttribute("data-reveal-pending");
+        node.classList.add("is-visible");
+        if (once) stop();
+      } else {
+        node.setAttribute("data-reveal-pending", "");
+        node.classList.remove("is-visible");
+      }
+    });
+    return () => {
+      stop();
+      node.removeAttribute("data-reveal-pending");
+    };
+  }, [threshold, once]);
 
   return (
     <Tag
       ref={ref}
-      className={`vr-reveal ${DIR_CLASS[direction]} ${
-        visible ? "is-visible" : ""
-      } ${className}`}
+      className={`vr-reveal ${DIR_CLASS[direction]} ${className}`}
       style={{
-        transitionDelay: visible ? `${delay}ms` : "0ms",
-        transitionDuration: visible ? `${duration * 1000}ms` : "0ms",
+        transitionDelay: `${delay}ms`,
+        transitionDuration: `${duration * 1000}ms`,
       }}
       {...rest}
     >

@@ -2,7 +2,8 @@ import Icon, { IconName } from "./Icon";
 import { Reveal } from "./Reveal";
 import { stagger } from "./stagger";
 import Link from "next/link";
-import Image, { type StaticImageData } from "next/image";
+import type { StaticImageData } from "next/image";
+import HeroImage from "./HeroImage";
 import heroImage from "../images/veloraHero3.webp";
 import HeroStatsCard from "./HeroStatsCard";
 
@@ -184,15 +185,7 @@ export default function Hero({
     <section className="relative overflow-hidden bg-white">
       {/* Background Image with MUCH LIGHTER Overlay */}
       <div className="absolute inset-0">
-        <Image
-          src={bg}
-          alt={imageLabel}
-          fill
-          priority
-          quality={80}
-          sizes="100vw"
-          className="object-cover object-center"
-        />
+        <HeroImage image={bg} alt={imageLabel} />
         {/* Stronger overlay on small/tablet screens for text contrast, soft gradient on laptop/desktop */}
         <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/85 to-white/75 lg:from-white/60 lg:via-white/30 lg:to-transparent" />
       </div>
