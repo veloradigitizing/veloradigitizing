@@ -4,11 +4,11 @@ import { BLOG_POSTS } from "./blog/posts";
 
 const BASE_URL = "https://www.veloradigitizing.com";
 // Stable last-modified date prevents Googlebot from treating timestamps as dynamic noise
-const STATIC_LASTMOD = new Date("2026-10-22T00:00:00.000Z");
+const STATIC_LASTMOD = new Date("2026-11-01T00:00:00.000Z");
 // Service selection and ordering content updated on this date.
-const SERVICES_LASTMOD = new Date("2026-10-28T00:00:00.000Z");
+const SERVICES_LASTMOD = new Date("2026-11-03T00:00:00.000Z");
 // Store product pages gained stitch-out notes and related guides on this date.
-const STORE_LASTMOD = new Date("2026-10-30T00:00:00.000Z");
+const STORE_LASTMOD = new Date("2026-11-02T00:00:00.000Z");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
