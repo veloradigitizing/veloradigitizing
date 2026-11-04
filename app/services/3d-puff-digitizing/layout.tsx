@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import RelatedGuides from "../../components/RelatedGuides";
 
 export const metadata: Metadata = {
-  title: { absolute: "3D Puff Embroidery Digitizing for Caps & Hats (DST, PES)" },
+  title: { absolute: "3D Puff Embroidery Digitizing for Caps & Hats | DST, PES" },
   description:
     "3D puff embroidery digitizing for caps and hoodies. Plan raised and flat details, foam placement and machine-ready DST or PES files. View prices and order requirements.",
   alternates: {

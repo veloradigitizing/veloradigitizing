@@ -15,7 +15,7 @@ export const post: BlogPost = {
     "image to embroidery"
   ],
   "publishedAt": "2026-09-08",
-  "updatedAt": "2026-10-27",
+  "updatedAt": "2026-11-04",
   "readTime": 8,
   "image": "/images/blog/convert-png-jpg-to-dst-embroidery-file.webp",
   "imagePrompt": "Step-by-step digital process graphic showing a PNG logo turning into vector outlines and finally transforming into realistic 3D simulated embroidery stitches on an ultra-wide monitor, 16:9.",

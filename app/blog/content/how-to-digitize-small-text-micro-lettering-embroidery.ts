@@ -16,7 +16,7 @@ export const post: BlogPost = {
     "60wt embroidery thread"
   ],
   "publishedAt": "2026-10-14",
-  "updatedAt": "2026-10-27",
+  "updatedAt": "2026-11-04",
   "readTime": 8,
   "image": "/images/blog/how-to-digitize-small-text-micro-lettering-embroidery.webp",
   "imagePrompt": "Macro close-up shot of crisp microscopic white and gold satin embroidered lettering stitched cleanly on a navy polo shirt chest, tiny 4mm lettering with needle-sharp definition, extreme detail showing individual threads, professional studio lighting, 16:9.",

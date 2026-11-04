@@ -112,7 +112,7 @@ export const post: BlogPost = {
     {
       "type": "ul",
       "items": [
-        "**Minimum Letter Height:** Letters must be at least 4.5mm (0.18 in) tall. Any text smaller than 4mm will clog with thread and become illegible.",
+        "**Minimum Letter Height:** Letters must be at least 4.5mm (0.18 in) tall. Any text smaller than 4mm will clog with thread and become illegible unless using special 60wt thread and micro-lettering techniques (see our [guide on how to embroider small letters](/blog/how-to-digitize-small-text-micro-lettering-embroidery)).",
         "**Minimum Line Thickness (Satin Stitch):** Column widths must be at least 0.8mm to 1.0mm wide. Thinner lines fail to trigger satin stitches and must be converted to running walk stitches.",
         "**Maximum Column Width:** Satin columns should not exceed 7.0mm to 8.0mm. Wider areas must be converted to Tatami (fill) patterns to prevent snagging.",
         "**Negative Space Gaps:** Maintain at least 1.0mm clearance between adjacent shapes to prevent thread bleeding."
@@ -184,7 +184,7 @@ export const post: BlogPost = {
       "type": "ul",
       "items": [
         "**Relying on Auto-Digitize Wizards:** Automated vector-to-stitch buttons produce random needle paths, uneven stitch directions, and excessive jump trims.",
-        "**Ignoring Fabric Properties:** Digitizing for a structured twill cap requires different underlays and sequencing (center-out) compared to stretchy performance pique polo shirts.",
+        "**Ignoring Fabric Properties:** Digitizing for a structured twill cap requires different underlays and center-out sequencing (see our [cap embroidery digitizing services](/services/cap-logo-digitizing) guide) compared to stretchy performance pique polo shirts.",
         "**Forgetting Tie-In and Tie-Out Locks:** Every color section and trim point must have micro lock stitches to prevent threads from unraveling after garment washing.",
         "**Overlapping Heavy Fills:** Stacking heavy Tatami fills directly on top of each other creates hard bullet-proof spots that break needles during high-speed sewing."
       ]

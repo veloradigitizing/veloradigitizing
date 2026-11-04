@@ -49,7 +49,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "A wider logo needs enough space between the placket and armhole, while fine lettering must stay readable at the chosen size. Use this guide to plan placement and embroidery size, then send the approved dimensions and fabric to our [logo digitizing team](/services). For a rough stitch budget, try the [embroidery stitch count calculator](/blog/how-to-estimate-embroidery-stitch-count)."
+      "text": "A wider logo needs enough space between the placket and armhole, while fine lettering must stay readable at the chosen size. If your emblem includes small tagline text or company URLs, reference our [micro-lettering embroidery guide](/blog/how-to-digitize-small-text-micro-lettering-embroidery) to ensure tiny fonts stay readable. Use this guide to plan placement and embroidery size, then send the approved dimensions and fabric to our [logo digitizing team](/services). For a rough stitch budget, try the [embroidery stitch count calculator](/blog/how-to-estimate-embroidery-stitch-count)."
     },
     {
       "type": "h2",
@@ -133,7 +133,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Get crisp, perfectly budgeted left chest files calibrated for your exact garment blanks. Explore our [custom embroidery services](/services) or send your logo to Velora Digitizing today."
+      "text": "Get crisp, perfectly budgeted left chest files calibrated for your exact garment blanks. Explore our [custom embroidery services](/services), order matching [cap logo digitizing](/services/cap-logo-digitizing) for branded headwear, or add tactile dimension with [3D puff embroidery digitizing](/services/3d-puff-digitizing)."
     },
     {
       "type": "h2",

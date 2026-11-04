@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import RelatedGuides from "../../components/RelatedGuides";
 
 export const metadata: Metadata = {
-  title: { absolute: "Applique Embroidery Digitizing for Varsity & Hoodies" },
+  title: { absolute: "Applique Digitizing Services | Custom Applique Embroidery (DST, PES)" },
   description:
     "Applique digitizing for varsity jackets, hoodies and patches. Plan placement, tackdown, cutting and borders. See prices and requirements for DST and PES files.",
   alternates: {

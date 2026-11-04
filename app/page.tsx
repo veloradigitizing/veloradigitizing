@@ -236,13 +236,16 @@ export default function Home() {
         title="Featured Embroidery Digitizing Guides"
         subtitle="Expert insights on manual vs AI digitizing, vector preparation, file formats, and stitch engineering."
         slugs={[
+          "convert-png-jpg-to-dst-embroidery-file",
+          "how-to-digitize-small-text-micro-lettering-embroidery",
+          "embroidery-stabilizer-guide-cutaway-vs-tearaway",
+          "cap-hat-logo-embroidery-digitizing-guide",
+          "3d-puff-embroidery-digitizing-guide",
+          "left-chest-logo-embroidery-digitizing-guide",
           "vector-art-for-screen-printing-vs-embroidery",
           "manual-digitizing-vs-ai-auto-digitizing",
-          "best-online-embroidery-digitizing-services-comparison-guide",
-          "what-is-embroidery-digitizing",
-          "embroidery-digitizing-cost-pricing-guide",
           "best-free-embroidery-digitizing-software-inkstitch-guide",
-          "3d-puff-embroidery-digitizing-guide",
+          "what-is-embroidery-digitizing",
         ]}
       />
 

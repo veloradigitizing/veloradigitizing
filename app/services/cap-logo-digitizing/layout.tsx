@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import RelatedGuides from "../../components/RelatedGuides";
 
 export const metadata: Metadata = {
-  title: { absolute: "Cap & Hat Logo Digitizing Services (DST, PES)" },
+  title: { absolute: "Cap Embroidery Digitizing Services | Hat Logo Digitizing (DST, PES)" },
   description:
     "Cap and hat logo digitizing for structured and unstructured headwear. Check frame requirements, prices and delivery plans for DST, PES and JEF files.",
   alternates: {

@@ -169,7 +169,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "High-quality digitizing protects your profit margins by preventing ruined garments and costly machine downtime. At Velora Digitizing, our seasoned punching artists deliver production-ready DST, PES, and EXP stitch files in 8 to 24 hours with free sew-out proofing. Explore our [custom embroidery digitizing services](/services) or upload your artwork on our [contact page](/contact) for an immediate free quote."
+      "text": "High-quality digitizing protects your profit margins by preventing ruined garments and costly machine downtime. At Velora Digitizing, our seasoned punching artists deliver production-ready DST, PES, and EXP stitch files in 8 to 24 hours with free sew-out proofing. Explore our [custom embroidery digitizing services](/services), order specialized [3D puff digitizing](/services/3d-puff-digitizing) for raised headwear, [cap logo digitizing](/services/cap-logo-digitizing) for curved frames, [applique digitizing](/services/applique-digitizing) for varsity letters, or upload your artwork on our [contact page](/contact) for an immediate free quote."
     },
     {
       "type": "h2",
