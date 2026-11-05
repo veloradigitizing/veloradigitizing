@@ -214,6 +214,22 @@ export default async function BlogPostPage({ params }: Props) {
         dateModified: post.updatedAt ?? post.publishedAt,
         articleSection: post.category,
         keywords: post.tags.join(", "),
+        about: [
+          {
+            "@type": "Service",
+            name: "Custom Embroidery Digitizing Services",
+            url: `${BASE_URL}/services`,
+          },
+          ...(post.relatedService
+            ? [
+                {
+                  "@type": "Service",
+                  name: post.relatedService.label,
+                  url: `${BASE_URL}${post.relatedService.href}`,
+                },
+              ]
+            : []),
+        ],
         wordCount: post.content.reduce((total, block) => {
           const text =
             "text" in block
