@@ -241,6 +241,27 @@ export const post: BlogPost = {
     },
     {
       "type": "h2",
+      "text": "Richardson 112 Cap Digitizing: Center-Out Settings to Prevent Puckering"
+    },
+    {
+      "type": "p",
+      "text": "In the United States, the **Richardson 112 Trucker Cap** is the single most popular custom headwear blank. However, because the Richardson 112 features a structured mid-profile crown with a stiff buckram front and a thick vertical center seam, amateur digitizing files frequently cause needle deflection, birdnesting, and severe center-seam puckering."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "**Strict 2.25-Inch Height Limit:** The crown curvature on the Richardson 112 begins flexing away from the cylinder arm above 2.25 inches. Never exceed 2.25\" (57mm) in logo height.",
+        "**Center-Out, Bottom-Up Pathing:** Stitching must start at the bottom-center and push outward toward the mesh panels. Sewing from left-to-right bunches the front buckram and creates an unsightly ripple across the center seam.",
+        "**Bridge the Center Seam with Perpendicular Underlay:** Lay down a foundation grid of tatami underlay across the center seam before top satins sew. This fills the seam valley and prevents embroidery outlines from shifting.",
+        "**2.5oz Crisp Tearaway Stabilizer:** Always hoop Richardson 112 caps with 1-2 sheets of 2.5oz heavy crisp cap tearaway backing pulled drum-tight inside the cap frame gauge."
+      ]
+    },
+    {
+      "type": "tip",
+      "text": "Decorating Richardson 112 trucker hats for clients? Our master punchers calibrate specialized center-out sequencing and seam-bridging underlays for zero-puckering hat sewouts. Explore our dedicated [Cap & Hat Logo Digitizing Services](/services/cap-logo-digitizing)."
+    },
+    {
+      "type": "h2",
       "text": "Get a Cap-Ready File From Velora Digitizing"
     },
     {
