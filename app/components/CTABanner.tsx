@@ -15,9 +15,9 @@ export default function CTABanner({
   return (
     <section className="relative overflow-hidden bg-navy-950">
       {/* Animated decorative blobs */}
-      <div className="pointer-events-none absolute -right-20 -top-24 h-72 w-72 rounded-full bg-brand-500/10 blur-3xl vr-float-soft" />
+      <div className="pointer-events-none absolute -right-20 -top-24 h-72 w-72 rounded-full bg-brand-500/10 hidden blur-3xl vr-float-soft lg:block" />
       <div
-        className="pointer-events-none absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-brand-600/10 blur-3xl vr-float-soft"
+        className="pointer-events-none absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-brand-600/10 hidden blur-3xl vr-float-soft lg:block"
         style={{ animationDelay: "2s" }}
       />
       {/* Shimmer line top */}

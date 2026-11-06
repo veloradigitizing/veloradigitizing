@@ -270,23 +270,39 @@ export default function RootLayout({
       className={`${inter.variable} ${playfair.variable} antialiased`}
     >
       <head>
-        {/* Preconnect to Required Origins for analytics & CDNs */}
-        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        {/* DNS only: analytics loads late, so a full preconnect would just
+            compete with the hero image for bandwidth on mobile. */}
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-        <link rel="preconnect" href="https://www.google-analytics.com" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
 
-        {/* Keep the small event queue ready; load analytics after the page's resources. */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-SF2BZRJZ7K"
-          strategy="lazyOnload"
-        />
+        {/* gtag.js (~180 KB, ~1s of CPU on a mid-range phone) is injected on the
+            visitor's first interaction, or a few seconds after load. Calls made
+            before then are queued in dataLayer and sent once it loads, so no
+            page views are lost. */}
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
             gtag('js', new Date());
             gtag('config', 'G-SF2BZRJZ7K');
+            (function () {
+              var done = false;
+              var evts = ['scroll', 'pointerdown', 'keydown', 'touchstart', 'mousemove'];
+              function load() {
+                if (done) return;
+                done = true;
+                evts.forEach(function (e) { removeEventListener(e, load); });
+                var s = document.createElement('script');
+                s.async = true;
+                s.src = 'https://www.googletagmanager.com/gtag/js?id=G-SF2BZRJZ7K';
+                document.head.appendChild(s);
+              }
+              evts.forEach(function (e) { addEventListener(e, load, { once: true, passive: true }); });
+              function later() { setTimeout(load, 7000); }
+              if (document.readyState === 'complete') later();
+              else addEventListener('load', later, { once: true });
+            })();
           `}
         </Script>
         <script

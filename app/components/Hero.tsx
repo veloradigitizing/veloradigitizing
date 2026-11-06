@@ -191,10 +191,10 @@ export default function Hero({
       </div>
 
       {/* Decorative gradient blobs */}
-      <div className="pointer-events-none absolute -top-24 left-[-10%] z-10 h-72 w-72 rounded-full bg-brand-500/10 blur-3xl vr-float-soft" />
+      <div className="pointer-events-none absolute -top-24 left-[-10%] z-10 h-72 w-72 rounded-full bg-brand-500/10 hidden blur-3xl vr-float-soft lg:block" />
 
       <div
-        className="pointer-events-none absolute bottom-[-10%] right-[-5%] z-10 h-80 w-80 rounded-full bg-navy-700/10 blur-3xl vr-float-soft"
+        className="pointer-events-none absolute bottom-[-10%] right-[-5%] z-10 h-80 w-80 rounded-full bg-navy-700/10 hidden blur-3xl vr-float-soft lg:block"
         style={{ animationDelay: "1.5s" }}
       />
 

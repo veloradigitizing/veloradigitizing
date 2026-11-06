@@ -285,7 +285,7 @@ export default function Header() {
   return (
     <>
       <header
-        className={`sticky top-0 z-50 w-full will-change-transform transition-transform duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] ${isHidden ? "-translate-y-full opacity-0 pointer-events-none" : "translate-y-0 opacity-100"} ${scrolledState[0] ? "border-b border-navy-950/10 bg-white/80 shadow-sm backdrop-blur-xl supports-[backdrop-filter]:bg-white/70" : "border-b border-transparent bg-white/95 backdrop-blur"}`}
+        className={`sticky top-0 z-50 w-full will-change-transform transition-transform duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] ${isHidden ? "-translate-y-full opacity-0 pointer-events-none" : "translate-y-0 opacity-100"} ${scrolledState[0] ? "border-b border-navy-950/10 bg-white shadow-sm lg:bg-white/80 lg:backdrop-blur-xl lg:supports-[backdrop-filter]:bg-white/70" : "border-b border-transparent bg-white lg:bg-white/95 lg:backdrop-blur"}`}
         style={{ transform: isHidden ? "translate3d(0, -100%, 0)" : "translate3d(0, 0, 0)" }}
       >
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-2 px-3 sm:h-20 sm:gap-4 sm:px-6 lg:px-8 md:h-24">

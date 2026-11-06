@@ -22,8 +22,8 @@ export default function WhyChooseUs({
 }) {
   return (
     <section className="relative overflow-hidden bg-navy-800 py-16">
-      <div className="pointer-events-none absolute -right-24 -top-32 h-96 w-96 rounded-full bg-brand-500/20 blur-3xl vr-float-soft" />
-      <div className="pointer-events-none absolute -bottom-32 -left-24 h-96 w-96 rounded-full bg-brand-400/10 blur-3xl vr-float-soft" style={{ animationDelay: "1.8s" }} />
+      <div className="pointer-events-none absolute -right-24 -top-32 h-96 w-96 rounded-full bg-brand-500/20 hidden blur-3xl vr-float-soft lg:block" />
+      <div className="pointer-events-none absolute -bottom-32 -left-24 h-96 w-96 rounded-full bg-brand-400/10 hidden blur-3xl vr-float-soft lg:block" style={{ animationDelay: "1.8s" }} />
       <div className="relative mx-auto max-w-7xl px-5 lg:px-10">
         <Reveal direction="up">
           <SectionTag eyebrow={eyebrow} title={title} dark />

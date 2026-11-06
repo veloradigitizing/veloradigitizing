@@ -89,6 +89,16 @@ html {
   }
 }
 
+/* Mobile/tablet: stop infinite decorative loops. On throttled phone CPUs they
+   keep the main thread repainting forever (high TBT + Speed Index). */
+@media (max-width: 1023.98px) {
+  .vr-float,
+  .vr-float-soft,
+  .vr-pulse-ring {
+    animation: none;
+  }
+}
+
 /* ---------- Keyframes ---------- */
 @keyframes velora-fade-up {
   from {
