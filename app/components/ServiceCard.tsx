@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { IconCircle } from "./Section";
-import Icon, { type IconName } from "./Icon";
+import { type IconName } from "./Icon";
 import TiltCard from "./TiltCard";
 
 export type Service = {

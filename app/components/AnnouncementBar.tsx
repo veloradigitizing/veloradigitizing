@@ -100,27 +100,38 @@ export default function AnnouncementBar() {
 
   if (!visible) return null;
 
-  const msg = MESSAGES[idx];
-
   return (
     <div className="relative z-[60] overflow-hidden bg-gradient-to-r from-brand-700 via-brand-600 to-brand-700 text-white shadow-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-center gap-3 px-4 py-2 sm:px-6 lg:px-8">
-        <div
-          key={idx}
-          className="flex flex-1 items-center justify-center gap-2 text-center text-xs font-medium sm:text-sm"
-          style={{ animation: "velora-fade-in 0.4s ease-out" }}
-        >
-          <Icon name={msg.icon} />
-          <span>{msg.text}</span>
-          <a
-            href={msg.href}
-            className="group inline-flex shrink-0 items-center gap-1 rounded-full bg-white/15 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider transition-colors hover:bg-white/25 sm:text-xs"
-          >
-            {msg.cta}
-            <svg className="h-3 w-3 transition-transform group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-              <path d="M5 12h14M13 5l7 7-7 7" />
-            </svg>
-          </a>
+        {/* All messages share one grid cell, so the bar is always as tall as the
+            longest message. Rotating no longer changes its height, which used
+            to shift the whole page (CLS) on narrow screens. */}
+        <div className="grid flex-1">
+          {MESSAGES.map((msg, i) => {
+            const active = i === idx;
+            return (
+              <div
+                key={msg.href + msg.cta}
+                aria-hidden={!active}
+                className={`col-start-1 row-start-1 flex items-center justify-center gap-2 text-center text-xs font-medium transition-opacity duration-400 ease-out sm:text-sm ${
+                  active ? "opacity-100" : "invisible opacity-0"
+                }`}
+              >
+                <Icon name={msg.icon} />
+                <span>{msg.text}</span>
+                <a
+                  href={msg.href}
+                  tabIndex={active ? undefined : -1}
+                  className="group inline-flex shrink-0 items-center gap-1 rounded-full bg-white/15 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider transition-colors hover:bg-white/25 sm:text-xs"
+                >
+                  {msg.cta}
+                  <svg className="h-3 w-3 transition-transform group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                    <path d="M5 12h14M13 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            );
+          })}
         </div>
 
         {/* Dots */}
