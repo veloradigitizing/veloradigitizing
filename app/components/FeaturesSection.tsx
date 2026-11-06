@@ -1,5 +1,3 @@
-"use client";
-
 import Icon, { type IconName } from "./Icon";
 import { Reveal } from "./Reveal";
 

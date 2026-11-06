@@ -1,7 +1,5 @@
-"use client";
-
-import { useState } from "react";
 import Image from "next/image";
+import CopyPromptButton from "./CopyPromptButton";
 
 /**
  * Cover image slot for blog posts.
@@ -25,8 +23,6 @@ export default function BlogImagePlaceholder({
   compact?: boolean;
   className?: string;
 }) {
-  const [copied, setCopied] = useState(false);
-
   if (image) {
     return (
       <div className={`relative aspect-video w-full overflow-hidden ${className}`}>
@@ -35,22 +31,12 @@ export default function BlogImagePlaceholder({
           alt={alt}
           fill
           priority={priority}
-          sizes="(max-width: 768px) 100vw, 900px"
+          sizes={compact ? "(max-width: 768px) 100vw, 400px" : "(max-width: 768px) 100vw, 900px"}
           className="object-cover"
         />
       </div>
     );
   }
-
-  const copyPrompt = async () => {
-    try {
-      await navigator.clipboard.writeText(prompt);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 1500);
-    } catch {
-      /* clipboard unavailable, ignore */
-    }
-  };
 
   return (
     <div
@@ -89,13 +75,7 @@ export default function BlogImagePlaceholder({
       </p>
 
       {!compact && (
-        <button
-          type="button"
-          onClick={copyPrompt}
-          className="vr-btn mt-4 rounded-md border border-navy-950/15 bg-white px-4 py-2 text-xs font-semibold text-navy-950 transition-colors hover:border-brand-600 hover:text-brand-600"
-        >
-          {copied ? "Copied!" : "Copy prompt"}
-        </button>
+        <CopyPromptButton prompt={prompt} />
       )}
     </div>
   );

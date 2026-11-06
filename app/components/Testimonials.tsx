@@ -1,9 +1,8 @@
-"use client";
-
 import { SectionTag } from "./Section";
 import { Reveal } from "./Reveal";
 import { stagger } from "./stagger";
 import Link from "next/link";
+import TiltCard from "./TiltCard";
 
 export type Testimonial = {
   quote: string;
@@ -45,29 +44,11 @@ export const B2B_TESTIMONIALS: Testimonial[] = [
 ];
 
 function TestimonialCard({ t }: { t: Testimonial }) {
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    const card = e.currentTarget;
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    const centerX = rect.width / 2;
-    const centerY = rect.height / 2;
-
-    const rotateX = ((y - centerY) / centerY) * -6;
-    const rotateY = ((x - centerX) / centerX) * 6;
-
-    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
-  };
-
-  const handleMouseLeave = (e: React.MouseEvent<HTMLDivElement>) => {
-    e.currentTarget.style.transform =
-      "perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)";
-  };
-
   return (
-    <div
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
+    <TiltCard
+      maxDeg={6}
+      hover="translateY(-4px)"
+      rest="translateY(0px)"
       className="group relative flex h-full flex-col justify-between rounded-2xl border border-navy-950/10 bg-white p-6 sm:p-7 shadow-sm transition-all duration-200 ease-out hover:shadow-xl hover:shadow-brand-500/10 hover:border-brand-600/30"
       style={{
         transformStyle: "preserve-3d",
@@ -113,7 +94,7 @@ function TestimonialCard({ t }: { t: Testimonial }) {
       <div className="pointer-events-none absolute inset-0 -z-10 rounded-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100">
         <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-brand-500/5 via-transparent to-brand-600/5" />
       </div>
-    </div>
+    </TiltCard>
   );
 }
 

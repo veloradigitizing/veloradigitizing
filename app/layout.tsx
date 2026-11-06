@@ -17,9 +17,12 @@ const inter = Inter({
   display: "swap",
 });
 
+// Headings only use bold, so ship the single 700 weight instead of the full
+// variable font (smaller download competing with the hero image on mobile).
 const playfair = Playfair_Display({
   variable: "--font-playfair",
   subsets: ["latin"],
+  weight: "700",
   display: "swap",
 });
 

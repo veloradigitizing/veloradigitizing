@@ -1,10 +1,8 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
 import { IconCircle } from "./Section";
 import Icon, { type IconName } from "./Icon";
-import { SERVICES } from "./services-data";
+import TiltCard from "./TiltCard";
 
 export type Service = {
   slug: string;
@@ -43,25 +41,6 @@ const SERVICE_DIRECT_LINKS: Record<string, string> = {
 };
 
 export default function ServiceCard({ service }: { service: Service }) {
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    const card = e.currentTarget;
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    const centerX = rect.width / 2;
-    const centerY = rect.height / 2;
-
-    const rotateX = ((y - centerY) / centerY) * -8;
-    const rotateY = ((x - centerX) / centerX) * 8;
-
-    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
-  };
-
-  const handleMouseLeave = (e: React.MouseEvent<HTMLDivElement>) => {
-    e.currentTarget.style.transform =
-      "perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)";
-  };
-
   // Get the link for this service (direct page or portfolio filter)
   const portfolioCategory = SERVICE_TO_CATEGORY[service.slug] || "all";
   const linkHref =
@@ -70,9 +49,7 @@ export default function ServiceCard({ service }: { service: Service }) {
 
   return (
     <Link href={linkHref} className="group block h-full">
-      <div
-        onMouseMove={handleMouseMove}
-        onMouseLeave={handleMouseLeave}
+      <TiltCard
         className="flex h-full cursor-pointer flex-col rounded-2xl border border-navy-950/10 bg-white p-6 shadow-sm transition-all duration-200 ease-out hover:shadow-xl hover:shadow-brand-500/10"
         style={{
           transformStyle: "preserve-3d",
@@ -152,7 +129,7 @@ export default function ServiceCard({ service }: { service: Service }) {
         <div className="pointer-events-none absolute inset-0 -z-10 rounded-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100">
           <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-brand-500/10 via-transparent to-brand-600/5" />
         </div>
-      </div>
+      </TiltCard>
     </Link>
   );
 }
