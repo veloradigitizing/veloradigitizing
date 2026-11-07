@@ -5,97 +5,101 @@ import { BLOG_POSTS } from "./blog/posts";
 const BASE_URL = "https://www.veloradigitizing.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // Dynamic current date ensures Googlebot always discovers fresh lastmod timestamps
-  const CURRENT_DATE = new Date();
+  // lastmod must reflect real content changes. A build-time date on every URL
+  // makes all pages look changed on every deploy, so Google learns to ignore it.
+  // Static pages: date of the last meaningful edit to that page (update when the
+  // page content changes). Blog posts: their own updatedAt / publishedAt.
+  const postDate = (p: (typeof BLOG_POSTS)[number]) => new Date(p.updatedAt ?? p.publishedAt);
+  const latestPost = new Date(Math.max(...BLOG_POSTS.map((p) => postDate(p).getTime())));
 
   const staticRoutes: MetadataRoute.Sitemap = [
     {
       url: BASE_URL,
-      lastModified: CURRENT_DATE,
+      lastModified: new Date("2026-11-04"),
       changeFrequency: "weekly",
       priority: 1.0,
     },
     {
       url: `${BASE_URL}/services`,
-      lastModified: CURRENT_DATE,
+      lastModified: new Date("2026-10-28"),
       changeFrequency: "weekly",
       priority: 0.95,
     },
     {
       url: `${BASE_URL}/pricing`,
-      lastModified: CURRENT_DATE,
+      lastModified: new Date("2026-10-26"),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${BASE_URL}/services/applique-digitizing`,
-      lastModified: CURRENT_DATE,
+      lastModified: new Date("2026-10-28"),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${BASE_URL}/services/3d-puff-digitizing`,
-      lastModified: CURRENT_DATE,
+      lastModified: new Date("2026-10-28"),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${BASE_URL}/services/cap-logo-digitizing`,
-      lastModified: CURRENT_DATE,
+      lastModified: new Date("2026-10-28"),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${BASE_URL}/vector-art`,
-      lastModified: CURRENT_DATE,
+      lastModified: new Date("2026-10-17"),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${BASE_URL}/patches`,
-      lastModified: CURRENT_DATE,
+      lastModified: new Date("2026-10-30"),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${BASE_URL}/portfolio`,
-      lastModified: CURRENT_DATE,
+      lastModified: new Date("2026-10-31"),
       changeFrequency: "weekly",
       priority: 0.85,
     },
     {
       url: `${BASE_URL}/store`,
-      lastModified: CURRENT_DATE,
+      lastModified: new Date("2026-10-31"),
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
       url: `${BASE_URL}/blog`,
-      lastModified: CURRENT_DATE,
+      lastModified: latestPost,
       changeFrequency: "weekly",
       priority: 0.85,
     },
     {
       url: `${BASE_URL}/about`,
-      lastModified: CURRENT_DATE,
+      lastModified: new Date("2026-10-17"),
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
       url: `${BASE_URL}/contact`,
-      lastModified: CURRENT_DATE,
+      lastModified: new Date("2026-10-07"),
       changeFrequency: "monthly",
       priority: 0.75,
     },
     {
       url: `${BASE_URL}/privacy-policy`,
-      lastModified: CURRENT_DATE,
+      lastModified: new Date("2026-10-04"),
       changeFrequency: "yearly",
       priority: 0.3,
     },
     {
       url: `${BASE_URL}/terms-and-conditions`,
-      lastModified: CURRENT_DATE,
+      lastModified: new Date("2026-10-04"),
       changeFrequency: "yearly",
       priority: 0.3,
     },
@@ -106,14 +110,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     .filter((item) => item.kind === "patch" || item.kind === "bundle")
     .map((item) => ({
       url: `${BASE_URL}/store/${item.slug}`,
-      lastModified: CURRENT_DATE,
+      lastModified: new Date("2026-10-30"),
       changeFrequency: "weekly",
       priority: item.kind === "bundle" ? 0.75 : 0.7,
     }));
 
   const blogRoutes: MetadataRoute.Sitemap = BLOG_POSTS.map((post) => ({
     url: `${BASE_URL}/blog/${post.slug}`,
-    lastModified: CURRENT_DATE,
+    lastModified: postDate(post),
     changeFrequency: "weekly",
     priority: 0.8,
   }));
