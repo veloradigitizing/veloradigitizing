@@ -112,6 +112,10 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "High-volume athletic decorators use pre-cut laser applique files (exported from vector master art) to cut hundreds of identical letters in seconds. The machine sews the placement line, the operator places the laser-cut patch, and the machine immediately sews the tackdown and satin border without stopping for manual scissor trimming."
+    },
+    {
+      "type": "p",
+      "text": "For athletic lettering made with twill fabric, see [what is tackle twill](/blog/what-is-tackle-twill). To turn applique designs into wearable badges, read [how to make embroidered patches](/blog/how-to-make-embroidered-patches)."
     }
   ]
 };

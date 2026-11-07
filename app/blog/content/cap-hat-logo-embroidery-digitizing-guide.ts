@@ -275,6 +275,10 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "Working on knit headwear too? Read the [beanie embroidery guide](/blog/beanie-embroidery-digitizing-guide). If you are planning to stitch caps in-house, our [multi-needle embroidery machine guide](/blog/multi-needle-embroidery-machine-guide) explains cap frames and machine choice, and [how much embroidery costs](/blog/how-much-does-embroidery-cost) helps you price hats."
+    },
+    {
+      "type": "p",
+      "text": "For premium shiny cap logos, see the metallic embroidery thread guide. Selling caps as a business? Read [how to start an embroidery business](/blog/how-to-start-an-embroidery-business)."
     }
   ]
 };

@@ -128,6 +128,10 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "For high-pile textiles like fleece hoodies, terrycloth towels, and corduroy, digitizers apply a **Double Underlay** combining an Edge-Run contour with a dense interior Zig-Zag. This flattens and compresses the fabric pile completely, providing a solid elevated rail for the glossy top satin stitches."
+    },
+    {
+      "type": "p",
+      "text": "Underlay works hand in hand with the top stitches; see the [satin stitch guide](/blog/satin-stitch-embroidery-guide) and the [embroidery fill stitches guide](/blog/embroidery-fill-stitches-guide) for column widths and fill density."
     }
   ]
 };

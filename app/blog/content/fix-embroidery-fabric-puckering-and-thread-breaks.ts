@@ -127,6 +127,10 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "Many thread breaks start with the wrong needle or thread size. Check our [machine embroidery needle size guide](/blog/embroidery-machine-needle-size-guide), the [embroidery thread weight guide](/blog/embroidery-thread-weight-guide) and the [embroidery hoop sizes chart](/blog/embroidery-hoop-sizes-chart) before changing your file."
+    },
+    {
+      "type": "p",
+      "text": "Balanced tension prevents many of these problems; see the embroidery machine thread tension guide. Dense fills are a common cause too; see the [fill stitches guide](/blog/embroidery-fill-stitches-guide)."
     }
   ]
 };

@@ -164,6 +164,10 @@ export const post: BlogPost = {
         "**Needle Deflecting on Center Seam:** Slow machine running speed down to 550-600 RPM and add extra tie-in underlay stitches across the seam trench.",
         "**Microscopic Foam Fuzzies After Tearaway:** Lightly blast the finished embroidery with a heat gun on medium setting for 2-3 seconds to shrink residual EVA foam cleanly inside the stitches."
       ]
+    },
+    {
+      "type": "p",
+      "text": "3D puff relies on dense satin columns; learn the limits in our [satin stitch embroidery guide](/blog/satin-stitch-embroidery-guide). For shiny accents on caps, see the metallic embroidery thread guide."
     }
   ]
 };

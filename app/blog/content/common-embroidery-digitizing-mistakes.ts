@@ -163,6 +163,10 @@ export const post: BlogPost = {
         "**Optimize Pathing & Trims:** Link adjacent design elements with travel walk stitches hidden under future satin layers to keep machine run times fast.",
         "**Test Sew on Matching Scrap Fabric:** Always hoop scrap fabric identical to the target order with correct backing before running high-volume production."
       ]
+    },
+    {
+      "type": "p",
+      "text": "Avoid these mistakes from the start with our how to digitize embroidery designs guide, and rule out machine causes with the thread tension guide. Stitch-type limits are explained in the [satin stitch](/blog/satin-stitch-embroidery-guide) and [fill stitch](/blog/embroidery-fill-stitches-guide) guides."
     }
   ]
 };

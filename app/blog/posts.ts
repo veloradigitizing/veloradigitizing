@@ -39,6 +39,11 @@ import post_embroidery_thread_weight_guide from './content/embroidery-thread-wei
 import post_embroidery_hoop_sizes_chart from './content/embroidery-hoop-sizes-chart';
 import post_embroidery_machine_needle_size_guide from './content/embroidery-machine-needle-size-guide';
 import post_multi_needle_embroidery_machine_guide from './content/multi-needle-embroidery-machine-guide';
+import post_how_to_start_an_embroidery_business from './content/how-to-start-an-embroidery-business';
+import post_what_is_tackle_twill from './content/what-is-tackle-twill';
+import post_satin_stitch_embroidery_guide from './content/satin-stitch-embroidery-guide';
+import post_embroidery_fill_stitches_guide from './content/embroidery-fill-stitches-guide';
+import post_how_to_make_embroidered_patches from './content/how-to-make-embroidered-patches';
 
 export const BLOG_POSTS: BlogPost[] = [
   post_3d_puff_embroidery_digitizing_guide,
@@ -79,6 +84,11 @@ export const BLOG_POSTS: BlogPost[] = [
   post_embroidery_hoop_sizes_chart,
   post_embroidery_machine_needle_size_guide,
   post_multi_needle_embroidery_machine_guide,
+  post_how_to_start_an_embroidery_business,
+  post_what_is_tackle_twill,
+  post_satin_stitch_embroidery_guide,
+  post_embroidery_fill_stitches_guide,
+  post_how_to_make_embroidered_patches,
 ];
 
 export const BLOG_CATEGORIES = Array.from(

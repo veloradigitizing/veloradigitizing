@@ -157,6 +157,10 @@ export const post: BlogPost = {
       type: 'p',
       text: "Budgeting a portrait order? See [how much does embroidery cost](/blog/how-much-does-embroidery-cost). Fine fur and eye details often stitch best with finer thread; our [embroidery thread weight guide](/blog/embroidery-thread-weight-guide) explains when to use 60 wt.",
     },
+    {
+      type: 'p',
+      text: "Portraits look great on jacket backs and patches; see denim jacket embroidery and [how to make embroidered patches](/blog/how-to-make-embroidered-patches).",
+    },
   ],
 };
 

@@ -15,6 +15,7 @@ export const post: BlogPost = {
     'how much does an embroidery machine cost',
     'single needle vs multi needle embroidery machine',
     'commercial embroidery machine',
+    'best embroidery machine for small business',
   ],
   publishedAt: '2026-11-07',
   readTime: 8,
@@ -159,6 +160,10 @@ export const post: BlogPost = {
     {
       type: 'p',
       text: 'If you would rather spend your time running the machine than digitizing, we can supply production-ready files in your machine format. See [digitizing prices](/pricing) or [send your first logo](/contact).',
+    },
+    {
+      type: 'p',
+      text: "Buying your first machine for a business? See [how to start an embroidery business](/blog/how-to-start-an-embroidery-business), and keep stitches balanced with the thread tension guide.",
     },
   ],
 };
