@@ -124,6 +124,10 @@ export const post: BlogPost = {
       type: 'p',
       text: 'Ready to start? [Send your logo](/contact) and we will confirm the size and price before digitizing.',
     },
+    {
+      type: 'p',
+      text: "For the right needle on knit polos, see the [machine embroidery needle size guide](/blog/embroidery-machine-needle-size-guide). Pick a hoop with our [embroidery hoop sizes chart](/blog/embroidery-hoop-sizes-chart), and price your order with [how much does embroidery cost](/blog/how-much-does-embroidery-cost).",
+    },
   ],
 };
 

@@ -34,6 +34,11 @@ import post_best_fonts_for_embroidery from './content/best-fonts-for-embroidery'
 import post_best_polo_shirts_for_embroidery from './content/best-polo-shirts-for-embroidery';
 import post_beanie_embroidery_digitizing_guide from './content/beanie-embroidery-digitizing-guide';
 import post_how_to_open_dst_embroidery_file from './content/how-to-open-dst-embroidery-file';
+import post_how_much_does_embroidery_cost from './content/how-much-does-embroidery-cost';
+import post_embroidery_thread_weight_guide from './content/embroidery-thread-weight-guide';
+import post_embroidery_hoop_sizes_chart from './content/embroidery-hoop-sizes-chart';
+import post_embroidery_machine_needle_size_guide from './content/embroidery-machine-needle-size-guide';
+import post_multi_needle_embroidery_machine_guide from './content/multi-needle-embroidery-machine-guide';
 
 export const BLOG_POSTS: BlogPost[] = [
   post_3d_puff_embroidery_digitizing_guide,
@@ -69,6 +74,11 @@ export const BLOG_POSTS: BlogPost[] = [
   post_best_polo_shirts_for_embroidery,
   post_beanie_embroidery_digitizing_guide,
   post_how_to_open_dst_embroidery_file,
+  post_how_much_does_embroidery_cost,
+  post_embroidery_thread_weight_guide,
+  post_embroidery_hoop_sizes_chart,
+  post_embroidery_machine_needle_size_guide,
+  post_multi_needle_embroidery_machine_guide,
 ];
 
 export const BLOG_CATEGORIES = Array.from(

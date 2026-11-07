@@ -185,6 +185,10 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "For [custom patch digitizing](/patches), tell our team which machine and embroidery format you use, such as DST, PES, EXP, JEF, or VP3. Browse our [felt and twill patch samples](/store) and request the formats required for your project when you ask for a quote."
+    },
+    {
+      "type": "p",
+      "text": "Need to view a file before you stitch it? Our step-by-step guide shows [how to open a DST file](/blog/how-to-open-dst-embroidery-file) on Windows, Mac and phone, and the [embroidery hoop sizes chart](/blog/embroidery-hoop-sizes-chart) helps you confirm the design fits your sewing field."
     }
   ]
 };

@@ -155,6 +155,10 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "Stabilizers and digitizing underlays work as a unified system. At Velora Digitizing, our master punchers calibrate underlay foundations specifically tailored to your garment fabrics and stabilizer choices. Explore our full [custom embroidery digitizing services](/services), order specialized [3D puff digitizing](/services/3d-puff-digitizing), or upload your artwork on our [contact page](/contact) for a guaranteed 24-hour turnaround."
+    },
+    {
+      "type": "p",
+      "text": "Stabilizer works together with the right needle and hoop. Match them using our [machine embroidery needle size guide](/blog/embroidery-machine-needle-size-guide) and [embroidery hoop sizes chart](/blog/embroidery-hoop-sizes-chart). For knit garments, see the [polo shirt](/blog/best-polo-shirts-for-embroidery) and [beanie](/blog/beanie-embroidery-digitizing-guide) guides."
     }
   ]
 };

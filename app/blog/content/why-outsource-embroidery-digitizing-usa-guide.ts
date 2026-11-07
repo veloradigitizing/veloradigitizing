@@ -140,6 +140,10 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "At **Velora Digitizing**, we partner with commercial embroidery shops across the United States and Canada, delivering 8 to 24-hour turnaround, guaranteed runability, and dedicated wholesale support. Submit your artwork today for an instant free stitch quote."
+    },
+    {
+      "type": "p",
+      "text": "Setting up or growing a shop? Our [multi-needle embroidery machine guide](/blog/multi-needle-embroidery-machine-guide) covers equipment and [how much does embroidery cost](/blog/how-much-does-embroidery-cost) explains how shops price their work."
     }
   ]
 };

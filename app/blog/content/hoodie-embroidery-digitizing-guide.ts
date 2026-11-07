@@ -190,6 +190,10 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "Need professional, production-tested embroidery digitizing files tailored specifically for heavyweight fleece hoodies, puff lettering, or jackets? Submit your artwork to **Velora Digitizing** for same-day turnaround, exact stitch optimization, and guaranteed runability."
+    },
+    {
+      "type": "p",
+      "text": "Pick the right frame for chest designs with our [embroidery hoop sizes chart](/blog/embroidery-hoop-sizes-chart), and see [how to convert a photo to embroidery](/blog/convert-photo-to-embroidery-guide) for pet and portrait hoodies."
     }
   ]
 };

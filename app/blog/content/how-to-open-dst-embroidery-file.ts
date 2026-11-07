@@ -121,6 +121,10 @@ export const post: BlogPost = {
       type: 'p',
       text: 'In those cases the design should be digitized again for the new size and fabric. Our [embroidery digitizing services](/services) start at the prices on our [pricing page](/pricing), and you can [send your file or artwork](/contact) for a quick quote.',
     },
+    {
+      type: 'p',
+      text: "After opening a DST, check that it fits your machine with the [embroidery hoop sizes chart](/blog/embroidery-hoop-sizes-chart). Most commercial machines read DST natively; see the [multi-needle embroidery machine guide](/blog/multi-needle-embroidery-machine-guide).",
+    },
   ],
 };
 

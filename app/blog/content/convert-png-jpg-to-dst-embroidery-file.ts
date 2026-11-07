@@ -155,6 +155,10 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "A Tajima DST file records needle movements in three-byte binary coordinate packets. The file tells the machine stepper motors: 'Move X +24 units, Move Y -18 units, Penetrate needle, Advance'. Because DST files omit color tables, a commercial PDF production sheet detailing stitch counts, color stops, and dimensions is always paired with the DST file."
+    },
+    {
+      "type": "p",
+      "text": "Want to stitch a pet or family photo instead of a logo? Read [how to convert a photo to embroidery](/blog/convert-photo-to-embroidery-guide). Already have a DST file? See [how to open a DST file](/blog/how-to-open-dst-embroidery-file) to check it before stitching."
     }
   ]
 };

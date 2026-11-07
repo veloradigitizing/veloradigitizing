@@ -229,6 +229,10 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "Velora Digitizing delivers hand-punched embroidery files with 8-24 hour turnaround for logos, caps, 3D puff, patches and jacket backs. Browse our [digitizing services](/services) or send your artwork through our [contact page](/contact) to request a free quote."
+    },
+    {
+      "type": "p",
+      "text": "This guide covers the cost of the stitch file. For the price of the embroidery itself on shirts, hats and hoodies, see [how much does embroidery cost](/blog/how-much-does-embroidery-cost) with an example pricing chart."
     }
   ]
 };

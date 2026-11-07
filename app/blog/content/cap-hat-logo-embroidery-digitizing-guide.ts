@@ -271,6 +271,10 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "Explore our [felt patch samples](/portfolio?category=felt-patches) and [twill patch samples](/portfolio?category=twill-patches) for examples of custom patch work. For a cap project, send your logo, finished size, and cap material so our team can recommend a suitable digitizing setup."
+    },
+    {
+      "type": "p",
+      "text": "Working on knit headwear too? Read the [beanie embroidery guide](/blog/beanie-embroidery-digitizing-guide). If you are planning to stitch caps in-house, our [multi-needle embroidery machine guide](/blog/multi-needle-embroidery-machine-guide) explains cap frames and machine choice, and [how much embroidery costs](/blog/how-much-does-embroidery-cost) helps you price hats."
     }
   ]
 };

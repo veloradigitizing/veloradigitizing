@@ -155,6 +155,10 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "Hoop burn occurs when clamping pressure crushes the delicate fibers of luxury pique or mercerized cotton, leaving a permanent shiny ring around the embroidery. To eliminate hoop burn: use magnetic embroidery hoops (such as Mighty Hoops), never over-tighten manual hoop screws, and steam garments lightly after unhooping."
+    },
+    {
+      "type": "p",
+      "text": "Choosing garments for a corporate order? See our guide to the [best polo shirts for embroidery](/blog/best-polo-shirts-for-embroidery), pick readable lettering with the [best fonts for embroidery](/blog/best-fonts-for-embroidery) and check the right hoop in our [embroidery hoop sizes chart](/blog/embroidery-hoop-sizes-chart)."
     }
   ]
 };

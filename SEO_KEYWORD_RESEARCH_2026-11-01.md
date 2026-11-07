@@ -148,3 +148,16 @@ Source: Keyword Overview reports in the same Semrush interface, US database, rea
 
 Checked and not selected: embroidery stitch types (720 / 38, too competitive and mostly hand-embroidery intent), monogram digitizing (20 / n/a, too little demand).
 Cover images were generated with ChatGPT for these posts and contain no brand logos.
+
+## Update 7 November 2026 (batch 2): five more low-difficulty pages
+
+| New page | Primary keyword (US vol / KD) | Supporting keywords seen in the report |
+|---|---|---|
+| /blog/how-much-does-embroidery-cost | how much does embroidery cost (390 / 15) | embroidery pricing chart 70 / 7; embroidery pricing charts 40 / 8 |
+| /blog/embroidery-thread-weight-guide | 40 weight embroidery thread (260 / 8) | 40 weight polyester embroidery thread 50 / 11; 60 weight embroidery thread 140 |
+| /blog/embroidery-hoop-sizes-chart | embroidery hoop sizes (390 / 12) | embroidery hoop size chart 140 / 10; machine embroidery hoop sizes 70 / 4; brother embroidery hoop sizes 90 / 4 |
+| /blog/embroidery-machine-needle-size-guide | machine embroidery needles (1.0K / 16) | embroidery machine needles 210 / 4 |
+| /blog/multi-needle-embroidery-machine-guide | multi needle embroidery machine (1.9K / 5) | multi needle embroidery machines 1.3K / 4; how much does an embroidery machine cost 320 / 18 |
+
+Cannibalization check: /blog/how-much-does-embroidery-cost targets the per-piece price of embroidery; /blog/embroidery-digitizing-cost-pricing-guide targets the price of the stitch file. Both pages link to each other.
+Internal linking: 12 existing posts and the 5 batch-1 posts received a contextual paragraph linking to the new guides.

@@ -133,6 +133,10 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "Need complex small corporate lettering or high-density cap text digitized with zero trial-and-error? The master punchers at [Velora Digitizing](/services/cap-logo-digitizing) engineer each stitch file with manual node adjustment, tested push-pull formulas, and quick 8-24 hour turnaround."
+    },
+    {
+      "type": "p",
+      "text": "For font choices that stay readable at small sizes, see the [best fonts for embroidery](/blog/best-fonts-for-embroidery). Fine lettering also depends on thread and needle: read our [embroidery thread weight guide](/blog/embroidery-thread-weight-guide) and [machine embroidery needle size guide](/blog/embroidery-machine-needle-size-guide)."
     }
   ]
 };

@@ -112,6 +112,10 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "At [Velora Digitizing](/services), our master punchers analyze your exact garment fabric and supply files with programmed color stops, calibrated knockdown underlay grids, and machine-tested sew-out files delivered in 8 to 24 hours."
+    },
+    {
+      "type": "p",
+      "text": "The same knockdown idea helps on ribbed knit; see the [beanie embroidery guide](/blog/beanie-embroidery-digitizing-guide). For towel names and monograms, choose lettering from the [best fonts for embroidery](/blog/best-fonts-for-embroidery)."
     }
   ]
 };

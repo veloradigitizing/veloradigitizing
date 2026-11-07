@@ -123,6 +123,10 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "High-speed embroidery needles strike at 850 RPM. If a needle deflects against a cap seam and strikes the rotary hook, it creates a microscopic metal burr. Every thread pass that rubs against this burr will shred and snap. Regularly polish the rotary hook point with 600-grit micro emery cloth to maintain silk-smooth operation."
+    },
+    {
+      "type": "p",
+      "text": "Many thread breaks start with the wrong needle or thread size. Check our [machine embroidery needle size guide](/blog/embroidery-machine-needle-size-guide), the [embroidery thread weight guide](/blog/embroidery-thread-weight-guide) and the [embroidery hoop sizes chart](/blog/embroidery-hoop-sizes-chart) before changing your file."
     }
   ]
 };

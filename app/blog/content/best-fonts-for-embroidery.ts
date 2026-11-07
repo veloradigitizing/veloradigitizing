@@ -128,6 +128,10 @@ export const post: BlogPost = {
       type: 'p',
       text: 'When you order lettering, send the font name or artwork, the finished width, the garment and your machine format. Check the [pricing page](/pricing) for typical costs, or [contact us](/contact) with your text and we will suggest a size that stitches clean.',
     },
+    {
+      type: 'p',
+      text: "Lettering also depends on the thread and needle you use. Pair this guide with our [embroidery thread weight guide](/blog/embroidery-thread-weight-guide) and [machine embroidery needle size guide](/blog/embroidery-machine-needle-size-guide).",
+    },
   ],
 };
 

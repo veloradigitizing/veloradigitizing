@@ -153,6 +153,10 @@ export const post: BlogPost = {
       type: 'p',
       text: 'Send these details through our [contact page](/contact) and we will confirm the size, color count and price before we start. You can see examples of stitched portraits and patches in our [portfolio](/portfolio).',
     },
+    {
+      type: 'p',
+      text: "Budgeting a portrait order? See [how much does embroidery cost](/blog/how-much-does-embroidery-cost). Fine fur and eye details often stitch best with finer thread; our [embroidery thread weight guide](/blog/embroidery-thread-weight-guide) explains when to use 60 wt.",
+    },
   ],
 };
 

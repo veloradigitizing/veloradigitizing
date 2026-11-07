@@ -124,6 +124,10 @@ export const post: BlogPost = {
       type: 'p',
       text: 'Send your logo, the cuff height and finished design width, the beanie style (cuffed or uncuffed) and your machine format such as DST or PES. Most beanie logos are small enough for our Basic or Standard plan; see current [digitizing prices](/pricing). [Contact us](/contact) and we will confirm the size before we digitize.',
     },
+    {
+      type: 'p',
+      text: "Use a ballpoint needle on knit beanies; our [machine embroidery needle size guide](/blog/embroidery-machine-needle-size-guide) explains why. For hoop options and cap frames, see the [embroidery hoop sizes chart](/blog/embroidery-hoop-sizes-chart) and the [multi-needle embroidery machine guide](/blog/multi-needle-embroidery-machine-guide).",
+    },
   ],
 };
 

@@ -134,6 +134,10 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "However, if you run an active embroidery business with paying clients, customer deadlines, and expensive inventory, relying on free software is a recipe for stress and production bottlenecks. Check out our [transparent digitizing pricing](/blog/embroidery-digitizing-cost-pricing-guide) or upload your artwork to [Velora Digitizing](/contact) for a free quote and machine-tested DST files delivered overnight."
+    },
+    {
+      "type": "p",
+      "text": "If you only need to view or convert existing files, see [how to open a DST file](/blog/how-to-open-dst-embroidery-file) with free viewers. Planning to buy a machine? Read the [multi-needle embroidery machine guide](/blog/multi-needle-embroidery-machine-guide)."
     }
   ]
 };
