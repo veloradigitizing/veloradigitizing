@@ -161,3 +161,39 @@ Cover images were generated with ChatGPT for these posts and contain no brand lo
 
 Cannibalization check: /blog/how-much-does-embroidery-cost targets the per-piece price of embroidery; /blog/embroidery-digitizing-cost-pricing-guide targets the price of the stitch file. Both pages link to each other.
 Internal linking: 12 existing posts and the 5 batch-1 posts received a contextual paragraph linking to the new guides.
+
+## Update 7 November 2026 (batch 3, branch content/blog-batch-20): twenty low-difficulty pages
+
+Source: Semrush Keyword Overview, US database. Format: keyword volume/KD | supporting keywords.
+
+- 1 embroidery vs screen printing 880/24 | screen printing vs embroidery 260/14; screen print vs embroidery 140/15; embroidery vs screen print 110/22
+- 2 how to remove embroidery 1.6K/26 | from shirt 320/5; from a shirt 260/4; from a jacket 390/23; from jacket 210/15
+- 3 how to start an embroidery business 720/8 | cost to start 30; from home 20; digitizing business 20
+- 4 tackle twill 1.6K/16 | tackle twill fabric 480/10; tackle twill applique 390/8; what is tackle twill 260/8
+- 5 satin stitch embroidery 3.6K/10 | satin embroidery stitches 1.6K/21; embroidery satin stitch 480/19; how to satin stitch embroidery 260/12
+- 6 embroidery on leather 390/16 | can you embroidery on leather 90/3; machine embroidery on leather 70/11; hand embroidery on leather 110/6
+- SKIP best embroidery machine for small business 1.0K/16 (cannibalizes multi-needle guide; add keyword to that post instead)
+- 7 iron on vs sew on patches 170/4 | iron on patch vs sew on 140/1; sew on vs iron on patches 140/6; iron on vs sew on patch 90/0
+- 8 embroidery machine thread tension 210/9 | embroidery thread tension 170/14; tension gauge 70/2; brother 50/16
+- RESERVE denim jacket with embroidery 260/6 (mostly shopping intent); custom denim jacket embroidery 140/13
+- 9 brother embroidery file type 170/14 | file type for brother embroidery machine 140/13 (avoid broad "embroidery file types" 480/12 = DST vs PES post)
+- 10 chain stitch embroidery machine 1.3K/17 | embroidery chain stitch 1.3K/17; how to chain stitch embroidery 390/10; how to do an embroidery chain stitch 320/8 (head term 6.6K/30)
+- 11 metallic embroidery thread 720/15 | embroidery with metallic thread 260/7; metallic thread embroidery 170/16
+- 12 embroidery fill stitches 720/9 | embroidery filling stitches 140/6; fill stitch embroidery 140/10; stitches for filling 90/1
+- 13 baby blanket embroidery 110/6 | embroidery baby blanket 110/21
+- RESERVE embroidery thread conversion chart 170/5 (needs real brand color-code tables; cannot fabricate)
+- 14 embroidery on tote bags 480/6 | embroidery tote bag 390/7; tote bag embroidery 320/16; how to hoop a tote bag 20
+- 15 sleeve embroidery 210/15 | how to hoop a sleeve for embroidery 20; how to hoop a long sleeve 20
+- SKIP embroidery logo size 20/n/a
+- 16 how to make embroidered patches 1.9K/20 | make your own embroidered patches 260/14; by hand 210/12; with embroidery machine 320/23
+- 17 how to embroider a shirt 390/13 | how to embroider a tee shirt 140/11; how much does it cost to embroider a shirt 90/7
+- SKIP flat embroidery vs 3d puff 70/1 (~120 cluster, cannibalizes 3D puff guide)
+- 18 embroidered name patches 720/22 | embroidered patch name 390/13; custom embroidered name patches 390/18; embroidered name patch 210/17
+- SKIP back of hat embroidery 40/22; embroidery on canvas 590/28 (art intent)
+- 19 custom denim jacket embroidery 140/13 | denim jacket with embroidery 260/6; denim jackets with embroidery 260/7
+- 20 how to digitize embroidery designs 140/13 | how to digitize a design for embroidery 40/19; how to digitize an embroidery design 50 (cluster ~430)
+- SKIP pull compensation embroidery 40/n/a; jersey embroidery 110/28 (local intent)
+- 
+
+Cannibalization handling: /blog/vector-art-for-screen-printing-vs-embroidery metaTitle changed to 'Vector Art File Prep for Screen Printing & Embroidery' and its 'screen printing vs embroidery' tag removed, so /blog/embroidery-vs-screen-printing owns that query. 'best embroidery machine for small business' (1.0K/16) was added to the existing multi-needle guide instead of a new page.
+Internal linking: 30 existing posts received a contextual paragraph linking to the new guides; every new guide links to relevant service pages, pricing and contact.

@@ -125,6 +125,10 @@ export const post: BlogPost = {
       type: 'p',
       text: 'Heavy work such as [3D puff](/services/3d-puff-digitizing) and [cap logos](/services/cap-logo-digitizing) needs files built for those conditions. Check our [digitizing prices](/pricing) or [send your design](/contact) and tell us your fabric and needle setup.',
     },
+    {
+      type: 'p',
+      text: "Special materials need special needles; see [metallic embroidery thread](/blog/metallic-embroidery-thread-guide), [embroidery on leather](/blog/embroidery-on-leather-guide) and [denim jacket embroidery](/blog/denim-jacket-embroidery-guide).",
+    },
   ],
 };
 

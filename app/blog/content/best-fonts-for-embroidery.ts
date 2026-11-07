@@ -132,6 +132,10 @@ export const post: BlogPost = {
       type: 'p',
       text: "Lettering also depends on the thread and needle you use. Pair this guide with our [embroidery thread weight guide](/blog/embroidery-thread-weight-guide) and [machine embroidery needle size guide](/blog/embroidery-machine-needle-size-guide).",
     },
+    {
+      type: 'p',
+      text: "Put these fonts to work on [embroidered name patches](/blog/embroidered-name-patches-guide) and [baby blanket embroidery](/blog/baby-blanket-embroidery-guide), or try retro [chain stitch](/blog/chain-stitch-embroidery-guide) lettering.",
+    },
   ],
 };
 

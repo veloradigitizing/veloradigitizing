@@ -189,6 +189,10 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "Need to view a file before you stitch it? Our step-by-step guide shows [how to open a DST file](/blog/how-to-open-dst-embroidery-file) on Windows, Mac and phone, and the [embroidery hoop sizes chart](/blog/embroidery-hoop-sizes-chart) helps you confirm the design fits your sewing field."
+    },
+    {
+      "type": "p",
+      "text": "Have a Brother or Baby Lock machine? See [what file type a Brother embroidery machine uses](/blog/brother-embroidery-machine-file-type) for PES versions and loading tips."
     }
   ]
 };

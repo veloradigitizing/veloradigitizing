@@ -159,6 +159,10 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "Stabilizer works together with the right needle and hoop. Match them using our [machine embroidery needle size guide](/blog/embroidery-machine-needle-size-guide) and [embroidery hoop sizes chart](/blog/embroidery-hoop-sizes-chart). For knit garments, see the [polo shirt](/blog/best-polo-shirts-for-embroidery) and [beanie](/blog/beanie-embroidery-digitizing-guide) guides."
+    },
+    {
+      "type": "p",
+      "text": "See stabilizer choices in practice in [how to embroider a shirt](/blog/how-to-embroider-a-shirt), [tote bag embroidery](/blog/tote-bag-embroidery-guide) and [baby blanket embroidery](/blog/baby-blanket-embroidery-guide)."
     }
   ]
 };

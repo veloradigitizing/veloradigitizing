@@ -113,6 +113,10 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "Explore our [felt and twill patch samples](/store) and [jacket back digitizing portfolio](/portfolio?category=jacket-back) for project examples. Send your artwork, finished dimensions, and garment material to request a custom digitizing quote."
+    },
+    {
+      "type": "p",
+      "text": "Working on a specific jacket? See [custom denim jacket embroidery](/blog/denim-jacket-embroidery-guide), [embroidery on leather](/blog/embroidery-on-leather-guide) and [tackle twill](/blog/what-is-tackle-twill) for big lettering with fewer stitches."
     }
   ]
 };

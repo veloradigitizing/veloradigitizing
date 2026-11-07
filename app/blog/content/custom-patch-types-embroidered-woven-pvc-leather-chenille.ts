@@ -255,6 +255,10 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "Compare our [felt patch samples](/portfolio?category=felt-patches) and [twill patch samples](/portfolio?category=twill-patches). For your own custom patch, share the artwork, finished dimensions, quantity, and backing requirements with our team for a quote."
+    },
+    {
+      "type": "p",
+      "text": "Next steps: learn [how to make embroidered patches](/blog/how-to-make-embroidered-patches), compare [iron-on vs sew-on patches](/blog/iron-on-vs-sew-on-patches) and plan uniform [embroidered name patches](/blog/embroidered-name-patches-guide)."
     }
   ]
 };

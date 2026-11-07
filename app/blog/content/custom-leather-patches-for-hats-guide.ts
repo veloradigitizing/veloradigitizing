@@ -137,6 +137,10 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "Whether you need clean laser-ready vector cut files, custom patch digitizing, or complete patch manufacturing, **Velora Digitizing** turns your rough logo into flawless, production-ready vector assets with same-day turnaround."
+    },
+    {
+      "type": "p",
+      "text": "Thinking of stitching directly on leather instead? Read our [embroidery on leather guide](/blog/embroidery-on-leather-guide), and compare backings in [iron-on vs sew-on patches](/blog/iron-on-vs-sew-on-patches)."
     }
   ]
 };

@@ -128,6 +128,10 @@ export const post: BlogPost = {
       type: 'p',
       text: "For the right needle on knit polos, see the [machine embroidery needle size guide](/blog/embroidery-machine-needle-size-guide). Pick a hoop with our [embroidery hoop sizes chart](/blog/embroidery-hoop-sizes-chart), and price your order with [how much does embroidery cost](/blog/how-much-does-embroidery-cost).",
     },
+    {
+      type: 'p',
+      text: "Working with T-shirts instead? See [how to embroider a shirt](/blog/how-to-embroider-a-shirt). For staff names, see [embroidered name patches](/blog/embroidered-name-patches-guide).",
+    },
   ],
 };
 

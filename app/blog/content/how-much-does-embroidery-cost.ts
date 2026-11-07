@@ -136,6 +136,10 @@ export const post: BlogPost = {
       type: 'p',
       text: 'Need a production-ready file for your next order? [Send us your logo](/contact) with the item and finished size, and we will quote the digitizing before we start.',
     },
+    {
+      type: 'p',
+      text: "Compare embroidery with printing in [embroidery vs screen printing](/blog/embroidery-vs-screen-printing), and see shirt-specific tips in [how to embroider a shirt](/blog/how-to-embroider-a-shirt).",
+    },
   ],
 };
 

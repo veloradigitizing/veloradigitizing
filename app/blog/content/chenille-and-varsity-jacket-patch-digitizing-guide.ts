@@ -131,6 +131,10 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "At [Velora Digitizing](/patches), we provide complete custom patch digitizing, color-separated production sheets, and vector files ready for commercial embroidery machines with guaranteed satisfaction."
+    },
+    {
+      "type": "p",
+      "text": "Chenille machines also produce classic looped lettering; see [chain stitch embroidery](/blog/chain-stitch-embroidery-guide). For sewn fabric numbers and letters, read [what is tackle twill](/blog/what-is-tackle-twill)."
     }
   ]
 };

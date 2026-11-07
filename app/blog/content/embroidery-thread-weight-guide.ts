@@ -126,6 +126,10 @@ export const post: BlogPost = {
       type: 'p',
       text: 'Tell us the thread weight and type, the fabric, the finished size and your machine format. We digitize for 40 wt by default and adjust density for 60 wt fine-detail work or 30 wt bold work on request. See [digitizing prices](/pricing) or [send your design](/contact) for a quote. For raised lettering on caps, see [3D puff digitizing](/services/3d-puff-digitizing) and [cap logo digitizing](/services/cap-logo-digitizing).',
     },
+    {
+      type: 'p',
+      text: "Using specialty thread? Read the [metallic embroidery thread guide](/blog/metallic-embroidery-thread-guide) and balance top and bobbin with the [thread tension guide](/blog/embroidery-machine-thread-tension-guide).",
+    },
   ],
 };
 

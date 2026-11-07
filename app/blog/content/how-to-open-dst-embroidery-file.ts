@@ -125,6 +125,10 @@ export const post: BlogPost = {
       type: 'p',
       text: "After opening a DST, check that it fits your machine with the [embroidery hoop sizes chart](/blog/embroidery-hoop-sizes-chart). Most commercial machines read DST natively; see the [multi-needle embroidery machine guide](/blog/multi-needle-embroidery-machine-guide).",
     },
+    {
+      type: 'p',
+      text: "Using a Brother or Baby Lock machine? See [what file type a Brother embroidery machine uses](/blog/brother-embroidery-machine-file-type) to convert DST to PES.",
+    },
   ],
 };
 

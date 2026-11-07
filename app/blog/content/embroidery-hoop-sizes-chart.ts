@@ -124,6 +124,10 @@ export const post: BlogPost = {
       type: 'p',
       text: 'Tell us your machine, hoop and sewing field when you order and we will size the file to fit. See [digitizing prices](/pricing) or [send your artwork](/contact). Stitch count also changes with size; estimate it with the [stitch count calculator](/blog/how-to-estimate-embroidery-stitch-count).',
     },
+    {
+      type: 'p',
+      text: "See hooping in practice for narrow and awkward items: [sleeve embroidery](/blog/sleeve-embroidery-guide), [tote bag embroidery](/blog/tote-bag-embroidery-guide) and [baby blanket embroidery](/blog/baby-blanket-embroidery-guide).",
+    },
   ],
 };
 

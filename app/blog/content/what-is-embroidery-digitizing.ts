@@ -199,6 +199,10 @@ export const post: BlogPost = {
         "**Thread Trim Efficiency:** Master digitizers path continuous travel lines beneath top satin layers, reducing trims to 3-5 per logo. Auto-digitizers generate 25-40 random trims, increasing machine run time by over 300%.",
         "**Needle & Machine Safety:** Manual files eliminate micro-stitches (<1.0mm) that cause birdnesting and needle deflection, protecting commercial rotary hooks from damage."
       ]
+    },
+    {
+      "type": "p",
+      "text": "Ready to try it yourself? Follow our step-by-step guide on [how to digitize embroidery designs](/blog/how-to-digitize-embroidery-designs), and learn the two core stitch types in the [satin stitch](/blog/satin-stitch-embroidery-guide) and [fill stitch](/blog/embroidery-fill-stitches-guide) guides."
     }
   ]
 };

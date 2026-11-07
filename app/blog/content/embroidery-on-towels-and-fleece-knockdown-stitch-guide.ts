@@ -116,6 +116,10 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "The same knockdown idea helps on ribbed knit; see the [beanie embroidery guide](/blog/beanie-embroidery-digitizing-guide). For towel names and monograms, choose lettering from the [best fonts for embroidery](/blog/best-fonts-for-embroidery)."
+    },
+    {
+      "type": "p",
+      "text": "The same topping and knockdown approach works on plush blankets; see [baby blanket embroidery](/blog/baby-blanket-embroidery-guide)."
     }
   ]
 };

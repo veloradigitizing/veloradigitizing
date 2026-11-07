@@ -113,6 +113,10 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "Garment blanks vary in thickness and elasticity. A professional digitizing partner provides free, unlimited fine-tuning revisions and guaranteed 8 to 24-hour turnaround to keep your embroidery shop production schedule running on time."
+    },
+    {
+      "type": "p",
+      "text": "Setting up your own shop? Read [how to start an embroidery business](/blog/how-to-start-an-embroidery-business) for equipment, costs and first customers."
     }
   ]
 };

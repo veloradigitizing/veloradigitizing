@@ -3,13 +3,13 @@ import type { BlogPost } from '../types';
 export const post: BlogPost = {
   "slug": "vector-art-for-screen-printing-vs-embroidery",
   "title": "Vector Art for Screen Printing vs Embroidery: Complete File Prep Guide",
-  "metaTitle": "Screen Printing vs Embroidery Vector Art",
+  "metaTitle": "Vector Art File Prep for Screen Printing & Embroidery",
   "description": "Compare vector art preparation for screen printing vs embroidery digitizing. Understand color separations, trapping, line weights, and file constraints.",
   "excerpt": "Why can't the same vector file be used for screen printing and embroidery without modification? Compare trapping, line thickness, and color separations.",
   "category": "Design",
   "tags": [
     "vector art",
-    "screen printing vs embroidery",
+    "vector art for screen printing",
     "color separation",
     "vector prep",
     "embroidery vs print"
@@ -103,6 +103,10 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "Screen printing reproduces gradients using halftone dot frequency screens (LPI). Embroidery creates gradients by blending alternating density layers of two distinct physical thread colors, requiring advanced manual stitch dithering in digitizing software."
+    },
+    {
+      "type": "p",
+      "text": "Still deciding which decoration method to use? Our [embroidery vs screen printing](/blog/embroidery-vs-screen-printing) guide compares cost, durability and garments."
     }
   ]
 };

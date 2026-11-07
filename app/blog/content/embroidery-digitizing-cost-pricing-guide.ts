@@ -233,6 +233,10 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "This guide covers the cost of the stitch file. For the price of the embroidery itself on shirts, hats and hoodies, see [how much does embroidery cost](/blog/how-much-does-embroidery-cost) with an example pricing chart."
+    },
+    {
+      "type": "p",
+      "text": "Choosing between decoration methods? Compare [embroidery vs screen printing](/blog/embroidery-vs-screen-printing). Starting a shop? See [how to start an embroidery business](/blog/how-to-start-an-embroidery-business)."
     }
   ]
 };

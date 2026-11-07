@@ -200,6 +200,10 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "Need production-ready machine files? Explore our specialized [3D puff embroidery digitizing](/services/3d-puff-digitizing), order [custom patches digitizing](/patches), or let our punchers recreate your artwork via our [vector art conversion service](/vector-art)."
+    },
+    {
+      "type": "p",
+      "text": "For the full workflow inside any embroidery program, see [how to digitize embroidery designs](/blog/how-to-digitize-embroidery-designs). Using a Brother machine? Read [what file type a Brother embroidery machine uses](/blog/brother-embroidery-machine-file-type)."
     }
   ]
 };

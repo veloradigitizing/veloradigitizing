@@ -194,6 +194,10 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "Pick the right frame for chest designs with our [embroidery hoop sizes chart](/blog/embroidery-hoop-sizes-chart), and see [how to convert a photo to embroidery](/blog/convert-photo-to-embroidery-guide) for pet and portrait hoodies."
+    },
+    {
+      "type": "p",
+      "text": "Adding more placements? See [sleeve embroidery](/blog/sleeve-embroidery-guide) for arm logos and [how to embroider a shirt](/blog/how-to-embroider-a-shirt) for lighter knit tees."
     }
   ]
 };

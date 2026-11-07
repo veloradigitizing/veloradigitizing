@@ -159,6 +159,10 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "Choosing garments for a corporate order? See our guide to the [best polo shirts for embroidery](/blog/best-polo-shirts-for-embroidery), pick readable lettering with the [best fonts for embroidery](/blog/best-fonts-for-embroidery) and check the right hoop in our [embroidery hoop sizes chart](/blog/embroidery-hoop-sizes-chart)."
+    },
+    {
+      "type": "p",
+      "text": "For knit T-shirts, see [how to embroider a shirt](/blog/how-to-embroider-a-shirt). For staff names under a chest logo, see [embroidered name patches](/blog/embroidered-name-patches-guide)."
     }
   ]
 };
