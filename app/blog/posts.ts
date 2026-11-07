@@ -29,6 +29,11 @@ import post_chenille_and_varsity_jacket_patch_digitizing_guide from './content/c
 import post_hoodie_embroidery_digitizing_guide from './content/hoodie-embroidery-digitizing-guide';
 import post_custom_leather_patches_for_hats_guide from './content/custom-leather-patches-for-hats-guide';
 import post_why_outsource_embroidery_digitizing_usa_guide from './content/why-outsource-embroidery-digitizing-usa-guide';
+import post_convert_photo_to_embroidery_guide from './content/convert-photo-to-embroidery-guide';
+import post_best_fonts_for_embroidery from './content/best-fonts-for-embroidery';
+import post_best_polo_shirts_for_embroidery from './content/best-polo-shirts-for-embroidery';
+import post_beanie_embroidery_digitizing_guide from './content/beanie-embroidery-digitizing-guide';
+import post_how_to_open_dst_embroidery_file from './content/how-to-open-dst-embroidery-file';
 
 export const BLOG_POSTS: BlogPost[] = [
   post_3d_puff_embroidery_digitizing_guide,
@@ -59,6 +64,11 @@ export const BLOG_POSTS: BlogPost[] = [
   post_hoodie_embroidery_digitizing_guide,
   post_custom_leather_patches_for_hats_guide,
   post_why_outsource_embroidery_digitizing_usa_guide,
+  post_convert_photo_to_embroidery_guide,
+  post_best_fonts_for_embroidery,
+  post_best_polo_shirts_for_embroidery,
+  post_beanie_embroidery_digitizing_guide,
+  post_how_to_open_dst_embroidery_file,
 ];
 
 export const BLOG_CATEGORIES = Array.from(

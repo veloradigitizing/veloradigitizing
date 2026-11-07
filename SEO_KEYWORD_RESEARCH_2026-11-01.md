@@ -133,3 +133,18 @@ Suggested success checks: current indexability/index status, first sustained non
 - Bulk entry failed with the interface's Something went wrong error. Individual overview reports were used instead.
 - Research and local documentation only. No website content was changed or deployed, and no outreach was sent.
 
+
+## Update 7 November 2026: five new low-difficulty blog pages
+
+Source: Keyword Overview reports in the same Semrush interface, US database, read on 7 November 2026. Same caveats as above apply (estimates, not traffic forecasts).
+
+| New page | Primary keyword (US vol / KD) | Supporting keywords seen in the report | Main internal links |
+|---|---|---|---|
+| /blog/convert-photo-to-embroidery-guide | convert photo to embroidery (90 / 12) | photo to embroidery converter 90 / 0; how to digitize photos for embroidery 70 / 4; photo to embroidery 70 / 6; digitize image for embroidery 210 / 20 | /services, /patches, /vector-art, /pricing, /contact, /portfolio |
+| /blog/best-fonts-for-embroidery | best fonts for embroidery (210 / 5) | best font for embroidery 210 / 19; best fonts for embroidery names 70 / 17; best cursive font for embroidery 40 / 3 | /services, /services/cap-logo-digitizing, /services/3d-puff-digitizing, /services/applique-digitizing, /pricing |
+| /blog/best-polo-shirts-for-embroidery | best polo shirts for embroidery (720 / 23) | polo shirt embroidery 590 / 28 | /services, /services/cap-logo-digitizing, /pricing, /contact |
+| /blog/beanie-embroidery-digitizing-guide | embroidery beanies (140 / 19) | embroidery beanie 140 / 20; custom beanie embroidery 170 / 24; beanie embroidery 260 / 31 | /services/cap-logo-digitizing, /services/3d-puff-digitizing, /patches, /pricing |
+| /blog/how-to-open-dst-embroidery-file | how to open dst file (20 / n/a) | 32 question variations, about 150 combined US volume (open dst file in windows, phone, illustrator) | /services, /vector-art, /pricing, /contact |
+
+Checked and not selected: embroidery stitch types (720 / 38, too competitive and mostly hand-embroidery intent), monogram digitizing (20 / n/a, too little demand).
+Cover images were generated with ChatGPT for these posts and contain no brand logos.
