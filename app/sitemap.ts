@@ -21,7 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${BASE_URL}/services`,
-      lastModified: new Date("2026-10-28"),
+      lastModified: new Date("2026-11-08"),
       changeFrequency: "weekly",
       priority: 0.95,
     },
