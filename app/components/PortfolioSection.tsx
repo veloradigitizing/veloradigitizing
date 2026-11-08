@@ -15,7 +15,7 @@ const ARCHIVED_CATEGORIES = [
   { id: "left-chest-logo", name: "Left Chest" },
   { id: "3d-puff", name: "3D Puff" },
   { id: "towel-design", name: "Towel" },
-  { id: "applique-design", name: "Applique" },
+  { id: "applique", name: "Applique" },
   { id: "vector-art", name: "Vector Art" },
   { id: "bundles", name: "Bundles" },
 ];
@@ -78,12 +78,12 @@ const ARCHIVED_ITEMS = [
     slug: "/portfolio?category=towel-design",
   },
   {
-    id: "applique-design",
-    category: "applique-design",
+    id: "applique",
+    category: "applique",
     title: "Applique Design",
     image: "/images/applique-design/varsity-letter-a-applique-embroidery-digitizing-dst.webp",
     count: 2,
-    slug: "/portfolio?category=applique-design",
+    slug: "/portfolio?category=applique",
   },
   {
     id: "vector-art",

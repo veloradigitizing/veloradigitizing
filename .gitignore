@@ -42,3 +42,7 @@ next-env.d.ts
 CLAUDE.md
 .claude/
 .lh-chrome-profile/
+
+# Raw HTML/text from the reproducible service indexing audit
+/reports/service-indexing/*.html
+/reports/service-indexing/*.txt

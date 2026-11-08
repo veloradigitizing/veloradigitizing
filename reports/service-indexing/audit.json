@@ -1,0 +1,3978 @@
+{
+  "checkedAt": "2026-11-08T15:30:36.783Z",
+  "origin": "https://www.veloradigitizing.com",
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "finalUrl": "https://www.veloradigitizing.com/",
+      "canonical": [
+        "https://www.veloradigitizing.com"
+      ],
+      "robots": [
+        "index, follow",
+        "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+      ],
+      "xRobotsTag": null,
+      "title": "Custom Embroidery Digitizing Services | Velora Digitizing",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Custom Embroidery Digitizing Services"
+        },
+        {
+          "level": 2,
+          "text": "Commercial Embroidery Digitizing Services at a Glance"
+        },
+        {
+          "level": 2,
+          "text": "Our Digitizing Services"
+        },
+        {
+          "level": 2,
+          "text": "Digitizing Work Samples"
+        },
+        {
+          "level": 2,
+          "text": "Simple 4 Steps Process"
+        },
+        {
+          "level": 2,
+          "text": "What Commercial Embroiderers Say"
+        },
+        {
+          "level": 2,
+          "text": "Custom Felt Patches"
+        },
+        {
+          "level": 2,
+          "text": "Custom Twill Patches"
+        },
+        {
+          "level": 2,
+          "text": "Featured Embroidery Digitizing Guides"
+        },
+        {
+          "level": 2,
+          "text": "Frequently Asked Questions"
+        },
+        {
+          "level": 2,
+          "text": "Ready to Digitize Your Design?"
+        }
+      ],
+      "words": 2009,
+      "anchors": [
+        {
+          "href": "/store",
+          "text": "View Patch Samples"
+        },
+        {
+          "href": "/services",
+          "text": "Explore Services"
+        },
+        {
+          "href": "/contact",
+          "text": "Get Free Quote"
+        },
+        {
+          "href": "/",
+          "text": "VELORA DIGITIZING"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "/services",
+          "text": "All Services"
+        },
+        {
+          "href": "/services/3d-puff-digitizing",
+          "text": "3D Puff Digitizing"
+        },
+        {
+          "href": "/services/cap-logo-digitizing",
+          "text": "Cap Logo Digitizing"
+        },
+        {
+          "href": "/services/applique-digitizing",
+          "text": "Applique Digitizing"
+        },
+        {
+          "href": "/patches",
+          "text": "Patches Service"
+        },
+        {
+          "href": "/vector-art",
+          "text": "Vector Art Service"
+        },
+        {
+          "href": "/portfolio",
+          "text": "Portfolio"
+        },
+        {
+          "href": "/store",
+          "text": "Store"
+        },
+        {
+          "href": "/about",
+          "text": "About Us"
+        },
+        {
+          "href": "/blog",
+          "text": "Blog"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact"
+        },
+        {
+          "href": "/contact",
+          "text": "Quote GET A QUOTE →"
+        },
+        {
+          "href": "/contact",
+          "text": "GET FREE QUOTE →"
+        },
+        {
+          "href": "/portfolio",
+          "text": "VIEW PORTFOLIO →"
+        },
+        {
+          "href": "/services",
+          "text": "All Services &amp; Pricing"
+        },
+        {
+          "href": "/services/3d-puff-digitizing",
+          "text": "3D Puff Digitizing"
+        },
+        {
+          "href": "/services/cap-logo-digitizing",
+          "text": "Cap Logos"
+        },
+        {
+          "href": "/services/applique-digitizing",
+          "text": "Applique"
+        },
+        {
+          "href": "/services/3d-puff-digitizing",
+          "text": "3D Puff Embroidery Digitizing → Custom raised EVA foam digitizing for snapbacks, caps, and streetwear hoodies with calibrated density and end-capping. DST, PES Files · 8-24h Turnaround"
+        },
+        {
+          "href": "/services/cap-logo-digitizing",
+          "text": "Cap &amp; Hat Logo Digitizing → Center-out curved frame digitizing engineered for baseball caps, trucker hats, and dad hats with zero seam bunching. Curved Frames · High Density"
+        },
+        {
+          "href": "/services/applique-digitizing",
+          "text": "Applique Embroidery Digitizing → Accurate positioning lines, tackdown stitches, and satin edge borders for sports jerseys and varsity letter apparel. Fabric Cut Lines · Laser Ready"
+        },
+        {
+          "href": "/patches",
+          "text": "Custom Patch Digitizing → Embroidered, woven, PVC, and chenille patch design with merrowed borders, iron-on, and velcro backing options. Physical · Digital Patches"
+        },
+        {
+          "href": "/vector-art",
+          "text": "Vector Art Conversion → High-resolution manual raster-to-vector artwork recreation for screen printing, vinyl cutting, and DTF heat transfers. AI, EPS, SVG · Clean Paths"
+        },
+        {
+          "href": "/services",
+          "text": "All Digitizing Services → Explore our complete digitizing portfolio including jacket back, left chest, towel monogram, and custom packages. View Full Catalog · Free Quote"
+        },
+        {
+          "href": "/patches",
+          "text": "Custom Patch Digitizing Custom embroidery patch digitizing with merrowed borders for hats, jackets and bags. 21 + Designs"
+        },
+        {
+          "href": "/services/cap-logo-digitizing",
+          "text": "Cap &amp; Hat Logo Digitizing Specialized center-out digitizing for structured snapbacks, dad hats, visors &amp; beanies. 5 + Designs"
+        },
+        {
+          "href": "/portfolio?category=chenille",
+          "text": "Chenille Patch Digitizing Fluffy loop chenille lettering and emblem digitizing for varsity jackets. 6 + Designs"
+        },
+        {
+          "href": "/portfolio?category=jacket-back",
+          "text": "Jacket Back Digitizing Large-format full back embroidery digitizing for denim, bomber &amp; leather jackets. 19 + Designs"
+        },
+        {
+          "href": "/portfolio?category=left-chest",
+          "text": "Left Chest Logo Digitizing Crisp lettering and corporate logo digitizing for polo shirts &amp; uniforms. 23 + Designs"
+        },
+        {
+          "href": "/services/3d-puff-digitizing",
+          "text": "3D Puff Embroidery Digitizing Raised 3D foam puff embroidery digitizing for bold dimensional logos on headwear. 1 + Designs"
+        },
+        {
+          "href": "/portfolio?category=towel",
+          "text": "Towel Monogram Digitizing Knockdown stitch digitizing for plush towels, bathrobes &amp; blankets. 4 + Designs"
+        },
+        {
+          "href": "/services/applique-digitizing",
+          "text": "Applique Embroidery Digitizing Positioning line, tackdown &amp; satin border applique digitizing for jerseys. 2 + Designs"
+        },
+        {
+          "href": "/vector-art",
+          "text": "Vector Art Conversion Service Manual raster to vector tracing (AI, EPS, SVG, PDF) for screen printing &amp; DTF. 5 + Designs"
+        },
+        {
+          "href": "/portfolio?category=bundles",
+          "text": "Bundle Packages Save big with our curated design packs and bundle deals. 6 + Designs"
+        },
+        {
+          "href": "/services",
+          "text": "Explore All Digitizing Services &amp; Pricing Details →"
+        },
+        {
+          "href": "/portfolio",
+          "text": "EXPLORE PORTFOLIO →"
+        },
+        {
+          "href": "/services/3d-puff-digitizing",
+          "text": "3D PUFF 3D Puff Digitizing"
+        },
+        {
+          "href": "/services/applique-digitizing",
+          "text": "APPLIQUE Applique Embroidery"
+        },
+        {
+          "href": "/services/cap-logo-digitizing",
+          "text": "CAP LOGO Cap Logo Digitizing"
+        },
+        {
+          "href": "/portfolio?category=felt-patches",
+          "text": "FELT PATCHES Custom Felt Patches"
+        },
+        {
+          "href": "/portfolio?category=jacket-back",
+          "text": "JACKET BACK Jacket Back Digitizing"
+        },
+        {
+          "href": "/portfolio?category=left-chest",
+          "text": "LEFT CHEST Left Chest Digitizing"
+        },
+        {
+          "href": "/portfolio?category=towel",
+          "text": "TOWEL Towel Monogram"
+        },
+        {
+          "href": "/portfolio?category=twill-patches",
+          "text": "TWILL PATCHES Custom Twill Patches"
+        },
+        {
+          "href": "/vector-art",
+          "text": "VECTOR ART Vector Tracing"
+        },
+        {
+          "href": "/contact",
+          "text": "Get a Free Quote →"
+        },
+        {
+          "href": "/portfolio?category=felt-patches",
+          "text": "View All Felt Patches"
+        },
+        {
+          "href": "/portfolio?category=twill-patches",
+          "text": "View All Twill Patches"
+        },
+        {
+          "href": "/blog",
+          "text": "View all guides →"
+        },
+        {
+          "href": "/blog/convert-png-jpg-to-dst-embroidery-file",
+          "text": ""
+        },
+        {
+          "href": "/blog/convert-png-jpg-to-dst-embroidery-file",
+          "text": "How to Convert PNG or JPG to DST for Machine Embroidery"
+        },
+        {
+          "href": "/blog/convert-png-jpg-to-dst-embroidery-file",
+          "text": "Read article →"
+        },
+        {
+          "href": "/blog/how-to-digitize-small-text-micro-lettering-embroidery",
+          "text": ""
+        },
+        {
+          "href": "/blog/how-to-digitize-small-text-micro-lettering-embroidery",
+          "text": "How to Machine Embroider Small Letters &amp; Micro-Text: Digitizing Guide"
+        },
+        {
+          "href": "/blog/how-to-digitize-small-text-micro-lettering-embroidery",
+          "text": "Read article →"
+        },
+        {
+          "href": "/blog/embroidery-stabilizer-guide-cutaway-vs-tearaway",
+          "text": ""
+        },
+        {
+          "href": "/blog/embroidery-stabilizer-guide-cutaway-vs-tearaway",
+          "text": "The Complete Embroidery Stabilizer Guide: Cutaway, Tearaway &amp; Topping Matrix"
+        },
+        {
+          "href": "/blog/embroidery-stabilizer-guide-cutaway-vs-tearaway",
+          "text": "Read article →"
+        },
+        {
+          "href": "/blog/cap-hat-logo-embroidery-digitizing-guide",
+          "text": ""
+        },
+        {
+          "href": "/blog/cap-hat-logo-embroidery-digitizing-guide",
+          "text": "Hat Logo Size for Embroidery &amp; Cap Digitizing Guide (Placement &amp; Stitch Order)"
+        },
+        {
+          "href": "/blog/cap-hat-logo-embroidery-digitizing-guide",
+          "text": "Read article →"
+        },
+        {
+          "href": "/blog/3d-puff-embroidery-digitizing-guide",
+          "text": ""
+        },
+        {
+          "href": "/blog/3d-puff-embroidery-digitizing-guide",
+          "text": "3D Puff Embroidery on Hats: Foam, Digitizing &amp; Stitching Guide"
+        },
+        {
+          "href": "/blog/3d-puff-embroidery-digitizing-guide",
+          "text": "Read article →"
+        },
+        {
+          "href": "/blog/left-chest-logo-embroidery-digitizing-guide",
+          "text": ""
+        },
+        {
+          "href": "/blog/left-chest-logo-embroidery-digitizing-guide",
+          "text": "Left Chest Logo Placement &amp; Embroidery Size Guide (Polo &amp; Shirts)"
+        },
+        {
+          "href": "/blog/left-chest-logo-embroidery-digitizing-guide",
+          "text": "Read article →"
+        },
+        {
+          "href": "/blog/vector-art-for-screen-printing-vs-embroidery",
+          "text": ""
+        },
+        {
+          "href": "/blog/vector-art-for-screen-printing-vs-embroidery",
+          "text": "Vector Art for Screen Printing vs Embroidery: Complete File Prep Guide"
+        },
+        {
+          "href": "/blog/vector-art-for-screen-printing-vs-embroidery",
+          "text": "Read article →"
+        },
+        {
+          "href": "/blog/manual-digitizing-vs-ai-auto-digitizing",
+          "text": ""
+        },
+        {
+          "href": "/blog/manual-digitizing-vs-ai-auto-digitizing",
+          "text": "Manual Digitizing vs AI Auto-Digitizing Software: Which Is Best for Embroidery?"
+        },
+        {
+          "href": "/blog/manual-digitizing-vs-ai-auto-digitizing",
+          "text": "Read article →"
+        },
+        {
+          "href": "/blog/best-free-embroidery-digitizing-software-inkstitch-guide",
+          "text": ""
+        },
+        {
+          "href": "/blog/best-free-embroidery-digitizing-software-inkstitch-guide",
+          "text": "Best Free Embroidery Digitizing Software: Is Ink/Stitch Actually Usable? (2026)"
+        },
+        {
+          "href": "/blog/best-free-embroidery-digitizing-software-inkstitch-guide",
+          "text": "Read article →"
+        },
+        {
+          "href": "/blog/what-is-embroidery-digitizing",
+          "text": ""
+        },
+        {
+          "href": "/blog/what-is-embroidery-digitizing",
+          "text": "What Is Embroidery Digitizing and How Does It Work? The Master Guide"
+        },
+        {
+          "href": "/blog/what-is-embroidery-digitizing",
+          "text": "Read article →"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact Our Team →"
+        },
+        {
+          "href": "/contact",
+          "text": "START YOUR ORDER →"
+        },
+        {
+          "href": "https://www.linkedin.com/in/velora-digitizing-854396429",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.pinterest.com/veloradigitizing/",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.instagram.com/veloradigitizing",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.threads.net/@veloradigitizing",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.tiktok.com/@muheeb.rehmani?_r=1&amp;_t=ZS-9846QsaPrjY",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://x.com/burlinleo",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.youtube.com/@VeloraDigitizing",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "mailto:info@veloradigitizing.com",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.trustpilot.com/review/veloradigitizing.com",
+          "text": "Find us on Trustpilot",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/about",
+          "text": "About Us"
+        },
+        {
+          "href": "/store",
+          "text": "Patch Samples"
+        },
+        {
+          "href": "/portfolio?category=felt-patches",
+          "text": "Felt Patches"
+        },
+        {
+          "href": "/portfolio?category=twill-patches",
+          "text": "Twill Patches"
+        },
+        {
+          "href": "/contact",
+          "text": "Custom Patch Quote"
+        },
+        {
+          "href": "/portfolio",
+          "text": "Portfolio"
+        },
+        {
+          "href": "/blog",
+          "text": "Blog"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact Us"
+        },
+        {
+          "href": "/services",
+          "text": "All Digitizing Services &amp; Pricing"
+        },
+        {
+          "href": "/services/3d-puff-digitizing",
+          "text": "3D Puff Embroidery Digitizing"
+        },
+        {
+          "href": "/services/cap-logo-digitizing",
+          "text": "Cap &amp; Hat Logo Digitizing"
+        },
+        {
+          "href": "/services/applique-digitizing",
+          "text": "Applique Embroidery Digitizing"
+        },
+        {
+          "href": "/vector-art",
+          "text": "Vector Art Conversion Service"
+        },
+        {
+          "href": "/patches",
+          "text": "Custom Patches Digitizing"
+        },
+        {
+          "href": "/portfolio?category=jacket-back",
+          "text": "Jacket Back Digitizing"
+        },
+        {
+          "href": "/portfolio?category=left-chest",
+          "text": "Left Chest Logo Digitizing"
+        },
+        {
+          "href": "/portfolio?category=chenille",
+          "text": "Chenille Patch Digitizing"
+        },
+        {
+          "href": "/portfolio?category=towel",
+          "text": "Towel Monogram Digitizing"
+        },
+        {
+          "href": "/patches",
+          "text": "Felt &amp; Twill Patch Samples"
+        },
+        {
+          "href": "/blog/convert-png-jpg-to-dst-embroidery-file",
+          "text": "Convert PNG to DST"
+        },
+        {
+          "href": "/blog/3d-puff-embroidery-digitizing-guide",
+          "text": "3D Puff Cap Digitizing"
+        },
+        {
+          "href": "/blog/dst-vs-pes-vs-jef-embroidery-file-formats",
+          "text": "DST vs PES vs JEF Files"
+        },
+        {
+          "href": "/blog/what-is-embroidery-digitizing",
+          "text": "What Is Digitizing?"
+        },
+        {
+          "href": "/blog/how-to-prepare-logo-for-embroidery-digitizing",
+          "text": "Prepare Logo for Digitizing"
+        },
+        {
+          "href": "/blog/custom-patch-types-embroidered-woven-pvc-leather-chenille",
+          "text": "Patch Types Compared"
+        },
+        {
+          "href": "/blog/how-to-digitize-small-text-micro-lettering-embroidery",
+          "text": "Small Text Micro-Lettering"
+        },
+        {
+          "href": "/blog/embroidery-on-towels-and-fleece-knockdown-stitch-guide",
+          "text": "Towel Knockdown Stitches"
+        },
+        {
+          "href": "/blog/best-free-embroidery-digitizing-software-inkstitch-guide",
+          "text": "Free Digitizing Software"
+        },
+        {
+          "href": "/blog/chenille-and-varsity-jacket-patch-digitizing-guide",
+          "text": "Varsity Chenille Patches"
+        },
+        {
+          "href": "/blog/common-embroidery-digitizing-mistakes",
+          "text": "Common Digitizing Mistakes"
+        },
+        {
+          "href": "/blog/best-online-embroidery-digitizing-services-comparison-guide",
+          "text": "Digitizing Services Compared"
+        },
+        {
+          "href": "mailto:info@veloradigitizing.com",
+          "text": "info@veloradigitizing.com"
+        },
+        {
+          "href": "tel:+12136358137",
+          "text": "+1 (213) 635-8137"
+        },
+        {
+          "href": "https://www.google.com/maps/search/?api=1&amp;query=128+Business+Blvd+Suite+204+Los+Angeles+CA+90017",
+          "text": "View on Google Maps",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "/privacy-policy",
+          "text": "Privacy Policy"
+        },
+        {
+          "href": "/terms-and-conditions",
+          "text": "Terms &amp; Conditions"
+        },
+        {
+          "href": "https://wa.me/12136358137",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        }
+      ],
+      "botStatus": 200,
+      "botHasH1": true,
+      "bytes": 386903
+    },
+    {
+      "path": "/services",
+      "status": 200,
+      "finalUrl": "https://www.veloradigitizing.com/services",
+      "canonical": [
+        "https://www.veloradigitizing.com/services"
+      ],
+      "robots": [
+        "index, follow",
+        "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+      ],
+      "xRobotsTag": null,
+      "title": "Embroidery Digitizing Services &amp; Prices | Velora Digitizing",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Embroidery Digitizing Services for Every Garment"
+        },
+        {
+          "level": 2,
+          "text": "Which Digitizing Service Does Your Logo Need?"
+        },
+        {
+          "level": 2,
+          "text": "What to Send for an Embroidery Digitizing Quote"
+        },
+        {
+          "level": 2,
+          "text": "Featured Digitizing Work"
+        },
+        {
+          "level": 2,
+          "text": "We Deliver More Than Just Stitches"
+        },
+        {
+          "level": 2,
+          "text": "Embroidery Digitizing Prices"
+        },
+        {
+          "level": 2,
+          "text": "Services - Frequently Asked Questions"
+        },
+        {
+          "level": 2,
+          "text": "Service That Exceeds Expectations"
+        },
+        {
+          "level": 2,
+          "text": "More Professional Digitizing &amp; Artwork Services"
+        },
+        {
+          "level": 2,
+          "text": "Embroidery Digitizing Guides"
+        },
+        {
+          "level": 2,
+          "text": "Ready to Digitize Your Design?"
+        }
+      ],
+      "words": 1710,
+      "anchors": [
+        {
+          "href": "/store",
+          "text": "View Patch Samples"
+        },
+        {
+          "href": "/services",
+          "text": "Explore Services"
+        },
+        {
+          "href": "/contact",
+          "text": "Get Free Quote"
+        },
+        {
+          "href": "/",
+          "text": "VELORA DIGITIZING"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "/services",
+          "text": "All Services"
+        },
+        {
+          "href": "/services/3d-puff-digitizing",
+          "text": "3D Puff Digitizing"
+        },
+        {
+          "href": "/services/cap-logo-digitizing",
+          "text": "Cap Logo Digitizing"
+        },
+        {
+          "href": "/services/applique-digitizing",
+          "text": "Applique Digitizing"
+        },
+        {
+          "href": "/patches",
+          "text": "Patches Service"
+        },
+        {
+          "href": "/vector-art",
+          "text": "Vector Art Service"
+        },
+        {
+          "href": "/portfolio",
+          "text": "Portfolio"
+        },
+        {
+          "href": "/store",
+          "text": "Store"
+        },
+        {
+          "href": "/about",
+          "text": "About Us"
+        },
+        {
+          "href": "/blog",
+          "text": "Blog"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact"
+        },
+        {
+          "href": "/contact",
+          "text": "Quote GET A QUOTE →"
+        },
+        {
+          "href": "/contact",
+          "text": "GET FREE QUOTE →"
+        },
+        {
+          "href": "/portfolio",
+          "text": "VIEW PORTFOLIO →"
+        },
+        {
+          "href": "/contact",
+          "text": "Flat logo digitizing"
+        },
+        {
+          "href": "/services/cap-logo-digitizing",
+          "text": "Cap logo digitizing"
+        },
+        {
+          "href": "/services/3d-puff-digitizing",
+          "text": "3D puff digitizing"
+        },
+        {
+          "href": "/services/applique-digitizing",
+          "text": "Applique digitizing"
+        },
+        {
+          "href": "/patches",
+          "text": "Custom patches"
+        },
+        {
+          "href": "/vector-art",
+          "text": "Vector art conversion"
+        },
+        {
+          "href": "/contact",
+          "text": "Send artwork for a quote"
+        },
+        {
+          "href": "/portfolio?category=felt-patches",
+          "text": "View 20 + Designs → Felt Patches Felt Patches 20 + Premium digitized designs"
+        },
+        {
+          "href": "/portfolio?category=twill-patches",
+          "text": "View 20 + Designs → Twill Patches Twill Patches 20 + Premium digitized designs"
+        },
+        {
+          "href": "/portfolio?category=cap-logo",
+          "text": "View 15 + Designs → Cap / Hat Logos Cap / Hat Logos 15 + Premium digitized designs"
+        },
+        {
+          "href": "/portfolio?category=jacket-back",
+          "text": "View 19 + Designs → Jacket Back Design Jacket Back Design 19 + Premium digitized designs"
+        },
+        {
+          "href": "/portfolio?category=left-chest-logo",
+          "text": "View 23 + Designs → Left Chest Logos Left Chest Logos 23 + Premium digitized designs"
+        },
+        {
+          "href": "/portfolio?category=3d-puff",
+          "text": "View 1 + Designs → 3D Puff Embroidery 3D Puff Embroidery 1 + Premium digitized designs"
+        },
+        {
+          "href": "/portfolio?category=towel-design",
+          "text": "View 4 + Designs → Towel Embroidery Towel Embroidery 4 + Premium digitized designs"
+        },
+        {
+          "href": "/portfolio?category=applique-design",
+          "text": "View 2 + Designs → Applique Design Applique Design 2 + Premium digitized designs"
+        },
+        {
+          "href": "/portfolio?category=vector-art",
+          "text": "View 8 + Designs → Vector Artwork Vector Artwork 8 + Premium digitized designs"
+        },
+        {
+          "href": "/portfolio",
+          "text": "View Full Portfolio"
+        },
+        {
+          "href": "/contact",
+          "text": "Get a Free Quote"
+        },
+        {
+          "href": "/contact",
+          "text": "Get a Free Quote"
+        },
+        {
+          "href": "/contact",
+          "text": "Get a Free Quote"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact Our Team →"
+        },
+        {
+          "href": "/contact",
+          "text": "TALK TO AN EXPERT →"
+        },
+        {
+          "href": "/services/3d-puff-digitizing",
+          "text": "3D Puff Digitizing Raised dimensional foam embroidery for caps, snapbacks and hoodies. Learn more →"
+        },
+        {
+          "href": "/services/cap-logo-digitizing",
+          "text": "Cap Logo Digitizing Center-out digitizing engineered for curved cap frames with zero seam bunching. Learn more →"
+        },
+        {
+          "href": "/services/applique-digitizing",
+          "text": "Applique Digitizing Tackdown and satin border stitches for jerseys, varsity jackets and large text. Learn more →"
+        },
+        {
+          "href": "/vector-art",
+          "text": "Vector Art Conversion Manual raster-to-vector artwork tracing for screen print, vinyl and DTF. Learn more →"
+        },
+        {
+          "href": "/services",
+          "text": "View All Services &amp; Pricing →"
+        },
+        {
+          "href": "/blog",
+          "text": "View all guides →"
+        },
+        {
+          "href": "/blog/what-is-embroidery-digitizing",
+          "text": ""
+        },
+        {
+          "href": "/blog/what-is-embroidery-digitizing",
+          "text": "What Is Embroidery Digitizing and How Does It Work? The Master Guide"
+        },
+        {
+          "href": "/blog/what-is-embroidery-digitizing",
+          "text": "Read article →"
+        },
+        {
+          "href": "/blog/embroidery-digitizing-cost-pricing-guide",
+          "text": ""
+        },
+        {
+          "href": "/blog/embroidery-digitizing-cost-pricing-guide",
+          "text": "Embroidery Digitizing Cost &amp; Pricing: Per Stitch vs Flat Rate (2026 Guide)"
+        },
+        {
+          "href": "/blog/embroidery-digitizing-cost-pricing-guide",
+          "text": "Read article →"
+        },
+        {
+          "href": "/blog/left-chest-logo-embroidery-digitizing-guide",
+          "text": ""
+        },
+        {
+          "href": "/blog/left-chest-logo-embroidery-digitizing-guide",
+          "text": "Left Chest Logo Placement &amp; Embroidery Size Guide (Polo &amp; Shirts)"
+        },
+        {
+          "href": "/blog/left-chest-logo-embroidery-digitizing-guide",
+          "text": "Read article →"
+        },
+        {
+          "href": "/contact",
+          "text": "START YOUR ORDER →"
+        },
+        {
+          "href": "https://www.linkedin.com/in/velora-digitizing-854396429",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.pinterest.com/veloradigitizing/",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.instagram.com/veloradigitizing",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.threads.net/@veloradigitizing",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.tiktok.com/@muheeb.rehmani?_r=1&amp;_t=ZS-9846QsaPrjY",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://x.com/burlinleo",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.youtube.com/@VeloraDigitizing",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "mailto:info@veloradigitizing.com",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.trustpilot.com/review/veloradigitizing.com",
+          "text": "Find us on Trustpilot",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/about",
+          "text": "About Us"
+        },
+        {
+          "href": "/store",
+          "text": "Patch Samples"
+        },
+        {
+          "href": "/portfolio?category=felt-patches",
+          "text": "Felt Patches"
+        },
+        {
+          "href": "/portfolio?category=twill-patches",
+          "text": "Twill Patches"
+        },
+        {
+          "href": "/contact",
+          "text": "Custom Patch Quote"
+        },
+        {
+          "href": "/portfolio",
+          "text": "Portfolio"
+        },
+        {
+          "href": "/blog",
+          "text": "Blog"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact Us"
+        },
+        {
+          "href": "/services",
+          "text": "All Digitizing Services &amp; Pricing"
+        },
+        {
+          "href": "/services/3d-puff-digitizing",
+          "text": "3D Puff Embroidery Digitizing"
+        },
+        {
+          "href": "/services/cap-logo-digitizing",
+          "text": "Cap &amp; Hat Logo Digitizing"
+        },
+        {
+          "href": "/services/applique-digitizing",
+          "text": "Applique Embroidery Digitizing"
+        },
+        {
+          "href": "/vector-art",
+          "text": "Vector Art Conversion Service"
+        },
+        {
+          "href": "/patches",
+          "text": "Custom Patches Digitizing"
+        },
+        {
+          "href": "/portfolio?category=jacket-back",
+          "text": "Jacket Back Digitizing"
+        },
+        {
+          "href": "/portfolio?category=left-chest",
+          "text": "Left Chest Logo Digitizing"
+        },
+        {
+          "href": "/portfolio?category=chenille",
+          "text": "Chenille Patch Digitizing"
+        },
+        {
+          "href": "/portfolio?category=towel",
+          "text": "Towel Monogram Digitizing"
+        },
+        {
+          "href": "/patches",
+          "text": "Felt &amp; Twill Patch Samples"
+        },
+        {
+          "href": "/blog/convert-png-jpg-to-dst-embroidery-file",
+          "text": "Convert PNG to DST"
+        },
+        {
+          "href": "/blog/3d-puff-embroidery-digitizing-guide",
+          "text": "3D Puff Cap Digitizing"
+        },
+        {
+          "href": "/blog/dst-vs-pes-vs-jef-embroidery-file-formats",
+          "text": "DST vs PES vs JEF Files"
+        },
+        {
+          "href": "/blog/what-is-embroidery-digitizing",
+          "text": "What Is Digitizing?"
+        },
+        {
+          "href": "/blog/how-to-prepare-logo-for-embroidery-digitizing",
+          "text": "Prepare Logo for Digitizing"
+        },
+        {
+          "href": "/blog/custom-patch-types-embroidered-woven-pvc-leather-chenille",
+          "text": "Patch Types Compared"
+        },
+        {
+          "href": "/blog/how-to-digitize-small-text-micro-lettering-embroidery",
+          "text": "Small Text Micro-Lettering"
+        },
+        {
+          "href": "/blog/embroidery-on-towels-and-fleece-knockdown-stitch-guide",
+          "text": "Towel Knockdown Stitches"
+        },
+        {
+          "href": "/blog/best-free-embroidery-digitizing-software-inkstitch-guide",
+          "text": "Free Digitizing Software"
+        },
+        {
+          "href": "/blog/chenille-and-varsity-jacket-patch-digitizing-guide",
+          "text": "Varsity Chenille Patches"
+        },
+        {
+          "href": "/blog/common-embroidery-digitizing-mistakes",
+          "text": "Common Digitizing Mistakes"
+        },
+        {
+          "href": "/blog/best-online-embroidery-digitizing-services-comparison-guide",
+          "text": "Digitizing Services Compared"
+        },
+        {
+          "href": "mailto:info@veloradigitizing.com",
+          "text": "info@veloradigitizing.com"
+        },
+        {
+          "href": "tel:+12136358137",
+          "text": "+1 (213) 635-8137"
+        },
+        {
+          "href": "https://www.google.com/maps/search/?api=1&amp;query=128+Business+Blvd+Suite+204+Los+Angeles+CA+90017",
+          "text": "View on Google Maps",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "/privacy-policy",
+          "text": "Privacy Policy"
+        },
+        {
+          "href": "/terms-and-conditions",
+          "text": "Terms &amp; Conditions"
+        },
+        {
+          "href": "https://wa.me/12136358137",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        }
+      ],
+      "botStatus": 200,
+      "botHasH1": true,
+      "bytes": 248193
+    },
+    {
+      "path": "/services/cap-logo-digitizing",
+      "status": 200,
+      "finalUrl": "https://www.veloradigitizing.com/services/cap-logo-digitizing",
+      "canonical": [
+        "https://www.veloradigitizing.com/services/cap-logo-digitizing"
+      ],
+      "robots": [
+        "index, follow",
+        "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+      ],
+      "xRobotsTag": null,
+      "title": "Cap Embroidery Digitizing Services | Hat Logo Digitizing (DST, PES)",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Cap &amp; Hat Logo Digitizing Services"
+        },
+        {
+          "level": 2,
+          "text": "What Makes Cap Digitizing Different?"
+        },
+        {
+          "level": 2,
+          "text": "Custom Digitizing for All Cap Styles"
+        },
+        {
+          "level": 2,
+          "text": "Our Cap Logo Digitizing Process"
+        },
+        {
+          "level": 2,
+          "text": "Digitizing for Every Cap &amp; Hat Style"
+        },
+        {
+          "level": 2,
+          "text": "Supported Cap Machine Formats"
+        },
+        {
+          "level": 2,
+          "text": "Cap Logo Digitizing Portfolio"
+        },
+        {
+          "level": 2,
+          "text": "Why Choose Velora for Cap Digitizing?"
+        },
+        {
+          "level": 2,
+          "text": "What We Need for Your Cap Logo File"
+        },
+        {
+          "level": 2,
+          "text": "Cap Logo Digitizing Prices"
+        },
+        {
+          "level": 2,
+          "text": "Frequently Asked Questions"
+        },
+        {
+          "level": 2,
+          "text": "More Professional Digitizing &amp; Artwork Services"
+        },
+        {
+          "level": 2,
+          "text": "Ready to Digitize Your Design?"
+        },
+        {
+          "level": 2,
+          "text": "Cap &amp; Hat Embroidery Guides"
+        }
+      ],
+      "words": 1497,
+      "anchors": [
+        {
+          "href": "/store",
+          "text": "View Patch Samples"
+        },
+        {
+          "href": "/services",
+          "text": "Explore Services"
+        },
+        {
+          "href": "/contact",
+          "text": "Get Free Quote"
+        },
+        {
+          "href": "/",
+          "text": "VELORA DIGITIZING"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "/services",
+          "text": "All Services"
+        },
+        {
+          "href": "/services/3d-puff-digitizing",
+          "text": "3D Puff Digitizing"
+        },
+        {
+          "href": "/services/cap-logo-digitizing",
+          "text": "Cap Logo Digitizing"
+        },
+        {
+          "href": "/services/applique-digitizing",
+          "text": "Applique Digitizing"
+        },
+        {
+          "href": "/patches",
+          "text": "Patches Service"
+        },
+        {
+          "href": "/vector-art",
+          "text": "Vector Art Service"
+        },
+        {
+          "href": "/portfolio",
+          "text": "Portfolio"
+        },
+        {
+          "href": "/store",
+          "text": "Store"
+        },
+        {
+          "href": "/about",
+          "text": "About Us"
+        },
+        {
+          "href": "/blog",
+          "text": "Blog"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact"
+        },
+        {
+          "href": "/contact",
+          "text": "Quote GET A QUOTE →"
+        },
+        {
+          "href": "/contact",
+          "text": "GET FREE QUOTE →"
+        },
+        {
+          "href": "/portfolio",
+          "text": "VIEW PORTFOLIO →"
+        },
+        {
+          "href": "/portfolio?category=cap-logo",
+          "text": "EXPLORE FULL CAP PORTFOLIO →"
+        },
+        {
+          "href": "/contact",
+          "text": "Send artwork for a quote"
+        },
+        {
+          "href": "/contact",
+          "text": "Get a Free Quote"
+        },
+        {
+          "href": "/contact",
+          "text": "Get a Free Quote"
+        },
+        {
+          "href": "/contact",
+          "text": "Get a Free Quote"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact Our Team →"
+        },
+        {
+          "href": "/blog/cap-hat-logo-embroidery-digitizing-guide",
+          "text": "Read Guide →"
+        },
+        {
+          "href": "/services/3d-puff-digitizing",
+          "text": "3D Puff Digitizing Raised dimensional foam embroidery for caps, snapbacks and hoodies. Learn more →"
+        },
+        {
+          "href": "/services/applique-digitizing",
+          "text": "Applique Digitizing Tackdown and satin border stitches for jerseys, varsity jackets and large text. Learn more →"
+        },
+        {
+          "href": "/vector-art",
+          "text": "Vector Art Conversion Manual raster-to-vector artwork tracing for screen print, vinyl and DTF. Learn more →"
+        },
+        {
+          "href": "/patches",
+          "text": "Custom Patches Embroidered, PVC, woven, and leather patches with merrowed borders. Learn more →"
+        },
+        {
+          "href": "/services",
+          "text": "View All Services &amp; Pricing →"
+        },
+        {
+          "href": "/contact",
+          "text": "START YOUR ORDER →"
+        },
+        {
+          "href": "/blog",
+          "text": "View all guides →"
+        },
+        {
+          "href": "/blog/cap-hat-logo-embroidery-digitizing-guide",
+          "text": ""
+        },
+        {
+          "href": "/blog/cap-hat-logo-embroidery-digitizing-guide",
+          "text": "Hat Logo Size for Embroidery &amp; Cap Digitizing Guide (Placement &amp; Stitch Order)"
+        },
+        {
+          "href": "/blog/cap-hat-logo-embroidery-digitizing-guide",
+          "text": "Read article →"
+        },
+        {
+          "href": "/blog/3d-puff-embroidery-digitizing-guide",
+          "text": ""
+        },
+        {
+          "href": "/blog/3d-puff-embroidery-digitizing-guide",
+          "text": "3D Puff Embroidery on Hats: Foam, Digitizing &amp; Stitching Guide"
+        },
+        {
+          "href": "/blog/3d-puff-embroidery-digitizing-guide",
+          "text": "Read article →"
+        },
+        {
+          "href": "/blog/fix-embroidery-fabric-puckering-and-thread-breaks",
+          "text": ""
+        },
+        {
+          "href": "/blog/fix-embroidery-fabric-puckering-and-thread-breaks",
+          "text": "How to Fix Fabric Puckering and Thread Breaks in Machine Embroidery"
+        },
+        {
+          "href": "/blog/fix-embroidery-fabric-puckering-and-thread-breaks",
+          "text": "Read article →"
+        },
+        {
+          "href": "https://www.linkedin.com/in/velora-digitizing-854396429",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.pinterest.com/veloradigitizing/",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.instagram.com/veloradigitizing",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.threads.net/@veloradigitizing",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.tiktok.com/@muheeb.rehmani?_r=1&amp;_t=ZS-9846QsaPrjY",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://x.com/burlinleo",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.youtube.com/@VeloraDigitizing",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "mailto:info@veloradigitizing.com",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.trustpilot.com/review/veloradigitizing.com",
+          "text": "Find us on Trustpilot",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/about",
+          "text": "About Us"
+        },
+        {
+          "href": "/store",
+          "text": "Patch Samples"
+        },
+        {
+          "href": "/portfolio?category=felt-patches",
+          "text": "Felt Patches"
+        },
+        {
+          "href": "/portfolio?category=twill-patches",
+          "text": "Twill Patches"
+        },
+        {
+          "href": "/contact",
+          "text": "Custom Patch Quote"
+        },
+        {
+          "href": "/portfolio",
+          "text": "Portfolio"
+        },
+        {
+          "href": "/blog",
+          "text": "Blog"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact Us"
+        },
+        {
+          "href": "/services",
+          "text": "All Digitizing Services &amp; Pricing"
+        },
+        {
+          "href": "/services/3d-puff-digitizing",
+          "text": "3D Puff Embroidery Digitizing"
+        },
+        {
+          "href": "/services/cap-logo-digitizing",
+          "text": "Cap &amp; Hat Logo Digitizing"
+        },
+        {
+          "href": "/services/applique-digitizing",
+          "text": "Applique Embroidery Digitizing"
+        },
+        {
+          "href": "/vector-art",
+          "text": "Vector Art Conversion Service"
+        },
+        {
+          "href": "/patches",
+          "text": "Custom Patches Digitizing"
+        },
+        {
+          "href": "/portfolio?category=jacket-back",
+          "text": "Jacket Back Digitizing"
+        },
+        {
+          "href": "/portfolio?category=left-chest",
+          "text": "Left Chest Logo Digitizing"
+        },
+        {
+          "href": "/portfolio?category=chenille",
+          "text": "Chenille Patch Digitizing"
+        },
+        {
+          "href": "/portfolio?category=towel",
+          "text": "Towel Monogram Digitizing"
+        },
+        {
+          "href": "/patches",
+          "text": "Felt &amp; Twill Patch Samples"
+        },
+        {
+          "href": "/blog/convert-png-jpg-to-dst-embroidery-file",
+          "text": "Convert PNG to DST"
+        },
+        {
+          "href": "/blog/3d-puff-embroidery-digitizing-guide",
+          "text": "3D Puff Cap Digitizing"
+        },
+        {
+          "href": "/blog/dst-vs-pes-vs-jef-embroidery-file-formats",
+          "text": "DST vs PES vs JEF Files"
+        },
+        {
+          "href": "/blog/what-is-embroidery-digitizing",
+          "text": "What Is Digitizing?"
+        },
+        {
+          "href": "/blog/how-to-prepare-logo-for-embroidery-digitizing",
+          "text": "Prepare Logo for Digitizing"
+        },
+        {
+          "href": "/blog/custom-patch-types-embroidered-woven-pvc-leather-chenille",
+          "text": "Patch Types Compared"
+        },
+        {
+          "href": "/blog/how-to-digitize-small-text-micro-lettering-embroidery",
+          "text": "Small Text Micro-Lettering"
+        },
+        {
+          "href": "/blog/embroidery-on-towels-and-fleece-knockdown-stitch-guide",
+          "text": "Towel Knockdown Stitches"
+        },
+        {
+          "href": "/blog/best-free-embroidery-digitizing-software-inkstitch-guide",
+          "text": "Free Digitizing Software"
+        },
+        {
+          "href": "/blog/chenille-and-varsity-jacket-patch-digitizing-guide",
+          "text": "Varsity Chenille Patches"
+        },
+        {
+          "href": "/blog/common-embroidery-digitizing-mistakes",
+          "text": "Common Digitizing Mistakes"
+        },
+        {
+          "href": "/blog/best-online-embroidery-digitizing-services-comparison-guide",
+          "text": "Digitizing Services Compared"
+        },
+        {
+          "href": "mailto:info@veloradigitizing.com",
+          "text": "info@veloradigitizing.com"
+        },
+        {
+          "href": "tel:+12136358137",
+          "text": "+1 (213) 635-8137"
+        },
+        {
+          "href": "https://www.google.com/maps/search/?api=1&amp;query=128+Business+Blvd+Suite+204+Los+Angeles+CA+90017",
+          "text": "View on Google Maps",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "/privacy-policy",
+          "text": "Privacy Policy"
+        },
+        {
+          "href": "/terms-and-conditions",
+          "text": "Terms &amp; Conditions"
+        },
+        {
+          "href": "https://wa.me/12136358137",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        }
+      ],
+      "botStatus": 200,
+      "botHasH1": true,
+      "bytes": 242790
+    },
+    {
+      "path": "/services/3d-puff-digitizing",
+      "status": 200,
+      "finalUrl": "https://www.veloradigitizing.com/services/3d-puff-digitizing",
+      "canonical": [
+        "https://www.veloradigitizing.com/services/3d-puff-digitizing"
+      ],
+      "robots": [
+        "index, follow",
+        "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+      ],
+      "xRobotsTag": null,
+      "title": "3D Puff Embroidery Digitizing for Caps &amp; Hats | DST, PES",
+      "headings": [
+        {
+          "level": 1,
+          "text": "3D Puff Embroidery Digitizing Services"
+        },
+        {
+          "level": 2,
+          "text": "What Is 3D Puff Digitizing?"
+        },
+        {
+          "level": 2,
+          "text": "Engineered for Flawless Cap &amp; Garment Stitch-Outs"
+        },
+        {
+          "level": 2,
+          "text": "Our 3D Puff Digitizing Process"
+        },
+        {
+          "level": 2,
+          "text": "3D Puff Digitizing for Caps, Hats &amp; Outerwear"
+        },
+        {
+          "level": 2,
+          "text": "Supported Embroidery Machine Formats"
+        },
+        {
+          "level": 2,
+          "text": "3D Puff Digitizing Portfolio"
+        },
+        {
+          "level": 2,
+          "text": "Why Choose Velora for 3D Puff?"
+        },
+        {
+          "level": 2,
+          "text": "Before Ordering a 3D Puff Stitch File"
+        },
+        {
+          "level": 2,
+          "text": "3D Puff Digitizing Prices"
+        },
+        {
+          "level": 2,
+          "text": "Frequently Asked Questions"
+        },
+        {
+          "level": 2,
+          "text": "More Professional Digitizing &amp; Artwork Services"
+        },
+        {
+          "level": 2,
+          "text": "Ready to Digitize Your Design?"
+        },
+        {
+          "level": 2,
+          "text": "3D Puff Embroidery Guides"
+        }
+      ],
+      "words": 1496,
+      "anchors": [
+        {
+          "href": "/store",
+          "text": "View Patch Samples"
+        },
+        {
+          "href": "/services",
+          "text": "Explore Services"
+        },
+        {
+          "href": "/contact",
+          "text": "Get Free Quote"
+        },
+        {
+          "href": "/",
+          "text": "VELORA DIGITIZING"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "/services",
+          "text": "All Services"
+        },
+        {
+          "href": "/services/3d-puff-digitizing",
+          "text": "3D Puff Digitizing"
+        },
+        {
+          "href": "/services/cap-logo-digitizing",
+          "text": "Cap Logo Digitizing"
+        },
+        {
+          "href": "/services/applique-digitizing",
+          "text": "Applique Digitizing"
+        },
+        {
+          "href": "/patches",
+          "text": "Patches Service"
+        },
+        {
+          "href": "/vector-art",
+          "text": "Vector Art Service"
+        },
+        {
+          "href": "/portfolio",
+          "text": "Portfolio"
+        },
+        {
+          "href": "/store",
+          "text": "Store"
+        },
+        {
+          "href": "/about",
+          "text": "About Us"
+        },
+        {
+          "href": "/blog",
+          "text": "Blog"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact"
+        },
+        {
+          "href": "/contact",
+          "text": "Quote GET A QUOTE →"
+        },
+        {
+          "href": "/contact",
+          "text": "GET FREE QUOTE →"
+        },
+        {
+          "href": "/portfolio",
+          "text": "VIEW PORTFOLIO →"
+        },
+        {
+          "href": "/portfolio?category=3d-puff",
+          "text": "EXPLORE FULL 3D PUFF PORTFOLIO →"
+        },
+        {
+          "href": "/contact",
+          "text": "Send artwork for a quote"
+        },
+        {
+          "href": "/contact",
+          "text": "Get a Free Quote"
+        },
+        {
+          "href": "/contact",
+          "text": "Get a Free Quote"
+        },
+        {
+          "href": "/contact",
+          "text": "Get a Free Quote"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact Our Team →"
+        },
+        {
+          "href": "/blog/3d-puff-embroidery-digitizing-guide",
+          "text": "Read Guide →"
+        },
+        {
+          "href": "/services/cap-logo-digitizing",
+          "text": "Cap Logo Digitizing Center-out digitizing engineered for curved cap frames with zero seam bunching. Learn more →"
+        },
+        {
+          "href": "/services/applique-digitizing",
+          "text": "Applique Digitizing Tackdown and satin border stitches for jerseys, varsity jackets and large text. Learn more →"
+        },
+        {
+          "href": "/vector-art",
+          "text": "Vector Art Conversion Manual raster-to-vector artwork tracing for screen print, vinyl and DTF. Learn more →"
+        },
+        {
+          "href": "/patches",
+          "text": "Custom Patches Embroidered, PVC, woven, and leather patches with merrowed borders. Learn more →"
+        },
+        {
+          "href": "/services",
+          "text": "View All Services &amp; Pricing →"
+        },
+        {
+          "href": "/contact",
+          "text": "START YOUR ORDER →"
+        },
+        {
+          "href": "/blog",
+          "text": "View all guides →"
+        },
+        {
+          "href": "/blog/3d-puff-embroidery-digitizing-guide",
+          "text": ""
+        },
+        {
+          "href": "/blog/3d-puff-embroidery-digitizing-guide",
+          "text": "3D Puff Embroidery on Hats: Foam, Digitizing &amp; Stitching Guide"
+        },
+        {
+          "href": "/blog/3d-puff-embroidery-digitizing-guide",
+          "text": "Read article →"
+        },
+        {
+          "href": "/blog/embroidery-underlay-types-explained",
+          "text": ""
+        },
+        {
+          "href": "/blog/embroidery-underlay-types-explained",
+          "text": "Embroidery Underlay Types Explained: Center Walk, Edge Run, Zig-Zag &amp; Tatami"
+        },
+        {
+          "href": "/blog/embroidery-underlay-types-explained",
+          "text": "Read article →"
+        },
+        {
+          "href": "/blog/how-to-estimate-embroidery-stitch-count",
+          "text": ""
+        },
+        {
+          "href": "/blog/how-to-estimate-embroidery-stitch-count",
+          "text": "Embroidery Stitch Count Estimator &amp; Pricing Formula (2026 Guide)"
+        },
+        {
+          "href": "/blog/how-to-estimate-embroidery-stitch-count",
+          "text": "Read article →"
+        },
+        {
+          "href": "https://www.linkedin.com/in/velora-digitizing-854396429",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.pinterest.com/veloradigitizing/",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.instagram.com/veloradigitizing",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.threads.net/@veloradigitizing",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.tiktok.com/@muheeb.rehmani?_r=1&amp;_t=ZS-9846QsaPrjY",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://x.com/burlinleo",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.youtube.com/@VeloraDigitizing",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "mailto:info@veloradigitizing.com",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.trustpilot.com/review/veloradigitizing.com",
+          "text": "Find us on Trustpilot",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/about",
+          "text": "About Us"
+        },
+        {
+          "href": "/store",
+          "text": "Patch Samples"
+        },
+        {
+          "href": "/portfolio?category=felt-patches",
+          "text": "Felt Patches"
+        },
+        {
+          "href": "/portfolio?category=twill-patches",
+          "text": "Twill Patches"
+        },
+        {
+          "href": "/contact",
+          "text": "Custom Patch Quote"
+        },
+        {
+          "href": "/portfolio",
+          "text": "Portfolio"
+        },
+        {
+          "href": "/blog",
+          "text": "Blog"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact Us"
+        },
+        {
+          "href": "/services",
+          "text": "All Digitizing Services &amp; Pricing"
+        },
+        {
+          "href": "/services/3d-puff-digitizing",
+          "text": "3D Puff Embroidery Digitizing"
+        },
+        {
+          "href": "/services/cap-logo-digitizing",
+          "text": "Cap &amp; Hat Logo Digitizing"
+        },
+        {
+          "href": "/services/applique-digitizing",
+          "text": "Applique Embroidery Digitizing"
+        },
+        {
+          "href": "/vector-art",
+          "text": "Vector Art Conversion Service"
+        },
+        {
+          "href": "/patches",
+          "text": "Custom Patches Digitizing"
+        },
+        {
+          "href": "/portfolio?category=jacket-back",
+          "text": "Jacket Back Digitizing"
+        },
+        {
+          "href": "/portfolio?category=left-chest",
+          "text": "Left Chest Logo Digitizing"
+        },
+        {
+          "href": "/portfolio?category=chenille",
+          "text": "Chenille Patch Digitizing"
+        },
+        {
+          "href": "/portfolio?category=towel",
+          "text": "Towel Monogram Digitizing"
+        },
+        {
+          "href": "/patches",
+          "text": "Felt &amp; Twill Patch Samples"
+        },
+        {
+          "href": "/blog/convert-png-jpg-to-dst-embroidery-file",
+          "text": "Convert PNG to DST"
+        },
+        {
+          "href": "/blog/3d-puff-embroidery-digitizing-guide",
+          "text": "3D Puff Cap Digitizing"
+        },
+        {
+          "href": "/blog/dst-vs-pes-vs-jef-embroidery-file-formats",
+          "text": "DST vs PES vs JEF Files"
+        },
+        {
+          "href": "/blog/what-is-embroidery-digitizing",
+          "text": "What Is Digitizing?"
+        },
+        {
+          "href": "/blog/how-to-prepare-logo-for-embroidery-digitizing",
+          "text": "Prepare Logo for Digitizing"
+        },
+        {
+          "href": "/blog/custom-patch-types-embroidered-woven-pvc-leather-chenille",
+          "text": "Patch Types Compared"
+        },
+        {
+          "href": "/blog/how-to-digitize-small-text-micro-lettering-embroidery",
+          "text": "Small Text Micro-Lettering"
+        },
+        {
+          "href": "/blog/embroidery-on-towels-and-fleece-knockdown-stitch-guide",
+          "text": "Towel Knockdown Stitches"
+        },
+        {
+          "href": "/blog/best-free-embroidery-digitizing-software-inkstitch-guide",
+          "text": "Free Digitizing Software"
+        },
+        {
+          "href": "/blog/chenille-and-varsity-jacket-patch-digitizing-guide",
+          "text": "Varsity Chenille Patches"
+        },
+        {
+          "href": "/blog/common-embroidery-digitizing-mistakes",
+          "text": "Common Digitizing Mistakes"
+        },
+        {
+          "href": "/blog/best-online-embroidery-digitizing-services-comparison-guide",
+          "text": "Digitizing Services Compared"
+        },
+        {
+          "href": "mailto:info@veloradigitizing.com",
+          "text": "info@veloradigitizing.com"
+        },
+        {
+          "href": "tel:+12136358137",
+          "text": "+1 (213) 635-8137"
+        },
+        {
+          "href": "https://www.google.com/maps/search/?api=1&amp;query=128+Business+Blvd+Suite+204+Los+Angeles+CA+90017",
+          "text": "View on Google Maps",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "/privacy-policy",
+          "text": "Privacy Policy"
+        },
+        {
+          "href": "/terms-and-conditions",
+          "text": "Terms &amp; Conditions"
+        },
+        {
+          "href": "https://wa.me/12136358137",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        }
+      ],
+      "botStatus": 200,
+      "botHasH1": true,
+      "bytes": 243417
+    },
+    {
+      "path": "/services/applique-digitizing",
+      "status": 200,
+      "finalUrl": "https://www.veloradigitizing.com/services/applique-digitizing",
+      "canonical": [
+        "https://www.veloradigitizing.com/services/applique-digitizing"
+      ],
+      "robots": [
+        "index, follow",
+        "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+      ],
+      "xRobotsTag": null,
+      "title": "Applique Digitizing Services | Custom Applique Embroidery (DST, PES)",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Applique Digitizing Services"
+        },
+        {
+          "level": 2,
+          "text": "What Is Applique Digitizing?"
+        },
+        {
+          "level": 2,
+          "text": "Custom Applique Digitizing for Apparel &amp; Embroidery"
+        },
+        {
+          "level": 2,
+          "text": "Our Applique Digitizing Process"
+        },
+        {
+          "level": 2,
+          "text": "Applique Digitizing for Caps, Jackets, Jerseys &amp; Patches"
+        },
+        {
+          "level": 2,
+          "text": "Applique Embroidery File Formats"
+        },
+        {
+          "level": 2,
+          "text": "Applique Digitizing Portfolio"
+        },
+        {
+          "level": 2,
+          "text": "Why Choose Velora Digitizing?"
+        },
+        {
+          "level": 2,
+          "text": "Preparing an Applique Digitizing Order"
+        },
+        {
+          "level": 2,
+          "text": "Applique Digitizing Prices"
+        },
+        {
+          "level": 2,
+          "text": "Frequently Asked Questions"
+        },
+        {
+          "level": 2,
+          "text": "More Professional Digitizing &amp; Artwork Services"
+        },
+        {
+          "level": 2,
+          "text": "Ready to Digitize Your Design?"
+        },
+        {
+          "level": 2,
+          "text": "Applique Embroidery Guides"
+        }
+      ],
+      "words": 1557,
+      "anchors": [
+        {
+          "href": "/store",
+          "text": "View Patch Samples"
+        },
+        {
+          "href": "/services",
+          "text": "Explore Services"
+        },
+        {
+          "href": "/contact",
+          "text": "Get Free Quote"
+        },
+        {
+          "href": "/",
+          "text": "VELORA DIGITIZING"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "/services",
+          "text": "All Services"
+        },
+        {
+          "href": "/services/3d-puff-digitizing",
+          "text": "3D Puff Digitizing"
+        },
+        {
+          "href": "/services/cap-logo-digitizing",
+          "text": "Cap Logo Digitizing"
+        },
+        {
+          "href": "/services/applique-digitizing",
+          "text": "Applique Digitizing"
+        },
+        {
+          "href": "/patches",
+          "text": "Patches Service"
+        },
+        {
+          "href": "/vector-art",
+          "text": "Vector Art Service"
+        },
+        {
+          "href": "/portfolio",
+          "text": "Portfolio"
+        },
+        {
+          "href": "/store",
+          "text": "Store"
+        },
+        {
+          "href": "/about",
+          "text": "About Us"
+        },
+        {
+          "href": "/blog",
+          "text": "Blog"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact"
+        },
+        {
+          "href": "/contact",
+          "text": "Quote GET A QUOTE →"
+        },
+        {
+          "href": "/contact",
+          "text": "GET FREE QUOTE →"
+        },
+        {
+          "href": "/portfolio",
+          "text": "VIEW PORTFOLIO →"
+        },
+        {
+          "href": "/portfolio?category=applique",
+          "text": "EXPLORE FULL APPLIQUE PORTFOLIO →"
+        },
+        {
+          "href": "/contact",
+          "text": "Send artwork for a quote"
+        },
+        {
+          "href": "/contact",
+          "text": "Get a Free Quote"
+        },
+        {
+          "href": "/contact",
+          "text": "Get a Free Quote"
+        },
+        {
+          "href": "/contact",
+          "text": "Get a Free Quote"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact Our Team →"
+        },
+        {
+          "href": "/blog/applique-embroidery-digitizing-guide",
+          "text": "Read Guide →"
+        },
+        {
+          "href": "/services/3d-puff-digitizing",
+          "text": "3D Puff Digitizing Raised dimensional foam embroidery for caps, snapbacks and hoodies. Learn more →"
+        },
+        {
+          "href": "/services/cap-logo-digitizing",
+          "text": "Cap Logo Digitizing Center-out digitizing engineered for curved cap frames with zero seam bunching. Learn more →"
+        },
+        {
+          "href": "/vector-art",
+          "text": "Vector Art Conversion Manual raster-to-vector artwork tracing for screen print, vinyl and DTF. Learn more →"
+        },
+        {
+          "href": "/patches",
+          "text": "Custom Patches Embroidered, PVC, woven, and leather patches with merrowed borders. Learn more →"
+        },
+        {
+          "href": "/services",
+          "text": "View All Services &amp; Pricing →"
+        },
+        {
+          "href": "/contact",
+          "text": "START YOUR ORDER →"
+        },
+        {
+          "href": "/blog",
+          "text": "View all guides →"
+        },
+        {
+          "href": "/blog/applique-embroidery-digitizing-guide",
+          "text": ""
+        },
+        {
+          "href": "/blog/applique-embroidery-digitizing-guide",
+          "text": "Appliqué Embroidery Digitizing: Complete Guide for Cut-Outs &amp; Tackdown"
+        },
+        {
+          "href": "/blog/applique-embroidery-digitizing-guide",
+          "text": "Read article →"
+        },
+        {
+          "href": "/blog/jacket-back-embroidery-digitizing-guide",
+          "text": ""
+        },
+        {
+          "href": "/blog/jacket-back-embroidery-digitizing-guide",
+          "text": "Jacket Back Embroidery Size &amp; Stitch Count: Digitizing &amp; Stabilizer Guide"
+        },
+        {
+          "href": "/blog/jacket-back-embroidery-digitizing-guide",
+          "text": "Read article →"
+        },
+        {
+          "href": "/blog/custom-patch-types-embroidered-woven-pvc-leather-chenille",
+          "text": ""
+        },
+        {
+          "href": "/blog/custom-patch-types-embroidered-woven-pvc-leather-chenille",
+          "text": "Custom Patch Types Explained: Embroidered, Woven, PVC, Leather, Chenille &amp; Printed"
+        },
+        {
+          "href": "/blog/custom-patch-types-embroidered-woven-pvc-leather-chenille",
+          "text": "Read article →"
+        },
+        {
+          "href": "https://www.linkedin.com/in/velora-digitizing-854396429",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.pinterest.com/veloradigitizing/",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.instagram.com/veloradigitizing",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.threads.net/@veloradigitizing",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.tiktok.com/@muheeb.rehmani?_r=1&amp;_t=ZS-9846QsaPrjY",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://x.com/burlinleo",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.youtube.com/@VeloraDigitizing",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "mailto:info@veloradigitizing.com",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.trustpilot.com/review/veloradigitizing.com",
+          "text": "Find us on Trustpilot",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/about",
+          "text": "About Us"
+        },
+        {
+          "href": "/store",
+          "text": "Patch Samples"
+        },
+        {
+          "href": "/portfolio?category=felt-patches",
+          "text": "Felt Patches"
+        },
+        {
+          "href": "/portfolio?category=twill-patches",
+          "text": "Twill Patches"
+        },
+        {
+          "href": "/contact",
+          "text": "Custom Patch Quote"
+        },
+        {
+          "href": "/portfolio",
+          "text": "Portfolio"
+        },
+        {
+          "href": "/blog",
+          "text": "Blog"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact Us"
+        },
+        {
+          "href": "/services",
+          "text": "All Digitizing Services &amp; Pricing"
+        },
+        {
+          "href": "/services/3d-puff-digitizing",
+          "text": "3D Puff Embroidery Digitizing"
+        },
+        {
+          "href": "/services/cap-logo-digitizing",
+          "text": "Cap &amp; Hat Logo Digitizing"
+        },
+        {
+          "href": "/services/applique-digitizing",
+          "text": "Applique Embroidery Digitizing"
+        },
+        {
+          "href": "/vector-art",
+          "text": "Vector Art Conversion Service"
+        },
+        {
+          "href": "/patches",
+          "text": "Custom Patches Digitizing"
+        },
+        {
+          "href": "/portfolio?category=jacket-back",
+          "text": "Jacket Back Digitizing"
+        },
+        {
+          "href": "/portfolio?category=left-chest",
+          "text": "Left Chest Logo Digitizing"
+        },
+        {
+          "href": "/portfolio?category=chenille",
+          "text": "Chenille Patch Digitizing"
+        },
+        {
+          "href": "/portfolio?category=towel",
+          "text": "Towel Monogram Digitizing"
+        },
+        {
+          "href": "/patches",
+          "text": "Felt &amp; Twill Patch Samples"
+        },
+        {
+          "href": "/blog/convert-png-jpg-to-dst-embroidery-file",
+          "text": "Convert PNG to DST"
+        },
+        {
+          "href": "/blog/3d-puff-embroidery-digitizing-guide",
+          "text": "3D Puff Cap Digitizing"
+        },
+        {
+          "href": "/blog/dst-vs-pes-vs-jef-embroidery-file-formats",
+          "text": "DST vs PES vs JEF Files"
+        },
+        {
+          "href": "/blog/what-is-embroidery-digitizing",
+          "text": "What Is Digitizing?"
+        },
+        {
+          "href": "/blog/how-to-prepare-logo-for-embroidery-digitizing",
+          "text": "Prepare Logo for Digitizing"
+        },
+        {
+          "href": "/blog/custom-patch-types-embroidered-woven-pvc-leather-chenille",
+          "text": "Patch Types Compared"
+        },
+        {
+          "href": "/blog/how-to-digitize-small-text-micro-lettering-embroidery",
+          "text": "Small Text Micro-Lettering"
+        },
+        {
+          "href": "/blog/embroidery-on-towels-and-fleece-knockdown-stitch-guide",
+          "text": "Towel Knockdown Stitches"
+        },
+        {
+          "href": "/blog/best-free-embroidery-digitizing-software-inkstitch-guide",
+          "text": "Free Digitizing Software"
+        },
+        {
+          "href": "/blog/chenille-and-varsity-jacket-patch-digitizing-guide",
+          "text": "Varsity Chenille Patches"
+        },
+        {
+          "href": "/blog/common-embroidery-digitizing-mistakes",
+          "text": "Common Digitizing Mistakes"
+        },
+        {
+          "href": "/blog/best-online-embroidery-digitizing-services-comparison-guide",
+          "text": "Digitizing Services Compared"
+        },
+        {
+          "href": "mailto:info@veloradigitizing.com",
+          "text": "info@veloradigitizing.com"
+        },
+        {
+          "href": "tel:+12136358137",
+          "text": "+1 (213) 635-8137"
+        },
+        {
+          "href": "https://www.google.com/maps/search/?api=1&amp;query=128+Business+Blvd+Suite+204+Los+Angeles+CA+90017",
+          "text": "View on Google Maps",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "/privacy-policy",
+          "text": "Privacy Policy"
+        },
+        {
+          "href": "/terms-and-conditions",
+          "text": "Terms &amp; Conditions"
+        },
+        {
+          "href": "https://wa.me/12136358137",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        }
+      ],
+      "botStatus": 200,
+      "botHasH1": true,
+      "bytes": 246070
+    },
+    {
+      "path": "/blog/cap-hat-logo-embroidery-digitizing-guide",
+      "status": 200,
+      "finalUrl": "https://www.veloradigitizing.com/blog/cap-hat-logo-embroidery-digitizing-guide",
+      "canonical": [
+        "https://www.veloradigitizing.com/blog/cap-hat-logo-embroidery-digitizing-guide"
+      ],
+      "robots": [
+        "index, follow",
+        "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+      ],
+      "xRobotsTag": null,
+      "title": "Hat Logo Size for Embroidery &amp; Cap Digitizing Guide | Velora Digitizing",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Hat Logo Size for Embroidery &amp; Cap Digitizing Guide (Placement &amp; Stitch Order)"
+        },
+        {
+          "level": 2,
+          "text": "What Is the Maximum Logo Size for Hat Embroidery?"
+        },
+        {
+          "level": 2,
+          "text": "Why Does a Cap Need Its Own Digitized File?"
+        },
+        {
+          "level": 2,
+          "text": "What Stitch Order Should a Cap Design Use?"
+        },
+        {
+          "level": 2,
+          "text": "Which Underlay and Density Settings Work on Caps?"
+        },
+        {
+          "level": 2,
+          "text": "How Small Can Text Be on an Embroidered Cap?"
+        },
+        {
+          "level": 2,
+          "text": "What Backing, Needle and Machine Speed Suit Caps?"
+        },
+        {
+          "level": 2,
+          "text": "How Many Stitches Does a Typical Cap Logo Have?"
+        },
+        {
+          "level": 2,
+          "text": "When Should You Choose 3D Puff Instead of Flat Cap Embroidery?"
+        },
+        {
+          "level": 2,
+          "text": "Six Common Cap Digitizing Mistakes"
+        },
+        {
+          "level": 2,
+          "text": "Cap Embroidery Digitizing Checklist"
+        },
+        {
+          "level": 2,
+          "text": "Richardson 112 Cap Digitizing: Center-Out Settings to Prevent Puckering"
+        },
+        {
+          "level": 2,
+          "text": "Get a Cap-Ready File From Velora Digitizing"
+        },
+        {
+          "level": 2,
+          "text": "Questions About This Topic"
+        },
+        {
+          "level": 2,
+          "text": "Keep Reading"
+        },
+        {
+          "level": 2,
+          "text": "Ready to Digitize Your Design?"
+        }
+      ],
+      "words": 2763,
+      "anchors": [
+        {
+          "href": "/store",
+          "text": "View Patch Samples"
+        },
+        {
+          "href": "/services",
+          "text": "Explore Services"
+        },
+        {
+          "href": "/contact",
+          "text": "Get Free Quote"
+        },
+        {
+          "href": "/",
+          "text": "VELORA DIGITIZING"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "/services",
+          "text": "All Services"
+        },
+        {
+          "href": "/services/3d-puff-digitizing",
+          "text": "3D Puff Digitizing"
+        },
+        {
+          "href": "/services/cap-logo-digitizing",
+          "text": "Cap Logo Digitizing"
+        },
+        {
+          "href": "/services/applique-digitizing",
+          "text": "Applique Digitizing"
+        },
+        {
+          "href": "/patches",
+          "text": "Patches Service"
+        },
+        {
+          "href": "/vector-art",
+          "text": "Vector Art Service"
+        },
+        {
+          "href": "/portfolio",
+          "text": "Portfolio"
+        },
+        {
+          "href": "/store",
+          "text": "Store"
+        },
+        {
+          "href": "/about",
+          "text": "About Us"
+        },
+        {
+          "href": "/blog",
+          "text": "Blog"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact"
+        },
+        {
+          "href": "/contact",
+          "text": "Quote GET A QUOTE →"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/blog",
+          "text": "Blog"
+        },
+        {
+          "href": "/about",
+          "text": "Velora Digitizing Team"
+        },
+        {
+          "href": "#what-is-the-maximum-logo-size-for-hat-embroidery",
+          "text": "What Is the Maximum Logo Size for Hat Embroidery?"
+        },
+        {
+          "href": "#why-does-a-cap-need-its-own-digitized-file",
+          "text": "Why Does a Cap Need Its Own Digitized File?"
+        },
+        {
+          "href": "#what-stitch-order-should-a-cap-design-use",
+          "text": "What Stitch Order Should a Cap Design Use?"
+        },
+        {
+          "href": "#which-underlay-and-density-settings-work-on-caps",
+          "text": "Which Underlay and Density Settings Work on Caps?"
+        },
+        {
+          "href": "#how-small-can-text-be-on-an-embroidered-cap",
+          "text": "How Small Can Text Be on an Embroidered Cap?"
+        },
+        {
+          "href": "#what-backing-needle-and-machine-speed-suit-caps",
+          "text": "What Backing, Needle and Machine Speed Suit Caps?"
+        },
+        {
+          "href": "#how-many-stitches-does-a-typical-cap-logo-have",
+          "text": "How Many Stitches Does a Typical Cap Logo Have?"
+        },
+        {
+          "href": "#when-should-you-choose-3d-puff-instead-of-flat-cap-embroidery",
+          "text": "When Should You Choose 3D Puff Instead of Flat Cap Embroidery?"
+        },
+        {
+          "href": "#six-common-cap-digitizing-mistakes",
+          "text": "Six Common Cap Digitizing Mistakes"
+        },
+        {
+          "href": "#cap-embroidery-digitizing-checklist",
+          "text": "Cap Embroidery Digitizing Checklist"
+        },
+        {
+          "href": "#richardson-112-cap-digitizing-center-out-settings-to-prevent-puckering",
+          "text": "Richardson 112 Cap Digitizing: Center-Out Settings to Prevent Puckering"
+        },
+        {
+          "href": "#get-a-cap-ready-file-from-velora-digitizing",
+          "text": "Get a Cap-Ready File From Velora Digitizing"
+        },
+        {
+          "href": "/services/cap-logo-digitizing",
+          "text": "Cap &amp; Hat Logo Digitizing"
+        },
+        {
+          "href": "/services/cap-logo-digitizing",
+          "text": "Get Free Quote →"
+        },
+        {
+          "href": "/services/cap-logo-digitizing",
+          "text": "cap and hat logo digitizing service"
+        },
+        {
+          "href": "/blog/left-chest-logo-embroidery-digitizing-guide",
+          "text": "left chest logo digitizing guide"
+        },
+        {
+          "href": "/blog/embroidery-underlay-types-explained",
+          "text": "embroidery underlay types explained"
+        },
+        {
+          "href": "/blog/embroidery-stabilizer-guide-cutaway-vs-tearaway",
+          "text": "embroidery stabilizer guide"
+        },
+        {
+          "href": "/blog/how-to-estimate-embroidery-stitch-count",
+          "text": "how to estimate embroidery stitch count"
+        },
+        {
+          "href": "/blog/3d-puff-embroidery-digitizing-guide",
+          "text": "3D puff embroidery digitizing guide"
+        },
+        {
+          "href": "/services/3d-puff-digitizing",
+          "text": "3D puff digitizing service"
+        },
+        {
+          "href": "/blog/dst-vs-pes-vs-jef-embroidery-file-formats",
+          "text": "DST, PES and JEF file formats"
+        },
+        {
+          "href": "/services/cap-logo-digitizing",
+          "text": "Cap &amp; Hat Logo Digitizing Services"
+        },
+        {
+          "href": "/services/cap-logo-digitizing",
+          "text": "cap logo digitizing service"
+        },
+        {
+          "href": "/contact",
+          "text": "contact us for a free quote"
+        },
+        {
+          "href": "/portfolio?category=felt-patches",
+          "text": "felt patch samples"
+        },
+        {
+          "href": "/portfolio?category=twill-patches",
+          "text": "twill patch samples"
+        },
+        {
+          "href": "/blog/beanie-embroidery-digitizing-guide",
+          "text": "beanie embroidery guide"
+        },
+        {
+          "href": "/blog/multi-needle-embroidery-machine-guide",
+          "text": "multi-needle embroidery machine guide"
+        },
+        {
+          "href": "/blog/how-much-does-embroidery-cost",
+          "text": "how much embroidery costs"
+        },
+        {
+          "href": "/blog/how-to-start-an-embroidery-business",
+          "text": "how to start an embroidery business"
+        },
+        {
+          "href": "/about",
+          "text": "About Velora Digitizing →"
+        },
+        {
+          "href": "/services/cap-logo-digitizing",
+          "text": "EXPLORE SERVICE →"
+        },
+        {
+          "href": "/services",
+          "text": "Embroidery Digitizing Services"
+        },
+        {
+          "href": "/services/3d-puff-digitizing",
+          "text": "3D Puff Digitizing"
+        },
+        {
+          "href": "/services/applique-digitizing",
+          "text": "Applique Digitizing"
+        },
+        {
+          "href": "/patches",
+          "text": "Custom Patch Digitizing"
+        },
+        {
+          "href": "/vector-art",
+          "text": "Vector Art Conversion"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact Our Team →"
+        },
+        {
+          "href": "/blog/jacket-back-embroidery-digitizing-guide",
+          "text": ""
+        },
+        {
+          "href": "/blog/jacket-back-embroidery-digitizing-guide",
+          "text": "Jacket Back Embroidery Size &amp; Stitch Count: Digitizing &amp; Stabilizer Guide"
+        },
+        {
+          "href": "/blog/jacket-back-embroidery-digitizing-guide",
+          "text": "Read article →"
+        },
+        {
+          "href": "/blog/how-to-digitize-small-text-micro-lettering-embroidery",
+          "text": ""
+        },
+        {
+          "href": "/blog/how-to-digitize-small-text-micro-lettering-embroidery",
+          "text": "How to Machine Embroider Small Letters &amp; Micro-Text: Digitizing Guide"
+        },
+        {
+          "href": "/blog/how-to-digitize-small-text-micro-lettering-embroidery",
+          "text": "Read article →"
+        },
+        {
+          "href": "/blog/embroidery-on-towels-and-fleece-knockdown-stitch-guide",
+          "text": ""
+        },
+        {
+          "href": "/blog/embroidery-on-towels-and-fleece-knockdown-stitch-guide",
+          "text": "Embroidery on Towels &amp; Fleece: The Complete Knockdown Stitch Guide"
+        },
+        {
+          "href": "/blog/embroidery-on-towels-and-fleece-knockdown-stitch-guide",
+          "text": "Read article →"
+        },
+        {
+          "href": "/contact",
+          "text": "START YOUR ORDER →"
+        },
+        {
+          "href": "https://www.linkedin.com/in/velora-digitizing-854396429",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.pinterest.com/veloradigitizing/",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.instagram.com/veloradigitizing",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.threads.net/@veloradigitizing",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.tiktok.com/@muheeb.rehmani?_r=1&amp;_t=ZS-9846QsaPrjY",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://x.com/burlinleo",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.youtube.com/@VeloraDigitizing",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "mailto:info@veloradigitizing.com",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.trustpilot.com/review/veloradigitizing.com",
+          "text": "Find us on Trustpilot",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/about",
+          "text": "About Us"
+        },
+        {
+          "href": "/store",
+          "text": "Patch Samples"
+        },
+        {
+          "href": "/portfolio?category=felt-patches",
+          "text": "Felt Patches"
+        },
+        {
+          "href": "/portfolio?category=twill-patches",
+          "text": "Twill Patches"
+        },
+        {
+          "href": "/contact",
+          "text": "Custom Patch Quote"
+        },
+        {
+          "href": "/portfolio",
+          "text": "Portfolio"
+        },
+        {
+          "href": "/blog",
+          "text": "Blog"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact Us"
+        },
+        {
+          "href": "/services",
+          "text": "All Digitizing Services &amp; Pricing"
+        },
+        {
+          "href": "/services/3d-puff-digitizing",
+          "text": "3D Puff Embroidery Digitizing"
+        },
+        {
+          "href": "/services/cap-logo-digitizing",
+          "text": "Cap &amp; Hat Logo Digitizing"
+        },
+        {
+          "href": "/services/applique-digitizing",
+          "text": "Applique Embroidery Digitizing"
+        },
+        {
+          "href": "/vector-art",
+          "text": "Vector Art Conversion Service"
+        },
+        {
+          "href": "/patches",
+          "text": "Custom Patches Digitizing"
+        },
+        {
+          "href": "/portfolio?category=jacket-back",
+          "text": "Jacket Back Digitizing"
+        },
+        {
+          "href": "/portfolio?category=left-chest",
+          "text": "Left Chest Logo Digitizing"
+        },
+        {
+          "href": "/portfolio?category=chenille",
+          "text": "Chenille Patch Digitizing"
+        },
+        {
+          "href": "/portfolio?category=towel",
+          "text": "Towel Monogram Digitizing"
+        },
+        {
+          "href": "/patches",
+          "text": "Felt &amp; Twill Patch Samples"
+        },
+        {
+          "href": "/blog/convert-png-jpg-to-dst-embroidery-file",
+          "text": "Convert PNG to DST"
+        },
+        {
+          "href": "/blog/3d-puff-embroidery-digitizing-guide",
+          "text": "3D Puff Cap Digitizing"
+        },
+        {
+          "href": "/blog/dst-vs-pes-vs-jef-embroidery-file-formats",
+          "text": "DST vs PES vs JEF Files"
+        },
+        {
+          "href": "/blog/what-is-embroidery-digitizing",
+          "text": "What Is Digitizing?"
+        },
+        {
+          "href": "/blog/how-to-prepare-logo-for-embroidery-digitizing",
+          "text": "Prepare Logo for Digitizing"
+        },
+        {
+          "href": "/blog/custom-patch-types-embroidered-woven-pvc-leather-chenille",
+          "text": "Patch Types Compared"
+        },
+        {
+          "href": "/blog/how-to-digitize-small-text-micro-lettering-embroidery",
+          "text": "Small Text Micro-Lettering"
+        },
+        {
+          "href": "/blog/embroidery-on-towels-and-fleece-knockdown-stitch-guide",
+          "text": "Towel Knockdown Stitches"
+        },
+        {
+          "href": "/blog/best-free-embroidery-digitizing-software-inkstitch-guide",
+          "text": "Free Digitizing Software"
+        },
+        {
+          "href": "/blog/chenille-and-varsity-jacket-patch-digitizing-guide",
+          "text": "Varsity Chenille Patches"
+        },
+        {
+          "href": "/blog/common-embroidery-digitizing-mistakes",
+          "text": "Common Digitizing Mistakes"
+        },
+        {
+          "href": "/blog/best-online-embroidery-digitizing-services-comparison-guide",
+          "text": "Digitizing Services Compared"
+        },
+        {
+          "href": "mailto:info@veloradigitizing.com",
+          "text": "info@veloradigitizing.com"
+        },
+        {
+          "href": "tel:+12136358137",
+          "text": "+1 (213) 635-8137"
+        },
+        {
+          "href": "https://www.google.com/maps/search/?api=1&amp;query=128+Business+Blvd+Suite+204+Los+Angeles+CA+90017",
+          "text": "View on Google Maps",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "/privacy-policy",
+          "text": "Privacy Policy"
+        },
+        {
+          "href": "/terms-and-conditions",
+          "text": "Terms &amp; Conditions"
+        },
+        {
+          "href": "https://wa.me/12136358137",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        }
+      ],
+      "botStatus": 200,
+      "botHasH1": true,
+      "bytes": 253683
+    },
+    {
+      "path": "/blog/3d-puff-embroidery-digitizing-guide",
+      "status": 200,
+      "finalUrl": "https://www.veloradigitizing.com/blog/3d-puff-embroidery-digitizing-guide",
+      "canonical": [
+        "https://www.veloradigitizing.com/blog/3d-puff-embroidery-digitizing-guide"
+      ],
+      "robots": [
+        "index, follow",
+        "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+      ],
+      "xRobotsTag": null,
+      "title": "3D Puff Embroidery on Hats: Foam &amp; Digitizing Guide | Velora Digitizing",
+      "headings": [
+        {
+          "level": 1,
+          "text": "3D Puff Embroidery on Hats: Foam, Digitizing &amp; Stitching Guide"
+        },
+        {
+          "level": 2,
+          "text": "How 3D Puff Embroidery Works Mechanically"
+        },
+        {
+          "level": 2,
+          "text": "The Golden Rules of 3D Puff Digitizing"
+        },
+        {
+          "level": 2,
+          "text": "Machine Setup and Production Settings for Caps"
+        },
+        {
+          "level": 2,
+          "text": "Affordable 3D Puff Digitizing: Maximizing Commercial ROI"
+        },
+        {
+          "level": 2,
+          "text": "Order Premium 3D Puff Digitizing Today"
+        },
+        {
+          "level": 2,
+          "text": "Cap Crown Anatomy &amp; Hooping Physics for 3D Puff"
+        },
+        {
+          "level": 2,
+          "text": "Cap Sequencing: The Center-Out, Bottom-Up Law"
+        },
+        {
+          "level": 2,
+          "text": "Complete Troubleshooting Matrix for 3D Puff Embroidery"
+        },
+        {
+          "level": 2,
+          "text": "Questions About This Topic"
+        },
+        {
+          "level": 2,
+          "text": "Keep Reading"
+        },
+        {
+          "level": 2,
+          "text": "Ready to Digitize Your Design?"
+        }
+      ],
+      "words": 1647,
+      "anchors": [
+        {
+          "href": "/store",
+          "text": "View Patch Samples"
+        },
+        {
+          "href": "/services",
+          "text": "Explore Services"
+        },
+        {
+          "href": "/contact",
+          "text": "Get Free Quote"
+        },
+        {
+          "href": "/",
+          "text": "VELORA DIGITIZING"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "/services",
+          "text": "All Services"
+        },
+        {
+          "href": "/services/3d-puff-digitizing",
+          "text": "3D Puff Digitizing"
+        },
+        {
+          "href": "/services/cap-logo-digitizing",
+          "text": "Cap Logo Digitizing"
+        },
+        {
+          "href": "/services/applique-digitizing",
+          "text": "Applique Digitizing"
+        },
+        {
+          "href": "/patches",
+          "text": "Patches Service"
+        },
+        {
+          "href": "/vector-art",
+          "text": "Vector Art Service"
+        },
+        {
+          "href": "/portfolio",
+          "text": "Portfolio"
+        },
+        {
+          "href": "/store",
+          "text": "Store"
+        },
+        {
+          "href": "/about",
+          "text": "About Us"
+        },
+        {
+          "href": "/blog",
+          "text": "Blog"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact"
+        },
+        {
+          "href": "/contact",
+          "text": "Quote GET A QUOTE →"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/blog",
+          "text": "Blog"
+        },
+        {
+          "href": "/about",
+          "text": "Velora Digitizing Team"
+        },
+        {
+          "href": "#how-3d-puff-embroidery-works-mechanically",
+          "text": "How 3D Puff Embroidery Works Mechanically"
+        },
+        {
+          "href": "#the-golden-rules-of-3d-puff-digitizing",
+          "text": "The Golden Rules of 3D Puff Digitizing"
+        },
+        {
+          "href": "#machine-setup-and-production-settings-for-caps",
+          "text": "Machine Setup and Production Settings for Caps"
+        },
+        {
+          "href": "#affordable-3d-puff-digitizing-maximizing-commercial-roi",
+          "text": "Affordable 3D Puff Digitizing: Maximizing Commercial ROI"
+        },
+        {
+          "href": "#order-premium-3d-puff-digitizing-today",
+          "text": "Order Premium 3D Puff Digitizing Today"
+        },
+        {
+          "href": "#cap-crown-anatomy-hooping-physics-for-3d-puff",
+          "text": "Cap Crown Anatomy &amp; Hooping Physics for 3D Puff"
+        },
+        {
+          "href": "#cap-sequencing-the-center-out-bottom-up-law",
+          "text": "Cap Sequencing: The Center-Out, Bottom-Up Law"
+        },
+        {
+          "href": "#complete-troubleshooting-matrix-for-3d-puff-embroidery",
+          "text": "Complete Troubleshooting Matrix for 3D Puff Embroidery"
+        },
+        {
+          "href": "/services/3d-puff-digitizing",
+          "text": "3D Puff Digitizing Services"
+        },
+        {
+          "href": "/services/3d-puff-digitizing",
+          "text": "Get Free Quote →"
+        },
+        {
+          "href": "/services/3d-puff-digitizing",
+          "text": "3D puff digitizing service"
+        },
+        {
+          "href": "/services/3d-puff-digitizing",
+          "text": "3D puff digitizing services"
+        },
+        {
+          "href": "/contact",
+          "text": "contact page"
+        },
+        {
+          "href": "/blog/satin-stitch-embroidery-guide",
+          "text": "satin stitch embroidery guide"
+        },
+        {
+          "href": "/about",
+          "text": "About Velora Digitizing →"
+        },
+        {
+          "href": "/services/3d-puff-digitizing",
+          "text": "EXPLORE SERVICE →"
+        },
+        {
+          "href": "/services",
+          "text": "Embroidery Digitizing Services"
+        },
+        {
+          "href": "/services/cap-logo-digitizing",
+          "text": "Cap &amp; Hat Logo Digitizing"
+        },
+        {
+          "href": "/services/applique-digitizing",
+          "text": "Applique Digitizing"
+        },
+        {
+          "href": "/patches",
+          "text": "Custom Patch Digitizing"
+        },
+        {
+          "href": "/vector-art",
+          "text": "Vector Art Conversion"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact Our Team →"
+        },
+        {
+          "href": "/blog/applique-embroidery-digitizing-guide",
+          "text": ""
+        },
+        {
+          "href": "/blog/applique-embroidery-digitizing-guide",
+          "text": "Appliqué Embroidery Digitizing: Complete Guide for Cut-Outs &amp; Tackdown"
+        },
+        {
+          "href": "/blog/applique-embroidery-digitizing-guide",
+          "text": "Read article →"
+        },
+        {
+          "href": "/blog/cap-hat-logo-embroidery-digitizing-guide",
+          "text": ""
+        },
+        {
+          "href": "/blog/cap-hat-logo-embroidery-digitizing-guide",
+          "text": "Hat Logo Size for Embroidery &amp; Cap Digitizing Guide (Placement &amp; Stitch Order)"
+        },
+        {
+          "href": "/blog/cap-hat-logo-embroidery-digitizing-guide",
+          "text": "Read article →"
+        },
+        {
+          "href": "/blog/jacket-back-embroidery-digitizing-guide",
+          "text": ""
+        },
+        {
+          "href": "/blog/jacket-back-embroidery-digitizing-guide",
+          "text": "Jacket Back Embroidery Size &amp; Stitch Count: Digitizing &amp; Stabilizer Guide"
+        },
+        {
+          "href": "/blog/jacket-back-embroidery-digitizing-guide",
+          "text": "Read article →"
+        },
+        {
+          "href": "/contact",
+          "text": "START YOUR ORDER →"
+        },
+        {
+          "href": "https://www.linkedin.com/in/velora-digitizing-854396429",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.pinterest.com/veloradigitizing/",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.instagram.com/veloradigitizing",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.threads.net/@veloradigitizing",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.tiktok.com/@muheeb.rehmani?_r=1&amp;_t=ZS-9846QsaPrjY",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://x.com/burlinleo",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.youtube.com/@VeloraDigitizing",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "mailto:info@veloradigitizing.com",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.trustpilot.com/review/veloradigitizing.com",
+          "text": "Find us on Trustpilot",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/about",
+          "text": "About Us"
+        },
+        {
+          "href": "/store",
+          "text": "Patch Samples"
+        },
+        {
+          "href": "/portfolio?category=felt-patches",
+          "text": "Felt Patches"
+        },
+        {
+          "href": "/portfolio?category=twill-patches",
+          "text": "Twill Patches"
+        },
+        {
+          "href": "/contact",
+          "text": "Custom Patch Quote"
+        },
+        {
+          "href": "/portfolio",
+          "text": "Portfolio"
+        },
+        {
+          "href": "/blog",
+          "text": "Blog"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact Us"
+        },
+        {
+          "href": "/services",
+          "text": "All Digitizing Services &amp; Pricing"
+        },
+        {
+          "href": "/services/3d-puff-digitizing",
+          "text": "3D Puff Embroidery Digitizing"
+        },
+        {
+          "href": "/services/cap-logo-digitizing",
+          "text": "Cap &amp; Hat Logo Digitizing"
+        },
+        {
+          "href": "/services/applique-digitizing",
+          "text": "Applique Embroidery Digitizing"
+        },
+        {
+          "href": "/vector-art",
+          "text": "Vector Art Conversion Service"
+        },
+        {
+          "href": "/patches",
+          "text": "Custom Patches Digitizing"
+        },
+        {
+          "href": "/portfolio?category=jacket-back",
+          "text": "Jacket Back Digitizing"
+        },
+        {
+          "href": "/portfolio?category=left-chest",
+          "text": "Left Chest Logo Digitizing"
+        },
+        {
+          "href": "/portfolio?category=chenille",
+          "text": "Chenille Patch Digitizing"
+        },
+        {
+          "href": "/portfolio?category=towel",
+          "text": "Towel Monogram Digitizing"
+        },
+        {
+          "href": "/patches",
+          "text": "Felt &amp; Twill Patch Samples"
+        },
+        {
+          "href": "/blog/convert-png-jpg-to-dst-embroidery-file",
+          "text": "Convert PNG to DST"
+        },
+        {
+          "href": "/blog/3d-puff-embroidery-digitizing-guide",
+          "text": "3D Puff Cap Digitizing"
+        },
+        {
+          "href": "/blog/dst-vs-pes-vs-jef-embroidery-file-formats",
+          "text": "DST vs PES vs JEF Files"
+        },
+        {
+          "href": "/blog/what-is-embroidery-digitizing",
+          "text": "What Is Digitizing?"
+        },
+        {
+          "href": "/blog/how-to-prepare-logo-for-embroidery-digitizing",
+          "text": "Prepare Logo for Digitizing"
+        },
+        {
+          "href": "/blog/custom-patch-types-embroidered-woven-pvc-leather-chenille",
+          "text": "Patch Types Compared"
+        },
+        {
+          "href": "/blog/how-to-digitize-small-text-micro-lettering-embroidery",
+          "text": "Small Text Micro-Lettering"
+        },
+        {
+          "href": "/blog/embroidery-on-towels-and-fleece-knockdown-stitch-guide",
+          "text": "Towel Knockdown Stitches"
+        },
+        {
+          "href": "/blog/best-free-embroidery-digitizing-software-inkstitch-guide",
+          "text": "Free Digitizing Software"
+        },
+        {
+          "href": "/blog/chenille-and-varsity-jacket-patch-digitizing-guide",
+          "text": "Varsity Chenille Patches"
+        },
+        {
+          "href": "/blog/common-embroidery-digitizing-mistakes",
+          "text": "Common Digitizing Mistakes"
+        },
+        {
+          "href": "/blog/best-online-embroidery-digitizing-services-comparison-guide",
+          "text": "Digitizing Services Compared"
+        },
+        {
+          "href": "mailto:info@veloradigitizing.com",
+          "text": "info@veloradigitizing.com"
+        },
+        {
+          "href": "tel:+12136358137",
+          "text": "+1 (213) 635-8137"
+        },
+        {
+          "href": "https://www.google.com/maps/search/?api=1&amp;query=128+Business+Blvd+Suite+204+Los+Angeles+CA+90017",
+          "text": "View on Google Maps",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "/privacy-policy",
+          "text": "Privacy Policy"
+        },
+        {
+          "href": "/terms-and-conditions",
+          "text": "Terms &amp; Conditions"
+        },
+        {
+          "href": "https://wa.me/12136358137",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        }
+      ],
+      "botStatus": 200,
+      "botHasH1": true,
+      "bytes": 205955
+    },
+    {
+      "path": "/blog/applique-embroidery-digitizing-guide",
+      "status": 200,
+      "finalUrl": "https://www.veloradigitizing.com/blog/applique-embroidery-digitizing-guide",
+      "canonical": [
+        "https://www.veloradigitizing.com/blog/applique-embroidery-digitizing-guide"
+      ],
+      "robots": [
+        "index, follow",
+        "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+      ],
+      "xRobotsTag": null,
+      "title": "Appliqué Embroidery Digitizing Guide | Velora Digitizing",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Appliqué Embroidery Digitizing: Complete Guide for Cut-Outs &amp; Tackdown"
+        },
+        {
+          "level": 2,
+          "text": "The Essential 3-Step Appliqué Digitizing Formula"
+        },
+        {
+          "level": 2,
+          "text": "Pre-Cut Laser Appliqué vs. In-Hoop Hand Trimming"
+        },
+        {
+          "level": 2,
+          "text": "Order Custom Appliqué Digitizing"
+        },
+        {
+          "level": 2,
+          "text": "Pre-Fused Tackle Twill and Heat Press Sealing"
+        },
+        {
+          "level": 2,
+          "text": "Laser Cutting vs. In-Hoop Scissors Trimming"
+        },
+        {
+          "level": 2,
+          "text": "Questions About This Topic"
+        },
+        {
+          "level": 2,
+          "text": "Keep Reading"
+        },
+        {
+          "level": 2,
+          "text": "Ready to Digitize Your Design?"
+        }
+      ],
+      "words": 1015,
+      "anchors": [
+        {
+          "href": "/store",
+          "text": "View Patch Samples"
+        },
+        {
+          "href": "/services",
+          "text": "Explore Services"
+        },
+        {
+          "href": "/contact",
+          "text": "Get Free Quote"
+        },
+        {
+          "href": "/",
+          "text": "VELORA DIGITIZING"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "/services",
+          "text": "All Services"
+        },
+        {
+          "href": "/services/3d-puff-digitizing",
+          "text": "3D Puff Digitizing"
+        },
+        {
+          "href": "/services/cap-logo-digitizing",
+          "text": "Cap Logo Digitizing"
+        },
+        {
+          "href": "/services/applique-digitizing",
+          "text": "Applique Digitizing"
+        },
+        {
+          "href": "/patches",
+          "text": "Patches Service"
+        },
+        {
+          "href": "/vector-art",
+          "text": "Vector Art Service"
+        },
+        {
+          "href": "/portfolio",
+          "text": "Portfolio"
+        },
+        {
+          "href": "/store",
+          "text": "Store"
+        },
+        {
+          "href": "/about",
+          "text": "About Us"
+        },
+        {
+          "href": "/blog",
+          "text": "Blog"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact"
+        },
+        {
+          "href": "/contact",
+          "text": "Quote GET A QUOTE →"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/blog",
+          "text": "Blog"
+        },
+        {
+          "href": "/about",
+          "text": "Velora Digitizing Team"
+        },
+        {
+          "href": "#the-essential-3-step-appliqu-digitizing-formula",
+          "text": "The Essential 3-Step Appliqué Digitizing Formula"
+        },
+        {
+          "href": "#pre-cut-laser-appliqu-vs-in-hoop-hand-trimming",
+          "text": "Pre-Cut Laser Appliqué vs. In-Hoop Hand Trimming"
+        },
+        {
+          "href": "#order-custom-appliqu-digitizing",
+          "text": "Order Custom Appliqué Digitizing"
+        },
+        {
+          "href": "#pre-fused-tackle-twill-and-heat-press-sealing",
+          "text": "Pre-Fused Tackle Twill and Heat Press Sealing"
+        },
+        {
+          "href": "#laser-cutting-vs-in-hoop-scissors-trimming",
+          "text": "Laser Cutting vs. In-Hoop Scissors Trimming"
+        },
+        {
+          "href": "/services/applique-digitizing",
+          "text": "Appliqué Digitizing Services"
+        },
+        {
+          "href": "/services/applique-digitizing",
+          "text": "Get Free Quote →"
+        },
+        {
+          "href": "/services/applique-digitizing",
+          "text": "appliqué digitizing services"
+        },
+        {
+          "href": "/blog/what-is-tackle-twill",
+          "text": "what is tackle twill"
+        },
+        {
+          "href": "/blog/how-to-make-embroidered-patches",
+          "text": "how to make embroidered patches"
+        },
+        {
+          "href": "/about",
+          "text": "About Velora Digitizing →"
+        },
+        {
+          "href": "/services/applique-digitizing",
+          "text": "EXPLORE SERVICE →"
+        },
+        {
+          "href": "/services",
+          "text": "Embroidery Digitizing Services"
+        },
+        {
+          "href": "/services/3d-puff-digitizing",
+          "text": "3D Puff Digitizing"
+        },
+        {
+          "href": "/services/cap-logo-digitizing",
+          "text": "Cap &amp; Hat Logo Digitizing"
+        },
+        {
+          "href": "/patches",
+          "text": "Custom Patch Digitizing"
+        },
+        {
+          "href": "/vector-art",
+          "text": "Vector Art Conversion"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact Our Team →"
+        },
+        {
+          "href": "/blog/cap-hat-logo-embroidery-digitizing-guide",
+          "text": ""
+        },
+        {
+          "href": "/blog/cap-hat-logo-embroidery-digitizing-guide",
+          "text": "Hat Logo Size for Embroidery &amp; Cap Digitizing Guide (Placement &amp; Stitch Order)"
+        },
+        {
+          "href": "/blog/cap-hat-logo-embroidery-digitizing-guide",
+          "text": "Read article →"
+        },
+        {
+          "href": "/blog/jacket-back-embroidery-digitizing-guide",
+          "text": ""
+        },
+        {
+          "href": "/blog/jacket-back-embroidery-digitizing-guide",
+          "text": "Jacket Back Embroidery Size &amp; Stitch Count: Digitizing &amp; Stabilizer Guide"
+        },
+        {
+          "href": "/blog/jacket-back-embroidery-digitizing-guide",
+          "text": "Read article →"
+        },
+        {
+          "href": "/blog/how-to-digitize-small-text-micro-lettering-embroidery",
+          "text": ""
+        },
+        {
+          "href": "/blog/how-to-digitize-small-text-micro-lettering-embroidery",
+          "text": "How to Machine Embroider Small Letters &amp; Micro-Text: Digitizing Guide"
+        },
+        {
+          "href": "/blog/how-to-digitize-small-text-micro-lettering-embroidery",
+          "text": "Read article →"
+        },
+        {
+          "href": "/contact",
+          "text": "START YOUR ORDER →"
+        },
+        {
+          "href": "https://www.linkedin.com/in/velora-digitizing-854396429",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.pinterest.com/veloradigitizing/",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.instagram.com/veloradigitizing",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.threads.net/@veloradigitizing",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.tiktok.com/@muheeb.rehmani?_r=1&amp;_t=ZS-9846QsaPrjY",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://x.com/burlinleo",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.youtube.com/@VeloraDigitizing",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "mailto:info@veloradigitizing.com",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "https://www.trustpilot.com/review/veloradigitizing.com",
+          "text": "Find us on Trustpilot",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/about",
+          "text": "About Us"
+        },
+        {
+          "href": "/store",
+          "text": "Patch Samples"
+        },
+        {
+          "href": "/portfolio?category=felt-patches",
+          "text": "Felt Patches"
+        },
+        {
+          "href": "/portfolio?category=twill-patches",
+          "text": "Twill Patches"
+        },
+        {
+          "href": "/contact",
+          "text": "Custom Patch Quote"
+        },
+        {
+          "href": "/portfolio",
+          "text": "Portfolio"
+        },
+        {
+          "href": "/blog",
+          "text": "Blog"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact Us"
+        },
+        {
+          "href": "/services",
+          "text": "All Digitizing Services &amp; Pricing"
+        },
+        {
+          "href": "/services/3d-puff-digitizing",
+          "text": "3D Puff Embroidery Digitizing"
+        },
+        {
+          "href": "/services/cap-logo-digitizing",
+          "text": "Cap &amp; Hat Logo Digitizing"
+        },
+        {
+          "href": "/services/applique-digitizing",
+          "text": "Applique Embroidery Digitizing"
+        },
+        {
+          "href": "/vector-art",
+          "text": "Vector Art Conversion Service"
+        },
+        {
+          "href": "/patches",
+          "text": "Custom Patches Digitizing"
+        },
+        {
+          "href": "/portfolio?category=jacket-back",
+          "text": "Jacket Back Digitizing"
+        },
+        {
+          "href": "/portfolio?category=left-chest",
+          "text": "Left Chest Logo Digitizing"
+        },
+        {
+          "href": "/portfolio?category=chenille",
+          "text": "Chenille Patch Digitizing"
+        },
+        {
+          "href": "/portfolio?category=towel",
+          "text": "Towel Monogram Digitizing"
+        },
+        {
+          "href": "/patches",
+          "text": "Felt &amp; Twill Patch Samples"
+        },
+        {
+          "href": "/blog/convert-png-jpg-to-dst-embroidery-file",
+          "text": "Convert PNG to DST"
+        },
+        {
+          "href": "/blog/3d-puff-embroidery-digitizing-guide",
+          "text": "3D Puff Cap Digitizing"
+        },
+        {
+          "href": "/blog/dst-vs-pes-vs-jef-embroidery-file-formats",
+          "text": "DST vs PES vs JEF Files"
+        },
+        {
+          "href": "/blog/what-is-embroidery-digitizing",
+          "text": "What Is Digitizing?"
+        },
+        {
+          "href": "/blog/how-to-prepare-logo-for-embroidery-digitizing",
+          "text": "Prepare Logo for Digitizing"
+        },
+        {
+          "href": "/blog/custom-patch-types-embroidered-woven-pvc-leather-chenille",
+          "text": "Patch Types Compared"
+        },
+        {
+          "href": "/blog/how-to-digitize-small-text-micro-lettering-embroidery",
+          "text": "Small Text Micro-Lettering"
+        },
+        {
+          "href": "/blog/embroidery-on-towels-and-fleece-knockdown-stitch-guide",
+          "text": "Towel Knockdown Stitches"
+        },
+        {
+          "href": "/blog/best-free-embroidery-digitizing-software-inkstitch-guide",
+          "text": "Free Digitizing Software"
+        },
+        {
+          "href": "/blog/chenille-and-varsity-jacket-patch-digitizing-guide",
+          "text": "Varsity Chenille Patches"
+        },
+        {
+          "href": "/blog/common-embroidery-digitizing-mistakes",
+          "text": "Common Digitizing Mistakes"
+        },
+        {
+          "href": "/blog/best-online-embroidery-digitizing-services-comparison-guide",
+          "text": "Digitizing Services Compared"
+        },
+        {
+          "href": "mailto:info@veloradigitizing.com",
+          "text": "info@veloradigitizing.com"
+        },
+        {
+          "href": "tel:+12136358137",
+          "text": "+1 (213) 635-8137"
+        },
+        {
+          "href": "https://www.google.com/maps/search/?api=1&amp;query=128+Business+Blvd+Suite+204+Los+Angeles+CA+90017",
+          "text": "View on Google Maps",
+          "rel": "nofollow noopener noreferrer"
+        },
+        {
+          "href": "/privacy-policy",
+          "text": "Privacy Policy"
+        },
+        {
+          "href": "/terms-and-conditions",
+          "text": "Terms &amp; Conditions"
+        },
+        {
+          "href": "https://wa.me/12136358137",
+          "text": "",
+          "rel": "nofollow noopener noreferrer"
+        }
+      ],
+      "botStatus": 200,
+      "botHasH1": true,
+      "bytes": 181579
+    }
+  ],
+  "resources": [
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "text": "User-Agent: *\nAllow: /\nDisallow: /api/\n\nUser-Agent: OAI-SearchBot\nUser-Agent: Claude-SearchBot\nUser-Agent: PerplexityBot\nUser-Agent: Googlebot\nUser-Agent: Bingbot\nUser-Agent: Applebot\nAllow: /\nDisallow: /api/\n\nSitemap: https://www.veloradigitizing.com/sitemap.xml\n"
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n<url>\n<loc>https://www.veloradigitizing.com</loc>\n<lastmod>2026-11-04T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>1</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/services</loc>\n<lastmod>2026-10-28T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.95</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/pricing</loc>\n<lastmod>2026-10-26T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.9</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/services/applique-digitizing</loc>\n<lastmod>2026-10-28T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.9</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/services/3d-puff-digitizing</loc>\n<lastmod>2026-10-28T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.9</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/services/cap-logo-digitizing</loc>\n<lastmod>2026-10-28T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.9</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/vector-art</loc>\n<lastmod>2026-10-17T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.9</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/patches</loc>\n<lastmod>2026-10-30T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.9</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/portfolio</loc>\n<lastmod>2026-10-31T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.85</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/store</loc>\n<lastmod>2026-10-31T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog</loc>\n<lastmod>2026-11-07T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.85</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/about</loc>\n<lastmod>2026-10-17T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/contact</loc>\n<lastmod>2026-10-07T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.75</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/privacy-policy</loc>\n<lastmod>2026-10-04T00:00:00.000Z</lastmod>\n<changefreq>yearly</changefreq>\n<priority>0.3</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/terms-and-conditions</loc>\n<lastmod>2026-10-04T00:00:00.000Z</lastmod>\n<changefreq>yearly</changefreq>\n<priority>0.3</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/3d-puff-embroidery-digitizing-guide</loc>\n<lastmod>2026-10-27T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/applique-embroidery-digitizing-guide</loc>\n<lastmod>2026-09-22T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/best-online-embroidery-digitizing-services-comparison-guide</loc>\n<lastmod>2026-10-27T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/cap-hat-logo-embroidery-digitizing-guide</loc>\n<lastmod>2026-10-05T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/common-embroidery-digitizing-mistakes</loc>\n<lastmod>2026-09-04T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/convert-png-jpg-to-dst-embroidery-file</loc>\n<lastmod>2026-11-05T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/custom-patch-types-embroidered-woven-pvc-leather-chenille</loc>\n<lastmod>2026-10-26T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/digitize-logo-illustrator-embroidery</loc>\n<lastmod>2026-10-27T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/dst-vs-pes-vs-jef-embroidery-file-formats</loc>\n<lastmod>2026-11-05T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/embroidery-stabilizer-guide-cutaway-vs-tearaway</loc>\n<lastmod>2026-10-07T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/embroidery-digitizing-cost-pricing-guide</loc>\n<lastmod>2026-10-27T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/embroidery-underlay-types-explained</loc>\n<lastmod>2026-09-25T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/fix-embroidery-fabric-puckering-and-thread-breaks</loc>\n<lastmod>2026-09-27T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/how-to-estimate-embroidery-stitch-count</loc>\n<lastmod>2026-11-05T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/how-to-prepare-logo-for-embroidery-digitizing</loc>\n<lastmod>2026-08-27T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/jacket-back-embroidery-digitizing-guide</loc>\n<lastmod>2026-09-16T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/left-chest-logo-embroidery-digitizing-guide</loc>\n<lastmod>2026-10-27T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/manual-digitizing-vs-ai-auto-digitizing</loc>\n<lastmod>2026-10-02T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/vector-art-for-screen-printing-vs-embroidery</loc>\n<lastmod>2026-09-19T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/what-is-embroidery-digitizing</loc>\n<lastmod>2026-08-15T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/wilcom-vs-hatch-vs-brother-pe-design-embroidery-software</loc>\n<lastmod>2026-09-29T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/how-to-digitize-small-text-micro-lettering-embroidery</loc>\n<lastmod>2026-11-04T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/embroidery-on-towels-and-fleece-knockdown-stitch-guide</loc>\n<lastmod>2026-10-14T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/best-free-embroidery-digitizing-software-inkstitch-guide</loc>\n<lastmod>2026-10-30T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/chenille-and-varsity-jacket-patch-digitizing-guide</loc>\n<lastmod>2026-10-14T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/hoodie-embroidery-digitizing-guide</loc>\n<lastmod>2026-10-25T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/custom-leather-patches-for-hats-guide</loc>\n<lastmod>2026-10-25T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/why-outsource-embroidery-digitizing-usa-guide</loc>\n<lastmod>2026-10-25T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/convert-photo-to-embroidery-guide</loc>\n<lastmod>2026-11-07T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/best-fonts-for-embroidery</loc>\n<lastmod>2026-11-07T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/best-polo-shirts-for-embroidery</loc>\n<lastmod>2026-11-07T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/beanie-embroidery-digitizing-guide</loc>\n<lastmod>2026-11-07T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/how-to-open-dst-embroidery-file</loc>\n<lastmod>2026-11-07T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/how-much-does-embroidery-cost</loc>\n<lastmod>2026-11-07T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/embroidery-thread-weight-guide</loc>\n<lastmod>2026-11-07T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/embroidery-hoop-sizes-chart</loc>\n<lastmod>2026-11-07T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/embroidery-machine-needle-size-guide</loc>\n<lastmod>2026-11-07T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/multi-needle-embroidery-machine-guide</loc>\n<lastmod>2026-11-07T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/how-to-start-an-embroidery-business</loc>\n<lastmod>2026-11-07T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/what-is-tackle-twill</loc>\n<lastmod>2026-11-07T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/satin-stitch-embroidery-guide</loc>\n<lastmod>2026-11-07T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/embroidery-fill-stitches-guide</loc>\n<lastmod>2026-11-07T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.veloradigitizing.com/blog/how-to-make-embroidered-patches</loc>\n<lastmod>2026-11-07T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n</urlset>\n"
+    },
+    {
+      "path": "/nonexistent-indexing-audit-404",
+      "status": 404
+    }
+  ]
+}
