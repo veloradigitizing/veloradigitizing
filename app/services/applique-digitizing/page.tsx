@@ -42,6 +42,16 @@ const APPLIQUE_FAQS = [
     answer:
       "You can send your artwork through our Contact page or WhatsApp with your required dimensions, target garment type, and preferred machine format. We will review your design and provide a prompt quote.",
   },
+  {
+    question: "Can I digitize applique for free, or do I need a service?",
+    answer:
+      "You can. Free digitizing software can build the three layers yourself: a running-stitch placement line, a tackdown, and a satin or blanket cover border. The parts that usually take several test sew-outs are the offset between tackdown and border, border width on your fabric, and stop placement for in-hoop trimming versus pre-cut pieces. Our applique embroidery digitizing guide explains each step; a digitized file from us is for when you want it production-ready without testing.",
+  },
+  {
+    question: "Which software do you use for applique digitizing?",
+    answer:
+      "We digitize manually in professional embroidery software rather than with auto-conversion, but the software is not what you receive. The delivered file contains the placement line, a programmed stop for fabric laydown, the tackdown, the cover border and any interior detail, exported to your machine's format (DST, PES, JEF, EXP, VP3, XXX) with a PDF production sheet and, on request, a vector cut file for your cutter.",
+  },
 ];
 
 const APPLIQUE_USE_CASES: {
@@ -118,7 +128,7 @@ export default function AppliqueDigitizingPage() {
           { text: "Applique Digitizing" },
           { text: "Services", accent: true },
         ]}
-        description="Professional applique embroidery digitizing for jerseys, varsity jackets, hoodies, and patches. Clean placement lines, secure tackdown stitches, and smooth cover borders in all machine formats."
+        description="Applique embroidery digitizing for jerseys, varsity jackets, hoodies and patches. Every file is sequenced in three layers: a placement line, a tackdown stitch, then a cover border of about 3.5 to 5 mm that hides the cut edge. Delivered in all machine formats, with a vector cut file included on request."
         bgImage={servicesBg}
         imageLabel="Professional applique embroidery digitizing workspace"
         breadcrumbCurrent="Applique Digitizing"
@@ -145,6 +155,13 @@ export default function AppliqueDigitizingPage() {
               </p>
               <p className="mt-4 text-base leading-relaxed text-navy-950/70">
                 By replacing heavy blocks of hundreds of thousands of stitches with twill, felt, or printed fabrics, applique produces lighter, more flexible garments, prevents fabric puckering, and creates the distinctive, bold look popular on sports jerseys, collegiate apparel, and varsity jackets.
+              </p>
+              <p className="mt-4 text-base leading-relaxed text-navy-950/70">
+                Want to understand or try the process yourself first? Read the{" "}
+                <Link href="/blog/applique-embroidery-digitizing-guide" className="font-semibold text-brand-700 underline underline-offset-4">
+                  applique embroidery digitizing guide
+                </Link>{" "}
+                for placement, tackdown and cut-line details.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3">

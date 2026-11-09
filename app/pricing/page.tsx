@@ -7,16 +7,16 @@ import CTABanner from "../components/CTABanner";
 import Icon, { IconName } from "../components/Icon";
 
 export const metadata: Metadata = {
-  title: "Embroidery Digitizing Pricing & Rates | Flat Prices from $8",
+  title: { absolute: "Embroidery Digitizing Prices | Flat Rates from $6.99 | Velora" },
   description:
-    "Transparent embroidery digitizing pricing starting from $8 per design. Left chest, cap logos, 3D puff, and jacket backs with free revisions & 24h turnaround.",
+    "Embroidery digitizing prices from $6.99 per design: flat plans by stitch count for left chest, cap, 3D puff, applique and jacket back files, with revisions included by plan.",
   alternates: {
     canonical: "https://www.veloradigitizing.com/pricing",
   },
   openGraph: {
-    title: "Embroidery Digitizing Pricing & Rates | Velora Digitizing",
+    title: "Embroidery Digitizing Prices | Flat Rates from $6.99",
     description:
-      "Simple, flat-rate pricing per design with no hidden stitch surcharges. Commercial machine files delivered in 24 hours.",
+      "Flat-rate digitizing plans from $6.99 per design with no per-stitch surcharges. Compare plans, typical market rates and what is included.",
     url: "https://www.veloradigitizing.com/pricing",
     siteName: "Velora Digitizing",
     images: [
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Embroidery Digitizing Pricing & Rates | Velora Digitizing",
+    title: "Embroidery Digitizing Prices | Flat Rates from $6.99",
     description:
-      "Flat prices from $8 per design. Free revisions, multi-format delivery, and 24-hour turnaround.",
+      "Flat digitizing plans from $6.99 per design. Revisions included by plan, all machine formats, no per-stitch surcharges.",
     images: ["/images/og/og-services.jpg"],
   },
 };
@@ -183,6 +183,11 @@ const PRICING_FAQS = [
       "We quote simple, transparent flat rates based on the placement and size of your design (such as standard left chest and cap logos for $8, up to large jacket backs for $18–$25). Unlike other digitizing houses, we never charge extra per stitch count surprise fees or per-color charges.",
   },
   {
+    question: "What is the typical price per 1,000 stitches for embroidery digitizing?",
+    answer:
+      "Per-stitch digitizing is usually quoted at $1 to $3 per 1,000 stitches with a minimum charge per design, so a 7,000-stitch left chest logo lands around $7 to $21 plus any minimum. Velora prices by stitch-count tier instead: Basic covers designs up to 5,000 stitches, Standard up to 15,000 and Rush is unlimited, so you know the fee before the file is punched.",
+  },
+  {
     question: "Do you charge extra for rush turnaround?",
     answer:
       "Our standard delivery turnaround is 8 to 24 hours at no extra charge. If you have an urgent order requiring turnaround in under 6 to 12 hours, rush service is available for a modest $5 surcharge upon request.",
@@ -294,6 +299,13 @@ export default function PricingPage() {
             </h1>
             <p className="mt-4 max-w-2xl text-base text-white/75 sm:text-lg leading-relaxed">
               Transparent, flat-rate pricing per design with zero stitch surcharges. Commercial machine files delivered in 8 to 24 hours with free unlimited revisions and all formats included.
+            </p>
+            <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/65 sm:text-base">
+              For context, published US market rates in late 2026 run about $10 to $30 for a left chest or cap logo, $30 to $100 for a jacket back, or $1 to $3 per 1,000 stitches with a minimum charge. Velora&apos;s plans start at $6.99 per design and are priced by stitch-count tier, so the fee does not change inside a tier. Every plan includes the machine formats you need and a revision allowance; the price covers the digitized file, not the garment production. See the{" "}
+              <Link href="/blog/embroidery-digitizing-cost-pricing-guide" className="font-semibold text-brand-300 underline underline-offset-4 hover:text-white">
+                full digitizing cost guide
+              </Link>{" "}
+              for a provider-by-provider comparison.
             </p>
 
             {/* Quick Guarantees Strip */}

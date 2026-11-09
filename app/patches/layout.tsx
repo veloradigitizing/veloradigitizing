@@ -4,14 +4,14 @@ import RelatedGuides from "../components/RelatedGuides";
 export const metadata: Metadata = {
   title: { absolute: "Custom Patch Digitizing: Embroidered, PVC & Chenille Files" },
   description:
-    "Professional custom patch digitizing for embroidered, PVC, chenille & leather patches. Merrowed borders, iron-on backing & machine stitch files in 8-24 hours.",
+    "Patch digitizing files from $12.99 per design: merrow or satin borders, backing-specific settings, DST, PES, EXP & JEF formats in 8-24 hours. Finished patches on request.",
   alternates: {
     canonical: "https://www.veloradigitizing.com/patches",
   },
   openGraph: {
     title: "Custom Patch Digitizing: Embroidered, PVC & Chenille Files",
     description:
-      "Professional custom patch digitizing for embroidered, PVC, chenille & leather patches. Merrowed borders, iron-on backing & machine stitch files in 8-24 hours.",
+      "Patch digitizing files from $12.99 per design: merrow or satin borders, backing-specific settings and all machine formats in 8-24 hours. Finished patches on request.",
     url: "https://www.veloradigitizing.com/patches",
     siteName: "Velora Digitizing",
     images: [
@@ -51,9 +51,9 @@ const patchesJsonLd = {
       "offers": {
         "@type": "AggregateOffer",
         "priceCurrency": "USD",
-        "lowPrice": "6.99",
+        "lowPrice": "12.99",
         "highPrice": "19.99",
-        "offerCount": 3,
+        "offerCount": 2,
         "url": "https://www.veloradigitizing.com/patches#pricing",
       },
     },
@@ -78,6 +78,38 @@ const patchesJsonLd = {
       "@type": "FAQPage",
       "@id": "https://www.veloradigitizing.com/patches#faq",
       "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you make the physical patches or just the file?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both. Most orders are for the digitized patch file only, priced per design on the Standard plan ($12.99) and sent to you or your patch maker. If you also want finished patches, say so in your quote request with the patch type, size, quantity and backing, and we produce them after you approve the digital proof.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between a patch file and a garment logo file?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A garment logo file is digitized for a specific fabric and placement, such as a polo left chest or a cap front. A patch file is digitized for the patch blank itself: it includes the base fill or fabric layer, a border that covers a cut edge, and settings for the backing.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "What border should I choose, merrow or satin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Choose merrow for classic round, oval, square and shield patches when a merrow machine is available; it gives the thick rope-like edge. Choose a satin border for complex outlines, tight corners, or when the patch is stitched entirely on an embroidery machine. Laser-cut shapes use a satin border plus a vector cut path.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Can I digitize a patch myself with free software?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Free tools such as Ink/Stitch can produce a patch file with a fill and a satin border. The difficult parts are border coverage on the cut edge, density on twill or felt, and tackdown for applique layers, which is where a professionally digitized file saves test sew-outs.",
+          },
+        },
         {
           "@type": "Question",
           "name": "What is the minimum order quantity for patches?",
@@ -110,14 +142,6 @@ const patchesJsonLd = {
             "text": "Embroidered patches have raised stitching on a twill backing, which is thicker and more tactile. Woven patches are made entirely from thread woven together, which is flatter with finer detail and smaller text.",
           },
         },
-        {
-          "@type": "Question",
-          "name": "Do you offer physical patch manufacturing too?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, we handle the full process from digitizing to manufacturing. After you approve the digital proof, we produce the physical patches in your chosen type, size, and backing.",
-          },
-        },
       ],
     },
   ],
@@ -139,6 +163,7 @@ export default function PatchesLayout({
         title="Custom Patch Guides"
         subtitle="Compare patch types and materials before you choose a style for your order."
         slugs={[
+          "how-to-make-embroidered-patches",
           "custom-patch-types-embroidered-woven-pvc-leather-chenille",
           "custom-leather-patches-for-hats-guide",
           "applique-embroidery-digitizing-guide",

@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import RelatedGuides from "../components/RelatedGuides";
 
 export const metadata: Metadata = {
-  title: { absolute: "Convert JPG & PNG to Vector (AI, EPS, SVG) in 8-24h" },
+  title: { absolute: "Vector Art Conversion Services | Raster to Vector from $10" },
   description:
-    "Convert JPG, PNG & raster logos into clean scalable vector files (AI, EPS, SVG, PDF). Hand-traced for screen printing & embroidery. Free quote in 8-24 hours.",
+    "Vector art services from $10: hand-traced raster to vector conversion of JPG and PNG logos into AI, EPS, SVG and PDF for screen printing, vinyl, DTF and embroidery. Free quote.",
   alternates: {
     canonical: "https://www.veloradigitizing.com/vector-art",
   },
   openGraph: {
-    title: "Convert JPG & PNG to Vector (AI, EPS, SVG) in 8-24h",
+    title: "Vector Art Conversion Services | Raster to Vector from $10",
     description:
-      "Convert JPG, PNG & raster logos into clean scalable vector files (AI, EPS, SVG, PDF). Hand-traced for screen printing & embroidery.",
+      "Hand-traced vector art conversion: JPG and PNG logos redrawn as clean AI, EPS, SVG and PDF files for screen printing, vinyl and embroidery.",
     url: "https://www.veloradigitizing.com/vector-art",
     siteName: "Velora Digitizing",
     images: [
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Convert JPG & PNG to Vector (AI, EPS, SVG) in 8-24h",
+    title: "Vector Art Conversion Services | Raster to Vector from $10",
     description:
-      "Convert raster images to clean scalable vector art (AI, EPS, SVG, PDF). Expert manual tracing with 8-24h turnaround.",
+      "Hand-traced raster to vector conversion from $10. Clean AI, EPS, SVG and PDF files for print, vinyl and embroidery.",
     images: ["/images/og/og-vector-art.jpg"],
   },
 };

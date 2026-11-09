@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import RelatedGuides from "../../components/RelatedGuides";
 
 export const metadata: Metadata = {
-  title: { absolute: "3D Puff Embroidery Digitizing for Caps & Hats | DST, PES" },
+  title: { absolute: "3D Puff Embroidery Digitizing Service | Caps & Hats, DST & PES" },
   description:
-    "3D puff embroidery digitizing for caps and hoodies. Plan raised and flat details, foam placement and machine-ready DST or PES files. View prices and order requirements.",
+    "3D puff embroidery digitizing service for caps, snapbacks and hoodies: foam-ready satin, end caps, programmed foam stop and flat-then-puff sequencing in DST, PES and JEF. Flat plan pricing.",
   alternates: {
     canonical: "https://www.veloradigitizing.com/services/3d-puff-digitizing",
   },

@@ -5,7 +5,9 @@ export type BlogBlock =
   | { type: "ul"; items: string[] }
   | { type: "ol"; items: string[] }
   | { type: "tip"; text: string }
-  | { type: "calculator"; id: "stitch-count" };
+  | { type: "calculator"; id: "stitch-count" }
+  /** Simple data table. `caption` is read by screen readers and used as the visible label. Cells support the same inline markup as paragraphs. */
+  | { type: "table"; caption: string; headers: string[]; rows: string[][] };
 
 export type BlogPost = {
   slug: string;

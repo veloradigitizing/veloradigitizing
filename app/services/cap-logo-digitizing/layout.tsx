@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import RelatedGuides from "../../components/RelatedGuides";
 
 export const metadata: Metadata = {
-  title: { absolute: "Cap Embroidery Digitizing Services | Hat Logo Digitizing (DST, PES)" },
+  title: { absolute: "Cap Embroidery Digitizing Services | Hat Logos from $6.99, DST & PES" },
   description:
-    "Cap and hat logo digitizing for structured and unstructured headwear. Check frame requirements, prices and delivery plans for DST, PES and JEF files.",
+    "Cap and hat logo digitizing from $6.99 per design. Center-out sequencing for curved frames, centre-seam handling, usable height limits and DST, PES, JEF files for structured and unstructured caps.",
   alternates: {
     canonical: "https://www.veloradigitizing.com/services/cap-logo-digitizing",
   },
   openGraph: {
-    title: "Cap & Hat Logo Digitizing Services (DST, PES)",
+    title: "Cap & Hat Logo Digitizing Services from $6.99 (DST, PES)",
     description:
-      "Cap and hat logo digitizing with sequencing for curved frames. Send your hat type, logo dimensions and machine format for a quote.",
+      "Cap and hat logo digitizing with center-out sequencing for curved frames. Send your hat type, logo dimensions and machine format for a quote.",
     url: "https://www.veloradigitizing.com/services/cap-logo-digitizing",
     siteName: "Velora Digitizing",
     images: [
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cap & Hat Logo Digitizing Services (DST, PES)",
+    title: "Cap & Hat Logo Digitizing Services from $6.99 (DST, PES)",
     description:
-      "Cap and hat logo digitizing for curved frames. Compare prices and delivery plans before ordering.",
+      "Cap and hat logo digitizing for curved frames from $6.99 per design. Compare plans and delivery windows before ordering.",
     images: ["/images/og/og-services.jpg"],
   },
 };

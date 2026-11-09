@@ -17,13 +17,24 @@ export const post: BlogPost = {
     'diy embroidered patches',
   ],
   publishedAt: '2026-11-07',
-  readTime: 9,
+  updatedAt: '2026-11-09',
+  readTime: 10,
   image: '/images/blog/how-to-make-embroidered-patches.webp',
   imagePrompt:
     'Embroidery machine stitching a round patch on twill in a hoop, with finished patches, a hot knife and heat-seal backing sheets on the table, 16:9.',
   imageAlt: 'Embroidery machine stitching a round patch with finished embroidered patches on the table',
   relatedService: { label: 'Custom Patch Digitizing', href: '/patches' },
   faqs: [
+    {
+      question: 'What is patch digitizing?',
+      answer:
+        'Patch digitizing is creating the stitch file for a standalone patch rather than a garment logo. The file includes a base fill or fabric layer sized to the blank, any placement and tackdown stitches for applique-style patches, and a border built to cover a cut edge: a satin border stitched in the file, or a clean outline for a merrow machine.',
+    },
+    {
+      question: 'Can I digitize a patch for free?',
+      answer:
+        'Yes. Free software such as Ink/Stitch can build a fill and a satin border, and the sequence in this guide works in any digitizing program. Expect a few test sew-outs to get border coverage and density right on twill or felt. If you want a production-ready file without testing, our patch digitizing service prices patch files per design.',
+    },
     {
       question: 'What do I need to make embroidered patches with a machine?',
       answer:
@@ -87,6 +98,32 @@ export const post: BlogPost = {
     {
       type: 'tip',
       text: 'For batches, stitch several patches in one large hoop with spacing between them. It saves hooping time and gives consistent results.',
+    },
+    { type: 'h2', text: 'Digitizing the Patch File: Fill, Tackdown and Border' },
+    {
+      type: 'p',
+      text: 'A patch file is sequenced differently from a garment logo. The garment file assumes the fabric already exists under the stitches; the patch file has to build the base, hold any fabric layer, and finish an edge that will be cut. Whether you digitize it yourself in [free software like Ink/Stitch](/blog/best-free-embroidery-digitizing-software-inkstitch-guide) or order it from our [patch digitizing service](/patches), the order of operations is the same.',
+    },
+    {
+      type: 'ol',
+      items: [
+        '**Base fill or partial fill:** on twill or felt, fill only the areas the design needs; on a free-standing patch, a dense full base becomes the patch fabric. Keep fill density moderate on twill so the blank does not curl.',
+        '**Placement line and tackdown (applique-style patches only):** a running stitch marks where the fabric piece goes, the machine stops, the fabric is laid down, then a running or zig-zag tackdown locks it before trimming.',
+        '**Design and lettering:** fills first, satin details and text last, with underlay set for a stable blank rather than a stretchy garment.',
+        '**Border:** a satin border about 2.5 to 4 mm wide for small patches and wider on large emblems, with a running-stitch underlay so it sits on the cut edge. For a merrow finish, the file ends with a clean outline instead, and the merrow edge is applied after stitching.',
+        '**Formats and sheet:** export DST for commercial machines plus your home format (PES, JEF, EXP), and keep a color-sequence sheet with the stop for fabric placement if there is one.',
+      ],
+    },
+    {
+      type: 'table',
+      caption: 'Patch border reference',
+      headers: ['Border type', 'Typical width', 'Best for', 'Notes'],
+      rows: [
+        ['Satin border (in file)', '2.5 to 4 mm small patches; 4 to 6 mm large emblems', 'Any shape, any embroidery machine', 'Add running underlay under the satin; trim close to the outside edge after stitching.'],
+        ['Merrow (overlock) border', 'About 3 mm rope edge', 'Circles, ovals, squares, shields', 'Applied on a merrow machine after embroidery; file carries a clean outline, not a satin border.'],
+        ['Satin border + laser-cut edge', '2.5 to 4 mm satin, cut path 0.5 to 1 mm outside', 'Intricate outlines, tight corners, die-cut shapes', 'Needs a matching vector cut path; polyester twill seals cleanly under heat.'],
+        ['Blanket or E-stitch edge', '3 to 5 mm', 'Felt patches, handmade look', 'Less edge coverage than satin; better on felt, which does not fray.'],
+      ],
     },
     { type: 'h2', text: 'How to Make a Free-Standing Patch' },
     {

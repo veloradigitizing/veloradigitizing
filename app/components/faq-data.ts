@@ -17,6 +17,12 @@ export const HOME_FAQS: FAQItem[] = [
     category: "General",
   },
   {
+    question: "Can ChatGPT digitize images for embroidery?",
+    answer:
+      "No. ChatGPT and similar AI assistants can describe, clean up or suggest artwork, but they cannot output a stitch file (DST, PES, JEF or EXP). Digitizing means assigning stitch types, density, underlay, pull compensation and sequencing to every shape, which is done in embroidery software. Some online auto-digitizers do produce files, and they can be acceptable for bold, simple shapes; small text, gradients, caps and 3D puff still need a digitizer to set those values by hand.",
+    category: "General",
+  },
+  {
     question: "How long does it take to complete an order?",
     answer:
       "Standard orders are delivered within 12-24 hours. We also offer rush services including 2-hour, 4-hour, and same-day delivery for urgent projects. Weekend rush delivery is available on request — just select the rush option at checkout or mention it when you send your artwork.",

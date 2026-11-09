@@ -15,6 +15,7 @@ export const post: BlogPost = {
     "embroidery stitch quality"
   ],
   "publishedAt": "2026-10-02",
+  "updatedAt": "2026-11-09",
   "readTime": 8,
   "image": "/images/blog/manual-digitizing-vs-ai-auto-digitizing.webp",
   "imagePrompt": "Split view comparison: on the left a chaotic auto-digitized stitch file with needle jams and birdnesting, on the right a pristine clean manual digitized embroidery sewout with rich satin columns on structured apparel, photorealistic 16:9.",
@@ -24,6 +25,10 @@ export const post: BlogPost = {
     "href": "/services"
   },
   "faqs": [
+    {
+      "question": "Can ChatGPT digitize images for embroidery?",
+      "answer": "No. ChatGPT can describe artwork, suggest simplifications or write a brief for a digitizer, but it cannot output a stitch file such as DST, PES, JEF or EXP. A stitch file needs stitch types, density, underlay, pull compensation and sequencing assigned to each shape in embroidery software. Browser-based auto-digitizers do produce files and can be acceptable for bold, simple shapes; small text, gradients, cap curves and 3D puff still need those values set by hand."
+    },
     {
       "question": "Can AI auto-digitizing replace human master punchers?",
       "answer": "Not for commercial apparel production. While AI can convert simple high-contrast silhouettes into basic stitches, it cannot physically feel garment stretch, anticipate fabric distortion, calculate push-pull compensation, or sequence pathing to minimize trims and thread breaks."

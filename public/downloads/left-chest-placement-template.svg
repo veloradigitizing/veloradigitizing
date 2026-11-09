@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="8.5in" height="11in" viewBox="0 0 816 1056" font-family="Arial, Helvetica, sans-serif" fill="#0f172a">
+  <title>Left chest embroidery placement template (US Letter, print at 100%)</title>
+  <desc>Printable guide: standard adult left chest logo placement 7 to 9 inches down from the left shoulder seam and 3 to 5 inches over from the center placket, logo 3 to 4 inches wide. Includes 6 inch rulers for checking print scale.</desc>
+  <rect width="816" height="1056" fill="#ffffff"/>
+
+  <!-- Header -->
+  <text x="48" y="60" font-size="24" font-weight="700">Left Chest Embroidery Placement Template</text>
+  <text x="48" y="84" font-size="12" fill="#475569">Print at 100% (no "fit to page"). Check the 6-inch rulers below with a tape measure before using the template.</text>
+
+  <!-- Shirt outline (wearer's left is on the viewer's right) -->
+  <g stroke="#0f172a" stroke-width="2" fill="none" stroke-linejoin="round">
+    <!-- body -->
+    <path d="M 200 220 L 200 640 L 616 640 L 616 220"/>
+    <!-- shoulders and sleeves -->
+    <path d="M 200 220 L 120 300 L 170 340 L 200 310"/>
+    <path d="M 616 220 L 696 300 L 646 340 L 616 310"/>
+    <!-- collar and placket -->
+    <path d="M 340 190 Q 408 250 476 190"/>
+    <path d="M 340 190 L 200 220"/>
+    <path d="M 476 190 L 616 220"/>
+    <path d="M 408 236 L 408 420" stroke-dasharray="6 5"/>
+    <!-- placket buttons -->
+    <circle cx="408" cy="270" r="4" fill="#0f172a"/>
+    <circle cx="408" cy="320" r="4" fill="#0f172a"/>
+    <circle cx="408" cy="370" r="4" fill="#0f172a"/>
+  </g>
+  <text x="396" y="440" font-size="11" fill="#475569" text-anchor="middle">center placket</text>
+  <text x="640" y="206" font-size="11" fill="#475569">wearer's left shoulder seam</text>
+  <text x="140" y="206" font-size="11" fill="#475569">wearer's right</text>
+
+  <!-- Logo box (3.5 in wide at 96 px/in = 336, drawn at reduced scale for the diagram) -->
+  <g>
+    <rect x="470" y="330" width="120" height="52" fill="#eaf1ff" stroke="#1a3fc4" stroke-width="2" stroke-dasharray="8 5"/>
+    <line x1="530" y1="322" x2="530" y2="390" stroke="#1a3fc4" stroke-width="1"/>
+    <line x1="462" y1="356" x2="598" y2="356" stroke="#1a3fc4" stroke-width="1"/>
+    <text x="530" y="403" font-size="11" fill="#1a3fc4" text-anchor="middle">logo center, 3-4 in wide</text>
+  </g>
+
+  <!-- Measurement callouts -->
+  <g stroke="#b91c1c" stroke-width="1.5" fill="none">
+    <!-- vertical: shoulder seam to logo center -->
+    <line x1="560" y1="222" x2="560" y2="352"/>
+    <path d="M 555 230 L 560 222 L 565 230"/>
+    <path d="M 555 344 L 560 352 L 565 344"/>
+    <!-- horizontal: placket to logo center -->
+    <line x1="410" y1="356" x2="526" y2="356"/>
+    <path d="M 418 351 L 410 356 L 418 361"/>
+    <path d="M 518 351 L 526 356 L 518 361"/>
+  </g>
+  <text x="568" y="292" font-size="12" font-weight="700" fill="#b91c1c">7-9 in down</text>
+  <text x="568" y="306" font-size="10" fill="#b91c1c">from shoulder seam</text>
+  <text x="468" y="374" font-size="12" font-weight="700" fill="#b91c1c" text-anchor="middle">3-5 in over</text>
+
+  <!-- Reference table -->
+  <g font-size="12">
+    <text x="48" y="700" font-size="14" font-weight="700">Starting points (measure from where the collar meets the shoulder seam)</text>
+    <text x="48" y="724">Adult polo / t-shirt / button-down: 7-9 in down, 3-5 in over, logo 3-4 in wide</text>
+    <text x="48" y="744">Sweatshirt / hoodie: 7-9 in down, 4-5 in over, logo 3.5-4 in wide</text>
+    <text x="48" y="764">Jacket / fleece: 6.5-8 in down, about 4 in over, check zippers and pockets first</text>
+    <text x="48" y="784">Youth: 6-8 in down, 3-4 in over, logo 2.5-3 in wide</text>
+    <text x="48" y="804">Ladies' fit: 6-7.5 in down, 3-4 in over, logo 3-3.5 in wide</text>
+    <text x="48" y="830" fill="#475569">Mark the logo center, hold the garment up on a body or form, and confirm before hooping. Record the numbers per garment style.</text>
+  </g>
+
+  <!-- 6-inch horizontal ruler: 96 px per inch -->
+  <g stroke="#0f172a" stroke-width="1.5" fill="none">
+    <line x1="48" y1="900" x2="624" y2="900"/>
+    <line x1="48" y1="880" x2="48" y2="900"/>
+    <line x1="144" y1="880" x2="144" y2="900"/>
+    <line x1="240" y1="880" x2="240" y2="900"/>
+    <line x1="336" y1="880" x2="336" y2="900"/>
+    <line x1="432" y1="880" x2="432" y2="900"/>
+    <line x1="528" y1="880" x2="528" y2="900"/>
+    <line x1="624" y1="880" x2="624" y2="900"/>
+    <!-- half inch -->
+    <line x1="96" y1="888" x2="96" y2="900"/>
+    <line x1="192" y1="888" x2="192" y2="900"/>
+    <line x1="288" y1="888" x2="288" y2="900"/>
+    <line x1="384" y1="888" x2="384" y2="900"/>
+    <line x1="480" y1="888" x2="480" y2="900"/>
+    <line x1="576" y1="888" x2="576" y2="900"/>
+    <!-- quarter inch -->
+    <line x1="72" y1="893" x2="72" y2="900"/><line x1="120" y1="893" x2="120" y2="900"/>
+    <line x1="168" y1="893" x2="168" y2="900"/><line x1="216" y1="893" x2="216" y2="900"/>
+    <line x1="264" y1="893" x2="264" y2="900"/><line x1="312" y1="893" x2="312" y2="900"/>
+    <line x1="360" y1="893" x2="360" y2="900"/><line x1="408" y1="893" x2="408" y2="900"/>
+    <line x1="456" y1="893" x2="456" y2="900"/><line x1="504" y1="893" x2="504" y2="900"/>
+    <line x1="552" y1="893" x2="552" y2="900"/><line x1="600" y1="893" x2="600" y2="900"/>
+  </g>
+  <g font-size="11" text-anchor="middle">
+    <text x="48" y="918">0</text><text x="144" y="918">1</text><text x="240" y="918">2</text>
+    <text x="336" y="918">3</text><text x="432" y="918">4</text><text x="528" y="918">5</text><text x="624" y="918">6 in</text>
+  </g>
+  <text x="48" y="940" font-size="11" fill="#475569">Scale check: this ruler must measure exactly 6 inches on paper.</text>
+
+  <!-- 3.5 inch logo width reference bar -->
+  <g stroke="#1a3fc4" stroke-width="2" fill="none">
+    <line x1="48" y1="980" x2="384" y2="980"/>
+    <line x1="48" y1="972" x2="48" y2="988"/>
+    <line x1="384" y1="972" x2="384" y2="988"/>
+  </g>
+  <text x="396" y="984" font-size="11" fill="#1a3fc4">3.5 in: typical left chest logo width</text>
+
+  <!-- Footer -->
+  <text x="48" y="1030" font-size="10" fill="#64748b">veloradigitizing.com · Left chest placement template · Measurements are starting points; confirm on the actual garment.</text>
+</svg>

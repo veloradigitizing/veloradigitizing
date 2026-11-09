@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
     {
       url: BASE_URL,
-      lastModified: new Date("2026-11-04"),
+      lastModified: new Date("2026-11-09"),
       changeFrequency: "weekly",
       priority: 1.0,
     },
@@ -27,37 +27,37 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${BASE_URL}/pricing`,
-      lastModified: new Date("2026-10-26"),
+      lastModified: new Date("2026-11-09"),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${BASE_URL}/services/applique-digitizing`,
-      lastModified: new Date("2026-10-28"),
+      lastModified: new Date("2026-11-09"),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${BASE_URL}/services/3d-puff-digitizing`,
-      lastModified: new Date("2026-10-28"),
+      lastModified: new Date("2026-11-09"),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${BASE_URL}/services/cap-logo-digitizing`,
-      lastModified: new Date("2026-10-28"),
+      lastModified: new Date("2026-11-09"),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${BASE_URL}/vector-art`,
-      lastModified: new Date("2026-10-17"),
+      lastModified: new Date("2026-11-09"),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${BASE_URL}/patches`,
-      lastModified: new Date("2026-10-30"),
+      lastModified: new Date("2026-11-09"),
       changeFrequency: "weekly",
       priority: 0.9,
     },

@@ -187,6 +187,42 @@ function Block({ block }: { block: BlogBlock }) {
       );
     case "calculator":
       return <StitchCountCalculator />;
+    case "table":
+      return (
+        <div className="mt-7 overflow-x-auto rounded-xl border border-navy-950/10">
+          <table className="w-full min-w-[520px] border-collapse text-left text-[15px]">
+            <caption className="px-4 py-3 text-left text-xs font-bold uppercase tracking-wider text-navy-950/60">
+              {block.caption}
+            </caption>
+            <thead className="bg-slate-50 text-navy-950">
+              <tr>
+                {block.headers.map((h) => (
+                  <th key={h} scope="col" className="border-t border-navy-950/10 px-4 py-3 font-semibold">
+                    {renderInline(h)}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody className="text-navy-950/75">
+              {block.rows.map((row, i) => (
+                <tr key={i} className="border-t border-navy-950/10">
+                  {row.map((cell, j) =>
+                    j === 0 ? (
+                      <th key={j} scope="row" className="px-4 py-3 font-medium text-navy-950">
+                        {renderInline(cell)}
+                      </th>
+                    ) : (
+                      <td key={j} className="px-4 py-3 leading-relaxed">
+                        {renderInline(cell)}
+                      </td>
+                    ),
+                  )}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
     default:
       return null;
   }

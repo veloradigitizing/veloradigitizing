@@ -122,7 +122,11 @@ export default function StitchCountCalculator() {
           </select>
         </label>
       </div>
-      <p className="mt-2 text-xs text-navy-950/50">{type.hint}</p>
+      <p className="mt-2 text-xs text-navy-950/50">
+        {type.hint}. Assumes about {type.low.toLocaleString("en-US")} to{" "}
+        {type.high.toLocaleString("en-US")} stitches per square inch at standard
+        0.40 mm fill density.
+      </p>
 
       <div
         aria-live="polite"

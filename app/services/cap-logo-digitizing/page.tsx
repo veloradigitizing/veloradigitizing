@@ -13,6 +13,11 @@ import RelatedServicesNav from "../../components/RelatedServicesNav";
 
 const CAP_FAQS = [
   {
+    question: "Can you convert my existing flat logo file into a cap file?",
+    answer:
+      "Not by resizing it. A file digitized for a flat shirt has the wrong stitch sequence, underlay and pull compensation for a curved cap frame, so we re-digitize it for the cap: center-out, bottom-up, with the centre seam and usable frame height accounted for. Send the existing file and your original artwork with the order; it helps us match colours and proportions, and it is quoted as a standard cap digitizing job.",
+  },
+  {
     question: "Why can't I use a standard flat chest logo file on a cap?",
     answer:
       "Flat files sew from one side across to the other. On a curved cap frame, this pushes the fabric across the center seam, resulting in distorted circles, misaligned outlines, and needle breaks. Cap files require special 'center-out' and 'bottom-up' stitch sequencing.",
@@ -117,15 +122,15 @@ export default function CapDigitizingPage() {
           { text: "Cap & Hat Logo" },
           { text: "Digitizing Services", accent: true },
         ]}
-        description="Specialized embroidery digitizing for snapbacks, baseball caps, dad hats, and beanies. Center-out sequencing engineered for curved cap frames to eliminate fabric bunching and seam distortion."
+        description="Cap and hat logo digitizing from $6.99 per design for snapbacks, baseball caps, dad hats, and beanies. Center-out, bottom-up sequencing built for curved cap frames and the centre seam, with the usable sewing height checked against your frame before we start."
         bgImage={servicesBg}
         imageLabel="Professional cap embroidery digitizing workstation"
         breadcrumbCurrent="Cap Logo Digitizing"
         features={[
+          { icon: "tag", title: "From $6.99", sub: "Flat plans by stitch count" },
           { icon: "cap", title: "Center-Out", sub: "Engineered for curved frames" },
           { icon: "layers", title: "All Formats", sub: "DST, PES, JEF, EXP & more" },
           { icon: "refresh", title: "Included Revisions", sub: "Allowance depends on your plan" },
-          { icon: "tag", title: "Free Quote", sub: "Send artwork for free review" },
         ]}
       />
 
@@ -225,7 +230,7 @@ export default function CapDigitizingPage() {
         <div className="mx-auto max-w-7xl px-5 lg:px-10">
           <SectionTag
             eyebrow="Headwear Types"
-            title="Digitizing for Every Cap & Hat Style"
+            title="Hat Digitizing for Every Cap and Hat Style"
             subtitle="Parameters adjusted for structured crowns, soft washed panels, beanies, and side placements."
           />
 

@@ -36,11 +36,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.veloradigitizing.com"),
   title: {
-    default: "Custom Embroidery Digitizing Services | Velora Digitizing",
+    default: "Embroidery Digitizing Service | Manual, from $6.99 | Velora",
     template: "%s | Velora Digitizing",
   },
   description:
-    "Professional embroidery digitizing & vector conversion. Flawless 3D puff, left chest logos & fast 8-24h delivery. Get your free quote today!",
+    "Manual embroidery digitizing service from $6.99 per design. DST, PES, JEF and EXP files for left chest logos, caps, 3D puff, applique and jacket backs. Free quote.",
   authors: [{ name: "Velora Digitizing", url: "https://www.veloradigitizing.com" }],
   creator: "Velora Digitizing",
   publisher: "Velora Digitizing",
@@ -70,9 +70,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://www.veloradigitizing.com",
     siteName: "Velora Digitizing",
-    title: "Velora Digitizing | Custom Embroidery Digitizing & Vector Art Services",
+    title: "Embroidery Digitizing Service | Manual Digitizing from $6.99 | Velora",
     description:
-      "Convert your artwork into flawless embroidery files with premier stitch quality, 8-24h delivery, unlimited revisions, and 100% satisfaction guaranteed.",
+      "Manual embroidery digitizing from $6.99 per design. Left chest, cap, 3D puff, applique and jacket back files in every machine format, with revisions included by plan.",
     images: [
       {
         url: "/images/og/og-home.jpg",
@@ -92,9 +92,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Velora Digitizing | Custom Embroidery Digitizing & Vector Art Services",
+    title: "Embroidery Digitizing Service | Manual Digitizing from $6.99 | Velora",
     description:
-      "Convert your artwork into flawless embroidery files with premier stitch quality, 8-24h delivery, unlimited revisions, and 100% satisfaction guaranteed.",
+      "Manual embroidery digitizing from $6.99 per design. Left chest, cap, 3D puff, applique and jacket back files in every machine format, with revisions included by plan.",
     images: ["/images/og/og-home.jpg"],
     site: "@burlinleo",
     creator: "@burlinleo",
