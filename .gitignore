@@ -46,3 +46,7 @@ CLAUDE.md
 # Raw HTML/text from the reproducible service indexing audit
 /reports/service-indexing/*.html
 /reports/service-indexing/*.txt
+
+# temporary browser profiles created by SERP/visual review scripts
+.browser-serp-review/
+.browser-*/
