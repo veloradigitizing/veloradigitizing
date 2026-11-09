@@ -44,6 +44,9 @@ import post_what_is_tackle_twill from './content/what-is-tackle-twill';
 import post_satin_stitch_embroidery_guide from './content/satin-stitch-embroidery-guide';
 import post_embroidery_fill_stitches_guide from './content/embroidery-fill-stitches-guide';
 import post_how_to_make_embroidered_patches from './content/how-to-make-embroidered-patches';
+import post_embroidery_vs_applique from './content/embroidery-vs-applique';
+import post_how_to_applique_with_embroidery_machine from './content/how-to-applique-with-embroidery-machine';
+import post_free_embroidery_file_converters from './content/free-embroidery-file-converters';
 
 export const BLOG_POSTS: BlogPost[] = [
   post_3d_puff_embroidery_digitizing_guide,
@@ -89,6 +92,9 @@ export const BLOG_POSTS: BlogPost[] = [
   post_satin_stitch_embroidery_guide,
   post_embroidery_fill_stitches_guide,
   post_how_to_make_embroidered_patches,
+  post_embroidery_vs_applique,
+  post_how_to_applique_with_embroidery_machine,
+  post_free_embroidery_file_converters,
 ];
 
 export const BLOG_CATEGORIES = Array.from(

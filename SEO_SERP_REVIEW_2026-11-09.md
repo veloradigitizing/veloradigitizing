@@ -596,6 +596,40 @@ Excluded on purpose: software, machine, fonts-download, courses, quilting and ha
 
 Owner searches L1-L35 in Google (US, signed out) in order and pastes the SERPs as before. For each: who is on page 1, AI Overview present, People also ask. Verdicts and the final build list go into this file.
 
+## Cluster SERP verdicts for the low-competition list (9 November 2026)
+
+Owner searched 9 of the 11 cluster representatives. Note: these searches were localized to Karachi, Pakistan (signed in). Organic results for informational queries are close to US results, but the local pack and some commercial results differ; US re-checks are only needed for the two commercial clusters (best services USA, digitizing a logo). Pending: "dst embroidery file" and "flat embroidery vs 3d puff".
+
+| Cluster | Keywords covered | Page 1 | Verdict |
+|---|---|---|---|
+| convert image to embroidery file | L1-L4, L6, L31 | All tools and apps: EmbroidAI, click-stitch, Google Play app, Canva, Pixel-Stitch, VectoSolve, Ember, SewFlow; three YouTube tutorials | **Skip the converter terms.** KD 0 is misleading: the SERP wants a tool. Only the tutorial variants (L5 "how to digitize a picture for embroidery", L24 "how to digitize photos for embroidery") are winnable with the photo guide. |
+| embroidery file converter | L9, L19, L26 | Ember converter, Google Play, EmbroidAI, Microsoft Store app, DigitEMB blog "Free machine embroidery file format converters" at position 5, EmbroideryConverter.com, EMDigitizer viewer | **Rankable later** for an honest "free embroidery file converters compared" post; a digitizer's list post already holds position 5. No tool needed. |
+| embroidery applique letters | L14, L22, L23, L30 | Pinterest x2, Designs by JuJu font shop, Etsy image grid, EmbroideryDesigns fonts, HoopTalent guide (Aug 2025) at 5, YouTube, Karlie Belle blog | **Mixed, lower priority.** Intent is mostly font downloads. A guide can take position 5-7 like HoopTalent, but only after the applique tutorial exists. |
+| how to applique with embroidery machine | L43-L46 (1,270 searches combined) | Embroidery Legacy video (194K views), Karlie Belle blog at 2, Applique Corner video, TikTok, overtheedge.blog at 5, Brother and Bernina pages, Janome video, Embroidery Legacy guide (Jul 2026) | **Rankable later, high priority.** Two small blogs sit at 2 and 5. A step-by-step tutorial with photos (placement, tackdown, trim, cover) separate from the digitizing guide. |
+| embroidery vs applique | L21 | Machine Embroidery Geek (2022), Stitchi, PRO digitizing blog at 3, Leontine Linens, USA Digitizing Pro (AS 7) at 5, Eking Clothing (Oct 2026), Instagram. AI Overview cites USA Digitizing Pro | **Rankable now.** Digitizers with AS 7-24 rank with short posts. A digitizer-angle comparison (stitch count, cost, machine stops, file structure, when to choose which) with PAA answers (three types of applique, embroidery vs patches). |
+| 3d puff embroidery foam | L16, L17, L20 | Candle Thread USA blog at 1, PRO digitizing "3D puff 101" at 2, Amazon at 3, Embroidery Legacy tutorial, AllStitch and Poolin product pages, Facebook, YouTube | **Rankable later** for the 3D puff guide if it gets a dedicated foam section (1 mm to 5 mm comparison, 2 mm vs 3 mm use cases, colour matching, what to buy). Half the SERP is product, so expect position 4-8, not 1. |
+| embroidery digitizing software | L15, L34, L36, L37 | Wilcom, Ember, Ink/Stitch, three YouTube reviews, Embroidery Legacy, **EmbPunch blog "6 best free embroidery digitizing software (2026 review)" at 7**, Hatch, Reddit, Microsoft Store Embird | **Rankable later, highest traffic on the list (4,400).** Retarget the Wilcom vs Hatch vs PE-Design post as "best embroidery digitizing software 2026: paid and free" with a price table (Wilcom from $79/mo, Hatch $149-$1,100, Embroidery Legacy $1,399, PE-Design ~$1,000, Ember free/$9.99, Ink/Stitch free). The Ink/Stitch post keeps the "free" variant. |
+| best embroidery digitizing services in usa | L7, L8, L25 | Quality Punch, local pack (Absolute 79 reviews; Embroidersly Chicago, 3 years, 29 reviews), **plixalabs comparison (Sep 2026) at 2**, S2S, Digit-it "Top 10 providers" (Aug 2026), The Hem Stitching (Jul 2026), nkemb (Sep 2026), PSA Digitizing (Aug 2026), Aqua | **Rankable later, confirmed.** Five pages published in 2026 by small sites are on page 1. The new Top 10 listicle targets exactly this. Embroidersly (3 years old, 29 reviews) in the local pack shows what a real GBP with reviews does for a young business. |
+| digitizing a logo for embroidery | L27, L33, L56, L57 | EmbroideryDesigns, PRO digitizing, Fiverr (71K reviews), three Embroidery Legacy videos, ZDigitizing service page at 4, Embroidery Legacy guide, Ember, click-stitch page. PAA: cost, how to convert a logo, **Can ChatGPT digitize** (again) | **Rankable later** for both the planned general how-to post (A14) and a service page. Mixed intent means a tutorial that ends with the service option fits. |
+
+### Final build list from this round
+
+New posts, in order:
+1. **B1 Embroidery vs applique** (L21): rankable now, short, digitizer angle. Links to applique service and guide.
+2. **B2 How to applique with an embroidery machine** (L43-L46): step-by-step with photos; the biggest informational cluster that is winnable.
+3. **B3 Best embroidery digitizing software 2026** (L15, L34, L36, L37): retarget and expand the existing Wilcom vs Hatch vs PE-Design post; keep the URL.
+4. **B4 Free embroidery file converters compared** (L9, L19, L26, plus the DST cluster if its SERP agrees).
+
+Retargets of existing pages:
+- **R1** photo-to-embroidery guide: aim at "how to digitize a photo/picture for embroidery" (L5, L24, L29), drop the "converter" framing.
+- **R2** 3D puff guide: add a foam section (thickness comparison, colour, where to buy) for L16, L17, L20.
+- **R3** Top 10 listicle: make sure "best embroidery digitizing services in the USA" appears in the intro and an H2; it already does in the title.
+- **R4** planned how-to-digitize post (A14): target "how to digitize a logo for embroidery" and "digitizing a logo for embroidery", end with the service option.
+
+Skip for now: L1-L4, L6, L31 (tool intent), L11 (designs marketplace intent), L14, L22, L23, L30 (font downloads) until B2 is live.
+
+Still to check: "dst embroidery file" (decides whether B4 also covers L18, L28, L35, L51) and "flat embroidery vs 3d puff" (decides a separate post versus a section in the puff guide).
+
 ## Execution log
 
 **9 Nov 2026, batch 1-3 applied locally (not committed, not deployed):**
@@ -605,6 +639,14 @@ Owner searches L1-L35 in Google (US, signed out) in order and pastes the SERPs a
 - Sitemap lastmod set to 2026-11-09 for the changed static pages; blog posts carry updatedAt.
 - Checks: tsc clean, ESLint shows only 2 pre-existing errors in VisitorTracker.tsx (unchanged file), production build passed, all 17 changed routes return 200 locally with the expected titles and tables.
 - Not done: A4, A5, A7, A8, A13, A28 (owner tasks); A6 (needs the pricing decision); A14 (unreleased batch-3 post, needs the release branch workflow); A19 (needs real converter tests or a tool decision); A21 body restructure; A22; A27 archive export.
+
+**9 Nov 2026, build list B1-B4 applied locally (not committed, not deployed):**
+- New posts: `/blog/embroidery-vs-applique` (B1), `/blog/how-to-applique-with-embroidery-machine` (B2), `/blog/free-embroidery-file-converters` (B4, seven tool pages verified live). All registered in `app/blog/posts.ts`, in the sitemap, cross-linked to the applique service page and guides.
+- Retargeted: Wilcom vs Hatch vs PE-Design post is now "Best Embroidery Digitizing Software 2026: Paid & Free" (B3), same URL, nine-product price table, prices verified for Hatch, StitchArtist, SewArt, Ember, Ink/Stitch.
+- Temporary covers: the three new posts reuse existing related cover images until dedicated covers are generated from their imagePrompt fields (`/images/blog/<slug>.webp`).
+- Checks: tsc clean, production build passed (71 pages), all four URLs return 200 locally with tables rendering, all internal link targets resolve.
+- Still pending from this round: R1 photo guide retarget, R2 3D puff foam section, R4 planned how-to-digitize post, SERP checks for "dst embroidery file" and "flat embroidery vs 3d puff".
+- Deploy status at time of writing: the earlier push (de528be) was still not live on www.veloradigitizing.com (pricing title still "from $8", SVG 404). Owner to check the Vercel deployment.
 
 ## Priority order for the first change batch (updated after 29 SERPs)
 
