@@ -48,6 +48,12 @@ import post_embroidery_vs_applique from './content/embroidery-vs-applique';
 import post_how_to_applique_with_embroidery_machine from './content/how-to-applique-with-embroidery-machine';
 import post_free_embroidery_file_converters from './content/free-embroidery-file-converters';
 
+import post_sleeve_embroidery_guide from './content/sleeve-embroidery-guide';
+import post_metallic_embroidery_thread_guide from './content/metallic-embroidery-thread-guide';
+import post_baby_blanket_embroidery_guide from './content/baby-blanket-embroidery-guide';
+import post_tote_bag_embroidery_guide from './content/tote-bag-embroidery-guide';
+import post_iron_on_vs_sew_on_patches from './content/iron-on-vs-sew-on-patches';
+
 export const BLOG_POSTS: BlogPost[] = [
   post_3d_puff_embroidery_digitizing_guide,
   post_applique_embroidery_digitizing_guide,
@@ -95,6 +101,11 @@ export const BLOG_POSTS: BlogPost[] = [
   post_embroidery_vs_applique,
   post_how_to_applique_with_embroidery_machine,
   post_free_embroidery_file_converters,
+  post_sleeve_embroidery_guide,
+  post_metallic_embroidery_thread_guide,
+  post_baby_blanket_embroidery_guide,
+  post_tote_bag_embroidery_guide,
+  post_iron_on_vs_sew_on_patches,
 ];
 
 export const BLOG_CATEGORIES = Array.from(
