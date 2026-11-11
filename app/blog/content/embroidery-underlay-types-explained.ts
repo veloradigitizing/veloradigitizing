@@ -4,7 +4,7 @@ export const post: BlogPost = {
   "slug": "embroidery-underlay-types-explained",
   "title": "Embroidery Underlay Types Explained: Center Walk, Edge Run, Zig-Zag & Tatami",
   "metaTitle": "Embroidery Underlay Types Explained",
-  "description": "Comprehensive guide to embroidery underlay types. Discover when to use Center Walk, Edge Run, Double Zig-Zag, and Full Tatami Grid for different fabrics.",
+  "description": "Embroidery underlay types explained in a chart: center run, edge run, zigzag and tatami underlay, the column width each suits and which to use on each fabric.",
   "excerpt": "Underlay is the invisible foundation of every great embroidery file. Learn the specific use cases for Center Walk, Edge Run, Zig-Zag, and Tatami grids.",
   "category": "Technical",
   "tags": [
@@ -16,7 +16,8 @@ export const post: BlogPost = {
     "digitizing technical"
   ],
   "publishedAt": "2026-09-25",
-  "readTime": 8,
+  "updatedAt": "2026-11-12",
+  "readTime": 7,
   "image": "/images/blog/embroidery-underlay-types-explained.webp",
   "imagePrompt": "Wireframe 3D blueprint schematic of embroidery stitches showing glowing blue underlay scaffolding beneath raised gold satin top stitches on dark textile texture, technical diagram style, 16:9.",
   "imageAlt": "Technical schematic showing embroidery underlay types beneath satin and tatami stitches",
@@ -25,6 +26,10 @@ export const post: BlogPost = {
     "href": "/services"
   },
   "faqs": [
+    {
+      "question": "What is underlay in embroidery?",
+      "answer": "Underlay is the foundation stitching sewn before the visible top stitches. It attaches the fabric to the stabilizer, flattens the surface and supports the top thread, which keeps edges sharp and stops stitches sinking into the fabric. The main types are center run, edge run, zigzag and tatami underlay."
+    },
     {
       "question": "Should edge run or tatami underlay stitch first?",
       "answer": "In professional embroidery digitizing sequencing, the edge-run underlay always stitches first along the perimeter boundary. This establishes the physical outline and prevents push-pull fabric distortion. The open tatami grid (or zig-zag) underlay then stitches immediately inside this boundary to compress the fabric fibers and lock the garment to the stabilizer backing before the dense top cover stitches are sewn."
@@ -45,7 +50,7 @@ export const post: BlogPost = {
   "content": [
     {
       "type": "p",
-      "text": "In machine embroidery, what you *don't* see is what determines the quality of what you *do* see. That invisible foundation is **underlay**."
+      "text": "**Embroidery underlay** is the layer of foundation stitches a machine sews before the visible top stitches. It anchors the fabric to the stabilizer, flattens the surface and gives the top thread something to sit on, so edges stay crisp and fills do not sink or pucker. There are four main types: center run, edge run, zigzag and tatami (fill) underlay, and the right one depends on the width of the shape and the fabric."
     },
     {
       "type": "p",
@@ -54,6 +59,48 @@ export const post: BlogPost = {
     {
       "type": "h2",
       "text": "The 4 Core Embroidery Underlay Types"
+    },
+    {
+      "type": "table",
+      "caption": "Embroidery underlay types chart",
+      "headers": [
+        "Underlay type",
+        "What it is",
+        "Use under",
+        "Typical fabrics"
+      ],
+      "rows": [
+        [
+          "Center run (center walk)",
+          "One line of running stitches down the middle of a column",
+          "Narrow satin columns, about 1.5 to 3 mm wide",
+          "Stable wovens, performance polyester, small text"
+        ],
+        [
+          "Edge run (contour)",
+          "Running stitches along both edges, inset about 0.3 to 0.5 mm",
+          "Medium satin columns and the outline of fills",
+          "Woven cotton, canvas, caps"
+        ],
+        [
+          "Zigzag",
+          "An open zigzag across the column",
+          "Wide satin columns, about 4 to 8 mm",
+          "Pique, fleece, textured knits"
+        ],
+        [
+          "Double (edge run plus zigzag)",
+          "Both of the above, edge run first",
+          "Wide satin on textured or high-pile fabric",
+          "Fleece hoodies, towels, corduroy"
+        ],
+        [
+          "Tatami (fill or grid)",
+          "A light, open fill at an angle to the top fill",
+          "Large fill areas",
+          "Knits and any fabric that puckers under big fills"
+        ]
+      ]
     },
     {
       "type": "h3",
@@ -92,13 +139,44 @@ export const post: BlogPost = {
       "text": "Underlay Selection Matrix by Fabric Type"
     },
     {
-      "type": "ul",
-      "items": [
-        "**Pique Knit Polos:** Edge Run + Zig-Zag underlay (plus Solvy water-soluble topping).",
-        "**Performance Polyester (Dry-Fit):** Center Walk or Light Edge Run (keep underlay light to prevent stiffness).",
-        "**Heavy Fleece Hoodies:** Double Zig-Zag + Edge Run (compresses fleece pile completely).",
-        "**Structured Baseball Caps:** Firm Edge Run + Center Walk (anchors against cap buckram).",
-        "**Woven Cotton / Canvas:** Standard Edge Run."
+      "type": "table",
+      "caption": "Which underlay to use on each fabric",
+      "headers": [
+        "Fabric",
+        "Underlay",
+        "Note"
+      ],
+      "rows": [
+        [
+          "Pique knit polos",
+          "Edge run plus zigzag",
+          "Add a water-soluble topping on heavy pique"
+        ],
+        [
+          "Performance polyester (dri-fit)",
+          "Center run or a light edge run",
+          "Keep it light so the logo does not turn stiff"
+        ],
+        [
+          "Heavy fleece hoodies",
+          "Edge run plus double zigzag",
+          "Compresses the pile under the satin"
+        ],
+        [
+          "Structured caps",
+          "Firm edge run plus center run",
+          "Anchors the stitches against the buckram"
+        ],
+        [
+          "Woven cotton and canvas",
+          "Edge run",
+          "The standard choice"
+        ],
+        [
+          "Towels and other high-pile fabric",
+          "Double underlay over a knockdown base",
+          "See the [towel and fleece knockdown guide](/blog/embroidery-on-towels-and-fleece-knockdown-stitch-guide)"
+        ]
       ]
     },
     {
@@ -111,7 +189,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "At Velora Digitizing, our punchers calibrate custom underlay recipes for your specific garment fabrics. Visit our [services page](/services) or upload your artwork on our [contact page](/contact) for a 24-hour turnaround."
+      "text": "At Velora Digitizing, our punchers calibrate custom underlay recipes for your specific garment fabrics. Visit our [services page](/services) or upload your artwork on our [contact page](/contact); Standard plan files are delivered in 12 to 24 hours."
     },
     {
       "type": "h2",

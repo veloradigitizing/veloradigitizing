@@ -4,7 +4,7 @@ export const post: BlogPost = {
   "slug": "embroidery-on-towels-and-fleece-knockdown-stitch-guide",
   "title": "Embroidery on Towels & Fleece: The Complete Knockdown Stitch Guide",
   "metaTitle": "Knockdown Stitch Guide: Towels & Fleece",
-  "description": "Embroidery on towels, sherpa and fleece: knockdown stitch digitizing, lattice grids, water-soluble topping and underlay rules for high-pile fabrics.",
+  "description": "Embroidery on towels and fleece: monogram placement and size chart for bath and hand towels, knockdown stitch settings, stabilizer, topping and needle to use.",
   "excerpt": "Stitching on towels, fleece, or sherpa? Discover how knockdown stitches tamp down fluffy pile so monograms and logos sew crisp without sinking into terry loops.",
   "category": "Techniques",
   "tags": [
@@ -16,7 +16,8 @@ export const post: BlogPost = {
     "monogram digitizing"
   ],
   "publishedAt": "2026-10-14",
-  "readTime": 9,
+  "updatedAt": "2026-11-12",
+  "readTime": 8,
   "image": "/images/blog/embroidery-on-towels-and-fleece-knockdown-stitch-guide.webp",
   "imagePrompt": "Detailed macro photography of plush white hotel bath towel with a monogram embroidered over a neat lattice knockdown underlay stitch, soft pile terrycloth texture with sharp embroidery relief, soft studio lighting, 16:9.",
   "imageAlt": "Monogram embroidery on plush white bath towel with knockdown stitch underlay",
@@ -25,6 +26,10 @@ export const post: BlogPost = {
     "href": "/services"
   },
   "faqs": [
+    {
+      "question": "Where do you place embroidery on a towel?",
+      "answer": "On a bath towel, centre the design with its bottom edge about 4 inches above the hem or woven border. On a hand towel, place it about 2 inches above the hem, and on a washcloth put it in one corner on the diagonal. Fold the towel as it will hang and check that the design lands in the middle of the visible panel."
+    },
     {
       "question": "What is a knockdown stitch in machine embroidery?",
       "answer": "A knockdown stitch (also called a nap-control or carpet underlay stitch) is a light geometric background grid stitched over high-pile fabrics (like terrycloth towels, sherpa fleece, or velvet) prior to sewing the main design. It flattens the unruly fabric loops so the foreground embroidery sits cleanly on top without thread sinking."
@@ -45,11 +50,50 @@ export const post: BlogPost = {
   "content": [
     {
       "type": "p",
-      "text": "Every embroidery business owner has experienced the frustration of stitching a gorgeous corporate logo or wedding monogram on plush terrycloth towels or heavyweight sherpa fleece, only to pull it out of the hoop and watch the stitches completely disappear into the fluffy fabric pile."
+      "text": "**Embroidery on towels** works when three things are in place: a knockdown stitch under the design to flatten the loops, a water-soluble topping on the surface while it sews, and bold lettering large enough to sit above the pile. Without them, stitches sink into the terrycloth and the design disappears after the first wash. The same method applies to fleece, sherpa and other plush fabrics."
     },
     {
       "type": "p",
       "text": "Fluffy fabrics — including velour, microfiber, coral fleece, and waffle weaves — possess high surface fibers known as **pile** or **nap**. Without proper digitizing intervention, needle threads sink into the loops, edges look jagged, and detail is lost. The professional solution is a **Knockdown Stitch**."
+    },
+    {
+      "type": "h2",
+      "text": "Towel Embroidery Placement and Size Chart"
+    },
+    {
+      "type": "table",
+      "caption": "Where to place a monogram or name on a towel",
+      "headers": [
+        "Towel",
+        "Placement",
+        "Typical design height"
+      ],
+      "rows": [
+        [
+          "Bath towel",
+          "Centred, with the bottom of the design about 4 inches above the hem or woven border",
+          "3 to 5 inches"
+        ],
+        [
+          "Bath sheet",
+          "Centred, about 5 inches above the hem or border",
+          "4 to 5 inches"
+        ],
+        [
+          "Hand towel",
+          "Centred, about 2 inches above the hem or border",
+          "2 to 3 inches"
+        ],
+        [
+          "Washcloth",
+          "In one corner on the diagonal, about 1.5 inches in from the edges",
+          "1 to 1.5 inches"
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Fold the towel the way it will hang before you mark it: on a towel folded in thirds, the design should sit in the centre of the front panel. Keep letters bold and at least about 0.75 to 1 inch tall so they stay above the loops."
     },
     {
       "type": "h2",
@@ -86,6 +130,52 @@ export const post: BlogPost = {
       ]
     },
     {
+      "type": "table",
+      "caption": "Knockdown stitch and setup settings for towels and fleece",
+      "headers": [
+        "Setting",
+        "Towels (terrycloth)",
+        "Fleece and sherpa"
+      ],
+      "rows": [
+        [
+          "Knockdown shape",
+          "The design outline, offset outward 1.5 to 2.5 mm",
+          "The same"
+        ],
+        [
+          "Knockdown fill",
+          "Open tatami or mesh, 2.5 to 3.2 mm spacing",
+          "The same"
+        ],
+        [
+          "Knockdown stitch length",
+          "2.2 to 2.8 mm",
+          "The same"
+        ],
+        [
+          "Knockdown thread colour",
+          "Matched to the towel",
+          "Matched to the fabric"
+        ],
+        [
+          "Backing",
+          "Medium to heavy tearaway, or wash-away for towels seen from both sides",
+          "Cutaway"
+        ],
+        [
+          "Topping",
+          "Water-soluble film",
+          "Water-soluble film"
+        ],
+        [
+          "Needle",
+          "75/11 sharp",
+          "75/11 ballpoint"
+        ]
+      ]
+    },
+    {
       "type": "h2",
       "text": "Stabilizer & Hooping Formula for Towels and Fleece"
     },
@@ -119,4 +209,5 @@ export const post: BlogPost = {
     }
   ]
 };
+
 export default post;
