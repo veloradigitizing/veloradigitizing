@@ -200,7 +200,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Choose 3D puff when the design is made of bold, simple shapes such as block letters or a thick monogram, and you want it raised off the cap. Choose flat embroidery when the design has small text, thin lines or fine detail, because foam cannot hold them. Many caps combine both: a puff main logo with flat text beneath it."
+      "text": "Choose 3D puff when the design is made of bold, simple shapes such as block letters or a thick monogram, and you want it raised off the cap. Choose flat embroidery when the design has small text, thin lines or fine detail, because foam cannot hold them. Many caps combine both: a puff main logo with flat text beneath it. Our [flat embroidery vs 3D puff comparison](/blog/flat-embroidery-vs-3d-puff) covers the differences in detail, garments and cost."
     },
     {
       "type": "p",

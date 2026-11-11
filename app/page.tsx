@@ -236,6 +236,7 @@ export default function Home() {
         title="Featured Embroidery Digitizing Guides"
         subtitle="Expert insights on manual vs AI digitizing, vector preparation, file formats, and stitch engineering."
         slugs={[
+          "how-to-digitize-embroidery-designs",
           "convert-png-jpg-to-dst-embroidery-file",
           "how-to-digitize-small-text-micro-lettering-embroidery",
           "embroidery-stabilizer-guide-cutaway-vs-tearaway",

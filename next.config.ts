@@ -77,6 +77,13 @@ const LEGACY_STORE_SLUGS = [
   "premium-jacket-back-embroidery-digitizing-pes",
   "sports-jacket-back-embroidery-digitizing",
   "varsity-jacket-back-embroidery-digitizing",
+  // Bundle packs that were indexed, then hidden from the store (lib/design-visibility.ts).
+  "70-patches-pack-1",
+  "100-patches-mega-pack",
+  "70-patches-pack-3",
+  "50-patches-starter-pack",
+  "50-patches-value-pack",
+  "100-patches-ultimate-pack",
 ];
 
 const nextConfig: NextConfig = {

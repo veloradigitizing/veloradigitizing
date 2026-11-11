@@ -688,3 +688,20 @@ Owner tasks in parallel: A4 Etsy/Fiverr, A7 Reddit/Facebook participation, A8 re
 - Schema: duplicate FAQPage removed on 55 pages (`schema={false}` on FAQ where the page emits its own); BreadcrumbList added to /store; BlogPosting wordCount now counts tables.
 - /store copy expanded (231 to ~480 words); llms.txt prices corrected and Guides section added; project count unified to 3,200+.
 - Still open: chenille/bundles portfolio links (hidden designs), personal TikTok/X handles in sameAs, named blog author, unique covers for embroidery-vs-applique, how-to-applique-with-embroidery-machine, free-embroidery-file-converters.
+
+**11 Nov 2026, low-KD content round (applied locally, uncommitted):**
+- R1 done: photo guide retargeted to "how to digitize a photo / picture for embroidery" (L5, L24, L29). New title and H1, six detailed steps, size-guide table, new first FAQ. URL unchanged.
+- R2 done: 3D puff guide gained a foam section (2 mm vs 3 mm vs 6 mm table, colour matching, embroidery vs craft foam, removal) and a craft-foam FAQ (L16, L17, L20).
+- R4 done: `/blog/how-to-digitize-embroidery-designs` released early from the batch-20 branch (was week 4) and rewritten as "How to Digitize a Logo for Embroidery" (L27, L33, L56-L58): seven steps, two tables, ChatGPT and convert-logo FAQs. Copied by hand, not with release-blog-batch.py, because the script would overwrite the 9-11 Nov edits to existing posts with the branch versions.
+- New post: `/blog/flat-embroidery-vs-3d-puff` (L10, 70 / KD 1). Web check showed digitizer blogs (HoopTalent, EmbPunch, ZDigitizing) on page 1, so a separate post instead of a section. Temporary cover: reuses the 3D puff guide image.
+- Both new posts registered in posts.ts, linked from service-page guide rows, homepage row, related posts and llms.txt. Sitemap lastmod set to 2026-11-11 for changed static pages.
+- Checks: production build 78 pages, crawl of 68 URLs all 200, no duplicate FAQPage, no invalid schema.
+- Still to check by SERP: "dst embroidery file" (L18, L28, L51). Next candidates: L38 how to make embroidery patterns (260 / KD 4), L42 3D puff embroidery fonts (110 / KD 11), L61 learn embroidery digitizing.
+
+**12 Nov 2026, GSC check and "Crawled - currently not indexed" upgrade (applied locally, uncommitted):**
+- GSC, last 28 days vs previous: 3 clicks (7), 136 impressions (63), position 27.8 (33.7). Indexed 40, not indexed 28: Discovered 8 (/services, three service pages, privacy, three posts), Crawled-not-indexed 10 (all from the 7 Nov batch), canonical/redirect 9.
+- The nine thin 7 Nov posts that Google crawled and skipped were upgraded with real tables and a new first FAQ each, updatedAt 2026-11-12: hoop sizes (mm and inch sewing fields, placement table, 6x10 = 160x260 vs 150x240 warning), needle size (blade diameter, needle by fabric), thread weight (30/40/60 chart, polyester vs rayon), DST file (retitled "DST Embroidery File: What It Is and How to Open It" for L18/L28/L51, format table, free viewer table), embroidery cost (pricing chart, worked 24-polo example, price-factor table), fonts (example fonts by style, minimum size chart), polo (fabric comparison, logo setup), beanie (size chart, setup), multi-needle (single vs multi comparison, needle count). These nine files were re-serialized in the JSON style used by the older posts.
+- Competitor check by web search for hoop, needle, thread and DST queries; gaps added (contested 6x10 label, Data Stitch Tajima, BERNINA ArtLink, Open-with tip).
+- Six hidden bundle product URLs (/store/50-patches-value-pack etc.) were 404 while still getting impressions; now 308 to /store via LEGACY_STORE_SLUGS in next.config.ts.
+- Checks: build 78 pages, 68 URLs all 200, no invalid schema.
+- Recommendation recorded: pause the 14 Nov batch release until these posts are re-crawled; request indexing for the nine upgraded URLs after deploy.

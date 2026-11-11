@@ -101,6 +101,7 @@ export default function CapDigitizingLayout({
         slugs={[
           "cap-hat-logo-embroidery-digitizing-guide",
           "3d-puff-embroidery-digitizing-guide",
+          "flat-embroidery-vs-3d-puff",
           "fix-embroidery-fabric-puckering-and-thread-breaks",
           "beanie-embroidery-digitizing-guide",
           "how-to-digitize-small-text-micro-lettering-embroidery",

@@ -123,7 +123,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "For commercial brands, contract embroiderers, uniform suppliers, and corporate merch, hand-digitized files are non-negotiable. Explore our [custom embroidery digitizing services](/services), order specialized [3D puff digitizing](/services/3d-puff-digitizing) for raised hat emblems, [cap logo digitizing](/services/cap-logo-digitizing) for curved frames, or [applique digitizing](/services/applique-digitizing) for varsity outerwear."
+      "text": "For commercial brands, contract embroiderers, uniform suppliers, and corporate merch, hand-digitized files are non-negotiable. To see what the manual process involves, read [how to digitize a logo for embroidery](/blog/how-to-digitize-embroidery-designs). Explore our [custom embroidery digitizing services](/services), order specialized [3D puff digitizing](/services/3d-puff-digitizing) for raised hat emblems, [cap logo digitizing](/services/cap-logo-digitizing) for curved frames, or [applique digitizing](/services/applique-digitizing) for varsity outerwear."
     }
   ]
 };

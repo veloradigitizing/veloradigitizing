@@ -244,7 +244,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Illustrator prepares; it does not digitize. Size the logo at 1:1, outline text and strokes, unite overlaps, simplify, flatten colors and export EPS or SVG. Then pick a conversion route that matches how often you will do this: software or a plugin if digitizing becomes part of your work, Ink/Stitch if budget matters more than time, or a digitizer if you need a production-ready file now. If you choose the last route, our [embroidery digitizing service](/services) accepts the EPS you just made, and [vector art conversion](/vector-art) handles logos that only exist as images."
+      "text": "Illustrator prepares; it does not digitize. For the stitch side of the job in any software, see [how to digitize a logo for embroidery](/blog/how-to-digitize-embroidery-designs). Size the logo at 1:1, outline text and strokes, unite overlaps, simplify, flatten colors and export EPS or SVG. Then pick a conversion route that matches how often you will do this: software or a plugin if digitizing becomes part of your work, Ink/Stitch if budget matters more than time, or a digitizer if you need a production-ready file now. If you choose the last route, our [embroidery digitizing service](/services) accepts the EPS you just made, and [vector art conversion](/vector-art) handles logos that only exist as images."
     }
   ]
 };

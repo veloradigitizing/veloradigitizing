@@ -148,6 +148,7 @@ export default function PuffDigitizingLayout({
           "3d-puff-embroidery-digitizing-guide",
           "embroidery-underlay-types-explained",
           "how-to-estimate-embroidery-stitch-count",
+          "flat-embroidery-vs-3d-puff",
         ]}
       />
     </>

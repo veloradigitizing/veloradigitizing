@@ -378,6 +378,7 @@ export default function ServicesPage() {
         title="Guides for Choosing and Preparing an Order"
         subtitle="How to prepare artwork, size a logo for its placement and understand what drives the price."
         slugs={[
+          "how-to-digitize-embroidery-designs",
           "how-to-prepare-logo-for-embroidery-digitizing",
           "left-chest-logo-embroidery-digitizing-guide",
           "jacket-back-embroidery-digitizing-guide",

@@ -4,7 +4,7 @@ export const post: BlogPost = {
   "slug": "3d-puff-embroidery-digitizing-guide",
   "title": "3D Puff Embroidery Digitizing: Settings, Foam and Cap Sequencing Guide",
   "metaTitle": "3D Puff Embroidery Digitizing: Settings & Foam Guide",
-  "description": "How to digitize 3D puff embroidery: satin only, 0.16-0.20 mm spacing, no underlay, end caps, 2-3 mm foam. Hatch and Wilcom settings table, cap sequencing.",
+  "description": "How to digitize 3D puff embroidery: satin only, 0.16-0.20 mm spacing, no underlay, end caps. Foam thickness guide (2, 3 and 6 mm) and Hatch and Wilcom settings.",
   "excerpt": "The exact 3D puff digitizing rules: satin-only columns, 0.16-0.20 mm spacing, a single centre run instead of underlay, end caps, foam thickness and centre-out cap sequencing.",
   "category": "Techniques",
   "tags": [
@@ -17,8 +17,8 @@ export const post: BlogPost = {
     "foam digitizing"
   ],
   "publishedAt": "2026-08-23",
-  "updatedAt": "2026-11-09",
-  "readTime": 11,
+  "updatedAt": "2026-11-11",
+  "readTime": 13,
   "image": "/images/blog/3d-puff-embroidery-digitizing-guide.webp",
   "imagePrompt": "Extreme macro photography of a navy structured snapback cap with vibrant raised 3D puff white satin embroidery stitching over 3mm high-density EVA foam, clean capped edges with zero foam peeking through, sharp lighting showing tactile 3D relief, 16:9.",
   "imageAlt": "3D puff embroidery digitizing with raised satin stitches on a structured baseball cap",
@@ -50,6 +50,10 @@ export const post: BlogPost = {
     {
       "question": "What thickness of embroidery foam should I use for caps?",
       "answer": "2 mm foam is the standard for most caps and gives a clean raised look without straining needles. 3 mm foam is used for heavy block lettering on structured caps and thick fleece. Thicker foam needs tighter spacing, a sharp needle and slower speed, so confirm the thickness with your digitizer before the file is built."
+    },
+    {
+      "question": "Can I use craft foam for 3D puff embroidery?",
+      "answer": "Craft foam can work for a test, but it is softer than embroidery foam and tends to tear unevenly, which leaves rough edges and fuzz along the satin columns. Embroidery-grade puff foam is denser, perforates cleanly and comes in colours that can be matched to the thread, so it is the better choice for anything you will sell."
     },
     {
       "question": "Why does foam poke out of the ends of my letters?",
@@ -146,6 +150,58 @@ export const post: BlogPost = {
         "**Watch the height limit.** Most cap frames give roughly 2 to 2.25 inches of usable height. Puff needs clearance for the foam, so keep the raised elements inside that window and away from the brim.",
         "**Structured caps need a little extra compensation.** Buckram-backed fronts are stiff and curved; a small pull compensation increase helps keep columns from looking narrow at the sides."
       ]
+    },
+    {
+      "type": "h2",
+      "text": "3D Puff Embroidery Foam: Thickness, Colour and What to Buy"
+    },
+    {
+      "type": "p",
+      "text": "**3D puff embroidery foam** is a dense sheet foam made to be perforated by the needle and torn away cleanly. It is sold in sheets, most commonly **2 mm, 3 mm and 6 mm** thick, in a range of colours. The thickness you choose sets the height of the finished lettering and changes how the file has to be digitized, so decide it before the design is punched."
+    },
+    {
+      "type": "table",
+      "caption": "3D puff foam thickness guide: 2 mm vs 3 mm vs 6 mm",
+      "headers": [
+        "Foam thickness",
+        "Finished look",
+        "Best for",
+        "Digitizing notes"
+      ],
+      "rows": [
+        [
+          "2 mm",
+          "Low, clean relief",
+          "Most cap logos, smaller lettering, unstructured caps",
+          "The easiest to cover and the kindest to needles and thread. A good default when you are unsure."
+        ],
+        [
+          "3 mm",
+          "Bold, clearly raised",
+          "Heavy block lettering on structured caps, hoodies and thick fleece",
+          "Needs wider columns and slightly tighter satin spacing than 2 mm, a sharp needle and a slower machine speed."
+        ],
+        [
+          "6 mm",
+          "Maximum height",
+          "Selected features on large designs",
+          "Too much for most hats. Often built by stacking thinner sheets; needs very wide columns and a test sew-out before any production run."
+        ]
+      ]
+    },
+    {
+      "type": "ul",
+      "items": [
+        "**Match the foam colour to the thread.** White foam under navy thread shows as specks wherever the satin opens slightly. Foam in the same colour family as the top thread hides them.",
+        "**Buy embroidery foam, not craft foam.** Craft-store foam is softer and tends to tear unevenly, leaving rough edges and fuzz along the columns. Embroidery-grade foam is denser, so the needle cuts it cleanly.",
+        "**Cut the piece slightly larger than the raised area.** Foam is commonly sold in sheets of about 12 x 18 inches; cut a piece that covers the puff elements with a small margin and hold it in place while the first stitches tack it down.",
+        "**Remove the excess after sewing.** Tear the surplus foam away along the perforated edges. Small whiskers left at the edges can be tucked in with tweezers or shrunk back with brief, gentle heat from a heat gun or hair dryer.",
+        "**Tell your digitizer the thickness.** A file built for 2 mm foam will not cover 3 mm foam properly, and a 3 mm file sewn over 2 mm foam is denser than it needs to be."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Not sure whether a design should be raised at all? Our [flat embroidery vs 3D puff comparison](/blog/flat-embroidery-vs-3d-puff) shows which logos suit each method."
     },
     {
       "type": "h2",

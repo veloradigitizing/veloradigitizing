@@ -53,6 +53,8 @@ import post_metallic_embroidery_thread_guide from './content/metallic-embroidery
 import post_baby_blanket_embroidery_guide from './content/baby-blanket-embroidery-guide';
 import post_tote_bag_embroidery_guide from './content/tote-bag-embroidery-guide';
 import post_iron_on_vs_sew_on_patches from './content/iron-on-vs-sew-on-patches';
+import post_how_to_digitize_embroidery_designs from './content/how-to-digitize-embroidery-designs';
+import post_flat_embroidery_vs_3d_puff from './content/flat-embroidery-vs-3d-puff';
 
 export const BLOG_POSTS: BlogPost[] = [
   post_3d_puff_embroidery_digitizing_guide,
@@ -106,6 +108,8 @@ export const BLOG_POSTS: BlogPost[] = [
   post_baby_blanket_embroidery_guide,
   post_tote_bag_embroidery_guide,
   post_iron_on_vs_sew_on_patches,
+  post_how_to_digitize_embroidery_designs,
+  post_flat_embroidery_vs_3d_puff,
 ];
 
 export const BLOG_CATEGORIES = Array.from(

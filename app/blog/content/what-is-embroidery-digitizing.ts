@@ -164,6 +164,10 @@ export const post: BlogPost = {
       ]
     },
     {
+      "type": "p",
+      "text": "Want to try the workflow yourself? Our beginner tutorial on [how to digitize a logo for embroidery](/blog/how-to-digitize-embroidery-designs) walks through each step with starting settings."
+    },
+    {
       "type": "h2",
       "text": "Partner With Master Digitizers for Flawless Production"
     },
