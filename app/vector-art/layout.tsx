@@ -88,6 +88,9 @@ export default function VectorArtLayout({
           "vector-art-for-screen-printing-vs-embroidery",
           "digitize-logo-illustrator-embroidery",
           "how-to-prepare-logo-for-embroidery-digitizing",
+          "convert-png-jpg-to-dst-embroidery-file",
+          "convert-photo-to-embroidery-guide",
+          "free-embroidery-file-converters",
         ]}
       />
     </>

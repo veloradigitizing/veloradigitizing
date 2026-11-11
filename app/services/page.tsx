@@ -382,6 +382,8 @@ export default function ServicesPage() {
           "left-chest-logo-embroidery-digitizing-guide",
           "jacket-back-embroidery-digitizing-guide",
           "embroidery-digitizing-cost-pricing-guide",
+          "why-outsource-embroidery-digitizing-usa-guide",
+          "best-online-embroidery-digitizing-services-comparison-guide",
         ]}
       />
 

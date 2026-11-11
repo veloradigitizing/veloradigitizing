@@ -4,6 +4,7 @@ import PricingTable from "../components/PricingTable";
 import StitchCountCalculator from "../components/StitchCountCalculator";
 import { FAQ } from "../components/FAQ";
 import CTABanner from "../components/CTABanner";
+import RelatedGuides from "../components/RelatedGuides";
 import Icon, { IconName } from "../components/Icon";
 
 export const metadata: Metadata = {
@@ -42,24 +43,24 @@ const DETAILED_PRICE_MATRIX = [
     service: "Left Chest Logo Digitizing",
     idealFor: "Polo shirts, company uniforms, t-shirts, scrub tops",
     sizeLimit: "Up to 4.0\" × 4.0\"",
-    turnaround: "8 – 24 Hours",
-    price: "$8.00",
+    turnaround: "24 – 48 Hours",
+    price: "$6.99",
     popular: true,
   },
   {
     service: "Cap & Hat Logo Digitizing",
     idealFor: "Structured snapbacks, baseball caps, dad hats, beanies",
     sizeLimit: "Up to 2.5\" H × 4.5\" W",
-    turnaround: "8 – 24 Hours",
-    price: "$8.00",
+    turnaround: "24 – 48 Hours",
+    price: "$6.99",
     popular: true,
   },
   {
     service: "3D Puff Foam Digitizing",
     idealFor: "Raised dimensional cap fronts, hoodies, heavy beanies",
     sizeLimit: "Up to 2.75\" H × 5.0\" W",
-    turnaround: "8 – 24 Hours",
-    price: "$12.00",
+    turnaround: "2 – 4 Hours",
+    price: "$19.99",
     popular: false,
   },
   {
@@ -67,7 +68,7 @@ const DETAILED_PRICE_MATRIX = [
     idealFor: "Varsity jackets, cheer jerseys, sports lettering",
     sizeLimit: "Up to 8.0\" × 8.0\"",
     turnaround: "12 – 24 Hours",
-    price: "$12.00",
+    price: "$12.99",
     popular: false,
   },
   {
@@ -75,7 +76,7 @@ const DETAILED_PRICE_MATRIX = [
     idealFor: "Hoodie sleeves, tote bags, pant legs, apron bibs",
     sizeLimit: "Up to 6.0\" × 6.0\"",
     turnaround: "12 – 24 Hours",
-    price: "$14.00",
+    price: "$12.99",
     popular: false,
   },
   {
@@ -83,7 +84,7 @@ const DETAILED_PRICE_MATRIX = [
     idealFor: "Denim jackets, biker vests, varsity back panels",
     sizeLimit: "Up to 12.0\" × 12.0\"+",
     turnaround: "12 – 24 Hours",
-    price: "$18 – $25",
+    price: "$12.99 – $19.99",
     popular: false,
   },
   {
@@ -99,13 +100,13 @@ const DETAILED_PRICE_MATRIX = [
 const VALUE_PROPOSITIONS: { icon: IconName; title: string; desc: string }[] = [
   {
     icon: "refresh",
-    title: "100% Free Unlimited Revisions",
-    desc: "Need density adjusted for fleece, size scaled ±15%, or push-pull compensation tuned for stretch knits? We make free tweaks until your sewout runs cleanly.",
+    title: "Free Revisions on Every Plan",
+    desc: "Need density adjusted for fleece, size scaled ±15%, or push-pull compensation tuned for stretch knits? Basic includes 1 free revision, Standard includes 3 and Rush includes unlimited revisions.",
   },
   {
     icon: "layers",
-    title: "All Machine Formats Included",
-    desc: "Every order ships with DST, PES, EXP, JEF, VP3, HUS, and XXX files plus a printable thread run sheet PDF. No conversion fees ever.",
+    title: "Machine Formats Included",
+    desc: "Basic ships with DST, PES, EXP and JEF. Standard and Rush include every embroidery format (VP3, HUS, XXX and more) plus a printable thread run sheet PDF.",
   },
   {
     icon: "shield",
@@ -114,8 +115,8 @@ const VALUE_PROPOSITIONS: { icon: IconName; title: string; desc: string }[] = [
   },
   {
     icon: "clock",
-    title: "Fast 8 to 24-Hour Delivery",
-    desc: "Standard orders deliver within 8 to 24 hours. Emergency rush orders (under 4 to 8 hours) are available for urgent production runs.",
+    title: "Delivery Time Set by Plan",
+    desc: "Basic delivers in 24 to 48 hours, Standard in 12 to 24 hours and Rush in 2 to 4 hours for urgent production runs.",
   },
   {
     icon: "smile",
@@ -131,25 +132,25 @@ const VALUE_PROPOSITIONS: { icon: IconName; title: string; desc: string }[] = [
 
 const TURNAROUND_TIERS = [
   {
-    tier: "Standard Turnaround",
-    time: "8 – 24 Hours",
-    cost: "Included Free",
-    description: "Ideal for everyday apparel production, quote requests, and store orders.",
+    tier: "Basic Plan",
+    time: "24 – 48 Hours",
+    cost: "$6.99 per design",
+    description: "Simple logos up to 5,000 stitches when the deadline is flexible.",
+    badge: "Lowest Price",
+  },
+  {
+    tier: "Standard Plan",
+    time: "12 – 24 Hours",
+    cost: "$12.99 per design",
+    description: "Detailed logos, applique, patches and jacket backs up to 15,000 stitches.",
     badge: "Most Popular",
   },
   {
-    tier: "Rush Delivery",
-    time: "6 – 12 Hours",
-    cost: "+$5.00 Flat",
-    description: "Priority queue placement for tight embroidery machine deadlines.",
+    tier: "Rush Plan",
+    time: "2 – 4 Hours",
+    cost: "$19.99 per design",
+    description: "Priority queue for urgent, complex or 3D puff designs with unlimited stitches.",
     badge: "Urgent Orders",
-  },
-  {
-    tier: "Super Rush Emergency",
-    time: "Under 4 Hours",
-    cost: "Contact Support",
-    description: "Dedicated digitizer on stand-by. Connect directly on WhatsApp.",
-    badge: "Same-Day Run",
   },
 ];
 
@@ -162,7 +163,7 @@ const STEPS = [
   {
     num: "02",
     title: "Get Flat Quote in 1h",
-    desc: "We review the detail and confirm the guaranteed flat price (starting at $8) with no hidden fees before work starts.",
+    desc: "We review the detail and confirm the guaranteed flat price (starting at $6.99) with no hidden fees before work starts.",
   },
   {
     num: "03",
@@ -180,7 +181,7 @@ const PRICING_FAQS = [
   {
     question: "How do your flat-rate digitizing prices work?",
     answer:
-      "We quote simple, transparent flat rates based on the placement and size of your design (such as standard left chest and cap logos for $8, up to large jacket backs for $18–$25). Unlike other digitizing houses, we never charge extra per stitch count surprise fees or per-color charges.",
+      "We quote simple flat rates by stitch-count plan. Basic is $6.99 for designs up to 5,000 stitches, which covers most left chest and cap logos. Standard is $12.99 for up to 15,000 stitches, which covers applique, patch files and most jacket backs. Rush is $19.99 for unlimited stitches, 3D puff and urgent orders. We never add per-stitch surprise fees or per-color charges.",
   },
   {
     question: "What is the typical price per 1,000 stitches for embroidery digitizing?",
@@ -190,17 +191,17 @@ const PRICING_FAQS = [
   {
     question: "Do you charge extra for rush turnaround?",
     answer:
-      "Our standard delivery turnaround is 8 to 24 hours at no extra charge. If you have an urgent order requiring turnaround in under 6 to 12 hours, rush service is available for a modest $5 surcharge upon request.",
+      "Delivery time is set by the plan, not by a surcharge. Basic delivers in 24 to 48 hours and Standard in 12 to 24 hours. For urgent orders, the Rush plan at $19.99 delivers in 2 to 4 hours.",
   },
   {
     question: "Are revisions and minor format adjustments really free?",
     answer:
-      "Yes, 100%. If you need stitch density adjusted for a different fabric (such as switching from pique knit to heavy fleece), needle sizes changed, or size scaled within ±15%, our senior digitizers provide free adjustments until your sewout runs perfectly.",
+      "Yes, within your plan: Basic includes 1 free revision, Standard includes 3 and Rush includes unlimited revisions. A revision covers stitch density adjusted for a different fabric (such as switching from pique knit to heavy fleece), needle sizes changed, or size scaled within ±15%.",
   },
   {
     question: "What machine embroidery formats are included in the price?",
     answer:
-      "Every purchase includes all standard commercial and home machine formats (DST, PES, EXP, JEF, VP3, HUS, XXX) along with a complete stitch PDF production sheet. You never pay extra for additional formats.",
+      "Basic includes DST, PES, EXP and JEF. Standard and Rush include all commercial and home machine formats (adding VP3, HUS and XXX) along with a stitch PDF production sheet.",
   },
   {
     question: "Do you offer discounts for high-volume shops?",
@@ -220,7 +221,7 @@ const PRICING_FAQS = [
   {
     question: "Can you digitize 3D puff foam and small micro-text?",
     answer:
-      "Yes, absolutely. We specialize in 3D puff cap digitizing with reinforced underlay columns and high-density satin caps ($12 flat), as well as micro-lettering down to 4mm with specialized 60-weight thread settings.",
+      "Yes, absolutely. We specialize in 3D puff cap digitizing with reinforced underlay columns and high-density satin caps (on the Rush plan at $19.99), as well as micro-lettering down to 4mm with specialized 60-weight thread settings.",
   },
 ];
 
@@ -298,7 +299,7 @@ export default function PricingPage() {
               Embroidery Digitizing <span className="text-brand-400">Pricing &amp; Rates</span>
             </h1>
             <p className="mt-4 max-w-2xl text-base text-white/75 sm:text-lg leading-relaxed">
-              Transparent, flat-rate pricing per design with zero stitch surcharges. Commercial machine files delivered in 8 to 24 hours with free unlimited revisions and all formats included.
+              Transparent, flat-rate pricing per design with zero stitch surcharges. Three plans from $6.99 to $19.99, delivered in 2 to 48 hours depending on the plan, with free revisions and machine formats included.
             </p>
             <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/65 sm:text-base">
               For context, published US market rates in late 2026 run about $10 to $30 for a left chest or cap logo, $30 to $100 for a jacket back, or $1 to $3 per 1,000 stitches with a minimum charge. Velora&apos;s plans start at $6.99 per design and are priced by stitch-count tier, so the fee does not change inside a tier. Every plan includes the machine formats you need and a revision allowance; the price covers the digitized file, not the garment production. See the{" "}
@@ -312,11 +313,11 @@ export default function PricingPage() {
             <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4 pt-6 border-t border-white/10 text-xs sm:text-sm text-white/80">
               <div className="flex items-center gap-2">
                 <Icon name="clock" className="h-4 w-4 text-brand-400 shrink-0" />
-                <span>8 – 24h Turnaround</span>
+                <span>2 – 48h Delivery by Plan</span>
               </div>
               <div className="flex items-center gap-2">
                 <Icon name="refresh" className="h-4 w-4 text-brand-400 shrink-0" />
-                <span>Unlimited Free Revisions</span>
+                <span>Free Revisions Included</span>
               </div>
               <div className="flex items-center gap-2">
                 <Icon name="layers" className="h-4 w-4 text-brand-400 shrink-0" />
@@ -347,7 +348,7 @@ export default function PricingPage() {
                 Placement &amp; Size Price Matrix
               </h2>
               <p className="mt-3 text-[15px] leading-relaxed text-navy-950/65">
-                Every project is priced according to design placement, dimensions, and production complexity. Compare our rates below:
+                Every design falls into one of the three plans above by stitch count. This is the plan, price and delivery time each placement usually lands on:
               </p>
             </div>
 
@@ -561,14 +562,25 @@ export default function PricingPage() {
         {/* FAQ Section */}
         <FAQ
           items={PRICING_FAQS}
+          schema={false}
           title="Frequently Asked Pricing Questions"
           subtitle="Everything you need to know about our turnarounds, payment options, and revision policy."
+        />
+
+        <RelatedGuides
+          title="Embroidery Pricing Guides"
+          subtitle="How digitizing and embroidery prices are calculated, and how stitch count changes the quote."
+          slugs={[
+            "embroidery-digitizing-cost-pricing-guide",
+            "how-much-does-embroidery-cost",
+            "how-to-estimate-embroidery-stitch-count",
+          ]}
         />
 
         {/* Bottom CTA Banner */}
         <CTABanner
           title="Ready to Digitize Your First Logo?"
-          subtitle="Send your vector, JPEG, or sketch. We confirm the exact price and deliver production-ready embroidery files in under 24 hours."
+          subtitle="Send your vector, JPEG, or sketch. We confirm the exact price and deliver production-ready embroidery files on the turnaround of the plan you choose."
           ctaLabel="Get a Free Quote"
           href="/contact"
         />

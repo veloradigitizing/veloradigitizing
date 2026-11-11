@@ -25,7 +25,7 @@ export const HOME_FAQS: FAQItem[] = [
   {
     question: "How long does it take to complete an order?",
     answer:
-      "Standard orders are delivered within 12-24 hours. We also offer rush services including 2-hour, 4-hour, and same-day delivery for urgent projects. Weekend rush delivery is available on request — just select the rush option at checkout or mention it when you send your artwork.",
+      "Delivery depends on the plan. Standard plan orders are delivered within 12-24 hours and Basic plan orders within 24-48 hours. For urgent projects, the Rush plan delivers in 2 to 4 hours. Mention your deadline when you send your artwork and we will confirm the right plan.",
     category: "Turnaround",
   },
   {
@@ -76,7 +76,7 @@ export const ABOUT_FAQS: FAQItem[] = [
   {
     question: "What makes Velora different from other digitizing companies?",
     answer:
-      "Three things set us apart. First, every design is hand-digitized by a senior digitizer — no auto-trace software. Second, we know fabric behavior: stitch density, underlay, and pull-compensation are tuned for the specific material you'll sew on. Third, we offer 24/7 live support, unlimited revisions on most plans, and a 100% satisfaction guarantee — if the file isn't right, we redo it.",
+      "Three things set us apart. First, every design is hand-digitized by a senior digitizer — no auto-trace software. Second, we know fabric behavior: stitch density, underlay, and pull-compensation are tuned for the specific material you'll sew on. Third, we offer 24/7 live support, free revisions on every plan, and a 100% satisfaction guarantee — if the file isn't right, we redo it.",
     category: "Company",
   },
   {
@@ -271,13 +271,13 @@ export const CONTACT_FAQS: FAQItem[] = [
   {
     question: "How fast can I get my digitizing file?",
     answer:
-      "Standard orders are delivered within 12-24 hours of artwork approval. Rush orders can be delivered in as fast as 2 hours, with 4-hour and same-day options also available. Weekend rush delivery is offered on request. When you send your artwork, let us know your deadline and we'll confirm the fastest feasible turnaround.",
+      "Standard plan orders are delivered within 12-24 hours of artwork approval and Basic plan orders within 24-48 hours. The Rush plan delivers in 2 to 4 hours. When you send your artwork, let us know your deadline and we'll confirm the right plan.",
     category: "Turnaround",
   },
   {
     question: "Do you offer rush orders?",
     answer:
-      "Yes. We offer 2-hour, 4-hour, same-day, and weekend rush delivery options for an additional fee. Rush orders are queued ahead of standard orders and assigned to a dedicated digitizer who works your file start to finish. Rush pricing is +30% on the standard plan rate.",
+      "Yes. The Rush plan is $19.99 per design and delivers in 2 to 4 hours. Rush orders are queued ahead of standard orders and assigned to a dedicated digitizer who works your file start to finish.",
     category: "Turnaround",
   },
   {

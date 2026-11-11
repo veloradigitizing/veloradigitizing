@@ -55,7 +55,7 @@ export function SectionTag({
 }
 
 const HERO_FEATURES: { icon: IconName; title: string; sub: string }[] = [
-  { icon: "clock", title: "Fast Delivery", sub: "Delivered in 8-24 hours" },
+  { icon: "clock", title: "Fast Delivery", sub: "Standard delivery in 12-24 hours" },
   { icon: "award", title: "High Quality", sub: "Premium stitch quality" },
   { icon: "headset", title: "24/7 Support", sub: "Always here to help you" },
   { icon: "shield", title: "Satisfaction", sub: "Money-back guaranteed" },

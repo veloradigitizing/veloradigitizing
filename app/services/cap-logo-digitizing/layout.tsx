@@ -102,6 +102,9 @@ export default function CapDigitizingLayout({
           "cap-hat-logo-embroidery-digitizing-guide",
           "3d-puff-embroidery-digitizing-guide",
           "fix-embroidery-fabric-puckering-and-thread-breaks",
+          "beanie-embroidery-digitizing-guide",
+          "how-to-digitize-small-text-micro-lettering-embroidery",
+          "embroidery-stabilizer-guide-cutaway-vs-tearaway",
         ]}
       />
     </>

@@ -69,7 +69,7 @@ const PATCH_FAQS: { question: string; answer: string }[] = [
     answer: "Yes. Free tools such as Ink/Stitch can produce a patch file with a fill and a satin border, and our guide on how to make embroidered patches walks through the sequence. The difficult parts are border coverage on the cut edge, density on twill or felt, and tackdown for applique layers, which is where a professionally digitized file saves test sew-outs.",
   },
   { question: "What is the minimum order quantity for patches?", answer: "For digital patch files, there is no minimum order. For physical patch manufacturing, the minimum is typically 50 pieces. Contact us for exact pricing based on your quantity, size, and backing type." },
-  { question: "How long does patch digitizing take?", answer: "Standard turnaround is 24 hours for the digitized file. Rush delivery under 12 hours is available for an additional 30% fee. Physical patch manufacturing takes 7-10 business days after file approval." },
+  { question: "How long does patch digitizing take?", answer: "Patch files on the Standard plan are delivered in 12 to 24 hours, and on the Basic plan in 24 to 48 hours. The Rush plan ($19.99) delivers in 2 to 4 hours. Physical patch manufacturing takes 7-10 business days after file approval." },
   { question: "What file formats do you deliver?", answer: "We deliver all major embroidery formats: DST, PES, JEF, EXP, VP3, and XXX. You will receive all formats in a single zip file." },
   { question: "Can you match my brand colors exactly?", answer: "Yes. We use Madeira and Isacord polyester thread in 380+ colors and cross-reference your brand PMS/HEX codes against physical thread charts under daylight-balanced bulbs. Color matching is included at no extra cost." },
   { question: "What is the difference between embroidered and woven patches?", answer: "Embroidered patches have raised stitching on a twill backing, which is thicker and more tactile. Woven patches are made entirely from thread woven together, which is flatter with finer detail and smaller text." },
@@ -78,7 +78,7 @@ const PATCH_FAQS: { question: string; answer: string }[] = [
 const WHY_CHOOSE_ITEMS = [
   { icon: "headset" as const, title: "24/7 Support" },
   { icon: "rocket" as const, title: "Fast Delivery" },
-  { icon: "refresh" as const, title: "Unlimited Revisions" },
+  { icon: "refresh" as const, title: "Free Revisions" },
   { icon: "award" as const, title: "High Stitch Quality" },
   { icon: "tag" as const, title: "Affordable Pricing" },
   { icon: "shield" as const, title: "100% Satisfaction Guaranteed" },
@@ -97,7 +97,7 @@ export default function PatchesPage() {
           { icon: "tag", title: `Patch File from ${PATCH_PLAN_PRICE}`, sub: `${PATCH_PLAN.name} plan, all formats included` },
           { icon: "scissors", title: "Merrow or Satin Border", sub: "Laser-cut paths for complex shapes" },
           { icon: "layers", title: "Backing Options", sub: "Heat-seal, hook-and-loop, sew-on" },
-          { icon: "clock", title: "Fast Turnaround", sub: "Delivery within 8-24 hours" },
+          { icon: "clock", title: "Fast Turnaround", sub: "Standard delivery in 12-24 hours" },
         ]}
       />
 
@@ -165,7 +165,7 @@ export default function PatchesPage() {
 
       <PricingTable title="Patch Digitizing Prices" />
 
-      <FAQ items={PATCH_FAQS} title="Patches - Frequently Asked Questions" subtitle="Everything you need to know before ordering patch digitizing services." />
+      <FAQ items={PATCH_FAQS} schema={false} title="Patches - Frequently Asked Questions" subtitle="Everything you need to know before ordering patch digitizing services." />
 
       <RelatedServicesNav currentSlug="patches" />
 

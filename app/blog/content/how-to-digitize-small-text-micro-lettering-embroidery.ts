@@ -128,11 +128,11 @@ export const post: BlogPost = {
     },
     {
       "type": "tip",
-      "text": "Struggling with small lettering on snapbacks or curved hats? Let our master punchers manually calibrate your stitch file for clean, readable sewouts. Order professional [cap logo embroidery digitizing](/services/cap-logo-digitizing) or [custom 3D puff digitizing](/services/3d-puff-digitizing) starting at just $6.99 with guaranteed 8-24 hour delivery."
+      "text": "Struggling with small lettering on snapbacks or curved hats? Let our master punchers manually calibrate your stitch file for clean, readable sewouts. Order professional [cap logo embroidery digitizing](/services/cap-logo-digitizing) or [custom 3D puff digitizing](/services/3d-puff-digitizing) starting at just $6.99 with 12-24 hour delivery on the Standard plan."
     },
     {
       "type": "p",
-      "text": "Need complex small corporate lettering or high-density cap text digitized with zero trial-and-error? The master punchers at [Velora Digitizing](/services/cap-logo-digitizing) engineer each stitch file with manual node adjustment, tested push-pull formulas, and quick 8-24 hour turnaround."
+      "text": "Need complex small corporate lettering or high-density cap text digitized with zero trial-and-error? The master punchers at [Velora Digitizing](/services/cap-logo-digitizing) engineer each stitch file with manual node adjustment, tested push-pull formulas, and quick 12-24 hour standard turnaround."
     },
     {
       "type": "p",

@@ -39,7 +39,7 @@ export const post: BlogPost = {
     },
     {
       "question": "How long does it take a professional digitizer to convert a logo to DST?",
-      "answer": "Standard left chest logos take 30 to 60 minutes of manual digitizing by an experienced puncher. At Velora Digitizing, completed files are delivered within 8 to 24 hours."
+      "answer": "Standard left chest logos take 30 to 60 minutes of manual digitizing by an experienced puncher. At Velora Digitizing, Standard plan files are delivered within 12 to 24 hours."
     }
   ],
   "content": [

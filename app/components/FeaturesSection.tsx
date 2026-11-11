@@ -12,7 +12,7 @@ const FEATURES: Feature[] = [
   {
     icon: "zap",
     title: "Fast Delivery",
-    desc: "8 to 24 hour turnaround on orders",
+    desc: "12 to 24 hour standard turnaround",
   },
   {
     icon: "award",

@@ -4,14 +4,14 @@ import RelatedGuides from "../components/RelatedGuides";
 export const metadata: Metadata = {
   title: { absolute: "Custom Patch Digitizing: Embroidered, PVC & Chenille Files" },
   description:
-    "Patch digitizing files from $12.99 per design: merrow or satin borders, backing-specific settings, DST, PES, EXP & JEF formats in 8-24 hours. Finished patches on request.",
+    "Patch digitizing files from $12.99 per design: merrow or satin borders, backing-specific settings, DST, PES, EXP & JEF formats in 12-24 hours. Finished patches on request.",
   alternates: {
     canonical: "https://www.veloradigitizing.com/patches",
   },
   openGraph: {
     title: "Custom Patch Digitizing: Embroidered, PVC & Chenille Files",
     description:
-      "Patch digitizing files from $12.99 per design: merrow or satin borders, backing-specific settings and all machine formats in 8-24 hours. Finished patches on request.",
+      "Patch digitizing files from $12.99 per design: merrow or satin borders, backing-specific settings and all machine formats in 12-24 hours. Finished patches on request.",
     url: "https://www.veloradigitizing.com/patches",
     siteName: "Velora Digitizing",
     images: [
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Custom Patch Digitizing: Embroidered, PVC & Chenille Files",
     description:
-      "Custom patch digitizing in any shape, size or backing: merrow, chenille, woven, PVC and iron-on patch files in 8-24h.",
+      "Custom patch digitizing in any shape, size or backing: merrow, chenille, woven, PVC and iron-on patch files in 12-24h.",
     images: ["/images/og/og-patches.jpg"],
   },
 };
@@ -123,7 +123,7 @@ const patchesJsonLd = {
           "name": "How long does patch digitizing take?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Standard turnaround is 24 hours for the digitized file. Rush delivery under 12 hours is available for an additional 30% fee. Physical patch manufacturing takes 7-10 business days after file approval.",
+            "text": "Patch files on the Standard plan are delivered in 12 to 24 hours, and on the Basic plan in 24 to 48 hours. The Rush plan ($19.99) delivers in 2 to 4 hours. Physical patch manufacturing takes 7-10 business days after file approval.",
           },
         },
         {
@@ -167,6 +167,8 @@ export default function PatchesLayout({
           "custom-patch-types-embroidered-woven-pvc-leather-chenille",
           "custom-leather-patches-for-hats-guide",
           "applique-embroidery-digitizing-guide",
+          "iron-on-vs-sew-on-patches",
+          "chenille-and-varsity-jacket-patch-digitizing-guide",
         ]}
       />
     </>

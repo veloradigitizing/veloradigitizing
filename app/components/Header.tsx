@@ -40,6 +40,7 @@ const NAV_LINKS = [
       { href: "/services/applique-digitizing", label: "Applique Digitizing" },
       { href: "/patches", label: "Patches Service" },
       { href: "/vector-art", label: "Vector Art Service" },
+      { href: "/pricing", label: "Pricing" },
     ],
   },
   { href: "/portfolio", label: "Portfolio" },

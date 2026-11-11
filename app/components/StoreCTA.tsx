@@ -9,7 +9,7 @@ export default function StoreCTA({
   features = [
     { icon: "rocket" as IconName, label: "Super Fast Turnaround" },
     { icon: "award" as IconName, label: "High Quality Stitching" },
-    { icon: "refresh" as IconName, label: "Unlimited Revisions" },
+    { icon: "refresh" as IconName, label: "Free Revisions" },
     { icon: "shield" as IconName, label: "100 Percent Satisfaction Guaranteed" },
   ],
 }: {

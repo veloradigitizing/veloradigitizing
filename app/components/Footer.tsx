@@ -55,6 +55,7 @@ const SOCIALS = [
 const QUICK_LINKS = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
+  { label: "Digitizing Pricing", href: "/pricing" },
   { label: "Patch Samples", href: "/store" },
   { label: "Felt Patches", href: "/portfolio?category=felt-patches" },
   { label: "Twill Patches", href: "/portfolio?category=twill-patches" },
@@ -75,7 +76,7 @@ const SERVICE_LINKS = [
   { label: "Left Chest Logo Digitizing", href: "/portfolio?category=left-chest" },
   { label: "Chenille Patch Digitizing", href: "/portfolio?category=chenille" },
   { label: "Towel Monogram Digitizing", href: "/portfolio?category=towel" },
-  { label: "Felt & Twill Patch Samples", href: "/patches" },
+  { label: "Felt & Twill Patch Samples", href: "/store" },
 ];
 
 const BLOG_LINKS = [

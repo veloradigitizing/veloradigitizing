@@ -155,7 +155,7 @@ export default function RootLayout({
           "logo": "https://www.veloradigitizing.com/icon.png",
         },
         "description":
-          "Velora Digitizing provides custom embroidery digitizing, 3D puff cap digitizing, left chest logos, custom patch digitizing, and vector art conversion with 8-24h delivery and 100% satisfaction guaranteed.",
+          "Velora Digitizing provides custom embroidery digitizing, 3D puff cap digitizing, left chest logos, custom patch digitizing, and vector art conversion with 12-24h standard delivery and 100% satisfaction guaranteed.",
         "telephone": "+12136358137",
         "email": "info@veloradigitizing.com",
         "priceRange": "$6.99 - $19.99",

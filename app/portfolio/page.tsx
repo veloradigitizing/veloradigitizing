@@ -10,8 +10,8 @@ import CTABanner from "../components/CTABanner";
 
 const WHY_CHOOSE_ITEMS = [
   { icon: "diamond" as const, title: "Premium Quality", description: "Top-notch quality with perfect stitching and attention to every detail." },
-  { icon: "clock" as const, title: "Fast Delivery", description: "24 hours turnaround available. Rush delivery under 12 hours for urgent needs." },
-  { icon: "refresh" as const, title: "Unlimited Revisions", description: "We work until you are 100% satisfied. No extra charges, ever." },
+  { icon: "clock" as const, title: "Fast Delivery", description: "Standard plan files in 12 to 24 hours. Rush plan in 2 to 4 hours for urgent needs." },
+  { icon: "refresh" as const, title: "Free Revisions", description: "Every plan includes free revisions: 1 on Basic, 3 on Standard, unlimited on Rush." },
   { icon: "smile" as const, title: "Expert Digitizers", description: "Professional digitizers with 10+ years of experience in every stitch type." },
 ];
 
@@ -28,7 +28,7 @@ export default function PortfolioPage() {
         bgImage={portfolioBg}
         imageLabel="Showcase of embroidered Velora apparel and accessories"
         features={[
-          { icon: "trophy", title: "3,000+ Projects", sub: "3,000+ projects delivered" },
+          { icon: "trophy", title: "3,200+ Projects", sub: "3,200+ projects delivered" },
           { icon: "grid", title: "All Categories", sub: "Caps, jackets, bags & more" },
           { icon: "scissors", title: "Custom Work", sub: "Tailored to your design needs" },
           { icon: "star", title: "Top Rated", sub: "Top-rated by happy clients" },

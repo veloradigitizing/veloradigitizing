@@ -108,8 +108,8 @@ const WHY_ITEMS: { icon: IconName; title: string; description: string }[] = [
   },
   {
     icon: "infinity",
-    title: "Unlimited Revisions",
-    description: "Your satisfaction is our top priority.",
+    title: "Free Revisions",
+    description: "Included on every plan, unlimited on Rush.",
   },
   {
     icon: "shield",

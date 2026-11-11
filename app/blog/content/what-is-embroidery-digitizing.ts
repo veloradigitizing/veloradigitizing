@@ -28,7 +28,7 @@ export const post: BlogPost = {
   "faqs": [
     {
       "question": "How do I digitize for embroidery or digitize a logo?",
-      "answer": "To digitize a logo for machine embroidery: (1) Import high-resolution artwork or clean vector paths; (2) Set underlay stitching to secure the fabric grain; (3) Map needle paths and angles with proper pull compensation (0.2mm to 0.4mm); (4) Assign stitch densities (0.38-0.42mm for standard satin columns); and (5) Export machine-ready DST or PES stitch files. If you want flawless production without costly stitch breaks or puckering, Velora Digitizing delivers professional custom files within 8 to 24 hours."
+      "answer": "To digitize a logo for machine embroidery: (1) Import high-resolution artwork or clean vector paths; (2) Set underlay stitching to secure the fabric grain; (3) Map needle paths and angles with proper pull compensation (0.2mm to 0.4mm); (4) Assign stitch densities (0.38-0.42mm for standard satin columns); and (5) Export machine-ready DST or PES stitch files. If you want flawless production without costly stitch breaks or puckering, Velora Digitizing delivers professional custom files within 12 to 24 hours on the Standard plan."
     },
     {
       "question": "Is embroidery digitizing the same as graphic design or vectorizing?",
@@ -36,7 +36,7 @@ export const post: BlogPost = {
     },
     {
       "question": "How much does professional embroidery digitizing cost?",
-      "answer": "Standard left chest and cap designs (under 10,000 stitches) generally cost between $10 and $25. Large jacket backs (30,000 to 80,000 stitches) range from $45 to $85. At Velora Digitizing, all orders include free stitch quotes, sew-out proofs, and unlimited free revisions."
+      "answer": "Standard left chest and cap designs (under 10,000 stitches) generally cost between $10 and $25. Large jacket backs (30,000 to 80,000 stitches) range from $45 to $85. At Velora Digitizing, all orders include free stitch quotes, sew-out proofs, and free revisions on every plan."
     },
     {
       "question": "Can I use AI auto-digitizing software instead of hiring a digitizer?",
@@ -169,7 +169,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "High-quality digitizing protects your profit margins by preventing ruined garments and costly machine downtime. At Velora Digitizing, our seasoned punching artists deliver production-ready DST, PES, and EXP stitch files in 8 to 24 hours with free sew-out proofing. Explore our [custom embroidery digitizing services](/services), order specialized [3D puff digitizing](/services/3d-puff-digitizing) for raised headwear, [cap logo digitizing](/services/cap-logo-digitizing) for curved frames, [applique digitizing](/services/applique-digitizing) for varsity letters, or upload your artwork on our [contact page](/contact) for an immediate free quote."
+      "text": "High-quality digitizing protects your profit margins by preventing ruined garments and costly machine downtime. At Velora Digitizing, our seasoned punching artists deliver production-ready DST, PES, and EXP stitch files in 12 to 24 hours on the Standard plan with free sew-out proofing. Explore our [custom embroidery digitizing services](/services), order specialized [3D puff digitizing](/services/3d-puff-digitizing) for raised headwear, [cap logo digitizing](/services/cap-logo-digitizing) for curved frames, [applique digitizing](/services/applique-digitizing) for varsity letters, or upload your artwork on our [contact page](/contact) for an immediate free quote."
     },
     {
       "type": "h2",

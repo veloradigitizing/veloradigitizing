@@ -39,6 +39,8 @@ export interface FAQProps {
   className?: string;
   /** Optional DOM id so the section can be deep-linked (e.g. /store#faq). */
   id?: string;
+  /** Emit FAQPage JSON-LD. Set false when the page already outputs its own FAQPage node. Default: true */
+  schema?: boolean;
 }
 
 export function FAQ({
@@ -53,6 +55,7 @@ export function FAQ({
   maxWidthClass = "max-w-4xl",
   className = "",
   id,
+  schema = true,
 }: FAQProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   const [query, setQuery] = useState("");
@@ -282,8 +285,8 @@ export function FAQ({
         )}
       </div>
 
-      {/* schema.org FAQ structured data — helps Google rich results. */}
-      <script
+      {/* schema.org FAQ structured data. Skipped when the page emits its own FAQPage node. */}
+      {schema && <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
@@ -299,7 +302,7 @@ export function FAQ({
             })),
           }),
         }}
-      />
+      />}
     </section>
   );
 }

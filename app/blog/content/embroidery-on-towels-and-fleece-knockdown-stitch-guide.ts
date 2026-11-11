@@ -111,7 +111,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "At [Velora Digitizing](/services), our master punchers analyze your exact garment fabric and supply files with programmed color stops, calibrated knockdown underlay grids, and machine-tested sew-out files delivered in 8 to 24 hours."
+      "text": "At [Velora Digitizing](/services), our master punchers analyze your exact garment fabric and supply files with programmed color stops, calibrated knockdown underlay grids, and machine-tested sew-out files delivered in 12 to 24 hours on the Standard plan."
     },
     {
       "type": "p",

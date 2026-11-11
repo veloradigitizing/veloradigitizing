@@ -5,7 +5,7 @@ export const post: BlogPost = {
   "title": "Why US Embroidery Shops Outsource Digitizing: Cost, Quality & Speed",
   "metaTitle": "Outsource Embroidery Digitizing: US Guide",
   "description": "Discover why commercial embroidery shops and apparel decorators in the USA outsource digitizing. Compare in-house software & labor costs vs outsourced ROI.",
-  "excerpt": "Hiring full-time digitizers and paying thousands for software licenses can eat commercial embroidery shop margins. Learn why top US decorators outsource digitizing for 8-24h turnaround.",
+  "excerpt": "Hiring full-time digitizers and paying thousands for software licenses can eat commercial embroidery shop margins. Learn why top US decorators outsource digitizing for 12-24h turnaround.",
   "category": "Business",
   "tags": [
     "outsource embroidery digitizing",
@@ -39,7 +39,7 @@ export const post: BlogPost = {
     },
     {
       "question": "Can I request free revisions if the design doesn't stitch out properly?",
-      "answer": "Yes. Top-tier professional digitizing services like Velora Digitizing include unlimited free revisions and sew-out support until the file sews with 100% precision on your specific garment and machine setup."
+      "answer": "Yes. Top-tier professional digitizing services like Velora Digitizing include free revisions and sew-out support until the file sews with 100% precision on your specific garment and machine setup."
     }
   ],
   "content": [
@@ -139,7 +139,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "At **Velora Digitizing**, we partner with commercial embroidery shops across the United States and Canada, delivering 8 to 24-hour turnaround, guaranteed runability, and dedicated wholesale support. Submit your artwork today for an instant free stitch quote."
+      "text": "At **Velora Digitizing**, we partner with commercial embroidery shops across the United States and Canada, delivering 12 to 24-hour standard turnaround, guaranteed runability, and dedicated wholesale support. Submit your artwork today for an instant free stitch quote."
     },
     {
       "type": "p",

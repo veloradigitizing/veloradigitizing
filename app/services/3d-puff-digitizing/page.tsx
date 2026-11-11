@@ -346,6 +346,7 @@ export default function PuffDigitizingPage() {
 
       <FAQ
         items={PUFF_FAQS}
+        schema={false}
         title="Frequently Asked Questions"
         subtitle="Common questions about our 3D puff embroidery digitizing services."
       />

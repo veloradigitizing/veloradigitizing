@@ -680,3 +680,11 @@ Owner tasks in parallel: A4 Etsy/Fiverr, A7 Reddit/Facebook participation, A8 re
 - Should a free PNG-to-DST preview or quote tool be built? Decides the scope of A19.
 - ANSWERED 9 Nov: no backlink package was ever purchased (A30).
 - **Pricing page contradiction (new, blocks A6):** /pricing shows two price systems at once. The plan cards (pricing-data.ts) say Basic $6.99 / 24-48 h, Standard $12.99 / 12-24 h, Rush $19.99 / 2-4 h and "3D puff" under Rush. The per-service matrix and the pricing FAQs on the same page say left chest and cap $8, 3D puff $12, applique $12, mid-size $14, jacket back $18-$25, vector $10-$20, standard turnaround 8-24 h, rush +$5. The homepage hero says 8-24 h. Owner must pick one system; until then titles use $6.99 (the lowest displayed price) and per-plan delivery times only.
+
+## 11 Nov 2026 - site audit and pricing alignment (applied locally, uncommitted)
+
+- A6 resolved: owner confirmed the three plan cards in `app/components/pricing-data.ts` are the only real prices (Basic $6.99 / 24-48 h / 1 revision, Standard $12.99 / 12-24 h / 3 revisions, Rush $19.99 / 2-4 h / unlimited). /pricing matrix, turnaround tiers, FAQs, homepage, service pages, blog mentions and llms.txt now follow the plans. Site-wide short claim is "12-24 h standard delivery". Vector art ("from $10", its own rush/revision wording) was left unchanged because it is not covered by the plans.
+- Internal linking: /pricing added to header dropdown and footer; portfolio filter slugs fixed (left-chest, towel); dead `/services#pricing` link fixed; footer "Felt & Twill Patch Samples" now points to /store; newer posts added to RelatedGuides on service pages and /pricing.
+- Schema: duplicate FAQPage removed on 55 pages (`schema={false}` on FAQ where the page emits its own); BreadcrumbList added to /store; BlogPosting wordCount now counts tables.
+- /store copy expanded (231 to ~480 words); llms.txt prices corrected and Guides section added; project count unified to 3,200+.
+- Still open: chenille/bundles portfolio links (hidden designs), personal TikTok/X handles in sameAs, named blog author, unique covers for embroidery-vs-applique, how-to-applique-with-embroidery-machine, free-embroidery-file-converters.

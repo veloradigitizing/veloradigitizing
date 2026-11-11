@@ -86,7 +86,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Need your artwork cleaned up, vectorized, and digitized under one roof? Velora Digitizing provides complete vector conversion and embroidery digitizing services. Explore our [vector art solutions](/vector-art) today, review our [transparent digitizing pricing](/services#pricing), or compare digitizers in our [best online embroidery digitizing services comparison guide](/blog/best-online-embroidery-digitizing-services-comparison-guide)."
+      "text": "Need your artwork cleaned up, vectorized, and digitized under one roof? Velora Digitizing provides complete vector conversion and embroidery digitizing services. Explore our [vector art solutions](/vector-art) today, review our [transparent digitizing pricing](/pricing), or compare digitizers in our [best online embroidery digitizing services comparison guide](/blog/best-online-embroidery-digitizing-services-comparison-guide)."
     },
     {
       "type": "h2",

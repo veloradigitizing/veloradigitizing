@@ -26,7 +26,7 @@ const STEPS: { icon: IconName; step: string; title: string; sub: string }[] = [
     icon: "send",
     step: "04",
     title: "File Delivery",
-    sub: "Production-ready DST, PES & EXP files delivered in 8-24 hours.",
+    sub: "Production-ready DST, PES & EXP files delivered in 12-24 hours on the Standard plan.",
   },
 ];
 

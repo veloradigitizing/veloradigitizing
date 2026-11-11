@@ -102,6 +102,9 @@ export default function AppliqueDigitizingLayout({
           "applique-embroidery-digitizing-guide",
           "jacket-back-embroidery-digitizing-guide",
           "custom-patch-types-embroidered-woven-pvc-leather-chenille",
+          "embroidery-vs-applique",
+          "how-to-applique-with-embroidery-machine",
+          "what-is-tackle-twill",
         ]}
       />
     </>

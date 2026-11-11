@@ -4,23 +4,38 @@
 Velora Digitizing provides manual embroidery digitizing, 3D puff cap digitizing, custom patch digitizing & manufacturing, and raster-to-vector artwork conversion services. Every file is manually punched and machine test-sewn before delivery.
 
 ## Key Services
-- [Custom Embroidery Digitizing](https://www.veloradigitizing.com/services): Professional conversion of logos and artwork to machine stitch files (DST, PES, JEF, EXP, VP3). Turnaround in 8-24 hours.
+- [Custom Embroidery Digitizing](https://www.veloradigitizing.com/services): Professional conversion of logos and artwork to machine stitch files (DST, PES, JEF, EXP, VP3). Plans: Basic $6.99 (24-48 hours), Standard $12.99 (12-24 hours), Rush $19.99 (2-4 hours).
 - [3D Puff Cap Digitizing](https://www.veloradigitizing.com/services/3d-puff-digitizing): Raised dimensional foam embroidery digitizing for structured snapbacks, baseball hats, and beanies with clean column end-capping and high satin density.
 - [Cap Logo Digitizing](https://www.veloradigitizing.com/services/cap-logo-digitizing): Center-out, bottom-up stitch sequencing engineered for curved 270-degree cap frames.
 - [Applique Digitizing](https://www.veloradigitizing.com/services/applique-digitizing): Placement outlines, tackdown stitches, and satin cover borders for sports jerseys and varsity jackets.
 - [Vector Art Conversion](https://www.veloradigitizing.com/vector-art): Manual raster-to-vector tracing delivering AI, EPS, SVG, and PDF files for screen printing and embroidery.
 - [Custom Patches](https://www.veloradigitizing.com/patches): Custom patch digitizing and physical production (merrow border, laser cut, woven, PVC, chenille, iron-on, velcro).
 - [Felt & Twill Patch Samples](https://www.veloradigitizing.com/store): Browse custom felt and twill patch samples and request a quote for your own artwork.
-- [Digitizing Pricing & Rates](https://www.veloradigitizing.com/pricing): Flat-rate embroidery digitizing prices starting from $8 per design with free revisions and 24h turnaround.
-- [Portfolio](https://www.veloradigitizing.com/portfolio): Gallery of 3,000+ completed embroidery stitch-outs and vector designs.
+- [Digitizing Pricing & Rates](https://www.veloradigitizing.com/pricing): Flat-rate plans by stitch count: Basic $6.99 (up to 5,000 stitches, 1 revision, 24-48 hours), Standard $12.99 (up to 15,000 stitches, 3 revisions, 12-24 hours), Rush $19.99 (unlimited stitches and revisions, 2-4 hours).
+- [Portfolio](https://www.veloradigitizing.com/portfolio): Gallery of 3,200+ completed embroidery stitch-outs and vector designs.
 - [Blog & Guides](https://www.veloradigitizing.com/blog): In-depth tutorials on Illustrator to embroidery digitizing, manual vs AI auto-digitizing, PVC vs embroidered patches, embroidery file formats (DST vs PES vs JEF), 3D puff techniques, and logo preparation.
 - [How to Digitize in Illustrator](https://www.veloradigitizing.com/blog/digitize-logo-illustrator-embroidery): Complete vector preparation and DST/PES conversion guide.
 - [Manual vs AI Auto-Digitizing](https://www.veloradigitizing.com/blog/manual-digitizing-vs-ai-auto-digitizing): Stitch quality, push-pull compensation, and thread break comparison.
 - [Custom Patch Types Compared](https://www.veloradigitizing.com/blog/custom-patch-types-embroidered-woven-pvc-leather-chenille): Embroidered vs woven vs PVC vs leather vs chenille, including a PVC vs embroidered head-to-head on durability, detail, cost and backing options.
 
+## Guides
+- [Embroidery Digitizing Cost in 2026](https://www.veloradigitizing.com/blog/embroidery-digitizing-cost-pricing-guide): Flat rates, per-stitch prices and what providers publish.
+- [Embroidery Stitch Count Calculator](https://www.veloradigitizing.com/blog/how-to-estimate-embroidery-stitch-count): Free calculator and size chart by placement.
+- [Left Chest Embroidery Placement](https://www.veloradigitizing.com/blog/left-chest-logo-embroidery-digitizing-guide): Measurements, placement chart and logo size standards.
+- [Hat Logo Size and Cap Digitizing Guide](https://www.veloradigitizing.com/blog/cap-hat-logo-embroidery-digitizing-guide): Maximum cap logo sizes, stitch order and settings.
+- [3D Puff Embroidery Digitizing Guide](https://www.veloradigitizing.com/blog/3d-puff-embroidery-digitizing-guide): Foam, density settings and cap sequencing.
+- [Applique Digitizing Guide](https://www.veloradigitizing.com/blog/applique-embroidery-digitizing-guide): Placement, tackdown and border stitches.
+- [DST vs PES vs JEF File Formats](https://www.veloradigitizing.com/blog/dst-vs-pes-vs-jef-embroidery-file-formats): Which embroidery format each machine needs.
+- [Convert PNG or JPG to DST](https://www.veloradigitizing.com/blog/convert-png-jpg-to-dst-embroidery-file): Why images need digitizing and the conversion workflow.
+- [How to Open a DST File](https://www.veloradigitizing.com/blog/how-to-open-dst-embroidery-file): Free viewers for Windows, Mac and phone.
+- [Cutaway vs Tearaway Stabilizer](https://www.veloradigitizing.com/blog/embroidery-stabilizer-guide-cutaway-vs-tearaway): Stabilizer chart by fabric.
+- [How Much Does Embroidery Cost](https://www.veloradigitizing.com/blog/how-much-does-embroidery-cost): Pricing chart for shirts, hats and hoodies.
+- [What Is Embroidery Digitizing](https://www.veloradigitizing.com/blog/what-is-embroidery-digitizing): How artwork becomes a stitch file.
+- [All guides](https://www.veloradigitizing.com/blog): Full list of embroidery and digitizing guides.
+
 ## Technical Specifications
 - Supported Output Formats: DST (Tajima), PES (Brother/Babylock), JEF (Janome), EXP (Melco/Bernina), VP3 (Husqvarna/Pfaff), XXX (Singer), SVG, AI, EPS, PDF.
-- Turnaround Time: Standard 8-24 hours, Rush 2-8 hours.
+- Turnaround Time: Basic 24-48 hours, Standard 12-24 hours, Rush 2-4 hours.
 - Contact Email: info@veloradigitizing.com
 - Phone / WhatsApp: +1-213-635-8137
 - Website: https://www.veloradigitizing.com

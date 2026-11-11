@@ -59,7 +59,7 @@ const ARCHIVED_ITEMS = [
     title: "Left Chest Logos",
     image: "/images/left-chest-logo/corporate-left-chest-logo-embroidery-digitizing.webp",
     count: 23,
-    slug: "/portfolio?category=left-chest-logo",
+    slug: "/portfolio?category=left-chest",
   },
   {
     id: "3d-puff",
@@ -75,7 +75,7 @@ const ARCHIVED_ITEMS = [
     title: "Towel Embroidery",
     image: "/images/towel-design/elena-monogram-bath-towel-embroidery-digitizing-dst.webp",
     count: 4,
-    slug: "/portfolio?category=towel-design",
+    slug: "/portfolio?category=towel",
   },
   {
     id: "applique",

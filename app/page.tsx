@@ -54,14 +54,14 @@ export default function Home() {
           { text: "Custom Embroidery" },
           { text: "Digitizing Services", accent: true },
         ]}
-        description="We convert logos & artwork into production-ready embroidery files (DST, PES, EXP). Specialized in 3D puff, cap logos, left chest & fast 8-24h delivery."
+        description="We convert logos & artwork into production-ready embroidery files (DST, PES, EXP). Specialized in 3D puff, cap logos, left chest & fast 12-24h delivery."
         bgImage={homeBg}
         imageLabel="Velora multi-needle embroidery machine stitching a colorful lion-with-crown design"
         features={[
           {
             icon: "clock",
             title: "Fast Delivery",
-            sub: "Delivery within 8-24 hours",
+            sub: "Standard delivery in 12-24 hours",
           },
           {
             icon: "award",
@@ -102,8 +102,8 @@ export default function Home() {
           <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-xl border border-navy-950/10 bg-white p-5 shadow-sm">
               <h3 className="text-xs font-bold uppercase tracking-wider text-navy-950/60">Turnaround Speed</h3>
-              <p className="mt-2 font-serif text-lg font-bold text-navy-950">8 to 24 Hours</p>
-              <p className="mt-1 text-xs text-navy-950/70">Rush turnaround available in 2–4 hours for urgent production deadlines.</p>
+              <p className="mt-2 font-serif text-lg font-bold text-navy-950">12 to 24 Hours</p>
+              <p className="mt-1 text-xs text-navy-950/70">Standard plan. Basic delivers in 24–48 hours and Rush in 2–4 hours for urgent deadlines.</p>
             </div>
             <div className="rounded-xl border border-navy-950/10 bg-white p-5 shadow-sm">
               <h3 className="text-xs font-bold uppercase tracking-wider text-navy-950/60">Supported Formats</h3>
@@ -143,7 +143,7 @@ export default function Home() {
                     Custom raised EVA foam digitizing for snapbacks, caps, and streetwear hoodies with calibrated density and end-capping.
                   </p>
                 </div>
-                <span className="mt-3 text-[11px] font-semibold text-brand-600">DST, PES Files &middot; 8-24h Turnaround</span>
+                <span className="mt-3 text-[11px] font-semibold text-brand-600">DST, PES Files &middot; 12-24h Turnaround</span>
               </Link>
               <Link
                 href="/services/cap-logo-digitizing"
@@ -251,6 +251,7 @@ export default function Home() {
 
       <FAQ
         items={HOME_FAQS}
+        schema={false}
         title="Frequently Asked Questions"
         subtitle="Find answers to common questions about our embroidery digitizing services."
       />

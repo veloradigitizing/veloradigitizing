@@ -136,7 +136,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Stop wasting time and money on uncalibrated stitch files. At Velora Digitizing, every file is manually crafted by expert punchers and backed by free unlimited revisions. Explore our [digitizing services](/services) to get started today."
+      "text": "Stop wasting time and money on uncalibrated stitch files. At Velora Digitizing, every file is manually crafted by expert punchers and backed by free revisions on every plan. Explore our [digitizing services](/services) to get started today."
     },
     {
       "type": "h2",

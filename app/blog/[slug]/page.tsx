@@ -272,8 +272,10 @@ export default async function BlogPostPage({ params }: Props) {
               ? block.text
               : "items" in block
                 ? block.items.join(" ")
-                : "";
-          return total + text.split(/\s+/).length;
+                : "rows" in block
+                  ? [block.caption, ...block.headers, ...block.rows.flat()].join(" ")
+                  : "";
+          return total + text.split(/\s+/).filter(Boolean).length;
         }, 0),
         image: post.image
           ? [`${BASE_URL}${post.image}`]
@@ -553,6 +555,7 @@ export default async function BlogPostPage({ params }: Props) {
 
       <FAQ
         items={post.faqs}
+        schema={false}
         title="Questions About This Topic"
         subtitle="Quick answers related to this article."
         searchable={false}
