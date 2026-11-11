@@ -705,3 +705,39 @@ Owner tasks in parallel: A4 Etsy/Fiverr, A7 Reddit/Facebook participation, A8 re
 - Six hidden bundle product URLs (/store/50-patches-value-pack etc.) were 404 while still getting impressions; now 308 to /store via LEGACY_STORE_SLUGS in next.config.ts.
 - Checks: build 78 pages, 68 URLs all 200, no invalid schema.
 - Recommendation recorded: pause the 14 Nov batch release until these posts are re-crawled; request indexing for the nine upgraded URLs after deploy.
+
+**12 Nov 2026, Semrush bulk check for existing posts (US, volume / KD) and second upgrade round (applied locally, uncommitted):**
+
+| Keyword | Vol | KD | Post |
+|---|---:|---:|---|
+| satin stitch embroidery | 3,600 | 10 | satin-stitch-embroidery-guide (upgraded) |
+| multi needle embroidery machine | 1,900 | 5 | multi-needle-embroidery-machine-guide (upgraded) |
+| embroidery fill stitches | 720 | 9 | embroidery-fill-stitches-guide (upgraded) |
+| how to start an embroidery business / embroidery business | 720 / 720 | 8 / 9 | how-to-start-an-embroidery-business (upgraded) |
+| what is tackle twill / tackle twill | 260 / 1,600 | 8 / 16 | what-is-tackle-twill (upgraded) |
+| dst embroidery file | 260 | 4 | how-to-open-dst-embroidery-file (upgraded) |
+| best fonts for embroidery | 210 | 5 | best-fonts-for-embroidery (upgraded) |
+| iron on vs sew on patches | 170 | 4 | iron-on-vs-sew-on-patches (upgraded) |
+| baby blanket embroidery | 110 | 6 | baby-blanket-embroidery-guide (next) |
+| embroidery underlay | 90 | 9 | embroidery-underlay-types-explained (next) |
+| embroidery on towels | 70 | 9 | towel knockdown guide (next) |
+| embroidery thread weight | 70 | 3 | embroidery-thread-weight-guide (upgraded) |
+| embroidery hoop sizes | 390 | 12 | upgraded |
+| how much does embroidery cost | 390 | 15 | upgraded |
+| embroidery needle sizes | 720 | 15 | upgraded |
+| metallic embroidery thread | 720 | 15 | metallic-embroidery-thread-guide (next, thin) |
+| tote bag embroidery | 320 | 16 | thin |
+| sleeve embroidery | 210 | 15 | thin |
+| screen printing vs embroidery | 260 | 14 | unreleased batch post |
+| applique embroidery | 3,600 | 17 | applique guide |
+| 3d puff embroidery | 720 | 16 | puff guide |
+| leather patches for hats | 1,000 | 22 | hard |
+| best polo shirts for embroidery | 720 | 23 | hard |
+| chenille patches / custom chenille patches | 2,400 / 1,300 | 29 / 22 | hard |
+| beanie embroidery | 260 | 31 | hard |
+| how to iron on a patch / how to sew on a patch | 3,600 / 2,400 | 27 / 35 | hard |
+
+No real volume (0-30): embroidery puckering, knockdown stitch, outsource embroidery digitizing, vector art for screen printing, how to machine embroider small letters, how to prepare a logo for embroidery.
+
+- Content audit of all 53 posts: no duplicate content (max 1.3% shingle overlap, no repeated sentences); about 20 posts have under 720 body words and no table.
+- Upgraded with tables, hand-embroidery sections and new FAQs: satin stitch, fill stitches, tackle twill, iron-on vs sew-on, start an embroidery business. Build passed (78 pages).
