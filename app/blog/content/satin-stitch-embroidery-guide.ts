@@ -264,7 +264,7 @@ export const post: BlogPost = {
       "items": [
         "**Gaps or fabric showing:** add underlay, tighten density slightly, add pull compensation.",
         "**Loose, loopy stitches:** column too wide; split it or switch to fill.",
-        "**Bobbin thread showing on top:** check tension; see embroidery machine thread tension.",
+        "**Bobbin thread showing on top:** check tension; see [embroidery machine thread tension](/blog/embroidery-machine-thread-tension-guide).",
         "**Puckering around columns:** use firmer stabilizer and check density; see [how to fix puckering](/blog/fix-embroidery-fabric-puckering-and-thread-breaks).",
         "**Thread breaks on satin:** change the needle and slow down; see the [needle size guide](/blog/embroidery-machine-needle-size-guide)."
       ]

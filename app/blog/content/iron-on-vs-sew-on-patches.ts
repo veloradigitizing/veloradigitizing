@@ -120,7 +120,7 @@ export const post: BlogPost = {
     {
       "type": "ul",
       "items": [
-        "Denim jackets, cotton caps and canvas bags; see our denim jacket embroidery guide and [tote bag embroidery guide](/blog/tote-bag-embroidery-guide).",
+        "Denim jackets, cotton caps and canvas bags; see our [denim jacket embroidery guide](/blog/denim-jacket-embroidery-guide) and [tote bag embroidery guide](/blog/tote-bag-embroidery-guide).",
         "Fashion and merch where speed matters.",
         "Customers applying patches themselves at home.",
         "Positioning a patch before stitching it permanently."
@@ -134,9 +134,9 @@ export const post: BlogPost = {
       "type": "ul",
       "items": [
         "Uniforms, workwear and anything industrially washed.",
-        "Nylon, polyester, leather and heat-sensitive fabrics; see embroidery on leather.",
+        "Nylon, polyester, leather and heat-sensitive fabrics; see [embroidery on leather](/blog/embroidery-on-leather-guide).",
         "Curved or flexible areas such as sleeves and caps; see [sleeve embroidery](/blog/sleeve-embroidery-guide).",
-        "Name patches on work shirts; see embroidered name patches.",
+        "Name patches on work shirts; see [embroidered name patches](/blog/embroidered-name-patches-guide).",
         "Heavy patches like chenille; see the [chenille and varsity patch guide](/blog/chenille-and-varsity-jacket-patch-digitizing-guide)."
       ]
     },
@@ -233,7 +233,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Patches are a great alternative when an item is hard to hoop, such as structured caps, backpacks and finished leather goods, or when you want to make patches in bulk and apply them later. Direct embroidery looks more integrated on polos and hoodies. Compare the options in embroidery vs screen printing and the [custom patch types guide](/blog/custom-patch-types-embroidered-woven-pvc-leather-chenille)."
+      "text": "Patches are a great alternative when an item is hard to hoop, such as structured caps, backpacks and finished leather goods, or when you want to make patches in bulk and apply them later. Direct embroidery looks more integrated on polos and hoodies. Compare the options in [embroidery vs screen printing](/blog/embroidery-vs-screen-printing) and the [custom patch types guide](/blog/custom-patch-types-embroidered-woven-pvc-leather-chenille)."
     },
     {
       "type": "p",

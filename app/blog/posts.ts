@@ -55,6 +55,15 @@ import post_tote_bag_embroidery_guide from './content/tote-bag-embroidery-guide'
 import post_iron_on_vs_sew_on_patches from './content/iron-on-vs-sew-on-patches';
 import post_how_to_digitize_embroidery_designs from './content/how-to-digitize-embroidery-designs';
 import post_flat_embroidery_vs_3d_puff from './content/flat-embroidery-vs-3d-puff';
+import post_brother_embroidery_machine_file_type from './content/brother-embroidery-machine-file-type';
+import post_chain_stitch_embroidery_guide from './content/chain-stitch-embroidery-guide';
+import post_denim_jacket_embroidery_guide from './content/denim-jacket-embroidery-guide';
+import post_embroidered_name_patches_guide from './content/embroidered-name-patches-guide';
+import post_embroidery_machine_thread_tension_guide from './content/embroidery-machine-thread-tension-guide';
+import post_embroidery_on_leather_guide from './content/embroidery-on-leather-guide';
+import post_embroidery_vs_screen_printing from './content/embroidery-vs-screen-printing';
+import post_how_to_embroider_a_shirt from './content/how-to-embroider-a-shirt';
+import post_how_to_remove_embroidery_from_a_shirt from './content/how-to-remove-embroidery-from-a-shirt';
 
 export const BLOG_POSTS: BlogPost[] = [
   post_3d_puff_embroidery_digitizing_guide,
@@ -110,6 +119,15 @@ export const BLOG_POSTS: BlogPost[] = [
   post_iron_on_vs_sew_on_patches,
   post_how_to_digitize_embroidery_designs,
   post_flat_embroidery_vs_3d_puff,
+  post_brother_embroidery_machine_file_type,
+  post_chain_stitch_embroidery_guide,
+  post_denim_jacket_embroidery_guide,
+  post_embroidered_name_patches_guide,
+  post_embroidery_machine_thread_tension_guide,
+  post_embroidery_on_leather_guide,
+  post_embroidery_vs_screen_printing,
+  post_how_to_embroider_a_shirt,
+  post_how_to_remove_embroidery_from_a_shirt,
 ];
 
 export const BLOG_CATEGORIES = Array.from(

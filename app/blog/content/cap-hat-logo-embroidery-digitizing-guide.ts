@@ -278,7 +278,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "For premium shiny cap logos, see the metallic embroidery thread guide. Selling caps as a business? Read [how to start an embroidery business](/blog/how-to-start-an-embroidery-business)."
+      "text": "For premium shiny cap logos, see the [metallic embroidery thread guide](/blog/metallic-embroidery-thread-guide). Selling caps as a business? Read [how to start an embroidery business](/blog/how-to-start-an-embroidery-business)."
     }
   ]
 };

@@ -119,7 +119,7 @@ export const post: BlogPost = {
         "**Brick stitch:** rows of equal stitches offset like bricks for a flat, even fill.",
         "**Seed stitch:** tiny scattered stitches for a light, speckled texture.",
         "**French knots:** clustered knots for a raised, bumpy texture.",
-        "**Chain stitch rows:** lines of chain stitch packed together for a woven look."
+        "**Chain stitch rows:** lines of [chain stitch](/blog/chain-stitch-embroidery-guide) packed together for a woven look."
       ]
     },
     {
@@ -225,7 +225,7 @@ export const post: BlogPost = {
         "**Patterned fills:** fills with built-in textures such as waves or diamonds.",
         "**Gradient fills:** density changes across the shape to fade color.",
         "**Contour fills:** rows follow the shape's outline for a flowing look.",
-        "**Open or light fills:** wider spacing to reduce stitches on delicate fabrics or leather."
+        "**Open or light fills:** wider spacing to reduce stitches on delicate fabrics or [leather](/blog/embroidery-on-leather-guide)."
       ]
     },
     {

@@ -191,7 +191,7 @@ export const post: BlogPost = {
     },
     {
       type: 'p',
-      text: "Portraits look great on jacket backs and patches; see denim jacket embroidery and [how to make embroidered patches](/blog/how-to-make-embroidered-patches).",
+      text: "Portraits look great on jacket backs and patches; see [denim jacket embroidery](/blog/denim-jacket-embroidery-guide) and [how to make embroidered patches](/blog/how-to-make-embroidered-patches).",
     },
   ],
 };

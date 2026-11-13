@@ -116,7 +116,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Working on a specific jacket? See custom denim jacket embroidery, embroidery on leather and [tackle twill](/blog/what-is-tackle-twill) for big lettering with fewer stitches."
+      "text": "Working on a specific jacket? See [custom denim jacket embroidery](/blog/denim-jacket-embroidery-guide), [embroidery on leather](/blog/embroidery-on-leather-guide) and [tackle twill](/blog/what-is-tackle-twill) for big lettering with fewer stitches."
     }
   ]
 };

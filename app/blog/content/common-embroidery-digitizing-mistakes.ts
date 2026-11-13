@@ -166,7 +166,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Avoid these mistakes from the start with our how to digitize embroidery designs guide, and rule out machine causes with the thread tension guide. Stitch-type limits are explained in the [satin stitch](/blog/satin-stitch-embroidery-guide) and [fill stitch](/blog/embroidery-fill-stitches-guide) guides."
+      "text": "Avoid these mistakes from the start with our [how to digitize embroidery designs](/blog/how-to-digitize-embroidery-designs) guide, and rule out machine causes with the [thread tension guide](/blog/embroidery-machine-thread-tension-guide). Stitch-type limits are explained in the [satin stitch](/blog/satin-stitch-embroidery-guide) and [fill stitch](/blog/embroidery-fill-stitches-guide) guides."
     }
   ]
 };

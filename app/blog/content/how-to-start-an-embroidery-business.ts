@@ -39,7 +39,7 @@ export const post: BlogPost = {
     },
     {
       "question": "What sells best for a new embroidery business?",
-      "answer": "Caps, polos, hoodies and workwear for local businesses, teams and schools are steady sellers. Personalized items such as baby blankets, towels and tote bags work well online and at markets."
+      "answer": "Caps, polos, hoodies and workwear for local businesses, teams and schools are steady sellers. Personalized items such as [baby blankets](/blog/baby-blanket-embroidery-guide), towels and [tote bags](/blog/tote-bag-embroidery-guide) work well online and at markets."
     },
     {
       "question": "How do I price embroidery as a beginner?",
@@ -81,7 +81,7 @@ export const post: BlogPost = {
         ],
         [
           "Teams and schools",
-          "Caps, hoodies, jackets, name patches",
+          "Caps, hoodies, jackets, [name patches](/blog/embroidered-name-patches-guide)",
           "Seasonal bulk orders",
           "Busy before each season; names and numbers add setup time"
         ],
@@ -93,7 +93,7 @@ export const post: BlogPost = {
         ],
         [
           "Fashion and merch",
-          "Custom caps, denim jackets, patches",
+          "Custom caps, [denim jackets](/blog/denim-jacket-embroidery-guide), patches",
           "Small runs for brands and creators",
           "Design-led; quality expectations are high"
         ]
@@ -268,7 +268,7 @@ export const post: BlogPost = {
         "Approach local businesses, gyms, restaurants, schools and sports clubs.",
         "Offer a small first order at a fair price to earn reviews and referrals.",
         "Set up a Google Business Profile and simple website with your samples.",
-        "Explain the difference between embroidery and screen printing so customers choose the right option."
+        "Explain the difference between [embroidery and screen printing](/blog/embroidery-vs-screen-printing) so customers choose the right option."
       ]
     },
     {

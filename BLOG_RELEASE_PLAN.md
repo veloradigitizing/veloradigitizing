@@ -20,3 +20,6 @@ The script copies the post files and covers from `origin/content/blog-batch-20`,
 | 4 (28 Nov 2026) | sleeve-embroidery-guide, denim-jacket-embroidery-guide, brother-embroidery-machine-file-type, how-to-digitize-embroidery-designs (released early 11 Nov 2026, rewritten on main as the logo how-to; do not re-copy from the branch), baby-blanket-embroidery-guide | Planned |
 
 Before each release, check Search Console: if the previous week's posts are still "Discovered - currently not indexed" after two weeks, pause and add more internal links from indexed pages before releasing more.
+
+
+**13 Nov 2026:** all nine remaining batch-20 posts released on main by hand (not with the script, which would overwrite later edits to existing posts): embroidery-vs-screen-printing, chain-stitch-embroidery-guide, how-to-remove-embroidery-from-a-shirt, embroidered-name-patches-guide, embroidery-on-leather-guide, how-to-embroider-a-shirt, embroidery-machine-thread-tension-guide, denim-jacket-embroidery-guide, brother-embroidery-machine-file-type. Each got two tables and one extra FAQ before release; publishedAt 2026-11-13. 34 plain-text mentions in existing posts were turned back into links. The batch branch has no unreleased posts left.

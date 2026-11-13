@@ -134,7 +134,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Chenille machines also produce classic looped lettering; see chain stitch embroidery. For sewn fabric numbers and letters, read [what is tackle twill](/blog/what-is-tackle-twill)."
+      "text": "Chenille machines also produce classic looped lettering; see [chain stitch embroidery](/blog/chain-stitch-embroidery-guide). For sewn fabric numbers and letters, read [what is tackle twill](/blog/what-is-tackle-twill)."
     }
   ]
 };

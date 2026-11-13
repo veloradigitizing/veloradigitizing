@@ -135,7 +135,7 @@ export const post: BlogPost = {
       type: 'ol',
       items: [
         'Draw the design on felt or twill and place it in a hand embroidery hoop.',
-        'Embroider the design using [satin stitch](/blog/satin-stitch-embroidery-guide), fill stitches or chain stitch.',
+        'Embroider the design using [satin stitch](/blog/satin-stitch-embroidery-guide), fill stitches or [chain stitch](/blog/chain-stitch-embroidery-guide).',
         'Remove from the hoop and cut out the patch, leaving about 3 to 5 mm of fabric around the design.',
         'Finish the edge with a dense blanket stitch or whip stitch.',
         'Fuse a piece of felt or fusible web to the back to hide the stitches.',
@@ -148,7 +148,7 @@ export const post: BlogPost = {
       items: [
         '**Satin border:** made on any embroidery machine; clean and durable.',
         '**Merrowed border:** thick overlocked edge made on a merrow machine.',
-        '**Heat-seal backing:** iron-on; see iron-on vs sew-on patches.',
+        '**Heat-seal backing:** iron-on; see [iron-on vs sew-on patches](/blog/iron-on-vs-sew-on-patches).',
         '**Hook-and-loop:** removable patches for uniforms and bags.',
         '**Other styles:** see [custom patch types: embroidered, woven, PVC, leather and chenille](/blog/custom-patch-types-embroidered-woven-pvc-leather-chenille).',
       ],
@@ -160,7 +160,7 @@ export const post: BlogPost = {
         'Keep shapes simple; round, oval, square and shield shapes are easiest to cut and border.',
         'Keep text bold and above about 5 mm tall; see [best fonts for embroidery](/blog/best-fonts-for-embroidery).',
         'Use a contrasting border color to frame the design.',
-        'For name patches, see embroidered name patches.',
+        'For name patches, see [embroidered name patches](/blog/embroidered-name-patches-guide).',
         'For photo patches, see [convert a photo to embroidery](/blog/convert-photo-to-embroidery-guide).',
       ],
     },

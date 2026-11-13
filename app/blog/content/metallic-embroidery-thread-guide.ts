@@ -39,7 +39,7 @@ export const post: BlogPost = {
     },
     {
       "question": "What tension should I use with metallic thread?",
-      "answer": "Lower the top tension compared with standard polyester thread so the metallic thread feeds without stress. Test with a satin column and check the back; see our thread tension guide."
+      "answer": "Lower the top tension compared with standard polyester thread so the metallic thread feeds without stress. Test with a satin column and check the back; see our [thread tension guide](/blog/embroidery-machine-thread-tension-guide)."
     },
     {
       "question": "Can any design be stitched in metallic thread?",

@@ -238,7 +238,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Need name files or a custom motif for blankets? [Send your design](/contact) or see [digitizing prices](/pricing). For matching gifts, see [tote bag embroidery](/blog/tote-bag-embroidery-guide) and embroidered name patches."
+      "text": "Need name files or a custom motif for blankets? [Send your design](/contact) or see [digitizing prices](/pricing). For matching gifts, see [tote bag embroidery](/blog/tote-bag-embroidery-guide) and [embroidered name patches](/blog/embroidered-name-patches-guide)."
     }
   ]
 };

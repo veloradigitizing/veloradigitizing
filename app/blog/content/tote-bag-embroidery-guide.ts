@@ -117,7 +117,7 @@ export const post: BlogPost = {
     { type: 'h2', text: 'Selling Embroidered Tote Bags' },
     {
       type: 'p',
-      text: 'Totes are a popular product for small businesses, markets and corporate gifts. Compare costs in [how much embroidery costs](/blog/how-much-does-embroidery-cost), and for large color graphics see embroidery vs screen printing. Starting out? Read [how to start an embroidery business](/blog/how-to-start-an-embroidery-business).',
+      text: 'Totes are a popular product for small businesses, markets and corporate gifts. Compare costs in [how much embroidery costs](/blog/how-much-does-embroidery-cost), and for large color graphics see [embroidery vs screen printing](/blog/embroidery-vs-screen-printing). Starting out? Read [how to start an embroidery business](/blog/how-to-start-an-embroidery-business).',
     },
     {
       type: 'p',

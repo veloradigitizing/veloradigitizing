@@ -258,7 +258,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Next steps: learn [how to make embroidered patches](/blog/how-to-make-embroidered-patches), compare iron-on vs sew-on patches and plan uniform embroidered name patches."
+      "text": "Next steps: learn [how to make embroidered patches](/blog/how-to-make-embroidered-patches), compare [iron-on vs sew-on patches](/blog/iron-on-vs-sew-on-patches) and plan uniform [embroidered name patches](/blog/embroidered-name-patches-guide)."
     }
   ]
 };

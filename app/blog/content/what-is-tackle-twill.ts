@@ -214,7 +214,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Send us the lettering or artwork, the finished size, the number of layers and colors, the garment and your machine format. We include the placement, tack-down and border steps, plus a cut file outline if you cut twill separately. For names on uniforms, also see embroidered name patches and sleeve embroidery. Check [digitizing prices](/pricing) or [contact us](/contact) for a quote."
+      "text": "Send us the lettering or artwork, the finished size, the number of layers and colors, the garment and your machine format. We include the placement, tack-down and border steps, plus a cut file outline if you cut twill separately. For names on uniforms, also see [embroidered name patches](/blog/embroidered-name-patches-guide) and [sleeve embroidery](/blog/sleeve-embroidery-guide). Check [digitizing prices](/pricing) or [contact us](/contact) for a quote."
     }
   ]
 };

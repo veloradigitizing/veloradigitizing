@@ -130,7 +130,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Balanced tension prevents many of these problems; see the embroidery machine thread tension guide. Dense fills are a common cause too; see the [fill stitches guide](/blog/embroidery-fill-stitches-guide)."
+      "text": "Balanced tension prevents many of these problems; see the [embroidery machine thread tension guide](/blog/embroidery-machine-thread-tension-guide). Dense fills are a common cause too; see the [fill stitches guide](/blog/embroidery-fill-stitches-guide)."
     }
   ]
 };

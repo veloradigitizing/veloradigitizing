@@ -260,7 +260,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Buying your first machine for a business? See [how to start an embroidery business](/blog/how-to-start-an-embroidery-business), and keep stitches balanced with the thread tension guide."
+      "text": "Buying your first machine for a business? See [how to start an embroidery business](/blog/how-to-start-an-embroidery-business), and keep stitches balanced with the [thread tension guide](/blog/embroidery-machine-thread-tension-guide)."
     }
   ]
 };

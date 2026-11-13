@@ -115,10 +115,10 @@ export const post: BlogPost = {
     {
       type: 'ul',
       items: [
-        '**T-shirts and polos:** small upper sleeve logos; see how to embroider a shirt and [best polo shirts](/blog/best-polo-shirts-for-embroidery).',
+        '**T-shirts and polos:** small upper sleeve logos; see [how to embroider a shirt](/blog/how-to-embroider-a-shirt) and [best polo shirts](/blog/best-polo-shirts-for-embroidery).',
         '**Hoodies:** upper sleeve or forearm; see the [hoodie embroidery guide](/blog/hoodie-embroidery-digitizing-guide).',
-        '**Work jackets:** shoulder flags and name patches.',
-        '**Denim jackets:** see denim jacket embroidery.',
+        '**Work jackets:** shoulder flags and [name patches](/blog/embroidered-name-patches-guide).',
+        '**Denim jackets:** see [denim jacket embroidery](/blog/denim-jacket-embroidery-guide).',
       ],
     },
     {
