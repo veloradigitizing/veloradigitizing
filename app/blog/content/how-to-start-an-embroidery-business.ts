@@ -2,20 +2,20 @@ import type { BlogPost } from '../types';
 
 export const post: BlogPost = {
   "slug": "how-to-start-an-embroidery-business",
-  "title": "How to Start an Embroidery Business: Equipment, Costs & First Customers",
-  "metaTitle": "How to Start an Embroidery Business (Step-by-Step)",
+  "title": "How to Start an Embroidery Business From Home: Equipment, Costs and First Customers",
+  "metaTitle": "How to Start an Embroidery Business From Home",
   "description": "How to start an embroidery business from home in 6 steps: choose a niche, equipment, a startup cost breakdown, pricing, digitizing and finding first customers.",
-  "excerpt": "A practical roadmap for starting an embroidery business: what to buy, what it costs, how to price jobs and how to win your first local customers.",
+  "excerpt": "A practical roadmap for starting an embroidery business from home: what to buy, what it costs, how to price jobs and how to win your first local customers.",
   "category": "Guides",
   "tags": [
+    "how to start an embroidery business from home",
     "how to start an embroidery business",
     "starting an embroidery business",
-    "embroidery business from home",
     "cost to start an embroidery business",
     "embroidery business tips"
   ],
   "publishedAt": "2026-11-07",
-  "updatedAt": "2026-11-12",
+  "updatedAt": "2026-11-14",
   "readTime": 10,
   "image": "/images/blog/how-to-start-an-embroidery-business.webp",
   "imagePrompt": "Home-based embroidery business workspace with a compact multi-needle machine, shelves of thread and blank caps, laptop and shipping boxes, natural light, 16:9.",
@@ -26,12 +26,12 @@ export const post: BlogPost = {
   },
   "faqs": [
     {
-      "question": "How much does it cost to start an embroidery business?",
-      "answer": "A small home-based start with a capable single-head multi-needle machine, hoops, a cap frame, starter thread, stabilizer and needles commonly costs several thousand dollars or more. A hobby-level start on a single-needle machine costs much less but limits what you can sell. Budget for blanks, digitizing and marketing as well."
-    },
-    {
       "question": "Can I start an embroidery business from home?",
       "answer": "Yes. Many embroidery businesses start in a spare room or garage. Check local business registration and zoning rules, make sure your floor and table can handle a heavy machine, and plan space for blank inventory and packing."
+    },
+    {
+      "question": "How much does it cost to start an embroidery business?",
+      "answer": "A small home-based start with a capable single-head multi-needle machine, hoops, a cap frame, starter thread, stabilizer and needles commonly costs several thousand dollars or more. A hobby-level start on a single-needle machine costs much less but limits what you can sell. Budget for blanks, digitizing and marketing as well."
     },
     {
       "question": "Do I need to learn digitizing to run an embroidery business?",
@@ -53,7 +53,7 @@ export const post: BlogPost = {
   "content": [
     {
       "type": "p",
-      "text": "To **start an embroidery business**, pick a niche (local businesses, teams, personalized gifts or online products), buy a reliable machine with the hoops and cap frame you need, set up a supply of blanks, thread and stabilizer, and decide how you will get designs digitized. Then set clear prices and minimums, make samples and start selling to the people you already know. Many successful shops start from home with one machine."
+      "text": "To **start an embroidery business from home**, pick a niche (local businesses, teams, personalized gifts or online products), buy a reliable machine with the hoops and cap frame you need, set up a supply of blanks, thread and stabilizer, and decide how you will get designs digitized. Then set clear prices and minimums, make samples and start selling to the people you already know. Many successful shops start from home with one machine."
     },
     {
       "type": "p",
@@ -125,6 +125,25 @@ export const post: BlogPost = {
         "Cutaway, tearaway and water-soluble topping; see the [stabilizer guide](/blog/embroidery-stabilizer-guide-cutaway-vs-tearaway).",
         "Needles in several sizes; see the [needle size guide](/blog/embroidery-machine-needle-size-guide).",
         "Scissors, trimming tools, a steamer and packaging supplies."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Setting Up an Embroidery Business at Home"
+    },
+    {
+      "type": "p",
+      "text": "Many embroidery businesses start in a spare room or a garage. Before the machine arrives, plan for these:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "**Space:** a sturdy table or the machine's own stand, plus room to hoop, trim, fold and pack.",
+        "**Noise:** multi-needle machines are loud at full speed, so think about neighbors, shared walls and working hours.",
+        "**Rules and registration:** check local zoning and home-business rules, register the business and get a sales tax permit if your state taxes what you sell.",
+        "**Insurance:** home insurance often excludes business equipment and stock, so ask about a home-business rider or a small business policy.",
+        "**Storage:** keep blanks, thread and stabilizer away from dust and direct sun, and track inventory from the first order.",
+        "**Customer handoff:** decide whether customers pick up from your home or whether you ship and deliver."
       ]
     },
     {
@@ -268,7 +287,7 @@ export const post: BlogPost = {
         "Approach local businesses, gyms, restaurants, schools and sports clubs.",
         "Offer a small first order at a fair price to earn reviews and referrals.",
         "Set up a Google Business Profile and simple website with your samples.",
-        "Explain the difference between [embroidery and screen printing](/blog/embroidery-vs-screen-printing) so customers choose the right option."
+        "Explain the difference between [embroidery and screen printing](/blog/embroidery-vs-screen-printing) so customers choose the right option. Do the same for [embroidery vs DTF printing](/blog/embroidery-vs-dtf-printing), the other question small-order customers ask most."
       ]
     },
     {

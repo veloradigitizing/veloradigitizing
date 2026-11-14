@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import RelatedGuides from "../../components/RelatedGuides";
 
 export const metadata: Metadata = {
-  title: { absolute: "Applique Digitizing Services | Custom Applique Embroidery (DST, PES)" },
+  title: { absolute: "Applique Digitizing Services | Applique Embroidery DST & PES" },
   description:
     "Applique digitizing for varsity jackets, hoodies and patches. Plan placement, tackdown, cutting and borders. See prices and requirements for DST and PES files.",
   alternates: {
     canonical: "https://www.veloradigitizing.com/services/applique-digitizing",
   },
   openGraph: {
+    type: "website",
     title: "Applique Embroidery Digitizing for Varsity & Hoodies",
     description:
       "Custom applique embroidery digitizing for varsity jackets, hoodies & patches. Clean placement runs, tackdown stitches, and machine-ready DST & PES files.",

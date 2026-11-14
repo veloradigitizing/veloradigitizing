@@ -9,13 +9,16 @@ export const post: BlogPost = {
   "category": "Tutorials",
   "tags": [
     "how to applique with embroidery machine",
+    "applique embroidery",
     "machine embroidery applique",
     "how to machine embroidery applique",
     "applique with brother embroidery machine",
     "applique embroidery tutorial",
-    "machine embroidery applique for beginners"
+    "machine embroidery applique for beginners",
+    "best fabric for machine applique"
   ],
   "publishedAt": "2026-11-09",
+  "updatedAt": "2026-11-14",
   "readTime": 11,
   "image": "/images/blog/applique-embroidery-digitizing-guide.webp",
   "imagePrompt": "Overhead photo of a single-needle home embroidery machine mid-applique: a hooped navy cotton t-shirt with a red fabric letter tacked down by a zigzag stitch, a pair of curved applique scissors trimming the excess fabric close to the stitch line, spools of thread and a sheet of fusible web beside the hoop, soft natural light, photorealistic, 16:9, no text.",
@@ -48,6 +51,10 @@ export const post: BlogPost = {
     {
       "question": "Why is my applique border not covering the fabric edge?",
       "answer": "Three causes account for almost every case. The fabric was trimmed too far from the tackdown, so the raw edge sits outside the border: trim closer. The fabric shifted between the tackdown and the border because the hoop moved or the garment was loose: hoop tighter and use adhesive spray. Or the file's border is too narrow or not offset over the tackdown, which is a digitizing fault: ask for the border width to be increased or the satin column to be shifted outward."
+    },
+    {
+      "question": "What is the best fabric for machine applique?",
+      "answer": "Quilting cotton with fusible web is the easiest for beginners. Felt and Ultrasuede do not fray, so they are forgiving to trim, and twill gives the classic varsity look. Avoid thin silks and satins until you have experience, and match the fabric weight to the garment."
     }
   ],
   "content": [
@@ -111,14 +118,56 @@ export const post: BlogPost = {
     {
       "type": "table",
       "caption": "Applique stitch steps and what to do at each stop",
-      "headers": ["Step", "Stitch type", "What the machine does", "What you do", "Common mistake"],
+      "headers": [
+        "Step",
+        "Stitch type",
+        "What the machine does",
+        "What you do",
+        "Common mistake"
+      ],
       "rows": [
-        ["1. Placement line", "Single run stitch", "Sews a thin outline of the shape on the garment, then stops", "Nothing yet; keep hands off the hoop", "Laying fabric before the line is sewn, so there is nothing to align to"],
-        ["2. Fabric stop", "Machine pause", "Waits for you to lay the fabric", "Lay fabric right side up covering the whole outline; smooth it; adhesive if needed", "Fabric too small on one side, leaving a gap the border cannot hide"],
-        ["3. Tackdown", "Zigzag, E-stitch or double run", "Stitches through the fabric along the outline, then stops", "Nothing; let it finish", "Stopping early or nudging the hoop mid-step"],
-        ["4. Trim stop", "Machine pause", "Waits for trimming", "Lift the hoop off the arm, trim to 1-2 mm outside the tackdown, reattach the hoop", "Unhooping the garment, or trimming too far from the stitches"],
-        ["5. Cover border", "Satin column 3.5-5 mm or decorative stitch", "Sews the border over the tackdown and raw edge", "Watch the first few inches for coverage", "Border set too narrow in the file, or fabric that shifted during trimming"],
-        ["6. Details", "Normal stitches", "Sews lettering, outlines, faces", "Change colours as prompted", "Skipping the stabilizer removal and press at the end"]
+        [
+          "1. Placement line",
+          "Single run stitch",
+          "Sews a thin outline of the shape on the garment, then stops",
+          "Nothing yet; keep hands off the hoop",
+          "Laying fabric before the line is sewn, so there is nothing to align to"
+        ],
+        [
+          "2. Fabric stop",
+          "Machine pause",
+          "Waits for you to lay the fabric",
+          "Lay fabric right side up covering the whole outline; smooth it; adhesive if needed",
+          "Fabric too small on one side, leaving a gap the border cannot hide"
+        ],
+        [
+          "3. Tackdown",
+          "Zigzag, E-stitch or double run",
+          "Stitches through the fabric along the outline, then stops",
+          "Nothing; let it finish",
+          "Stopping early or nudging the hoop mid-step"
+        ],
+        [
+          "4. Trim stop",
+          "Machine pause",
+          "Waits for trimming",
+          "Lift the hoop off the arm, trim to 1-2 mm outside the tackdown, reattach the hoop",
+          "Unhooping the garment, or trimming too far from the stitches"
+        ],
+        [
+          "5. Cover border",
+          "Satin column 3.5-5 mm or decorative stitch",
+          "Sews the border over the tackdown and raw edge",
+          "Watch the first few inches for coverage",
+          "Border set too narrow in the file, or fabric that shifted during trimming"
+        ],
+        [
+          "6. Details",
+          "Normal stitches",
+          "Sews lettering, outlines, faces",
+          "Change colours as prompted",
+          "Skipping the stabilizer removal and press at the end"
+        ]
       ]
     },
     {
@@ -151,7 +200,7 @@ export const post: BlogPost = {
     },
     {
       "type": "h2",
-      "text": "Choosing Applique Fabric and Stabilizer"
+      "text": "Best Fabric for Machine Applique (and Which Stabilizer to Use)"
     },
     {
       "type": "ul",
@@ -164,6 +213,72 @@ export const post: BlogPost = {
         "**Fusible web** on the back of any applique fabric reduces fraying, stops shifting and makes pre-cutting possible. Lightweight web keeps the piece soft; heavy web can make the stitched area stiff.",
         "**Stabilizer follows the garment, not the applique.** Cutaway or no-show mesh for knits, tearaway for wovens, both plus a topper for textured fabrics. See the [stabilizer by fabric chart](/blog/embroidery-stabilizer-guide-cutaway-vs-tearaway)."
       ]
+    },
+    {
+      "type": "table",
+      "caption": "Applique fabric comparison",
+      "headers": [
+        "Fabric",
+        "Frays?",
+        "Fusible web needed?",
+        "Best for",
+        "Watch out for"
+      ],
+      "rows": [
+        [
+          "Quilting cotton",
+          "Yes",
+          "Recommended",
+          "Kids clothing, blankets, beginners",
+          "Prewash to avoid shrink puckers."
+        ],
+        [
+          "Felt (wool blend)",
+          "No",
+          "Optional",
+          "Patches, ornaments, forgiving trimming",
+          "Acrylic craft felt pills and can melt under a hot iron."
+        ],
+        [
+          "Twill (poly or cotton)",
+          "Slightly",
+          "Recommended",
+          "Varsity letters, workwear, tackle twill",
+          "Thicker; trim close and use a wider border."
+        ],
+        [
+          "Ultrasuede or faux suede",
+          "No",
+          "Optional",
+          "Premium look, sharp edges",
+          "Use a sharp needle; avoid ironing directly."
+        ],
+        [
+          "Fleece and minky",
+          "No",
+          "No",
+          "Blankets, soft toys",
+          "Needs a water-soluble topper so the border does not sink."
+        ],
+        [
+          "Glitter, vinyl and metallic",
+          "No",
+          "No",
+          "Accent pieces",
+          "Test needle holes first; holes in vinyl are permanent."
+        ],
+        [
+          "Satin and very thin silks",
+          "Heavily",
+          "Yes, plus stabilizer",
+          "Formal pieces only",
+          "Shifts and frays; not for beginners."
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Match the applique fabric to the garment weight: a heavy twill on a thin T-shirt pulls and puckers, while light cotton on a sweatshirt can disappear. If you are still deciding between applique and plain stitching, read [embroidery vs applique](/blog/embroidery-vs-applique)."
     },
     {
       "type": "h2",

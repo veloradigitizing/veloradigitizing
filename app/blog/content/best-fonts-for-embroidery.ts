@@ -2,20 +2,20 @@ import type { BlogPost } from '../types';
 
 export const post: BlogPost = {
   "slug": "best-fonts-for-embroidery",
-  "title": "Best Fonts for Embroidery: Block, Script & Name Fonts That Stitch Clean",
-  "metaTitle": "Best Fonts for Embroidery (Names, Script & Block)",
-  "description": "Best fonts for embroidery by style, with example fonts that stitch clean, a minimum letter size chart in mm and inches, and what to use for names, caps and towels.",
-  "excerpt": "Some fonts look great on screen and fall apart in thread. Here is how to pick embroidery fonts for names, logos and monograms, with size rules that keep letters readable.",
+  "title": "Best Fonts for Small Embroidery Names (Plus Block, Script and Monogram Fonts)",
+  "metaTitle": "Best Fonts for Small Embroidery Names & Lettering",
+  "description": "Best fonts for small embroidery names: which block and script styles stay readable from 5 to 12 mm, a minimum letter size chart, and fonts for caps and towels.",
+  "excerpt": "Small names are where fonts fail first. Here are the font styles that stay readable at small sizes, the minimum letter heights to use, and what to pick for caps and towels.",
   "category": "Guides",
   "tags": [
+    "best fonts for small embroidery names",
     "best fonts for embroidery",
-    "best font for embroidery",
     "best fonts for embroidery names",
     "best cursive font for embroidery",
     "embroidery lettering"
   ],
   "publishedAt": "2026-11-07",
-  "updatedAt": "2026-11-12",
+  "updatedAt": "2026-11-14",
   "readTime": 10,
   "image": "/images/blog/best-fonts-for-embroidery.webp",
   "imagePrompt": "Flat lay of machine-embroidered lettering samples in block, sans-serif and script styles on navy, white and gray fabric swatches with thread spools, soft daylight, 16:9.",
@@ -25,6 +25,10 @@ export const post: BlogPost = {
     "href": "/services"
   },
   "faqs": [
+    {
+      "question": "What is the best font for small embroidery names?",
+      "answer": "A plain block or sans-serif font with even, fairly thick strokes, stitched in capitals at least about 5 mm tall. Below 5 mm, switch to 60 wt thread and a fine needle. Save script fonts for names about 12 mm tall and larger."
+    },
     {
       "question": "What is the best font for embroidery?",
       "answer": "For most jobs the best font for embroidery is a clean, medium-weight sans-serif or a simple block font, because its strokes are wide enough for satin stitches and its letter shapes stay open at small sizes. For names and gifts, a bold, connected script works well when the lettering is at least about 0.5 inches tall."
@@ -49,7 +53,7 @@ export const post: BlogPost = {
   "content": [
     {
       "type": "p",
-      "text": "The **best fonts for embroidery** have strokes wide enough for satin stitches, open letter shapes and little fine detail. Clean sans-serifs and block fonts are the safest choice for logos and uniforms, while bold scripts work well for names and monograms when they are stitched large enough. Thin serifs, hairline scripts and condensed fonts are the ones that usually fail."
+      "text": "The **best fonts for small embroidery names** are simple block or sans-serif fonts with even, fairly thick strokes and open letter shapes, stitched at least about 5 mm tall in capitals. Bold scripts also work for names, but only from about 12 mm tall, because their joins and loops close up below that. Thin serifs, hairline scripts and condensed fonts are the ones that usually fail."
     },
     {
       "type": "p",
@@ -141,7 +145,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Script fonts are popular for names, boutiques and gifts. The **best cursive fonts for embroidery** have fairly thick, even strokes and clean connections between letters. Avoid fonts with long hairline swashes. Give scripts more height than block text, because their lowercase letters are small compared with the capitals."
+      "text": "Script fonts are popular for names, boutiques and gifts. The **best cursive fonts for embroidery** have fairly thick, even strokes and clean connections between letters. Avoid fonts with long hairline swashes. Give scripts more height than block text, because their lowercase letters are small compared with the capitals. To stitch a real signature or handwritten note instead of a font, see [how to digitize handwriting for embroidery](/blog/how-to-digitize-handwriting-signature-embroidery)."
     },
     {
       "type": "h3",
@@ -207,7 +211,7 @@ export const post: BlogPost = {
     },
     {
       "type": "h2",
-      "text": "Best Fonts for Embroidery Names"
+      "text": "Best Fonts for Small Embroidery Names"
     },
     {
       "type": "p",
@@ -221,6 +225,41 @@ export const post: BlogPost = {
         "**Team jackets and hoodies:** collegiate block or bold script, often 1 to 3 inches tall.",
         "**Caps:** short names in bold block letters. Raised lettering can be done with [3D puff digitizing](/services/3d-puff-digitizing) when letters are wide enough."
       ]
+    },
+    {
+      "type": "table",
+      "caption": "Font choice for small embroidery names by letter height",
+      "headers": [
+        "Name height",
+        "Font style that stays readable",
+        "Avoid"
+      ],
+      "rows": [
+        [
+          "4 to 5 mm (60 wt thread)",
+          "Plain block capitals or a simple sans-serif",
+          "Script, serifs and lowercase-only names"
+        ],
+        [
+          "5 to 8 mm",
+          "Block, sans-serif or rounded sans; capitals read best",
+          "Thin serifs, condensed fonts and hairline scripts"
+        ],
+        [
+          "8 to 12 mm",
+          "Sans-serif upper and lowercase, slab serifs, a heavy script for short names",
+          "Scripts with long swashes or tight joins"
+        ],
+        [
+          "12 mm and up",
+          "Bold script, collegiate block and monogram styles",
+          "Very thin decorative fonts at any size"
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "For a set of uniforms with different names, size the layout for the longest name first, then keep the same letter height on every garment so the set looks consistent. Our [small lettering digitizing guide](/blog/how-to-digitize-small-text-micro-lettering-embroidery) covers the density and underlay that keep small names open."
     },
     {
       "type": "h2",

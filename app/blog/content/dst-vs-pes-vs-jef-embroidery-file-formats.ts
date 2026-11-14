@@ -2,20 +2,22 @@ import type { BlogPost } from '../types';
 
 export const post: BlogPost = {
   "slug": "dst-vs-pes-vs-jef-embroidery-file-formats",
-  "title": "DST vs PES vs JEF vs EXP: Which Embroidery File Format Do You Need?",
-  "metaTitle": "DST vs PES vs JEF Embroidery Formats",
-  "description": "Compare Tajima DST, Brother PES, Janome JEF, and Melco EXP embroidery file formats. Discover machine compatibility, color palette limits, and best uses.",
-  "excerpt": "Different embroidery machines require distinct file extensions. Learn the technical differences between commercial DST and home PES/JEF files.",
+  "title": "Embroidery File Formats by Machine Brand: DST vs PES vs JEF vs EXP",
+  "metaTitle": "Embroidery File Formats by Machine Brand",
+  "description": "Which embroidery file format does your machine use? Brand-by-brand chart (Brother PES, Janome JEF, Bernina EXP, Husqvarna VP3, Tajima DST) and how they differ.",
+  "excerpt": "A brand-by-brand chart of embroidery file formats, plus how DST, PES, JEF, EXP and VP3 differ and which one to order.",
   "category": "File Formats",
   "tags": [
-    "dst file",
-    "pes file",
-    "jef format",
+    "embroidery file formats by machine brand",
+    "what embroidery format does my machine use",
     "embroidery file formats",
+    "embroidery file types",
+    "janome embroidery file format",
+    "jef format",
     "machine compatibility"
   ],
   "publishedAt": "2026-08-19",
-  "updatedAt": "2026-11-05",
+  "updatedAt": "2026-11-14",
   "readTime": 7,
   "image": "/images/blog/dst-vs-pes-vs-jef-embroidery-file-formats.webp",
   "imagePrompt": "Flat lay of different embroidery machine memory cards and USB sticks labelled with DST, PES, JEF, and EXP file extensions next to vibrant spools of Madeira embroidery threads and a precision thread snip, bright photography, studio lighting, 16:9.",
@@ -25,6 +27,14 @@ export const post: BlogPost = {
     "href": "/services"
   },
   "faqs": [
+    {
+      "question": "What embroidery format does my machine use?",
+      "answer": "Brother and Baby Lock use PES, Janome uses JEF, Bernina and Melco use EXP, Husqvarna Viking and Pfaff use VP3, Singer uses XXX, and commercial machines such as Tajima, Barudan, SWF and Ricoma use DST. Many home machines also read DST. Check the compatible formats list in your manual for older models."
+    },
+    {
+      "question": "Can a home embroidery machine read DST files?",
+      "answer": "Many can. Most newer Brother, Baby Lock, Janome, Bernina and Singer models read DST in addition to their own format, but DST carries no thread colors, so the screen shows default colors and you follow the color sheet. Older home machines may only read their native format (PES, JEF, EXP or VP3)."
+    },
     {
       "question": "Can I convert a DST file directly into a PES file?",
       "answer": "Yes, using embroidery software like Wilcom TrueSizer, Hatch, or Embrilliance. However, DST files do not store exact thread RGB color codes (only color stop markers). When converting DST to PES, you must reassign the specific Madeira or Isacord thread numbers manually."
@@ -46,6 +56,90 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "Embroidery file formats divide into two primary categories: **Commercial Industrial Formats** (such as Tajima DST and Melco EXP) and **Home & Prosumer Formats** (such as Brother PES, Janome JEF, and Husqvarna VP3). Understanding their technical differences ensures seamless production."
+    },
+    {
+      "type": "h2",
+      "text": "Embroidery File Format by Machine Brand"
+    },
+    {
+      "type": "p",
+      "text": "Each machine brand reads its own native format, and most also read one or two others. Find your brand below, then check the \"compatible formats\" page of your machine manual, because older models may not read newer versions of the same format. If the right format still will not show up, see [why an embroidery machine is not reading a design file](/blog/embroidery-machine-not-reading-design-file)."
+    },
+    {
+      "type": "table",
+      "caption": "Embroidery file format by machine brand",
+      "headers": [
+        "Machine brand",
+        "Native format",
+        "Also commonly read",
+        "Notes"
+      ],
+      "rows": [
+        [
+          "Brother",
+          "PES",
+          "DST; PHC/PHX on some newer models",
+          "See the [Brother file type guide](/blog/brother-embroidery-machine-file-type) for PES versions."
+        ],
+        [
+          "Baby Lock",
+          "PES",
+          "DST",
+          "Same format family as Brother."
+        ],
+        [
+          "Janome and Elna",
+          "JEF (JEF+ on newer models)",
+          "DST on many models",
+          "JEF is tied to hoop size; a design larger than the selected hoop is rejected."
+        ],
+        [
+          "Bernina",
+          "EXP",
+          "DST on many models; ART is the software working file",
+          "Bernina software saves ART; machines sew EXP."
+        ],
+        [
+          "Husqvarna Viking and Pfaff",
+          "VP3",
+          "HUS (older Viking), VIP/PCS (older Pfaff)",
+          "VP3 stores color and hoop data."
+        ],
+        [
+          "Singer",
+          "XXX",
+          "PES and DST on many newer models",
+          "Check the model list; Singer support varies widely."
+        ],
+        [
+          "Melco",
+          "EXP",
+          "DST",
+          "Melco and Bernina share the EXP stitch format."
+        ],
+        [
+          "Tajima, Barudan, SWF, Ricoma, Happy, Redline",
+          "DST",
+          "Brand formats (Barudan FDR, Happy TAP)",
+          "DST is the commercial standard and opens almost everywhere."
+        ],
+        [
+          "ZSK",
+          "Z00",
+          "DST",
+          "Commercial; DST works for most jobs."
+        ],
+        [
+          "Toyota",
+          "10O",
+          "DST",
+          "Older commercial machines."
+        ]
+      ]
+    },
+    {
+      "type": "tip",
+      "text": "Recommendation: If you are unsure which machine your contract decorator uses, always request Tajima DST with an accompanying PDF Production Run Sheet. Every professional embroidery shop can run DST without issue."
     },
     {
       "type": "h2",
@@ -109,26 +203,6 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "VP3 is an advanced format that stores multi-hoop positioning data, thread weight calibrations, and precise color-layer sequencing for high-end European sewing and embroidery workstations."
-    },
-    {
-      "type": "h2",
-      "text": "Quick Reference: Machine & Format Compatibility Guide"
-    },
-    {
-      "type": "ul",
-      "items": [
-        "**Tajima, Barudan, Ricoma, SWF, Redline, Promaker:** Tajima `.DST`",
-        "**Melco EMT16, Bravo, Bernina Commercial:** Melco `.EXP`",
-        "**Brother (Home & PR 6/10 Needle), Baby Lock:** Brother `.PES`",
-        "**Janome Memory Craft, Elna:** Janome `.JEF`",
-        "**Husqvarna Viking, Pfaff:** Viking `.VP3` or `.HUS`",
-        "**Singer Embroidery Machines:** Singer `.XXX`",
-        "**ZSK Industrial Machines:** ZSK Transport `.Z00` or `.DST`"
-      ]
-    },
-    {
-      "type": "tip",
-      "text": "Recommendation: If you are unsure which machine your contract decorator uses, always request Tajima DST with an accompanying PDF Production Run Sheet. Every professional embroidery shop can run DST without issue."
     },
     {
       "type": "h2",

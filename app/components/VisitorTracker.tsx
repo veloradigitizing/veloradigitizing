@@ -51,8 +51,8 @@ export default function VisitorTracker() {
     const utmCampaign = searchParams?.get("utm_campaign") || undefined;
 
     // Report client-side route change to Google Analytics (gtag.js)
-    if (typeof (window as unknown as { gtag?: Function }).gtag === "function") {
-      (window as unknown as { gtag: Function }).gtag("event", "page_view", {
+    if (typeof (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag === "function") {
+      (window as unknown as { gtag: (...args: unknown[]) => void }).gtag("event", "page_view", {
         page_path: fullPath,
         page_location: url,
         page_title: document.title,

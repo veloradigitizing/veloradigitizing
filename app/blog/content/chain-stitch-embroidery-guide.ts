@@ -2,19 +2,20 @@ import type { BlogPost } from '../types';
 
 export const post: BlogPost = {
   "slug": "chain-stitch-embroidery-guide",
-  "title": "Chain Stitch Embroidery: How to Do It by Hand and on a Chain Stitch Machine",
-  "metaTitle": "Chain Stitch Embroidery: Hand & Machine Guide",
-  "description": "Learn chain stitch embroidery by hand, how chain stitch embroidery machines work, chain stitch vs chenille and how designs are digitized.",
-  "excerpt": "Chain stitch creates the looped, vintage lettering seen on workwear and varsity jackets. Here is how to sew it by hand and how chain stitch machines produce it.",
+  "title": "Chain Stitch Embroidery vs Regular Machine Embroidery (Plus How to Chain Stitch by Hand)",
+  "metaTitle": "Chain Stitch vs Regular Machine Embroidery Explained",
+  "description": "Chain stitch embroidery vs regular machine embroidery: how a single-thread chain stitch machine differs from a lockstitch machine, plus hand chain stitch steps.",
+  "excerpt": "Chain stitch makes the looped vintage lettering on workwear and varsity jackets. Here is how it differs from regular machine embroidery, and how to sew it by hand.",
   "category": "Guides",
   "tags": [
+    "chain stitch embroidery vs regular machine embroidery",
     "chain stitch embroidery",
     "chain stitch embroidery machine",
     "how to chain stitch embroidery",
-    "embroidery chain stitch",
     "chainstitch lettering"
   ],
   "publishedAt": "2026-11-13",
+  "updatedAt": "2026-11-14",
   "readTime": 8,
   "image": "/images/blog/chain-stitch-embroidery-guide.webp",
   "imagePrompt": "Close-up of vintage-style chain stitch embroidered script lettering in cream thread on a navy work jacket, looped stitch texture visible, 16:9.",
@@ -24,6 +25,10 @@ export const post: BlogPost = {
     "href": "/services"
   },
   "faqs": [
+    {
+      "question": "What is the difference between chain stitch embroidery and regular machine embroidery?",
+      "answer": "Chain stitch uses one thread looped from below by a hook, which makes a raised, looped line. Regular machine embroidery is a lockstitch: a top thread and a bobbin thread lock in the fabric to make flat satin, fill and run stitches. True chain stitch needs a chain stitch or chenille machine; a regular machine can only imitate the look."
+    },
     {
       "question": "What is chain stitch embroidery?",
       "answer": "Chain stitch embroidery is made of interlocking loops that form a line that looks like a chain. By hand it is a basic decorative stitch; by machine it creates the bold, looped lettering seen on vintage workwear, bowling shirts and varsity jackets."
@@ -52,7 +57,7 @@ export const post: BlogPost = {
   "content": [
     {
       "type": "p",
-      "text": "**Chain stitch embroidery** is made of linked loops that form a line like a chain. By hand, you bring the needle back into the same hole and catch the loop before pulling through. By machine, a **chain stitch embroidery machine** forms the loops from below with a hook and a single thread, creating the bold, slightly raised lettering seen on vintage workwear and varsity jackets."
+      "text": "**Chain stitch embroidery** is made of linked loops that form a line like a chain, while **regular machine embroidery** is a lockstitch: a top thread and a bobbin thread lock together inside the fabric to form satin, fill and run stitches. A chain stitch embroidery machine forms its loops from below with a hook and a single thread, which gives the bold, slightly raised, hand-drawn lettering seen on vintage workwear and varsity jackets. By hand, you bring the needle back into the same hole and catch the loop before pulling through."
     },
     {
       "type": "p",
@@ -154,15 +159,19 @@ export const post: BlogPost = {
     },
     {
       "type": "h2",
-      "text": "Chain Stitch vs Satin Stitch Lettering"
+      "text": "Chain Stitch Embroidery vs Regular Machine Embroidery"
+    },
+    {
+      "type": "p",
+      "text": "Regular machine embroidery means the lockstitch work of a standard single- or multi-needle machine: satin, fill and run stitches. A regular machine cannot form a true chain stitch, so a \"chain look\" on it is an imitation built from bean or triple-run outlines. Here is how the three compare:"
     },
     {
       "type": "table",
-      "caption": "Chain stitch vs satin stitch vs chenille",
+      "caption": "Chain stitch vs regular machine embroidery vs chenille",
       "headers": [
         "",
         "Chain stitch",
-        "Satin stitch",
+        "Regular machine embroidery (satin)",
         "Chenille"
       ],
       "rows": [
@@ -195,6 +204,12 @@ export const post: BlogPost = {
           "Script names on work shirts and jackets",
           "Logos, lettering, borders",
           "Varsity letters and patches"
+        ],
+        [
+          "If a stitch is cut",
+          "A single-thread chain can unravel from a loose end unless it is locked off",
+          "Lockstitches stay in place",
+          "Loops can be pulled; the backing holds them"
         ]
       ]
     },

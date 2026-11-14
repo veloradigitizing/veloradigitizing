@@ -64,6 +64,13 @@ import post_embroidery_on_leather_guide from './content/embroidery-on-leather-gu
 import post_embroidery_vs_screen_printing from './content/embroidery-vs-screen-printing';
 import post_how_to_embroider_a_shirt from './content/how-to-embroider-a-shirt';
 import post_how_to_remove_embroidery_from_a_shirt from './content/how-to-remove-embroidery-from-a-shirt';
+import post_how_to_resize_embroidery_designs from './content/how-to-resize-embroidery-designs';
+import post_jump_stitches_embroidery from './content/jump-stitches-embroidery';
+import post_embroidery_machine_not_reading_design_file from './content/embroidery-machine-not-reading-design-file';
+import post_how_to_digitize_handwriting_signature_embroidery from './content/how-to-digitize-handwriting-signature-embroidery';
+import post_embroidery_logo_size_chart from './content/embroidery-logo-size-chart';
+import post_how_to_embroider_a_hat_with_embroidery_machine from './content/how-to-embroider-a-hat-with-embroidery-machine';
+import post_embroidery_vs_dtf_printing from './content/embroidery-vs-dtf-printing';
 
 export const BLOG_POSTS: BlogPost[] = [
   post_3d_puff_embroidery_digitizing_guide,
@@ -128,6 +135,13 @@ export const BLOG_POSTS: BlogPost[] = [
   post_embroidery_vs_screen_printing,
   post_how_to_embroider_a_shirt,
   post_how_to_remove_embroidery_from_a_shirt,
+  post_how_to_resize_embroidery_designs,
+  post_jump_stitches_embroidery,
+  post_embroidery_machine_not_reading_design_file,
+  post_how_to_digitize_handwriting_signature_embroidery,
+  post_embroidery_logo_size_chart,
+  post_how_to_embroider_a_hat_with_embroidery_machine,
+  post_embroidery_vs_dtf_printing,
 ];
 
 export const BLOG_CATEGORIES = Array.from(

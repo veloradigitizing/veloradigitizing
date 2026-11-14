@@ -4,7 +4,7 @@ export const post: BlogPost = {
   "slug": "embroidery-machine-needle-size-guide",
   "title": "Machine Embroidery Needles: Size Chart, Types & When to Change Them",
   "metaTitle": "Machine Embroidery Needles: Size Chart & Types",
-  "description": "Machine embroidery needle size chart from 65/9 to 90/14 with blade diameter, fabric and thread for each size, ballpoint vs sharp by fabric and when to change needles.",
+  "description": "Machine embroidery needle size chart from 65/9 to 90/14 with blade diameter, fabric and thread per size, ballpoint vs sharp, and when to change needles.",
   "excerpt": "The wrong needle causes skipped stitches, holes and thread breaks. Here is how to match embroidery machine needles to thread, fabric and design.",
   "category": "Guides",
   "tags": [

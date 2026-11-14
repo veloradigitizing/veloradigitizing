@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     canonical: "https://www.veloradigitizing.com/contact",
   },
   openGraph: {
+    type: "website",
     title: "Contact Velora Digitizing | Free Quote & 24/7 Support",
     description:
       "Contact Velora Digitizing for free quotes, rush orders, or embroidery inquiries. Available 24/7 via WhatsApp, phone, or email. Get your free estimate now!",

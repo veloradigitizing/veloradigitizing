@@ -4,11 +4,12 @@ import RelatedGuides from "../components/RelatedGuides";
 export const metadata: Metadata = {
   title: { absolute: "Vector Art Conversion Services | Raster to Vector from $10" },
   description:
-    "Vector art services from $10: hand-traced raster to vector conversion of JPG and PNG logos into AI, EPS, SVG and PDF for screen printing, vinyl, DTF and embroidery. Free quote.",
+    "Vector art services from $10: hand-traced JPG and PNG logos redrawn as AI, EPS, SVG and PDF files for screen printing, vinyl, DTF and embroidery.",
   alternates: {
     canonical: "https://www.veloradigitizing.com/vector-art",
   },
   openGraph: {
+    type: "website",
     title: "Vector Art Conversion Services | Raster to Vector from $10",
     description:
       "Hand-traced vector art conversion: JPG and PNG logos redrawn as clean AI, EPS, SVG and PDF files for screen printing, vinyl and embroidery.",

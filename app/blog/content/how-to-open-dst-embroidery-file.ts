@@ -4,7 +4,7 @@ export const post: BlogPost = {
   "slug": "how-to-open-dst-embroidery-file",
   "title": "DST Embroidery File: What It Is and How to Open It (Windows, Mac, Phone)",
   "metaTitle": "DST Embroidery File: What It Is & How to Open It",
-  "description": "What a DST embroidery file is and how to open it on Windows, Mac or phone with free viewers. See what the DST format stores, what it leaves out and how to convert it.",
+  "description": "What a DST embroidery file is, how to open it on Windows, Mac or phone with free viewers, and how to edit it or change its thread colors.",
   "excerpt": "A DST file is a stitch file, not an image, so normal photo viewers cannot open it. Here is how to view, check and convert DST files for free, and when you need the original artwork instead.",
   "category": "Guides",
   "tags": [
@@ -13,10 +13,12 @@ export const post: BlogPost = {
     "dst format for embroidery",
     "how to open dst file",
     "open dst file",
-    "dst file viewer"
+    "dst file viewer",
+    "how to edit a dst file",
+    "change dst file colors"
   ],
   "publishedAt": "2026-11-07",
-  "updatedAt": "2026-11-12",
+  "updatedAt": "2026-11-14",
   "readTime": 9,
   "image": "/images/blog/how-to-open-dst-embroidery-file.webp",
   "imagePrompt": "Laptop showing embroidery software with a stitch preview of a flower emblem, a USB drive plugged in, and a multi-needle embroidery machine touchscreen beside it, bright light, 16:9.",
@@ -49,6 +51,10 @@ export const post: BlogPost = {
     {
       "question": "Can I edit or resize a DST file?",
       "answer": "Small changes are possible in embroidery software, but DST is a stitch-only format. Resizing more than about 10 to 20 percent can make stitches too dense or too loose, because the software cannot rebuild the original objects. For bigger changes, the design should be re-digitized."
+    },
+    {
+      "question": "How do I change the colors of a DST file?",
+      "answer": "A DST file stores color-change stops but no thread colors. Open it in a free editor such as Embrilliance Express or Wilcom TrueSizer, assign a thread color to each stop, then save it as PES or another color-aware format (or print a color sheet). On a commercial machine you simply set the needle colors at the machine."
     }
   ],
   "content": [
@@ -215,6 +221,74 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "Illustrator cannot open DST files and there is no reliable way to convert stitches back into clean vector art. If you need the design for print, signage or a new embroidery file, ask for the original artwork. If the artwork is lost, our [vector art conversion service](/vector-art) can redraw it as clean AI, EPS, SVG or PDF files."
+    },
+    {
+      "type": "h2",
+      "text": "How to Edit a DST File (and Change Its Colors)"
+    },
+    {
+      "type": "p",
+      "text": "A DST file is a list of needle movements plus jump, trim and color-change commands. It has no thread color data, no text objects and no shapes, so \"editing\" a DST means working with finished stitches. Some edits are safe; others need the original working file or a new file."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "Open the DST in a free editor such as Embrilliance Express, Wilcom TrueSizer or Ink/Stitch (Ink/Stitch imports it as a stitch plan).",
+        "Count the color stops and compare them with the color sheet from your digitizer, so each stop matches the right part of the design.",
+        "Assign a thread color to each stop. The preview will now look right, but the DST itself will not remember these colors.",
+        "To keep the colors, save a copy as PES, JEF or another format that stores color, or print a color sheet for the machine operator.",
+        "For position changes, rotate or mirror the whole design. Keep the original DST untouched as a backup."
+      ]
+    },
+    {
+      "type": "table",
+      "caption": "What you can and cannot edit in a DST file",
+      "headers": [
+        "Edit",
+        "Possible in a DST?",
+        "Notes"
+      ],
+      "rows": [
+        [
+          "Change thread colors",
+          "Yes",
+          "Colors are display only; save as PES or print a color sheet to keep them."
+        ],
+        [
+          "Rotate or mirror",
+          "Yes",
+          "Safe in any editor."
+        ],
+        [
+          "Delete a color block",
+          "Usually",
+          "Check that a trim is not lost at the join."
+        ],
+        [
+          "Resize up to about 10%",
+          "With care",
+          "Use software that recalculates stitches; check density on a test sew-out."
+        ],
+        [
+          "Resize more than 10-20%",
+          "No",
+          "Density and underlay no longer fit the size; the design needs re-digitizing."
+        ],
+        [
+          "Change text or spelling",
+          "No",
+          "DST has no text objects. You need the working file (such as EMB) or a new file."
+        ],
+        [
+          "Change density, underlay or stitch type",
+          "No",
+          "These were set when the file was digitized."
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "If an edit falls in the \"No\" rows, ask your digitizer for the working file or a revised file. Velora includes revisions on every plan (1 on Basic, 3 on Standard, unlimited on Rush), so spelling fixes and size changes are handled from the source file rather than forced into the DST."
     },
     {
       "type": "h2",

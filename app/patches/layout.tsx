@@ -4,11 +4,12 @@ import RelatedGuides from "../components/RelatedGuides";
 export const metadata: Metadata = {
   title: { absolute: "Custom Patch Digitizing: Embroidered, PVC & Chenille Files" },
   description:
-    "Patch digitizing files from $12.99 per design: merrow or satin borders, backing-specific settings, DST, PES, EXP & JEF formats in 12-24 hours. Finished patches on request.",
+    "Patch digitizing files from $12.99 per design: merrow or satin borders, backing-specific settings, DST, PES, EXP and JEF in 12-24 hours.",
   alternates: {
     canonical: "https://www.veloradigitizing.com/patches",
   },
   openGraph: {
+    type: "website",
     title: "Custom Patch Digitizing: Embroidered, PVC & Chenille Files",
     description:
       "Patch digitizing files from $12.99 per design: merrow or satin borders, backing-specific settings and all machine formats in 12-24 hours. Finished patches on request.",

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import type { ReactNode } from "react";
 import BlogImagePlaceholder from "../../components/BlogImagePlaceholder";
 import BlogCard from "../../components/BlogCard";
 import CTABanner from "../../components/CTABanner";
@@ -17,6 +16,7 @@ import {
 } from "../posts";
 
 import StitchCountCalculator from "../../components/StitchCountCalculator";
+import { renderInline, stripInline } from "../../components/inline-markup";
 
 const BASE_URL = "https://www.veloradigitizing.com";
 
@@ -46,14 +46,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const url = `${BASE_URL}/blog/${post.slug}`;
   const ogImage = post.image ?? "/images/og/og-home.jpg";
+  // Keep the <title> within ~60 characters so it is not truncated in search
+  // results: use the full brand suffix when it fits, a short one otherwise,
+  // and the bare meta title as a last resort.
+  const fullTitle = [
+    `${post.metaTitle} | Velora Digitizing`,
+    `${post.metaTitle} | Velora`,
+  ].find((t) => t.length <= 60) ?? post.metaTitle;
 
   return {
-    title: post.metaTitle,
+    title: { absolute: fullTitle },
     description: post.description,
     alternates: { canonical: url },
     openGraph: {
       type: "article",
-      title: `${post.metaTitle} | Velora Digitizing`,
+      title: fullTitle,
       description: post.description,
       url,
       siteName: "Velora Digitizing",
@@ -65,61 +72,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: `${post.metaTitle} | Velora Digitizing`,
+      title: fullTitle,
       description: post.description,
       images: [ogImage],
     },
   };
-}
-
-/**
- * Renders inline markdown-style links `[text](/href)` and `**bold**` inside
- * a paragraph. Internal links use next/link.
- */
-function renderInline(text: string): ReactNode[] {
-  const parts: ReactNode[] = [];
-  const pattern = /\[([^\]]+)\]\(([^)]+)\)|\*\*([^*]+)\*\*/g;
-  let last = 0;
-  let match: RegExpExecArray | null;
-  let key = 0;
-
-  while ((match = pattern.exec(text)) !== null) {
-    if (match.index > last) parts.push(text.slice(last, match.index));
-    if (match[1] !== undefined) {
-      const href = match[2];
-      const isInternal = href.startsWith("/");
-      parts.push(
-        isInternal ? (
-          <Link
-            key={key++}
-            href={href}
-            className="font-semibold text-brand-600 underline decoration-brand-600/30 underline-offset-2 hover:text-brand-700"
-          >
-            {match[1]}
-          </Link>
-        ) : (
-          <a
-            key={key++}
-            href={href}
-            className="font-semibold text-brand-600 underline decoration-brand-600/30 underline-offset-2 hover:text-brand-700"
-            rel="nofollow noopener noreferrer"
-            target="_blank"
-          >
-            {match[1]}
-          </a>
-        ),
-      );
-    } else {
-      parts.push(
-        <strong key={key++} className="font-semibold text-navy-950">
-          {match[3]}
-        </strong>,
-      );
-    }
-    last = pattern.lastIndex;
-  }
-  if (last < text.length) parts.push(text.slice(last));
-  return parts;
 }
 
 function slugify(text: string): string {
@@ -186,7 +143,7 @@ function Block({ block }: { block: BlogBlock }) {
         </aside>
       );
     case "calculator":
-      return <StitchCountCalculator />;
+      return <StitchCountCalculator headingLevel={2} />;
     case "table":
       return (
         <div className="mt-7 overflow-x-auto rounded-xl border border-navy-950/10">
@@ -313,7 +270,7 @@ export default async function BlogPostPage({ params }: Props) {
                 name: faq.question,
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: faq.answer,
+                  text: stripInline(faq.answer),
                 },
               })),
             },
@@ -489,9 +446,9 @@ export default async function BlogPostPage({ params }: Props) {
               </div>
               <div className="flex-1">
                 <div className="flex flex-wrap items-center gap-2">
-                  <h4 className="font-serif text-lg font-bold text-navy-950">
+                  <p className="font-serif text-lg font-bold text-navy-950">
                     Written by the Velora Digitizing Team
-                  </h4>
+                  </p>
                   <span className="rounded-full bg-brand-600/10 px-2.5 py-0.5 text-xs font-semibold text-brand-700">
                     Digitizing Studio
                   </span>

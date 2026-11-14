@@ -2,20 +2,21 @@ import type { BlogPost } from '../types';
 
 export const post: BlogPost = {
   "slug": "embroidered-name-patches-guide",
-  "title": "Embroidered Name Patches: Sizes, Fonts, Backings and How to Order",
-  "metaTitle": "Embroidered Name Patches: Sizes, Fonts & Backings",
-  "description": "Plan custom embroidered name patches for work shirts and uniforms: standard sizes, best fonts, borders, iron-on vs sew-on and bulk ordering.",
-  "excerpt": "Name patches are a uniform classic. Here is how to choose the size, font, border and backing for crisp, durable embroidered name patches.",
+  "title": "What Size Should an Embroidered Name Patch Be? Sizes, Fonts and Backings",
+  "metaTitle": "What Size Should an Embroidered Name Patch Be?",
+  "description": "What size should an embroidered name patch be? Standard sizes by shape, how many letters fit, placement on work shirts, plus fonts, borders and backings.",
+  "excerpt": "Most name patches are about 3.5 x 2 inches, but the right size depends on the shirt and the longest name. Sizes, letter counts, fonts and backings in one place.",
   "category": "Guides",
   "tags": [
+    "what size should an embroidered name patch be",
     "embroidered name patches",
     "custom embroidered name patches",
-    "embroidered patch name",
     "name tag patches for work shirts",
     "uniform name patches"
   ],
   "publishedAt": "2026-11-13",
-  "readTime": 7,
+  "updatedAt": "2026-11-14",
+  "readTime": 9,
   "image": "/images/blog/embroidered-name-patches-guide.webp",
   "imagePrompt": "Oval embroidered name patches with generic first names in script on white twill with red borders, one sewn on a gray work shirt, 16:9.",
   "imageAlt": "Oval embroidered name patches and one sewn on a gray work shirt",
@@ -25,7 +26,7 @@ export const post: BlogPost = {
   },
   "faqs": [
     {
-      "question": "What size are embroidered name patches?",
+      "question": "What size should an embroidered name patch be?",
       "answer": "The most common size is an oval or rectangle about 3.5 inches wide by 2 inches tall. Smaller name tapes are around 3 to 4 inches by 1 inch. Pick a size that leaves comfortable margins around the name."
     },
     {
@@ -52,7 +53,7 @@ export const post: BlogPost = {
   "content": [
     {
       "type": "p",
-      "text": "**Embroidered name patches** are usually ovals or rectangles about 3.5 x 2 inches, with a name in script or block lettering and a satin or merrowed border. For uniforms and work shirts, choose sew-on backing (or iron-on plus stitching) so patches survive repeated washing. Keep the lettering bold and at least about 5 mm tall so names stay readable."
+      "text": "An **embroidered name patch** should usually be about 3.5 x 2 inches on a standard work shirt, with a smaller 3 x 1.75 inch oval for women's cuts and small shirts, or a 3.5 to 5 x 1 inch name tape for tactical and security uniforms. Pick the size from your longest name so the letters stay at least about 5 mm tall. For uniforms that are washed often, choose sew-on backing (or iron-on plus stitching) and a satin or merrowed border."
     },
     {
       "type": "p",
@@ -96,6 +97,67 @@ export const post: BlogPost = {
           "About 3 inches across",
           "Short names or initials"
         ]
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What Size Should an Embroidered Name Patch Be?"
+    },
+    {
+      "type": "p",
+      "text": "On a standard work shirt, a name patch about 3.5 inches wide by 2 inches tall fits above the pocket without reaching the seams. Smaller shirts, women's cuts and thin fabrics look better with a 3 x 1.75 inch oval or a 3.5 x 1 inch name tape. The deciding factor is usually the longest name on your list, because the letters must stay at least about 5 mm tall to read across a counter or a shop floor."
+    },
+    {
+      "type": "table",
+      "caption": "How many characters fit on a name patch",
+      "headers": [
+        "Patch size",
+        "Letter height (approx.)",
+        "Characters on one line (approx.)"
+      ],
+      "rows": [
+        [
+          "3 x 1.75 in oval",
+          "8 to 10 mm",
+          "6 to 8"
+        ],
+        [
+          "3.5 x 2 in oval or rectangle",
+          "9 to 12 mm",
+          "8 to 10"
+        ],
+        [
+          "4 x 2.5 in rectangle",
+          "10 to 14 mm",
+          "10 to 12"
+        ],
+        [
+          "3.5 x 1 in name tape",
+          "6 to 8 mm",
+          "10 to 12 in block capitals"
+        ],
+        [
+          "5 x 1 in name tape",
+          "6 to 8 mm",
+          "14 to 16 in block capitals"
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Script fonts take more width per letter than block capitals, so allow fewer characters for script. For names longer than the patch allows, use a first name only, an initial plus last name, or a two-line layout with a smaller second line."
+    },
+    {
+      "type": "h3",
+      "text": "Where to Put a Name Patch"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "**Above the left pocket** when the shirt has no company logo, the classic mechanic shirt look.",
+        "**Right chest** with the company logo on the left chest, the most common uniform layout; see the [left chest placement guide](/blog/left-chest-logo-embroidery-digitizing-guide) for measurements.",
+        "**Centered about 1 inch above the pocket** when the shirt has pockets; on pocketless shirts, about 7 to 9 inches below the shoulder seam on adult sizes.",
+        "**Jackets:** same chest positions; use hook-and-loop backing if the jacket is shared."
       ]
     },
     {
@@ -183,6 +245,20 @@ export const post: BlogPost = {
     },
     {
       "type": "h2",
+      "text": "How to Sew a Name Patch on a Work Shirt"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "Put the shirt on, or on a hanger, and mark the center of the patch position with chalk.",
+        "Pin or tape the patch in place, checking it is level with the pocket top or the shirt's front edge.",
+        "With a sewing machine, use a straight stitch or narrow zigzag just inside the border, with thread that matches the border color.",
+        "By hand, use a whip stitch through the border every 3 to 4 mm.",
+        "For iron-on patches, press first, then stitch the edge for shirts that go through industrial laundry."
+      ]
+    },
+    {
+      "type": "h2",
       "text": "Making Name Patches In-House"
     },
     {
@@ -191,7 +267,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Need a name patch template or patch file? [Send your design and name list](/contact), or check [digitizing prices](/pricing). Learn more about other patch styles in [custom patch types](/blog/custom-patch-types-embroidered-woven-pvc-leather-chenille)."
+      "text": "Need a name patch template or patch file? A simple name patch with a border usually fits within our Basic plan ($6.99, up to 5,000 stitches, 24 to 48 hours). [Send your design and name list](/contact), or check [digitizing prices](/pricing). Learn more about other patch styles in [custom patch types](/blog/custom-patch-types-embroidered-woven-pvc-leather-chenille)."
     }
   ]
 };

@@ -14,13 +14,14 @@ import { PRICING_PLANS, formatPrice } from "../components/pricing-data";
 const BASE_URL = "https://www.veloradigitizing.com";
 
 export const metadata: Metadata = {
-  title: { absolute: "Embroidery Digitizing Service Types: Cap, 3D Puff, Applique & Patch" },
+  title: { absolute: "Types of Embroidery Digitizing Services & Which to Choose" },
   description:
-    "Not sure which embroidery digitizing service your logo needs? Compare flat logo, cap, 3D puff, applique, patch and vector services by placement, finish and what to send with your quote.",
+    "Types of embroidery digitizing services compared: flat logo, cap, 3D puff, applique, patch and vector, by placement and finish, and what to send for a quote.",
   alternates: {
     canonical: `${BASE_URL}/services`,
   },
   openGraph: {
+    type: "website",
     title: "Which Embroidery Digitizing Service Does Your Logo Need?",
     description:
       "Compare flat logo, cap, 3D puff, applique, patch and vector digitizing by placement and finish, then see exactly what to send for a quote.",
@@ -225,8 +226,8 @@ export default function ServicesPage() {
       <Hero
         eyebrow="Service Directory"
         titleLines={[
-          { text: "Which Digitizing Service" },
-          { text: "Does Your Logo Need?", accent: true },
+          { text: "Types of Embroidery Digitizing Services:" },
+          { text: "Which Does Your Logo Need?", accent: true },
         ]}
         description="A polo, a curved cap, foam lettering, an applique jersey and a patch each need a different stitch file. Use this page to pick the right service, see what each one includes and what to send with your quote."
         bgImage={servicesBg}

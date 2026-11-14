@@ -2,20 +2,21 @@ import type { BlogPost } from '../types';
 
 export const post: BlogPost = {
   "slug": "embroidery-thread-weight-guide",
-  "title": "Embroidery Thread Weight Guide: 40 wt vs 60 wt vs 30 wt Explained",
-  "metaTitle": "Embroidery Thread Weight: 40 wt vs 60 wt Guide",
-  "description": "Embroidery thread weight chart: 30 wt vs 40 wt vs 60 wt compared by thickness, use, needle size, minimum text height and density change, plus polyester vs rayon.",
-  "excerpt": "40 weight thread is the embroidery standard, but fine text and bold fills need other weights. Here is how thread weight works and how it changes your needle and stitch file.",
+  "title": "40 wt vs 60 wt Embroidery Thread: Weight Chart, Needles and When to Use Each",
+  "metaTitle": "40 wt vs 60 wt Embroidery Thread: Chart & Uses",
+  "description": "40 wt vs 60 wt embroidery thread compared: thickness, needle size, smallest clean text and density, plus a 30 to 60 wt chart and polyester vs rayon.",
+  "excerpt": "40 wt is the embroidery standard and 60 wt is the fine thread for tiny text. Here is how they differ, which needle each needs and when a file has to be redone.",
   "category": "Guides",
   "tags": [
-    "40 weight embroidery thread",
+    "40 wt vs 60 wt embroidery thread",
     "embroidery thread weight",
+    "40 weight embroidery thread",
     "60 weight embroidery thread",
     "embroidery thread weight chart",
     "polyester vs rayon embroidery thread"
   ],
   "publishedAt": "2026-11-07",
-  "updatedAt": "2026-11-12",
+  "updatedAt": "2026-11-14",
   "readTime": 9,
   "image": "/images/blog/embroidery-thread-weight-guide.webp",
   "imagePrompt": "Rows of colorful polyester embroidery thread cones with a close-up of thick and fine thread side by side, soft light, 16:9.",
@@ -53,7 +54,7 @@ export const post: BlogPost = {
   "content": [
     {
       "type": "p",
-      "text": "**40 weight embroidery thread** is the standard thread size for machine embroidery, and almost every stitch file is digitized for it. In thread weight numbering, a higher number means a thinner thread: 60 weight is finer and suits tiny text, while 30 weight is heavier and covers bold areas faster. The weight you choose also changes the right needle size and the stitch density your file needs."
+      "text": "**40 wt vs 60 wt embroidery thread** comes down to thickness. 40 wt is the standard medium thread that almost every stitch file is digitized for, and 60 wt is roughly a third finer, so it keeps very small text and fine outlines open. In thread weight numbering a higher number means a thinner thread, and 30 wt is heavier still for bold fills. The weight you choose also changes the right needle size and the stitch density your file needs."
     },
     {
       "type": "p",
@@ -132,6 +133,55 @@ export const post: BlogPost = {
     {
       "type": "tip",
       "text": "Keep a small sample card of the same design stitched in 40 wt and 60 wt. It makes it easy to show customers why tiny text needs fine thread."
+    },
+    {
+      "type": "h2",
+      "text": "40 wt vs 60 wt Embroidery Thread Side by Side"
+    },
+    {
+      "type": "table",
+      "caption": "40 wt vs 60 wt embroidery thread compared",
+      "headers": [
+        "",
+        "40 wt",
+        "60 wt"
+      ],
+      "rows": [
+        [
+          "Thickness",
+          "Standard; usually a two-ply 120 denier polyester",
+          "Finer; usually a two-ply 75 denier polyester"
+        ],
+        [
+          "Needle",
+          "75/11",
+          "65/9 or 70/10"
+        ],
+        [
+          "Smallest clean capital height",
+          "About 5 mm",
+          "About 4 mm"
+        ],
+        [
+          "Coverage",
+          "Covers at normal density",
+          "Needs tighter stitch spacing to cover the same area"
+        ],
+        [
+          "Best for",
+          "Logos, left chest designs, caps and most lettering",
+          "Tiny text, fine outlines and small detailed designs"
+        ],
+        [
+          "Stitch file",
+          "Most files are digitized for 40 wt by default",
+          "Works best with a file digitized for 60 wt"
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "In practice, stay with 40 wt unless the text drops below about 5 mm or the design has hairline detail. If you switch a whole design to 60 wt without changing the file, fills and satin columns look thin and the fabric can show through. If only the small text needs it, a digitizer can keep the logo in 40 wt and set the lettering up for 60 wt on its own color stop."
     },
     {
       "type": "h2",

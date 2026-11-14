@@ -37,7 +37,12 @@ type DesignTypeId = (typeof DESIGN_TYPES)[number]["id"];
 
 const roundTo = (value: number, step: number) => Math.round(value / step) * step;
 
-export default function StitchCountCalculator() {
+export default function StitchCountCalculator({
+  headingLevel = 3,
+}: {
+  headingLevel?: 2 | 3;
+} = {}) {
+  const Heading = headingLevel === 2 ? "h2" : "h3";
   const [width, setWidth] = useState("3.5");
   const [height, setHeight] = useState("1.5");
   const [unit, setUnit] = useState<"in" | "cm">("in");
@@ -62,9 +67,9 @@ export default function StitchCountCalculator() {
       <p className="text-[11px] font-bold uppercase tracking-wider text-brand-600">
         Free tool
       </p>
-      <h3 className="mt-1 font-serif text-xl font-bold text-navy-950">
+      <Heading className="mt-1 font-serif text-xl font-bold text-navy-950">
         Embroidery Stitch Count Calculator
-      </h3>
+      </Heading>
       <p className="mt-2 text-sm leading-relaxed text-navy-950/65">
         Enter the finished embroidery size and the kind of design. The estimate
         uses a rough allowance per square inch, not an analysis of your artwork

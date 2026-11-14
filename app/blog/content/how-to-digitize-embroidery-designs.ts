@@ -5,7 +5,7 @@ export const post: BlogPost = {
   title: 'How to Digitize a Logo for Embroidery: Step-by-Step Guide for Beginners',
   metaTitle: 'How to Digitize a Logo for Embroidery (Step by Step)',
   description:
-    'How to digitize a logo for embroidery in 7 steps: prepare artwork, set the size, choose stitch types, add underlay, density and pull compensation, sequence, test.',
+    'How to digitize a logo for embroidery in 7 steps: prepare art, set the size, pick stitch types, add underlay, density and pull compensation, sequence, test.',
   excerpt:
     'Digitizing a logo for embroidery means redrawing it as stitches a machine can sew. Here is the full seven-step workflow with starting settings, plus the mistakes that ruin first designs.',
   category: 'Guides',
@@ -13,7 +13,6 @@ export const post: BlogPost = {
     'how to digitize a logo for embroidery',
     'digitizing a logo for embroidery',
     'how to digitize embroidery designs',
-    'convert logo to embroidery file',
     'digitizing a logo',
     'embroidery digitizing for beginners',
   ],

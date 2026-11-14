@@ -12,10 +12,10 @@ export const post: BlogPost = {
     "convert png to dst",
     "convert jpg to dst",
     "dst file conversion",
-    "image to embroidery"
+    "convert logo to embroidery file"
   ],
   "publishedAt": "2026-09-08",
-  "updatedAt": "2026-11-05",
+  "updatedAt": "2026-11-14",
   "readTime": 8,
   "image": "/images/blog/convert-png-jpg-to-dst-embroidery-file.webp",
   "imagePrompt": "Step-by-step digital process graphic showing a PNG logo turning into vector outlines and finally transforming into realistic 3D simulated embroidery stitches on an ultra-wide monitor, 16:9.",
@@ -126,7 +126,7 @@ export const post: BlogPost = {
     },
     {
       "type": "tip",
-      "text": "Avoid Machine Downtime: Instead of risking garments on raw auto-generated files, let our master punchers manually convert your artwork into clean, test-sewn production code. Explore our [Custom Embroidery Digitizing Services](/services) with flat-rate pricing and 24-hour turnaround."
+      "text": "Avoid Machine Downtime: Instead of risking garments on raw auto-generated files, let our master punchers manually convert your artwork into clean, test-sewn production code. Explore our [Custom Embroidery Digitizing Services](/services) with flat-rate plans from $6.99 and 12-24 hour standard delivery."
     },
     {
       "type": "h2",
@@ -134,7 +134,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Skip the frustrating software learning curve and get flawless, production-ready Tajima DST files crafted by master punchers. Upload your PNG, JPG, or PDF logo on our [contact page](/contact) or check our [digitizing services](/services) for fast 24-hour turnaround."
+      "text": "Skip the frustrating software learning curve and get flawless, production-ready Tajima DST files crafted by master punchers. Upload your PNG, JPG, or PDF logo on our [contact page](/contact) or check our [digitizing services](/services) for 12-24 hour standard delivery (2-4 hours on the Rush plan)."
     },
     {
       "type": "h2",
@@ -147,6 +147,25 @@ export const post: BlogPost = {
     {
       "type": "tip",
       "text": "Need Vector Artwork Preparation First? If your original PNG or JPG is low-resolution, blurry, or captured from a screenshot, visit our [Vector Art Conversion Services](/vector-art) to convert your raster image into crisp, infinitely scalable vector artwork before digitizing."
+    },
+    {
+      "type": "h3",
+      "text": "Can You Convert an SVG to DST?"
+    },
+    {
+      "type": "p",
+      "text": "Not directly, but an SVG is the best starting file you can send. Because the shapes are already clean curves, a digitizer skips the tracing step and goes straight to stitch types, angles, underlay and compensation, which usually means fewer revisions. The same applies to AI, EPS and PDF files saved from Illustrator or Inkscape. Online tools that claim to turn an SVG into a DST in one click still auto-fill each shape with default settings, so small text and thin lines come out as poorly as they would from a PNG. If you want to try the free route, [Ink/Stitch](/blog/best-free-embroidery-digitizing-software-inkstitch-guide) works on SVG paths inside Inkscape."
+    },
+    {
+      "type": "table",
+      "caption": "Which logo file to send for PNG, JPG, SVG or PDF to DST conversion",
+      "headers": ["File you have", "What the digitizer does first", "Result quality"],
+      "rows": [
+        ["SVG, AI, EPS or vector PDF", "Uses the paths as a guide, goes straight to stitch planning", "Best: sharp edges, accurate small text"],
+        ["High-resolution PNG (1,000 px wide or more)", "Traces the shapes by hand, then plans stitches", "Very good if the edges are crisp"],
+        ["JPG from a website or email signature", "Cleans compression noise, redraws edges, then plans stitches", "Good for bold logos; fine detail may be simplified"],
+        ["Screenshot, phone photo of a printed logo", "Redraws most of the artwork from scratch", "Workable for simple logos; send a better file if one exists"]
+      ]
     },
     {
       "type": "h2",

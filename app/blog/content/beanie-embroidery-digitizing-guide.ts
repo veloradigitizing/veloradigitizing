@@ -2,20 +2,20 @@ import type { BlogPost } from '../types';
 
 export const post: BlogPost = {
   "slug": "beanie-embroidery-digitizing-guide",
-  "title": "Beanie Embroidery Guide: Size, Hooping & Digitizing for Knit Hats",
-  "metaTitle": "Beanie Embroidery Guide: Size, Hooping & Digitizing",
-  "description": "Plan custom beanie embroidery. Learn cuff design sizes, how to hoop a beanie, which stabilizer and topping to use and how to digitize logos for ribbed knit.",
+  "title": "How to Embroider a Beanie with an Embroidery Machine (Cuff Size Guide)",
+  "metaTitle": "How to Embroider a Beanie: Machine & Cuff Size Guide",
+  "description": "How to embroider a beanie with an embroidery machine: cuff embroidery size by cuff height, hooping on single and multi-needle machines, and backing tips.",
   "excerpt": "Ribbed knit swallows thin stitches and stretches in the hoop. Here is how to size, hoop and digitize logos so embroidered beanies come out crisp.",
   "category": "Guides",
   "tags": [
-    "beanie embroidery",
-    "embroidery beanies",
-    "custom beanie embroidery",
+    "how to embroider a beanie with an embroidery machine",
+    "beanie cuff embroidery size",
     "how to hoop a beanie for embroidery",
+    "beanie embroidery",
     "knit hat embroidery"
   ],
   "publishedAt": "2026-11-07",
-  "updatedAt": "2026-11-12",
+  "updatedAt": "2026-11-14",
   "readTime": 9,
   "image": "/images/blog/beanie-embroidery-digitizing-guide.webp",
   "imagePrompt": "Cuffed knit beanies in charcoal, mustard, green and cream with simple embroidered emblems on the cuffs, embroidery machine in soft focus behind, warm light, 16:9.",
@@ -26,8 +26,12 @@ export const post: BlogPost = {
   },
   "faqs": [
     {
+      "question": "How do you embroider a beanie on a single-needle home machine?",
+      "answer": "Turn the beanie inside out, unfold the cuff and hoop only the cuff area with cutaway behind it (or hoop the stabilizer alone and baste the cuff onto it). Keep the rest of the hat clipped out of the way so it cannot slide under the needle, rotate the design 180 degrees, add water-soluble topping and stitch slowly. A small hoop around 4x4 inches is usually easiest."
+    },
+    {
       "question": "What size should a beanie embroidery design be?",
-      "answer": "On a folded cuff, keep the design about 2 to 2.25 inches tall so it stays inside the cuff with a small margin, and usually no more than 4 to 5 inches wide so it remains on the front. Measure the cuff of the exact beanie you will use, because cuff heights vary."
+      "answer": "On a standard 3-inch cuff, keep the design about 2 to 2.25 inches tall and 3 to 5 inches wide. As a rule, take the folded cuff height and subtract about 0.75 inch so the design clears the fold and the top edge. Uncuffed beanies take a design about 2 to 2.5 inches tall above the bottom edge."
     },
     {
       "question": "How do you hoop a beanie for embroidery?",
@@ -49,7 +53,7 @@ export const post: BlogPost = {
   "content": [
     {
       "type": "p",
-      "text": "**Beanie embroidery** works best on the folded cuff, with a design about 2 inches tall, a stable backing, a water-soluble topping and a stitch file built for stretchy ribbed knit. The knit is the challenge: it stretches in the hoop and its ribs swallow thin stitches. Get the size, hooping and digitizing right and embroidered beanies look as crisp as caps."
+      "text": "To **embroider a beanie with an embroidery machine**, unfold the cuff, rotate the design 180 degrees, back the knit with cutaway, add a water-soluble topping, and stitch a file built for ribbed knit. On a standard 3-inch cuff, keep the design about 2 to 2.25 inches tall. The knit is the challenge: it stretches in the hoop and its ribs swallow thin stitches. Get the size, hooping and digitizing right and embroidered beanies look as crisp as caps."
     },
     {
       "type": "p",
@@ -115,6 +119,50 @@ export const post: BlogPost = {
       "text": "Measure the cuff on the exact beanie style you will use. A design that fits one brand of cuff can overlap the fold on another."
     },
     {
+      "type": "h3",
+      "text": "Beanie Cuff Embroidery Size by Cuff Height"
+    },
+    {
+      "type": "p",
+      "text": "Cuff height varies by brand, so size the design from the cuff you have, not from a template. Leave roughly 3/8 inch above and below the design so it clears the fold and the top edge of the cuff."
+    },
+    {
+      "type": "table",
+      "caption": "Beanie cuff embroidery size by folded cuff height",
+      "headers": [
+        "Folded cuff height",
+        "Maximum design height",
+        "Typical design width",
+        "Good for"
+      ],
+      "rows": [
+        [
+          "2.5 in (64 mm)",
+          "About 1.75 in (44 mm)",
+          "2.5 to 4 in",
+          "One line of bold text or a compact icon"
+        ],
+        [
+          "3 in (76 mm), the most common",
+          "About 2 to 2.25 in (51 to 57 mm)",
+          "3 to 5 in",
+          "Most logos; icon plus one line of text"
+        ],
+        [
+          "3.5 in (89 mm)",
+          "About 2.75 in (70 mm)",
+          "3 to 5 in",
+          "Stacked logos, two lines of text"
+        ],
+        [
+          "Uncuffed / slouch beanie",
+          "About 2 to 2.5 in",
+          "3 to 4 in",
+          "Front logo placed above the bottom edge"
+        ]
+      ]
+    },
+    {
       "type": "h2",
       "text": "How to Hoop a Beanie for Embroidery"
     },
@@ -162,6 +210,14 @@ export const post: BlogPost = {
           "A beanie version with a knockdown base and stronger underlay, not the cap file"
         ]
       ]
+    },
+    {
+      "type": "h3",
+      "text": "Single-Needle vs Multi-Needle Machines"
+    },
+    {
+      "type": "p",
+      "text": "**On a single-needle flatbed machine** (Brother, Janome, Bernina and similar), turn the beanie inside out and hoop just the unfolded cuff, or hoop the stabilizer on its own and baste the cuff onto it. Clip the rest of the hat away from the needle, because the body of a beanie slides under the presser foot easily. **On a multi-needle machine**, a cap driver or clamp-style beanie frame holds the cuff, and the tubular arm lets the hat hang freely, which makes repeat orders much faster. On either machine, run a little slower than normal on knit and check the first few stitches before leaving it. For structured caps on the same machine, see [how to embroider a hat with an embroidery machine](/blog/how-to-embroider-a-hat-with-embroidery-machine)."
     },
     {
       "type": "h2",

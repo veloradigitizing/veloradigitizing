@@ -11,7 +11,7 @@ import { BLOG_POSTS } from "./posts";
 const BASE_URL = "https://www.veloradigitizing.com";
 
 export const metadata: Metadata = {
-  title: "Embroidery Digitizing Blog: Guides & Tips",
+  title: { absolute: "Embroidery Digitizing Blog: Guides & Tips | Velora" },
   description:
     "Practical guides on embroidery digitizing, file formats, 3D puff, custom patches and artwork preparation from the digitizers at Velora Digitizing.",
   alternates: {

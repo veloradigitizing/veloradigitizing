@@ -4,7 +4,7 @@ export const post: BlogPost = {
   "slug": "how-to-estimate-embroidery-stitch-count",
   "title": "Embroidery Stitch Count Calculator (Free) + Size Chart by Placement",
   "metaTitle": "Embroidery Stitch Count Calculator (Free) + Size Chart",
-  "description": "Free embroidery stitch count calculator plus a chart by placement: left chest, cap, jacket back, patches. Square-inch method and price per 1,000 stitches.",
+  "description": "Free embroidery stitch count calculator plus a chart by placement: left chest, cap, jacket back, patches. Square-inch method and worked examples.",
   "excerpt": "Estimate stitch count in seconds with our free calculator, check the placement chart, then see what the count means for digitizing and production pricing.",
   "category": "Pricing & Guides",
   "tags": [
@@ -13,8 +13,8 @@ export const post: BlogPost = {
     "stitch count chart",
     "free stitch count estimator",
     "how to calculate stitch count for embroidery",
-    "embroidery stitch count pricing",
-    "embroidery digitizing pricing per 1000 stitches"
+    
+    
   ],
   "publishedAt": "2026-10-04",
   "updatedAt": "2026-11-09",

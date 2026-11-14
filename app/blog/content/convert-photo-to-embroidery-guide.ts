@@ -16,7 +16,7 @@ export const post: BlogPost = {
     'photo to embroidery',
     'convert photo to embroidery',
     'pet portrait embroidery',
-    'digitize image for embroidery',
+    
   ],
   publishedAt: '2026-11-07',
   updatedAt: '2026-11-11',

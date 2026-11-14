@@ -51,10 +51,10 @@ export default function Home() {
       <Hero
         eyebrow="Precision Stitch Engineering"
         titleLines={[
-          { text: "Custom Embroidery" },
-          { text: "Digitizing Services", accent: true },
+          { text: "Cheap Embroidery" },
+          { text: "Digitizing Service", accent: true },
         ]}
-        description="We convert logos & artwork into production-ready embroidery files (DST, PES, EXP). Specialized in 3D puff, cap logos, left chest & fast 12-24h delivery."
+        description="Hand-digitized embroidery files from $6.99: we convert logos & artwork into production-ready DST, PES and EXP files. Specialized in 3D puff, cap logos, left chest & fast 12-24h delivery."
         bgImage={homeBg}
         imageLabel="Velora multi-needle embroidery machine stitching a colorful lion-with-crown design"
         features={[
@@ -143,7 +143,7 @@ export default function Home() {
                     Custom raised EVA foam digitizing for snapbacks, caps, and streetwear hoodies with calibrated density and end-capping.
                   </p>
                 </div>
-                <span className="mt-3 text-[11px] font-semibold text-brand-600">DST, PES Files &middot; 12-24h Turnaround</span>
+                <span className="mt-3 text-[11px] font-semibold text-brand-600">DST, PES Files &middot; Rush Plan, 2-4h</span>
               </Link>
               <Link
                 href="/services/cap-logo-digitizing"

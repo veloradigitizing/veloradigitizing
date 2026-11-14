@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Icon from "./Icon";
+import { renderInline, stripInline } from "./inline-markup";
 import { Reveal } from "./Reveal";
 import { stagger } from "./stagger";
 
@@ -82,7 +83,7 @@ export function FAQ({
         if (!q) return true;
         return (
           item.question.toLowerCase().includes(q) ||
-          item.answer.toLowerCase().includes(q)
+          stripInline(item.answer).toLowerCase().includes(q)
         );
       });
   }, [items, query, activeCategory]);
@@ -254,7 +255,7 @@ export function FAQ({
                       <div className="overflow-hidden">
                         <div className="border-t border-navy-950/5 px-5 pb-5 pt-4 sm:px-6">
                           <p className="text-sm leading-relaxed text-slate-600 sm:text-[15px]">
-                            {item.answer}
+                            {renderInline(item.answer)}
                           </p>
                         </div>
                       </div>
@@ -297,7 +298,7 @@ export function FAQ({
               name: i.question,
               acceptedAnswer: {
                 "@type": "Answer",
-                text: i.answer,
+                text: stripInline(i.answer),
               },
             })),
           }),

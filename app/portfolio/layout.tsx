@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     canonical: "https://www.veloradigitizing.com/portfolio",
   },
   openGraph: {
+    type: "website",
     title: "Embroidery Digitizing Portfolio | Velora Digitizing",
     description:
       "Explore our embroidery digitizing portfolio. Inspect 3D puff caps, left chest badges, jacket back stitches & vector art samples. View our work and order now!",

@@ -215,7 +215,7 @@ export default function FeaturedCategories() {
             </div>
 
             {/* Dots Indicator with Accessible 40px Touch Targets */}
-            <div className="mt-5 flex justify-center items-center gap-1">
+            <div className="mt-5 flex flex-wrap justify-center items-center sm:gap-1">
               {Array.from({ length: maxIndex + 1 }).map((_, i) => (
                 <button
                   key={i}
@@ -233,7 +233,7 @@ export default function FeaturedCategories() {
                       behavior: "smooth",
                     });
                   }}
-                  className="flex h-10 w-10 min-h-[40px] min-w-[40px] items-center justify-center p-2"
+                  className="flex h-10 w-8 min-h-[40px] min-w-[32px] items-center justify-center p-2 sm:w-10 sm:min-w-[40px]"
                   aria-label={"Go to categories slide " + (i + 1)}
                 >
                   <span

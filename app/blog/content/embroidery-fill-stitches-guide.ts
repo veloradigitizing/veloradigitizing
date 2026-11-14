@@ -4,7 +4,7 @@ export const post: BlogPost = {
   "slug": "embroidery-fill-stitches-guide",
   "title": "Embroidery Fill Stitches: Best Filling Stitches by Hand and Machine",
   "metaTitle": "Embroidery Fill Stitches: Hand & Machine Guide",
-  "description": "Embroidery fill stitches compared: the best hand filling stitches for large areas, machine tatami fill settings for density, length and angle, and fixes for puckering.",
+  "description": "Embroidery fill stitches compared: best hand filling stitches for large areas, tatami fill settings for density, length and angle, and fixes for puckering.",
   "excerpt": "Fill stitches cover large areas smoothly. Here are the best filling stitches for hand embroidery and how machine fills are set up with density, angles and underlay.",
   "category": "Guides",
   "tags": [

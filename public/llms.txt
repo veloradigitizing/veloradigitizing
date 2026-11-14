@@ -33,6 +33,9 @@ Velora Digitizing provides manual embroidery digitizing, 3D puff cap digitizing,
 - [How to Digitize a Logo for Embroidery](https://www.veloradigitizing.com/blog/how-to-digitize-embroidery-designs): Seven-step beginner workflow with starting settings.
 - [Flat Embroidery vs 3D Puff](https://www.veloradigitizing.com/blog/flat-embroidery-vs-3d-puff): Differences in detail, garments, file setup and cost.
 - [What Is Embroidery Digitizing](https://www.veloradigitizing.com/blog/what-is-embroidery-digitizing): How artwork becomes a stitch file.
+- [Embroidery Logo Size Chart](https://www.veloradigitizing.com/blog/embroidery-logo-size-chart): Standard logo sizes by placement, garment and fit.
+- [How to Resize Embroidery Designs](https://www.veloradigitizing.com/blog/how-to-resize-embroidery-designs): Safe resize limits for stitch files vs object files.
+- [Embroidery vs DTF Printing](https://www.veloradigitizing.com/blog/embroidery-vs-dtf-printing): Durability, cost and when to use each.
 - [All guides](https://www.veloradigitizing.com/blog): Full list of embroidery and digitizing guides.
 
 ## Technical Specifications

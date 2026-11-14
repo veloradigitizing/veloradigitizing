@@ -4,7 +4,7 @@ export const post: BlogPost = {
   "slug": "left-chest-logo-embroidery-digitizing-guide",
   "title": "Left Chest Embroidery Placement: Measurements, Chart and Logo Size",
   "metaTitle": "Left Chest Embroidery Placement: Chart & Logo Size",
-  "description": "Left chest embroidery placement is 7-9 inches down from the shoulder seam and 3-5 inches over from center. Chart by garment, marking steps and a printable template.",
+  "description": "Left chest embroidery placement is 7-9 inches down from the shoulder seam and 3-5 inches over from center. Chart by garment, marking steps and a template.",
   "excerpt": "Exact left chest placement numbers for polos, tees, sweatshirts, jackets and youth sizes, a step-by-step marking method, a printable template and the digitizing settings that follow.",
   "category": "Guides",
   "tags": [
@@ -14,7 +14,7 @@ export const post: BlogPost = {
     "embroidery placement template",
     "left chest logo placement",
     "left chest embroidery size",
-    "polo embroidery",
+    
     "left chest digitizing"
   ],
   "publishedAt": "2026-09-12",
@@ -64,7 +64,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Those numbers are starting points for an average adult medium. The rest of this guide gives you a placement chart by garment, a repeatable marking method, a printable template, the mistakes that make a correctly measured logo still look wrong, and the digitizing settings that follow from the placement. When your measurements are set, send the finished size and fabric to our [logo digitizing team](/services) and the file is built for that exact spot."
+      "text": "Those numbers are starting points for an average adult medium. The rest of this guide gives you a placement chart by garment, a repeatable marking method, a printable template, the mistakes that make a correctly measured logo still look wrong, and the digitizing settings that follow from the placement. When your measurements are set, send the finished size and fabric to our [logo digitizing team](/services) and the file is built for that exact spot. For sizes at other placements, see the [embroidery logo size chart](/blog/embroidery-logo-size-chart)."
     },
     {
       "type": "h2",

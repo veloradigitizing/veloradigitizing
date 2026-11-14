@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   description,
   alternates: { canonical: "https://www.veloradigitizing.com/store" },
   openGraph: {
+    type: "website",
     title: "Custom Felt & Twill Patch Samples | Velora Digitizing",
     description,
     url: "https://www.veloradigitizing.com/store",

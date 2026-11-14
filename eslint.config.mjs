@@ -12,6 +12,11 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Local tooling, browser profiles and generated reports, not app code.
+    ".browser-pending-serp-review/**",
+    ".claude/**",
+    "output/**",
+    "reports/**",
   ]),
 ]);
 

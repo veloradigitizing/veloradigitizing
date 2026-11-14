@@ -13,7 +13,7 @@ export const post: BlogPost = {
     "embroidery digitizing companies usa",
     "best embroidery digitizing services",
     "embroidery digitizing service comparison",
-    "digitizing pricing"
+    "best embroidery digitizing services in usa"
   ],
   "publishedAt": "2026-10-01",
   "updatedAt": "2026-11-09",

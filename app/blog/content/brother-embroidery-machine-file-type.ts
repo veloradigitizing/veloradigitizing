@@ -154,7 +154,7 @@ export const post: BlogPost = {
     },
     {
       "type": "tip",
-      "text": "If the design is too big for your hoop, the machine will not load it. Check sizes with our [embroidery hoop sizes chart](/blog/embroidery-hoop-sizes-chart) before ordering."
+      "text": "If the design is too big for your hoop, the machine will not load it. Check sizes with our [embroidery hoop sizes chart](/blog/embroidery-hoop-sizes-chart) before ordering. If the machine does not see the USB stick or file at all, work through our [embroidery machine not reading USB fixes](/blog/embroidery-machine-not-reading-design-file)."
     },
     {
       "type": "h2",

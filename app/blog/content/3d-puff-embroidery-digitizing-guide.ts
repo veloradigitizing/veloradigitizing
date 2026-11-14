@@ -14,10 +14,11 @@ export const post: BlogPost = {
     "3d puff embroidery foam",
     "3d puff embroidery on hats",
     "how to do 3d puff embroidery",
-    "foam digitizing"
+    "foam digitizing",
+    "3d puff embroidery fonts"
   ],
   "publishedAt": "2026-08-23",
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-14",
   "readTime": 13,
   "image": "/images/blog/3d-puff-embroidery-digitizing-guide.webp",
   "imagePrompt": "Extreme macro photography of a navy structured snapback cap with vibrant raised 3D puff white satin embroidery stitching over 3mm high-density EVA foam, clean capped edges with zero foam peeking through, sharp lighting showing tactile 3D relief, 16:9.",
@@ -62,6 +63,10 @@ export const post: BlogPost = {
     {
       "question": "Can I use a regular embroidery file for 3D puff on hats?",
       "answer": "Not reliably. A flat file has underlay, looser spacing and no foam stop, so the foam will show and may not tear cleanly. Ask the digitizer to rebuild the puff elements with satin-only columns, no underlay, tightened spacing, end caps and a colour stop before the foam layer. Small text can stay flat in the same design."
+    },
+    {
+      "question": "What fonts work best for 3D puff embroidery?",
+      "answer": "Bold collegiate block, heavy sans serif and rounded bold fonts work best. Keep letters at least about 0.5 inch tall (1 inch for script) and satin columns about 2 to 6 mm wide. Thin script and light serif fonts should be stitched flat."
     }
   ],
   "content": [
@@ -96,20 +101,72 @@ export const post: BlogPost = {
     {
       "type": "table",
       "caption": "3D puff digitizing settings reference (starting points, test on the actual cap)",
-      "headers": ["Setting", "Typical value", "Why"],
+      "headers": [
+        "Setting",
+        "Typical value",
+        "Why"
+      ],
       "rows": [
-        ["Stitch type", "Satin columns only", "Fills and run stitches cannot cover or cut foam; convert puff elements to satin."],
-        ["Satin column width", "Minimum about 3 mm; best 4-7 mm; split or switch to flat above roughly 10-12 mm", "Below 3 mm the foam cannot hold; very wide columns loop, snag and flatten."],
-        ["Stitch spacing (density)", "About 0.16-0.20 mm (around 0.16 mm for perforation lines, 0.20 mm for cover satin on 3 mm foam)", "Tight spacing hides the foam and lets the needle cut it; flat satin at 0.38-0.42 mm shows foam through."],
-        ["Underlay", "None; replace with a single centre run", "Zigzag or tatami underlay crushes and pre-cuts the foam before the cover stitches."],
-        ["Centre run stitch length", "About 4 mm", "A long centre run holds the foam flat without perforating it along the middle."],
-        ["Pull compensation", "Minimal, about 0-0.3 mm; add a little on structured caps", "Foam compresses under the satin, so flat-embroidery compensation over-widens puff columns."],
-        ["End caps", "Short perpendicular stitches or tapered column ends at every open terminal", "Closes the column so foam cannot poke out of letter ends like E, T, H and L."],
-        ["Perforation run", "Run stitch around the puff outline at about 1.5-2.0 mm length, sewn before the cover satin", "Pre-cuts the foam boundary so the excess tears away along the stitch line."],
-        ["Foam thickness", "2 mm standard for caps; 3 mm for heavy block lettering and thick fleece", "Thicker foam gives more relief but needs tighter spacing and more needle clearance."],
-        ["Needle", "Sharp point, about 80/12 to 90/14", "A sharp point cuts foam cleanly; ballpoint needles tear and shred it."],
-        ["Machine speed", "Slow to roughly 600-700 stitches per minute for the puff layers", "Reduces needle deflection on the cap crown and thread breaks on the raised foam."],
-        ["Colour sequence", "Flat elements first, then a colour stop for foam placement, then puff satin", "The stop lets the operator lay foam without interrupting the design."]
+        [
+          "Stitch type",
+          "Satin columns only",
+          "Fills and run stitches cannot cover or cut foam; convert puff elements to satin."
+        ],
+        [
+          "Satin column width",
+          "Minimum about 3 mm; best 4-7 mm; split or switch to flat above roughly 10-12 mm",
+          "Below 3 mm the foam cannot hold; very wide columns loop, snag and flatten."
+        ],
+        [
+          "Stitch spacing (density)",
+          "About 0.16-0.20 mm (around 0.16 mm for perforation lines, 0.20 mm for cover satin on 3 mm foam)",
+          "Tight spacing hides the foam and lets the needle cut it; flat satin at 0.38-0.42 mm shows foam through."
+        ],
+        [
+          "Underlay",
+          "None; replace with a single centre run",
+          "Zigzag or tatami underlay crushes and pre-cuts the foam before the cover stitches."
+        ],
+        [
+          "Centre run stitch length",
+          "About 4 mm",
+          "A long centre run holds the foam flat without perforating it along the middle."
+        ],
+        [
+          "Pull compensation",
+          "Minimal, about 0-0.3 mm; add a little on structured caps",
+          "Foam compresses under the satin, so flat-embroidery compensation over-widens puff columns."
+        ],
+        [
+          "End caps",
+          "Short perpendicular stitches or tapered column ends at every open terminal",
+          "Closes the column so foam cannot poke out of letter ends like E, T, H and L."
+        ],
+        [
+          "Perforation run",
+          "Run stitch around the puff outline at about 1.5-2.0 mm length, sewn before the cover satin",
+          "Pre-cuts the foam boundary so the excess tears away along the stitch line."
+        ],
+        [
+          "Foam thickness",
+          "2 mm standard for caps; 3 mm for heavy block lettering and thick fleece",
+          "Thicker foam gives more relief but needs tighter spacing and more needle clearance."
+        ],
+        [
+          "Needle",
+          "Sharp point, about 80/12 to 90/14",
+          "A sharp point cuts foam cleanly; ballpoint needles tear and shred it."
+        ],
+        [
+          "Machine speed",
+          "Slow to roughly 600-700 stitches per minute for the puff layers",
+          "Reduces needle deflection on the cap crown and thread breaks on the raised foam."
+        ],
+        [
+          "Colour sequence",
+          "Flat elements first, then a colour stop for foam placement, then puff satin",
+          "The stop lets the operator lay foam without interrupting the design."
+        ]
       ]
     },
     {
@@ -225,6 +282,74 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "Bold block fonts, team initials, simple emblems and thick script work well. Thin strokes, serifs, small text and gradients do not: anything under about 3 mm cannot hold foam and should stay flat. Many strong cap designs combine raised main lettering with flat secondary text and outlines, which is handled as one puff order with the flat elements sequenced before the foam stop."
+    },
+    {
+      "type": "h2",
+      "text": "Best Fonts for 3D Puff Embroidery (and Minimum Letter Height)"
+    },
+    {
+      "type": "p",
+      "text": "Puff needs wide, simple letters: the satin column has to be wide enough to cover the foam and the corners have to be cut cleanly by the needle. Bold block and collegiate styles work best; thin serifs and tight script do not."
+    },
+    {
+      "type": "table",
+      "caption": "Font styles for 3D puff embroidery",
+      "headers": [
+        "Font style",
+        "Examples",
+        "Works for puff?",
+        "Notes"
+      ],
+      "rows": [
+        [
+          "Collegiate and varsity block",
+          "Varsity, college block, athletic fonts",
+          "Yes, the best choice",
+          "Square ends make end caps simple."
+        ],
+        [
+          "Heavy sans serif",
+          "Arial Black, Impact-style, bold geometric sans",
+          "Yes",
+          "Keep letter spacing open so foam can perforate between letters."
+        ],
+        [
+          "Rounded bold",
+          "Rounded sans, bubble letters",
+          "Yes",
+          "Rounded ends need careful end caps to stop foam showing."
+        ],
+        [
+          "Bold slab serif",
+          "Heavy slab serifs",
+          "Sometimes",
+          "Serifs must be at least about 2 mm wide or stitched flat."
+        ],
+        [
+          "Thick connected script",
+          "Bold brush or baseball script",
+          "Only large",
+          "Letters at least about 1 in tall; joins need extra care."
+        ],
+        [
+          "Thin script, light serif, condensed",
+          "Fine calligraphy, thin serifs",
+          "No",
+          "Stitch flat or switch font."
+        ]
+      ]
+    },
+    {
+      "type": "ul",
+      "items": [
+        "**Minimum letter height:** about 0.5 inch (12-13 mm) for block letters, about 1 inch for script.",
+        "**Column width:** about 2 to 6 mm. Under 2 mm the satin cannot hold the foam; over 6-7 mm the long stitches snag and the foam shows.",
+        "**Counters:** open the holes in letters like A, O and R a little extra, because foam fills them in."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "For more font ideas that also work flat, see the [best fonts for embroidery](/blog/best-fonts-for-embroidery), and compare the look in [flat embroidery vs 3D puff](/blog/flat-embroidery-vs-3d-puff)."
     },
     {
       "type": "h2",

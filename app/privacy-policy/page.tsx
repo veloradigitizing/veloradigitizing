@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     canonical: "https://www.veloradigitizing.com/privacy-policy",
   },
   openGraph: {
+    type: "website",
     title: "Privacy Policy & Data Security | Velora Digitizing",
     description:
       "Read Velora Digitizing's Privacy Policy. Learn how we safeguard your personal details and custom artwork designs with confidentiality.",

@@ -2,21 +2,21 @@ import type { BlogPost } from '../types';
 
 export const post: BlogPost = {
   "slug": "how-to-digitize-small-text-micro-lettering-embroidery",
-  "title": "How to Machine Embroider Small Letters & Micro-Text: Digitizing Guide",
-  "metaTitle": "How to Machine Embroider Small Letters: Digitizing Guide",
-  "description": "Learn how to machine embroider small letters and micro-text. Choose needles, thread, underlay and digitizing settings to keep tiny lettering readable.",
-  "excerpt": "Small lettering under 5mm is the hardest embroidery challenge. Learn how to digitize microscopic fonts, select 60wt thread, and eliminate thread breaks and blob letters.",
+  "title": "How to Digitize Lettering for Embroidery (Including Small Text)",
+  "metaTitle": "How to Digitize Lettering for Embroidery",
+  "description": "How to digitize lettering for embroidery: satin vs fill by letter height, density, pull compensation, underlay, script joins and small text under 5 mm.",
+  "excerpt": "Lettering settings that stitch clean: stitch type by letter height, density and pull compensation, script joins, and how to keep small text readable.",
   "category": "Techniques",
   "tags": [
+    "how to digitize lettering for embroidery",
+    "how to digitize letters for embroidery",
+    "how to digitize text for embroidery",
     "how to machine embroider small letters",
-    "how to embroider small letters",
-    "small text embroidery tips",
-    "micro lettering embroidery",
-    "small letters embroidery",
-    "60wt embroidery thread"
+    "small text embroidery",
+    "micro lettering embroidery"
   ],
   "publishedAt": "2026-10-14",
-  "updatedAt": "2026-11-04",
+  "updatedAt": "2026-11-14",
   "readTime": 8,
   "image": "/images/blog/how-to-digitize-small-text-micro-lettering-embroidery.webp",
   "imagePrompt": "Macro close-up shot of crisp microscopic white and gold satin embroidered lettering stitched cleanly on a navy polo shirt chest, tiny 4mm lettering with needle-sharp definition, extreme detail showing individual threads, professional studio lighting, 16:9.",
@@ -26,6 +26,10 @@ export const post: BlogPost = {
     "href": "/services/cap-logo-digitizing"
   },
   "faqs": [
+    {
+      "question": "How do you digitize lettering for embroidery?",
+      "answer": "Choose the stitch type by letter height (run stitch under 5 mm, satin from about 5 mm to 25 mm, fill above that), set satin density around 0.40-0.45 mm and pull compensation 0.2-0.4 mm depending on fabric, use light underlay on small letters, and sequence letters so script joins overlap slightly without trims. Always test on the real fabric."
+    },
     {
       "question": "How do you digitize an outline or small text on a hat?",
       "answer": "To digitize small text or outlines on a hat: 1) Sequence embroidery center-out, bottom-up to prevent seam bunching on curved cap frames; 2) Maintain a minimum letter height of 5.0mm for standard 40wt thread, or down to 3.5mm if using fine 60wt thread; 3) Use 1 layer of 2.5oz heavy crisp tearaway or firm cutaway backing with tight drum hooping; 4) Replace heavy edge-run underlays with a single light center-run stitch to avoid letter crowding; and 5) Apply +0.25mm push-pull compensation to counteract hat curvature tension."
@@ -45,6 +49,10 @@ export const post: BlogPost = {
     {
       "question": "What is the difference between 40wt and 60wt thread for micro-text?",
       "answer": "Standard 40-weight polyester thread has a thickness of approximately 0.25mm, whereas 60-weight thread is 30% finer at roughly 0.18mm. Finer 60wt thread allows digitizers to program narrower satin columns down to 0.6mm without needle deflection or thread buildup."
+    },
+    {
+      "question": "Should embroidery letters use satin or fill?",
+      "answer": "Use satin for strokes about 1.5 to 7 mm wide because it is smooth and shiny. When a stroke is wider than about 7-8 mm, satin stitches get long enough to snag, so switch to fill (tatami) with a border or to split satin."
     }
   ],
   "content": [
@@ -55,6 +63,77 @@ export const post: BlogPost = {
     {
       "type": "p",
       "text": "When stitched incorrectly, small letters transform into messy thread blobs, centers of letters like 'e' and 'a' clog shut, and operators suffer constant needle deflections and thread breaks. In this guide, we break down the physics, digitizing rules, and production settings required to produce razor-sharp micro-lettering every single run."
+    },
+    {
+      "type": "h2",
+      "text": "How to Digitize Lettering: Stitch Type by Letter Height"
+    },
+    {
+      "type": "p",
+      "text": "To digitize lettering for embroidery, pick the stitch type from the letter height and stroke width, set density and pull compensation for the fabric, add underlay that suits the column width, then sequence the letters so they join without trims. Letter height decides most of it:"
+    },
+    {
+      "type": "table",
+      "caption": "Stitch type by letter height (40 wt thread)",
+      "headers": [
+        "Letter height (capital)",
+        "Stroke width",
+        "Stitch type",
+        "Underlay"
+      ],
+      "rows": [
+        [
+          "Under 3 mm (0.12 in)",
+          "Under 1 mm",
+          "Not recommended; single run at best with 60 wt thread",
+          "None"
+        ],
+        [
+          "3 to 5 mm (0.12 to 0.2 in)",
+          "About 1 mm",
+          "Run or triple (bean) stitch, or narrow satin with 60 wt thread",
+          "None or one center run"
+        ],
+        [
+          "5 to 6 mm (0.2 to 0.25 in)",
+          "1 to 1.5 mm",
+          "Narrow satin, the practical minimum with 40 wt thread",
+          "Center run"
+        ],
+        [
+          "6 to 25 mm (0.25 to 1 in)",
+          "1.5 to 7 mm",
+          "Satin columns",
+          "Center run or edge run"
+        ],
+        [
+          "Over 25 mm, or columns over 7-8 mm",
+          "Over 7 mm",
+          "Fill (tatami) with a satin or run border, or split satin",
+          "Edge run plus zigzag or tatami underlay"
+        ]
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Density, Pull Compensation and Underlay for Letters"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "**Density:** satin spacing around 0.40 to 0.45 mm for 40 wt thread; open it slightly (0.45 to 0.50 mm) on small text so letters do not clog.",
+        "**Pull compensation:** 0.2 to 0.3 mm on stable wovens and twill caps, 0.3 to 0.4 mm on pique and other knits. Without it, satin letters shrink in width and thin strokes disappear.",
+        "**Underlay:** follow the table above. Heavy underlay on small letters makes them stiff and rounded; too little underlay on large letters lets the fabric show through.",
+        "**Spacing:** add roughly 5 to 10% extra letter spacing on small text, since thread spreads and letters visually close up."
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Script and Joined Lettering"
+    },
+    {
+      "type": "p",
+      "text": "In script, each letter should start where the previous one ended. Digitize joins as short overlaps of about 0.3 to 0.5 mm so no gaps open, hide travel runs under the next letter, and avoid trims inside a word. Built-in keyboard fonts in digitizing software are already pathed this way; TrueType fonts converted automatically usually need manual cleanup of entry and exit points. See the [best fonts for embroidery](/blog/best-fonts-for-embroidery) for fonts that hold up when stitched, and the [logo digitizing guide](/blog/how-to-digitize-embroidery-designs) for the full process. The same rules apply when you [digitize a signature or handwriting for embroidery](/blog/how-to-digitize-handwriting-signature-embroidery)."
     },
     {
       "type": "h2",
@@ -128,7 +207,7 @@ export const post: BlogPost = {
     },
     {
       "type": "tip",
-      "text": "Struggling with small lettering on snapbacks or curved hats? Let our master punchers manually calibrate your stitch file for clean, readable sewouts. Order professional [cap logo embroidery digitizing](/services/cap-logo-digitizing) or [custom 3D puff digitizing](/services/3d-puff-digitizing) starting at just $6.99 with 12-24 hour delivery on the Standard plan."
+      "text": "Struggling with small lettering on snapbacks or curved hats? We digitize lettering by hand for clean, readable sew-outs. Order [cap logo digitizing](/services/cap-logo-digitizing) or [3D puff digitizing](/services/3d-puff-digitizing); plans start at $6.99 (Basic, 24-48 hours), with 12-24 hour delivery on Standard ($12.99)."
     },
     {
       "type": "p",
@@ -140,4 +219,5 @@ export const post: BlogPost = {
     }
   ]
 };
+
 export default post;

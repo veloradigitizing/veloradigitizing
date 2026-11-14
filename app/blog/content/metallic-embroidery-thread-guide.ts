@@ -2,20 +2,20 @@ import type { BlogPost } from '../types';
 
 export const post: BlogPost = {
   "slug": "metallic-embroidery-thread-guide",
-  "title": "Metallic Embroidery Thread: How to Stitch With It Without Breaks",
-  "metaTitle": "Metallic Embroidery Thread: Tips to Stop Breaks",
-  "description": "How to use metallic embroidery thread without breaks: a settings table for needle, speed, tension and density, thread types compared and a troubleshooting chart.",
-  "excerpt": "Metallic thread adds shine, but it breaks and shreds easily. Here is the needle, tension, speed and digitizing setup that makes embroidery with metallic thread run smoothly.",
+  "title": "Metallic Thread Keeps Breaking on Your Embroidery Machine? Causes, Settings and Fixes",
+  "metaTitle": "Metallic Thread Keeps Breaking? Embroidery Machine Fixes",
+  "description": "Metallic thread keeps breaking on your embroidery machine? Fix it with the right needle, tension, speed and thread stand, plus a settings table and fix chart.",
+  "excerpt": "Metallic thread adds shine, but it breaks and shreds easily. Here is why it keeps breaking and the needle, tension, speed and digitizing setup that stops it.",
   "category": "Guides",
   "tags": [
+    "metallic thread keeps breaking embroidery machine",
     "metallic embroidery thread",
     "embroidery with metallic thread",
     "metallic thread embroidery",
-    "metallic thread breaking embroidery",
     "needle for metallic thread"
   ],
   "publishedAt": "2026-11-10",
-  "updatedAt": "2026-11-12",
+  "updatedAt": "2026-11-14",
   "readTime": 8,
   "image": "/images/blog/metallic-embroidery-thread-guide.webp",
   "imagePrompt": "Gold and silver metallic embroidery thread cones next to a black cap with a shiny metallic embroidered emblem, sparkling highlights, 16:9.",
@@ -26,7 +26,7 @@ export const post: BlogPost = {
   },
   "faqs": [
     {
-      "question": "Why does my metallic embroidery thread keep breaking?",
+      "question": "Why does metallic thread keep breaking on my embroidery machine?",
       "answer": "The usual causes are a needle eye that is too small, too much speed, top tension that is too tight and thread twisting as it comes off the spool. Fit a metallic or large-eye 80/12 or 90/14 needle, slow the machine down, lower the top tension and feed the thread from a stand. If it still breaks in the same place, the design is too dense there."
     },
     {
@@ -34,8 +34,8 @@ export const post: BlogPost = {
       "answer": "Use a metallic needle or a needle with a larger eye, usually 80/12 or 90/14. The bigger eye and groove reduce friction, which is the main cause of shredding and breaks."
     },
     {
-      "question": "Why does metallic thread keep breaking?",
-      "answer": "The most common causes are a needle eye that is too small, top tension that is too tight, high machine speed, thread twisting off the spool and designs that are too dense. Fix them in that order."
+      "question": "Does metallic thread need a thread stand?",
+      "answer": "It helps a lot. Metallic thread is stiff and springy, so on a vertical spool pin it twists as it comes off and kinks before the needle. A separate thread stand, or a horizontal pin with a thread net, lets it unwind straight off the top and removes one of the most common causes of breaks."
     },
     {
       "question": "What tension should I use with metallic thread?",
@@ -53,7 +53,7 @@ export const post: BlogPost = {
   "content": [
     {
       "type": "p",
-      "text": "**Metallic embroidery thread** gives logos and monograms real shine, but it is weaker and stiffer than polyester. To stitch with it reliably, use a metallic needle (80/12 or 90/14), lower the top tension, slow the machine down, let the thread feed from a stand so it does not twist, and use a design with lighter density and satin columns rather than heavy fills."
+      "text": "If **metallic thread keeps breaking on your embroidery machine**, the cause is almost always one of five things: a needle eye that is too small, top tension that is too tight, too much speed, thread twisting as it leaves the spool, or a design that is too dense. Metallic embroidery thread is weaker and stiffer than polyester, so to stitch with it reliably, use a metallic needle (80/12 or 90/14), lower the top tension, slow the machine down, let the thread feed from a stand so it does not twist, and use a design with lighter density and satin columns rather than heavy fills."
     },
     {
       "type": "p",
@@ -203,7 +203,7 @@ export const post: BlogPost = {
     },
     {
       "type": "h2",
-      "text": "Metallic Thread Troubleshooting"
+      "text": "Metallic Thread Keeps Breaking? Troubleshooting Chart"
     },
     {
       "type": "table",

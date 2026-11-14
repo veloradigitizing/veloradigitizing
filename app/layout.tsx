@@ -36,11 +36,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.veloradigitizing.com"),
   title: {
-    default: "Embroidery Digitizing Service | Manual, from $6.99 | Velora",
+    default: "Cheap Embroidery Digitizing Service | From $6.99 | Velora",
     template: "%s | Velora Digitizing",
   },
   description:
-    "Manual embroidery digitizing service from $6.99 per design. DST, PES, JEF and EXP files for left chest logos, caps, 3D puff, applique and jacket backs. Free quote.",
+    "Cheap embroidery digitizing service, hand-digitized from $6.99 per design. DST, PES, JEF and EXP files for left chest logos, caps, 3D puff and applique.",
   authors: [{ name: "Velora Digitizing", url: "https://www.veloradigitizing.com" }],
   creator: "Velora Digitizing",
   publisher: "Velora Digitizing",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://www.veloradigitizing.com",
     siteName: "Velora Digitizing",
-    title: "Embroidery Digitizing Service | Manual Digitizing from $6.99 | Velora",
+    title: "Cheap Embroidery Digitizing Service | Hand-Digitized from $6.99",
     description:
       "Manual embroidery digitizing from $6.99 per design. Left chest, cap, 3D puff, applique and jacket back files in every machine format, with revisions included by plan.",
     images: [
@@ -92,7 +92,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Embroidery Digitizing Service | Manual Digitizing from $6.99 | Velora",
+    title: "Cheap Embroidery Digitizing Service | Hand-Digitized from $6.99",
     description:
       "Manual embroidery digitizing from $6.99 per design. Left chest, cap, 3D puff, applique and jacket back files in every machine format, with revisions included by plan.",
     images: ["/images/og/og-home.jpg"],

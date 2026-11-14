@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     canonical: "https://www.veloradigitizing.com/terms-and-conditions",
   },
   openGraph: {
+    type: "website",
     title: "Terms and Conditions of Service | Velora Digitizing",
     description:
       "Review the Terms and Conditions for Velora Digitizing embroidery digitizing, vector art conversion, and custom patch design services.",

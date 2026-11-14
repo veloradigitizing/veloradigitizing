@@ -2,23 +2,23 @@ import type { BlogPost } from '../types';
 
 export const post: BlogPost = {
   "slug": "custom-patch-types-embroidered-woven-pvc-leather-chenille",
-  "title": "Custom Patch Types Explained: Embroidered, Woven, PVC, Leather, Chenille & Printed",
-  "metaTitle": "Patch Types: Embroidered vs Woven vs PVC",
-  "description": "Compare all custom patch types: Embroidered (50-100%), Woven, PVC rubber, Laser Leather, Chenille, and Sublimated. Backings, borders, and cost comparison.",
-  "excerpt": "Choosing between embroidered, woven, PVC, leather, or chenille patches? Compare durability, detail resolution, backing types, and unit costs.",
+  "title": "Embroidered vs Woven vs PVC Patches: The Difference (Plus Leather and Chenille)",
+  "metaTitle": "Embroidered vs Woven vs PVC Patches: The Difference",
+  "description": "Embroidered vs woven vs PVC patches: the difference in detail, texture, durability and cost, plus leather and chenille patches and patch border types compared.",
+  "excerpt": "Embroidered, woven or PVC? Compare how each patch is made, how much detail it holds, how it wears outdoors and when leather or chenille is the better pick.",
   "category": "Patches",
   "tags": [
-    "custom patches",
+    "embroidered vs woven vs pvc patches",
+    "custom patch types",
     "embroidered patches",
     "woven patches",
     "pvc patches",
-    "leather patches",
-    "chenille patches",
     "pvc patches vs embroidered patches",
-    "patch backings"
+    "merrowed border vs hot cut",
+    "patch border types"
   ],
   "publishedAt": "2026-08-31",
-  "updatedAt": "2026-10-26",
+  "updatedAt": "2026-11-14",
   "readTime": 12,
   "image": "/images/blog/custom-patch-types-embroidered-woven-pvc-leather-chenille.webp",
   "imagePrompt": "Top-down showcase of six distinct custom patch types arranged in an aesthetic grid on dark wood: a classic embroidered patch with merrowed border, a high-detail woven patch, a 3D molded PVC rubber patch, an engraved caramel leather patch, a fluffy varsity chenille patch, and a printed badge, studio lighting, 16:9.",
@@ -28,6 +28,10 @@ export const post: BlogPost = {
     "href": "/patches"
   },
   "faqs": [
+    {
+      "question": "What is the difference between embroidered, woven and PVC patches?",
+      "answer": "Embroidered patches are stitched with thick thread and have a raised texture. Woven patches are made on a loom with fine thread, so they are flat and hold more detail. PVC patches are molded rubber, so they are waterproof and the most durable outdoors. Choose embroidered for the classic look, woven for small text and fine lines, and PVC for gear that gets wet or rough use."
+    },
     {
       "question": "What is the difference between an embroidered patch and a woven patch?",
       "answer": "Embroidered patches stitch thick 40wt embroidery thread onto a twill fabric base, creating a classic, textured, 3D stitched appearance. Woven patches use ultra-fine 50-denier threads woven continuously together like a label, allowing razor-sharp reproduction of tiny text down to 2mm and intricate graphic details."
@@ -45,8 +49,8 @@ export const post: BlogPost = {
       "answer": "PVC. Liquid PVC is poured into CNC-machined metal molds, so it reproduces micro-lines and lettering that 40wt embroidery thread cannot. Embroidered lettering needs a minimum height of about 4 to 5 mm to stay legible, while woven patches can go down to roughly 2 mm."
     },
     {
-      "question": "What are the best patch backing options?",
-      "answer": "1. Iron-On / Heat Seal: Best for t-shirts and hoodies applied with a commercial heat press at 320°F for 15s. 2. Hook & Loop (Velcro): Best for tactical gear, military uniforms, and morale patches. 3. Peel & Stick Adhesive: Best for single-event temporary wear. 4. Sew-On (Plastic Backing): Most permanent, durable option for jackets and workwear."
+      "question": "What is a hot cut patch border?",
+      "answer": "A hot cut border is made by cutting the patch with a heated knife or die that melts and seals the edge, with no merrow or satin edge stitched around it. It is flat and clean, and suits simple shapes and woven or printed patches."
     },
     {
       "question": "What is the difference between a Merrowed border and a Laser Cut border?",
@@ -56,11 +60,11 @@ export const post: BlogPost = {
   "content": [
     {
       "type": "p",
-      "text": "Custom patches have experienced an enormous resurgence across streetwear fashion, tactical outdoor gear, corporate merchandise, workwear uniforms, and motorcycle clubs. However, choosing the correct patch manufacturing method can make a massive difference in detail clarity, durability, and cost."
+      "text": "The difference between **embroidered vs woven vs PVC patches** is how the design is made. Embroidered patches are stitched with thick thread on a twill base, so they have a raised texture but limited fine detail. Woven patches are made on a loom with much thinner thread, so they are flat and hold small text and fine lines. PVC patches are molded from soft rubber, so they are waterproof, very durable and can be raised in layers."
     },
     {
       "type": "p",
-      "text": "Below is our complete breakdown of the 6 major custom patch styles, their technical construction, border choices, backing options, and ideal use cases."
+      "text": "Below is each type in detail, plus leather and chenille patches, border choices and a side-by-side comparison to help you choose."
     },
     {
       "type": "h2",
@@ -192,7 +196,55 @@ export const post: BlogPost = {
     },
     {
       "type": "h2",
-      "text": "Comparison Matrix: Which Patch Should You Choose?"
+      "text": "Embroidered vs Woven vs PVC Patches: Side-by-Side Comparison"
+    },
+    {
+      "type": "table",
+      "caption": "Embroidered vs woven vs PVC patches compared",
+      "headers": [
+        "",
+        "Embroidered",
+        "Woven",
+        "PVC"
+      ],
+      "rows": [
+        [
+          "How it is made",
+          "Thick thread stitched onto a twill base",
+          "Fine thread woven on a loom",
+          "Soft PVC rubber poured into a mold"
+        ],
+        [
+          "Texture",
+          "Raised, stitched texture",
+          "Flat and smooth",
+          "Smooth; can be layered in 2D or 3D"
+        ],
+        [
+          "Fine detail and small text",
+          "Limited; small text closes up",
+          "Very good",
+          "Very good; raised edges stay crisp"
+        ],
+        [
+          "Outdoor wear",
+          "Good; thread can fray over years of use",
+          "Good",
+          "Best; waterproof and easy to clean"
+        ],
+        [
+          "Feel",
+          "Thicker, classic badge feel",
+          "Thin and light",
+          "Flexible but heavier"
+        ],
+        [
+          "Best for",
+          "Classic badges, uniforms and caps",
+          "Detailed logos and small lettering",
+          "Tactical, outdoor and gear patches"
+        ]
+      ]
     },
     {
       "type": "ul",
@@ -206,18 +258,6 @@ export const post: BlogPost = {
     },
     {
       "type": "h2",
-      "text": "Patch Borders and Backing Options"
-    },
-    {
-      "type": "ul",
-      "items": [
-        "**Merrowed Border:** Heavy 3.5mm overlock wrapped border for standard geometric shapes.",
-        "**Laser Heat-Cut Border:** Clean, sealed satin border that perfectly traces custom contour die-cut shapes.",
-        "**Backing Options:** Heat-Seal / Iron-On (applied at 320°F for 15s), Hook & Loop Velcro, Peel & Stick 3M Adhesive, or Classic Plastic Sew-On."
-      ]
-    },
-    {
-      "type": "h2",
       "text": "Order Custom Patches with Velora Digitizing"
     },
     {
@@ -226,7 +266,7 @@ export const post: BlogPost = {
     },
     {
       "type": "h2",
-      "text": "Border Construction: Merrowed Overlock vs. Laser Heat-Cut Satin"
+      "text": "Patch Border Types: Merrowed vs Hot Cut vs Laser Cut"
     },
     {
       "type": "p",
@@ -240,17 +280,42 @@ export const post: BlogPost = {
       ]
     },
     {
-      "type": "h2",
-      "text": "Commercial Patch Backing Methods & Application Temperatures"
+      "type": "table",
+      "caption": "Patch border types compared",
+      "headers": [
+        "Border",
+        "How it is made",
+        "Best shapes",
+        "Minimum practical size",
+        "Look"
+      ],
+      "rows": [
+        [
+          "Merrowed",
+          "Overlock machine wraps thick thread around a pre-cut edge after embroidery",
+          "Circles, ovals, squares, rectangles, shields",
+          "About 2 in",
+          "Raised, rope-like classic edge"
+        ],
+        [
+          "Hot cut",
+          "Patch cut with a heated knife or die that seals the fabric edge",
+          "Simple shapes with no satin edge",
+          "About 1 in",
+          "Flat, thin, modern edge"
+        ],
+        [
+          "Laser cut with satin border",
+          "Satin border stitched in the file, then a laser cuts and seals just outside it",
+          "Detailed or irregular shapes, sharp corners",
+          "About 1 in",
+          "Clean contour that follows the design"
+        ]
+      ]
     },
     {
-      "type": "ul",
-      "items": [
-        "**Iron-On / Heat Seal Backing:** Heat press application at **320°F (160°C) for 12-15 seconds** at 40 PSI medium pressure. Turn garment inside out and press for another 10 seconds. Best for retail t-shirts, hoodies, and backpacks.",
-        "**Hook & Loop (Velcro) Backing:** Male hook backing sewn directly to patch perimeter with female loop piece provided. Best for military tactical vests, law enforcement uniforms, and morale gear.",
-        "**Peel-and-Stick 3M Adhesive:** Industrial pressure-sensitive sticker backing. Ideal for single-day conventions, temporary branding, and hard-hat placement.",
-        "**Plastic / PVC Stiffener (Sew-On):** Heavy 0.3mm clear plastic backing that keeps the patch rigid and flat when sewn onto denim or motorcycle leather vests."
-      ]
+      "type": "p",
+      "text": "Choose merrowed for classic round and rectangular patches on uniforms and jackets, and laser cut when the patch follows the shape of the logo. Hot cut suits woven and printed patches where a raised edge would cover fine detail. For backings (iron-on, sew-on, hook and loop, adhesive), see [iron-on vs sew-on patches](/blog/iron-on-vs-sew-on-patches)."
     },
     {
       "type": "p",

@@ -4,7 +4,7 @@ export const post: BlogPost = {
   "slug": "baby-blanket-embroidery-guide",
   "title": "Baby Blanket Embroidery: Placement, Fonts & Settings for Soft Fabrics",
   "metaTitle": "Baby Blanket Embroidery: Placement, Size & Tips",
-  "description": "Baby blanket embroidery guide: where to place a name, a size chart by blanket size, fonts, and stabilizer, topping and needle settings for minky, fleece and muslin.",
+  "description": "Baby blanket embroidery guide: where to place a name, size chart by blanket, fonts, and stabilizer, topping and needle settings for minky, fleece and muslin.",
   "excerpt": "Personalized baby blankets are a top-selling gift. Here is how to place, size and stitch names on minky, fleece and cotton so they look crisp and stay soft.",
   "category": "Guides",
   "tags": [

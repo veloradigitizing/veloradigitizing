@@ -10,11 +10,12 @@ import Icon, { IconName } from "../components/Icon";
 export const metadata: Metadata = {
   title: { absolute: "Embroidery Digitizing Prices | Flat Rates from $6.99 | Velora" },
   description:
-    "Embroidery digitizing prices from $6.99 per design: flat plans by stitch count for left chest, cap, 3D puff, applique and jacket back files, with revisions included by plan.",
+    "Embroidery digitizing prices from $6.99 per design: flat plans by stitch count for left chest, cap, 3D puff, applique and jacket back files.",
   alternates: {
     canonical: "https://www.veloradigitizing.com/pricing",
   },
   openGraph: {
+    type: "website",
     title: "Embroidery Digitizing Prices | Flat Rates from $6.99",
     description:
       "Flat-rate digitizing plans from $6.99 per design with no per-stitch surcharges. Compare plans, typical market rates and what is included.",
@@ -83,7 +84,7 @@ const DETAILED_PRICE_MATRIX = [
     service: "Jacket Back / Large Format",
     idealFor: "Denim jackets, biker vests, varsity back panels",
     sizeLimit: "Up to 12.0\" × 12.0\"+",
-    turnaround: "12 – 24 Hours",
+    turnaround: "2 – 24 Hours",
     price: "$12.99 – $19.99",
     popular: false,
   },

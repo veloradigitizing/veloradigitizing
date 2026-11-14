@@ -4,7 +4,7 @@ export const post: BlogPost = {
   "slug": "best-free-embroidery-digitizing-software-inkstitch-guide",
   "title": "How to Digitize a Logo for Embroidery Free: Ink/Stitch and the Best Free Software (2026)",
   "metaTitle": "Digitize a Logo for Embroidery Free: Ink/Stitch Guide",
-  "description": "How to digitize a logo for embroidery for free with Ink/Stitch, step by step, plus an honest review of Bernina ArtLink and Embrilliance Express and when to outsource.",
+  "description": "Digitize a logo for embroidery free with Ink/Stitch, step by step, plus an honest look at Bernina ArtLink, Embrilliance Express and when to outsource.",
   "excerpt": "Want to digitize a logo for embroidery without paying for software? Ink/Stitch is the real free route. Here is the step-by-step, what it does well, where it fails, and the other free tools.",
   "category": "Software",
   "tags": [
@@ -14,8 +14,8 @@ export const post: BlogPost = {
     "inkstitch tutorial",
     "best free embroidery software",
     "inkscape embroidery",
-    "free dst converter",
-    "embroidery software comparison"
+    
+    
   ],
   "publishedAt": "2026-10-14",
   "updatedAt": "2026-11-09",

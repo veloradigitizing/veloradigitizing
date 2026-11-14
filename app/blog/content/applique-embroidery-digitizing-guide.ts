@@ -13,12 +13,12 @@ export const post: BlogPost = {
     "applique digitizing software",
     "free applique digitizing",
     "tackdown stitch",
-    "applique embroidery",
     "varsity lettering",
-    "laser cut applique"
+    "laser cut applique",
+    "how to digitize applique"
   ],
   "publishedAt": "2026-09-22",
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-14",
   "readTime": 10,
   "image": "/images/blog/applique-embroidery-digitizing-guide.webp",
   "imagePrompt": "Close-up of a vintage heather grey collegiate sweatshirt with red tackle twill appliqué lettering outlined with heavy navy satin embroidery borders, sharp focus, 16:9.",
@@ -105,14 +105,49 @@ export const post: BlogPost = {
     {
       "type": "table",
       "caption": "Applique border and tackdown reference (starting points, confirm on a sample)",
-      "headers": ["Situation", "Tackdown", "Cover border", "Notes"],
+      "headers": [
+        "Situation",
+        "Tackdown",
+        "Cover border",
+        "Notes"
+      ],
       "rows": [
-        ["Small lettering or logos under about 3 inches, laser-cut fabric", "Double run or narrow zigzag about 1.8 mm", "About 3-3.5 mm satin", "Pre-cut pieces match the placement line, so a narrower border is safe."],
-        ["Standard lettering and chest or sleeve logos, 3-6 inches", "Zigzag about 2-2.5 mm", "About 3.5-4.5 mm satin", "The most common production setting for tackle twill and cotton twill."],
-        ["Large jacket-back pieces, 8 inches and above", "Zigzag about 2.5 mm, sometimes a double pass", "About 4-5 mm satin", "Wider borders hide trimming variance and resist wash wear on heavy garments."],
-        ["Fraying fabrics (loose cotton, flannel, sequin)", "E-stitch or wide zigzag", "About 4-5 mm satin with edge-run underlay", "The tackdown must catch enough fabric to stop threads lifting under the border."],
-        ["Felt and fleece", "Zigzag about 2 mm", "About 3.5-4 mm satin, or decorative stitch", "Lofty fabric compresses; keep satin density moderate to avoid tunnelling."],
-        ["In-hoop trimming with scissors", "Zigzag about 2.5 mm, visible stop after", "Add about 0.5 mm to the border width", "Hand trimming leaves a small uneven margin that the border must cover."]
+        [
+          "Small lettering or logos under about 3 inches, laser-cut fabric",
+          "Double run or narrow zigzag about 1.8 mm",
+          "About 3-3.5 mm satin",
+          "Pre-cut pieces match the placement line, so a narrower border is safe."
+        ],
+        [
+          "Standard lettering and chest or sleeve logos, 3-6 inches",
+          "Zigzag about 2-2.5 mm",
+          "About 3.5-4.5 mm satin",
+          "The most common production setting for tackle twill and cotton twill."
+        ],
+        [
+          "Large jacket-back pieces, 8 inches and above",
+          "Zigzag about 2.5 mm, sometimes a double pass",
+          "About 4-5 mm satin",
+          "Wider borders hide trimming variance and resist wash wear on heavy garments."
+        ],
+        [
+          "Fraying fabrics (loose cotton, flannel, sequin)",
+          "E-stitch or wide zigzag",
+          "About 4-5 mm satin with edge-run underlay",
+          "The tackdown must catch enough fabric to stop threads lifting under the border."
+        ],
+        [
+          "Felt and fleece",
+          "Zigzag about 2 mm",
+          "About 3.5-4 mm satin, or decorative stitch",
+          "Lofty fabric compresses; keep satin density moderate to avoid tunnelling."
+        ],
+        [
+          "In-hoop trimming with scissors",
+          "Zigzag about 2.5 mm, visible stop after",
+          "Add about 0.5 mm to the border width",
+          "Hand trimming leaves a small uneven margin that the border must cover."
+        ]
       ]
     },
     {
@@ -180,11 +215,15 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "Applique files are priced like other digitizing, by design rather than by fabric. At Velora Digitizing they fall under the **Standard plan at $12.99**, which covers detailed logos, jacket backs, applique and patch files with all embroidery formats; see the [pricing page](/pricing) for plan details. When you order, state which areas use applique fabric, the finished size and garment, whether you will trim in the hoop or pre-cut (and whether you need a cut file and in which format), the fabric, your preferred border finish and the machine format. The [applique digitizing service](/services/applique-digitizing) page lists the full order brief."
+      "text": "Applique files are priced like other digitizing, by design rather than by fabric. At Velora Digitizing most applique logos and patches fit the **Standard plan at $12.99** (up to 15,000 stitches, 12-24 hours, 3 revisions); large jacket-back applique over 15,000 stitches goes on **Rush at $19.99** (unlimited stitches, 2-4 hours). All embroidery formats are included; see the [pricing page](/pricing) for plan details. When you order, state which areas use applique fabric, the finished size and garment, whether you will trim in the hoop or pre-cut (and whether you need a cut file and in which format), the fabric, your preferred border finish and the machine format. The [applique digitizing service](/services/applique-digitizing) page lists the full order brief."
     },
     {
       "type": "p",
       "text": "For the twill fabric used in athletic lettering, see [what is tackle twill](/blog/what-is-tackle-twill). To turn applique designs into standalone badges, read [how to make embroidered patches](/blog/how-to-make-embroidered-patches)."
+    },
+    {
+      "type": "p",
+      "text": "Stitching the file is a separate skill: for hooping, trimming and fabric choice on the machine, follow [how to applique with an embroidery machine](/blog/how-to-applique-with-embroidery-machine)."
     }
   ]
 };

@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     canonical: "https://www.veloradigitizing.com/about",
   },
   openGraph: {
+    type: "website",
     title: "About Master Embroidery Digitizers | Velora Digitizing",
     description:
       "Meet Velora Digitizing's master digitizers with 10+ years of craftsmanship delivering precision embroidery files with 100% stitch quality. Learn our story!",

@@ -4,7 +4,7 @@ export const post: BlogPost = {
   "slug": "embroidery-stabilizer-guide-cutaway-vs-tearaway",
   "title": "Cutaway vs Tearaway Stabilizer: Which One to Use for Each Fabric",
   "metaTitle": "Cutaway vs Tearaway Stabilizer: Which to Use",
-  "description": "Cutaway or tearaway? A fabric-by-fabric stabilizer chart for knits, polos, fleece, towels, caps and wovens, with weights, toppers, trimming and what to tell your digitizer.",
+  "description": "Cutaway or tearaway? A fabric-by-fabric stabilizer chart for knits, polos, fleece, towels, caps and wovens, with weights, toppers and trimming tips.",
   "excerpt": "Cutaway for anything that stretches or gets worn, tearaway for stable wovens and caps, wash-away for lace and as a topper. The fabric chart, weights and trimming rules in one place.",
   "category": "Stabilizers & Technical",
   "tags": [
@@ -14,7 +14,6 @@ export const post: BlogPost = {
     "embroidery stabilizer guide",
     "cut away stabilizer",
     "embroidery backing",
-    "water soluble topping",
     "stabilizer for polo shirts",
     "embroidery hooping"
   ],

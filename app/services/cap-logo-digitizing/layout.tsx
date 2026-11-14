@@ -4,11 +4,12 @@ import RelatedGuides from "../../components/RelatedGuides";
 export const metadata: Metadata = {
   title: { absolute: "Cap Embroidery Digitizing Services | Hat Logos from $6.99, DST & PES" },
   description:
-    "Cap and hat logo digitizing from $6.99 per design. Center-out sequencing for curved frames, centre-seam handling, usable height limits and DST, PES, JEF files for structured and unstructured caps.",
+    "Cap and hat logo digitizing from $6.99 per design. Center-out sequencing for curved frames, center-seam handling and DST, PES and JEF files for any cap.",
   alternates: {
     canonical: "https://www.veloradigitizing.com/services/cap-logo-digitizing",
   },
   openGraph: {
+    type: "website",
     title: "Cap & Hat Logo Digitizing Services from $6.99 (DST, PES)",
     description:
       "Cap and hat logo digitizing with center-out sequencing for curved frames. Send your hat type, logo dimensions and machine format for a quote.",

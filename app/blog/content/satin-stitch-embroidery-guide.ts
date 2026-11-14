@@ -2,20 +2,20 @@ import type { BlogPost } from '../types';
 
 export const post: BlogPost = {
   "slug": "satin-stitch-embroidery-guide",
-  "title": "Satin Stitch Embroidery: How to Do It by Hand and by Machine",
-  "metaTitle": "Satin Stitch Embroidery: Hand & Machine Guide",
-  "description": "Satin stitch embroidery by hand and machine: step-by-step method, thread and needle to use, padded and slanted variations, machine column widths and fixes for gaps.",
-  "excerpt": "Satin stitch gives embroidery its smooth shine. Here is how to sew it neatly by hand, how machine satin columns are digitized and the limits that keep them crisp.",
+  "title": "Satin Stitch Width in Machine Embroidery: Settings, Limits and Hand Satin Stitch",
+  "metaTitle": "Satin Stitch Width in Machine Embroidery (Chart)",
+  "description": "Satin stitch width in machine embroidery: the 1 to 7 mm working range, settings by column width, when to switch to fill, plus how to satin stitch by hand.",
+  "excerpt": "How wide can a satin stitch be? The machine column widths that stay crisp, the settings for each width, when to split or switch to fill, and how to sew satin stitch by hand.",
   "category": "Guides",
   "tags": [
+    "satin stitch width machine embroidery",
+    "machine satin stitch width",
     "satin stitch embroidery",
-    "satin embroidery stitches",
     "how to satin stitch embroidery",
-    "embroidery satin stitch",
-    "machine satin stitch width"
+    "satin embroidery stitches"
   ],
   "publishedAt": "2026-11-07",
-  "updatedAt": "2026-11-12",
+  "updatedAt": "2026-11-14",
   "readTime": 10,
   "image": "/images/blog/satin-stitch-embroidery-guide.webp",
   "imagePrompt": "Macro close-up of glossy satin stitch embroidery columns forming smooth letters and a leaf shape on navy twill, showing parallel thread texture, 16:9.",
@@ -26,16 +26,16 @@ export const post: BlogPost = {
   },
   "faqs": [
     {
+      "question": "What is the maximum satin stitch width in machine embroidery?",
+      "answer": "Machine satin columns usually look best between about 1 and 7 mm wide. Narrower columns can disappear, and much wider ones create long stitches that snag and loosen. Wider areas are digitized as split satin or fill stitches instead."
+    },
+    {
       "question": "What is a satin stitch in embroidery?",
       "answer": "A satin stitch is a series of straight, closely spaced stitches laid side by side across a shape, so the thread forms a smooth, shiny surface with no fabric showing. It is used for lettering, borders, outlines and small filled shapes."
     },
     {
       "question": "How do you do a satin stitch by hand?",
       "answer": "Outline the shape with a split or back stitch, then bring the needle up on one edge and down on the opposite edge, laying each stitch right next to the last. Keep stitches parallel, at an even tension and not too long. Covering the outline gives a crisp, slightly raised edge."
-    },
-    {
-      "question": "How wide can a machine satin stitch be?",
-      "answer": "Machine satin columns usually look best between about 1 and 7 mm wide. Narrower columns can disappear, and much wider ones create long stitches that snag and loosen. Wider areas are digitized as split satin or fill stitches instead."
     },
     {
       "question": "Why does my satin stitch have gaps?",
@@ -57,7 +57,7 @@ export const post: BlogPost = {
   "content": [
     {
       "type": "p",
-      "text": "**Satin stitch embroidery** covers a shape with straight, closely spaced stitches laid side by side, so the thread forms a smooth, glossy surface. By hand, you outline the shape and fill it edge to edge with parallel stitches. By machine, satin \"columns\" zigzag across a shape with underlay and pull compensation, and they work best roughly 1 to 7 mm wide. It is the stitch behind crisp lettering, borders and patch edges."
+      "text": "In machine embroidery, **satin stitch width** works best between about 1 and 7 mm. Below about 1 mm a satin column sinks into the fabric, so use a run or bean stitch instead; above about 7 to 8 mm the long stitches snag and loosen, so split the satin or switch to a fill stitch. **Satin stitch embroidery** covers a shape with straight, closely spaced stitches laid side by side, so the thread forms a smooth, glossy surface, whether it is sewn by machine or by hand."
     },
     {
       "type": "p",
@@ -182,7 +182,7 @@ export const post: BlogPost = {
     },
     {
       "type": "h2",
-      "text": "Machine Satin Stitch: How Satin Columns Work"
+      "text": "Satin Stitch Width in Machine Embroidery"
     },
     {
       "type": "p",
@@ -190,7 +190,7 @@ export const post: BlogPost = {
     },
     {
       "type": "table",
-      "caption": "Machine satin stitch settings by column width (starting points for 40 wt thread)",
+      "caption": "Machine satin stitch width chart: settings by column width (starting points for 40 wt thread)",
       "headers": [
         "Column width",
         "Stitch choice",

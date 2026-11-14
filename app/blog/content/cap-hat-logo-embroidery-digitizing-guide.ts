@@ -12,9 +12,13 @@ export const post: BlogPost = {
     "cap embroidery digitizing",
     "hat embroidery placement",
     "center-out digitizing",
-    "cap logo digitizing"
+    "cap logo digitizing",
+    "back of hat embroidery size",
+    "side of hat embroidery",
+    "bucket hat embroidery size"
   ],
   "publishedAt": "2026-10-05",
+  "updatedAt": "2026-11-14",
   "readTime": 9,
   "image": "/images/blog/cap-hat-logo-embroidery-digitizing-guide.webp",
   "imagePrompt": "Close-up product photo of a structured navy six-panel baseball cap mounted on a commercial embroidery machine cap frame, a crisp white and gold shield logo embroidered on the front panel, needle and presser foot visible just above the logo, a small steel ruler resting beside the cap showing roughly 2.25 inches of height, blurred embroidery workshop with thread cones in the background, soft natural studio lighting, sharp focus on the stitches, realistic photography, no text overlays, no watermarks, 16:9.",
@@ -39,6 +43,14 @@ export const post: BlogPost = {
     {
       "question": "What file format do cap embroidery machines need?",
       "answer": "Most commercial cap machines, including Tajima, Barudan and SWF, run DST files. Brother and Baby Lock machines use PES, and Janome uses JEF. The format does not change how the design should be digitized. The center-out stitch order and cap-safe size matter far more than the file extension."
+    },
+    {
+      "question": "What size should a logo be on the back of a hat?",
+      "answer": "Above the closure opening, keep back embroidery about 0.75 to 1 inch high and 2.25 to 3 inches wide. Closed-back caps allow up to about 1.75 inches high. Side panels take about 1 to 1.25 inches high by 2 to 2.5 inches wide."
+    },
+    {
+      "question": "What size embroidery fits on a bucket hat?",
+      "answer": "Most adult bucket hats take a front design about 1.75 to 2.25 inches high and 4 to 4.5 inches wide. Measure the panel between the seam and brim, and leave about 0.5 inch clear of the brim."
     }
   ],
   "content": [
@@ -68,14 +80,71 @@ export const post: BlogPost = {
         "**Structured six-panel cap or snapback, front:** about 2.25 inches high and 4.5 inches wide. Some high-profile crowns allow up to 2.5 inches of height.",
         "**Low-profile or unstructured dad hat, front:** about 2.0 inches high and 4.0 inches wide.",
         "**Five-panel or foam-front trucker cap, front:** about 2.25 inches high and 4.5 inches wide, with no center seam to work around.",
-        "**Side panel:** about 1.0 inch high and 2.5 inches wide.",
-        "**Back, above the closure opening:** about 0.75 to 1.0 inch high and 3.5 inches wide, often set as a single curved line of text.",
-        "**Beanie cuff:** about 1.75 to 2.0 inches high and 4.0 inches wide."
+        "**Side panel:** about 1.0 to 1.25 inches high and 2.0 to 2.5 inches wide.",
+        "**Back, above the closure opening:** about 0.75 to 1.0 inch high and 2.25 to 3.0 inches wide, often set as a single curved line of text.",
+        "**Beanie cuff:** about 1.75 to 2.0 inches high and 4.0 inches wide.",
+        "**Bucket hat, front:** about 1.75 to 2.25 inches high and 4.0 to 4.5 inches wide."
       ]
     },
     {
       "type": "p",
       "text": "Treat these as starting points. Cap frames differ between machine brands, and a tall design on a low-profile cap will hit the frame or sew onto the curve. When in doubt, measure the blank and ask the embroiderer which frame they use before the file is digitized."
+    },
+    {
+      "type": "h2",
+      "text": "Side and Back of Hat Embroidery Size"
+    },
+    {
+      "type": "p",
+      "text": "Side and back logos are small because the area between the seams, brim and closure is small. They are usually stitched on a cap frame turned to the side, or with a side or back clamp, so the limits below also depend on the embroiderer's equipment."
+    },
+    {
+      "type": "table",
+      "caption": "Side and back hat embroidery sizes",
+      "headers": [
+        "Placement",
+        "Typical maximum (H x W)",
+        "Common use",
+        "Notes"
+      ],
+      "rows": [
+        [
+          "Left or right side panel",
+          "1.0-1.25 x 2.0-2.5 in",
+          "Small icon, flag, number, short word",
+          "Keep clear of the side seam and at least 0.5 in above the brim."
+        ],
+        [
+          "Back, above closure",
+          "0.75-1.0 x 2.25-3.0 in",
+          "Website, slogan, name",
+          "Center over the strap opening; text height at least 0.25 in."
+        ],
+        [
+          "Back, closed-back (flexfit)",
+          "Up to 1.75 x 3.0 in",
+          "Larger back logo",
+          "No opening, so more height is possible."
+        ],
+        [
+          "Strap or under the bill",
+          "Under 0.5 in high",
+          "Tiny text or icon",
+          "Usually done before construction or with special clamps."
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Small text matters most here. Lettering under about 0.25 inch (6 mm) on a side panel loses its counters; see [how to digitize lettering](/blog/how-to-digitize-small-text-micro-lettering-embroidery) for settings that keep it readable."
+    },
+    {
+      "type": "h2",
+      "text": "Bucket Hat Embroidery Size"
+    },
+    {
+      "type": "p",
+      "text": "Bucket hats are soft and have a downward brim all the way around, so the front panel is shorter than a baseball cap front. A design about 1.75 to 2.25 inches high and 4 to 4.5 inches wide fits most adult bucket hats; published guides range from about 2.5 x 2.5 inches up to 2 x 5 inches, so measure the hat first. Unstructured bucket hats need a cutaway or firm tearaway backing and a center-out file, the same as a dad hat, and side logos follow the side-panel sizes above."
     },
     {
       "type": "h2",
@@ -95,7 +164,7 @@ export const post: BlogPost = {
     },
     {
       "type": "p",
-      "text": "This is why a logo that sews cleanly on a polo can fail on a hat. The sizing and sequencing rules in our [left chest logo digitizing guide](/blog/left-chest-logo-embroidery-digitizing-guide) are built for a flat hoop, and they do not carry over to a cap frame."
+      "text": "This is why a logo that sews cleanly on a polo can fail on a hat. The sizing and sequencing rules in our [left chest logo digitizing guide](/blog/left-chest-logo-embroidery-digitizing-guide) are built for a flat hoop, and they do not carry over to a cap frame. If you only have a single-needle home machine, follow our guide on [how to embroider a hat with an embroidery machine](/blog/how-to-embroider-a-hat-with-embroidery-machine)."
     },
     {
       "type": "h2",
