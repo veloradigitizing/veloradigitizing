@@ -2,12 +2,14 @@ import Image from "next/image";
 import { isDesignVisible } from "../../lib/design-visibility";
 import thumbnails from "../../lib/portfolio-thumbnails.json";
 import { PATCH_PORTFOLIO_ITEMS } from "../../lib/patch-portfolio";
+import { FEATURED_PRODUCTS } from "../store/featured-products";
 
 export type PortfolioItem = {
   title: string;
   tag: string;
   category: string;
   image: string;
+  price?: number;
 };
 
 const ARCHIVED_PORTFOLIO_ITEMS: PortfolioItem[] = [
@@ -273,24 +275,13 @@ const ARCHIVED_PORTFOLIO_ITEMS: PortfolioItem[] = [
   },
 
   // === JACKET BACK (from /images/jacket-back-design/) ===
-  {
-    title: "Large Format Jacket Back",
-    tag: "Large Format",
+  ...FEATURED_PRODUCTS.map(product => ({
+    title: product.title,
+    tag: "Jacket Back",
     category: "jacket-back",
-    image: "/images/jacket-back-design/large-format-jacket-back-embroidery-digitizing.webp",
-  },
-  {
-    title: "Custom Motorcycle Jacket",
-    tag: "Biker Jacket",
-    category: "jacket-back",
-    image: "/images/jacket-back-design/custom-motorcycle-jacket-back-digitizing-dst.webp",
-  },
-  {
-    title: "Denim Jacket Full Back",
-    tag: "Denim Back",
-    category: "jacket-back",
-    image: "/images/jacket-back-design/denim-jacket-full-back-embroidery-digitizing.webp",
-  },
+    image: product.image,
+    price: product.price,
+  })),
   {
     title: "Leather Bomber Logo",
     tag: "Bomber Jacket",
@@ -751,6 +742,11 @@ export default function PortfolioCard({
       </div>
       <div className="px-4 py-3">
         <h3 className="text-sm font-semibold text-navy-950">{item.title}</h3>
+        {item.price !== undefined && (
+          <p className="mt-2 text-sm font-bold text-brand-600">
+            ${item.price.toFixed(2)}{(item.category === "felt-patches" || item.category === "twill-patches") && <span className="font-normal text-navy-950/60"> per patch</span>}
+          </p>
+        )}
       </div>
     </div>
   );

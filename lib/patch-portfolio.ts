@@ -1,5 +1,5 @@
 // Custom felt and twill patch samples.
-export const PATCH_PORTFOLIO_ITEMS = [
+const PATCH_SAMPLES = [
   {
     "title": "American Brand Badge Felt Patch",
     "tag": "Felt Patch",
@@ -241,3 +241,10 @@ export const PATCH_PORTFOLIO_ITEMS = [
     "image": "/images/twill-patch/green-business-contact-badge-twill-patch.webp"
   }
 ];
+
+export const PATCH_PRICE = 2.99;
+
+export const PATCH_PORTFOLIO_ITEMS = PATCH_SAMPLES.map(item => ({
+  ...item,
+  price: PATCH_PRICE,
+}));

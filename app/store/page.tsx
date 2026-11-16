@@ -3,6 +3,9 @@ import storeBg from "../images/velora-embroidery-collection.webp";
 import PatchGallery from "../components/PatchGallery";
 import Link from "next/link";
 import CTABanner from "../components/CTABanner";
+import { PATCH_PRICE } from "../../lib/patch-portfolio";
+import { FEATURED_PRODUCTS } from "./featured-products";
+import PortfolioCard from "../components/PortfolioCard";
 
 export default function StorePage() {
   return (
@@ -10,25 +13,35 @@ export default function StorePage() {
       <Hero
         eyebrow="Our Latest Patch Work"
         titleLines={[{ text: "Custom Felt & Twill" }, { text: "Patch Samples", accent: true }]}
-        description="Browse our latest felt and twill patch samples. Share your logo, size, and quantity with our team for a custom patch quote."
+        description={`Custom felt and twill patches at $${PATCH_PRICE.toFixed(2)} per patch. Share your logo, size, and quantity with our team to place your order.`}
         bgImage={storeBg}
         imageLabel="Velora embroidery workspace and custom apparel"
         features={[
           { icon: "layers", title: "Felt & Twill", sub: "Two custom patch collections" },
           { icon: "scissors", title: "Custom Designs", sub: "Your logo, shape, and size" },
           { icon: "headset", title: "Personal Support", sub: "Discuss your project with us" },
-          { icon: "send", title: "Request a Quote", sub: "Pricing for your requirements" },
+          { icon: "send", title: `$${PATCH_PRICE.toFixed(2)} per Patch`, sub: "Felt and twill patches" },
         ]}
       />
       <PatchGallery />
+      <section className="mx-auto max-w-7xl px-5 py-16 lg:px-10">
+        <h2 className="font-serif text-2xl font-bold text-navy-950 sm:text-3xl">Jacket Back Embroidery</h2>
+        <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {FEATURED_PRODUCTS.map(product => (
+            <Link key={product.slug} href={`/store/${product.slug}`}>
+              <PortfolioCard item={{ ...product, category: "jacket-back", tag: "Jacket Back" }} />
+            </Link>
+          ))}
+        </div>
+      </section>
       <section className="mx-auto max-w-4xl px-5 py-16 lg:px-10">
         <h2 className="font-serif text-2xl font-bold text-navy-950 sm:text-3xl">
           How Custom Felt and Twill Patch Orders Work
         </h2>
         <p className="mt-4 text-[15px] leading-relaxed text-navy-950/75">
-          The patches on this page are samples of work we have produced, not stock items. Every patch is made to
-          order from your own logo, so the price depends on the size, the number of thread colors, the backing and
-          the quantity. Send us the artwork with those details and we reply with a quote before any work starts.
+          Custom felt and twill patches cost ${PATCH_PRICE.toFixed(2)} per patch. The patches on this page are
+          samples of work we have produced. Every patch is made to order from your own logo.
+          Send us your artwork, size, backing and quantity to arrange your order.
         </p>
         <h3 className="mt-8 font-serif text-xl font-bold text-navy-950">Felt or twill: which one to choose</h3>
         <p className="mt-3 text-[15px] leading-relaxed text-navy-950/75">
@@ -45,7 +58,7 @@ export default function StorePage() {
           </Link>{" "}
           explains which backing lasts longer.
         </p>
-        <h3 className="mt-8 font-serif text-xl font-bold text-navy-950">What to send for a patch quote</h3>
+        <h3 className="mt-8 font-serif text-xl font-bold text-navy-950">What to send for a patch order</h3>
         <ul className="mt-3 list-disc space-y-2 pl-5 text-[15px] leading-relaxed text-navy-950/75">
           <li>Your logo or artwork in any format (vector, PNG, JPG or a clear photo).</li>
           <li>The finished patch size in inches and the shape you want.</li>

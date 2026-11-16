@@ -6,6 +6,7 @@ import { LEFT_CHEST_PRODUCTS } from "./left-chest";
 import { APPLIQUE_PRODUCTS } from "./applique";
 import { JACKET_BACK_PRODUCTS } from "./jacket-back";
 import { CAP_LOGO_PRODUCTS } from "./cap-logo";
+import { FEATURED_PRODUCTS } from "./featured-products";
 
 /**
  * A single, normalized shape for everything sold under /store/[slug]:
@@ -41,6 +42,7 @@ const PATCH_CATEGORY_LABELS: Record<string, string> = Object.fromEntries(
 const SHOW_DIGITIZING_FILE_PRODUCTS = false;
 
 export const STORE_ITEMS: StoreItem[] = [
+  ...FEATURED_PRODUCTS,
   ...(SHOW_DIGITIZING_FILE_PRODUCTS
     ? [
         ...PRODUCTS.map<StoreItem>((p) => ({

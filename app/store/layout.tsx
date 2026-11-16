@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { PATCH_PORTFOLIO_ITEMS } from "../../lib/patch-portfolio";
+import { PATCH_PORTFOLIO_ITEMS, PATCH_PRICE } from "../../lib/patch-portfolio";
 
-const description = "Browse custom felt and twill patch samples from Velora Digitizing. Send your logo, size, and quantity to request a custom patch quote.";
+const description = `Custom felt and twill patches at $${PATCH_PRICE.toFixed(2)} per patch from Velora Digitizing. Browse our samples and send your logo, size, and quantity to order.`;
 
 export const metadata: Metadata = {
   title: { default: "Custom Felt & Twill Patch Samples", template: "%s | Velora Digitizing" },
