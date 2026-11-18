@@ -104,11 +104,11 @@ const CAP_SHOWCASE_SAMPLES = [
     specs: "Height: 1.85\" · Barudan DST · 4,350 Stitches",
   },
   {
-    title: "Classic Baseball Cap Front",
-    type: "Curved Bill Athletic",
-    desc: "Multi-color team monogram sequenced bottom-up to lock fabric to the sweatband before sewing upper details.",
-    image: "/images/cap-logo/baseball-cap-front-embroidery-digitizing.webp",
-    specs: "Height: 2.20\" · Janome JEF · 7,650 Stitches",
+    title: "Corporate Headwear Cap Logo",
+    type: "Low-Profile Curved Cap",
+    desc: "Clean corporate crest digitized for structured front crowns with sharp satin outlines and smooth fill underlay.",
+    image: "/images/cap-logo/corporate-headwear-embroidery-digitizing.webp",
+    specs: "Height: 2.10\" · Janome JEF · 6,850 Stitches",
   },
   {
     title: "Winter Knit Ribbed Beanie",
@@ -355,15 +355,15 @@ export default function CapDigitizingPage() {
                 key={sample.title}
                 className="group flex flex-col overflow-hidden rounded-2xl border border-navy-950/10 bg-white shadow-sm transition-all hover:border-brand-600/30 hover:shadow-lg"
               >
-                <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+                <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100 flex items-center justify-center p-2">
                   <Image
                     src={sample.image}
                     alt={`${sample.title} - ${sample.type}`}
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="object-contain p-2 transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute left-3 top-3 rounded-full bg-navy-950/80 px-3 py-1 text-[11px] font-semibold text-white backdrop-blur-md">
+                  <div className="absolute left-3 top-3 rounded-full bg-navy-950/85 px-3 py-1 text-[11px] font-semibold text-white backdrop-blur-md">
                     {sample.type}
                   </div>
                 </div>

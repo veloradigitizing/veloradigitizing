@@ -336,15 +336,15 @@ export default function PuffDigitizingPage() {
                 key={sample.title}
                 className="group flex flex-col overflow-hidden rounded-2xl border border-navy-950/10 bg-white shadow-sm transition-all hover:border-brand-600/30 hover:shadow-lg"
               >
-                <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+                <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100 flex items-center justify-center p-2">
                   <Image
                     src={sample.image}
                     alt={`${sample.title} - ${sample.type}`}
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="object-contain p-2 transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute left-3 top-3 rounded-full bg-navy-950/80 px-3 py-1 text-[10px] font-semibold text-white backdrop-blur-md">
+                  <div className="absolute left-3 top-3 rounded-full bg-navy-950/85 px-3 py-1 text-[10px] font-semibold text-white backdrop-blur-md">
                     {sample.type}
                   </div>
                 </div>

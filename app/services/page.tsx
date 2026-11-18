@@ -67,7 +67,7 @@ const SERVICE_GUIDES: ServiceGuide[] = [
     name: "Flat logo digitizing",
     href: "/contact",
     icon: "shirt-logo",
-    image: "/images/left-chest-logo/polo-shirt-left-chest-logo-digitizing-dst.webp",
+    image: "/images/left-chest-logo/custom-brand-left-chest-embroidery-digitizing.webp",
     placement: "Polo shirts, uniforms, work shirts and jacket backs",
     chooseWhen:
       "Your logo sews on a flat, hooped garment with standard fill and satin stitches. This covers most left chest logos, uniform names and large jacket-back designs.",
@@ -287,15 +287,15 @@ export default function ServicesPage() {
           <div className="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-2">
             {SERVICE_GUIDES.map((service) => (
               <article key={service.slug} className="flex h-full flex-col overflow-hidden rounded-xl border border-navy-950/10 bg-white p-6 shadow-sm transition-all hover:border-brand-600/30 hover:shadow-md">
-                <div className="relative mb-5 aspect-[16/9] w-full overflow-hidden rounded-lg bg-slate-100">
+                <div className="relative mb-5 aspect-[4/3] w-full overflow-hidden rounded-xl bg-slate-100 p-2 flex items-center justify-center">
                   <Image
                     src={service.image}
                     alt={`${service.name} real embroidery stitch-out sample`}
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
-                    className="object-cover transition-transform duration-500 hover:scale-105"
+                    className="object-contain p-2 transition-transform duration-500 hover:scale-105"
                   />
-                  <div className="absolute left-3 top-3 rounded-full bg-navy-950/80 px-3 py-1 text-[11px] font-semibold text-white backdrop-blur-md">
+                  <div className="absolute left-3 top-3 rounded-full bg-navy-950/85 px-3 py-1 text-[11px] font-semibold text-white backdrop-blur-md">
                     {service.name}
                   </div>
                 </div>
