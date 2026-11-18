@@ -86,6 +86,37 @@ const APPLIQUE_USE_CASES: {
   },
 ];
 
+const APPLIQUE_SHOWCASE_SAMPLES = [
+  {
+    title: "Varsity Collegiate Letter 'A'",
+    type: "Felt & Tackle Twill Applique",
+    desc: "Single-stop placement line with heavy satin border seal calibrated for wool letterman varsity jackets.",
+    image: "/images/applique-design/varsity-letter-a-applique-embroidery-digitizing-dst.webp",
+    specs: "Height: 4.50\" · Tajima DST · 5,620 Stitches",
+  },
+  {
+    title: "Cougars Athletic Team Mascot",
+    type: "Multi-Color Sports Jersey",
+    desc: "Precision zig-zag tackdown holding multi-layer athletic twill, sequenced for high-speed uniform production.",
+    image: "/images/applique-design/cougars-sports-team-applique-embroidery-digitizing-dst.webp",
+    specs: "Width: 7.20\" · Brother PES · 9,840 Stitches",
+  },
+  {
+    title: "Script Lettering Tackle Twill",
+    type: "Athletic Script Emblem",
+    desc: "Pre-cut twill sequence with laser-aligned vector boundaries and reinforced corner tackdowns.",
+    image: "/images/twill-patch/broncos-script-lettering-twill-patch.webp",
+    specs: "Width: 9.00\" · Barudan DST · 11,400 Stitches",
+  },
+  {
+    title: "Layered Flag Applique Patch",
+    type: "Multi-Fabric Twill Shield",
+    desc: "Twill fabric foundation combined with top embroidery fills, cutting stitch count by 65% compared to full embroidery.",
+    image: "/images/twill-patch/american-flag-twill-patch.webp",
+    specs: "Size: 3.5\" x 2.25\" · Tajima DST · 4,890 Stitches",
+  },
+];
+
 const APPLIQUE_STEPS = [
   {
     step: "01",
@@ -309,53 +340,104 @@ export default function AppliqueDigitizingPage() {
         </div>
       </section>
 
-      {/* 6. Applique Digitizing Portfolio */}
-      <section className="bg-white py-16 lg:py-24">
+      {/* Real Applique & Tackle Twill Sew-Out Showcase */}
+      <section className="bg-slate-50 py-16 lg:py-24 border-b border-navy-950/5" aria-labelledby="applique-sewout-title">
         <div className="mx-auto max-w-7xl px-5 lg:px-10">
           <SectionTag
-            eyebrow="Recent Work"
-            title="Applique Digitizing Portfolio"
-            subtitle="Samples of real digitized applique stitch-outs and production files."
+            eyebrow="Real Production Proof"
+            title="Applique & Tackle Twill Sew-Out Showcase"
+            subtitle="Actual stitch-outs on sports team jerseys, varsity jackets, collegiate fleece, and laser-ready tackle twill emblems."
           />
 
-          <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-2 max-w-4xl mx-auto">
-            <div className="group overflow-hidden rounded-2xl border border-navy-950/10 bg-white shadow-sm transition-all hover:shadow-md">
-              <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
-                <Image
-                  src="/images/applique-design/varsity-letter-a-applique-embroidery-digitizing-dst.webp"
-                  alt="Varsity Letter A Collegiate Applique Embroidery Digitizing DST sample"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
+          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {APPLIQUE_SHOWCASE_SAMPLES.map((sample) => (
+              <div
+                key={sample.title}
+                className="group flex flex-col overflow-hidden rounded-2xl border border-navy-950/10 bg-white shadow-sm transition-all hover:border-brand-600/30 hover:shadow-lg"
+              >
+                <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+                  <Image
+                    src={sample.image}
+                    alt={`${sample.title} - ${sample.type}`}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute left-3 top-3 rounded-full bg-navy-950/80 px-3 py-1 text-[10px] font-semibold text-white backdrop-blur-md">
+                    {sample.type}
+                  </div>
+                </div>
+                <div className="flex flex-1 flex-col justify-between p-5">
+                  <div>
+                    <h3 className="text-sm font-bold text-navy-950 group-hover:text-brand-600">
+                      {sample.title}
+                    </h3>
+                    <p className="mt-2 text-xs leading-relaxed text-navy-950/70">
+                      {sample.desc}
+                    </p>
+                  </div>
+                  <div className="mt-4 border-t border-navy-950/5 pt-3">
+                    <span className="font-mono text-[10px] font-medium text-brand-600">
+                      {sample.specs}
+                    </span>
+                  </div>
+                </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-lg font-bold text-navy-950">
-                  Collegiate Letter Applique
-                </h3>
-                <p className="mt-1 text-xs text-navy-950/60">
-                  Clean tackdown running lines with tight satin border enclosure.
-                </p>
-              </div>
-            </div>
+            ))}
+          </div>
 
-            <div className="group overflow-hidden rounded-2xl border border-navy-950/10 bg-white shadow-sm transition-all hover:shadow-md">
-              <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
-                <Image
-                  src="/images/applique-design/cougars-sports-team-applique-embroidery-digitizing-dst.webp"
-                  alt="Cougars mascot sports team applique embroidery digitizing DST sample"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-lg font-bold text-navy-950">
-                  Mascot & Team Applique
-                </h3>
-                <p className="mt-1 text-xs text-navy-950/60">
-                  Multi-fabric layer sequence optimized for sports jersey production.
+          {/* Technical Applique Production Specs */}
+          <div className="mt-14 rounded-2xl border border-navy-950/10 bg-white p-6 sm:p-8 lg:p-10 shadow-sm">
+            <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-600">
+                  Cut-File &amp; Stitch Standards
                 </p>
+                <h3 className="mt-2 font-serif text-2xl font-bold text-navy-950 sm:text-3xl">
+                  Tackle Twill &amp; Laser Alignment Standards
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-navy-950/75">
+                  Every applique file we digitize comes with exact stop commands for fabric laydown, reinforced zig-zag tackdown, and matching 1:1 vector cut files for commercial laser tables and plotters.
+                </p>
+
+                <div className="mt-6 flex flex-wrap gap-4 text-xs font-semibold text-navy-950">
+                  <div className="flex items-center gap-2 rounded-lg bg-slate-100 px-3 py-2">
+                    <span className="h-2 w-2 rounded-full bg-emerald-500"></span>
+                    <span>Placement Stitch: 2.5mm Running Run</span>
+                  </div>
+                  <div className="flex items-center gap-2 rounded-lg bg-slate-100 px-3 py-2">
+                    <span className="h-2 w-2 rounded-full bg-emerald-500"></span>
+                    <span>Tackdown: 2.0mm Zig-Zag</span>
+                  </div>
+                  <div className="flex items-center gap-2 rounded-lg bg-slate-100 px-3 py-2">
+                    <span className="h-2 w-2 rounded-full bg-emerald-500"></span>
+                    <span>Cover Border: 3.8mm Satin</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="rounded-xl border border-navy-950/10 bg-slate-50 p-6">
+                <h4 className="text-sm font-bold text-navy-950">
+                  Laser &amp; Machine Operator Specifications:
+                </h4>
+                <ul className="mt-4 space-y-2.5 text-xs text-navy-950/80">
+                  <li className="flex justify-between border-b border-navy-950/5 pb-2">
+                    <span className="font-medium text-navy-950/60">Base Fabrics Supported:</span>
+                    <span className="font-semibold text-navy-950">Poly Twill, Wool Felt, Distressed Denim</span>
+                  </li>
+                  <li className="flex justify-between border-b border-navy-950/5 pb-2">
+                    <span className="font-medium text-navy-950/60">Vector Cut File Formats:</span>
+                    <span className="font-semibold text-navy-950">AI, SVG, PDF, DXF (1:1 Scale Included)</span>
+                  </li>
+                  <li className="flex justify-between border-b border-navy-950/5 pb-2">
+                    <span className="font-medium text-navy-950/60">Trimming Method:</span>
+                    <span className="font-semibold text-navy-950">Pre-Cut Laser or In-Hoop Scissors</span>
+                  </li>
+                  <li className="flex justify-between">
+                    <span className="font-medium text-navy-950/60">Stitch Count Savings:</span>
+                    <span className="font-semibold text-brand-600">60% to 80% vs solid embroidery fill</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>

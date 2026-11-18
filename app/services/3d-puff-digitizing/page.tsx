@@ -76,6 +76,37 @@ const PUFF_USE_CASES: {
     },
   ];
 
+const PUFF_SHOWCASE_SAMPLES = [
+  {
+    title: "High-Rise 3D Puff Monogram",
+    type: "2mm EVA Foam · Snapback",
+    desc: "Clean sculpted letter with 90° end-cap stitches and tight 0.19mm satin pitch ensuring zero foam protrusion.",
+    image: "/images/3d-puff/custom-3d-puff-cap-embroidery-digitizing-dst.webp",
+    specs: "Height: 2.25\" · Tajima DST · 7,890 Stitches",
+  },
+  {
+    title: "Commercial 3D Puff Cap Crest",
+    type: "Structured Front Crown",
+    desc: "Perpendicular needle perforation line cuts clean foam boundaries along complex crest curves with no manual trimming.",
+    image: "/images/cap-logo/raised-3d-puff-embroidery-hat-logo.webp",
+    specs: "Height: 2.10\" · Barudan DST · 9,450 Stitches",
+  },
+  {
+    title: "Hybrid Flat + 3D Puff Headwear",
+    type: "Dual-Layer Sequence",
+    desc: "Background flat embroidery sews first, followed by programmed machine stop for foam insertion over primary typography.",
+    image: "/images/cap-logo/custom-3d-puff-cap-embroidery-digitizing.webp",
+    specs: "Height: 2.20\" · Brother PES · 8,320 Stitches",
+  },
+  {
+    title: "Streetwear Heavyweight 3D Foam",
+    type: "3mm High-Density Foam",
+    desc: "Heavy-duty puff digitizing with reinforced underlay designed for heavyweight fleece hoodies and premium structured hats.",
+    image: "/behance-ready/3d-puff-cap-sample.jpg",
+    specs: "Height: 2.50\" · Tajima DST · 11,200 Stitches",
+  },
+];
+
 const PUFF_STEPS = [
   {
     step: "01",
@@ -290,33 +321,104 @@ export default function PuffDigitizingPage() {
         </div>
       </section>
 
-      {/* Portfolio Preview */}
-      <section className="bg-white py-16 lg:py-24">
+      {/* Real 3D Puff Sew-Out Portfolio & Samples */}
+      <section className="bg-slate-50 py-16 lg:py-24 border-b border-navy-950/5" aria-labelledby="puff-sewout-title">
         <div className="mx-auto max-w-7xl px-5 lg:px-10">
           <SectionTag
-            eyebrow="Recent Work"
-            title="3D Puff Digitizing Portfolio"
-            subtitle="Samples of real digitized 3D puff stitch-outs on structured caps."
+            eyebrow="Real Production Proof"
+            title="3D Puff Embroidery Sew-Out Showcase"
+            subtitle="Actual high-density foam stitch-outs featuring clean end-capping, zero exposed foam, and crisp 3D definition."
           />
 
-          <div className="mt-12 grid grid-cols-1 max-w-lg mx-auto">
-            <div className="group overflow-hidden rounded-2xl border border-navy-950/10 bg-white shadow-sm transition-all hover:shadow-md">
-              <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
-                <Image
-                  src="/images/3d-puff/custom-3d-puff-cap-embroidery-digitizing-dst.webp"
-                  alt="Custom 3D puff cap embroidery digitizing DST sample on baseball snapback"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
+          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {PUFF_SHOWCASE_SAMPLES.map((sample) => (
+              <div
+                key={sample.title}
+                className="group flex flex-col overflow-hidden rounded-2xl border border-navy-950/10 bg-white shadow-sm transition-all hover:border-brand-600/30 hover:shadow-lg"
+              >
+                <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+                  <Image
+                    src={sample.image}
+                    alt={`${sample.title} - ${sample.type}`}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute left-3 top-3 rounded-full bg-navy-950/80 px-3 py-1 text-[10px] font-semibold text-white backdrop-blur-md">
+                    {sample.type}
+                  </div>
+                </div>
+                <div className="flex flex-1 flex-col justify-between p-5">
+                  <div>
+                    <h3 className="text-sm font-bold text-navy-950 group-hover:text-brand-600">
+                      {sample.title}
+                    </h3>
+                    <p className="mt-2 text-xs leading-relaxed text-navy-950/70">
+                      {sample.desc}
+                    </p>
+                  </div>
+                  <div className="mt-4 border-t border-navy-950/5 pt-3">
+                    <span className="font-mono text-[10px] font-medium text-brand-600">
+                      {sample.specs}
+                    </span>
+                  </div>
+                </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-lg font-bold text-navy-950">
-                  Dimensional 3D Puff Logo
-                </h3>
-                <p className="mt-1 text-xs text-navy-950/60">
-                  Dense satin coverage over 2mm foam with clean end-caps.
+            ))}
+          </div>
+
+          {/* Technical 3D Puff Production Specs */}
+          <div className="mt-14 rounded-2xl border border-navy-950/10 bg-white p-6 sm:p-8 lg:p-10 shadow-sm">
+            <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-600">
+                  Precision Engineering
                 </p>
+                <h3 className="mt-2 font-serif text-2xl font-bold text-navy-950 sm:text-3xl">
+                  3D Foam Density &amp; Column Standards
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-navy-950/75">
+                  Standard digitizing formulas fail on foam. Our 3D puff digitizing applies 40% tighter satin pitch, perpendicular capping stitches, and specialized underlay that cuts cleanly without ripping fabric.
+                </p>
+
+                <div className="mt-6 flex flex-wrap gap-4 text-xs font-semibold text-navy-950">
+                  <div className="flex items-center gap-2 rounded-lg bg-slate-100 px-3 py-2">
+                    <span className="h-2 w-2 rounded-full bg-emerald-500"></span>
+                    <span>Satin Pitch: 0.18mm - 0.22mm</span>
+                  </div>
+                  <div className="flex items-center gap-2 rounded-lg bg-slate-100 px-3 py-2">
+                    <span className="h-2 w-2 rounded-full bg-emerald-500"></span>
+                    <span>Min Column: 3.0mm Width</span>
+                  </div>
+                  <div className="flex items-center gap-2 rounded-lg bg-slate-100 px-3 py-2">
+                    <span className="h-2 w-2 rounded-full bg-emerald-500"></span>
+                    <span>End-Cap Angle: 90° Perpendicular</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="rounded-xl border border-navy-950/10 bg-slate-50 p-6">
+                <h4 className="text-sm font-bold text-navy-950">
+                  Machine &amp; Operator Checklist for 3D Puff:
+                </h4>
+                <ul className="mt-4 space-y-2.5 text-xs text-navy-950/80">
+                  <li className="flex justify-between border-b border-navy-950/5 pb-2">
+                    <span className="font-medium text-navy-950/60">Foam Recommendation:</span>
+                    <span className="font-semibold text-navy-950">2.0mm High-Density EVA (Color Matched)</span>
+                  </li>
+                  <li className="flex justify-between border-b border-navy-950/5 pb-2">
+                    <span className="font-medium text-navy-950/60">Needle Recommendation:</span>
+                    <span className="font-semibold text-navy-950">75/11 or 80/12 Sharp (Punctures foam cleanly)</span>
+                  </li>
+                  <li className="flex justify-between border-b border-navy-950/5 pb-2">
+                    <span className="font-medium text-navy-950/60">Programmed Stops:</span>
+                    <span className="font-semibold text-navy-950">Automatic halt for foam laydown</span>
+                  </li>
+                  <li className="flex justify-between">
+                    <span className="font-medium text-navy-950/60">Post-Sewing Clean-up:</span>
+                    <span className="font-semibold text-brand-600">Quick heat-gun pass shrinks stray foam</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>

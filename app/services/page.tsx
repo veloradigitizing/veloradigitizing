@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Hero from "../components/Hero";
 import servicesBg from "../images/velora-embroidery-workstation.webp";
 import Link from "next/link";
@@ -51,6 +52,7 @@ type ServiceGuide = {
   name: string;
   href: string;
   icon: IconName;
+  image: string;
   placement: string;
   chooseWhen: string;
   youReceive: string;
@@ -65,6 +67,7 @@ const SERVICE_GUIDES: ServiceGuide[] = [
     name: "Flat logo digitizing",
     href: "/contact",
     icon: "shirt-logo",
+    image: "/images/left-chest-logo/polo-shirt-left-chest-logo-digitizing-dst.webp",
     placement: "Polo shirts, uniforms, work shirts and jacket backs",
     chooseWhen:
       "Your logo sews on a flat, hooped garment with standard fill and satin stitches. This covers most left chest logos, uniform names and large jacket-back designs.",
@@ -80,6 +83,7 @@ const SERVICE_GUIDES: ServiceGuide[] = [
     name: "Cap logo digitizing",
     href: "/services/cap-logo-digitizing",
     icon: "cap",
+    image: "/images/cap-logo/structured-cap-center-out-digitizing.webp",
     placement: "Hat fronts, sides and backs on structured or unstructured caps",
     chooseWhen:
       "The design sews on a curved cap frame. Cap files are sequenced from the centre outward and from the bottom up so the fabric does not bunch against the centre seam.",
@@ -95,6 +99,7 @@ const SERVICE_GUIDES: ServiceGuide[] = [
     name: "3D puff digitizing",
     href: "/services/3d-puff-digitizing",
     icon: "layers",
+    image: "/images/3d-puff/custom-3d-puff-cap-embroidery-digitizing-dst.webp",
     placement: "Raised lettering and bold emblems on caps, snapbacks and heavy fleece",
     chooseWhen:
       "You want letters or shapes to stand up from the fabric. High-density satin is stitched over embroidery foam, and the needle perforates the foam along the edges.",
@@ -110,6 +115,7 @@ const SERVICE_GUIDES: ServiceGuide[] = [
     name: "Applique digitizing",
     href: "/services/applique-digitizing",
     icon: "scissors",
+    image: "/images/applique-design/varsity-letter-a-applique-embroidery-digitizing-dst.webp",
     placement: "Fabric letters, varsity numbers and layered designs on jerseys and jackets",
     chooseWhen:
       "Large areas are covered with a fabric piece instead of fill stitches. This reduces stitch count on big designs and gives a layered, textured finish.",
@@ -125,6 +131,7 @@ const SERVICE_GUIDES: ServiceGuide[] = [
     name: "Custom patch digitizing",
     href: "/patches",
     icon: "badge",
+    image: "/images/custom-patches/dad-by-day-gamer-patch-embroidery-digitizing-dst.webp",
     placement: "Embroidered, woven, chenille, PVC and leather patches",
     chooseWhen:
       "The design is produced as a separate patch and then attached to the garment. Patch files carry a border and backing specification instead of garment-specific settings.",
@@ -140,6 +147,7 @@ const SERVICE_GUIDES: ServiceGuide[] = [
     name: "Vector art conversion",
     href: "/vector-art",
     icon: "pen-tool",
+    image: "/images/vector-art/messi-football-sports-vector-art-conversion-dst.webp",
     placement: "Artwork for screen printing, vinyl cutting, DTF and laser work",
     chooseWhen:
       "You have a blurry JPG or PNG and need clean, scalable artwork. Vector conversion is also the cleanest starting point when the same logo will later be digitized.",
@@ -278,7 +286,20 @@ export default function ServicesPage() {
 
           <div className="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-2">
             {SERVICE_GUIDES.map((service) => (
-              <article key={service.slug} className="flex h-full flex-col rounded-xl border border-navy-950/10 bg-white p-6 shadow-sm">
+              <article key={service.slug} className="flex h-full flex-col overflow-hidden rounded-xl border border-navy-950/10 bg-white p-6 shadow-sm transition-all hover:border-brand-600/30 hover:shadow-md">
+                <div className="relative mb-5 aspect-[16/9] w-full overflow-hidden rounded-lg bg-slate-100">
+                  <Image
+                    src={service.image}
+                    alt={`${service.name} real embroidery stitch-out sample`}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    className="object-cover transition-transform duration-500 hover:scale-105"
+                  />
+                  <div className="absolute left-3 top-3 rounded-full bg-navy-950/80 px-3 py-1 text-[11px] font-semibold text-white backdrop-blur-md">
+                    {service.name}
+                  </div>
+                </div>
+
                 <div className="flex items-start gap-4">
                   <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-brand-600/10 text-brand-600 ring-1 ring-brand-600/20">
                     <Icon name={service.icon} className="h-6 w-6" />

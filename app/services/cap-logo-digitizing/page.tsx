@@ -81,6 +81,51 @@ const CAP_APPLICATIONS: {
     },
   ];
 
+const CAP_SHOWCASE_SAMPLES = [
+  {
+    title: "Richardson 112 Structured Trucker",
+    type: "6-Panel Center Seam",
+    desc: "Center-out digitizing across thick buckram valley. Satin lettering with seam-bridge underlay prevents distortion.",
+    image: "/images/cap-logo/structured-cap-center-out-digitizing.webp",
+    specs: "Height: 2.15\" · Tajima DST · 6,420 Stitches",
+  },
+  {
+    title: "Yupoong Classics Snapback",
+    type: "High-Crown Flat Bill",
+    desc: "Crisp circular emblem with balanced pull-compensation to ensure perfect circular symmetry on curved frames.",
+    image: "/images/cap-logo/snapback-hat-logo-digitizing-dst-pes.webp",
+    specs: "Height: 2.25\" · Brother PES · 8,110 Stitches",
+  },
+  {
+    title: "Unstructured Washed Twill Dad Hat",
+    type: "Low-Profile Cotton",
+    desc: "Lightweight underlay and reduced density preventing fabric gathering and needle holes in soft cotton crowns.",
+    image: "/images/cap-logo/unstructured-dad-hat-embroidery-digitizing.webp",
+    specs: "Height: 1.85\" · Barudan DST · 4,350 Stitches",
+  },
+  {
+    title: "Classic Baseball Cap Front",
+    type: "Curved Bill Athletic",
+    desc: "Multi-color team monogram sequenced bottom-up to lock fabric to the sweatband before sewing upper details.",
+    image: "/images/cap-logo/baseball-cap-front-embroidery-digitizing.webp",
+    specs: "Height: 2.20\" · Janome JEF · 7,650 Stitches",
+  },
+  {
+    title: "Winter Knit Ribbed Beanie",
+    type: "Stretch Knit Toque",
+    desc: "Heavy grid knockdown underlay creating a smooth foundation so satin edges do not sink into chunky ribbed yarn.",
+    image: "/images/cap-logo/beanie-hat-embroidery-digitizing-services.webp",
+    specs: "Height: 2.00\" · Tajima DST · 5,890 Stitches",
+  },
+  {
+    title: "Embroidered Hat Patch Emblem",
+    type: "Merrowed Edge Cap Patch",
+    desc: "Laser-cut border specification with high-density satin border for direct heat press or stitching onto hat panels.",
+    image: "/images/cap-logo/custom-hat-patch-embroidery-digitizing.webp",
+    specs: "Size: 2.5\" x 3.5\" · DST & Vector · 9,200 Stitches",
+  },
+];
+
 const CAP_STEPS = [
   {
     step: "01",
@@ -295,53 +340,104 @@ export default function CapDigitizingPage() {
         </div>
       </section>
 
-      {/* Portfolio Preview */}
-      <section className="bg-white py-16 lg:py-24">
+      {/* Real Cap Sew-Out Portfolio & Samples */}
+      <section className="bg-slate-50 py-16 lg:py-24 border-b border-navy-950/5" aria-labelledby="cap-sewout-title">
         <div className="mx-auto max-w-7xl px-5 lg:px-10">
           <SectionTag
-            eyebrow="Recent Work"
-            title="Cap Logo Digitizing Portfolio"
-            subtitle="Samples of real digitized cap logos and headwear stitch-outs."
+            eyebrow="Real Production Proof"
+            title="Real Cap & Hat Embroidery Stitch-Out Showcase"
+            subtitle="Actual stitch-outs on structured snapbacks, trucker caps, beanies, and low-profile dad hats with zero seam bunching."
           />
 
-          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 max-w-3xl mx-auto">
-            <div className="group overflow-hidden rounded-2xl border border-navy-950/10 bg-white shadow-sm transition-all hover:shadow-md">
-              <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
-                <Image
-                  src="/images/cap-logo/sports-team-cap-logo-embroidery-digitizing-dst.webp"
-                  alt="Sports team cap embroidery digitizing DST sample"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
+          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {CAP_SHOWCASE_SAMPLES.map((sample) => (
+              <div
+                key={sample.title}
+                className="group flex flex-col overflow-hidden rounded-2xl border border-navy-950/10 bg-white shadow-sm transition-all hover:border-brand-600/30 hover:shadow-lg"
+              >
+                <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+                  <Image
+                    src={sample.image}
+                    alt={`${sample.title} - ${sample.type}`}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute left-3 top-3 rounded-full bg-navy-950/80 px-3 py-1 text-[11px] font-semibold text-white backdrop-blur-md">
+                    {sample.type}
+                  </div>
+                </div>
+                <div className="flex flex-1 flex-col justify-between p-5">
+                  <div>
+                    <h3 className="text-base font-bold text-navy-950 group-hover:text-brand-600">
+                      {sample.title}
+                    </h3>
+                    <p className="mt-2 text-xs leading-relaxed text-navy-950/70">
+                      {sample.desc}
+                    </p>
+                  </div>
+                  <div className="mt-4 border-t border-navy-950/5 pt-3">
+                    <span className="font-mono text-[11px] font-medium text-brand-600">
+                      {sample.specs}
+                    </span>
+                  </div>
+                </div>
               </div>
-              <div className="p-5">
-                <h3 className="text-base font-bold text-navy-950">
-                  Sports Team Emblem
-                </h3>
-                <p className="mt-1 text-xs text-navy-950/60">
-                  Center-out sequence with clean outline borders.
-                </p>
-              </div>
-            </div>
+            ))}
+          </div>
 
-            <div className="group overflow-hidden rounded-2xl border border-navy-950/10 bg-white shadow-sm transition-all hover:shadow-md">
-              <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
-                <Image
-                  src="/images/cap-logo/custom-headwear-cap-logo-embroidery-digitizing-dst.webp"
-                  alt="Cap logo embroidery digitizing DST file with fine script lettering"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="p-5">
-                <h3 className="text-base font-bold text-navy-950">
-                  Fine Text Cap Logo
-                </h3>
-                <p className="mt-1 text-xs text-navy-950/60">
-                  Stabilized satin lettering on curved cap panel.
+          {/* Technical Production Specs Block */}
+          <div className="mt-14 rounded-2xl border border-navy-950/10 bg-white p-6 sm:p-8 lg:p-10 shadow-sm">
+            <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-600">
+                  Engineering Standards
                 </p>
+                <h3 className="mt-2 font-serif text-2xl font-bold text-navy-950 sm:text-3xl">
+                  Cap Frame & Needle Specifications
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-navy-950/75">
+                  Every headwear file we deliver is calibrated for industrial cylinder cap frames (Tajima, Barudan, Happy, Brother PR) so operators never experience needle deflection or broken thread runs.
+                </p>
+
+                <div className="mt-6 flex flex-wrap gap-4 text-xs font-semibold text-navy-950">
+                  <div className="flex items-center gap-2 rounded-lg bg-slate-100 px-3 py-2">
+                    <span className="h-2 w-2 rounded-full bg-emerald-500"></span>
+                    <span>Max Crown Height: 2.25&quot; (57mm)</span>
+                  </div>
+                  <div className="flex items-center gap-2 rounded-lg bg-slate-100 px-3 py-2">
+                    <span className="h-2 w-2 rounded-full bg-emerald-500"></span>
+                    <span>Max Front Arch: 4.50&quot; (114mm)</span>
+                  </div>
+                  <div className="flex items-center gap-2 rounded-lg bg-slate-100 px-3 py-2">
+                    <span className="h-2 w-2 rounded-full bg-emerald-500"></span>
+                    <span>Seam-Bridge: 1.2mm Tatami</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="rounded-xl border border-navy-950/10 bg-slate-50 p-6">
+                <h4 className="text-sm font-bold text-navy-950">
+                  Recommended Cap Machine Parameters:
+                </h4>
+                <ul className="mt-4 space-y-2.5 text-xs text-navy-950/80">
+                  <li className="flex justify-between border-b border-navy-950/5 pb-2">
+                    <span className="font-medium text-navy-950/60">Target Machine Blanks:</span>
+                    <span className="font-semibold text-navy-950">Richardson 112, Yupoong 6606, Flexfit</span>
+                  </li>
+                  <li className="flex justify-between border-b border-navy-950/5 pb-2">
+                    <span className="font-medium text-navy-950/60">Needle Recommendation:</span>
+                    <span className="font-semibold text-navy-950">75/11 Sharp (Buckram) / 70/10 (Beanies)</span>
+                  </li>
+                  <li className="flex justify-between border-b border-navy-950/5 pb-2">
+                    <span className="font-medium text-navy-950/60">Pull-Compensation:</span>
+                    <span className="font-semibold text-navy-950">+0.35mm to +0.40mm on satin arches</span>
+                  </li>
+                  <li className="flex justify-between">
+                    <span className="font-medium text-navy-950/60">Delivery Files:</span>
+                    <span className="font-semibold text-brand-600">DST, PES, JEF, EXP + PDF Sheet</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
